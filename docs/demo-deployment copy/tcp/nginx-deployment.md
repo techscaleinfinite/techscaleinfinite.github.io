@@ -118,9 +118,6 @@ By following these steps, you can effortlessly deploy an NGINX instance with you
 
 Check out our youtube video for more clarification.
 
-{% embed url="https://youtu.be/7EIoXZbmW9I" %}
-
-
 
 ### FAQ
 
