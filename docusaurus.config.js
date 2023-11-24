@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs.scaleinfinite.github.io',
+  url: 'https://techscaleinfinite.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'techscaleinfinite', // Usually your GitHub org/user name.
-  projectName: 'docs.scaleinfinite.github.io', // Usually your repo name.
+  projectName: 'techscaleinfinite.github.io', // Usually your repo name.
   deploymentBranch: 'main',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
