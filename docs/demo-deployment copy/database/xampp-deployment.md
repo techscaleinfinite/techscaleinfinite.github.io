@@ -145,7 +145,7 @@ By following these steps, you can effortlessly deploy an XAMPP instance with you
 
 Check out our youtube video for more clarification.
 
-<!--- {% embed url="https://youtu.be/Eu0i3Gny3VQ" %} -->
+[comment]: <> (<!--- {% embed url="https://youtu.be/Eu0i3Gny3VQ" %} -->)
 
 ### FAQ
 
