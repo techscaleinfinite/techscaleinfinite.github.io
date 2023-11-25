@@ -140,12 +140,7 @@ If you choose Advanced option:
 | ENV VARIABLE                                                                                                                                                                                                                              |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ```shellGive env variable.``` ```shellEg:key==value```                                                                                                                                                                    |
-| here use:(on  right side you can write anything)                                                                                                                                                                                          |
-|  ```shell  FLATNOTES_AUTH_TYPE: "password" // dont chnage this
-            FLATNOTES_USERNAME: ${ADMIN_EMAIL}
-            FLATNOTES_PASSWORD: ${ADMIN_PASSWORD}
-            FLATNOTES_SECRET_KEY: ${ADMIN_PASSWORD}
-```  |
+| here use:(on  right side you can write anything)                                                                                                                                                                                       
 
 | WORKING DIR                                                                             |
 | --------------------------------------------------------------------------------------- |
