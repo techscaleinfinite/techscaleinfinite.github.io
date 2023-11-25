@@ -162,17 +162,17 @@ If you choose Advanced option:
 
 **Step-by-Step Guide to flatnotes Deployment**
 
-1. **Docker Image Selection****:**
+1. **Docker Image Selection:**
    * Docker Image Name:`flatnotes`
-2. **Application Details****:**
+2. **Application Details:**
    * Application Name: Flatnotes
    * Resource Allocation: Set the desired resource allocation from 0-100%.
 3. **Protocol Configuration****:**
    * Protocol: `HTTP`
    * Port: `8080`
-4. **Installation Options****:**
+4. **Installation Options:**
    * Choose between "Default" or "Advanced" installation.
-5. **Advanced Installation (Optional****):**
+5. **Advanced Installation (Optional):**
    * If selecting "Advanced," you can customize the environment variables and working directory:
    *   **Environment Variables:**
 
@@ -190,9 +190,9 @@ If you choose Advanced option:
            ```
            - "./data:/data"
            ```
-6. **Access Configuration****:**
+6. **Access Configuration:**
    * Choose between "Public" or "Private" access to the deployed application.
-7. **Installation****:**
+7. **Installation:**
    * Click the "Install" button to initiate the deployment process.
 
 By following these steps, you can effortlessly deploy an  Flatnotes instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.

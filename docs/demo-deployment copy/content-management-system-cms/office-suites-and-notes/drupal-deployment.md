@@ -87,17 +87,17 @@ If you choose Advanced option:
 
 **Step-by-Step Guide to Drupal Deployment**
 
-1. **Docker Image Selection****:**
+1. **Docker Image Selection:**
    * Docker Image Name: `drupal`
-2. **Application Details****:**
+2. **Application Details:**
    * Application Name: `drupal`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
 3. **Protocol Configuration****:**
    * Protocol: `HTTP`
    * Port: `80`
-4. **Installation Options****:**
+4. **Installation Options:**
    * Choose between "Default" or "Advanced" installation.
-5. **Advanced Installation (Optional****):**
+5. **Advanced Installation (Optional):**
    * If selecting "Advanced," you can customize the environment variables and working directory:
    *   **Environment Variables:**
 
@@ -118,9 +118,9 @@ If you choose Advanced option:
            	-v /path/on/host/sites:/var/www/html/sites \
            	-v /path/on/host/themes:/var/www/html/themes \
            ```
-6. **Access Configuration****:**
+6. **Access Configuration:**
    * Choose between "Public" or "Private" access to the deployed application.
-7. **Installation****:**
+7. **Installation:**
    * Click the "Install" button to initiate the deployment process.
 
 By following these steps, you can effortlessly deploy an drupal instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.

@@ -10,17 +10,17 @@ Then follow these steps:
 
 **Step-by-Step Guide to APP Deployment**
 
-1. **Docker Image Selection****:**
+1. **Docker Image Selection:**
    * Docker Image Name: `XYZ`
-2. **Application Details****:**
+2. **Application Details:**
    * Application Name: `XYZ`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
 3. **Protocol Configuration****:**
    * Protocol: `HTTP/TCP`
    * Port: `GIVE PORT NUMBER EG:80,443 etc`
-4. **Installation Options****:**
+4. **Installation Options:**
    * Choose between "Default" or "Advanced" installation.
-5. **Advanced Installation (Optional****):**
+5. **Advanced Installation (Optional):**
    * If selecting "Advanced," you can customize the environment variables and working directory:
    *   **Environment Variables:**
 
@@ -32,9 +32,9 @@ Then follow these steps:
        The working directory is the starting point inside a container where an app's files are located. It affects relative file paths and operations. For example, if set to `/usr/src/yourAPP`, an app will reference files from there, like `/usr/src/yourAPP/data.txt`.
 
        * Working Directory: Set the working directory for the application (e.g., `usr/src/yourAPP`).
-6. **Access Configuration****:**
+6. **Access Configuration:**
    * Choose between "Public" or "Private" access to the deployed application.
-7. **Installation****:**
+7. **Installation:**
    * Click the "Install" button to initiate the deployment process.
 
 By following these steps, you can effortlessly deploy an App instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.

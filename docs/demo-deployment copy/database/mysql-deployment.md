@@ -90,17 +90,17 @@ If you choose Advanced option:
 
 **Step-by-Step Guide to Mysql Deployment**
 
-1. **Docker Image Selection****:**
+1. **Docker Image Selection:**
    * Docker Image Name: `mysql`
-2. **Application Details****:**
+2. **Application Details:**
    * Application Name: `mysql1`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
 3. **Protocol Configuration****:**
    * Protocol: `TCP`
    * Port: `3306`
-4. **Installation Options****:**
+4. **Installation Options:**
    * Choose between "Default" or "Advanced" installation.
-5. **Advanced Installation (Optional****):**
+5. **Advanced Installation (Optional):**
    * If selecting "Advanced," you can customize the environment variables and working directory:
    *   **Environment Variables:**
 
@@ -118,9 +118,9 @@ If you choose Advanced option:
            ```console
            -v /my/custom:/etc/mysql/conf.d
            ```
-6. **Access Configuration****:**
+6. **Access Configuration:**
    * Choose between "Public" or "Private" access to the deployed application.
-7. **Installation****:**
+7. **Installation:**
    * Click the "Install" button to initiate the deployment process.
 
 
