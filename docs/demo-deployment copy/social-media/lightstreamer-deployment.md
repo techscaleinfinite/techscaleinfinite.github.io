@@ -8,7 +8,7 @@ Lightstreamer is a real-time messaging server that is optimized for the Internet
 
 **Real-Time Messaging:** Lightstreamer is like a maestro of real-time communication. It's designed to effortlessly transmit data in real-time across the Internet, making it an invaluable tool for applications that rely on instant data updates. Imagine it as the conductor of a symphony of information, ensuring that every note is played precisely when it should be.
 
-**Optimized for the Internet****:** Lightstreamer isn't just any messaging server; it's tailor-made for the Internet's fast-paced environment. It's a favorite in industries like finance, gaming, and e-commerce, where every millisecond counts. Think of it as a Formula 1 car for your data, built to perform at the highest speeds without missing a beat.
+**Optimized for the Internet:** Lightstreamer isn't just any messaging server; it's tailor-made for the Internet's fast-paced environment. It's a favorite in industries like finance, gaming, and e-commerce, where every millisecond counts. Think of it as a Formula 1 car for your data, built to perform at the highest speeds without missing a beat.
 
 **Scalability:** Lightstreamer is flexible, like a rubber band that can stretch to accommodate your needs. It can be deployed in a scalable manner, so organizations can handle more real-time data and users as they grow. Docker's container orchestration tools, like Kubernetes, step in as the conductors of a grand orchestra, ensuring that every Lightstreamer container plays in harmony.
 
@@ -20,17 +20,17 @@ Lightstreamer is a real-time messaging server that is optimized for the Internet
 
 ### **How It Works:**
 
-**Client-Server Architecture****:** Lightstreamer is like a well-orchestrated symphony. It follows the classic client-server model. Imagine the server as the conductor, and the clients are the orchestra members, ready to play their part in harmony. Clients can be web browsers, mobile apps, or any software that craves real-time data updates. The server, running Lightstreamer, ensures everyone plays in sync.
+**Client-Server Architecture:** Lightstreamer is like a well-orchestrated symphony. It follows the classic client-server model. Imagine the server as the conductor, and the clients are the orchestra members, ready to play their part in harmony. Clients can be web browsers, mobile apps, or any software that craves real-time data updates. The server, running Lightstreamer, ensures everyone plays in sync.
 
 **Connection Establishment:** Just like an introduction at a social gathering, clients politely initiate a connection to the Lightstreamer server. They use standard protocols like HTTP, HTTPS, or the nimble WebSockets. For added security, this connection can even be wrapped in encryption, ensuring that your data is as private as a whispered secret.
 
-**Subscription Model****:** Clients have their preferences, and Lightstreamer respects that. They can subscribe to specific data feeds or "items" that pique their interest. These items can represent anything—stock prices, sports scores, chat messages, or any real-time tidbit they crave.
+**Subscription Model:** Clients have their preferences, and Lightstreamer respects that. They can subscribe to specific data feeds or "items" that pique their interest. These items can represent anything—stock prices, sports scores, chat messages, or any real-time tidbit they crave.
 
 **Data Providers****:** Lightstreamer is like a messenger, shuttling between clients and data sources. These sources, often the guardians of valuable data, can be databases, backend systems, or even external data fountains. They supply the actual data that clients eagerly await.
 
 **Real-Time Data Push:** The magic happens when new data emerges or changes occur in the subscribed items. Lightstreamer springs into action, like a news anchor breaking a hot story. It pushes these updates to the waiting clients in real-time, all without them needing to ask. It's like having a personal news ticker, always delivering the latest headlines.
 
-**Bidirectional Communication****:** Lightstreamer doesn't just preach; it listens too. It's not a one-way street. Clients can also speak up, sending data or commands to the server. It's this bidirectional dance that enables interactive features like live chat, gaming moves, or even stock trading orders.
+**Bidirectional Communication:** Lightstreamer doesn't just preach; it listens too. It's not a one-way street. Clients can also speak up, sending data or commands to the server. It's this bidirectional dance that enables interactive features like live chat, gaming moves, or even stock trading orders.
 
 **Scalability:** Lightstreamer is built to handle the grandest of stages. To accommodate a massive audience of clients and data feeds, you can deploy multiple instances of Lightstreamer servers. It's like having a network of stages for your orchestra, ensuring that the show can go on, no matter how big the crowd.
 
@@ -83,14 +83,13 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                                                                          |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```                                                                          |
 | Here use ( use the path after   " :"  )                                                                                         |
-|  ```shell  -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml
-```  |
+|  ```shell  -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml```  |
 
 `Access`
 
@@ -146,11 +145,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About**  lightstreamer **image we used.**
+**About  lightstreamer image we used.**
 
 This is the officia lightstreamer image.
 
-**Can I deploy my own** lightstreamer **image with modified configuration ?**
+**Can I deploy my own lightstreamer image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

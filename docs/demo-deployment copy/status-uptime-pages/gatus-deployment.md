@@ -99,11 +99,11 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                             |
 | --------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
 | --mount type=bind,source="$(pwd)"/config.yaml,target=/config/config.yaml                |
 

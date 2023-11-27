@@ -24,7 +24,7 @@ Content Creation: WordPress facilitates the creation and publication of web cont
 
 Database Interaction: WordPress engages in seamless communication with MySQL or MariaDB databases. These databases serve as repositories for an array of elements, including content, configuration settings, and user information. Such integration ensures efficient data storage and retrieval.
 
-T**hemes & Plugins**: WordPress extends its functionality through themes and plugins. Themes are instrumental in shaping a website's appearance, enabling customization to match specific design preferences. Meanwhile, plugins provide additional features and functionalities, allowing users to tailor their sites according to their unique requirements.
+**Themes & Plugins**: WordPress extends its functionality through themes and plugins. Themes are instrumental in shaping a website's appearance, enabling customization to match specific design preferences. Meanwhile, plugins provide additional features and functionalities, allowing users to tailor their sites according to their unique requirements.
 
 **Dynamic Pages:** PHP, a versatile scripting language, forms the backbone of WordPress, dynamically processing user requests. This enables the generation of web pages on-the-fly, assembling content and delivering it to visitors in real-time.
 
@@ -89,11 +89,11 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                             |
 | --------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
 
 `Access`

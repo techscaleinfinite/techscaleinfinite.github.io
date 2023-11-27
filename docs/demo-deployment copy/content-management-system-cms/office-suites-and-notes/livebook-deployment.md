@@ -96,7 +96,7 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                              |
 | ---------------------------------------------------------------------------------------- |

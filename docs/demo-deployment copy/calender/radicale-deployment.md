@@ -23,11 +23,11 @@ _**Simplifying Your Life with Radicale: Your Personal Organizer**_
 
 Ever wished for a personal assistant to handle your calendars, to-do lists, and contacts? Well, Radicale is that reliable sidekick—an intelligent, compact server designed to make your life easier. Here's how it works:
 
-**1. ****A Master of Sharing** Radicale is a jack of all trades, supporting CalDAV, CardDAV, and HTTP. What does that mean for you? It's a versatile tool for sharing calendars and contact lists. Whether it's events, tasks, journal entries, or business cards, Radicale effortlessly keeps your data organized.
+**1. A Master of Sharing** Radicale is a jack of all trades, supporting CalDAV, CardDAV, and HTTP. What does that mean for you? It's a versatile tool for sharing calendars and contact lists. Whether it's events, tasks, journal entries, or business cards, Radicale effortlessly keeps your data organized.
 
-**2. ****Out-of-the-Box Convenience** Say goodbye to the days of struggling with complicated configurations. Radicale is your hassle-free friend from the moment you start using it. It's all about simplicity and efficiency, ensuring your experience is frustration-free.
+**2. Out-of-the-Box Convenience** Say goodbye to the days of struggling with complicated configurations. Radicale is your hassle-free friend from the moment you start using it. It's all about simplicity and efficiency, ensuring your experience is frustration-free.
 
-**3****. Your Data, Your Control** Privacy and security are paramount with Radicale. You call the shots when it comes to who gets access, thanks to the power of authentication. And here's the best part—your data is kept neatly in a user-friendly folder structure on your file system. It's like having a personal vault for your digital treasures.
+**3. Your Data, Your Control** Privacy and security are paramount with Radicale. You call the shots when it comes to who gets access, thanks to the power of authentication. And here's the best part—your data is kept neatly in a user-friendly folder structure on your file system. It's like having a personal vault for your digital treasures.
 
 In a nutshell, Radicale is the butler for your data, expertly managing your calendars, to-do lists, and contacts. It's your secret to staying organized and in control. With Radicale, managing your data isn't a chore; it's a breeze. Give it a try and experience the simplicity of Radicale for yourself
 
@@ -74,11 +74,11 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                             |
 | --------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
 
 `Access`
@@ -131,11 +131,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** radical **image we used.**
+**About radical image we used.**
 
 This is the official radical image.
 
-**Can I deploy my own** radical **image with modified configuration ?**
+**Can I deploy my own radical image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

@@ -99,7 +99,7 @@ If you choose Advanced option:
 
 | WORKING DIR                                                                             |
 | --------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
 | /couchbase                                                                              |
 

@@ -99,15 +99,14 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                                                              |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```                                                              |
 | Here use ( use the path after   " :"  )                                                                             |
 |  ```shell  -v ~/zenphoto/mysql:/var/lib/mysql \
-        -v ~/zenphoto/www:/var/www/html \
-```  |
+        -v ~/zenphoto/www:/var/www/html \```  |
 
 `Access`
 
@@ -164,11 +163,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** Zenphoto **image we used.**
+**About Zenphoto image we used.**
 
 This is the official Zenphoton image.
 
-**Can I deploy my own** Zenphoto **image with modified configuration ?**
+**Can I deploy my own Zenphoto image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

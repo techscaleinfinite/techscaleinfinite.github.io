@@ -125,11 +125,11 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                             |
 | --------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
 
 `Access`
@@ -182,11 +182,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** Stirling PDF  **image we used.**
+**About Stirling PDF  image we used.**
 
 This is the official Stirling PDF image.
 
-**Can I deploy my own** Stirling PDF **image with modified configuration ?**
+**Can I deploy my own Stirling PDF image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

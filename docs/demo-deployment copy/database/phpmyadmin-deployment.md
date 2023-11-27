@@ -75,11 +75,11 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                                 |
 | ------------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```      |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```      |
 | Here use ( use the path after   " :"  )                     |
 | -v /some/local/directory/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php phpmyadmin |
 
@@ -136,11 +136,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** phpmyadmin **image we used.**
+**About phpmyadmin image we used.**
 
 This is the official phpmyadmin image.
 
-**Can I deploy my own** phpmyadmin **image with modified configuration ?**
+**Can I deploy my own phpmyadmin image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

@@ -8,17 +8,17 @@
 
 Tired of the never-ending tabs and bookmarks cluttering your digital life? Say hello to Heimdall Application Dashboard, your one-stop solution for taming the chaos and bringing order to your web applications.
 
-**1. ****Unified Web App Haven:** No More Tab Overload: Heimdall Dashboard puts an end to the tab madness. It neatly organizes all your web applications, tools, and services in one place.
+**1. Unified Web App Haven:** No More Tab Overload: Heimdall Dashboard puts an end to the tab madness. It neatly organizes all your web applications, tools, and services in one place.
 
-**2. ****Customization Galore:** Your Dashboard, Your Rules: Heimdall empowers you to personalize your dashboard to your heart's content. Add links to web applications, search engines, or even set it as your browser's start page. It's your digital canvas – paint it the way you want.
+**2. Customization Galore:** Your Dashboard, Your Rules: Heimdall empowers you to personalize your dashboard to your heart's content. Add links to web applications, search engines, or even set it as your browser's start page. It's your digital canvas – paint it the way you want.
 
 **3. Visual Pleasure:** More than Just Organization: Heimdall doesn't just tidy up; it's a visual delight. Discover visually appealing apps that make managing your digital world a joyful experience.
 
-**4. ****Apps API Magic:** Your Quick Access Pass: Dive into an array of enhanced apps, foundational apps, and generic items through Heimdall's apps API. It's your express route to swift access for your favorite web applications and services.
+**4. Apps API Magic:** Your Quick Access Pass: Dive into an array of enhanced apps, foundational apps, and generic items through Heimdall's apps API. It's your express route to swift access for your favorite web applications and services.
 
-**5. ****Simplified Streamlining:** Efficiency at Its Best: Heimdall is your partner in digital efficiency. Spend less time hunting for tools and more time using them. It's your personalized launchpad to the digital world.
+**5. Simplified Streamlining:** Efficiency at Its Best: Heimdall is your partner in digital efficiency. Spend less time hunting for tools and more time using them. It's your personalized launchpad to the digital world.
 
-**6. ****Beyond Apps Alone****:** Freedom to Choose: Heimdall isn't limited to apps. It's your canvas for organizing anything – web apps, resources, or even personal shortcuts. Your preferences set the limits, and they're practically limitless.
+**6. Beyond Apps Alone:** Freedom to Choose: Heimdall isn't limited to apps. It's your canvas for organizing anything – web apps, resources, or even personal shortcuts. Your preferences set the limits, and they're practically limitless.
 
 In a nutshell, Heimdall Application Dashboard is where digital chaos meets order, where scattered web applications find unity, and where customization reigns supreme. With Heimdall, your digital life turns into an elegantly orchestrated symphony, with all your favorite apps and tools harmoniously brought together. Say hello to simplicity, visual delight, and efficiency, and make Heimdall your portal to a more organized and enjoyable online experience
 
@@ -85,14 +85,13 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                                                |
 | ---------------------------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                     |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```                     |
 | Here use ( use the path after   " :"  )                                    |
-|  ```shell -v /path/to/appdata/config:/config
-```  |
+|  ```shell -v /path/to/appdata/config:/config```  |
 
 `Access`
 

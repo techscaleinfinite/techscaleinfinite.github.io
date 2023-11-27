@@ -83,15 +83,14 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                                                  |
 | ------------------------------------------------------------------------------------------------------------ |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                       |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```                       |
 | Here use ( use the path after   " :"  )                                      |
 |  ```shell -v /your/manga/directory:/manga \
--v /kavita/data/directory:/kavita/config \
-```  |
+-v /kavita/data/directory:/kavita/config \```  |
 
 `Access`
 
@@ -150,11 +149,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** Kavita **image we used.**
+**About Kavita image we used.**
 
 This is the official  Kavita image.
 
-**Can I deploy my own** Kavita **image with modified configuration ?**
+**Can I deploy my own Kavita image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

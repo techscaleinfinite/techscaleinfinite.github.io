@@ -6,7 +6,7 @@
 
 OwnCloud is a game-changer in the realm of data management, offering a comprehensive open-source platform that puts you in the driver's seat when it comes to your data. Here's a closer look:
 
-**1. ****Data Ownership:**
+**1. Data Ownership:**
 
 * OwnCloud places the power of data ownership squarely in your hands. It allows you to establish and manage your very own cloud storage system on your servers. This means that your data remains securely within your control, residing exactly where you want it – under your own roof.
 
@@ -88,11 +88,11 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                            |
 | ----------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  |
+| ```Give env variable.``` ```Eg:key==value```  |
 
 | WORKING DIR                                                                             |
 | --------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
 | /var/www/html                                                                           |
 

@@ -139,12 +139,12 @@ If you choose Advanced option:
 
 | ENV VARIABLE                                                                                                                                                                                                                              |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```                                                                                                                                                                    |
+| ```Give env variable.``` ```Eg:key==value```                                                                                                                                                                    |
 | here use:(on  right side you can write anything)                                                                                                                                                                                       
 
 | WORKING DIR                                                                             |
 | --------------------------------------------------------------------------------------- |
-| ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
 |  ```shell - "./data:/data"```                                         |
 

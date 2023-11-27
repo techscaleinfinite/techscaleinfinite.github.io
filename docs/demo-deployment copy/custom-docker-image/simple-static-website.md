@@ -29,7 +29,7 @@
 
 | ENV VARIABLE                                                            | WHITELIST                                       | WORKING DIR                                       |
 | ----------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------- |
-| ```shellGive env variable.``` ```shellEg:key==value```  | `If you want to white list any ports list here` | `WORKDIR for the application. Eg:usr/src/yourAPP` |
+| ```Give env variable.``` ```Eg:key==value```  | `If you want to white list any ports list here` | `WORKDIR for the application. Eg:usr/src/yourAPP` |
 
 
 
