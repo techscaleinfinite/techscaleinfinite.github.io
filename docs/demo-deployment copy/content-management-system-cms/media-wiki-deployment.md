@@ -8,32 +8,32 @@ MediaWiki: The Heart of Collaborative Knowledge
 
 Ever wondered how Wikipedia, the treasure trove of online wisdom, works its magic? Enter MediaWiki, the wizard behind the curtain. It's the software that powers Wikipedia and many other collaborative websites. Let's peel back the layers and see what makes it tick:
 
-**1. ****Teamwork Made Easy:**
+**1. Teamwork Made Easy:**
 
 * MediaWiki is all about teamwork. It's like having a group of friends working together on a giant puzzle.
 * Anyone can join the party, add their pieces, or rearrange what's already there.
 
-**2. ****Time Machine for Pages:**
+**2. Time Machine for Pages:**
 
 * MediaWiki keeps a detailed history of every change made to a page. It's like a time machine for articles.
 * You can travel back in time to see how a page evolved and even hit the "undo" button if something goes wrong.
 
-**3. ****Content Playground:**
+**3. Content Playground:**
 
 * Think of MediaWiki as a playground for information. It's not just a jumble of data; everything has its place.
 * Articles are like neatly labeled boxes, and categories are the shelves where these boxes are organized.
 
-**4. ****Userland Adventures:**
+**4. Userland Adventures:**
 
 * MediaWiki gives users their own space, like a personal room. You can create your user page, watch pages to see changes, and chat with others.
 * It's like having your own little corner in the vast world of knowledge.
 
-**5. ****Markup Magic:**
+**5. Markup Magic:**
 
 * MediaWiki has its own secret language, but it's not like learning a new code. It's more like using simple commands.
 * You can make text bold, create links, add images, and more, just by using these magic words.
 
-**6. ****Media Mastery:**
+**6. Media Mastery:**
 
 * It's not just about words. MediaWiki loves pictures, sounds, and videos.
 * You can easily add images, audio, and video to make pages more engaging and informative.
@@ -107,8 +107,7 @@ If you choose Advanced option:
 | ------------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```            |
 | Here use ( use the path after   " :"  )                           |
-|  ```shell /var/www/html/sites
-```  |
+|  ```shell /var/www/html/sites```  |
 
 `Access`
 
@@ -123,7 +122,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `mediawiki`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

@@ -124,7 +124,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `ETHERPAD`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `9001`
 4. **Installation Options:**

@@ -106,7 +106,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: maria
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `TcP`
    * Port: `3306`
 4. **Installation Options:**

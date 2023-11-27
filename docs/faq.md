@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# ‼ FAQ
+# FAQ
 
 **Do my applications Highly available, scalable, and reliable?**
 

@@ -86,8 +86,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```              |
 | Here use ( use the path after   " :"  )                             |
-|  ```shell  - /path/to/configs:/config
-```  |
+|  ```shell  - /path/to/configs:/config```  |
 
 `Access`
 
@@ -102,7 +101,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `dillinger`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `8080`
 4. **Installation Options:**
@@ -141,11 +140,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** Dillinger **image we used.**
+**About Dillinger image we used.**
 
 This is the official Dillinger  mage.
 
-**Can I deploy my own media** Dillinger **with modified configuration ?**
+**Can I deploy my own media Dillinger with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

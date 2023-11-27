@@ -15,7 +15,7 @@ Then follow these steps:
 2. **Application Details:**
    * Application Name: `XYZ`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP/TCP`
    * Port: `GIVE PORT NUMBER EG:80,443 etc`
 4. **Installation Options:**

@@ -79,8 +79,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
-|  ```shell -v /vw-data/:/data/
-```  |
+|  ```shell -v /vw-data/:/data/```  |
 
 `Access`
 
@@ -95,7 +94,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: vault warden 1
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

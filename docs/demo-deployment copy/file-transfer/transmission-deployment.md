@@ -80,8 +80,7 @@ If you choose Advanced option:
 |  ```shell volumes:
       - /path/to/data:/config
       - /path/to/downloads:/downloads
-      - /path/to/watch/folder:/watch
-```  |
+      - /path/to/watch/folder:/watch```  |
 
 `Access`
 
@@ -96,7 +95,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: Transmission
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `9091`
 4. **Installation Options:**

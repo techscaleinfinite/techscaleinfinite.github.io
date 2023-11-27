@@ -112,8 +112,7 @@ If you choose Advanced option:
 | ------------------------------------------------------------------------------------------------------------ |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                       |
 | Here use ( use the path after   " :"  )                                      |
-|  ```shell -v /path/to/appdata/config:/config \
-```  |
+|  ```shell -v /path/to/appdata/config:/config \```  |
 
 `Access`
 
@@ -128,7 +127,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `VSCODE`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `3000`
 4. **Installation Options:**

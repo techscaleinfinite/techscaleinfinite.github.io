@@ -139,7 +139,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `ascii flow`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**
@@ -175,11 +175,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** ASCII Flow **image we used.**
+**About ASCII Flow image we used.**
 
 This is the official ASCII Flow  mage.
 
-**Can I deploy my own media** ASCII Flow **with modified configuration ?**
+**Can I deploy my own media ASCII Flow with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

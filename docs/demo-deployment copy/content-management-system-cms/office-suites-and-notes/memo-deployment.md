@@ -44,27 +44,27 @@ So, whether you're jotting down spur-of-the-moment ideas, organizing your though
 
 At first glance, memos may seem like just another note-taking app, but beneath its simple exterior lies a powerhouse of features designed to elevate your memo-keeping experience. Let's peel back the curtain and explore how this ingenious application works:
 
-**1. ****Privacy First and Foremost:**
+**1. Privacy First and Foremost:**
 
 * memos takes data privacy seriously. Every piece of information you generate while using the app is securely stored within an SQLite database file. This approach ensures your notes are for your eyes only, safeguarding your personal thoughts and ideas.
 
-**2. ****Markdown Magic:**
+**2. Markdown Magic:**
 
 * memos embraces the simplicity of plain text but doesn't skimp on style. It utilizes Markdown, a lightweight markup language, to help you format your memos effortlessly. Whether you want to emphasize text, create lists, or add headers, memos has got your back with a plethora of Markdown features.
 
-**3****. Lean yet Robust:**
+**3. Lean yet Robust:**
 
 * The technology stack behind memos is a carefully crafted blend of Go, React.js, and SQLite. This choice of architecture strikes the perfect balance between a lightweight application and robust functionality. You get a nimble memo-keeping tool that doesn't compromise on power.
 
-**4. ****Tailored to Your Tastes:**
+**4. Tailored to Your Tastes:**
 
 * Make memos uniquely yours by diving into its customization options. You have the freedom to tweak various elements, including the server name, icon, description, system style, execution scripts, and more. Personalize it to align with your preferences and style.
 
-**5. ****Open Source Philosophy:**
+**5. Open Source Philosophy:**
 
 * Transparency is key, and memos fully embraces the open-source ethos. The entire codebase is available for exploration on GitHub, allowing tech enthusiasts and developers to delve into the application's inner workings, suggest improvements, and foster a sense of community.
 
-**6. ****Forever Free:**
+**6. Forever Free:**
 
 * In a world where software often comes with price tags, memos stands out as a beacon of generosity. It's committed to offering all its features for free, forever. There are no hidden costs or premium tiers. Your memo-taking journey remains valuable without costing you a dime.
 
@@ -120,8 +120,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
-|  ```shell - './memos/:/var/opt/memos'
-```                              |
+|  ```shell - './memos/:/var/opt/memos'```                              |
 
 `Access`
 
@@ -136,7 +135,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: memos
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `5230`
 4. **Installation Options:**
@@ -179,11 +178,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About memos** **image we used.**
+**About memos image we used.**
 
 This is the official memos image.
 
-**Can I deploy my own** memos **image with modified configuration ?**
+**Can I deploy my own memos image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

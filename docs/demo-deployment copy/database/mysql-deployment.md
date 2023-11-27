@@ -79,8 +79,7 @@ If you choose Advanced option:
 | ------------------------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                        |
 | Here use ( use the path after   " :"  )                                       |
-|  ```shell -v /my/custom:/etc/mysql/conf.d
-```  |
+|  ```shell -v /my/custom:/etc/mysql/conf.d```  |
 
 `Access`
 
@@ -95,7 +94,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `mysql1`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `TCP`
    * Port: `3306`
 4. **Installation Options:**

@@ -18,7 +18,7 @@ Hostinger, a pioneering web hosting provider with over a decade of experience, o
 
 **Globally Recognized Web Host**: Hostinger, which began as a Lithuanian IT startup in 2004, has grown to become a prominent provider of web hosting solutions. They are happy to assist over a million like-minded innovators from more than 150 nations. Their status as the fastest-growing hosting brand in 2020\* demonstrates their dedication to quality.
 
-**Innovation at the Core****:**Hostinger believes in remaining on the cutting edge of technology. For a reason, they are one of the fastest and most efficient web hosting service providers. Their servers include powerful anti-DDoS solutions, a LiteSpeed-powered tech stack, and the hPanel, a custom-built control panel.
+**Innovation at the Core:**Hostinger believes in remaining on the cutting edge of technology. For a reason, they are one of the fastest and most efficient web hosting service providers. Their servers include powerful anti-DDoS solutions, a LiteSpeed-powered tech stack, and the hPanel, a custom-built control panel.
 
 **A Team of Heroes**: Hostinger is one of the world's fastest-growing web hosting businesses, with over 1000 workers in 54 countries. They are as committed to the success of their clients as they are to the success of their team members, encouraging professional development in order to take their customers to the next level.
 

@@ -27,15 +27,15 @@ To sum it up, Grafana is the secret sauce to turn your data chaos into insights 
 
 Now that you've made friends with Grafana, let's see this buddy in action. Here's how it does its magic:
 
-**1****. The Data Detective:** Grafana can connect with just about any data source. Imagine it as the Sherlock Holmes of data, searching databases, cloud services, and APIs to gather clues (or in this case, data).
+**1. The Data Detective:** Grafana can connect with just about any data source. Imagine it as the Sherlock Holmes of data, searching databases, cloud services, and APIs to gather clues (or in this case, data).
 
-**2. ****Creating Dashboards:** Grafana gives you the power to be the boss. You start by making your own dashboard. Think of it as a personal control center where you decide what data you want and how you want to see it.
+**2. Creating Dashboards:** Grafana gives you the power to be the boss. You start by making your own dashboard. Think of it as a personal control center where you decide what data you want and how you want to see it.
 
-**3****. The Visual Artist****:** Grafana is a true artist. It takes your data and transforms it into beautiful charts and graphs that respond to your every move. You click, it updates - real-time magic!
+**3. The Visual Artist:** Grafana is a true artist. It takes your data and transforms it into beautiful charts and graphs that respond to your every move. You click, it updates - real-time magic!
 
-**4. ****Stay in the Know:** It's like having a data babysitter. You tell Grafana what's important, and it keeps an eye on your data. If something goes wonky, it sends you a message. No more surprises.
+**4. Stay in the Know:** It's like having a data babysitter. You tell Grafana what's important, and it keeps an eye on your data. If something goes wonky, it sends you a message. No more surprises.
 
-**5. ****Real-Time Wizard:** Grafana's visualizations are like a crystal ball for your data. You can see trends and changes as they happen. It's like having a data fortune-teller right at your fingertips.
+**5. Real-Time Wizard:** Grafana's visualizations are like a crystal ball for your data. You can see trends and changes as they happen. It's like having a data fortune-teller right at your fingertips.
 
 In a nutshell, Grafana is your data sidekick, making the world of numbers and charts feel like a walk in the park. It's all about connecting, visualizing, and keeping you informed. Plus, it's open to all and keeps getting better with its cool community.
 
@@ -101,7 +101,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `grafana1`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

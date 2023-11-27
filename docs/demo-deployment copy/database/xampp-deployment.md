@@ -88,9 +88,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
-|  ```shell -v ~/my_web_pages:/www 
-tomsik68/xampp
-```                   |
+|  ```shell -v ~/my_web_pages:/www tomsik68/xampp```                   
 
 `Access`
 
@@ -105,7 +103,7 @@ tomsik68/xampp
 2. **Application Details:**
    * Application Name: `xampp1`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

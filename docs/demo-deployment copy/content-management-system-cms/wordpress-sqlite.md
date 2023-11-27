@@ -8,18 +8,18 @@ WordPress is a free and open-source content management system written in hyperte
 
 **Key Points:**
 
-1. **Open-Source SQL****:** SQLite is freely accessible, offering SQL database capabilities for local storage.
+1. **Open-Source SQL:** SQLite is freely accessible, offering SQL database capabilities for local storage.
 2. **Text File Storage:** Data is stored in a single text file, eliminating the need for a separate server.
-3. **Lightweight****:** SQLite is compact, making it suitable for applications with limited resources.
+3. **Lightweight:** SQLite is compact, making it suitable for applications with limited resources.
 4. **Embedded Database:** It's integrated within the application, not requiring a separate database server.
-5. **Self-Contained****:** The entire database is contained within a single file, enhancing portability.
+5. **Self-Contained:** The entire database is contained within a single file, enhancing portability.
 
-### **Working in Brief****:**
+### **Working in Brief:**
 
 1. **Database Creation:** Applications integrate SQLite by creating a database file.
-2. **Table Structure****:** Define tables with columns to structure the data.
+2. **Table Structure:** Define tables with columns to structure the data.
 3. **Data Storage:** Insert, update, or delete data within the tables.
-4. **SQL Queries****:** Utilize SQL queries to retrieve specific information from the database.
+4. **SQL Queries:** Utilize SQL queries to retrieve specific information from the database.
 5. **Local Retrieval:** Applications access data directly from the local SQLite file.
 
 SQLite offers a convenient solution for applications that require structured data storage without the complexity of a traditional database system. Its lightweight nature and self-contained design make it an ideal choice for various applications.
@@ -94,7 +94,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `wordpress1`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

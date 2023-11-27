@@ -6,47 +6,47 @@
 
 Joomla isn't just a mouthful to say; it's an open-source powerhouse that lets you create and manage fantastic websites and online applications with ease. Let's break it down into simple terms that anyone can understand:
 
-**1****. Content Made Easy:**
+**1. Content Made Easy:**
 
 * Joomla is like a super-smart librarian. It helps you create, edit, organize, and publish stuff on your website. You can add articles, blog posts, images, videos, and more.
 
-**2. ****Easy-Peasy Interface:**
+**2. Easy-Peasy Interface:**
 
 * Imagine your favorite video game. Joomla's admin panel is just as user-friendly and fun to navigate. You don't need to be a tech wizard to run your website.
 
-**3. ****Supercharge Your Site:**
+**3. Supercharge Your Site:**
 
 * Joomla is like a toolbox filled with cool gadgets. You can add all sorts of stuff to your site – templates, modules, plugins, and components – to make it do exactly what you want.
 
-**4. ****Dress Up Your Site:**
+**4. Dress Up Your Site:**
 
 * Ever tried on different outfits? Joomla lets you dress up your site with various templates and themes. They make your site look great and work smoothly on phones, tablets, and computers.
 
-**5. ****Speak Any Language:**
+**5. Speak Any Language:**
 
 * Whether you're a globetrotter or just want to reach a wider audience, Joomla has your back. It can speak many languages and make your content understandable to everyone.
 
-**6. ****Boss-Level User Control:**
+**6. Boss-Level User Control:**
 
 * Joomla gives you the power to be the boss. You can create accounts, decide who can do what, and protect some content from nosy visitors.
 
-**7. ****Ironclad Security:**
+**7. Ironclad Security:**
 
 * Worried about online baddies? Joomla is your digital security guard. It gets regular updates and can even add extra security measures.
 
-**8. ****Google's Best Friend:**
+**8. Google's Best Friend:**
 
 * Everyone wants to be on Google's good side, right? Joomla helps you with that. It comes with tools to make your site shine in Google's search results.
 
-**9. ****Friends Forever:**
+**9. Friends Forever:**
 
 * Joomla has a huge gang of friends. It's like a big party where everyone helps each other. They share tips, write guides, and keep Joomla in tip-top shape.
 
-**10. ****Online Shop Ready:**
+**10. Online Shop Ready:**
 
 * Thinking of selling stuff online? Joomla's got you covered. It can turn your website into an online store with the right tools.
 
-**11. ****Small or Super-sized:**
+**11. Small or Super-sized:**
 
 * Whether you're starting a personal blog or a massive business site, Joomla can handle it all. It's like a one-size-fits-all superhero for the web.
 
@@ -56,55 +56,55 @@ In a nutshell, Joomla is the easy-to-use, superhero buddy you need to build awes
 
 Joomla Unveiled: The Web Wizard's Secret Ever wondered how websites come to life? Joomla is like the magical wand behind the scenes, making it all happen. Let's unveil the secret in simple terms:
 
-**1. ****Ready, Set, Go:**
+**1. Ready, Set, Go:**
 
 * It all starts with getting Joomla onto your web server. It's like planting the seeds of your website.
 * During setup, you give your website a name, a short description, and create your secret admin code.
 
-**2. ****Craft Your Content:**
+**2. Craft Your Content:**
 
 * Once inside Joomla's special control room, you'll find a content editor – think of it like a digital notepad.
 * You can create articles filled with text, pictures, videos, and more. It's where your ideas become web pages.
 
-**3. ****Stay Organized:**
+**3. Stay Organized:**
 
 * Joomla has a built-in organizer. You can group your articles into categories. It's like sorting your books into different shelves.
 * This makes managing a big website a piece of cake.
 
-**4. ****Dress Your Website:**
+**4. Dress Your Website:**
 
 * Think of Joomla like a wardrobe for your website. It offers different outfits (templates) to change the look and feel.
 * You can pick one or create your own unique style.
 
-**5. ****Superpowers Unleashed:**
+**5. Superpowers Unleashed:**
 
 * Joomla can do even more with its super extensions – they're like adding cool gadgets to your site.
 * Modules are like building blocks you can place anywhere.
 * Plugins make your site do special tricks.
 * Components are like adding a new room to your digital house.
 
-**6. ****Who's the Boss? You Are:**
+**6. Who's the Boss? You Are:**
 
 * Joomla gives you the keys to user management. You can invite others to join the adventure and decide what they can or can't do.
 * Perfect for group projects or exclusive clubs.
 
-**7. ****Menu Magic:**
+**7. Menu Magic:**
 
 * Websites have menus just like a restaurant. Joomla lets you create them. Each menu item leads to a different part of your site.
 
-**8. ****Talk to the World:**
+**8. Talk to the World:**
 
 * Joomla is a language expert. It can speak in many languages, so everyone understands what you're saying.
 
-**9. ****Lights, Camera, Action:**
+**9. Lights, Camera, Action:**
 
 * When you're ready to show off, hit the "Publish" button. Your content goes live for the world to see.
 
-**10. ****SEO Friend:**
+**10. SEO Friend:**
 
 * Joomla helps you get noticed on Google. It can make your web address look neat and tidy, which Google loves.
 
-**11. ****Hang with the Gang:**
+**11. Hang with the Gang:**
 
 * Joomla is part of a big community. It's like a club of friendly experts. They chat on forums, share tips, and make your web journey smooth.
 
@@ -199,7 +199,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `joomla`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

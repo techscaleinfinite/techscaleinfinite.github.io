@@ -87,8 +87,7 @@ If you choose Advanced option:
 | ------------------------------------------------------------------------------------------------ |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```           |
 | Here use ( use the path after   " :"  )                          |
-|  ```shell /host/path/to/assets:/assets
-```  |
+|  ```shell /host/path/to/assets:/assets```  |
 
 `Access`
 
@@ -103,7 +102,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `Podgrab`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `8080`
 4. **Installation Options:**
@@ -147,11 +146,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** Podgrab **image we used.**
+**About Podgrab image we used.**
 
 This is the official Podgrab image.
 
-**Can I deploy my own** Podgrab **image with modified configuration ?**
+**Can I deploy my own Podgrab image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

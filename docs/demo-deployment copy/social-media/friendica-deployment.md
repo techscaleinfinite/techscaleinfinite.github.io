@@ -10,7 +10,7 @@ Friendica is a free and open-source social networking platform that provides a d
 
 **User Registration:** Just like entering a welcoming community, users can create their accounts on Friendica servers. It's as easy as signing up for any traditional social media platform.
 
-**Decentralization****:** Friendica is the embodiment of democracy in social media. Instead of a central authority, it operates on a federated model, similar to email. It's like a web of communities where each Friendica server is like a town, and users from one town can visit and interact with users from other towns.
+**Decentralization:** Friendica is the embodiment of democracy in social media. Instead of a central authority, it operates on a federated model, similar to email. It's like a web of communities where each Friendica server is like a town, and users from one town can visit and interact with users from other towns.
 
 **Federation Protocols:** Think of Friendica as a multilingual diplomat. It speaks various federation protocols like ActivityPub, Diaspora, and OStatus. These protocols bridge the gap between different social networks and platforms, allowing Friendica users to connect and interact with users on other federated social networks.
 
@@ -91,8 +91,7 @@ If you choose Advanced option:
 | ------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```      |
 | Here use ( use the path after   " :"  )                     |
-|  ```shell /var/www/html
-```  |
+|  ```shell /var/www/html```  |
 
 `Access`
 
@@ -107,7 +106,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `friendica`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

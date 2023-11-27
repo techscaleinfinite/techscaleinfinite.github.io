@@ -9,25 +9,25 @@
 
 Tired of those endless debates and awkward moments when it's time to split the bills? Enter "I Hate Money," the web application that's here to rescue your friendships and simplify your shared budget management. Let's take a closer look at how this ingenious tool works:
 
-**1. ****Seamless Spending Tracking**: Picture this as your virtual ledger. "I Hate Money" keeps a meticulous record of who spent what, when, and for whom. No more digging through crumpled receipts or trying to remember who owes what.
+**1. Seamless Spending Tracking**: Picture this as your virtual ledger. "I Hate Money" keeps a meticulous record of who spent what, when, and for whom. No more digging through crumpled receipts or trying to remember who owes what.
 
 **2. Who Owes Who**: This is where the magic happens. The app calculates who owes money and to whom. It's like having a personal finance wizard in your pocket, ensuring everyone's on the same financial page.
 
 **3. Effortless Expense Entry**: Adding expenses is a breeze. Enter the details of your spending, assign it to the relevant group members, and voilà! "I Hate Money" does the math for you.
 
-**4. ****Bill Settlement Made Easy**: When it's time to settle up, the app suggests the most efficient way to even out the balances. No more complicated mental arithmetic or squabbling over who owes what to whom.
+**4. Bill Settlement Made Easy**: When it's time to settle up, the app suggests the most efficient way to even out the balances. No more complicated mental arithmetic or squabbling over who owes what to whom.
 
-**5****. Group-Friendly**: Whether it's a shared apartment, a road trip, or a group dinner, "I Hate Money" adapts to your needs. Create groups, add members, and effortlessly manage shared expenses.
+**5. Group-Friendly**: Whether it's a shared apartment, a road trip, or a group dinner, "I Hate Money" adapts to your needs. Create groups, add members, and effortlessly manage shared expenses.
 
-**6. U****ser-Friendly Interface**: The app's clean and intuitive interface ensures a hassle-free experience. You don't need to be a financial whiz to navigate it.
+**6. User-Friendly Interface**: The app's clean and intuitive interface ensures a hassle-free experience. You don't need to be a financial whiz to navigate it.
 
 **7. Real-Time Updates**: Stay up-to-date with real-time balance changes. Instantly know where you stand financially within your group.
 
-**8. ****Privacy Matters**: Your financial data is safe and sound. "I Hate Money" prioritizes privacy and security, so you can manage your finances with peace of mind.
+**8. Privacy Matters**: Your financial data is safe and sound. "I Hate Money" prioritizes privacy and security, so you can manage your finances with peace of mind.
 
 **9. Multi-Platform Accessibility**: Access your shared expenses from anywhere, whether it's your laptop, smartphone, or tablet. Managing your finances has never been this convenient.
 
-**10. ****Never "Hate Money" Again**: With this app by your side, you'll never resent money matters again. It turns what could be a source of tension into a seamless, harmonious experience.
+**10. Never "Hate Money" Again**: With this app by your side, you'll never resent money matters again. It turns what could be a source of tension into a seamless, harmonious experience.
 
 So, why let financial matters come between you and your friends or cause undue stress? "I Hate Money" is here to make shared budget management a breeze. It's where money meets harmony, where friendships flourish, and where you can finally say goodbye to financial friction.
 
@@ -115,8 +115,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
-|  ```shell /database
-```        |
+|  ```shell /database```        |
 
 `Access`
 
@@ -131,7 +130,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `ihatemoney`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `8000`
 4. **Installation Options:**
@@ -170,11 +169,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** I Hate Money **image we used.**
+**About I Hate Money image we used.**
 
 This is the official I Hate Money  mage.
 
-**Can I deploy my own media** I Hate Money **with modified configuration ?**
+**Can I deploy my own media I Hate Money with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

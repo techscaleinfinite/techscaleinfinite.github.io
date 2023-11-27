@@ -4,17 +4,17 @@
 
 ### What's is baikal?
 
-**1. Web Interface Mastery –** Imagine a web interface that's not just user-friendly but genuinely intuitive. Baïkal offers exactly that. Managing users, address books, and calendars becomes a breeze. It's like having a personal assistant that understands your every command.
+**1. Web Interface Mastery–** Imagine a web interface that's not just user-friendly but genuinely intuitive. Baïkal offers exactly that. Managing users, address books, and calendars becomes a breeze. It's like having a personal assistant that understands your every command.
 
-**2. ****Universal Access**** –** Baïkal doesn't believe in boundaries. It's your bridge to a synchronized digital life. Access your contacts and calendars from every device you own. No more hassles with compatibility issues – it's all about harmonious connectivity.
+**2. Universal Access –** Baïkal doesn't believe in boundaries. It's your bridge to a synchronized digital life. Access your contacts and calendars from every device you own. No more hassles with compatibility issues – it's all about harmonious connectivity.
 
-**3. ****The Symphony of Integration**** –** Think of Baïkal as the conductor of your digital orchestra. It seamlessly orchestrates your contacts and calendars, allowing you to be in perfect sync. It's like having your own digital maestro for a harmonious digital life.
+**3. The Symphony of Integration –** Think of Baïkal as the conductor of your digital orchestra. It seamlessly orchestrates your contacts and calendars, allowing you to be in perfect sync. It's like having your own digital maestro for a harmonious digital life.
 
-**4. ****Digital Harmony**** –** Baïkal doesn't just bring order to your digital world; it transforms it into a harmonious melody. Your contacts and calendars are no longer scattered – they're in perfect alignment, like musical notes on a score.
+**4. Digital Harmony –** Baïkal doesn't just bring order to your digital world; it transforms it into a harmonious melody. Your contacts and calendars are no longer scattered – they're in perfect alignment, like musical notes on a score.
 
-**5. ****Device Agnostic**** –** Whether you're a fan of the latest gadgets or cherish vintage tech, Baïkal doesn't discriminate. It ensures that your contacts and calendars are at your fingertips, regardless of the device you choose to use.
+**5. Device Agnostic–** Whether you're a fan of the latest gadgets or cherish vintage tech, Baïkal doesn't discriminate. It ensures that your contacts and calendars are at your fingertips, regardless of the device you choose to use.
 
-**6. ****A Symphony of Productivity**** –** Baïkal isn't just a tool; it's your productivity partner. It simplifies, streamlines, and harmonizes your digital life. It's the note that brings together the entire symphony of your connected existence.
+**6. A Symphony of Productivity–** Baïkal isn't just a tool; it's your productivity partner. It simplifies, streamlines, and harmonizes your digital life. It's the note that brings together the entire symphony of your connected existence.
 
 In the grand performance of digital life, Baïkal plays a pivotal role. It's your conductor, your assistant, and your guardian of seamless connectivity. With Baïkal, your contacts and calendars become a harmonious symphony, ready to be played on any device you choose. Welcome to the world of effortless digital harmony with Baïkal.
 
@@ -22,15 +22,15 @@ In the grand performance of digital life, Baïkal plays a pivotal role. It's you
 
 **The Baïkal Ballet –** Ever watched a ballet performance? Imagine Baïkal as the choreographer, orchestrating the beautiful dance of your digital contacts and calendars. It elegantly brings them together in a seamless web interface.
 
-**Sync Across Universes**** –** Baïkal isn't just a contact manager; it's a cosmic connector. It lets you access your precious contacts and calendars from any corner of the digital universe. It's like having a universal remote for your digital life.
+**Sync Across Universes –** Baïkal isn't just a contact manager; it's a cosmic connector. It lets you access your precious contacts and calendars from any corner of the digital universe. It's like having a universal remote for your digital life.
 
-**Intuitive Maestro**** –** Baïkal's web interface is more intuitive than your grandma's chicken soup recipe. It's so easy to manage users, address books, and calendars that you'd think it reads your mind.
+**Intuitive Maestro–** Baïkal's web interface is more intuitive than your grandma's chicken soup recipe. It's so easy to manage users, address books, and calendars that you'd think it reads your mind.
 
-**Digital Symphony**** –** Baïkal is all about harmonizing your digital world. It takes your scattered notes and chaotic schedules and turns them into a symphony of organized bliss. It's like tidying up a room filled with chaos, but in the digital realm.
+**Digital Symphony–** Baïkal is all about harmonizing your digital world. It takes your scattered notes and chaotic schedules and turns them into a symphony of organized bliss. It's like tidying up a room filled with chaos, but in the digital realm.
 
-**Cross-Device Serenade**** –** Baïkal serenades you across all your devices. It doesn't care if you're a tech enthusiast or a collector of antique gadgets. Your contacts and calendars will be at your beck and call, no matter which device you choose.
+**Cross-Device Serenade–** Baïkal serenades you across all your devices. It doesn't care if you're a tech enthusiast or a collector of antique gadgets. Your contacts and calendars will be at your beck and call, no matter which device you choose.
 
-**The Productivity Crescendo**** –** Baïkal is not just a tool; it's your digital maestro. It conducts your digital orchestra, creating a symphony of productivity. It's the secret sauce to your efficient digital life.
+**The Productivity Crescendo** Baïkal is not just a tool; it's your digital maestro. It conducts your digital orchestra, creating a symphony of productivity. It's the secret sauce to your efficient digital life.
 
 So, how does Baïkal work its magic? Picture it as a digital ballet choreographer, a universal connector, and an intuitive maestro all rolled into one. It takes your digital chaos, orchestrates it into a harmonious symphony, and delivers it seamlessly to any device. That's Baïkal – where technology meets elegance.
 

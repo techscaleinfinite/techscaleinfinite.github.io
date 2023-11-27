@@ -117,7 +117,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `livebook`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `8080`
 4. **Installation Options:**
@@ -153,11 +153,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** Livebook **image we used.**
+**About Livebook image we used.**
 
 This is the official Livebook mage.
 
-**Can I deploy my own media** Livebook **with modified configuration ?**
+**Can I deploy my own media Livebook with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

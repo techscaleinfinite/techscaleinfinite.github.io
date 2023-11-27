@@ -8,27 +8,27 @@
 
 In the often baffling realm of cryptocurrency trading, OctoBot emerges as a beacon of hope, offering a powerful yet straightforward solution that's geared towards one thing: profit. Here's what makes this open-source cryptocurrency trading robot tick:
 
-**1. ****Versatile Trading Strategies:**
+**1. Versatile Trading Strategies:**
 
 * **Copy from OctoBot Cloud:** Imagine effortlessly adopting trading strategies from the OctoBot Cloud, where the wisdom of the crowd is at your fingertips.
 * **Customization:** Take existing strategies and make them your own. Tailor them to match your unique preferences.
 * **Create Your Strategy:** Ambitious traders can roll up their sleeves and craft their very own trading strategies with OctoBot Pro.
 
-**2****. User-Centric Approach:**
+**2. User-Centric Approach:**
 
 * **Time Efficiency:** OctoBot is your ally, especially if you're juggling a busy life but still want to maximize your investments. No more complicated and time-consuming trading headaches.
 
-**3. ****Inclusivity in Trading:**
+**3. nclusivity in Trading:**
 
 * **No Trading Pro Required:** Unlike many trading tools that seem to be speaking another language, OctoBot welcomes traders of all levels. It's like a friendly handshake for everyone.
 * **Community-Powered:** OctoBot Cloud thrives on the strategies contributed by the community. It's a win-win situation. Share your successful strategies, and earn while you're at it.
 
-**4. ****Strategy Testing and Flexibility:**
+**4. Strategy Testing and Flexibility:**
 
 * **Simulation Ready:** Test any strategy thoroughly using historical data or live simulations. It's like practicing your moves before the big game.
 * **No Limits:** OctoBot caters to both newcomers and seasoned traders, offering endless testing possibilities.
 
-**5. ****Transparency and Evolution:**
+**5. Transparency and Evolution:**
 
 * **Verifiable Robot:** OctoBot isn't shrouded in mystery. It's transparent and open-source, so you can see exactly how it works. Trust is the name of the game.
 * **Continuous Improvement:** OctoBot has been in the game since 2018 and is continuously evolving. It's like a classic car that keeps getting better with every upgrade.
@@ -43,32 +43,32 @@ In a nutshell, OctoBot empowers crypto-investors to unlock the full potential of
 
 So, you're eager to dive into the exciting world of cryptocurrency trading with OctoBot? Let's take a closer look at how this innovative trading companion works its magic:
 
-**1. ****Strategy Selection:**
+**1. Strategy Selection:**
 
 * Start by choosing your preferred trading strategy. OctoBot offers a range of options:
 * **Copy from OctoBot Cloud:** Access a library of proven strategies that have already done the heavy lifting.
 * **Customization:** Tweak existing strategies to match your unique goals and preferences.
 * **Craft Your Strategy:** For the bold and ambitious, OctoBot Pro allows you to design and fine-tune your very own trading strategy.
 
-**2. ****Efficient Automation:**
+**2. Efficient Automation:**
 
 * Once your strategy is set, OctoBot takes the reins. It tirelessly executes trades on your behalf, following the approach you've chosen.
 
-**3. ****Community Collaboration:**
+**3. Community Collaboration:**
 
 * OctoBot thrives on collective wisdom. The OctoBot Cloud is fueled by strategies contributed by fellow traders. By sharing your winning strategies, you not only help others but also earn rewards in return.
 
-**4****. Rigorous Testing:**
+**4. Rigorous Testing:**
 
 * Curious about how your selected strategy will perform? OctoBot provides the tools for comprehensive testing.
 * Use historical data or engage in live simulations to further refine your strategy.
 
-**5. ****Accessibility for All:**
+**5. Accessibility for All:**
 
 * OctoBot is designed to break down barriers. It welcomes both newcomers and experienced traders.
 * You don't need to be a trading expert to get started; OctoBot is here for traders of all skill levels.
 
-**6. ****Open-Source Reliability:**
+**6. Open-Source Reliability:**
 
 * You can trust OctoBot with peace of mind. It's transparent and open-source, so you can verify its operations and have confidence in its integrity.
 
@@ -129,8 +129,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
-|  ```shell /octobot/user
-```                                            |
+|  ```shell /octobot/user```                                            |
 
 `Access`
 
@@ -145,7 +144,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name:`octobot`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `5001`
 4. **Installation Options:**
@@ -184,11 +183,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** OctoBot  **image we used.**
+**About OctoBot  image we used.**
 
 This is the official OctoBot   image.
 
-**Can I deploy my own media** OctoBot  **with modified configuration ?**
+**Can I deploy my own media OctoBot  with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

@@ -20,7 +20,7 @@ Give your token a suitable name – something that helps you identify its purpos
 
 **5. Access Token as Your Password** In the password field (yes, you read that right), you'll paste the Access Token you copied earlier from Docker Hub. This might feel a bit unconventional, but it's a secure way to establish the connection without revealing your actual password.
 
-**6. Congratulations, You're Integrated!** Once you've entered your D_**ocker Hub username and pasted the Access Token**_, it's time to pat yourself on the back. You've successfully integrated your Docker Hub account with Scale Infinite.
+**6. Congratulations, You're Integrated!** Once you've entered your **Docker Hub username and pasted the Access Token**_, it's time to pat yourself on the back. You've successfully integrated your Docker Hub account with Scale Infinite.
 
 This connection opens up a world of possibilities, allowing you to seamlessly use Docker Hub within the Scale Infinite ecosystem.
 

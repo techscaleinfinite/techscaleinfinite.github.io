@@ -132,7 +132,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `komga`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: 25600
 4. **Installation Options:**

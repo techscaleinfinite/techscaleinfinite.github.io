@@ -111,8 +111,7 @@ If you choose Advanced option:
 | Here use ( use the path after   " :"  )                                                                      |
 |  ```shell volumes:
       - /path/to/data:/config
-      - /path/to/music:/music
-```  |
+      - /path/to/music:/music```  |
 
 `Access`
 
@@ -127,7 +126,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `mstream`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `3000`
 4. **Installation Options:**

@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# 🔗 Useful links
+#  Useful links
 
 ### **Welcome to our website!**&#x20;
 

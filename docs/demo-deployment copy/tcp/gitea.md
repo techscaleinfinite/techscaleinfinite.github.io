@@ -52,11 +52,11 @@ In a nutshell, Gitea is the tech wizard you've been waiting for. It's your all-i
 
 * Store and manage your software packages effortlessly with Gitea's package registry. It's like your own digital toolbox, especially handy for projects with complex dependencies.
 
-**5. ****CI/CD (Continuous Integration/Continuous Deployment):**
+**5. CI/CD (Continuous Integration/Continuous Deployment):**
 
 * Gitea takes the grunt work out of software building and deployment. It automates the process, ensuring that your code flows smoothly from development to production.
 
-**6****. User-Friendly Web Interface:**
+**6. User-Friendly Web Interface:**
 
 * No tech jargon here! Gitea provides a web-based interface that's easy to use. Manage repositories, conduct code reviews, and collaborate with your team using a user-friendly dashboard.
 
@@ -140,7 +140,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: Gitea
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `3000`
 4. **Installation Options:**
@@ -177,11 +177,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** GITEA **image we used.**
+**About GITEA image we used.**
 
 This is the official GITEA  image.
 
-**Can I deploy my own**  GITEA **image with modified configuration ?**
+**Can I deploy my own GITEA image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

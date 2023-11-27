@@ -83,8 +83,7 @@ If you choose Advanced option:
 | Here use ( use the path after   " :"  )                                                                                                                            |
 |  ```shell  - /path/to/appdata/config:/config
       - /path/to/music:/music #optional
-      - /path/to/downloads:/downloads #optional
-```  |
+      - /path/to/downloads:/downloads #optional```  |
 
 `Access`
 
@@ -99,7 +98,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `liadrr`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `8686`
 4. **Installation Options:**
@@ -143,11 +142,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** LIADRR **image we used.**
+**About LIADRR image we used.**
 
 This is the official LIADRR image.
 
-**Can I deploy my own** LIADRR **image with modified configuration ?**
+**Can I deploy my own LIADRR image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

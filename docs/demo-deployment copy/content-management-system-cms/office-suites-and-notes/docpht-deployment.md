@@ -97,8 +97,7 @@ If you choose Advanced option:
 | Here use ( use the path after   " :"  )                                                                                            |
 |  ```shell -v /var/www/app/src/config:/var/www/app/src/config
 -v /var/www/app/data:/var/www/app/data
--v /var/www/app/pages:/var/www/app/pages
-```  |
+-v /var/www/app/pages:/var/www/app/pages```  |
 
 `Access`
 
@@ -113,7 +112,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `docpht`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**
@@ -155,11 +154,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** DocPHT **image we used.**
+**About DocPHT image we used.**
 
 This is the official DocPHT mage.
 
-**Can I deploy my own media** DocPHT **with modified configuration ?**
+**Can I deploy my own media DocPHT with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

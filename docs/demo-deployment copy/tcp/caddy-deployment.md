@@ -38,9 +38,9 @@ Caddy is a web server with a remarkable ensemble of features that make web serve
 
 **6. Speed Demon:** Caddy doesn't believe in slowing down. It's all about speed, using cutting-edge web server technology to handle multiple connections with grace.
 
-**7. ****Plugins and Middleware Galore****:** Caddy's versatility shines through its support for plugins and middleware. Whether it's controlling access, setting up authentication, or implementing advanced logging, Caddy has the tools to boost your web service.
+**7. Plugins and Middleware Galore:** Caddy's versatility shines through its support for plugins and middleware. Whether it's controlling access, setting up authentication, or implementing advanced logging, Caddy has the tools to boost your web service.
 
-**8. Compression On-the-Fly****:** Caddy doesn't just serve content; it optimizes it. It automatically compresses resources like CSS, JavaScript, and HTML on the fly, ensuring your web content arrives in style – fast and efficient.
+**8. Compression On-the-Fly:** Caddy doesn't just serve content; it optimizes it. It automatically compresses resources like CSS, JavaScript, and HTML on the fly, ensuring your web content arrives in style – fast and efficient.
 
 Caddy – where power meets simplicity, and its feature-packed performance takes center stage. Whether you're a tech enthusiast or just someone who wants their website to run smoothly, Caddy makes it happen.
 
@@ -89,8 +89,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                    |
 | Here use ( use the path after   " :"  )                                   |
-|  ```shell /usr/share/caddy/index.html
-```  |
+|  ```shell /usr/share/caddy/index.html```  |
 
 `Access`
 
@@ -105,7 +104,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: caddy
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: http
    * Port: 80
 4. **Installation Options:**

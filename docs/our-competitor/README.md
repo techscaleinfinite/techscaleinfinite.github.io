@@ -1,5 +1,4 @@
 
 
-# 🏃♂ Our Competitor
-
+#  Our Competitor
 

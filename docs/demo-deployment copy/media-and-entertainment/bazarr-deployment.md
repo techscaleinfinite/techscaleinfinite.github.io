@@ -16,7 +16,7 @@ In a world of media complexities, Bazarr is the friend who always has your back.
 
 ### **How It Works:**
 
-**Integration****:** Bazarr is your media companion that plays well with others. It seamlessly integrates with your media management software, like Sonarr for TV shows and Radarr for movies. Think of it as a friendly handshake between old pals who work together seamlessly.
+**Integration:** Bazarr is your media companion that plays well with others. It seamlessly integrates with your media management software, like Sonarr for TV shows and Radarr for movies. Think of it as a friendly handshake between old pals who work together seamlessly.
 
 **Setting Preferences:** Bazarr respects your unique taste. It lets you set your subtitle preferences with meticulous detail. You can specify your language of choice, quality standards, preferred release groups, and more. It's like having your personal subtitle sommelier, ready to serve you the perfect pairing for your media.
 
@@ -26,7 +26,7 @@ In a world of media complexities, Bazarr is the friend who always has your back.
 
 **Download and Matching:** Once Bazarr finds suitable subtitles, it's like a skilled craftsman creating the final piece of a puzzle. It downloads the subtitles and carefully matches them with the corresponding media files in your library, ensuring they fit perfectly.
 
-**Notification****:** Bazarr doesn't just work behind the scenes; it's polite enough to let you know when the job is done. It notifies your media management application, ensuring that the newly acquired subtitles become an integral part of your media metadata.
+**Notification:** Bazarr doesn't just work behind the scenes; it's polite enough to let you know when the job is done. It notifies your media management application, ensuring that the newly acquired subtitles become an integral part of your media metadata.
 
 **Automation:** The best part? It's all automated. You don't need to lift a finger. Bazarr takes care of the entire process, sparing you the hassle of manually searching and downloading subtitles for each and every media file. It's like having a trusty assistant who handles all the little details, leaving you to enjoy your media worry-free.
 
@@ -81,8 +81,7 @@ If you choose Advanced option:
 | Here use ( use the path after   " :"  )                                                                                                               |
 |  ```shell  - /path/to/bazarr/config:/config
       - /path/to/movies:/movies #optional
-      - /path/to/tv:/tv #optional
-```  |
+      - /path/to/tv:/tv #optional```  
 
 `Access`
 
@@ -97,7 +96,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `bazar1`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `6767`
 4. **Installation Options:**

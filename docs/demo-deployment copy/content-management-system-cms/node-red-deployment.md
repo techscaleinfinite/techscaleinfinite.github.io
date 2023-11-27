@@ -7,17 +7,17 @@
 
 Ever felt the itch to connect the digital dots in exciting and unconventional ways? That's precisely where Node-RED steps in – your programming companion for orchestrating a symphony of hardware devices, APIs, and online services.
 
-**1. ****Visual Wiring:** Picture this – a browser-based editor that lets you effortlessly wire together flows. It's like playing with digital Lego blocks. Choose from a vast palette of nodes and bring your imaginative flows to life.
+**1. Visual Wiring:** Picture this – a browser-based editor that lets you effortlessly wire together flows. It's like playing with digital Lego blocks. Choose from a vast palette of nodes and bring your imaginative flows to life.
 
-**2. ****One-Click Deployment:** Turning your ideas into reality couldn't be simpler. With Node-RED, it's just a single click to deploy your meticulously crafted flows onto the runtime. Your creations spring to life instantly.
+**2. One-Click Deployment:** Turning your ideas into reality couldn't be simpler. With Node-RED, it's just a single click to deploy your meticulously crafted flows onto the runtime. Your creations spring to life instantly.
 
-**3. ****Code Craftsmanship:** Feel the urge to dive into some JavaScript wizardry? Node-RED's editor boasts a rich text editor for crafting intricate JavaScript functions. Your code, your rules.
+**3. Code Craftsmanship:** Feel the urge to dive into some JavaScript wizardry? Node-RED's editor boasts a rich text editor for crafting intricate JavaScript functions. Your code, your rules.
 
-**4. ****Library of Wonders:** Ever stumbled upon a genius piece of code? Node-RED lets you save these nuggets in its built-in library. Functions, templates, or entire flows – it's your treasure chest of digital gems.
+**4. Library of Wonders:** Ever stumbled upon a genius piece of code? Node-RED lets you save these nuggets in its built-in library. Functions, templates, or entire flows – it's your treasure chest of digital gems.
 
-**5. ****JSON Magic:** Behind the scenes, Node-RED's wizardry stores your flows as JSON. Import, export, and share your creations effortlessly with JSON's flexibility.
+**5. JSON Magic:** Behind the scenes, Node-RED's wizardry stores your flows as JSON. Import, export, and share your creations effortlessly with JSON's flexibility.
 
-**6****. Flow Showcase:** Feeling generous? Share your finest flows with the world through Node-RED's online flow library. It's your stage to shine and inspire others.
+**6. Flow Showcase:** Feeling generous? Share your finest flows with the world through Node-RED's online flow library. It's your stage to shine and inspire others.
 
 Node-RED isn't just a tool; it's your canvas for digital artistry. Whether you're weaving the threads of IoT devices, orchestrating APIs, or unraveling the mysteries of online services, Node-RED is your trusted ally.
 
@@ -25,17 +25,17 @@ So, seize your browser-based brush and start painting the future of connectivity
 
 ### **How It Works**
 
-**1. ****Visual Wiring**** –** Think of Node-RED as your digital playground. It provides a browser-based editor that's as intuitive as connecting building blocks. You choose nodes from a diverse palette and effortlessly link them together. It's like painting a digital masterpiece, one stroke at a time.
+**1. Visual Wiring–** Think of Node-RED as your digital playground. It provides a browser-based editor that's as intuitive as connecting building blocks. You choose nodes from a diverse palette and effortlessly link them together. It's like painting a digital masterpiece, one stroke at a time.
 
-**2. ****One-Click Deployment**** –** Now, imagine your creation is ready to come to life. With Node-RED, it's not a complex ritual. A single click, and your imaginative flows are deployed onto the runtime. It's like hitting the "Go" button on your digital rollercoaster.
+**2. One-Click Deployment –** Now, imagine your creation is ready to come to life. With Node-RED, it's not a complex ritual. A single click, and your imaginative flows are deployed onto the runtime. It's like hitting the "Go" button on your digital rollercoaster.
 
-**3. ****Code Craftsmanship**** –** For those moments when you're feeling particularly adventurous, Node-RED's editor includes a rich text editor for crafting JavaScript functions. It's your digital playground, where you're the coder and the conductor of this digital orchestra.
+**3. Code Craftsmanship–** For those moments when you're feeling particularly adventurous, Node-RED's editor includes a rich text editor for crafting JavaScript functions. It's your digital playground, where you're the coder and the conductor of this digital orchestra.
 
-**4. ****Library of Wonders**** –** Ever come across a piece of code that's pure genius? Node-RED allows you to preserve these treasures in its built-in library. Whether it's a function, a template, or an entire flow, consider it your chest of digital wonders.
+**4. Library of Wonders –** Ever come across a piece of code that's pure genius? Node-RED allows you to preserve these treasures in its built-in library. Whether it's a function, a template, or an entire flow, consider it your chest of digital wonders.
 
-**5. ****JSON Magic**** –** Behind the scenes, Node-RED stores your creations as JSON. This format offers flexibility galore. Import, export, and share your flows effortlessly. It's like exchanging digital recipes with fellow chefs.
+**5. JSON Magic –** Behind the scenes, Node-RED stores your creations as JSON. This format offers flexibility galore. Import, export, and share your flows effortlessly. It's like exchanging digital recipes with fellow chefs.
 
-**6. ****Flow Showcase**** –** Feeling generous or simply proud of your creation? Node-RED's online flow library is your stage. Share your finest flows with the world. It's where innovation meets inspiration.
+**6. Flow Showcase –** Feeling generous or simply proud of your creation? Node-RED's online flow library is your stage. Share your finest flows with the world. It's where innovation meets inspiration.
 
 Node-RED isn't just a tool; it's your creative canvas for digital artistry. Whether you're orchestrating the symphony of IoT devices, weaving the threads of APIs, or exploring the vast world of online services, Node-RED is your trusty companion.
 
@@ -88,8 +88,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```  |
 | Here use ( use the path after   " :"  )                 |
-|  ```shell -v myNodeREDdata:/data
-```                                   |
+|  ```shell -v myNodeREDdata:/data```                                   |
 
 `Access`
 
@@ -104,7 +103,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `mediawiki`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `1880`
 4. **Installation Options:**

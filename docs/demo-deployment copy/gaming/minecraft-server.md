@@ -8,19 +8,19 @@ ScaleInfinite offers a personalized Minecraft server, exclusively for you and yo
 
 **Key Points:**
 
-1. **Dedicated Gaming Space****:** Enjoy a dedicated server environment exclusively for Minecraft.
+1. **Dedicated Gaming Space:** Enjoy a dedicated server environment exclusively for Minecraft.
 2. **Friends Inclusion:** Invite friends to join and play together on your private server.
-3. **24/7 Availability****:** The server is accessible anytime, allowing gaming day and night.
+3. **24/7 Availability:** The server is accessible anytime, allowing gaming day and night.
 4. **Custom Rules:** Set your own rules, mods, and gameplay options for a unique experience.
-5. **Data Security****:** Your gaming progress and interactions remain secure within your private server.
+5. **Data Security:** Your gaming progress and interactions remain secure within your private server.
 
 ### **Working in Brief:**
 
 1. **Deployment:** Deploy your personalized Minecraft server on ScaleInfinite.
 2. **Access Control:** Invite friends by sharing server IP and port information.
-3. **Gameplay****:** Players connect to the server using the provided details.
+3. **Gameplay:** Players connect to the server using the provided details.
 4. **Shared Adventure:** Collaborate with friends, explore, build, and engage in Minecraft activities.
-5. **Admin Control****:** As the server owner, you manage settings, mods, and player access.
+5. **Admin Control:** As the server owner, you manage settings, mods, and player access.
 
 ScaleInfinite's personal Minecraft server provides an ideal platform for seamless and exclusive gaming sessions with friends. It fosters creativity, collaboration, and hours of enjoyment in a safe and controlled environment.
 
@@ -80,7 +80,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `minecaft1`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `TCP`
    * Port:&#x20;
 4. **Installation Options:**

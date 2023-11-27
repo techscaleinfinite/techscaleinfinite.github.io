@@ -76,8 +76,7 @@ If you choose Advanced option:
 |  ```shell -v /path/on/host/modules:/var/www/html/modules \
 	-v /path/on/host/profiles:/var/www/html/profiles \
 	-v /path/on/host/sites:/var/www/html/sites \
-	-v /path/on/host/themes:/var/www/html/themes \
-```  |
+	-v /path/on/host/themes:/var/www/html/themes \```  |
 
 `Access`
 
@@ -92,7 +91,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `drupal`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

@@ -100,8 +100,7 @@ If you choose Advanced option:
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                                                                            |
 | Here use ( use the path after   " :"  )                                                                                           |
 |  ```shell -v /app/onlyoffice/DocumentServer/logs:/var/log/onlyoffice  \
-    -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data
-```  |
+    -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data```  |
 
 `Access`
 
@@ -116,7 +115,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `ONLYOFFICE`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**
@@ -157,11 +156,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** ONLYOFFICE **image we used.**
+**About ONLYOFFICE image we used.**
 
 This is the official ONLYOFFICE mage.
 
-**Can I deploy my own media** ONLYOFFICE **with modified configuration ?**
+**Can I deploy my own media ONLYOFFICE with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

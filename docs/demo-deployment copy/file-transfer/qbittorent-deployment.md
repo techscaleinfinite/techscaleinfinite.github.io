@@ -70,8 +70,7 @@ If you choose Advanced option:
 | Here use ( use the path after   " :"  )                                                                                         |
 |  ```shell  volumes:
       - /path/to/appdata/config:/config
-      - /path/to/downloads:/downloads
-```  |
+      - /path/to/downloads:/downloads```  |
 
 `Access`
 
@@ -86,7 +85,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: qbittorent
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `8080`
 4. **Installation Options:**

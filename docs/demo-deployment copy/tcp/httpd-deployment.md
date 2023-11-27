@@ -77,8 +77,7 @@ If you choose Advanced option:
 | -------------------------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                         |
 | Here use ( use the path after   " :"  )                                        |
-|  ```shell /usr/local/apache2/htdocs/
-```  |
+|  ```shell /usr/local/apache2/htdocs/```  |
 
 `Access`
 
@@ -93,7 +92,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `httpd`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `80`
 4. **Installation Options:**

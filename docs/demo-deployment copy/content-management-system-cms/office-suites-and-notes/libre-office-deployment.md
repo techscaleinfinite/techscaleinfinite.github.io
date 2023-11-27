@@ -74,8 +74,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```              |
 | Here use ( use the path after   " :"  )                             |
-|  ```shell  -v /path/to/config:/config
-```  |
+|  ```shell  -v /path/to/config:/config```  |
 
 `Access`
 
@@ -90,7 +89,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: libreoffice
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `3000`
 4. **Installation Options:**
@@ -134,11 +133,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** libreoffice **image we used.**
+**About libreoffice image we used.**
 
 This is the official libreoffice  image.
 
-**Can I deploy my own** libreoffice **image with modified configuration ?**
+**Can I deploy my own libreoffice image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

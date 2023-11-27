@@ -13,7 +13,7 @@ Here's a closer look at how ZNC operates:
 2. **IRC Connection:** ZNC acts as an intermediary between the IRC client and the IRC server. When an IRC client connects to the ZNC BNC, it essentially establishes a connection with ZNC, which subsequently connects to the chosen IRC server.
 3. **Detaching Clients:** One of the defining features of ZNC is its ability to detach clients. This means that once an IRC client connects to ZNC, it can gracefully disconnect from the IRC server without losing the ongoing conversations and channel memberships. ZNC keeps these connections active on behalf of the client.
 4. **Channel Membership:** ZNC allows users to selectively detach from specific IRC channels while remaining connected to others. This enables users to focus on conversations of interest while temporarily detaching from channels that may be less relevant.
-5. **Consolidation of Nicknames****:** ZNC offers the valuable capability of consolidating multiple IRC clients from different locations into a single ZNC account. As a result, all these clients can appear under the same nickname on IRC, providing a unified presence to the IRC community.
+5. **Consolidation of Nicknames:** ZNC offers the valuable capability of consolidating multiple IRC clients from different locations into a single ZNC account. As a result, all these clients can appear under the same nickname on IRC, providing a unified presence to the IRC community.
 6. **Simultaneous Connections:** Users can connect multiple IRC clients to their ZNC account concurrently, even from different geographical locations. This simultaneous connection capability ensures that users can stay connected and participate in IRC discussions from various devices or locations.
 7. **Message Buffering:** ZNC's message buffering feature ensures that users do not miss out on conversations or messages that occurred while they were temporarily detached or disconnected. These messages are stored and made available when users reconnect.
 8. **Security and Privacy:** ZNC prioritizes security and privacy. It often supports encryption and secure connections to ensure the confidentiality of communications. Users can also authenticate themselves securely with their ZNC instance.
@@ -72,8 +72,7 @@ If you choose Advanced option:
 | ------------------------------------------------------------------------------------------------------------ |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```                       |
 | Here use ( use the path after   " :"  )                                      |
-|  ```shell -v /path/to/appdata/config:/config \
-```  |
+|  ```shell -v /path/to/appdata/config:/config \```  |
 
 `Access`
 
@@ -88,7 +87,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `ZNC`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `6501`
 4. **Installation Options:**
@@ -129,11 +128,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** ZNC **image we used.**
+**About ZNC image we used.**
 
 This is the official ZNC image.
 
-**Can I deploy my own** ZNC **image with modified configuration ?**
+**Can I deploy my own ZNC image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

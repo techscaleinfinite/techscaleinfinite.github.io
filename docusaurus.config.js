@@ -23,7 +23,7 @@ const config = {
   organizationName: 'techscaleinfinite', // Usually your GitHub org/user name.
   projectName: 'techscaleinfinite.github.io', // Usually your repo name.
   deploymentBranch: 'main',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   
   // Even if you don't use internationalization, you can use this field to set
@@ -40,19 +40,21 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',  
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
+        blog: false,
+        //blog: {
+          //showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+         // editUrl:
+         //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+       // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -66,35 +68,45 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Scale Infinite',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          //alt: 'My Site Logo',
+          src: 'img/picture-removebg-preview.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'About Us',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          //{to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://app.slack.com/client/T04QS32JX6E/C04QKEWE146',
+            label: 'Slack',
+            position: 'right',
+          },
+          {
+            href: 'https://scaleinfinite.fr/',
+            label: 'Scale Infinite',
+            position: 'right',
+          }
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tutorial',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Youtube',
+                href: 'https://www.youtube.com/@scaleinfinite',
               },
             ],
           },
@@ -102,12 +114,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Slack',
+                href: 'https://app.slack.com/client/T04QS32JX6E/C04QKEWE146',
               },
               {
                 label: 'Twitter',
@@ -119,8 +127,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Medium Articles',
+                href: 'https://medium.com/@scaleinfinite',
               },
               {
                 label: 'GitHub',

@@ -117,8 +117,7 @@ If you choose Advanced option:
 | -------------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```             |
 | Here use ( use the path after   " :"  )                            |
-|  ```shell -v mininote-data:/app/data
-```  |
+|  ```shell -v mininote-data:/app/data```  |
 
 `Access`
 
@@ -133,7 +132,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `mininote`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: `3000`
 4. **Installation Options:**

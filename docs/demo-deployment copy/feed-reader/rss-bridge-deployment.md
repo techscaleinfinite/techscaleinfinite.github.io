@@ -97,8 +97,7 @@ If you choose Advanced option:
 | --------------------------------------------------------------------------------------------- |
 | ```shellWORKDIR for the application.``` ```shellEg:usr/src/yourAPP```        |
 | Here use ( use the path after   " :"  )                       |
-|  ```shell /var/www/rss-bridge
-```  |
+|  ```shell /var/www/rss-bridge```  |
 
 `Access`
 
@@ -113,7 +112,7 @@ If you choose Advanced option:
 2. **Application Details:**
    * Application Name: `rssbridge`&#x20;
    * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration****:**
+3. **Protocol Configuration:**
    * Protocol: `HTTP`
    * Port: 80
 4. **Installation Options:**

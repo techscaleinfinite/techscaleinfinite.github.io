@@ -12,8 +12,8 @@ Here's why Vercel is the talk of the town:
 * _**Speedy Delivery:**_ _Vercel serves your website to users in the blink of an eye. Your pages load super fast, keeping your visitors happy._
 * _**Worldwide Stages:** Your website isn't limited to one location. Vercel has stages all around the globe. So, no matter where your audience is, they get a smooth experience._
 * _**Security Guard:**_ _Vercel takes security seriously. It protects your website like a fortress, keeping hackers at bay._
-* _**Z****ero Downtime****:** Just like the show must go on, your website stays online 24/7. Even when updates happen, there's no intermission._
-* _**T****eam Collaboration:** If you have a crew working on your website, Vercel lets everyone collaborate seamlessly._
+* _**Zero Downtime****:** Just like the show must go on, your website stays online 24/7. Even when updates happen, there's no intermission._
+* _**Team Collaboration:** If you have a crew working on your website, Vercel lets everyone collaborate seamlessly._
 * _**No Drama Updates:** Updating your website is as simple as changing costumes. Vercel handles it without any fuss._
 
 **How Does It Work?**
