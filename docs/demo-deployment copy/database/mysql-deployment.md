@@ -143,7 +143,16 @@ When deploying a MySQL application, you can't directly connect to it via a web b
 
 ### Visual Snapshot
 
+![Alt Text](/img/13w.jpg)
+![Alt Text](/img/ew22.jpg)
 
+![Alt Text](/img/dwe3.jpg)
+![Alt Text](/img/fwd2.jpg)
+![Alt Text](/img/we2.jpg)
+![Alt Text](/img/dw2.jpg)
+
+![Alt Text](/img/gfw3.jpg)
+![Alt Text](/img/ed3.jpg)
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.

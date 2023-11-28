@@ -122,7 +122,10 @@ By following these steps, you can effortlessly deploy an NGINX instance with you
 ### Visual SnapShots
 
 
-
+![Alt Text](/img/zz3.jpg)
+![Alt Text](/img/ddq.jpg)
+![Alt Text](/img/rr5.jpg)
+![Alt Text](/img/cccf.jpg)
 
 
 ### FAQ

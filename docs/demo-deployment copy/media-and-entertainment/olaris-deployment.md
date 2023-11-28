@@ -2,66 +2,9 @@
 
 # 📺 Olaris Deployment
 
-### What's is olaris?
+# Olaris: Your Creative Hub for Media Magic 🎨🔮
 
-Olaris is like a creative hub for media enthusiasts, a place where the community comes together to manage and transform their media treasures. At its heart lies the olaris-react project, the main interface that's here to streamline your media management experience. And, guess what? There are plans in the pipeline to support even more clients and applications down the road.
-
-**olari-react:** The Heart of the Experience
-
-At the core of Olaris is the olaris-react project, your trusty companion in the realm of media management. This interface is your ticket to a smoother and more enjoyable experience when handling your media. And guess what? We're cooking up exciting plans to support even more clients and applications in the near future, so stay tuned!
-
-**The Open-Source Art Studio**
-
-Olaris is not just a piece of software; it's a collective labor of love, driven by a vibrant community that celebrates the open-source spirit. It's like a bustling art studio, where everyone's brushes and talents converge to create something truly beautiful.
-
-**Your Digital Curator**
-
-Picture Olaris as your very own digital curator, tirelessly working to organize, optimize, and enhance your media collection. It's like having a personal archivist who ensures that your media is always in its prime.
-
-**Media Format Sorcery**
-
-Need to work magic on media formats? Olaris has got you covered. It's like a wizard casting spells, effortlessly transforming your media into the perfect format for any occasion or device.
-
-**olari-react: Your Gateway**
-
-Leading the charge is olari-react, your gateway to a world of media management possibilities. Think of it as your cozy library, where you can effortlessly browse through your media treasures and pick out exactly what you need.
-
-**A Symphony of Community**
-
-But here's the best part: Olaris isn't a solo act. It's a collaborative masterpiece, forged by a passionate community that understands the immense power of media. It's like a jam session where everyone's talents harmonize to create something truly extraordinary.
-
-So, envision Olaris as your creative studio, your digital playground, and your sanctuary for all things media. It's where you and the community can turn your wildest media management dreams into reality. Welcome to the future of media management—welcome to Olaris.
-
-### **How It Works:**
-
-Are you curious about the inner workings of Olaris, your digital haven for media management? Let's dive in and unveil the magic behind the scenes.
-
-**Media Management Made Easy**
-
-At the heart of Olaris is a user-friendly web-based interface, such as the ever-capable olaris-react. Think of it as your personal media assistant, tirelessly working to streamline your media management experience. Upload, organize, and manage all your media files with ease, whether they're captivating videos, soul-soothing audio tracks, or cherished images. It's your digital command center for all things media organization.
-
-**Transcoding: The Media Alchemy**
-
-Olaris is your go-to media magician, equipped with a transcoding engine that performs media alchemy. Imagine turning a paperback into an e-book—it's that simple. Specify all the details you desire, from output formats and codecs to bitrates and resolutions. Olaris is like having a high-tech studio where you can fine-tune your media to perfection, making it ready for any occasion or device.
-
-**The Powerhouse Behind the Curtain**
-
-But Olaris isn't all style and no substance. It operates on a robust server that acts as the wizard working behind the scenes. This server takes on the heavy lifting, handling all the grunt work of actual transcoding tasks. It's akin to having a dedicated production team backstage, ensuring your media transformations happen seamlessly and without a hitch.
-
-With Olaris, managing, transforming, and enjoying your media becomes a seamless and delightful experience. It's like having a trusted partner that not only understands your media needs but also possesses the skills and resources to bring them to life. Your media world transforms into a realm of order, creativity, and limitless possibilities.
-
-### Steps And Procedure
-
-&#x20; **This deployment utilizes the official oalris Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the olaristv/olaris-server application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the olaris application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  olaris webpage and explore its content.
+**Olaris** is a vibrant community-driven space where media enthusiasts unite to manage and transform their digital treasures. At its core is the **olaris-react** project, an intuitive interface that enhances your media management experience. Olaris is not just software; it's an open-source art studio, where a passionate community collaborates to create something beautiful. Acting as your digital curator, Olaris organizes and optimizes your media collection, offering a personalized touch. With transcoding capabilities, Olaris works its magic, seamlessly transforming media formats for any occasion or device. Olaris, with its olari-react gateway, welcomes you to a future of collaborative media management, where your wildest dreams become reality.
 
 ### Installation
 
@@ -103,6 +46,22 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+
+### Steps And Procedure
+
+&#x20; **This deployment utilizes the official oalris Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the olaristv/olaris-server application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the olaris application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the  olaris webpage and explore its content.
+
+
+
 **Step-by-Step Guide to olaris Deployment**
 
 1. **Docker Image Selection:**
@@ -138,6 +97,11 @@ By following these steps, you can effortlessly deploy an HOMER instance with you
 
 ### Visual Snapshots
 
+![Alt Text](/img/bb.jpg)
+![Alt Text](/img/bbf.jpg)
+
+![Alt Text](/img/jjt.jpg)
+![Alt Text](/img/hjhj.jpg)
 
 ### Youtube Tutorial&#x20;
 

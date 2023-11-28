@@ -2,44 +2,9 @@
 
 # 💧 Drupal deployment
 
-### What's Drupal?
+# Drupal: Your Friendly Website Companion
 
-Drupal is like a helpful friend when it comes to building and managing websites. It's an open-source tool, which means it's free for everyone, and it's powered by a flexible language called PHP, commonly used for creating websites.
-
-The cool thing about Drupal is its modular architecture. It's like having building blocks that you can mix and match to create a website that suits your needs. You can even change how your website looks and works using themes and modules. It's like having a closet full of different outfits for your site.
-
-What's really amazing is the Drupal community. Think of it as a bunch of people who love helping others. They work together to make Drupal better all the time, so you can keep your website fresh and exciting.
-
-So, in a nutshell, Drupal is more than just a website tool. It's a friendly and powerful platform that lets you create fantastic websites with the support of a big, helpful community.
-
-### **Working in Brief**
-
-Content Creation Made Easy: Drupal understands that creating content should be a breeze. It provides a simple and user-friendly interface so you can create and structure content without breaking a sweat.
-
-Building Blocks for Your Dream Website: Imagine Drupal's modular architecture like Lego pieces. You can add specific features and functionalities to your website using these modules. They're like building blocks, offering flexibility and adaptability.
-
-Dress Your Website the Way You Like: With Drupal, you have plenty of choices to make your website look just the way you want it to. It's like picking an outfit that matches your style. Themes can be applied to give your site a unique and personalized appearance.
-
-The Magic of PHP: At the heart of Drupal is PHP, a dynamic scripting language. It's like the engine that powers your website, processing requests, and making your content appear in real-time. This means your site can stay updated and interactive.
-
-A[ Community That Has Your Back:](#user-content-fn-1)[^1] Drupal has an awesome community of developers, contributors, and users. They work together to keep Drupal in great shape. They solve problems, introduce cool new stuff, and make sure the platform gets better all the time.
-
-In a nutshell, Drupal is a fantastic choice for managing web content. It's flexible, scalable, and has an amazing community to support you.
-
-### &#x20;Steps And Procedure
-
-**This deployment utilizes the official drupal Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the drupal application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the drupal application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  drupal webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the drupal application and gained access to its features through a seamless and user-friendly process.
+Drupal is your open-source, PHP-powered friend for building and managing websites. With a modular architecture, it's like having building blocks to create a tailored website. Themes and modules allow easy customization, giving your site a unique look and functionality. The Drupal community, a supportive group of developers and users, constantly enhances the platform. Content creation is a breeze with Drupal's user-friendly interface, and its PHP engine ensures dynamic and real-time website interactions. In summary, Drupal is more than a website tool; it's a powerful platform with a friendly community, making web content management flexible and enjoyable.
 
 ### Installation
 
@@ -84,6 +49,23 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### &#x20;Steps And Procedure
+
+**This deployment utilizes the official drupal Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the drupal application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the drupal application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the  drupal webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the drupal application and gained access to its features through a seamless and user-friendly process.
+
+
+
 **Step-by-Step Guide to Drupal Deployment**
 
 1. **Docker Image Selection:**
@@ -126,6 +108,11 @@ By following these steps, you can effortlessly deploy an drupal instance with yo
 
 ### Visual Snapshots
 
+
+![Alt Text](/img/g3.jpg)
+![Alt Text](/img/t5.jpg)
+![Alt Text](/img/d343.jpg)
+![Alt Text](/img/gg.jpg)
 
 
 ### Youtube Tutorial&#x20;

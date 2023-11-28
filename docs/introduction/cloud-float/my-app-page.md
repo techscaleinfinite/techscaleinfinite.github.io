@@ -19,7 +19,7 @@ By following these steps, you'll effortlessly explore and enjoy your deployed ap
 
 \
 
-
+![Alt Text](/img/kk.jpg)
 
 <details>
 

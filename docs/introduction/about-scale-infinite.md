@@ -17,7 +17,9 @@
 
 ### Visual Snapshot
 
-
+![Alt Text](/img/oo.jpg)
+![Alt Text](/img/rrr.png)
+![Alt Text](/img/ook.png)
 
 ## Demo for Deploying applications on scale infinite platform
 

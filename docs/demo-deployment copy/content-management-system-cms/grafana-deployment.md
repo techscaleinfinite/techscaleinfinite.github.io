@@ -2,42 +2,13 @@
 
 # 💻 Grafana deployment
 
-### What's Grafana?
+# Grafana: Your Data's Picasso and Detective
 
-**Grafana Unleashed: Your Data's Best Friend**
+**Grafana** is the ultimate data analytics and visualization tool, transforming raw numbers into vibrant charts and dashboards. Compatible with various platforms, including PC, Mac, and Raspberry Pi, Grafana is open source, empowering users to customize and share their data playground. Acting as a data detective, it connects seamlessly to diverse data sources, creating a centralized hub for insights.
 
-Meet Grafana, the Swiss Army knife of data analytics and visualization. It doesn't matter if you're a tech genius or just someone who loves numbers; Grafana is here to make data your best friend. Let's dive into what makes Grafana awesome:
+Grafana's visual prowess turns data into a visual masterpiece, offering real-time updates and dynamic charts. With an alert system, it keeps you informed about data anomalies, serving as your personal data watchdog. Whether you're a seasoned data professional or a newcomer, Grafana is your gateway to turning data chaos into meaningful insights. It's your data, your rules, and your way to visualize and understand numbers like never before! 📊🕵️‍♂️✨
 
-**Data Power Without Borders:** Grafana is your buddy across the board. Whether you're rocking a PC, Mac, or even a Raspberry Pi, it's got your back. No need to worry about compatibility—Grafana plays nice with everyone.
 
-**Where Open Meets Awesome:** Here's the cool part—it's open source. That means it's free, and everybody's invited to the party. You can tweak it, share it, and make it even cooler. Grafana is like an open playground where you're the boss.
-
-**Visualize Like a Pro:** Grafana is the Picasso of data. It takes your numbers and turns them into stunning charts and dashboards. No more squinting at endless rows of data; now you can see your trends and patterns in living color.
-
-**Data From Everywhere:** Grafana is a data detective. It connects to all your data sources, whether it's a database, an app, or something in the cloud. It's like having a data superhero that brings all your info under one roof.
-
-**Stay in the Know:** Grafana doesn't let you snooze. It's got this alert thingy that tells you when something's up. You set the rules, and when your data misbehaves, Grafana gives you a nudge. It's like having a personal data watchdog.
-
-To sum it up, Grafana is the secret sauce to turn your data chaos into insights and high-fives. Whether you're a data pro or just dipping your toes, it's your ticket to understanding numbers like never before. Your data, your rules, your way!
-
-### **Working in Brief:**
-
-\
-**Grafana: Your Data's Best Friend in Action**
-
-Now that you've made friends with Grafana, let's see this buddy in action. Here's how it does its magic:
-
-**1. The Data Detective:** Grafana can connect with just about any data source. Imagine it as the Sherlock Holmes of data, searching databases, cloud services, and APIs to gather clues (or in this case, data).
-
-**2. Creating Dashboards:** Grafana gives you the power to be the boss. You start by making your own dashboard. Think of it as a personal control center where you decide what data you want and how you want to see it.
-
-**3. The Visual Artist:** Grafana is a true artist. It takes your data and transforms it into beautiful charts and graphs that respond to your every move. You click, it updates - real-time magic!
-
-**4. Stay in the Know:** It's like having a data babysitter. You tell Grafana what's important, and it keeps an eye on your data. If something goes wonky, it sends you a message. No more surprises.
-
-**5. Real-Time Wizard:** Grafana's visualizations are like a crystal ball for your data. You can see trends and changes as they happen. It's like having a data fortune-teller right at your fingertips.
-
-In a nutshell, Grafana is your data sidekick, making the world of numbers and charts feel like a walk in the park. It's all about connecting, visualizing, and keeping you informed. Plus, it's open to all and keeps getting better with its cool community.
 
 ### Steps And Procedure&#x20;
 
@@ -128,7 +99,10 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an GRAFANA instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
-
+![Alt Text](/img/nn6.jpg)
+![Alt Text](/img/hbh7.jpg)
+![Alt Text](/img/jjj6.jpg)
+![Alt Text](/img/ght6.jpg)
 
 ### FAQ
 

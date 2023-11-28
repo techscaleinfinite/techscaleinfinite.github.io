@@ -8,11 +8,16 @@ Integrating your Docker Hub account with Scale Infinite is as smooth as a breeze
 
 **1. Docker Hub Account Creation** First things first, if you don't already have a Docker Hub account, head over to Docker Hub's website. It's a crucial prerequisite for this integration.
 
+![Alt Text](/img/d1.jpg)
 
 **2. Generating an Access Token** Once you're logged into Docker Hub, navigate to your profile settings. Look for the "Security" section – that's where the magic happens. Here, you'll find an option to create a new Access Token. This token acts as the bridge between Docker Hub and Scale Infinite.
 
 
 Give your token a suitable name – something that helps you identify its purpose. When it comes to permissions, feel free to grant read, write, and delete permissions. After all, it's about versatility.
+![Alt Text](/img/d2.jpg)
+![Alt Text](/img/d4.jpg)
+![Alt Text](/img/d5.jpg)
+
 
 **3. Copy the Access Token** Once you've generated your Access Token, don't just stare at it in awe – copy it to your clipboard. It's your golden ticket to Docker Hub, so make sure you store it in a safe and easily accessible place.
 

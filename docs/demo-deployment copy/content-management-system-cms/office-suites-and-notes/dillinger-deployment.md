@@ -2,57 +2,9 @@
 
 # 📓 Dillinger Deployment
 
-### What's Dillinger?
+# Dillinger: The Markdown Maestro
 
-**Dillinger: The Markdown Maestro**
-
-Introducing Dillinger: Your Markdown Sidekick Meet Dillinger, the HTML5 Markdown editor that's changing the game. Here's what makes it a standout tool for all kinds of users:
-
-1. Markdown Made Easy: Dillinger is your doorway to the world of Markdown, a simple markup language that's all about clear and clean content creation. It's the go-to choice for writers who value their words, not the distractions.
-2. On-the-Go Guru: Dillinger doesn't keep you tied to your desk. It's mobile-friendly, so you can write and brainstorm from anywhere, whether you're on a busy train or sipping coffee at a cafe.
-3. Cloud Convenience: Say hello to the cloud with Dillinger. Your documents are safely stored online, ready for you whenever and wherever you need them. No more worries about lost files or computer crashes.
-4. Offline Champ: Dillinger understands that the internet isn't always there for you. That's why it works even offline. You can keep working on your documents, even in internet dead zones.
-5. Tech-Powered: Dillinger is more than a simple text editor. It's a dynamic web application, thanks to AngularJS. This means you get a seamless editing experience with the latest web technology.
-6. Distraction-Free: Dillinger's clean and simple interface keeps distractions away. When you're in your creative zone, the last thing you want is a cluttered screen. Concentrate on your words, and Dillinger will handle the rest.
-7. Markdown to HTML Magic: Dillinger doesn't stop at Markdown. It effortlessly transforms your Markdown into HTML, opening up countless possibilities for publishing and sharing your content.
-8. Live Preview: Watch your changes come to life in real-time. Dillinger shows you a live preview of your Markdown as you type, so you can fine-tune your content with precision.
-9. Github Harmony: If you're a developer or open-source fan, you'll love Dillinger's Github integration. Easily edit and preview your Github-hosted Markdown files.
-10. Open Source Soul: Just like Markdown itself, Dillinger embraces the open-source spirit. It's a project driven by the community, constantly growing to meet your needs.
-
-So, whether you're a writer, a coder, or a creative mind, Dillinger has got your back. It's a Markdown playground that lets you focus on what really matters—your ideas. Embrace the simplicity, harness the power, and let Dillinger be your Markdown companion.
-
-
-
-### **How It Works:**
-
-**Unlock the Magic of Dillinger's Features**
-
-Dillinger: Where Markdown Meets Magic Dillinger isn't your ordinary Markdown editor; it's a feature-packed wizard that makes your writing journey enchanting and effortless:
-
-1. HTML to Markdown Magic: Witness the wonder of effortless HTML to Markdown conversion. Just bring an HTML file into Dillinger, and see it transform like a digital chameleon.
-2. Dropbox Image Sorcery: For those who work magic with images, Dillinger allows you to easily drag and drop images from your linked Dropbox account. Your visuals become an integral part of your Markdown masterpiece.
-3. Cosmic File Compatibility: Dillinger connects to the cosmic realms of file hosting. Import and save your documents from GitHub, Dropbox, Google Drive, and OneDrive. The universe of your content is at your fingertips.
-4. Drag and Drop Wizardry: Embrace the power of drag and drop with Dillinger. It's as simple as it sounds—just drag and drop your Markdown and HTML files into Dillinger, and let the magic unfold.
-5. Export Enchantment: Dillinger believes in the freedom of choice. Export your documents in various formats: Markdown, HTML, and even PDF. Whether you're sharing your thoughts or preparing a presentation, Dillinger has the spell you need.
-
-So, if you're ready to embark on a writing journey that's both enchanting and efficient, Dillinger is your trusty companion. Watch your ideas come to life, effortlessly convert HTML, and harness the power of seamless image integration. With Dillinger, you're not just writing; you're conjuring words like a true wizard.
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official dillinger  Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [linuxserver/dillinger](https://hub.docker.com/r/linuxserver/dillinger) application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the Dillinger application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the  Dillinger webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the Dillinger application and gained access to its features through a seamless and user-friendly process.
-
-
+Meet Dillinger, the HTML5 Markdown editor that combines simplicity with powerful features. Whether you're a writer, coder, or creative mind, Dillinger has you covered. With a mobile-friendly design and cloud storage, it offers on-the-go convenience and ensures your documents are always accessible. Dillinger's clean interface, offline capability, and live preview feature provide a distraction-free writing experience. It goes beyond basic editing with AngularJS technology, Github integration, and the ability to effortlessly convert Markdown to HTML. Embrace the magic of Dillinger as your Markdown companion for an enchanting and efficient writing journey.
 
 ### Installation
 
@@ -93,6 +45,24 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+### Steps And Procedure
+
+*   **This deployment utilizes the official dillinger  Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [linuxserver/dillinger](https://hub.docker.com/r/linuxserver/dillinger) application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the Dillinger application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the  Dillinger webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the Dillinger application and gained access to its features through a seamless and user-friendly process.
+
+
+
+
 
 **Step-by-Step Guide to Dillyinger Deployment**
 
@@ -132,6 +102,10 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an Dillinger instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+![Alt Text](/img/w1.jpg)
+![Alt Text](/img/w2.jpg)
+![Alt Text](/img/w3.jpg)
+![Alt Text](/img/w4.jpg)
 
 
 ### Youtube Tutorial&#x20;

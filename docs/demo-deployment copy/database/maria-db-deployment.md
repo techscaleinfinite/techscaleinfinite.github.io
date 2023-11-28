@@ -181,7 +181,11 @@ By following these steps, you can effortlessly deploy an maria db instance with 
 Remember, HeidiSQL is your friendly librarian in the world of databases. With these steps, you've successfully connected to your MariaDB database, and you're ready to explore and manage your data.
 
 ### Visual Snapshots
+![Alt Text](/img/dde.jpg)
+![Alt Text](/img/r3w.jpg)
 
+![Alt Text](/img/ddf3.jpg)
+![Alt Text](/img/dfe.jpg)
 
 ### Youtube Tutorial&#x20;
 

@@ -2,45 +2,9 @@
 
 # 📜 Libre Office Deployment
 
-### What's  libre office?
+# LibreOffice: Your Versatile Digital Office Suite
 
-LibreOffice is like that versatile Swiss Army knife of office software, but in the digital realm. It's a suite of applications that roll up their sleeves and handle your document, spreadsheet, and presentation needs with finesse, all while keeping your wallet happy because it's open-source and free.
-
-Picture this: You've got a report to write, a spreadsheet to crunch numbers in, and a presentation to woo your audience. Instead of juggling different tools, LibreOffice steps in as your trusty sidekick, offering Writer for your text, Calc for those complex calculations, and Impress to make your ideas pop.
-
-It's not just about practicality; it's about freedom. LibreOffice doesn't tie you down with licenses or subscriptions; it's an open book, allowing you to explore, modify, and share it with your fellow digital adventurers.
-
-And here's the fun part: It's a bit like that magical wardrobe from Narnia. You open it up, and suddenly, you're in a world of creativity and productivity, with tools that feel familiar, user-friendly, and ready to help you conquer that next document, spreadsheet, or presentation challenge.
-
-### **How It Works:**
-
-Alright, let's dive into the enchanting world of LibreOffice and see how this versatile suite of office applications works its magic.
-
-**Imagine you've got a document to create**. You fire up LibreOffice Writer, which is like your trusty word processor. You type away, add some stylish formatting, insert images, and create a masterpiece. Behind the scenes, LibreOffice uses its open-source wizardry to handle the text, layout, and even spell-checking, making your words look as sharp as a well-tailored suit.
-
-**Now, let's talk numbers.** You need to crunch some data for that important project. LibreOffice Calc steps in as your spreadsheet wizard. You enter your numbers, create formulas, and watch it perform mathematical feats. It's like having a mathematical butler who's always on point.
-
-**But what about that upcoming presentation?** LibreOffice Impress is your ticket to creating captivating slides. You add text, images, charts, and transitions. When you hit "play," it's showtime! Your audience will be nodding in agreement, and they won't even realize it's your secret weapon.
-
-**The beauty of LibreOffice lies in its open-source nature.** It's not some locked-up, proprietary software; it's a collaborative playground. Developers from around the globe have chipped in to make it user-friendly, flexible, and free. It's a bit like an open book; you can read, write, and share your own stories.
-
-So, in a nutshell, LibreOffice works by giving you the tools you need to create, calculate, and captivate without the hassle of expensive licenses. It's the friendly neighborhood superhero of office software, making your digital tasks a breeze.\
-
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official LIBRE OFFICE Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the linuxserver/libreoffice application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the libreoffice application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the libreoffice webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed  libreoffice application and gained access to its features through a seamless and user-friendly process.
+LibreOffice is the Swiss Army knife of office software, offering a suite of applications for document writing, spreadsheet calculations, and dynamic presentations—all while being open-source and free. As your trusty sidekick, LibreOffice includes Writer for text, Calc for spreadsheets, and Impress for presentations. It's not just about practicality; it's about freedom, with an open-book philosophy that allows exploration, modification, and sharing without constraints. LibreOffice's magic lies in its user-friendly applications, making document creation, data crunching, and presentation design seamless and accessible. In essence, it's the superhero of office software, empowering users without the burden of costly licenses.
 
 ### Installation
 
@@ -82,6 +46,23 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+
+### Steps And Procedure
+
+*   **This deployment utilizes the official LIBRE OFFICE Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the linuxserver/libreoffice application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the libreoffice application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the libreoffice webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed  libreoffice application and gained access to its features through a seamless and user-friendly process.
+
+
 **Step-by-Step Guide to LIBREOFFICE Deployment**
 
 1. **Docker Image Selection:**
@@ -122,6 +103,11 @@ By following these steps, you can effortlessly deploy an  libreoffice instance w
 ### Visual Snapshots
 
 
+![Alt Text](/img/ee36.jpg)
+![Alt Text](/img/ee24.jpg)
+![Alt Text](/img/ww3.jpg)
+![Alt Text](/img/gggy.jpg)
+![Alt Text](/img/ggt.jpg)
 
 
 

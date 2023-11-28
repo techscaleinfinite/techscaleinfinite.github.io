@@ -11,7 +11,7 @@
 **2. Total Memory Usage**: Memory is the lifeblood of smooth operations. Keep tabs on how much memory your app is consuming. It's like ensuring your app never forgets.
 
 
-
+![Alt Text](/img/f1.jpg)
 
 **3. Total I/O Usage**: Input and output – the essence of interaction. See how your app is handling data movement. It's like monitoring your app's conversation skills.
 
@@ -19,12 +19,12 @@
 
 **5. Visual Delights**: These metrics aren't just numbers; they're brought to life with rich visual graphs. It's like turning raw data into a captivating story.
 
-
+![Alt Text](/img/f2.jpg)
 
 
 **6. Individual Insights**: But wait, there's more! You can drill down to individual pages or components to get granular insights. It's like having a magnifying glass to inspect every nook and cranny of your app.
 
-
+![Alt Text](/img/j23.jpg)
 
 **7. Real-Time Knowledge**: In the world of app management, knowledge is power. With real-time data at your fingertips, you can make informed decisions, spot trends, and fine-tune your app's performance.
 

@@ -2,52 +2,9 @@
 
 # 🎶 Lidarr Deployment
 
-### What's Lidarr?
+# Lidarr: Your Virtuoso Music Curator
 
-Picture this: you're a music enthusiast, and your collection is the crown jewel of your digital world. Now, imagine having a trusty sidekick named Lidarr, who's like your personal music curator with a dash of tech brilliance.
-
-**Lidarr** isn't your ordinary music manager; it's a virtuoso in the world of Usenet and BitTorrent. It's got a keen eye on the horizon, constantly scanning multiple RSS feeds to hunt down new tracks from your favorite artists. And when it spots a gem, Lidarr doesn't just fetch it; it handles it with style.
-
-Once Lidarr gets its hands on those musical treasures, it doesn't just toss them into the collection. No, no. It's got class. It sorts and renames them, giving your collection that polished, organized look. It's like having a personal butler for your music.
-
-But Lidarr's talents don't stop there. It's not content with just any quality. When a better version of a track pops up on the scene, Lidarr is on it like a hawk. It'll automatically replace those older files with the shiny, new, high-quality ones, keeping your collection top-notch.
-
-Think of Lidarr as your music-savvy friend who always knows where to find the latest tunes and how to keep your collection in tip-top shape. So, whether you're a music connoisseur or just a casual listener, Lidarr is your backstage pass to music management nirvana.
-
-### **How It Works:**
-
-Certainly, let's unravel the magic behind **Lidarr** in a way that's as unique as its abilities!
-
-**Lidarr** is like your personal DJ on a mission to upgrade your music game. It works its charm by tapping into the world of Usenet and BitTorrent, which is where all the musical secrets are hidden.
-
-🎵 **Step 1: The Music Radar** 🎵
-
-Lidarr has an impeccable taste in music; it knows your favorite artists like the back of its digital hand. It scours the vast landscape of RSS feeds, keeping a vigilant watch for any new tracks these maestros drop. When it spots a musical treasure, it's like Lidarr's version of a musical jackpot!
-
-🎶 **Step 2: The Organizing Virtuoso** 🎶
-
-But Lidarr isn't just about collecting music; it's all about presentation. It doesn't just toss those tracks into your collection willy-nilly. Oh no, that's not its style. Lidarr takes those musical gems and gives them a proper place in your library. It's like having a personal butler for your tunes, making sure everything is neat, tidy, and easy to find.
-
-🌟 **Step 3: The Quality Maestro** 🌟
-
-Lidarr is all about quality, darlings. When it stumbles upon a better version of a track you already have, it's on it like a star on the Hollywood Walk of Fame. It'll automatically replace those older files with the high-quality, pristine ones, making sure your collection always sounds like a million bucks.
-
-So, think of Lidarr as your music-savvy best friend, always in the know about the latest hits and dedicated to keeping your music collection in top-notch shape. With Lidarr, your music library isn't just a bunch of files; it's a symphony of organization and excellence!
-
-### Steps And Procedure
-
-**This deployment utilizes the official LIDARR Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the linuxserver/lidarr application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the Lidarr application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the Lidarr webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the Lidarr application and gained access to its features through a seamless and user-friendly process.
+**Lidarr** is the music enthusiast's dream assistant, a savvy sidekick and tech virtuoso in the realm of Usenet and BitTorrent. Constantly scanning RSS feeds, it hunts down new tracks from your favorite artists with precision. Beyond mere collection, Lidarr elevates your music library by sorting, renaming, and organizing tracks for a polished look, akin to having a personal butler for your tunes. This virtuoso doesn't settle for any quality; it automatically upgrades tracks with better versions, ensuring your collection remains top-notch. Lidarr is your backstage pass to music management nirvana, delivering an organized and high-quality symphony to your digital world. 🎵🔍🌟
 
 ### Installation
 
@@ -91,6 +48,23 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+
+### Steps And Procedure
+
+**This deployment utilizes the official LIDARR Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the linuxserver/lidarr application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the Lidarr application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the Lidarr webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the Lidarr application and gained access to its features through a seamless and user-friendly process.
+
+
 **Step-by-Step Guide to lidar Deployment**
 
 1. **Docker Image Selection:**
@@ -132,7 +106,11 @@ By following these steps, you can effortlessly deploy an LIADRR instance with yo
 
 ### Visual Snapshots
 
+![Alt Text](/img/wwr.jpg)
+![Alt Text](/img/eeg.jpg)
 
+![Alt Text](/img/dfdd.jpg)
+!
 
 ### Youtube Tutorial&#x20;
 

@@ -90,7 +90,9 @@ If you're experiencing connection issues with FileZilla, particularly when using
 
 ### Visual Snapshots
 
-
+![Alt Text](/img/op.jpg)
+![Alt Text](/img/o7.jpg)
+![Alt Text](/img/iii.jpg)
 <details>
 
 <summary>Category</summary>

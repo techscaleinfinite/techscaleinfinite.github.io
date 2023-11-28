@@ -136,7 +136,10 @@ By following these steps, you can effortlessly deploy an XAMPP instance with you
 
 ### Visual Snapshots
 
+![Alt Text](/img/ww23.jpg)
+![Alt Text](/img/rr4.jpg)
 
+![Alt Text](/img/rrr2.jpg)
 
 
 ### Youtube Tutorial&#x20;

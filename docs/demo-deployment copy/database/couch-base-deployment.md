@@ -144,6 +144,18 @@ By following these steps, you can effortlessly deploy an mongodb instance with y
 
 ### Visual Snapshots
 
+![Alt Text](/img/1111.jpg)
+![Alt Text](/img/2121.jpg)
+![Alt Text](/img/23233.jpg)
+![Alt Text](/img/23231.jpg)
+
+![Alt Text](/img/44.jpg)
+![Alt Text](/img/gg4.jpg)
+![Alt Text](/img/d221.jpg)
+![Alt Text](/img/dd211.jpg)
+
+![Alt Text](/img/dede.jpg)
+
 
 ### FAQ
 

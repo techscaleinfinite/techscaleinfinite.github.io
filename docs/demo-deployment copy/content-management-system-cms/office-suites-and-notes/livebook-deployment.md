@@ -2,73 +2,9 @@
 
 # 📓 Livebook Deployment
 
-### What's livebook?
+# Livebook: Your Collaborative Code Notebook
 
-\
-**Livebook: Your Collaborative Code Notebook**
-
-In the ever-evolving realm of coding and data exploration, having the right tools can make all the difference. Enter Livebook, a versatile web application designed to be your partner in interactive, collaborative code notebook creation. Let's dive into what makes Livebook your coding confidant:
-
-**1. Interactive Code Notebooks**: Livebook combines the best of both worlds – Markdown support and Code cells that allow you to execute Elixir code when needed. This dynamic duo makes coding and documentation seamlessly intertwined.
-
-**2. Mighty Monaco Editor**: Meet Monaco, your trusty code editor within Livebook. It's more than just a text box; it's packed with features like autocompletion, inline documentation, code formatting, and more. It's like having a coding companion that always knows what you need.
-
-**3. Visualize with Kino**: Livebook introduces Kino, your gateway to interactive results. Create eye-catching Vega-Lite charts, tables, maps, and beyond. Now, your data can tell its story visually, adding depth to your notebooks.
-
-**4. Smart Cells for Efficiency**: Boost your productivity with Smart cells. They tackle high-level tasks, allowing you to interact with databases, plot charts, build maps, and perform other actions directly from Livebook's user-friendly interface.
-
-**5. Reproducible and Predictable**: Livebook ensures your code runs like clockwork, maintaining predictability down to package management. Say goodbye to code chaos and hello to a structured, streamlined coding experience.
-
-**6. Collaboration at Its Best**: The world of coding is no longer a solo journey. Livebook fosters collaboration effortlessly, enabling multiple users to work on the same notebook simultaneously, minus the fuss of additional setup.
-
-**7. Decentralized and Open-Source**: Livebook isn't confined by boundaries. It's open-source, ready to run wherever you need it. The "Run in Livebook" badge simplifies importing any Livebook into your personal workspace.
-
-_In the realm of coding, where innovation meets exploration, Livebook stands as your trusted companion. It seamlessly blends documentation and execution, empowers collaboration, and offers a versatile toolbox to explore and visualize data. With Livebook, coding becomes a vibrant, communal adventure._
-
-_So, whether you're building the next groundbreaking app or uncovering insights within your data, Livebook has your back. It's not just a code notebook; it's a dynamic, collaborative workspace for the curious minds of the coding world. Try Livebook and elevate your coding experience today!_
-
-
-
-### **How It Works:**
-
-**How Livebook Works: Unveiling the Magic**
-
-Coding and data exploration are about to get a whole lot more exciting with Livebook. This collaborative code notebook brings a touch of magic to your coding journey. Let's uncover the spellbinding workings of Livebook:
-
-📘 **Interactive Code Notebooks**: Picture this – a notebook where you can seamlessly weave your code and explanations. Livebook offers Code cells that allow you to execute Elixir code on the fly, surrounded by the comfort of Markdown support.
-
-✒️ **Monaco Editor**: Inside Livebook, you'll find Monaco, your code-editing wizard. It's not just any editor; it's your coding sidekick. With features like autocompletion, inline documentation, and code formatting, Monaco has a solution for every coding whim.
-
-📊 **Visual Magic with Kino**: Livebook introduces Kino, your gateway to visual enchantment. Kino lets you conjure Vega-Lite charts, tables, maps, and more. Your data comes to life with vivid visuals, adding a dash of magic to your notebooks.
-
-🔮 **Smart Cells for Efficiency**: Imagine having cells that can do your bidding! Smart cells in Livebook make complex tasks a breeze. Interact with databases, create charts, map out your data – all without leaving the Livebook interface.
-
-🔄 **Reproducibility and Predictability**: Livebook takes the chaos out of coding. It ensures that your code follows a clear, predictable path, from package management to execution. No more surprises, just smooth coding.
-
-🤝 **Seamless Collaboration**: In the realm of coding, teamwork reigns supreme. Livebook makes collaboration effortless. Multiple users can work on the same notebook simultaneously, making it a hub of shared ideas and innovation.
-
-🌐 **Decentralized and Open**: Livebook breaks free from constraints. It's open-source, ready to be your coding companion wherever you roam. The "Run in Livebook" badge simplifies importing Livebooks into your coding domain.
-
-In the world of coding and data exploration, Livebook is more than just a tool; it's a magical adventure waiting to be embarked upon. It's where coding meets creativity, where data reveals its secrets through captivating visuals, and where collaboration knows no boundaries.
-
-So, whether you're crafting the next big software marvel or unraveling data mysteries, Livebook is your trusty companion. It's not just a code notebook; it's a portal to a world where coding becomes an art form. Dive into the magic of Livebook and let your code take flight!
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official  livebook  Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [livebook/livebook](https://hub.docker.com/r/livebook/livebook) application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the Livebook  application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the  Livebook webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the Livebook application and gained access to its features through a seamless and user-friendly process.
-
-
+Livebook is your dynamic companion in the coding and data exploration realm, seamlessly blending documentation and execution. With interactive code notebooks featuring Markdown support and code cells for Elixir execution, Livebook transforms coding into a collaborative adventure. The Monaco Editor, Kino for visualizations, and Smart Cells enhance your coding experience, while reproducibility and predictability streamline the process. Livebook fosters effortless collaboration, allowing multiple users to work simultaneously. It's open-source, decentralized, and ready to elevate your coding journey into a vibrant, communal exploration. Dive into Livebook for a magical coding experience!
 
 ### Installation
 
@@ -110,6 +46,25 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+
+### Steps And Procedure
+
+*   **This deployment utilizes the official  livebook  Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [livebook/livebook](https://hub.docker.com/r/livebook/livebook) application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the Livebook  application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the  Livebook webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the Livebook application and gained access to its features through a seamless and user-friendly process.
+
+
+
+
 **Step-by-Step Guide to livebook Deployment**
 
 1. **Docker Image Selection:**
@@ -145,6 +100,13 @@ By following these steps, you can effortlessly deploy an Livebook instance with 
 
 ### Visual Snapshots
 
+
+![Alt Text](/img/111.jpg)
+![Alt Text](/img/r22.jpg)
+![Alt Text](/img/ee4.jpg)
+![Alt Text](/img/rr3.jpg)
+![Alt Text](/img/eeee4.jpg)
+![Alt Text](/img/ee3e.jpg)
 
 
 ### Youtube Tutorial&#x20;

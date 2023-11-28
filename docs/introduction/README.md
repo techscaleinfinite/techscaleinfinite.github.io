@@ -17,6 +17,7 @@ Put your applications on autopilot mode in our AI managed environment.
 At **ScaleInfinite**, we're revolutionizing application hosting, so you can focus on what truly matters - your vision. Explore how we're shaping the future of deployment:
 
 - **Effortless Hosting**: Simplify application hosting with streamlined infrastructure management, leaving you free from worries about provisioning, maintenance, and scaling.
+    
   
 - **Instant Access**: Get your applications up and running with just a few clicks, granting rapid accessibility to your hosted content.
 

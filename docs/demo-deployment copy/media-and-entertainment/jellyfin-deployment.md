@@ -2,48 +2,10 @@
 
 # 📺 Jellyfin Deployment
 
-### What's Jellyfin?
+# Jellyfin: Your Personal Media Maestro
 
-**Jellyfin: Your Personal Media Maestro**
+**Jellyfin** is the open-source maestro for your personal media symphony, providing a cost-free platform to organize and stream diverse content types. Its versatility extends to movies, music, and photos, ensuring your entire collection is easily accessible. Jellyfin harmoniously streams your media to various devices, allowing you to indulge in your favorites wherever you go. With customizable server aesthetics, it creates a private media haven tailored to your style. Security is paramount with Jellyfin's self-hosted solution, ensuring your digital treasures remain private and protected. In a media-dominated world, Jellyfin stands as your personal curator, delivering a neat, accessible, and private collection curated to your preferences. 🎬🎵📷
 
-**A Symphony of Media Freedom:** Jellyfin is like an open-air concert for your media. It's open-source, meaning it's free for all to enjoy. You get a powerful platform to organize and stream your personal media without reaching for your wallet.
-
-**Media Wonderland:** Whether you're a movie buff, a music lover, or a photography enthusiast, Jellyfin's got your back. It plays nicely with all sorts of media, from your favorite songs to cherished videos and treasured photos.
-
-**Your Media, Your Way:** With Jellyfin, your media is wherever you are. It harmoniously streams your content to a variety of devices, ensuring you can dive into your collection no matter what gadget you're using.
-
-**Tailored to You:** Personalization is Jellyfin's middle name. You can customize your media server's look and feel to match your style. It's like having your own private media den, designed just the way you like it.
-
-**Fort Knox for Your Media:** Worried about privacy? Jellyfin has you covered. Since it's self-hosted, there's no need to fret about nosy neighbors. It's like having a safe vault for your digital treasures.
-
-In a world where media reigns supreme, Jellyfin is your media maestro. It ensures your collection is neat, accessible, and completely under your command. Think of it as your personal media curator, ready to serve entertainment whenever and wherever you want it.
-
-### **Working in Brief:**
-
-**Media Library Zen****:** Think of Jellyfin as your personal librarian for all things media. It takes your movies, music, and more and neatly organizes them by type, genre, or artist. It's like having a beautifully sorted bookshelf for your entertainment collection.
-
-**Entertainment on Demand:** Jellyfin plays the role of a magical genie, granting your media wishes on demand. It effortlessly streams your media to your devices, no matter if they're in your living room or on the other side of the world.
-
-**VIP Access:** With Jellyfin, your media kingdom becomes exclusive. You simply log in to your Jellyfin account for a tailored experience. It's like having a VIP pass to your personal media wonderland.
-
-**Media Multilingualism:** Jellyfin is the ultimate linguist for your media. It can translate media formats in real-time to match your devices, ensuring everything plays smoothly. It's like having a universal remote control for your media.
-
-**Worldwide Entertainment:** Jellyfin opens the door to a world of media. You can enjoy your collection from anywhere, as if you're carrying your entire media library in your pocket. It's ready to entertain you wherever you go.
-
-Jellyfin takes the complexity out of managing your media. It puts you in charge of your entertainment kingdom with its self-hosted solution, and since it's open-source, you have the keys to customize it as you like. With Jellyfin, your media remains private and secure, promising an entertainment experience that's uniquely yours.
-
-### Steps And Procedure
-
-&#x20; **This deployment utilizes the official jellyfin Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the jellyfin application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the jellyfin application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  jellyfin webpage and explore its content.
 
 ### Installation
 
@@ -85,6 +47,21 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+&#x20; **This deployment utilizes the official jellyfin Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the jellyfin application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the jellyfin application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the  jellyfin webpage and explore its content.
+
+
+
 **Step-by-Step Guide to jellyfin Deployment**
 
 1. **Docker Image Selection:**
@@ -121,6 +98,13 @@ By following these steps, you can effortlessly deploy and JELLY instance with yo
 
 ### Visual Snapshots
 
+
+![Alt Text](/img/l7.jpg)
+![Alt Text](/img/k5k.jpg)
+![Alt Text](/img/ll.jpg)
+![Alt Text](/img/ooog.jpg)
+![Alt Text](/img/kkkj.jpg)
+![Alt Text](/img/kkn.jpg)
 
 
 

@@ -2,62 +2,49 @@
 
 # 📓 Etherpad
 
-### What's etherpad?
+# Etherpad: Collaborative Writing Symphony
 
-📝 **Etherpad's Symphony of Features** 📝
+Etherpad is not just a text editor; it's a virtuoso of collaborative writing. With features like rich editing, minimalist interface, dark mode, and seamless integration of visuals, it transforms your writing into a collaborative masterpiece. The real-time collaboration, version history, time slider, and group chat create a harmonious environment for multiple authors. Etherpad respects privacy with access control and self-hosting options, while its customization and exporting features allow your creativity to take center stage. It's an open-source symphony, where ideas unite, and documents come to life in a world of collaborative creativity.
 
-Etherpad: Where Words Transform into Collaborative Masterpieces
+### Installation
 
-In the realm of text editors, Etherpad stands out as a virtuoso of collaborative writing. It's not your typical word processor; it's a conductor that orchestrates your words to create collaborative symphonies. Let's delve into the crescendo of its capabilities:
+| Docker Image                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ethepad](https://hub.docker.com/r/etherpad/etherpad)[👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
 
-🖋️ **Rich Editing for Wordsmiths** 🖋️ Etherpad is your trusted companion for creating rich content. Its WYSIWYG (What You See Is What You Get) editor ensures that your words shine as brilliantly on the screen as they do in your mind. It's where your creativity comes to life.
+| Application name                                                                 |
+| -------------------------------------------------------------------------------- |
+| Eg: etherpad(you can put any name) |
 
-🧊 **Minimalist Editor for the Purists** 🧊 For those who appreciate the beauty of simplicity, Etherpad offers a minimalist editor. It seamlessly blends with your creative process, letting you focus on your work without distractions. It's like having your own creative muse.
+| Resource Allocation                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
 
-🌒 **Dark Mode: Night Owl's Delight** 🌒 Late-night writing sessions just got cozier with Etherpad's dark mode themes. They create the perfect ambiance for your nocturnal creativity, without straining your eyes. It's a writer's dream come true.
+`PROTOCOL`
 
-📸 **A Pictorial Sonata** 📸 Words don't always have to stand alone. Etherpad understands the importance of visuals. It lets you incorporate images into your documents, allowing your ideas to paint a vivid canvas of creativity.
+<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>9001</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
 
-🎥 **Video Chat: Collaborative Virtuoso** 🎥 Collaboration goes beyond text. Etherpad's plugins make it easy to integrate video and audio chat, turning your collaborative experience into a symphony of ideas. It's the complete ensemble for teamwork.
+| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
 
-🚀 **Collaboration Amplified** 🚀 In the world of collaborative work, Etherpad takes the lead. Its plugins enhance the real-time collaborative experience, ensuring that your ideas flow seamlessly and your projects reach new heights.
+If you choose Advanced option:
 
-🔍 **Document Analysis: The Composer's Tool** 🔍 Understanding your creation is essential. Etherpad's plugins help you analyze both the author and the document itself. It's like having a backstage pass to the performance, making post-creation a task worth applauding.
+| ENV VARIABLE                                                            |
+| ----------------------------------------------------------------------- |
+| ```Give env variable.``` ```Eg:key==value```  |
 
-There you have it, Etherpad's feature concerto! It transforms your writing into a collaborative masterpiece, regardless of your style or needs. 🎼🎭🚀
+| WORKING DIR                                                                             |
+| --------------------------------------------------------------------------------------- |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
+| Here use ( use the path after   " :"  )                 |
+| application/lib/etherpad-lite/var/dirty.db                                              |
 
+`Access`
 
-
-### **How It Works:**
-
-Unlocking the Magic of Etherpad
-
-_Etherpad is not your run-of-the-mill text editor; it's a wizardry of collaborative writing. Imagine a world where words come together in a symphony of creativity. Let's unravel the enchantment behind Etherpad's inner workings:_
-
-**Real-Time Collaboration:** Picture a virtual stage where multiple authors play in harmony. Etherpad makes it possible by enabling real-time collaboration. Multiple users can edit a document at the same time, and every keystroke is like a musical note in a shared masterpiece.
-
-**Version History:** Etherpad weaves a beautiful history of your document. It's like a composer fine-tuning a score. You can review and revert to previous versions, ensuring that your creative journey is preserved.
-
-**Time Slider:** Think of this as your conductor's baton. The time slider lets you navigate through the document's history seamlessly, giving you complete control over your composition's evolution.
-
-**Group Chat:** Collaboration isn't just about the document; it's also about communication. Etherpad includes a group chat feature, fostering discussions among collaborators without leaving the platform.
-
-**Access Control:** Like an exclusive club with a guest list, Etherpad allows you to control who can access and edit your documents. You decide who gets a front-row seat to your creative process.
-
-**Rich Media Embedding:** Words don't stand alone. Etherpad supports the embedding of rich media, like images, videos, and more. Your composition becomes a multimedia performance.
-
-**Privacy and Self-Hosting:** Etherpad respects your privacy. You can host it on your servers, ensuring that your creations stay in your domain, just like an artist's studio.
-
-**Customization:** Tailor Etherpad to your liking with themes and plugins. It's like arranging your writing space to inspire your best work.
-
-**Exporting Options:** Once your masterpiece is complete, Etherpad offers various exporting options. You can publish it, print it, or save it in various formats, letting your creation take center stage.
-
-**Cross-Platform Performance:** Etherpad is like a talented performer that performs on all platforms, ensuring that your collaborative masterpiece is accessible to everyone.
-
-**Open Source Symphony:** The beauty of Etherpad is its open-source nature. It's a collaborative composition itself, with a global community of contributors, ensuring it evolves like a timeless classic.
-
-In essence, Etherpad is your conductor's wand, orchestrating collaborative writing into a harmonious masterpiece. It's where ideas unite, creativity flows, and documents come to life.
-
+| Public                                      | Private                                      |
+| ------------------------------------------- | -------------------------------------------- |
+| (select this if you want to make it public) | (select this if you want to make it private) |
 
 
 ### Steps And Procedure
@@ -151,6 +138,13 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an ETHERPAD instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+
+![Alt Text](/img/ee.jpg)
+![Alt Text](/img/ee3.jpg)
+![Alt Text](/img/rr.jpg)
+
+![Alt Text](/img/ooyy.jpg)
+
 
 
 

@@ -2,78 +2,11 @@
 
 # 🖥 Media Wiki Deployment
 
-### What's media wiki?
+# MediaWiki: Crafting Collaborative Knowledge
 
-MediaWiki: The Heart of Collaborative Knowledge
+**MediaWiki**, the force behind Wikipedia, is more than software; it's the architect of collaborative knowledge creation. Users, like a team of friends, contribute and edit articles, creating a digital playground for learning and sharing. With a detailed version control system, users can navigate through the history of changes and revert if needed.
 
-Ever wondered how Wikipedia, the treasure trove of online wisdom, works its magic? Enter MediaWiki, the wizard behind the curtain. It's the software that powers Wikipedia and many other collaborative websites. Let's peel back the layers and see what makes it tick:
-
-**1. Teamwork Made Easy:**
-
-* MediaWiki is all about teamwork. It's like having a group of friends working together on a giant puzzle.
-* Anyone can join the party, add their pieces, or rearrange what's already there.
-
-**2. Time Machine for Pages:**
-
-* MediaWiki keeps a detailed history of every change made to a page. It's like a time machine for articles.
-* You can travel back in time to see how a page evolved and even hit the "undo" button if something goes wrong.
-
-**3. Content Playground:**
-
-* Think of MediaWiki as a playground for information. It's not just a jumble of data; everything has its place.
-* Articles are like neatly labeled boxes, and categories are the shelves where these boxes are organized.
-
-**4. Userland Adventures:**
-
-* MediaWiki gives users their own space, like a personal room. You can create your user page, watch pages to see changes, and chat with others.
-* It's like having your own little corner in the vast world of knowledge.
-
-**5. Markup Magic:**
-
-* MediaWiki has its own secret language, but it's not like learning a new code. It's more like using simple commands.
-* You can make text bold, create links, add images, and more, just by using these magic words.
-
-**6. Media Mastery:**
-
-* It's not just about words. MediaWiki loves pictures, sounds, and videos.
-* You can easily add images, audio, and video to make pages more engaging and informative.
-
-MediaWiki is more than just software; it's the enabler of collaborative knowledge creation. It's like a digital playground where people come together to build, learn, and share. So, the next time you explore Wikipedia, remember the unsung hero behind it all - MediaWiki. 📚🌐✨
-
-### **How It Works**
-
-**Content Creation and Editing:** Think of MediaWiki as your digital canvas where you can unleash your creativity. It allows users, with the right permissions, to write new articles or jazz up existing ones. You don't need to be a coding wizard; a simple markup language helps you with things like making text bold, creating links, and adding pictures.
-
-**Version Control:** Imagine a super-detailed history book, but instead of ancient wars, it records changes made to articles. MediaWiki keeps track of who did what, when they did it, and what they did. If something goes wrong, you can time-travel back to earlier versions of an article.
-
-**User Contributions:** MediaWiki is all about community spirit. Registered users can create their own pages, like a mini bio, and talk to others through user talk pages. It's like having a personal space in a busy online town where you can chat with neighbors.
-
-**Categories and Links:** Think of categories as labels in your super-organized kitchen. They help you sort articles neatly. And links are like magical pathways that connect related articles. This makes it easy to explore and find what you're looking for.
-
-**Templates:** Templates are your trusted building blocks. They're like LEGO pieces you can stick in articles. Templates help with things like creating neat info boxes or citing sources correctly.
-
-**Searching:** MediaWiki has a powerful search engine, like a treasure map. Type in keywords, and it shows you where the treasure (the article you need) is buried. It's a quick way to find what you're looking for.
-
-**Media Magic:** MediaWiki is not just about words; it loves pictures, sounds, and videos. You can easily add and share these media gems to make articles more exciting.
-
-**Recent Changes:** The "Recent Changes" page is like a news feed. It shows you the latest updates across the wiki. It's an excellent way to see what's happening and stay up to date.
-
-MediaWiki is a testament to the power of collaboration and knowledge sharing online. It's your user-friendly tool to create, edit, and share knowledge with the world. It's like a digital playground where everyone's invited to play and learn. 📝🔍🌟
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official mediawiki Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the mediawiki application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the mediawiki application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the mediawiki webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the  media wiki application and gained access to its features through a seamless and user-friendly process.
+It's not just about text; MediaWiki embraces media with ease, allowing users to incorporate images, audio, and video seamlessly. With user contributions, personal spaces are created, fostering community interaction. The software's markup language simplifies content creation, making it accessible to all. In essence, MediaWiki is the unsung hero behind
 
 ### Installation
 
@@ -115,6 +48,23 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+*   **This deployment utilizes the official mediawiki Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the mediawiki application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the mediawiki application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the mediawiki webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the  media wiki application and gained access to its features through a seamless and user-friendly process.
+
+
+
 **Step-by-Step Guide to MEDIAWIKI Deployment**
 
 1. **Docker Image Selection:**
@@ -153,6 +103,12 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an media wiki instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+
+![Alt Text](/img/dd222.jpg)
+![Alt Text](/img/aa2.jpg)
+![Alt Text](/img/dd244.jpg)
+
+
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.

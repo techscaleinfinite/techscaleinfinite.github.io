@@ -2,66 +2,9 @@
 
 # 📓 DocPHT Deployment
 
-### What's Docpht ?
+# DocPHT: Where Documentation Meets Simplicity
 
-\
-**DocPHT: Where Documentation Meets Simplicity**
-
-In a world overflowing with complexity, DocPHT emerges as a refreshing breeze of simplicity and efficiency. Here's why it's the tool you won't believe until you try:
-
-**1. Effortless Note-Taking**: DocPHT makes note-taking a breeze. Quickly jot down your thoughts, ideas, and important information. It's your digital notepad, always at your fingertips.
-
-**2. User Management**: DocPHT is not just for solo adventurers; it's for teams too! Seamlessly manage users, making collaboration a breeze. Everyone can contribute to your digital knowledge hub.
-
-**3. Version Control**: The wisdom of the ages is preserved with DocPHT. Save versions of your pages, ensuring you can revisit the past and track the evolution of your content.
-
-**4. Backup Mastery**: DocPHT takes data safety seriously. Run and restore backups effortlessly, ensuring your valuable information is protected from the unexpected.
-
-**5. Tailored Interface**: Your workspace, your rules. Customize the interface to match your preferences, creating a productive environment that suits your unique style.
-
-**6. Database-Free Brilliance**: DocPHT defies the norm. It achieves maximum portability without relying on a database. Your documentation remains agile and adaptable.
-
-So, here's the deal: You won't believe the power of DocPHT until you give it a spin. It's the tool that brings order to chaos, encourages collaboration, and ensures your valuable content is always within reach. Try it, and let DocPHT redefine your documentation experience. Your digital journey is about to get a whole lot simpler and smarter.
-
-
-
-### **How It Works:**
-
-\
-**DocPHT: Simplifying Documentation**
-
-Ever felt the need for a documentation tool that's as straightforward as it is efficient? Look no further—DocPHT has your back. Here's a closer look at how it all comes together:
-
-**1. Effortless Note-Taking**: DocPHT understands the value of capturing ideas on the fly. It's your digital notebook, always ready to record your thoughts, insights, and crucial information. Think of it as your trusted companion in the world of notes.
-
-**2. User Management Made Easy**: Collaboration is the name of the game. DocPHT allows you to effortlessly manage users, transforming solo projects into team endeavors. With everyone on board, you can collectively build a repository of knowledge.
-
-**3. Time Travel with Version Control**: Imagine having the power to travel back in time within your documentation. DocPHT grants you this capability by letting you save versions of your pages. It's like having a history book for your content.
-
-**4. Backup Wizardry**: DocPHT takes data security seriously. Backing up your content is a breeze, and should the need arise, you can effortlessly restore it. Your valuable information is shielded from unforeseen events.
-
-**5. Tailor-Made Interface**: DocPHT understands that customization is key. Personalize the interface to suit your style and preferences. It's all about creating a workspace that feels just right.
-
-**6. Database-Free Agility**: In a world dominated by databases, DocPHT breaks free from convention. It achieves maximum portability without relying on a database. Your documentation remains flexible and adaptable.
-
-So, the bottom line is this: DocPHT simplifies the art of documentation. It's your dependable partner for note-taking, collaboration, version control, and data security. Give it a whirl, and discover how it can revolutionize your documentation experience. With DocPHT, complexity is replaced by clarity, and your digital journey becomes a smooth ride.
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official docpht  Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [l](https://hub.docker.com/r/linuxserver/dillinger)[docpht/docpht](https://hub.docker.com/r/docpht/docpht) application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the DocPHT application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the  DocPHT webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the DocPHT application and gained access to its features through a seamless and user-friendly process.
-
-
+DocPHT stands out as a simple yet powerful documentation tool that streamlines note-taking, user management, version control, and backups. Ideal for both solo users and teams, it offers a tailored interface for a personalized workspace. Embrace the agility of a database-free system, ensuring your documentation remains adaptable and easily accessible. DocPHT redefines the documentation experience, bringing order to chaos and encouraging collaboration. Try it out to simplify your digital journey and witness how DocPHT makes documentation smarter and more efficient.
 
 ### Installation
 
@@ -105,6 +48,25 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+*   **This deployment utilizes the official docpht  Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [l](https://hub.docker.com/r/linuxserver/dillinger)[docpht/docpht](https://hub.docker.com/r/docpht/docpht) application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the DocPHT application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the  DocPHT webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the DocPHT application and gained access to its features through a seamless and user-friendly process.
+
+
+
+
+
 **Step-by-Step Guide to Docpht  Deployment**
 
 1. **Docker Image Selection:**
@@ -146,7 +108,11 @@ By following these steps, you can effortlessly deploy an DocPHT  instance with y
 
 ### Visual Snapshots
 
-
+![Alt Text](/img/e1.jpg)
+![Alt Text](/img/e2.jpg)
+![Alt Text](/img/e3.jpg)
+![Alt Text](/img/e4.jpg)
+![Alt Text](/img/e6.jpg)
 
 ### Youtube Tutorial&#x20;
 

@@ -124,6 +124,9 @@ By following these steps, you can effortlessly deploy an phpmyadmin instance wit
 
 ### Visual Snapshots
 
+![Alt Text](/img/ssw2.jpg)
+![Alt Text](/img/ee32.jpg)
+
 
 
 

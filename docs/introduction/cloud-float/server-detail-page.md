@@ -10,7 +10,7 @@ Here's your backstage pass to what you can do:
 
 **2. Resource Percentage**: Adjust the resource allocation for your app. Give it more power or scale it down – it's all at your fingertips. Keep your app's performance finely tuned.
 
-
+![Alt Text](/img/g1.jpg)
 
 **3. Volume Mount**: Managing data is a breeze. You can set up volume mounts, ensuring your app has access to the data it needs. It's like giving your app its own storage space.
 
@@ -18,9 +18,9 @@ Here's your backstage pass to what you can do:
 
 **5. Log Window**: Keep a watchful eye on your app's performance. The log window provides real-time insights into how your app is configured, whether it's running smoothly, and how long it takes to respond to requests.
 
-
+![Alt Text](/img/j2.jpg)
 **6. Terminal Access**: Feeling like a tech wizard today? Dive into the terminal, where you can execute command-line prompts. It's your direct line to interact with your app's environment.
-
+![Alt Text](/img/j3.jpg)
 
 In the Server Detail Page's IP Details segment, the Inbound and Outbound Traffic Rules play a crucial role in managing network traffic to and from your server.&#x20;
 
@@ -35,7 +35,7 @@ _**Inbound Traffic Rules: Mastering the Flow**_
 * _**Blacklisting**: Consider this the bouncer at the door of an expensive club. Inbound blacklisting allows you to identify and prevent unwanted IP addresses from connecting to your server. It acts as a protective screen for your server, preventing any connection attempts from these prohibited attackers and bolstering its security and stability._
 * _**Whitelisting**: Assume you're the VIP host, bestowing extra benefits. With inbound whitelisting, you may lay down the red carpet for trustworthy IP addresses. These are the visitors you want to greet with open arms. Any connection from these whitelisted IPs travels through your server without interruption, ensuring important traffic flows smoothly._
 
-
+![Alt Text](/img/j5.jpg)
 
 **Outbound Traffic Rules: Shaping Your Server's Outreach**
 

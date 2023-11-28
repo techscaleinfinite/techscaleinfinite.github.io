@@ -31,7 +31,7 @@ There you have it! You're now the _**proud owner of a Scale Infinite account**_,
 
 
 
-
+![Alt Text](/img/o9.jpg)
 
 <details>
 

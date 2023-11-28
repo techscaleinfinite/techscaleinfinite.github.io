@@ -42,7 +42,7 @@ Here at ScaleInfinite, we've redefined simplicity in application deployment. Say
 With ScaleInfinite, you can simplify your deployment process, and in just a few moments, your app is up and running. No fuss, no complications
 
 ### Cloud float architecture
-
+![Alt Text](/img/c22.jpg)
 
 
 

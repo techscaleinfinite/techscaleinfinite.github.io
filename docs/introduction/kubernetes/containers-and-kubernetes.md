@@ -52,11 +52,11 @@ Delve into the world of Kubernetes – where scalability, speed, availability, p
 
 #### **Virtual machines vs Containers**&#x20;
 
-
+![Alt Text](/img/c.jpg)
 
 #### Kubernetes
 
-
+![Alt Text](/img/k2.png)
 
 #### Join us
 

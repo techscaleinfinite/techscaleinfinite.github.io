@@ -2,53 +2,9 @@
 
 # 📓 Rustpad Deployment
 
-### What's rustpad?
+# Rustpad: Where Real-Time Collaboration Meets Seamless Editing
 
-Rustpad: Where Real-Time Collaboration Meets Seamless Editing
-
-Rustpad: Where Real-Time Collaboration Meets Effortless Editing Picture a text editor that's not only easy to use but excels at bringing people together to work on documents. That's Rustpad, an open-source wonder that's revolutionizing how we collaborate.
-
-1. _Real-Time Editing: Rustpad uses a clever algorithm called operational transformation, which means that every edit instantly shows up on everyone's screens. It's like having a virtual writing party where your ideas flow freely and without any hiccups._
-2. _Web-Based Simplicity: No need for complicated installations or downloads. Just share a link to your Rustpad document, and your friends or colleagues can jump right into editing from their web browsers. It's quick, convenient, and fuss-free._
-3. _Live Preview: Watch your document change in real-time as you and your collaborators make edits. It's not just a regular text editor; it's a dynamic canvas for your ideas, coming to life before your eyes._
-4. _Uninterrupted Workflow: With Rustpad, there's no need to take turns or send files back and forth. Everyone can edit at the same time, ensuring a smooth and interruption-free workflow._
-5. _Version Control: Sometimes, you might want to go back to an earlier version of your document. Rustpad has got you covered with built-in version control, making it easy to revert to previous states._
-
-Rustpad is where the best of innovation meets the simplicity you crave. It's more than just a text editor; it's a collaborative hub for turning ideas into reality in real time. Say farewell to the old-fashioned way of sharing documents and embrace the future of collaborative editing with Rustpad. Give it a try now and discover the seamless magic of real-time collaboration.
-
-
-
-### **How It Works:**
-
-**How Rustpad Works: Crafting Collaborative Creativity**
-
-ustpad, the dynamic collaborative text editor, operates on the ingenious operational transformation algorithm, paving the way for a seamless editing experience. Here's the lowdown on how it all comes together:
-
-1. Share the Link: Begin by sharing a Rustpad link with your fellow wordsmiths. This isn't just any link; it's your gateway to simultaneous collaboration. It's as simple as sending an invitation to a virtual writing soirée.
-2. Real-Time Magic: As you and your collaborators access the document from your respective browsers, Rustpad's operational transformation algorithm takes center stage. It ensures that every keystroke, every edit, is instantaneously reflected across all screens. It's like having a real-time conversation with your document.
-3. Live Preview: Watch your document transform before your eyes. Rustpad's live preview feature gives you a dynamic, interactive canvas for your ideas. It's not just editing; it's a creative journey in motion.
-4. Uninterrupted Flow: Gone are the days of taking turns or sending files back and forth. Rustpad allows everyone to edit simultaneously, harmonizing your efforts into an uninterrupted workflow. It's your personal symphony of ideas.
-5. Version Control: Need to revisit an earlier draft? Rustpad's built-in version control has you covered. Effortlessly roll back to previous states, ensuring that no brilliant idea is ever lost.
-
-Rustpad isn't just a text editor; it's your creative cockpit, where innovation and collaboration take flight. Say farewell to the delays of traditional document sharing and embrace the future of real-time editing with Rustpad. It's where ideas flow freely, edits happen instantaneously, and your document transforms into a masterpiece right before your eyes. Try Rustpad today and experience the magic of collaborative creativity.
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official rustpad Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the [ekzhang/rustpad](https://hub.docker.com/r/ekzhang/rustpad)  application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the Rustpad application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the  Rustpad webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the Rustpad application and gained access to its features through a seamless and user-friendly process.
-
-
-
+**Rustpad** redefines collaborative text editing with its open-source marvel. Using operational transformation, edits appear instantaneously for all collaborators, creating a virtual writing party. This web-based editor eliminates complexities—share a link, and colleagues can join the editing fray hassle-free. With live preview and uninterrupted workflow, Rustpad transforms into a dynamic canvas where ideas come to life. Version control ensures easy navigation between document states. Embrace the future of real-time collaboration, bid farewell to traditional delays, and unleash your creative potential with Rustpad. ✨🖋️🤝
 ### Installation
 
 | Docker Image                                                                                                                                                                                                                        |
@@ -87,6 +43,24 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+### Steps And Procedure
+
+*   **This deployment utilizes the official rustpad Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the [ekzhang/rustpad](https://hub.docker.com/r/ekzhang/rustpad)  application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the Rustpad application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the  Rustpad webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the Rustpad application and gained access to its features through a seamless and user-friendly process.
+
+
+
+
 
 **Step-by-Step Guide to RUSTPAD Deployment**
 
@@ -122,7 +96,9 @@ By following these steps, you can effortlessly deploy an Rustpad instance with y
 
 ### Visual Snapshots
 
-
+![Alt Text](/img/r1.jpg)
+![Alt Text](/img/r2.jpg)
+![Alt Text](/img/r3.jpg)
 
 ### Youtube Tutorial&#x20;
 

@@ -2,80 +2,9 @@
 
 # 📺 Mtream Deployment
 
-### What's Mstream?
+# mStream: Your Symphony Anywhere, Anytime 🎶
 
-**mStream: Your Personal Symphony** 🎶
-
-Have you ever dreamed of having your very own music streaming server, where your cherished tunes are just a click away, no matter where you are? Well, enter mStream, the maestro of personal music streaming.
-
-🏡 **Home is Where the Music Is** 🏡
-
-With mStream, your home computer becomes the star of the show. It transforms your humble abode into a music hub, ready to serenade you with melodies from your own collection.
-
-📱 **Music on the Move** 📱
-
-But here's the kicker – mStream doesn't like to stay home all the time. It's a globetrotter, with mobile apps for both Android and iPhone. So, whether you're lounging on the couch or exploring far-off lands, your music library is right there in your pocket.
-
-🌟 **Your Personal DJ** 🌟
-
-Think of mStream as your personal DJ, spinning your favorite tracks with finesse. Its interface is as smooth as a dance floor, making navigation and playlists a breeze.
-
-📡 **Anywhere, Anytime** 📡
-
-With mStream, you're not confined to a single room or device. It breaks free from the shackles of location, bringing your music to any device with an internet connection. From your cozy den to a beachfront paradise, your playlist is your oyster.
-
-🚀 **Stream with Confidence** 🚀
-
-Security is key. mStream ensures that your music stays yours, protected behind digital fortifications. It's your vault, and only you hold the key.
-
-So, if you're ready to turn your home into a music haven and your phone into a jukebox on-the-go, mStream is your backstage pass to an encore-worthy music streaming experience.
-
-### **How It Works:**
-
-🎵 **Unveiling the Harmony: How mStream Works** 🎵
-
-At the heart of mStream lies the magic of personal music streaming. Here's your backstage pass to the symphony:
-
-🏡 **Home is Where the Soundwaves Begin** 🏡
-
-mStream kicks off its performance right at home, on your trusty computer. It's here that your cherished music collection takes center stage.
-
-📡 **The Connection That Knows No Bounds** 📡
-
-But mStream isn't content with just staying indoors. It yearns to explore the world, and it does so through your mobile companions. There are apps, both for Android and iPhone, making sure your music is your travel companion.
-
-🎶 **The Maestro Takes the Stage** 🎶
-
-Picture mStream as your personal music maestro. It orchestrates your tunes effortlessly, curating playlists and making sure your music experience is pitch-perfect.
-
-🌍 **Your Music, Your World** 🌍
-
-The beauty of mStream? It's not tethered to one place. With an internet connection, it liberates your melodies, playing them on any device, wherever you roam.
-
-🔒 **Security is Its Encore** 🔒
-
-Safety is a top note for mStream. It ensures that your music fortress remains impenetrable, letting only you and your trusted audience listen in.
-
-💫 **The Final Encore** 💫
-
-So there you have it – mStream's secret sauce. It turns your home into a music sanctuary and your mobile into a pocket-sized concert hall. With mStream, music is more than sound; it's an experience.
-
-Now, go on, let the music play, the world awaits your symphony
-
-### Steps And Procedure
-
-**This deployment utilizes the official mstream Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the [linuxserver/mstream](https://hub.docker.com/r/linuxserver/mstream) application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the  mstream application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the mstream webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the  mstream application and gained access to its features through a seamless and user-friendly process.
+**mStream** orchestrates your personal music streaming experience. Transforming your home computer into a music hub, it offers both Android and iPhone apps for on-the-go melodies. With an intuitive interface, mStream acts as your personal DJ, curating playlists effortlessly. It liberates your music from location constraints, streaming it to any device with an internet connection. Security is paramount, ensuring your music remains exclusively yours. mStream transforms your home into a music haven and your phone into a portable concert hall, delivering an encore-worthy music streaming experience.
 
 ### Installation
 
@@ -119,6 +48,23 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+**This deployment utilizes the official mstream Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the [linuxserver/mstream](https://hub.docker.com/r/linuxserver/mstream) application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the  mstream application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the mstream webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the  mstream application and gained access to its features through a seamless and user-friendly process.
+
+
+
 **Step-by-Step Guide to mstream Deployment**
 
 1. **Docker Image Selection:**
@@ -159,6 +105,9 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an mstream instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+
+![Alt Text](/img/fee.jpg)
+![Alt Text](/img/efef3.jpg)
 
 
 ### Youtube Tutorial&#x20;

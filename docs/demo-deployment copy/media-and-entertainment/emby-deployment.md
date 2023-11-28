@@ -2,64 +2,9 @@
 
 # 📺 Emby DeployMent
 
-### What's  emby?
+# Emby: Your Personal Media Butler
 
-Emby is like a personal media butler, here to help you bring order to your multimedia chaos. It's not just software; it's a trusted companion in your media journey. Here's how Emby adds magic to your media world:
-
-**Installation: The First Step in Your Emby Adventure**
-
-Your Emby journey starts with a simple and crucial step – installing the Emby server software. Think of it as finding the perfect home for your precious media collection. You have the freedom to choose the device that suits you best, whether it's your trusted desktop, a nimble laptop, a dedicated server, or a reliable NAS (Network Attached Storage). This chosen device becomes the guardian of your media library, ensuring smooth and hassle-free content streaming.
-
-**Library Setup: Laying the Groundwork for Your Media Empire**
-
-Now that Emby is in place, it's time to create the foundation for your media empire. It's like providing your librarian with a map to all the hidden bookshelves. You configure Emby by informing it about the locations of your valuable media files. Your media might include movies, TV shows, music collections, cherished photos, and more, all waiting to be organized and enjoyed.
-
-**Media Scanning and Metadata Retrieval: Your Meticulous Archivist**
-
-Emby takes on the role of a meticulous archivist. It embarks on a quest through the directories you've specified, identifying each media file and categorizing it just like a seasoned librarian. But here's where the magic happens: Emby doesn't stop there. It reaches out to online databases like The Movie Database (TMDb) and TheTVDB to fetch all the juicy details. Picture it as your personal librarian who not only arranges your books but also adds beautifully crafted book jackets, intriguing blurbs, cast lists, and even trailers to breathe life into your library.
-
-**User Profiles: Tailoring the Experience**
-
-In a household with diverse tastes, Emby plays the role of a diplomat. It graciously supports multiple user profiles, ensuring that each member can have their unique view of the media library. It's like having a custom-made reading nook for every family member in your library. Each user can tailor their preferences and settings, guaranteeing that everyone gets to enjoy their favorite books or media content.
-
-Emby transforms your media experience into something that's not just organized but also deeply personalized. It's like having a team of experts dedicated to making sure your media library is not only well-kept but also a delight to explore. Your media world becomes a place of discovery, entertainment, and tailored enjoyment. Emby takes care of the technicalities so you can dive into the wonderful world of your media collection.
-
-### **How It Works:**
-
-**How Emby Works: Bringing Your Media to Life**
-
-Emby transforms your digital space into a well-organized and personalized media haven. Here's how it all comes together:
-
-**1. Installation: Setting the Stage**
-
-Your Emby journey kicks off with a simple yet crucial step - installing the Emby server software. Think of it like finding the perfect home for your cherished media collection. You have the flexibility to choose from a range of compatible devices, whether it's your reliable desktop, a nimble laptop, a dedicated server, or a trusty NAS (Network Attached Storage). This chosen device becomes the guardian of your media library, ensuring a seamless streaming experience.
-
-**2. Library Setup: The Foundation of Your Media Empire**
-
-With Emby in place, it's time to lay the groundwork for your media empire. It's akin to providing your librarian with a map to all the hidden bookshelves. You configure Emby by informing it about the locations of your precious media files. Your media could encompass movies, TV shows, music collections, cherished photos, and more, all waiting to be neatly organized and thoroughly enjoyed.
-
-**3. Media Scanning and Metadata Retrieval: Your Meticulous Archivist**
-
-Emby takes on the role of a meticulous archivist. It embarks on a quest through the directories you've specified, identifying each media file and categorizing it just like a seasoned librarian. But here's where the magic unfolds - Emby doesn't stop there. It reaches out to online databases like The Movie Database (TMDb) and TheTVDB to fetch all the juicy details. Imagine it as your personal librarian who not only arranges your books but also adds beautifully crafted book jackets, intriguing blurbs, cast lists, and even trailers to bring your library to life.
-
-**4. User Profiles: Tailoring the Experience**
-
-In a household where diverse tastes reign, Emby plays the role of a diplomat. It gracefully supports multiple user profiles, ensuring that each member can have their very own, unique view of the media library. It's like having a custom-made reading nook for every family member in your library. Each user can tailor their preferences and settings, guaranteeing that everyone gets to enjoy their favorite books or media content.
-
-Emby goes beyond mere organization; it personalizes your media experience. It's like having a team of experts dedicated to ensuring your media library is not only well-kept but also a joy to explore. Your media world becomes a realm of discovery, entertainment, and tailored enjoyment. Emby takes care of the technicalities so you can dive into the wonderful world of your media collection effortlessly.
-
-### Steps And Procedure
-
-&#x20; **This deployment utilizes the official EMBY image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the emby/embyserver application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the emby application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the   emby webpage and explore its content.
+**Emby** is your personal media butler, turning multimedia chaos into an organized and personalized experience. Begin your Emby adventure by installing the server software on a chosen device, the guardian of your media library. Configure Emby by specifying the locations of your media files, covering movies, TV shows, music, and more. Emby acts as a meticulous archivist, scanning directories and fetching metadata from online databases to enhance your library. With support for multiple user profiles, Emby offers a customized viewing experience for each family member. Beyond organization, Emby curates a realm of discovery and entertainment, handling technicalities so you can enjoy your media effortlessly. 🎬🎶📸
 
 ### Installation
 
@@ -101,6 +46,21 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+&#x20; **This deployment utilizes the official EMBY image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the emby/embyserver application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the emby application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the   emby webpage and explore its content.
+
+
+
 **Step-by-Step Guide to emby Deployment**
 
 1. **Docker Image Selection:**
@@ -136,7 +96,17 @@ By following these steps, you can effortlessly deploy an EMBY instance with your
 
 ### Visual Snapshots
 
+![Alt Text](/img/kkki.jpg)
+![Alt Text](/img/kkol.jpg)
 
+![Alt Text](/img/mm0.jpg)
+![Alt Text](/img/dkfk.jpg)
+
+![Alt Text](/img/fef.jpg)
+![Alt Text](/img/m5.jpg)
+
+![Alt Text](/img/bf.jpg)
+![Alt Text](/img/lk.jpg)
 
 ### Youtube Tutorial&#x20;
 

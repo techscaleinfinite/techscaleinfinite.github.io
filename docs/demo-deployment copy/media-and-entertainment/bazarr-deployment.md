@@ -2,50 +2,12 @@
 
 # 📺 Bazarr Deployment
 
-### What's Bazarr?
+# Bazarr: Your Subtitle Sidekick
 
-Bazarr is like a diligent wingman for your media, the unsung hero that makes sure every detail is perfect. It's the Robin to Sonarr and Radarr's Batman, focusing its superpowers on managing and fetching subtitles just the way you like them. Here's how Bazarr becomes your subtitle savior:
+**Bazarr** steps into the spotlight as the unsung hero of your media experience, focusing on perfect subtitles. Acting as the Robin to Sonarr and Radarr's Batman, Bazarr allows you to personalize your subtitle preferences for TV shows and movies. It embarks on a relentless quest, hunting and downloading subtitles that align with your media files, enhancing your viewing experience.
+Bazarr seamlessly integrates with media management software, allowing you to set detailed subtitle preferences. It continuously monitors your media library, searching for new arrivals. Acting as a diligent detective, Bazarr explores subtitle provider websites, downloads, and matches subtitles with precision. Notifications signal the completion of the process, all automated for a worry-free media experience.
 
-**Subtitle Preferences:** Bazarr is all about personalization. You get to set your preferences for TV shows and movies, like choosing the perfect outfit for a special occasion. You tell Bazarr what you like, and it takes those preferences to heart.
-
-**Subtitle Hunting:** Once you've shared your preferences, Bazarr goes on a quest. It tirelessly seeks out and downloads subtitles that match your media files, just like a trusty sidekick on a mission. It's as if it has a sixth sense for finding the exact right words.
-
-**Enhanced Viewing:** Thanks to Bazarr's dedication, your media viewing experience reaches new heights. You no longer have to squint at the screen or strain your ears to catch every word. Bazarr ensures that precise and fitting subtitles are always there to accompany your content, making every moment enjoyable.
-
-In a world of media complexities, Bazarr is the friend who always has your back. It ensures that your favorite shows and movies are perfectly dressed in subtitles, ready to deliver an impeccable performance. Bazarr is the unsung hero that makes your media world a little more comfortable, a bit more magical, and a whole lot more enjoyable.
-
-### **How It Works:**
-
-**Integration:** Bazarr is your media companion that plays well with others. It seamlessly integrates with your media management software, like Sonarr for TV shows and Radarr for movies. Think of it as a friendly handshake between old pals who work together seamlessly.
-
-**Setting Preferences:** Bazarr respects your unique taste. It lets you set your subtitle preferences with meticulous detail. You can specify your language of choice, quality standards, preferred release groups, and more. It's like having your personal subtitle sommelier, ready to serve you the perfect pairing for your media.
-
-**Continuous Monitoring:** Bazarr is your vigilant guardian. It constantly keeps an eye on your media library, like a watchful sentry guarding a treasure trove. It's always on the lookout for new arrivals or changes.
-
-**Subtitle Search:** When new media enters your library, Bazarr springs into action. It becomes your diligent detective, combing through various subtitle provider websites like a seasoned investigator, searching for the elusive missing piece.
-
-**Download and Matching:** Once Bazarr finds suitable subtitles, it's like a skilled craftsman creating the final piece of a puzzle. It downloads the subtitles and carefully matches them with the corresponding media files in your library, ensuring they fit perfectly.
-
-**Notification:** Bazarr doesn't just work behind the scenes; it's polite enough to let you know when the job is done. It notifies your media management application, ensuring that the newly acquired subtitles become an integral part of your media metadata.
-
-**Automation:** The best part? It's all automated. You don't need to lift a finger. Bazarr takes care of the entire process, sparing you the hassle of manually searching and downloading subtitles for each and every media file. It's like having a trusty assistant who handles all the little details, leaving you to enjoy your media worry-free.
-
-With Bazarr by your side, your media world becomes a place of convenience, personalization, and pure enjoyment. It's like having a reliable partner who anticipates your needs and makes sure your media experience is nothing short of perfect.
-
-### Steps And Procedure
-
-**This deployment utilizes the official BAZARR Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the Bazarr application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the Bazarr application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the Bazarr webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the Bazarr application and gained access to its features through a seamless and user-friendly process.
+In a nutshell, Bazarr is your dedicated companion, ensuring your favorite shows and movies are adorned with perfectly matched subtitles. It brings a touch of personalization, convenience, and enjoyment to your media world. 🎬🍿✨
 
 ### Installation
 
@@ -89,6 +51,23 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+**This deployment utilizes the official BAZARR Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the Bazarr application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the Bazarr application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the Bazarr webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the Bazarr application and gained access to its features through a seamless and user-friendly process.
+
+
+
 **Step-by-Step Guide to BAZARR Deployment**
 
 1. **Docker Image Selection:**
@@ -130,7 +109,11 @@ By following these steps, you can effortlessly deploy an Bazarr instance with yo
 
 ### Visual Snapshots
 
+![Alt Text](/img/fe3.jpg)
+![Alt Text](/img/453.jpg)
 
+![Alt Text](/img/454.jpg)
+![Alt Text](/img/err.jpg)
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.
