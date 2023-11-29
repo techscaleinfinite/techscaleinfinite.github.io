@@ -2,50 +2,10 @@
 
 # 🖥 Vault Warden Deployment
 
-### What's is vault warden?
+### Vaultwarden: Your Self-Hosted Password Guardian
 
-Introducing Vaultwarden, the new identity of the project formerly known as "Bitwarden\_RS." Its primary mission? To provide you with an alternative to the official Bitwarden password manager, putting the power back in your hands to host and manage your password vault in a self-hosted environment. Let's dive into the core aspects of Vaultwarden:
+Vaultwarden, formerly Bitwarden\_RS, is an open-source, self-hosted password manager providing users with control over their password vault. With a focus on security, it employs robust encryption, supports 2FA, and ensures access from any device. Browser extensions ease password management, and its open-source nature fosters community collaboration.
 
-**Self-Hosted Password Management:** Vaultwarden empowers you, whether you're an individual or part of an organization, to take control. You can establish and maintain your very own instance of a password manager, giving you the keys to your data's kingdom. It's all about managing your password vault on your terms.
-
-**Open Source Awesomeness****:** Vaultwarden wears its open-source badge with pride. What does this mean for you? It's like having a see-through vault. The source code is out there for everyone to inspect, contribute to, and make better. It's like having a community of security experts looking out for you.
-
-**Security Fortified:** Vaultwarden doesn't mess around when it comes to security. It's like having an impenetrable vault door for your digital secrets. It uses robust encryption techniques, including end-to-end encryption, which means your passwords and sensitive info are locked down and guarded like precious treasures.
-
-**Access Anywhere, Anytime:** Vaultwarden is your password vault on the move. Whether you're on a laptop, a smartphone, or a tablet, it's got your back. Browser extensions, mobile apps, and desktop clients are there to ensure your passwords are accessible no matter where you are.
-
-**Browser Bliss****:** Vaultwarden offers nifty browser extensions. It's like having your butler fetch your passwords for you. These extensions fill in passwords automatically and let you manage your logins right from your browser. No more typing in those long and complicated passwords.
-
-**Double Security with 2FA****:** Vaultwarden knows two locks are better than one. That's why it supports two-factor authentication (2FA). It's like having a moat and a drawbridge around your castle. This extra layer of protection keeps the bad guys at bay.
-
-In a nutshell, Vaultwarden is your self-hosted password guardian. It's all about open-source goodness, top-notch security, and access wherever and whenever you need it. Say goodbye to password hassles and hello to privacy and data security. It's like having your very own digital Fort Knox. Give Vaultwarden a spin and take back control of your passwords.
-
-### **How It Works**
-
-Vaultwarden, formerly known as Bitwarden\_RS, operates as a self-hosted password management solution, offering users a secure and controlled environment to manage their passwords and sensitive information. Here's a detailed breakdown of how it functions:
-
-1. **Server Setup**: To initiate your Vaultwarden journey, you must establish a server where the Vaultwarden application will reside. This server can be either your dedicated hardware or a cloud-based instance, depending on your preferences and requirements.
-2. **Installation**: The next step involves installing the Vaultwarden application on your chosen server. This installation process encompasses the deployment of critical software components, including the Vaultwarden server itself, a web server (commonly Nginx), and a database (typically PostgreSQL). These components work collaboratively to ensure the seamless operation of Vaultwarden.
-3. **Database Storage**: Vaultwarden relies on a database to store a multitude of crucial elements, such as user accounts, encrypted passwords, and various sensitive data. Importantly, all data is subjected to robust encryption using advanced encryption algorithms. Furthermore, the decryption key remains exclusively in the hands of the user, enhancing data security.
-4. **User Accounts**: Users commence their Vaultwarden experience by creating individual accounts on your self-hosted instance. Each user account is fortified by a master password, which only the respective user knows. This master password plays a pivotal role in deriving the encryption key responsible for both the encryption and decryption processes of the stored data.
-5. **End-to-End Encryption**: As users begin adding passwords and other essential items to their Vaultwarden accounts, the data is encrypted right at the client's end. This encryption process relies on the user's master password and the encryption key derived from it. Once encrypted, this data is securely transmitted to the Vaultwarden server.
-
-Vaultwarden's design places a paramount emphasis on data security, privacy, and user control. By facilitating self-hosting, robust encryption practices, and client-side data protection, Vaultwarden empowers users to confidently manage their passwords and sensitive information in a secure and personalized environment.
-
-### Steps And Procedure
-
-*   &#x20;**This deployment utilizes the official Vault warden Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the vaultwarden/server application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the vaultwarden application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the vaultwarden webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the vaultwardem application and gained access to its features through a seamless and user-friendly process.
 
 ### Installation
 
@@ -86,6 +46,23 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+
+### Steps And Procedure
+
+*   &#x20;**This deployment utilizes the official Vault warden Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the vaultwarden/server application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the vaultwarden application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the vaultwarden webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the vaultwardem application and gained access to its features through a seamless and user-friendly process.
+
+
 
 **Step-by-Step Guide to vault watden Deployment**
 

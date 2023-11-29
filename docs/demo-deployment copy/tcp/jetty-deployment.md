@@ -2,43 +2,9 @@
 
 # 🖥 Jetty Deployment
 
-### What's  jetty?
+### Jetty: Agile Web Server and Servlet Container
 
-Jetty, often referred to as Eclipse Jetty, is an open-source web server and servlet container. It is developed as part of the Eclipse Foundation's community-driven projects and is written in Java. Jetty is designed to be highly scalable, lightweight, and embeddable, making it a popular choice for a wide range of web-based applications and services. Here are some key aspects of Jetty:
-
-1. **Web Server**: Jetty primarily functions as a web server, serving web content, static files, and handling HTTP requests. It supports various HTTP versions, including HTTP/1.1 and HTTP/2, making it suitable for modern web applications.
-2. **Servlet Container**: Jetty also serves as a servlet container, implementing the Java Servlet API. This means it can host Java servlets and JavaServer Pages (JSP), making it compatible with a wide range of Java-based web applications.
-3. **Embedded Deployment**: One of Jetty's strengths is its ability to be embedded within other Java applications. Developers can include Jetty as a library and configure it programmatically. This is especially useful for microservices and embedded systems.
-4. **Scalability**: Jetty is known for its scalability. It can efficiently handle a large number of concurrent connections and requests, making it suitable for high-traffic websites and web services.
-5. **Low Resource Usage**: Jetty is designed to be lightweight, with a small memory footprint. This makes it suitable for resource-constrained environments or scenarios where efficient resource usage is critical.
-6. **Modular Architecture**: Jetty adopts a modular architecture, allowing users to include only the components they need. This reduces the overall footprint and helps maintain a minimal attack surface.
-7. **WebSocket Support**: Jetty provides built-in support for WebSocket, enabling real-time bidirectional communication between clients and servers. This is essential for applications that require instant data updates.
-
-### **How It Works**
-
-Jetty works as a web server and servlet container to handle incoming HTTP requests, serve web content, and execute Java servlets and JavaServer Pages (JSP). Here's a simplified overview of how Jetty works:
-
-1. **Initialization**: Jetty is typically embedded within a Java application as a library. When the application starts, Jetty is initialized programmatically, and the necessary configurations are set up.
-2. **HTTP Server**: Jetty listens on a specified network port (e.g., port 8080) for incoming HTTP requests. It can also be configured to support secure connections via HTTPS.
-3. **Request Handling**: When an HTTP request (e.g., a web page request or API call) is received on the configured port, Jetty's request handling mechanism takes over.
-4. **Servlet Container**: If the request is destined for a Java servlet or JSP, Jetty's servlet container component processes it. The servlet container manages the servlet lifecycle, including instantiation, initialization, and execution of the servlet's `doGet()` or `doPost()` methods.
-5. **Static Content**: If the request is for static content (e.g., HTML, CSS, JavaScript files), Jetty serves these files directly from the configured directory without involving the servlet container. This improves performance for static assets.
-6. **Request Routing**: Jetty has a URL mapping mechanism that directs incoming requests to the appropriate servlet or resource based on the URL path. This routing ensures that each request is processed by the correct component.
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official jetty Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the jetty application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the jetty application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the jetty webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the Nginx application and gained access to its features through a seamless and user-friendly process.
+Jetty, or Eclipse Jetty, is a Java-based open-source web server and servlet container celebrated for its scalability and lightweight design.
 
 ### Installation
 
@@ -79,6 +45,24 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+
+
+
+### Steps And Procedure
+
+*   **This deployment utilizes the official jetty Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the jetty application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the jetty application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the jetty webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the Nginx application and gained access to its features through a seamless and user-friendly process.
+
 
 **Step-by-Step Guide to jetty Deployment**
 

@@ -2,103 +2,9 @@
 
 # 🖥 Stirling PDF Deployment
 
-### What's is stirling pdf?
+### Stirling PDF: Your PDF Wizard
 
-**PDF Magic Unleashed** – Imagine having a digital wizard at your disposal. This web-based PDF manipulation tool is like having a spellbook for PDFs. It can split, merge, convert, and even compress PDFs, turning mundane documents into magical creations.
-
-**Split and Conquer** – Ever wanted to take just a piece of a lengthy PDF? This tool lets you slice and dice PDFs into multiple files, right at the pages you choose. It's like dissecting a book without the mess.
-
-**The Merging Spell** – On the flip side, you can merge multiple PDFs into one seamless masterpiece. It's like combining puzzle pieces to reveal a bigger picture.
-
-**Shape-Shifting PDFs** – With the power to convert PDFs to and from images, your documents can transform into any format you desire. It's like turning a swan into a frog, and back again (without the kissing part).
-
-**Page Reorder Wizardry** – Reorganize PDF pages as if you're rearranging furniture in a room. It's as easy as changing your mind about the sofa's position.
-
-**Image Enchantment** – This tool is even working on a feature to add images to PDFs, making your documents visually enchanting. Think of it as sprinkling fairy dust on your reports.
-
-**Rotation Charm** – Sometimes, a PDF needs to look at things from a different angle. You can rotate PDFs in 90-degree increments, so your documents never get a stiff neck.
-
-**Slimming Elixir** – Need to shed some digital weight? Compress your PDFs to make them more svelte. It's like a digital gym session for your files.
-
-**The Guardian of Secrets** – Add and remove passwords, set permissions, and protect your PDFs like a guardian of ancient scrolls.
-
-**The Mark of Distinction** – Add watermarks to your PDFs for that extra touch of professionalism. It's like branding your documents with a seal of approval.
-
-**Master of Metadata** – Edit metadata to give your PDFs the right identity. It's like giving your document a digital passport.
-
-**Dark Mode Sorcery** – Even wizards need some rest. Activate dark mode for a more comfortable experience, like working by candlelight in a digital library.
-
-So, what's the secret behind this digital wizardry? It's like having a magical spellbook for PDFs, with the power to split, merge, convert, and even compress them. You can reorder pages, add images, rotate, protect with passwords, and even brand them with watermarks. It's the perfect blend of magic and technology for your documents.
-
-### **How It Works**
-
-**Unveiling the PDF Manipulation Wizardry**
-
-In a world where documents reign supreme, the PDF manipulation tool emerges as a digital wizard. Picture a versatile Swiss Army knife for your PDF files, ready to perform all sorts of enchanting feats. Now, let's uncover the magic behind it:
-
-**Splitting Spells** 🧙‍♂️
-
-* You have a lengthy PDF, but you only need a specific section. This tool lets you slice the PDF at your chosen page numbers or extract each page as a separate file. It's like dividing your document into perfectly portioned chapters.
-
-**Merging Mysteries** 📜
-
-* On the flip side, you can merge multiple PDFs into one harmonious creation. Imagine assembling puzzle pieces to reveal a stunning picture.
-
-**Converting Conjurations** 🌟
-
-* With the power of conversion, this tool can transform your PDFs into images and vice versa. Think of it as turning your document into a digital chameleon.
-
-**Reordering Rituals** 🔄
-
-* Like a maestro rearranging notes in a symphony, you can reorganize PDF pages effortlessly. It's akin to giving your document a new composition.
-
-**Image Incantations** 🌄
-
-* Want to add images to your PDFs? The tool is working on that magic too. Soon, you'll sprinkle visuals into your documents like a digital Picasso.
-
-**Rotation Enchantment** 🌀
-
-* Sometimes, you need to look at things from a different perspective. Rotate PDFs in 90-degree increments, and your documents will never have a stiff posture.
-
-**C****ompression Charms** 📦
-
-* Need to reduce file sizes? Compress your PDFs, just like vacuum-packing clothes for a trip.
-
-**Password Protection Spells** 🔐
-
-* Protect your PDFs with passwords and set access permissions. It's like fortifying your documents with a digital moat.
-
-**Watermark Wizardry** 🌊
-
-* Brand your documents with watermarks, leaving an indelible mark of distinction. Think of it as adding a digital signature to your masterpiece.
-
-**Metadata Magic** 📄
-
-* Edit metadata to give your PDFs the right identity. It's like providing a passport for your document's travels.
-
-**Dark Mode Sorcery** 🌒
-
-* For those late-night digital adventures, activate dark mode. It's akin to dimming the lights in a digital study.
-
-Now you know the secrets behind this PDF manipulation tool. It combines technology and magic to make your PDFs do extraordinary things, from splitting and merging to converting and compressing. It's the digital wizard your documents have been waiting fo
-
-### Steps And Procedure
-
-&#x20;**This deployment utilizes the official stirling pdf Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [frooodle/s-pdf](https://hub.docker.com/r/frooodle/s-pdf)  application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the Stirling PDF application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  Stirling PDF webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the Stirling PDF application and gained access to its features through a seamless and user-friendly process.
-
-
-
+**Stirling PDF** is a web-based PDF manipulation tool that acts like a digital wizard for your documents. It can split, merge, convert, and compress PDFs, offering a range of enchanting features such as page reordering, image addition, rotation, password protection, watermarking, and more. The tool combines magic and technology to transform mundane PDFs into versatile and visually appealing documents.
 ### Installation
 
 | Docker Image                                                                                                                                 |
@@ -138,6 +44,25 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+&#x20;**This deployment utilizes the official stirling pdf Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [frooodle/s-pdf](https://hub.docker.com/r/frooodle/s-pdf)  application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the Stirling PDF application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the  Stirling PDF webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the Stirling PDF application and gained access to its features through a seamless and user-friendly process.
+
+
+
+
+
 **Step-by-Step Guide to stirling pdf  Deployment**
 
 1. **Docker Image Selection:**
@@ -172,6 +97,10 @@ By following these steps, you can effortlessly deploy an Stirling PDF instance w
 
 ### Visual Snapshots
 
+![Alt Text](/img/cs.jpg)
+![Alt Text](/img/fee2.jpg)
+![Alt Text](/img/sffq.jpg)
+![Alt Text](/img/asq.jpg)
 
 
 ### Youtube Tutorial&#x20;

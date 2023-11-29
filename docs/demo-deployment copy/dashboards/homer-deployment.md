@@ -6,35 +6,6 @@
 
 _Homer is a user-friendly, self-hosted dashboard that simplifies the management of your various services and applications. This web-based dashboard offers quick and convenient access to a wide range of self-hosted tools and services from a single interface. It's designed to streamline your experience in organizing and interacting with your self-hosted applications, enhancing accessibility and productivity._
 
-### **How It Works:**
-
-Homer simplifies the process of configuring and accessing your self-hosted services through these key steps:
-
-1. _**Configuration**:_ Begin by defining the services you want to include in your Homer dashboard using a YAML configuration file. In this file, you list the names, URLs, and icons associated with each service you wish to access.
-2. **Dashboard Interface**: After setting up your configuration, you can access your Homer dashboard through a web browser. The dashboard offers an organized and user-friendly view of your services, making it straightforward to locate and launch them.
-3. **Service Accessibility**: Each entry on the dashboard typically features an icon, a service name, and a URL link. Clicking on either the icon or the name of a service opens a new tab or window in your browser, taking you directly to the designated URL of that service.
-4. **Customization**: Homer goes the extra mile in terms of customization. You can personalize the appearance of your dashboard by selecting different themes, layouts, and colors that align with your preferences.
-5. **Quick Access**: With Homer, there's no need to remember individual URLs or maintain a complex list of bookmarks for your self-hosted services. The dashboard provides a centralized hub, simplifying access to everything you need.
-
-In essence, Homer transforms the way you interact with your self-hosted applications and services, offering a seamless and efficient solution for managing and accessing them all from a single, user-friendly interface.
-
-### Steps And Procedure
-
-&#x20;**This deployment utilizes the official Homer Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the b4bz/homer application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the homer application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  homer webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the homer application and gained access to its features through a seamless and user-friendly process.
-
-
-
 ### Installation
 
 | Docker Image                                                                                                                   |
@@ -74,6 +45,25 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+
+### Steps And Procedure
+
+&#x20;**This deployment utilizes the official Homer Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the b4bz/homer application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the homer application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the  homer webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the homer application and gained access to its features through a seamless and user-friendly process.
+
+
+
+
 
 **Step-by-Step Guide to homer Deployment**
 

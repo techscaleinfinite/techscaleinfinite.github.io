@@ -122,6 +122,12 @@ By following these steps, you can effortlessly deploy an radical instance with y
 
 ### Visual Snapshots
 
+![Alt Text](/img/dwd3.jpg)
+![Alt Text](/img/jjh4.jpg)
+
+![Alt Text](/img/sder.jpg)
+![Alt Text](/img/swd.jpg)
+![Alt Text](/img/vsvs.jpg)
 
 ### Youtube Tutorial&#x20;
 

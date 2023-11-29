@@ -2,62 +2,9 @@
 
 # 🖥 Heimdall Deployment
 
-**What's is heimdall?**
+### Heimdall Dashboard Overview
 
-**Heimdall Dashboard: Where Web Apps Find Harmony**
-
-Tired of the never-ending tabs and bookmarks cluttering your digital life? Say hello to Heimdall Application Dashboard, your one-stop solution for taming the chaos and bringing order to your web applications.
-
-**1. Unified Web App Haven:** No More Tab Overload: Heimdall Dashboard puts an end to the tab madness. It neatly organizes all your web applications, tools, and services in one place.
-
-**2. Customization Galore:** Your Dashboard, Your Rules: Heimdall empowers you to personalize your dashboard to your heart's content. Add links to web applications, search engines, or even set it as your browser's start page. It's your digital canvas – paint it the way you want.
-
-**3. Visual Pleasure:** More than Just Organization: Heimdall doesn't just tidy up; it's a visual delight. Discover visually appealing apps that make managing your digital world a joyful experience.
-
-**4. Apps API Magic:** Your Quick Access Pass: Dive into an array of enhanced apps, foundational apps, and generic items through Heimdall's apps API. It's your express route to swift access for your favorite web applications and services.
-
-**5. Simplified Streamlining:** Efficiency at Its Best: Heimdall is your partner in digital efficiency. Spend less time hunting for tools and more time using them. It's your personalized launchpad to the digital world.
-
-**6. Beyond Apps Alone:** Freedom to Choose: Heimdall isn't limited to apps. It's your canvas for organizing anything – web apps, resources, or even personal shortcuts. Your preferences set the limits, and they're practically limitless.
-
-In a nutshell, Heimdall Application Dashboard is where digital chaos meets order, where scattered web applications find unity, and where customization reigns supreme. With Heimdall, your digital life turns into an elegantly orchestrated symphony, with all your favorite apps and tools harmoniously brought together. Say hello to simplicity, visual delight, and efficiency, and make Heimdall your portal to a more organized and enjoyable online experience
-
-### **How It Works:**
-
-**Navigating the Heimdall Dashboard: A Symphony of Digital Organization**
-
-The Heimdall Application Dashboard takes on the role of a digital conductor, creating a seamless symphony of web applications, services, and tools. Let's unravel the magic of this harmonious platform:
-
-**1. Entry to Elegance:** Your Unified Hub: When you open Heimdall, you're welcomed by a single hub that neatly gathers all your digital essentials into a visually pleasing space.
-
-**2. Personalized Precision:** Dashboard Tailored for You: The power is in your hands. Customize your dashboard by adding links to web apps, search engines, or even set it as your browser's start page. It's a canvas where you decide the composition.
-
-**3. Aesthetic Appeal:** More Than Just Function: Heimdall isn't just about being functional; it's a visual delight. Explore visually captivating apps that turn everyday management into a pleasurable experience.
-
-**4. API Access:** Dive into the App World: Explore enhanced apps, foundational apps, and generic items through Heimdall's apps API. It's your express lane to instant access to your most-visited web applications and services.
-
-**5. Streamlined Efficiency:** Efficiency at Its Best: Heimdall is your efficiency partner. Spend less time searching for tools and more time using them. It's your personalized gateway to the digital universe.
-
-**6. Boundless Freedom:** No Limits: Heimdall goes beyond just applications. It's your canvas for organizing anything – web apps, resources, or even personal shortcuts. Your preferences set the boundaries, and those boundaries are nearly infinite.
-
-In essence, the Heimdall Application Dashboard takes the chaos of scattered web applications and transforms it into a symphony of organization. It's where customization reigns supreme, your digital life finds unity, and the mundane becomes a visual delight. Embrace simplicity, efficiency, and a touch of elegance with Heimdall, your gateway to a more organized and enjoyable online journey
-
-### Steps And Procedure
-
-&#x20;**This deployment utilizes the official Heimdall Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the l[inuxserver/heimdall](https://hub.docker.com/r/linuxserver/heimdall) application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the _Heimdall_ application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  _Heimdall_ webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the _Heimdall_ application and gained access to its features through a seamless and user-friendly process.
-
-
+**Heimdall Application Dashboard** is a unified hub for organizing web applications, tools, and services. It eliminates tab overload by neatly organizing digital essentials in one visually pleasing space. With extensive customization options, Heimdall allows users to tailor their dashboard, making it a personal canvas. The platform combines aesthetic appeal with efficiency, providing API access for quick app navigation and extending beyond apps to offer limitless organization possibilities. Heimdall transforms digital chaos into an elegantly orchestrated symphony, offering a more organized and enjoyable online experience.
 
 ### Installation
 
@@ -98,6 +45,25 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+
+### Steps And Procedure
+
+&#x20;**This deployment utilizes the official Heimdall Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the l[inuxserver/heimdall](https://hub.docker.com/r/linuxserver/heimdall) application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the _Heimdall_ application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the  _Heimdall_ webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the _Heimdall_ application and gained access to its features through a seamless and user-friendly process.
+
+
+
+
 
 **Step-by-Step Guide to heimdall Deployment**
 

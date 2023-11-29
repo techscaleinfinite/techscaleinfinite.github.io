@@ -3,59 +3,9 @@
 
 ### What's is caddy?
 
-\
-**Caddy: Where Simplicity Meets Security**
+**Caddy: Simplifying Web Servers**
 
-_Introducing Caddy, the modern web server that's rewriting the script on simplicity, efficiency, and security. Here's the backstage pass:_
-
-_A Web Server Reimagined:_ Caddy isn't your run-of-the-mill web server; it's the avant-garde of the web hosting world. It's like the sleek sports car of web servers, designed to break down complexity and hand you simplicity on a silver platter. You won't need a manual to figure this one out.
-
-_User-Friendly Sorcery:_ Configuring and deploying web services can sometimes feel like navigating a labyrinth. But with Caddy, it's like magic. It's as if you're waving a wand, and your web services are up and running. Say goodbye to those confusing configuration files. Caddy offers a user-friendly interface that feels like pure sorcery.
-
-_Efficiency Unleashed:_ Caddy doesn't believe in wasting time. It's a well-oiled machine, delivering web content with finesse and speed. When it serves, it does so swiftly and efficiently, ensuring that your website visitors don't have to twiddle their thumbs.
-
-_Guardian of Security:_ While for some, security is just another feature, for Caddy, it's a way of life. It's engineered with layers of protection, ensuring that your web services stay safe and sound. It's like having an impenetrable fortress guarding your website.
-
-_Automation at Your Service:_ Remember those tedious tasks that you'd rather not deal with? Caddy's got your back. It's the ever-reliable assistant that takes care of the nitty-gritty details, leaving you free to focus on the grand performance. It's like having a trusty sidekick in the world of web hosting.
-
-With Caddy, the web server experience is like a finely orchestrated symphony – harmonious, efficient, and utterly secure
-
-### **How It Works**
-
-**Caddy's Feature Ensemble: Unveiled**
-
-Caddy is a web server with a remarkable ensemble of features that make web server management a piece of cake. Let's take a tour of its superpowers:
-
-**1. Configuration Simplified:** Gone are the days of complex, cryptic configurations. Caddy speaks the language of humans. Defining how your web server should behave is a breeze with its Caddyfile. No more need to decode mysterious code.
-
-**2. HTTPS Made Effortless:** Caddy steals the spotlight with its automatic HTTPS magic. When you set up a domain in the Caddyfile, it effortlessly summons SSL/TLS certificates from Let's Encrypt. Secure connections? Consider it done – no manual certificate wrangling required.
-
-**3. Master of Reverse Proxy:** Caddy is a pro at being a reverse proxy. It expertly reroutes requests to other services based on domain or path hints. Planning to host multiple services on one server? Caddy's got your back, making sure each request reaches its destination.
-
-**4****. Load Balancing Virtuoso:** Load balancing is like a walk in the park for Caddy. It gracefully distributes incoming traffic across multiple backend servers, ensuring high availability and turbocharged performance.
-
-**5. Rewrite and Redirect Maven:** Need to tweak URLs or create SEO-friendly redirects? Caddy's your go-to hero. It lets you redefine URLs and perform elegant redirections – a dream come true for SEO pros.
-
-**6. Speed Demon:** Caddy doesn't believe in slowing down. It's all about speed, using cutting-edge web server technology to handle multiple connections with grace.
-
-**7. Plugins and Middleware Galore:** Caddy's versatility shines through its support for plugins and middleware. Whether it's controlling access, setting up authentication, or implementing advanced logging, Caddy has the tools to boost your web service.
-
-**8. Compression On-the-Fly:** Caddy doesn't just serve content; it optimizes it. It automatically compresses resources like CSS, JavaScript, and HTML on the fly, ensuring your web content arrives in style – fast and efficient.
-
-Caddy – where power meets simplicity, and its feature-packed performance takes center stage. Whether you're a tech enthusiast or just someone who wants their website to run smoothly, Caddy makes it happen.
-
-### Steps And Procedure
-
-&#x20; **This deployment utilizes the official caddy image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the cadd application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the Caddy application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  Caddy webpage and explore its content.
+*Caddy*, the modern web server, excels in simplicity, efficiency, and security. Offering a user-friendly experience, it streamlines configuration with its human-readable Caddyfile. With automatic HTTPS setup, Caddy effortlessly summons SSL/TLS certificates from Let's Encrypt, ensuring secure content delivery. As a master of reverse proxy, it expertly directs requests for hosting multiple services, while graceful load balancing guarantees high availability. Caddy's prowess extends to URL tweaking, SEO-friendly redirects, and efficient handling of multiple connections, making it a speed demon in web server technology. Its feature ensemble, including plugins and middleware, contributes to a harmonious, efficient, and secure web server experience.
 
 ### Installation
 
@@ -96,6 +46,20 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+### Steps And Procedure
+
+&#x20; **This deployment utilizes the official caddy image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the cadd application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the Caddy application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the  Caddy webpage and explore its content.
+
+
 
 **Step-by-Step Guide to caddy Deployment**
 

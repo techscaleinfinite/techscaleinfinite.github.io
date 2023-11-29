@@ -2,40 +2,9 @@
 
 # 🖥 Nginx deployment
 
-### What's is Nginx?
+### Nginx: The Multifaceted Web Tool
 
-Nginx is more than just your run-of-the-mill web server; it's a versatile multitool that enhances your online presence in a multitude of ways:
-
-Web Server: Nginx serves as a nimble and efficient web server, ensuring that web content is delivered swiftly and effectively to users. It's like the reliable engine powering your website, keeping it up and running smoothly.
-
-Reverse Proxy: Acting as a diligent guardian, Nginx functions as a reverse proxy, skillfully managing external requests to safeguard your applications. It's akin to a vigilant gatekeeper, allowing only authorized traffic to pass through.
-
-Load Balancer: Nginx takes on the role of a traffic conductor, expertly distributing incoming requests among multiple servers. This load-balancing act ensures optimal performance and reliability, as if orchestrating a harmonious symphony of server resources.
-
-Mail Proxy: In the realm of email infrastructure, Nginx shines as a proficient mail proxy, efficiently routing emails to their intended destinations. It's like the postal service's secret weapon, ensuring your emails reach their recipients without a hitch.
-
-HTTP Cache: Nginx boasts a remarkable capability as an HTTP cache, where it stores and serves frequently accessed resources. This cache acts as a well-organized library, enabling faster delivery of web content by reducing the need to fetch data repeatedly.
-
-### **How It Works**
-
-Nginx's event-driven architecture handles multiple connections simultaneously, making it perfect for high-traffic scenarios. It's resource-efficient and enhances application performance, all while being open-source and free.
-
-Nginx: Streamline, secure, and supercharge your web operations
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official Nginx Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the Nginx application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the Nginx application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the Nginx webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the Nginx application and gained access to its features through a seamless and user-friendly process.
+Nginx transcends traditional web servers, functioning as a swift web server, diligent reverse proxy, efficient load balancer, proficient mail proxy, and adept HTTP cache. It powers websites, secures applications, orchestrates server resources, handles email routing, and optimizes content delivery with its versatile features.
 
 ### Installation
 
@@ -77,6 +46,24 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+
+
+### Steps And Procedure
+
+*   **This deployment utilizes the official Nginx Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the Nginx application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the Nginx application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the Nginx webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the Nginx application and gained access to its features through a seamless and user-friendly process.
+
+
 
 **Step-by-Step Guide to NGINX Deployment**
 

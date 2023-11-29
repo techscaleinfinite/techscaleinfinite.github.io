@@ -2,38 +2,9 @@
 
 # Minecraft Server
 
-### Whats Minecraft Server?
+### ScaleInfinite's Personalized Minecraft Server
 
-ScaleInfinite offers a personalized Minecraft server, exclusively for you and your friends, ensuring an uninterrupted and immersive gaming experience.
-
-**Key Points:**
-
-1. **Dedicated Gaming Space:** Enjoy a dedicated server environment exclusively for Minecraft.
-2. **Friends Inclusion:** Invite friends to join and play together on your private server.
-3. **24/7 Availability:** The server is accessible anytime, allowing gaming day and night.
-4. **Custom Rules:** Set your own rules, mods, and gameplay options for a unique experience.
-5. **Data Security:** Your gaming progress and interactions remain secure within your private server.
-
-### **Working in Brief:**
-
-1. **Deployment:** Deploy your personalized Minecraft server on ScaleInfinite.
-2. **Access Control:** Invite friends by sharing server IP and port information.
-3. **Gameplay:** Players connect to the server using the provided details.
-4. **Shared Adventure:** Collaborate with friends, explore, build, and engage in Minecraft activities.
-5. **Admin Control:** As the server owner, you manage settings, mods, and player access.
-
-ScaleInfinite's personal Minecraft server provides an ideal platform for seamless and exclusive gaming sessions with friends. It fosters creativity, collaboration, and hours of enjoyment in a safe and controlled environment.
-
-### &#x20;Steps And Procedure&#x20;
-
-* &#x20;**This deployment uses the official Minecraft Docker image.**
-* &#x20;Go to create apps page and Search on the search bar.
-* &#x20;Click on install button.
-* &#x20;Fill all the reqired fields.
-* click on Advanced.
-* &#x20;Click on the Install button.
-* &#x20;You will be redirected to My Apps page, Here you can find all the applications you deployed.
-* &#x20;Copy the minecraft application Hostname without NodePort and search the Url.
+ScaleInfinite offers a dedicated Minecraft server for personalized gaming experiences. Exclusive to you and your friends, the server ensures 24/7 accessibility, custom rules, and data security. Deployed on ScaleInfinite, it provides a secure and immersive platform for collaborative and creative Minecraft adventures.
 
 ### Installation
 
@@ -72,6 +43,19 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+
+### &#x20;Steps And Procedure&#x20;
+
+* &#x20;**This deployment uses the official Minecraft Docker image.**
+* &#x20;Go to create apps page and Search on the search bar.
+* &#x20;Click on install button.
+* &#x20;Fill all the reqired fields.
+* click on Advanced.
+* &#x20;Click on the Install button.
+* &#x20;You will be redirected to My Apps page, Here you can find all the applications you deployed.
+* &#x20;Copy the minecraft application Hostname without NodePort and search the Url.
+
+
 
 **Step-by-Step Guide to Minecraft Deployment**
 

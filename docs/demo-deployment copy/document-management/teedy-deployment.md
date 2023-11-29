@@ -1,61 +1,9 @@
 
 
 # 🖥 Teedy Deployment
+### Teedy: Symphony of Document Management
 
-### What's is teedy?
-
-In the vast digital landscape, staying organized is no small feat. Enter Teedy, your beacon of light in the world of document management. With a sleek and modern interface, Teedy simplifies your quest for order and clarity in the realm of business operations.
-
-**A Symphony of Order** 📂
-
-* Teedy presents itself as a modern maestro of document organization. Say goodbye to the clutter, and hello to a harmonious repository for all your important documents. It's like having a finely tuned orchestra for your business records.
-
-**Upload and Discover** 🚀
-
-* Efficiency is at the core of Teedy's philosophy. You won't spend precious moments wrestling with the tool. Just upload your documents, and like a well-trained retriever, Teedy will fetch them for you whenever you need them. It's document retrieval made easy.
-
-**Fortress of Security** 🔒
-
-* Your documents are precious, and Teedy treats them as such. With precision akin to a locksmith's touch, Teedy offers stringent user permissions, encryption, and data centers nestled in the secure embrace of France. Only the chosen ones will glimpse your treasures, ensuring that your documents remain in the right hands.
-
-In a world of digital chaos, Teedy is your anchor, your guardian of order. It's where your documents find solace, and your business operations regain their clarity. With Teedy, you're not just managing documents; you're orchestrating a symphony of organization and security.
-
-### **How It Works**
-
-**Unveiling the Inner Workings of Teedy**
-
-Imagine a world where document management is not a hassle but an elegant symphony. Teedy, formerly known as Sismics Docs, is here to turn this vision into reality. It's not just another document management system; it's a modern, lightweight marvel designed to streamline your digital life.
-
-**Organization Made Elegant** 📂
-
-* Teedy welcomes you with a sleek, contemporary interface that transforms the chaos of document handling into a work of art. It's like stepping into a meticulously curated art gallery where every piece has its place. Teedy is your curator of order in the world of business operations.
-
-**Seamless Upload and Instant Retrieval** 🚀
-
-* Teedy's philosophy is simple: save your time. Uploading documents is a breeze, and when you need them, Teedy's lightning-fast search function effortlessly retrieves what you seek. It's like having a digital assistant who knows where everything is, so you don't have to.
-
-**A Citadel of Security** 🔒
-
-* Teedy treats your documents like treasures, guarding them with the meticulous care of a master locksmith. User permissions are as precise as a laser beam. Your documents rest under the shield of encryption, and Teedy's data centers in France provide a fortress of security. Your documents are seen only by those you intend.
-
-In a world brimming with digital clutter, Teedy stands as your beacon of order and simplicity. It's not just about managing documents; it's about crafting an exquisite symphony of organization and security. With Teedy, your documents find a serene sanctuary, and your business operations gain crystal-clear clarity. Welcome to Teedy, where elegance meets efficiency.
-
-### Steps And Procedure
-
-&#x20;**This deployment utilizes the official teedy Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find [jdreinhardt/teedy](https://hub.docker.com/r/jdreinhardt/teedy)  application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the  Teedy  application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the   Teedy webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the  Teedyapplication and gained access to its features through a seamless and user-friendly process.
-
-
+**Teedy** is a sleek document management system designed to bring order and clarity to your business operations. With a modern interface, it acts as a maestro of organization, providing efficient document upload and retrieval. Teedy ensures the security of your documents with precise user permissions, encryption, and secure data centers in France, offering a symphony of elegance and efficiency in the realm of document management.
 
 ### Installation
 
@@ -97,6 +45,25 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+&#x20;**This deployment utilizes the official teedy Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find [jdreinhardt/teedy](https://hub.docker.com/r/jdreinhardt/teedy)  application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the  Teedy  application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the   Teedy webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the  Teedyapplication and gained access to its features through a seamless and user-friendly process.
+
+
+
+
+
 **Step-by-Step Guide to Teedy  Deployment**
 
 1. **Docker Image Selection:**
@@ -131,7 +98,11 @@ By following these steps, you can effortlessly deploy an  Teedy instance with yo
 
 ### Visual Snapshots
 
-
+![Alt Text](/img/ddd2.jpg)
+![Alt Text](/img/dfr5.jpg)
+![Alt Text](/img/dd322.jpg)
+![Alt Text](/img/dwr.jpg)
+![Alt Text](/img/sw2.jpg)
 
 ### Youtube Tutorial&#x20;
 

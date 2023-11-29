@@ -2,33 +2,49 @@
 
 # 🖥 Mongo DB
 
-### What's Mongo DB?
+### MongoDB: The Gem of NoSQL
 
-MongoDB is a real gem in the database world and here's why:
+**MongoDB** shines as a NoSQL database, offering flexibility and scalability. Departing from traditional databases, it embraces document orientation with BSON, allowing diverse and nested data structures. MongoDB's dynamic schema, powerful query language, and CRUD operations provide a creative and efficient approach to data management. It's a gem for those who seek a flexible, document-friendly, and infinitely scalable database solution.
 
-**NoSQL databases:** MongoDB is a fresh departure from traditional databases. It doesn't limit your data to rigid tables and rows; instead, he dances to the beat of his own drums, using flexible, freehand collections of materials.
+### Installation
 
-Document Orientation: Think of your data as a string of general-purpose JSON-like BSON documents. These documents can be as flexible as you want, can even contain nested tables and sub-documents. It's like having a stack of digital index cards that you can mix and match at will. Ability of extension: MongoDB is like a chameleon: it adapts to your needs. It is designed to be horizontally scalable, meaning you can easily distribute your data across multiple servers or clusters. This extension is like having a rubber band on your data storage, ensuring it can grow comfortably according to your needs.
+| Docker Image                                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------- |
+| [mongo db](https://hub.docker.com/\_/mongo)👈(click me,for the dockerhub image) |
 
-**Flexible scheme:** In the MongoDB world, you are the master of your data destiny. MongoDB's dynamic schema is like a canvas on which you can draw different strokes for each document. It's a lifesaver when you're dealing with ever-changing data structures. It's like having a drawer on your desk where you can store new things without worrying about putting them in neat compartments.
+| Application name                                                                  |
+| --------------------------------------------------------------------------------- |
+| Eg: mongo db1(you can put any name) |
 
-So MongoDB is more than just a database; it's a flexible, document-friendly, and infinitely scalable solution that makes sense of the unpredictable nature of data. Whether you're working on a small project or managing large data sets, MongoDB has your back, allowing you to build your data landscape with creative freedom. It's a database for people who march to the beat of the drums based on their own data.
+| Resource Allocation                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
 
-### **Working in Brief:**
+`PROTOCOL`
 
-**Data structure:** MongoDB keeps its data organized into collections that you can think of as tables in a traditional relational database. Each collection is a container of individual documents, like the rows in these tables.
+<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>-</td></tr><tr><td>Tcp</td><td>27017</td></tr></tbody></table>
 
-**Document-oriented storage:** MongoDB stores data in BSON documents (binary JSON). These documents are extremely flexible and can hold many different types of data, from simple strings and numbers to more complex arrays and subdocuments. It's like having a Swiss army digital knife for data storage. Query and index: MongoDB is very powerful when it comes to querying data. You can use its powerful query language to filter, sort, and aggregate data in a collection. But here's the fun part: Intervening indexes to enhance your queries. They create special data structures that make data retrieval very fast, like having a well-organized library where you can quickly find the book you need.
+| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
 
-**CRUD Operation:** MongoDB talks about the following basic CRUD operations:
+If you choose Advanced option:
 
-Create: To add a new document to the collection, simply insert it. It's like putting a new book on the library shelf.
+| ENV VARIABLE                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------- |
+| |
 
-Read: When you want to get data, you use queries to find and retrieve documents. It's like going through the shelves of a library to choose a book to read.
+| WORKING DIR                                                                             |
+| --------------------------------------------------------------------------------------- |
+| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
+| Here use ( use the path after   " :"  )                 |
+| /my/own/datadir:/data/db                                                                |
 
-Update: MongoDB allows you to easily modify existing documents. It's like adding a new chapter to a book or updating information in an encyclopedia. DELETE: Sometimes you need to delete data. MongoDB simplifies things by allowing you to remove documents from a collection, just like removing books from a library.
+`Access`
 
-So MongoDB is more than just a data storage solution; it is a dynamic and flexible system that allows you to efficiently manipulate and retrieve your data. It's like having a library of information at your fingertips, where you can seamlessly add, explore, update, and delete documents as needed. It is both powerful and user-friendly data management. 📚📊
+| Public                                      | Private                                      |
+| ------------------------------------------- | -------------------------------------------- |
+| (select this if you want to make it public) | (select this if you want to make it private) |
 
 ### Steps And Procedure&#x20;
 
@@ -73,45 +89,7 @@ If you want to connect MongoDB Compass to a MongoDB instance running on a differ
 
 Remember that for the connection to work, the MongoDB server at the specified IP address (`103.37.96.201` in your case) must be reachable from your computer and configured to allow connections from the IP address you are using. Also, if the server requires authentication, make sure to provide the correct credentials during the connection setup.
 
-### Installation
 
-| Docker Image                                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------- |
-| [mongo db](https://hub.docker.com/\_/mongo)👈(click me,for the dockerhub image) |
-
-| Application name                                                                  |
-| --------------------------------------------------------------------------------- |
-| Eg: mongo db1(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>-</td></tr><tr><td>Tcp</td><td>27017</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------- |
-| |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-| /my/own/datadir:/data/db                                                                |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 **Step-by-Step Guide to MONGO DB Deployment**
 

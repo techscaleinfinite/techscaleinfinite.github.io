@@ -2,60 +2,9 @@
 
 # 🖥 Kavita Deployment
 
-### What's is kavita?
+### Kavita: A Swift and Versatile Digital Library
 
-**Introducing Kavita: Your Rocket-Powered Digital Library**
-
-In the vast universe of digital libraries, Kavita shines like a shooting star. This self-hosted wonder is not your average library—it's a high-speed, sleek, and versatile repository for a wide array of file formats.
-
-🚀 **Lightning-Fast & Elegant** 🎩 Kavita is like the Flash of digital libraries, giving you supersonic access to your literary treasures. Its slick design isn't just eye candy; it's an intuitive guide to your reading world. With Kavita, you're always just a click away from your reading lists and collections.
-
-📚 **A Haven for Bookworms & Manga Enthusiasts** 📖 Whether you're a bookworm diving into novels or a manga aficionado exploring epic worlds, Kavita welcomes you. It neatly organizes your manga, comics, and books in one place, each series properly labeled, creating a harmonious symphony of literary order.
-
-⭐ **Ratings & Reviews at Your Fingertips** 📝 Kavita isn't just a library; it's a community. You can rate and review your favorite manga, sharing your thoughts with fellow enthusiasts. It's like having a book club that never sleeps.
-
-🔍 **Swift Searches, Like Magic** 🔮 Kavita has a magic trick up its sleeve: lightning-fast search. As you start typing, your manga appears as if by sorcery. It's the closest thing to mind-reading for a digital library.
-
-🔐 **User & Library Management, Simplified** 📊 Managing your library has never been easier. Kavita offers rich user-based roles, authentication, and library management—all from within the app. It's the command center for your literary kingdom.
-
-In the realm of digital libraries, Kavita isn't just a star; it's a supernova. It's where speed, style, and substance converge, offering you a portal to explore the vast galaxies of literature. Discover Kavita, where your reading experience goes beyond the ordinary and reaches for the stars
-
-### **How It Works**
-
-**Unlocking Kavita: Your Digital Library's Inner Workings**
-
-Ever wondered how a digital library as swift and powerful as Kavita operates behind the scenes? Let's dive into the mechanics that make Kavita tick.
-
-📥 **File Format Versatility** 🧩 Kavita embraces a wide array of file formats, making it the ideal haven for all your literary treasures. Whether it's an epic fantasy novel, a thrilling comic, or a captivating manga series, Kavita accommodates them all.
-
-🏠 **Homepage Haven** 🏡 Your journey often begins at the homepage. Here, you can swiftly resume your reading adventures, access your meticulously curated reading lists, and peruse your collections. It's your literary command center.
-
-📚 **Library Organization** 📂 Imagine having all your series neatly cataloged in one place, with each bearing its rightful name. Kavita does just that, ensuring your library is an oasis of order and accessibility.
-
-⭐ **Community Spirit** 🤝 Kavita isn't just about reading; it's about connecting. Share your thoughts and opinions by rating and reviewing your favorite manga and books. It's a virtual book club, alive with vibrant discussions.
-
-🔍 **Instant Search Magic** 🎩 Searching for your desired manga is like casting a spell. Start typing, and like magic, your manga appears before you. It's a testament to Kavita's commitment to swift access.
-
-🔐 **User & Library Management** 📊 The heart of Kavita's functionality lies in its robust user management and library organization features. With user-based roles, authentication, and intuitive library management tools, Kavita offers control and order to your literary universe.
-
-Behind its elegant interface, Kavita is a sophisticated piece of technology designed to make your literary journey seamless and enjoyable. It's a digital realm where your favorite stories come to life, and where every page turned feels like an adventure. Welcome to Kavita, where the magic of literature meets the power of technology.
-
-### Steps And Procedure
-
-&#x20;**This deployment utilizes the official kavita Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find  [kizaing/kavita](https://hub.docker.com/r/kizaing/kavita)  application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the  kavita  application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the   kavita webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the  kavita application and gained access to its features through a seamless and user-friendly process.
-
-
+**Kavita** is a self-hosted digital library offering lightning-fast access to a diverse range of file formats. With a sleek design, it caters to bookworms and manga enthusiasts, providing organized series, user reviews, and swift search capabilities. Kavita simplifies library management, offering a command center for users to explore literature seamlessly.
 
 ### Installation
 
@@ -97,6 +46,24 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+### Steps And Procedure
+
+&#x20;**This deployment utilizes the official kavita Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find  [kizaing/kavita](https://hub.docker.com/r/kizaing/kavita)  application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the  kavita  application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the   kavita webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the  kavita application and gained access to its features through a seamless and user-friendly process.
+
+
+
+
 
 **Step-by-Step Guide to kavita Deployment**
 
@@ -138,6 +105,11 @@ By following these steps, you can effortlessly deploy an  Kavita instance with y
 
 ### Visual Snapshots
 
+![Alt Text](/img/swee.jpg)
+![Alt Text](/img/gt.jpg)
+
+![Alt Text](/img/ju.jpg)
+![Alt Text](/img/fdfd4.jpg)
 
 
 

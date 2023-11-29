@@ -2,48 +2,9 @@
 
 # 🖥 HTTPd Deployment
 
-### What's  httpd?
+**Apache HTTP Server (HTTPD): Powering the Web**
 
-**The Apache HTTP Server (HTTPD): Empowering the Web**
-
-_Apache HTTP Server, commonly known as HTTPD, is more than just a web server; it's the cornerstone of web hosting. Let's unravel the essence of this legendary software:_
-
-1. **Web Serving Excellence:** At its core, HTTPD excels at serving web content. It seamlessly delivers HTML, images, CSS, JavaScript, and more to users' browsers via HTTP and HTTPS protocols.
-2. **Open Source Prowess:** HTTPD is a proud open-source champion. Its source code is a gift to the world, nurturing a community of developers and fostering innovation.
-3. **Platform Agnostic:** HTTPD dances gracefully across diverse platforms. It harmonizes with Unix-based systems like Linux and BSD, as well as Windows, offering versatile web hosting solutions.
-4. **Modular Marvel:** HTTPD's strength lies in its modularity. With a treasure trove of dynamic modules, it adapts to various scenarios effortlessly. Customize and extend its capabilities as per your desires.
-5. **Security Sentry:** Security is HTTPD's middle name. It comes fortified with access control, authentication, and encryption features, making it the guardian of secure websites. Administrators wield the power to control access meticulously.
-6. **Configuration Finesse:** HTTPD's configuration options are as intricate as a Swiss watch. Tailor it to your specific needs by tweaking settings that govern access, performance, and functionality.
-
-_In the ever-evolving landscape of web hosting, Apache HTTP Server stands as a timeless monument, fostering the web's growth securely and efficiently._ 🚀
-
-### **How It Works:**
-
-1.  **Client Request Unveiled: The Apache Ballet**
-
-    _Behold, the enchanting dance of client requests and Apache's graceful response:_
-
-    1. **Client Request Debut:** It all commences with a client - often a web browser - extending an HTTP request towards a web server. This request can be as simple as a URL or rich with parameters and information, akin to casting a spell.
-    2. **Server's Attentive Ear:** The Apache server is a vigilant sentinel, stationed at a specific port (usually 80 for HTTP or 443 for HTTPS). It stands ready, ears perked, waiting for the faintest whisper of a client connection.
-    3. **Request Unraveled:** As a request arrives, Apache steps onto the stage, armed with its configuration directives from files like 'httpd.conf' or 'apache2.conf.' These directives hold the script, guiding Apache in its response.
-    4. **Modules, the Dancers:** Apache's secret lies in its modular ensemble. Each request dictates the choreography. If PHP prowess is needed, the 'mod\_php' module takes center stage, elegantly pirouetting to handle PHP scripts.
-
-    _In this intricate ballet, Apache's modular flexibility allows it to waltz through an array of requests, delivering the perfect performance every time_
-
-### Steps And Procedure
-
-*   **This deployment utilizes the official httpd Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the httpd application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the httpd application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the httpd webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the Nginx application and gained access to its features through a seamless and user-friendly process.
+*Apache HTTP Server* (HTTPD) is a versatile, open-source web server excelling in delivering web content seamlessly. It operates across various platforms, ensures security, and boasts a modular design for easy customization. In handling client requests, HTTPD's modularity allows it to elegantly adapt to diverse scenarios, making it a timeless foundation for web hosting.
 
 ### Installation
 
@@ -84,6 +45,23 @@ If you choose Advanced option:
 | Public                                      | Private                                      |
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
+
+### Steps And Procedure
+
+*   **This deployment utilizes the official httpd Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the httpd application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the httpd application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the httpd webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the Nginx application and gained access to its features through a seamless and user-friendly process.
+
+
 
 **Step-by-Step Guide to httpd Deployment**
 

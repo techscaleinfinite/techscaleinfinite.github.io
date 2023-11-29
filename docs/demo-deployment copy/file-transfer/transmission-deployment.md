@@ -2,48 +2,9 @@
 
 # 🖥 Transmission Deployment
 
-### What's  transmission?
+### Transmission: Effortless and Speedy BitTorrent Client
 
-**Transmission: Your Ticket to Effortless Torrenting**
-
-Tired of wrestling with complicated torrent clients? Meet Transmission, the fast, easy, and free BitTorrent client that simplifies your downloading experience. Here's why Transmission stands out in the crowd:
-
-**1. Designed for Simplicity**
-
-* Transmission is all about ease of use. It's like your favorite pair of sneakers—comfortable and always ready to go.
-* We've fine-tuned the defaults, so it practically sets itself up. Plus, advanced features like watch directories and bad peer blocklists are just a few clicks away.
-* Ubuntu, a Linux favorite, chose Transmission as its default BitTorrent client precisely because of its gentle learning curve.
-
-**2. Lightweight and Speedy**
-
-* Transmission is a speed demon with a featherlight touch. It won't hog your memory or resources.
-* _Its minimal system footprint makes it perfect for home NAS and media servers, a favorite among tech giants like Western Digital, Zyxel, and Belkin._
-* No matter your hardware, Transmission delivers impressive performance without breaking a sweat.
-
-Say goodbye to torrenting headaches and embrace Transmission's simplicity and speed. It's the BitTorrent client that respects your time and resources, ensuring your downloads are a breeze. Give Transmission a spin and experience torrenting the way it should be—fast, easy, and free.
-
-### **How It Works**
-
-The Transmission Process: A Vibrant Torrenting Experience Torrenting does not have to be difficult. Transmission simplifies things without compromising power. This is how it works:
-
-Simple Installation and Configuration Transmission is intended to make torrenting as simple as possible. It comes with preset settings that just work, so you can get started downloading right away. Do you require additional control? No worries. With a few clicks, you may simply configure sophisticated features such as monitor folders and peer blocklists. Because of its user-friendliness, Ubuntu, a popular Linux distribution, chose Transmission as its default BitTorrent client. It is the client who will not leave you perplexed.
-
-&#x20;Lightweight and quick Performance Transmission is really effective. It will not use your system's memory or resources, allowing your computer to stay responsive. Because of its lightweight form, it is ideal for home NAS (Network Attached Storage) devices and media servers. It's a popular choice among large IT companies such as Western Digital, Zyxel, and Belkin. Transmission guarantees lightning-fast performance regardless of your hardware configuration.
-
-### Steps And Procedure
-
-*   &#x20;**This deployment utilizes the official transmission  Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the [linuxserver/transmission](https://hub.docker.com/r/linuxserver/transmission)  application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the Transmission application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the Transmission webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the Transmission application and gained access to its features through a seamless and user-friendly process.
+Transmission stands out as a user-friendly, lightweight, and fast BitTorrent client, simplifying the torrenting experience. Designed for simplicity, it offers easy installation and configuration, making it a favorite for both beginners and advanced users. With a minimal system footprint, Transmission ensures speedy performance without consuming excessive resources, making it an ideal choice for various devices, including home NAS and media servers.
 
 ### Installation
 
@@ -88,6 +49,23 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+### Steps And Procedure
+
+*   &#x20;**This deployment utilizes the official transmission  Docker image. Here's a step-by-step guide to get you started:**
+
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the [linuxserver/transmission](https://hub.docker.com/r/linuxserver/transmission)  application.
+    2. Click on the "Install" button to initiate the installation process.
+    3. Fill in all the required fields with the necessary information.
+    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+    5. After making your selections, press the "Install" button to proceed.
+    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+    7. Copy the Hostname of the Transmission application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the Transmission webpage and explore its content.
+
+    By following these straightforward steps, you'll have successfully deployed the Transmission application and gained access to its features through a seamless and user-friendly process.
+
+
+
 **Step-by-Step Guide to transmission Deployment**
 
 1. **Docker Image Selection:**
@@ -130,7 +108,9 @@ By following these steps, you can effortlessly deploy an Transmission instance w
 
 ### Visual Snapshots
 
-
+![Alt Text](/img/ddd4.jpg)
+![Alt Text](/img/rgr5.jpg)
+![Alt Text](/img/oiir.jpg)
 
 
 ### Youtube Tutorial&#x20;

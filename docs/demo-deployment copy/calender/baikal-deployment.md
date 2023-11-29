@@ -4,56 +4,13 @@
 
 ### What's is baikal?
 
-**1. Web Interface Mastery–** Imagine a web interface that's not just user-friendly but genuinely intuitive. Baïkal offers exactly that. Managing users, address books, and calendars becomes a breeze. It's like having a personal assistant that understands your every command.
-
-**2. Universal Access –** Baïkal doesn't believe in boundaries. It's your bridge to a synchronized digital life. Access your contacts and calendars from every device you own. No more hassles with compatibility issues – it's all about harmonious connectivity.
-
-**3. The Symphony of Integration –** Think of Baïkal as the conductor of your digital orchestra. It seamlessly orchestrates your contacts and calendars, allowing you to be in perfect sync. It's like having your own digital maestro for a harmonious digital life.
-
-**4. Digital Harmony –** Baïkal doesn't just bring order to your digital world; it transforms it into a harmonious melody. Your contacts and calendars are no longer scattered – they're in perfect alignment, like musical notes on a score.
-
-**5. Device Agnostic–** Whether you're a fan of the latest gadgets or cherish vintage tech, Baïkal doesn't discriminate. It ensures that your contacts and calendars are at your fingertips, regardless of the device you choose to use.
-
-**6. A Symphony of Productivity–** Baïkal isn't just a tool; it's your productivity partner. It simplifies, streamlines, and harmonizes your digital life. It's the note that brings together the entire symphony of your connected existence.
-
-In the grand performance of digital life, Baïkal plays a pivotal role. It's your conductor, your assistant, and your guardian of seamless connectivity. With Baïkal, your contacts and calendars become a harmonious symphony, ready to be played on any device you choose. Welcome to the world of effortless digital harmony with Baïkal.
-
-### **How It Works:**
-
-**The Baïkal Ballet –** Ever watched a ballet performance? Imagine Baïkal as the choreographer, orchestrating the beautiful dance of your digital contacts and calendars. It elegantly brings them together in a seamless web interface.
-
-**Sync Across Universes –** Baïkal isn't just a contact manager; it's a cosmic connector. It lets you access your precious contacts and calendars from any corner of the digital universe. It's like having a universal remote for your digital life.
-
-**Intuitive Maestro–** Baïkal's web interface is more intuitive than your grandma's chicken soup recipe. It's so easy to manage users, address books, and calendars that you'd think it reads your mind.
-
-**Digital Symphony–** Baïkal is all about harmonizing your digital world. It takes your scattered notes and chaotic schedules and turns them into a symphony of organized bliss. It's like tidying up a room filled with chaos, but in the digital realm.
-
-**Cross-Device Serenade–** Baïkal serenades you across all your devices. It doesn't care if you're a tech enthusiast or a collector of antique gadgets. Your contacts and calendars will be at your beck and call, no matter which device you choose.
-
-**The Productivity Crescendo** Baïkal is not just a tool; it's your digital maestro. It conducts your digital orchestra, creating a symphony of productivity. It's the secret sauce to your efficient digital life.
-
-So, how does Baïkal work its magic? Picture it as a digital ballet choreographer, a universal connector, and an intuitive maestro all rolled into one. It takes your digital chaos, orchestrates it into a harmonious symphony, and delivers it seamlessly to any device. That's Baïkal – where technology meets elegance.
-
-### Steps And Procedure
-
-&#x20;**This deployment utilizes the official baikal Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [ckulka/baikal](https://hub.docker.com/r/ckulka/baikal) application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the Baïkal  application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  Baïkal webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the Baïkal application and gained access to its features through a seamless and user-friendly process.
-
-
+Imagine a web interface that's not just user-friendly but genuinely intuitive. Baïkal offers exactly that. Managing users, address books, and calendars becomes a breeze. It's like having a personal assistant that understands your every command.
+ Baïkal doesn't believe in boundaries. It's your bridge to a synchronized digital life. Access your contacts and calendars from every device you own. No more hassles with compatibility issues – it's all about harmonious connectivity.
 
 ### Installation
 
-| Docker Image                                                                                                                        |
+| Docker Image                         
+                                                                                               |
 | ----------------------------------------------------------------------------------------------------------------------------------- |
 | [baikal](https://hub.docker.com/r/ckulka/baikal) 👈(click me,for the dockerhub image) |
 
@@ -90,6 +47,24 @@ If you choose Advanced option:
 | ------------------------------------------- | -------------------------------------------- |
 | (select this if you want to make it public) | (select this if you want to make it private) |
 
+
+### Steps And Procedure
+
+&#x20;**This deployment utilizes the official baikal Docker image. Here's a step-by-step guide to get you started:**
+
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [ckulka/baikal](https://hub.docker.com/r/ckulka/baikal) application.
+2. Click on the "Install" button to initiate the installation process.
+3. Fill in all the required fields with the necessary information.
+4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
+5. After making your selections, press the "Install" button to proceed.
+6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
+7. Copy the Hostname of the Baïkal  application without the NodePort and paste it into your preferred browser's address bar.
+8. Voilà! You're now able to access the  Baïkal webpage and explore its content.
+
+By following these straightforward steps, you'll have successfully deployed the Baïkal application and gained access to its features through a seamless and user-friendly process.
+
+
+
 **Step-by-Step Guide to baikal Deployment**
 
 1. **Docker Image Selection:**
@@ -124,11 +99,11 @@ By following these steps, you can effortlessly deploy an Baïkal instance with y
 
 ### Visual Snapshots
 
-![Alt Text](/img/jp.jpg)
-![Alt Text](/img/tty.jpg)
-![Alt Text](/img/uu7.jpg)
-![Alt Text](/img/jp.jpg)
-![Alt Text](/img/tty.jpg)
+![Alt Text](/img/dyy.jpg)
+![Alt Text](/img/dty.jpg)
+![Alt Text](/img/ewd.jpg)
+![Alt Text](/img/ed36.jpg)
+![Alt Text](/img/ffee3.jpg)
 
 
 
