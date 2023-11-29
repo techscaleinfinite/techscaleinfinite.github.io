@@ -118,6 +118,12 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an ZNC instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+![Alt Text](/img/433.jpg)
+![Alt Text](/img/432.jpg)
+![Alt Text](/img/asd.jpg)
+
+![Alt Text](/img/qq1.jpg)
+![Alt Text](/img/dd3.jpg)
 
 
 ### Youtube Tutorial&#x20;

@@ -124,6 +124,8 @@ By following these steps, you can effortlessly deploy an HTTPD instance with you
 
 ### Visual Snapshots
 
+![Alt Text](/img/e43.jpg)
+![Alt Text](/img/ss22.jpg)
 
 
 ### Youtube Tutorial&#x20;

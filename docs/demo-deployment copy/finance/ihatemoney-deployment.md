@@ -162,6 +162,13 @@ By following these steps, you can effortlessly deploy an I Hate Money  instance 
 
 ### Visual Snapshots
 
+![Alt Text](/img/ww21.jpg)
+![Alt Text](/img/eee3.jpg)
+![Alt Text](/img/f4.jpg)
+
+![Alt Text](/img/ge3.jpg)
+![Alt Text](/img/gg42.jpg)
+![Alt Text](/img/ee333.jpg)
 
 ### Youtube Tutorial&#x20;
 

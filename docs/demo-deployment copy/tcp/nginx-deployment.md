@@ -111,6 +111,8 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an NGINX instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+![Alt Text](/img/ss2.jpg)
+![Alt Text](/img/jje4.jpg)
 
 
 ### Youtube Tutorial&#x20;

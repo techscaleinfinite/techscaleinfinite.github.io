@@ -175,7 +175,18 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an OctoBot   instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+![Alt Text](/img/ree.png)
+![Alt Text](/img/f3.jpg)
+![Alt Text](/img/ff3.jpg)
 
+![Alt Text](/img/eef3.jpg)
+![Alt Text](/img/eeg3.jpg)
+![Alt Text](/img/ee22.jpg)
+![Alt Text](/img/ww21.jpg)
+![Alt Text](/img/eee3.jpg)
+![Alt Text](/img/f4.jpg)
+
+![Alt Text](/img/eer.jpg)
 
 ### Youtube Tutorial&#x20;
 

@@ -139,6 +139,12 @@ By following these steps, you can effortlessly deploy an _Heimdall_ instance wit
 ### Visual Snapshots
 
 
+![Alt Text](/img/bfl5.jpg)
+![Alt Text](/img/fmgm4.jpg)
+![Alt Text](/img/dmm4.jpg)
+![Alt Text](/img/grr.jpg)
+![Alt Text](/img/ejf.jpg)
+
 
 
 

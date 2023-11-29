@@ -114,6 +114,8 @@ By following these steps, you can effortlessly deploy an HOMER instance with you
 
 ### Visual Snapshots
 
+![Alt Text](/img/ht5.jpg)
+![Alt Text](/img/kkr.jpg)
 
 
 ### Youtube Tutorial&#x20;

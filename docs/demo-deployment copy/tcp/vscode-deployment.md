@@ -159,6 +159,9 @@ By following these steps, you can effortlessly deploy an VSCODE instance with yo
 
 ### Visual Snapshots
 
+![Alt Text](/img/jp.jpg)
+![Alt Text](/img/tty.jpg)
+![Alt Text](/img/uu7.jpg)
 
 
 ### Youtube Tutorial&#x20;

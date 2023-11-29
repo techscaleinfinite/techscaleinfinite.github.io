@@ -167,6 +167,12 @@ By following these steps, you can effortlessly deploy an  GITEA instance with yo
 
 ### Visual Snapshots
 
+![Alt Text](/img/gg432.jpg)
+![Alt Text](/img/iir.jpg)
+![Alt Text](/img/oii.jpg)
+![Alt Text](/img/ki.jpg)
+![Alt Text](/img/jji.jpg)
+![Alt Text](/img/ii.jpg)
 
 
 ### Youtube Tutorial&#x20;

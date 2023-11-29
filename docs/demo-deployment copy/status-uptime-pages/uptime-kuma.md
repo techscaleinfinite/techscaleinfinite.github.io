@@ -145,6 +145,12 @@ By following these steps, you can effortlessly deploy an  Uptime Kuma instance w
 
 ### Visual Snapshots
 
+![Alt Text](/img/t4.jpg)
+![Alt Text](/img/gg5.jpg)
+![Alt Text](/img/mm4.jpg)
+![Alt Text](/img/ff4.jpg)
+![Alt Text](/img/m3.jpg)
+![Alt Text](/img/eee33.jpg)
 
 ### Youtube Tutorial&#x20;
 

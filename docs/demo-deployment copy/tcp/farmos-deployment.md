@@ -181,7 +181,13 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an farmOS instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+![Alt Text](/img/ww.jpg)
+![Alt Text](/img/aao.jpg)
+![Alt Text](/img/aa.jpg)
 
+![Alt Text](/img/eee24.jpg)
+![Alt Text](/img/dcd3.jpg)
+![Alt Text](/img/qw3.jpg)
 
 
 ### Youtube Tutorial&#x20;

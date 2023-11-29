@@ -124,6 +124,14 @@ By following these steps, you can effortlessly deploy an Baïkal instance with y
 
 ### Visual Snapshots
 
+![Alt Text](/img/jp.jpg)
+![Alt Text](/img/tty.jpg)
+![Alt Text](/img/uu7.jpg)
+![Alt Text](/img/jp.jpg)
+![Alt Text](/img/tty.jpg)
+
+
+
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.
@@ -132,11 +140,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** Baïkal **image we used.**
+**About Baïkal image we used.**
 
 This is the official Baïkal  image.
 
-**Can I deploy my own** Baïkal **image with modified configuration ?**
+**Can I deploy my own Baïkal image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 

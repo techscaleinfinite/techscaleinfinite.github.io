@@ -108,6 +108,8 @@ By following these steps, you can effortlessly deploy an nextcloud instance with
 
 ### Visual Snapshots
 
+![Alt Text](/img/aa12.jpg)
+![Alt Text](/img/ee34.jpg)
 
 
 

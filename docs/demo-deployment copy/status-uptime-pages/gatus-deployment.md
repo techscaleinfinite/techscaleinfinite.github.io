@@ -148,6 +148,9 @@ By following these steps, you can effortlessly deploy an  gatus instance with yo
 
 ### Visual Snapshots
 
+![Alt Text](/img/cfsr.jpg)
+![Alt Text](/img/ddt5.jpg)
+![Alt Text](/img/ddwe4.jpg)
 
 
 ### Youtube Tutorial&#x20;

@@ -133,6 +133,9 @@ If you choose Advanced option:
 By following these steps, you can effortlessly deploy an Linux Vps instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
+![Alt Text](/img/add7.jpg)
+![Alt Text](/img/sds9.jpg)
+
 
 
 ### Youtube Tutorial&#x20;

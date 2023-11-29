@@ -126,6 +126,11 @@ By following these steps, you can effortlessly deploy an vault warden instance w
 
 ### Visual Snapshots
 
+![Alt Text](/img/ewf.jpg)
+![Alt Text](/img/dcd4.jpg)
+![Alt Text](/img/sd4.jpg)
+
+![Alt Text](/img/cc7.jpg)
 
 ### Youtube Tutorial&#x20;
 
