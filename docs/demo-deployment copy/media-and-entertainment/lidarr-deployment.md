@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/dff.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🎶 Lidarr Deployment
 

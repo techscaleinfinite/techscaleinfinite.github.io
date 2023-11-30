@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/eegb.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 ZenPhoto Deployment
 ### Zenphoto: Creative Website CMS

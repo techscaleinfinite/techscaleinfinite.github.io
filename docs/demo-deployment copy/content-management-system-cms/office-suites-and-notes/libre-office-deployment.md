@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/dfds.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 📜 Libre Office Deployment
 
@@ -7,44 +9,23 @@
 LibreOffice is the Swiss Army knife of office software, offering a suite of applications for document writing, spreadsheet calculations, and dynamic presentations—all while being open-source and free. As your trusty sidekick, LibreOffice includes Writer for text, Calc for spreadsheets, and Impress for presentations. It's not just about practicality; it's about freedom, with an open-book philosophy that allows exploration, modification, and sharing without constraints. LibreOffice's magic lies in its user-friendly applications, making document creation, data crunching, and presentation design seamless and accessible. In essence, it's the superhero of office software, empowering users without the burden of costly licenses.
 
 ### Installation
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [LIBREOFFICE](https://hub.docker.com/r/linuxserver/libreoffice👈(click me,for the dockerhub image                                   |
+| Application name      |  Eg: LIBREOFFICE(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:    3000                                                                                                        | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  application/lib/etherpad-lite/var/dirtdb                     |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Docker Image                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [LIBREOFFICE](https://hub.docker.com/r/linuxserver/libreoffice)👈(click me,for the dockerhub image) |
 
-| Application name                                                                    |
-| ----------------------------------------------------------------------------------- |
-| Eg: LIBREOFFICE(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>3000</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                                         |
-| --------------------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```              |
-| Here use ( use the path after   " :"  )                             |
-|  ```shell  -v /path/to/config:/config```  |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 
 ### Steps And Procedure

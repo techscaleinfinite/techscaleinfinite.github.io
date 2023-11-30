@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/wdww.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # Mini game Deployment
 

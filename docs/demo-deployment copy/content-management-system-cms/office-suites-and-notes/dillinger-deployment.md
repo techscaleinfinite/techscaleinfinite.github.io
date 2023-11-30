@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/ww33.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 📓 Dillinger Deployment
 
@@ -7,44 +9,22 @@
 Meet Dillinger, the HTML5 Markdown editor that combines simplicity with powerful features. Whether you're a writer, coder, or creative mind, Dillinger has you covered. With a mobile-friendly design and cloud storage, it offers on-the-go convenience and ensures your documents are always accessible. Dillinger's clean interface, offline capability, and live preview feature provide a distraction-free writing experience. It goes beyond basic editing with AngularJS technology, Github integration, and the ability to effortlessly convert Markdown to HTML. Embrace the magic of Dillinger as your Markdown companion for an enchanting and efficient writing journey.
 
 ### Installation
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [Dillinger](https://hub.docker.com/r/linuxserver/dillinger)👈(click me,for the dockerhub image                                   |
+| Application name      |  Eg: OWNCLOUD1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:8080                                                                                                            | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                       |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Docker Image                                                                                                                                                                                                                                  |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Dillinger](https://hub.docker.com/r/linuxserver/dillinger)  [👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
-
-| Application name                                                              |
-| ----------------------------------------------------------------------------- |
-| Eg: dilli(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>8080</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                                         |
-| --------------------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```              |
-| Here use ( use the path after   " :"  )                             |
-|  ```shell  - /path/to/configs:/config```  |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 ### Steps And Procedure
 
 *   **This deployment utilizes the official dillinger  Docker image. Here's a step-by-step guide to get you started:**

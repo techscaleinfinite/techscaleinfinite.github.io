@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/img/ssc.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🔒 Caddy Deployment
 

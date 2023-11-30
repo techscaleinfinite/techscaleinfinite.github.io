@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/rfgf.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 🖥 Joomla
 
@@ -10,42 +13,22 @@ Its superpowers extend with extensions like modules, plugins, and components, al
 
 ### Installation
 
-| Docker Image                                                                               |
-| ------------------------------------------------------------------------------------------ |
-| `joomla`👈(click me,for the dockerhub image) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  `joomla`👈(click me,for the dockerhub image)                                  |
+| Application name      |  Eg: joomla(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80                                                                                                           | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) grafana-storage:/var/lib/grafana                      |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Application name                                                                |
-| ------------------------------------------------------------------------------- |
-| Eg: joomla1(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 ### Steps And Procedure
 
 *   **This deployment utilizes the official joomla Docker image. Here's a step-by-step guide to get you started:**

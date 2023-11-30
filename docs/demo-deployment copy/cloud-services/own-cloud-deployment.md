@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/ty5.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # ☁ Own Cloud Deployment
 
@@ -7,44 +10,6 @@
 **OwnCloud** is a robust open-source platform empowering users with data ownership, security, and seamless collaboration. Users establish their cloud storage system, ensuring data remains under their control. With secure access, seamless sharing, and collaboration tools, OwnCloud acts as a digital fortress for data privacy and control. It offers a user-friendly web interface, facilitates syncing across devices, and stands as a self-hosted solution for enhanced security. OwnCloud, with its extensive features and flexibility, is a reliable ally in the quest for secure, accessible, and well-managed data.
 
 ### Installation
-
-| Docker Image                                                                                                                                                          |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`owncload`](https://hub.docker.com/\_/owncloud)👈(click me,for the dockerhub image) |
-
-| Application name                                                                  |
-| --------------------------------------------------------------------------------- |
-| Eg: OWNCLOUD1(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>8080</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-| /var/www/html                                                                           |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 
 ### Steps And Procedure

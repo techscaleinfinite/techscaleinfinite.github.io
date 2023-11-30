@@ -1,5 +1,8 @@
 
 
+<p align="center">
+  <img src="/img/rre4.jpg" alt="Alt Text" width="25%"/>
+</p>
 # 📓 Onlyoffice deployment
 
 
@@ -8,6 +11,21 @@
 **ONLYOFFICE**, crafted by Ascensio System SIA, redefines document editing with a robust office suite. It features online editors for text, spreadsheets, and presentations, blending Microsoft Office and OpenDocument compatibility seamlessly. The suite offers a rich toolbox for precise formatting, calculations, and collaborative features, making teamwork a breeze. With a focus on taming complexity, ONLYOFFICE stands as your productivity ally, seamlessly integrating into web solutions. Experience a new era in office suites where creativity knows no bounds—ONLYOFFICE, your canvas, calculator, and stage for unparalleled work. 🚀📄👩‍💻
 
 ### Installation
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [ONLYOFFICE](https://hub.docker.com/r/onlyoffice/documentserver/)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: office(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80                                                                                                           | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```shell -v /app/onlyoffice/DocumentServer/logs:/var/log/onlyoffice  \ -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data```                     |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 | Docker Image                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

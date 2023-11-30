@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/img/sd.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Znc Deployment
 

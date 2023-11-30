@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/fgrn.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # ⚡ LightStreamer Deployment
 ### Lightstreamer: Real-Time Messaging Maestro

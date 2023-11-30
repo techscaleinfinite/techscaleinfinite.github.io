@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/vff.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 💹 ihatemoney Deployment
 

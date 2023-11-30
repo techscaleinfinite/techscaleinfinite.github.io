@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/seeb.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Qbittorent Deployment
 

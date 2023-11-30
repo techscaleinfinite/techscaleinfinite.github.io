@@ -1,5 +1,7 @@
 
-
+<p align="center">
+  <img src="/img/sdsu.jpg" alt="Alt Text" width="25%"/>
+</p>
 # 💧 Drupal deployment
 
 # Drupal: Your Friendly Website Companion
@@ -8,46 +10,22 @@ Drupal is your open-source, PHP-powered friend for building and managing website
 
 ### Installation
 
-| Docker Image                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------ |
-| [`drupal`](https://hub.docker.com/\_/drupal)👈(click me,for the dockerhub image) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [`drupal`](https://hub.docker.com/\_/drupal)👈(click me,for the dockerhub image                                   |
+| Application name      |  Eg: OWNCLOUD1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80                                                                                                          | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )   ```shell -v /path/on/host/modules:/var/www/html/modules \-v /path/on/host/profiles:/var/www/html/profiles \v-v /path/on/host/sites:/var/www/html/sites \ -v /path/on/host/themes:/var/www/html/themes \```                    |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-| Application name                                                               |
-| ------------------------------------------------------------------------------ |
-| Eg: drupal(you can put any name) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                                                                                                                                                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-                                                                                                                                                                                       |
-| Here use ( use the path after   " :"  )                                                                                                                                                                                                          |
-|  ```shell -v /path/on/host/modules:/var/www/html/modules \
-	-v /path/on/host/profiles:/var/www/html/profiles \
-	-v /path/on/host/sites:/var/www/html/sites \
-	-v /path/on/host/themes:/var/www/html/themes \```  |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 ### &#x20;Steps And Procedure
 

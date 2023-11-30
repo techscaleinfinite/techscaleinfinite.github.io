@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/ssd.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # Minecraft Server
 

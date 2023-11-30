@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/ok3.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Couch Base Deployment
 

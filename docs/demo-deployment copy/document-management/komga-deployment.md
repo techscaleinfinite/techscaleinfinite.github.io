@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/fft.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 📙 Komga Deployment
 

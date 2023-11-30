@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/fev.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🦭 Maria Db Deployment
 

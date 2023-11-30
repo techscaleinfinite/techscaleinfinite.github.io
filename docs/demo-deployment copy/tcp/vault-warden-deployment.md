@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/dqq.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Vault Warden Deployment
 

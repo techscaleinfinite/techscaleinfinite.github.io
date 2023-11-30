@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/efv.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Homer Deployment
 

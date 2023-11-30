@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/efefg.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🐈 Tomcat Deployment
 

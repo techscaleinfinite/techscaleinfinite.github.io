@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/img/sad.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 🖥 Node Red Deployment
 
@@ -8,44 +11,22 @@
 Node-RED boasts a library for saving and sharing code snippets, functions, or entire flows. Behind the scenes, flows are stored as JSON, offering flexibility in import, export, and sharing. The platform goes beyond being a tool; it's a canvas for digital artistry, where creativity knows no bounds. Start painting the future of connectivity with Node-RED, where your imagination sets the limits, and innovation is the masterpiece. 🎨💡🌐
 
 ### Installation
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          | [node red ](https://hub.docker.com/r/nodered/node-red/)(click me,for the dockerhub image)                                  |
+| Application name      |  Eg: nodered(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:1880                                                                                                           | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) ```shell -v myNodeREDdata:/data```                    |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Docker Image                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------- |
-| [node red ](https://hub.docker.com/r/nodered/node-red/)👈(click me,for the dockerhub image) |
-
-| Application name                                                             |
-| ---------------------------------------------------------------------------- |
-| Eg: node(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>1880</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-|  ```shell -v myNodeREDdata:/data```                                   |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 **Step-by-Step Guide to MEDIAWIKI Deployment**
 

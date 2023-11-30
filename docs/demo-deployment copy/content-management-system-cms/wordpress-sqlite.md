@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/img/fds.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 
 # 🖥 WordPress SQLite

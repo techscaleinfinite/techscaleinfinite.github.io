@@ -1,5 +1,7 @@
 
-
+<p align="center">
+  <img src="/img/dcdt5jpg" alt="Alt Text" width="25%"/>
+</p>
 # 📓 Livebook Deployment
 
 # Livebook: Your Collaborative Code Notebook
@@ -7,44 +9,21 @@
 Livebook is your dynamic companion in the coding and data exploration realm, seamlessly blending documentation and execution. With interactive code notebooks featuring Markdown support and code cells for Elixir execution, Livebook transforms coding into a collaborative adventure. The Monaco Editor, Kino for visualizations, and Smart Cells enhance your coding experience, while reproducibility and predictability streamline the process. Livebook fosters effortless collaboration, allowing multiple users to work simultaneously. It's open-source, decentralized, and ready to elevate your coding journey into a vibrant, communal exploration. Dive into Livebook for a magical coding experience!
 
 ### Installation
-
-| Docker Image                                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Livebook](https://hub.docker.com/r/livebook/livebook)   [👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
-
-| Application name                                                               |
-| ------------------------------------------------------------------------------ |
-| Eg: book33(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>8080</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                              |
-| ---------------------------------------------------------------------------------------- |
-| |
-| Here use ( use the path after   " :"  )                  |
-| -v $(pwd):/data [ghcr.io/livebook-dev/livebook](http://ghcr.io/livebook-dev/livebook)    |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [Livebook](https://hub.docker.com/r/livebook/livebook)👈(click me,for the dockerhub image                                   |
+| Application name      |  Eg: book1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:8080                                                                                                            | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) -v $(pwd):/data                      |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 
 ### Steps And Procedure

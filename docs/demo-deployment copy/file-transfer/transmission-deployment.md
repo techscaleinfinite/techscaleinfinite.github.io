@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/igb.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Transmission Deployment
 

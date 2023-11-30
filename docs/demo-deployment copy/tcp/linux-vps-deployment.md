@@ -1,5 +1,8 @@
 
----
+
+<p align="center">
+  <img src="/img/vbfbn.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Linux VPS deployment
 

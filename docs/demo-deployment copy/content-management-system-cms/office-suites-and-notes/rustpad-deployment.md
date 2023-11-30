@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="/img/ww37.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 📓 Rustpad Deployment
 
@@ -6,43 +9,23 @@
 
 **Rustpad** redefines collaborative text editing with its open-source marvel. Using operational transformation, edits appear instantaneously for all collaborators, creating a virtual writing party. This web-based editor eliminates complexities—share a link, and colleagues can join the editing fray hassle-free. With live preview and uninterrupted workflow, Rustpad transforms into a dynamic canvas where ideas come to life. Version control ensures easy navigation between document states. Embrace the future of real-time collaboration, bid farewell to traditional delays, and unleash your creative potential with Rustpad. ✨🖋️🤝
 ### Installation
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [Rustpad](https://hub.docker.com/r/ekzhang/rustpad)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: rst(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:3030                                                                                                           | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                       |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Docker Image                                                                                                                                                                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Rustpad](https://hub.docker.com/r/ekzhang/rustpad)[👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
 
-| Application name                                                             |
-| ---------------------------------------------------------------------------- |
-| Eg: rust(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>3030</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 ### Steps And Procedure
 
 *   **This deployment utilizes the official rustpad Docker image. Here's a step-by-step guide to get you started:**

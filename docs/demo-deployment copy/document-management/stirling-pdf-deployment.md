@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/gchnh.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Stirling PDF Deployment
 

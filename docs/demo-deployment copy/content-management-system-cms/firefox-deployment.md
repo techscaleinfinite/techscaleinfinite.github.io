@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/img/fdb.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 🦊 Firefox Deployment
 
@@ -6,43 +9,22 @@
 **Firefox** is a versatile, open-source web browser developed by Mozilla, offering users a secure and customizable online experience. With a user-friendly interface and cross-platform compatibility, Firefox prioritizes security and privacy through features like Enhanced Tracking Protection and Private Browsing. It supports a range of extensions for enhanced functionality, provides robust tab management, and continually optimizes performance. As an open-source project, Firefox involves a global community, ensuring regular updates and a commitment to accessibility. It's not just a browser; it's your trusty sidekick for safe and enjoyable internet exploration. 🦊🌐🔒
 
 ### Installation
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [`firefox`👈(](https://hub.docker.com/r/linuxserver/firefox)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: firefox(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80                                                                                                           | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                       |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Docker Image                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`firefox`👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
-
-| Application name                                                                  |
-| --------------------------------------------------------------------------------- |
-| Eg: jfirefox1(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 ### Steps And Procedure
 
 *   **This deployment utilizes the official firefox Docker image. Here's a step-by-step guide to get you started:**

@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/ghr.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 🎨 Asciiflow Deployment
 
@@ -7,44 +9,22 @@
 ASCII Flow is a web-based tool that provides an infinite canvas for creating diagrams and flowcharts using simple ASCII characters. With seamless Google Drive integration, your creations are securely stored and accessible from anywhere. The platform offers flexibility in design, allowing you to resize and freeform draw. Export your masterpieces to text or HTML for easy sharing and integration. Supporting both ASCII and Unicode characters, ASCII Flow is a versatile and interactive space for turning simple text into intricate designs. Embrace the elegance of text-based creativity and start diagramming effortlessly with ASCII Flow today!
 
 ### Installation
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [ascii flow ](https://hub.docker.com/r/fraoustin/asciiflow))👈(click me,for the dockerhub image                                   |
+| Application name      |  Eg: OWNCLOUD1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80                                                                                                             | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                       |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Docker Image                                                                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ascii flow ](https://hub.docker.com/r/fraoustin/asciiflow)[👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
-
-| Application name                                                             |
-| ---------------------------------------------------------------------------- |
-| Eg: flow(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )\\               |
-| /share                                                                                  |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 ### Steps And Procedure
 

@@ -1,5 +1,7 @@
 
----
+<p align="center">
+  <img src="/img/fsd.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 💻 Vscode Deployment
 

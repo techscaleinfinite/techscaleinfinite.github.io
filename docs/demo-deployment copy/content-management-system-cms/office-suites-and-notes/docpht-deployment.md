@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/a33.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 📓 DocPHT Deployment
 
@@ -7,46 +9,23 @@
 DocPHT stands out as a simple yet powerful documentation tool that streamlines note-taking, user management, version control, and backups. Ideal for both solo users and teams, it offers a tailored interface for a personalized workspace. Embrace the agility of a database-free system, ensuring your documentation remains adaptable and easily accessible. DocPHT redefines the documentation experience, bringing order to chaos and encouraging collaboration. Try it out to simplify your digital journey and witness how DocPHT makes documentation smarter and more efficient.
 
 ### Installation
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [DocPHT](https://hub.docker.com/r/docpht/docpht)👈(click me,for the dockerhub image                                   |
+| Application name      |  Eg: OWNCLOUD1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80                                                                                                          | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) ```shell -v /var/www/app/src/config:/var/www/app/src/config-v /var/www/app/data:/var/www/app/data-v /var/www/app/pages:/var/www/app/pages```                      |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Docker Image                                                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [DocPHT](https://hub.docker.com/r/docpht/docpht)  [👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
 
-| Application name                                                               |
-| ------------------------------------------------------------------------------ |
-| Eg: dioc33(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```                                                                             |
-| Here use ( use the path after   " :"  )                                                                                            |
-|  ```shell -v /var/www/app/src/config:/var/www/app/src/config
--v /var/www/app/data:/var/www/app/data
--v /var/www/app/pages:/var/www/app/pages```  |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 ### Steps And Procedure
 

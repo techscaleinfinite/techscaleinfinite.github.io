@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/vf.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # 💻 Grafana deployment
 
@@ -8,7 +10,23 @@
 
 Grafana's visual prowess turns data into a visual masterpiece, offering real-time updates and dynamic charts. With an alert system, it keeps you informed about data anomalies, serving as your personal data watchdog. Whether you're a seasoned data professional or a newcomer, Grafana is your gateway to turning data chaos into meaningful insights. It's your data, your rules, and your way to visualize and understand numbers like never before! 📊🕵️‍♂️✨
 
+### Installation
 
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [`grafana`](https://hub.docker.com/r/grafana/grafana)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: firefox(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80/3000                                                                                                           | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) grafana-storage:/var/lib/grafana                      |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 ### Steps And Procedure&#x20;
 
@@ -25,45 +43,7 @@ Grafana's visual prowess turns data into a visual masterpiece, offering real-tim
 
 By following these straightforward steps, you'll have successfully deployed the grafana  application and gained access to its features through a seamless and user-friendly process.
 
-### Installation
 
-| Docker Image                                                                                                                            |
-| --------------------------------------------------------------------------------------------------------------------------------------- |
-| [`grafana`](https://hub.docker.com/r/grafana/grafana)👈(click me,for the dockerhub image) |
-
-| Application name                                                                 |
-| -------------------------------------------------------------------------------- |
-| Eg: grafana1(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80/3000</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-| grafana-storage:/var/lib/grafana                                                        |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 **Step-by-Step Guide to Grafana Deployment**
 

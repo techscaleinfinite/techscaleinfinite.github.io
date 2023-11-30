@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/vv.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 # ☁ Next Cloud Deployment
 
@@ -7,44 +9,27 @@
 **Nextcloud** is an open-source, self-hosted cloud storage and collaboration solution, offering a secure alternative to commercial cloud services. Users set up Nextcloud on a server, becoming administrators to customize the platform. Serving as a digital filing cabinet, Nextcloud allows file uploads, folder organization, and synchronization across multiple devices. With seamless sharing options, users can collaborate effectively, deciding who can access and modify files. Nextcloud empowers users with control over their data, providing a personal file haven accessible anywhere.
 
 ### Installation
+### Installation
 
-| Docker Image                                                                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------- |
-| [nextcloud](https://hub.docker.com/\_/nextcloud/)👈(click me,for the dockerhub image) |
 
-| Application name                                                                                                                 |
-| -------------------------------------------------------------------------------------------------------------------------------- |
-| Eg: nextcloud1(you can put any name) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [nextcloud](https://hub.docker.com/\_/nextcloud/)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: nextcloud1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:8080                                                                                                               | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                       |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
 
-`PROTOCOL`
 
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>8080</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-| /var/www/html                                                                           |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 
 ### Steps And Procedure

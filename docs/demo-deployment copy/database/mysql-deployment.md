@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/kkkw.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 # 🖥 Mysql deployment
 
