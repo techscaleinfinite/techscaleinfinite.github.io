@@ -2,53 +2,38 @@
   <img src="/img/sdsd.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 💹 Octobot Deployment
 
 ### OctoBot: Streamlining Crypto Trading for All
 
 OctoBot, an open-source cryptocurrency trading robot, offers versatile strategies, user-friendly features, and inclusive accessibility. Traders can adopt strategies from the OctoBot Cloud, customize existing ones, or create their own with OctoBot Pro. The platform prioritizes transparency, allowing users to verify its operations, and it constantly evolves to meet the dynamic demands of the crypto market. With OctoBot, crypto-investors can trade smarter, regardless of their experience level, and unlock the full potential of their investments.
 
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation
 
-| Docker Image                                                                                                                                                                                                                                 |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [octobot ](https://hub.docker.com/r/drakkarsoftware/octobot)[👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |   [octobot ](https://hub.docker.com/r/drakkarsoftware/octobot) 👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: money1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:5001                                                                                                 | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )   ```/octobot/user```                      |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
-| Application name                                                                |
-| ------------------------------------------------------------------------------- |
-| Eg: octobot(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>5001</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-|  ```shell /octobot/user```                                            |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 ### Steps And Procedure
 
@@ -149,3 +134,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, crypto, monry
 
 </details>
+
+</span>
+

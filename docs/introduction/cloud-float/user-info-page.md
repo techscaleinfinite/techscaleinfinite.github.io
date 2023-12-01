@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="/img/vvdu.jpg" alt="Alt Text" width="400"/>
+</p>
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # ☁ User info Page
 
@@ -18,3 +23,5 @@ The User Info Page in Scale Infinite is a dedicated section of the platform that
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, user info
 
 </details>
+
+</span>

@@ -2,6 +2,8 @@
 sidebar_position: 1
 slug: /
 ---
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 
 # 💥 Quick starts
 
@@ -20,32 +22,9 @@ slug: /
 [Link to Scale Infinite FAQ ](https://techscaleinfinite.github.io/faq)
 
 
-<span style={{ fontFamily: 'Times New Roman', fontSize: '12pt' }}>
-  This text is in Times New Roman.
-</span>
-<span style={{ fontFamily: 'Arial', fontSize: '12pt' }}>
-  This text is in Arial font.
-  
-</span>
-
-<span style={{ fontFamily: 'Verdana', fontSize: '12pt' }}>
-  This text is in Verdana font.
-</span>
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
-  This text is in Helvetica font.
-</span>
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
-  This text is in Georgia font.
-</span>
-<span style={{ fontFamily: 'Courier New', fontSize: '12pt' }}>
-  This text is in Courier New font.
-</span>
-
-
-
-
-
 
 <span style={{ color: 'orange' }}>_**Our Pricing Plans**_</span>
 
 [Link to Scale Infinite Documentation](https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage)
+
+</span>

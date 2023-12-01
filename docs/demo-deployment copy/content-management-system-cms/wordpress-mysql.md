@@ -2,6 +2,8 @@
   <img src="/img/fds.jpg" alt="Alt Text" width="25%"/>
 </p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🖥 WordPress MySQL
 
 # WordPress: Crafting Websites with Ease and Security
@@ -11,7 +13,10 @@
 The collaboration with MySQL or MariaDB databases enhances efficiency in handling diverse website elements. Notably, WordPress prioritizes security by actively supporting HTTPS, encrypting data transmission for enhanced privacy.
 
 In brief, WordPress empowers users with a user-friendly interface for content creation, leverages PHP for dynamic page generation, integrates seamlessly with databases, and prioritizes security through HTTPS encryption. It stands as a versatile and secure solution for crafting and managing websites. 🌐✨
+</span>
 
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 ### Installation&#x20;
 
 |  Description          | Decription                                                                                                               | 
@@ -135,3 +140,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, wordpress
 
 </details>
+
+</span>

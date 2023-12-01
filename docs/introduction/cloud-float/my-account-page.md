@@ -1,4 +1,9 @@
 
+<p align="center">
+  <img src="/img/efvb.jpg" alt="Alt Text" width="400"/>
+</p>
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # ☁ My Account Page
 
@@ -54,3 +59,4 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, my account page
 
 </details>
+</span>

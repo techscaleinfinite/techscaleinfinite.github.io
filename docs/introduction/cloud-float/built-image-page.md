@@ -1,6 +1,9 @@
-
+<p align="center">
+  <img src="/img/zv.jpg" alt="Alt Text" width="400"/>
+</p>
 
 # ☁ Built Image Page
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 _**Building a Docker image is a fundamental step in containerized application deployment.**_&#x20;
 
@@ -44,3 +47,4 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
+</span>

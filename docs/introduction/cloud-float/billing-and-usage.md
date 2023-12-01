@@ -1,7 +1,12 @@
 
----
+
+<p align="center">
+  <img src="/img/dbb.jpg" alt="Alt Text" width="400"/>
+</p>
 
 # 💴 Billing and usage
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 **At Scale Infinite, we believe in making your hosting experience as straightforward as possible.** That's why we've carefully crafted a range of pricing plans to cater to individuals and teams alike. Whether you're just starting out or you're part of a growing business, we have a plan that's perfect for your needs.
 
@@ -28,3 +33,5 @@ So, let's dive into the world of hosting solutions and discover the ideal plan f
 | Data center of choice | no     | no                                           | yes                     |
 | Expert Support        | no     | no                                           | yes                     |
 | Pricing               | ₹0     | <p>₹299/month</p><p>₹199 / per Public IP</p> | As per the Requirements |
+
+</span>

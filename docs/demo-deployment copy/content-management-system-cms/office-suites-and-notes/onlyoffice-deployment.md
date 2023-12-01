@@ -3,12 +3,18 @@
 <p align="center">
   <img src="/img/rre4.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 📓 Onlyoffice deployment
 
 
 # Unleash Your Productivity with ONLYOFFICE: The Ultimate Office Suite
 
 **ONLYOFFICE**, crafted by Ascensio System SIA, redefines document editing with a robust office suite. It features online editors for text, spreadsheets, and presentations, blending Microsoft Office and OpenDocument compatibility seamlessly. The suite offers a rich toolbox for precise formatting, calculations, and collaborative features, making teamwork a breeze. With a focus on taming complexity, ONLYOFFICE stands as your productivity ally, seamlessly integrating into web solutions. Experience a new era in office suites where creativity knows no bounds—ONLYOFFICE, your canvas, calculator, and stage for unparalleled work. 🚀📄👩‍💻
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -27,44 +33,7 @@
 | Public                |    (select this if you want to make it public)                                                                           |
 | Private               |  (select this if you want to make it private)                                                                            |
 
-| Docker Image                                                                                                                                                                                                                                       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ONLYOFFICE](https://hub.docker.com/r/onlyoffice/documentserver/) [👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
 
-| Application name                                                                   |
-| ---------------------------------------------------------------------------------- |
-| Eg: onlyoffice(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                                                                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```                                                                            |
-| Here use ( use the path after   " :"  )                                                                                           |
-|  ```shell -v /app/onlyoffice/DocumentServer/logs:/var/log/onlyoffice  \
-    -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data```  |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 ### Steps And Procedure
 
 *   **This deployment utilizes the official ONLYOFFICE  Docker image. Here's a step-by-step guide to get you started:**
@@ -157,3 +126,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, ONLYOFFICE
 
 </details>
+
+</span>

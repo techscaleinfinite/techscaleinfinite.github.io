@@ -2,51 +2,35 @@
   <img src="/img/xampp.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🖥 Xampp deployment
 
 ### XAMPP Overview
 
 **XAMPP** is an all-in-one web server solution by Apache Friends, bundling Apache HTTP server, MariaDB database, and PHP/Perl interpreters. It's a versatile toolbox for web development, offering universal compatibility across Windows, macOS, and Linux. As an open-source project, XAMPP encourages community collaboration and innovation in web development. With its local server environment, it serves as a testing ground for dynamic web applications, providing a convenient and comprehensive solution for developers.
 
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation&#x20;
-
-| Docker Image                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------------- |
-| [`Xampp`](https://hub.docker.com/r/tomsik68/xampp/)👈(click me,for the dockerhub image) |
-
-| Application name                                                               |
-| ------------------------------------------------------------------------------ |
-| Eg: Xampp1(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-|  ```shell -v ~/my_web_pages:/www tomsik68/xampp```                   
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |   [`Xampp`](https://hub.docker.com/r/tomsik68/xampp/)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: zamp1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80                                                                                                   | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```-v ~/my_web_pages:/www tomsik68/xampp```                  |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 
 ### &#x20;Steps And Procedure
@@ -156,3 +140,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, , database, xampp
 
 </details>
+
+</span>
+

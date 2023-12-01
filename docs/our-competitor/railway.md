@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/wwc.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Railway
 
@@ -23,3 +25,5 @@ The Railway.app website has a handy tool that calculates your resource usage and
 So, whether you're a tech enthusiast or someone looking for an efficient way to develop and deploy applications, Railway.app has you covered. It's like having your own tech-savvy assistant to handle the nitty-gritty while you focus on your app's magic.
 
 
+**Check out their website:**
+[Link to Railway.app](https://docs.railway.app/)

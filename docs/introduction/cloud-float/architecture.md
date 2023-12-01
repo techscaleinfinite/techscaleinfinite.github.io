@@ -1,6 +1,11 @@
 
+<p align="center">
+  <img src="/img/ohh.jpg" alt="Alt Text" width="400"/>
+</p>
 
 # ☁ Architecture
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 ### Some Key Concepts
 
@@ -18,7 +23,10 @@ By default, when you redeploy an application, the data stored within the applica
 
 In summary, Kubernetes offers you control over data persistence during application redeployment. With persistent storage solutions and the "Go" button, you can ensure that your valuable data stays safe and accessible throughout your application's lifecycle.
 
+</span>
 
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Benefits of persistence:
 
@@ -43,4 +51,6 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-\
+</span>
+
+

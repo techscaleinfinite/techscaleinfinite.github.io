@@ -1,6 +1,12 @@
 
+<p align="center">
+  <img src="/img/vbvcx.jpg" alt="Alt Text" width="400"/>
+</p>
 
 # ☁ Artificial Intelligence
+
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 Artificial Intelligence (AI) plays a pivotal role in modern application deployment and management. One of its fascinating applications is in the realm of fault detection and prevention.&#x20;
 
@@ -36,3 +42,5 @@ _In summary, AI is a formidable ally in the quest for reliable and fault-toleran
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, persistence
 
 </details>
+
+  </span>

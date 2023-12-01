@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/img/dcc.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Heroku
 
@@ -27,3 +30,5 @@ In a world where managing servers, infrastructure, and scaling can be a headache
 
 So, whether you're a seasoned developer or just dipping your toes into the tech waters, Heroku is your trusty companion, here to make your app deployment journey smoother, easier, and maybe even a little bit fun. Give it a whirl, and watch your apps flourish in the cloud.
 
+**Check out their website:**
+[Link to hereko](https://www.heroku.com/)

@@ -1,12 +1,17 @@
 <p align="center">
   <img src="/img/dfds.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 📜 Libre Office Deployment
 
 # LibreOffice: Your Versatile Digital Office Suite
 
 LibreOffice is the Swiss Army knife of office software, offering a suite of applications for document writing, spreadsheet calculations, and dynamic presentations—all while being open-source and free. As your trusty sidekick, LibreOffice includes Writer for text, Calc for spreadsheets, and Impress for presentations. It's not just about practicality; it's about freedom, with an open-book philosophy that allows exploration, modification, and sharing without constraints. LibreOffice's magic lies in its user-friendly applications, making document creation, data crunching, and presentation design seamless and accessible. In essence, it's the superhero of office software, empowering users without the burden of costly licenses.
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -123,3 +128,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutionsETHERPAD, ETHERPAD&#x20;
 
 </details>
+
+</span>
+

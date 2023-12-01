@@ -2,9 +2,16 @@
 sidebar_position: 2
 ---
 
-# Introduction
+# Introduction 
+<p align="center">
+  <img src="/img/sc.jpg" alt="Alt Text" width="200"/>
+</p>
 
-# Introduction
+
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 
 **ScaleInfinite** revolutionizes application hosting, offering effortless deployment, rich telemetry insights, and tailored security for startups, enterprises, and individuals.
 
@@ -33,6 +40,11 @@ At **ScaleInfinite**, we're revolutionizing application hosting, so you can focu
 
 - **Insights Dashboard**: Monitor your account and application metrics, including CPU usage, Memory usage, I/O, and Network usage, through the intuitive Dashboard section.
 
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ## Join ScaleInfinite and experience hosting like never before.
 
 Whether you're a startup, enterprise, or visionary individual, we're here to elevate your applications and empower your journey. Welcome to limitless possibilities.
@@ -48,3 +60,7 @@ Check out our [Youtube video](#) for more clarification.
 ## Join us
 
 Stay informed and engaged with our project's latest developments and support on [Join us today](#) to connect, collaborate, and keep the momentum going!
+
+</span>
+
+

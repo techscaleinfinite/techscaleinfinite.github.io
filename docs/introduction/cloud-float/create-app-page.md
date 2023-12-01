@@ -1,10 +1,21 @@
+<p align="center">
+  <img src="/img/ddv4.jpg" alt="Alt Text" width="400"/>
+</p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # ☁ Create App Page
 
 1. _**Navigate to the Create App Page**: To begin the deployment process, head over to our user-friendly Create App page._
 2. _**Search for Your Desired App**: In the search bar, type the name of the app you want to deploy. Our platform offers a wide range of pre-configured apps to choose from._
 3. _**Select Your Chosen App**: Once you've found the app you want, click on it to select it._
+
+
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 Then follow these steps:
 
@@ -51,3 +62,7 @@ By following these steps, you can effortlessly deploy an App instance with your 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions , **Create App**&#x20;
 
 </details>
+
+
+
+</span>

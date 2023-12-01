@@ -3,14 +3,38 @@
   <img src="/img/ty5.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # ☁ Own Cloud Deployment
 
 ### OwnCloud Overview
 
 **OwnCloud** is a robust open-source platform empowering users with data ownership, security, and seamless collaboration. Users establish their cloud storage system, ensuring data remains under their control. With secure access, seamless sharing, and collaboration tools, OwnCloud acts as a digital fortress for data privacy and control. It offers a user-friendly web interface, facilitates syncing across devices, and stands as a self-hosted solution for enhanced security. OwnCloud, with its extensive features and flexibility, is a reliable ally in the quest for secure, accessible, and well-managed data.
 
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation
 
+
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |  [owncloud](https://hub.docker.com/\_/owncloud)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: baikal(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:8080                                                                                                                | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                       |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 ### Steps And Procedure
 
@@ -96,3 +120,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, own cloud
 
 </details>
+</span>
+
+

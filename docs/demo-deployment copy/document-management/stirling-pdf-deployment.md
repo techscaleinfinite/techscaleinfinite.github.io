@@ -2,49 +2,22 @@
   <img src="/img/gchnh.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🖥 Stirling PDF Deployment
 
 ### Stirling PDF: Your PDF Wizard
 
 **Stirling PDF** is a web-based PDF manipulation tool that acts like a digital wizard for your documents. It can split, merge, convert, and compress PDFs, offering a range of enchanting features such as page reordering, image addition, rotation, password protection, watermarking, and more. The tool combines magic and technology to transform mundane PDFs into versatile and visually appealing documents.
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation
 
-| Docker Image                                                                                                                                 |
-| -------------------------------------------------------------------------------------------------------------------------------------------- |
-| S[tirling PDF](https://hub.docker.com/r/frooodle/s-pdf)   👈(click me,for the dockerhub image) |
 
-| Application name                                                                     |
-| ------------------------------------------------------------------------------------ |
-| Eg: stirling pdf(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>8080</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 ### Steps And Procedure
 
@@ -136,3 +109,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, striling pdf
 
 </details>
+
+</span>

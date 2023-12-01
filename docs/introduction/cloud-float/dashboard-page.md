@@ -1,6 +1,9 @@
-
+<p align="center">
+  <img src="/img/sfsf8.jpg" alt="Alt Text" width="400"/>
+</p>
 
 # ☁ Dashboard page
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 &#x20;Here, you'll gain a holistic view of your app's health and vitality, all wrapped up in stunning visualizations.
 
@@ -43,3 +46,5 @@ So, welcome to your Dashboard – where data becomes insights and insights lead 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, dashboard
 
 </details>
+
+</span>

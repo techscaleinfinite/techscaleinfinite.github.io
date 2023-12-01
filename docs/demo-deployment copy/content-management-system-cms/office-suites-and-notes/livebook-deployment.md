@@ -2,11 +2,18 @@
 <p align="center">
   <img src="/img/dcdt5jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 📓 Livebook Deployment
 
 # Livebook: Your Collaborative Code Notebook
 
 Livebook is your dynamic companion in the coding and data exploration realm, seamlessly blending documentation and execution. With interactive code notebooks featuring Markdown support and code cells for Elixir execution, Livebook transforms coding into a collaborative adventure. The Monaco Editor, Kino for visualizations, and Smart Cells enhance your coding experience, while reproducibility and predictability streamline the process. Livebook fosters effortless collaboration, allowing multiple users to work simultaneously. It's open-source, decentralized, and ready to elevate your coding journey into a vibrant, communal exploration. Dive into Livebook for a magical coding experience!
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -117,3 +124,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, Livebook
 
 </details>
+
+</span>
+

@@ -2,12 +2,17 @@
   <img src="/img/fdb.jpg" alt="Alt Text" width="25%"/>
 </p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🦊 Firefox Deployment
 
 # Firefox: Your Open-Source Gateway to Secure and Customizable Browsing
 
 **Firefox** is a versatile, open-source web browser developed by Mozilla, offering users a secure and customizable online experience. With a user-friendly interface and cross-platform compatibility, Firefox prioritizes security and privacy through features like Enhanced Tracking Protection and Private Browsing. It supports a range of extensions for enhanced functionality, provides robust tab management, and continually optimizes performance. As an open-source project, Firefox involves a global community, ensuring regular updates and a commitment to accessibility. It's not just a browser; it's your trusty sidekick for safe and enjoyable internet exploration. 🦊🌐🔒
+</span>
 
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 ### Installation
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
@@ -112,3 +117,7 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, firebox, browsing
 
 </details>
+
+</span>
+
+

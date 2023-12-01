@@ -2,12 +2,18 @@
   <img src="/img/fds.jpg" alt="Alt Text" width="25%"/>
 </p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 🖥 WordPress SQLite
 
 ### What's WordPress SQLite?
 
 WordPress is a free and open-source content management system written in hypertext preprocessor language and paired with a MySQL or MariaDB database with supported HTTPS. SQLite is an open-source SQL database system that stores data in a text file on a device. It provides a simple and efficient way to manage and retrieve structured information locally.
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 **Key Points:**
 
@@ -160,3 +166,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, wordpress
 
 </details>
+
+</span>
+

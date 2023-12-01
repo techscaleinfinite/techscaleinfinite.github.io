@@ -1,4 +1,8 @@
+<p align="center">
+  <img src="/img/vdb.jpg" alt="Alt Text" width="400"/>
+</p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # ☁ Server Detail Page
 
@@ -30,6 +34,13 @@ _**Fine-Tuning Your Traffic for Server Mastery**_
 
 In the intricate realm of server management, gaining control over your server's traffic is akin to wielding a fine-tuning instrument. With Scale Infinite's IP Details section on the Server Detail Page, you're handed the conductor's baton to orchestrate inbound and outbound traffic with precision. Let's embark on a journey into the world of blacklisting and whitelisting IP addresses, where you become the master of your server's connections.
 
+
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 _**Inbound Traffic Rules: Mastering the Flow**_
 
 * _**Blacklisting**: Consider this the bouncer at the door of an expensive club. Inbound blacklisting allows you to identify and prevent unwanted IP addresses from connecting to your server. It acts as a protective screen for your server, preventing any connection attempts from these prohibited attackers and bolstering its security and stability._
@@ -59,3 +70,8 @@ So, welcome to the Server Detail page – your go-to place for app optimization 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, server
 
 </details>
+
+
+
+</span>
+

@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/img/fefv.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Render
 
@@ -27,8 +30,8 @@ Need a database? Render's got your back with fully managed PostgreSQL databases 
 
 Still not convinced? Here's a success story for you. Moving from Heroku to Render cut hosting costs by 80%. Furthermore, websites and databases are faster than ever. Render is more than simply a cloud deployment platform; it's a game changer. So there you have it, Render: where cloud deployment becomes a snap and you get more bang for your coding money. It's time to delegate the tough labour while you pursue your digital ambitions.
 
-
-
-
 **Check out their website:**
+
+
+[Link to Render](https://dashboard.render.com)
 

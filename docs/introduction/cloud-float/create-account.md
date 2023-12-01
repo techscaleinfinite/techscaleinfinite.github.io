@@ -1,5 +1,9 @@
+<p align="center">
+  <img src="/img/scv.jpg" alt="Alt Text" width="400"/>
+</p>
 
 # ☁ Create Account
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 _**Creating an account on Scale Infinite is a breeze.**_
 
@@ -40,3 +44,5 @@ There you have it! You're now the _**proud owner of a Scale Infinite account**_,
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, create account
 
 </details>
+
+</span>

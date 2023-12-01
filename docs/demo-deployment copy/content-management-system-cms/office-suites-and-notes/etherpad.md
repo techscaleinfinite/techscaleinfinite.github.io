@@ -2,12 +2,19 @@
 <p align="center">
   <img src="/img/sfb.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 
 # 📓 Etherpad
 
 # Etherpad: Collaborative Writing Symphony
 
 Etherpad is not just a text editor; it's a virtuoso of collaborative writing. With features like rich editing, minimalist interface, dark mode, and seamless integration of visuals, it transforms your writing into a collaborative masterpiece. The real-time collaboration, version history, time slider, and group chat create a harmonious environment for multiple authors. Etherpad respects privacy with access control and self-hosting options, while its customization and exporting features allow your creativity to take center stage. It's an open-source symphony, where ideas unite, and documents come to life in a world of collaborative creativity.
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -159,3 +166,7 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+</span>
+
+

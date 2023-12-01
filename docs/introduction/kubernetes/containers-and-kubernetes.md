@@ -1,4 +1,8 @@
+<p align="center">
+  <img src="/img/ffwc.jpg" alt="Alt Text" width="100"/>
+</p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 🛳 Containers and Kubernetes
 
@@ -8,13 +12,16 @@
 
 **Docker Container Image:** _A Docker container image is like a compact, self-contained package that holds everything your application needs. It includes the code, runtime, system tools, libraries, and settings, creating the perfect environment for seamless application execution._
 
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 **Runtime Transformation****:** These container images are like chameleons, transforming into containers during runtime. This dynamic shift ensures your application functions consistently across different environments, regardless of where it's deployed.
 
 **Isolation Champions:** Containers act as isolation champions, protecting your software from its surroundings. They maintain a consistent and uniform environment, even if there are differences between development and staging setups.
 
 Experience the power of containers, where reliability and adaptability converge to simplify application management and deployment.
-
-\
 
 
 ### **Kubernetes**&#x20;
@@ -69,3 +76,8 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+
+</span>
+
+

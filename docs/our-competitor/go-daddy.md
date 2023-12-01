@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/sdsc.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Go daddy
 
@@ -37,3 +39,4 @@ In a nutshell, GoDaddy is your partner in the digital world. It's where your ide
 **Check out their website:**
 
 
+[Link to GoDaddy ](https://www.godaddy.com/en-in)

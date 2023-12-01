@@ -1,6 +1,7 @@
 <p align="center">
   <img src="/img/kkkw.jpg" alt="Alt Text" width="25%"/>
 </p> 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 🖥 Mysql deployment
 
@@ -8,45 +9,28 @@
 
 **MySQL** serves as an open-source Relational Database Management System (RDBMS), offering structured data organization with SQL queries. It acts like a trusted librarian, ensuring data integrity, scalability, and ease of retrieval. MySQL's role extends from creating databases and defining tables to inserting, retrieving, and manipulating data, making it a reliable partner for various web and software projects.
 
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation&#x20;
 
-| Docker Image                                                                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------------- |
-| [`mysql`](https://hub.docker.com/\_/mysql)👈(click me,for the dockerhub image) |
-
-| Application name                                                               |
-| ------------------------------------------------------------------------------ |
-| Eg: mysql1(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>-</td></tr><tr><td>Tcp</td><td>3306</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```                        |
-| Here use ( use the path after   " :"  )                                       |
-|  ```shell -v /my/custom:/etc/mysql/conf.d```  |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |   [`mysql`](https://hub.docker.com/\_/mysql)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: mysql1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   TCP:3306                                                                                                   | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ``` -v /my/custom:/etc/mysql/conf.d```                   |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 ### Steps And Procedure
 
@@ -161,3 +145,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, database, mysql
 
 </details>
+
+</span>

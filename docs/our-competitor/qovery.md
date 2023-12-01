@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/evv.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Qovery
 
@@ -29,3 +31,7 @@ The _Qovery installation tutorials make it simple to set up the platform on your
 **Security and Isolation**
 
 You may rest certain that your infrastructure is totally separated from the Qovery control plane. Your apps and data are hosted in your cloud account, while Qovery's Engine and Agent services provide smooth connectivity while preserving strict security. Qovery is designed to minimise the effect on your infrastructure in the event of outages or security breaches. Qovery is the bridge that simplifies difficulties, empowers developers, and streamlines operations in the realm of DevOps and cloud infrastructure management, making it a must-have in the toolset of modern engineering teams.
+
+**Check out their website:**
+
+[Link to  Qovery](https://www.qovery.com/solutions/kubernetes-for-developer)

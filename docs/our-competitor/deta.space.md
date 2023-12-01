@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/ff.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Deta.space
 
@@ -38,5 +40,6 @@ Deta Space is all about simplicity, letting you focus on the magic of your creat
 So, whether you're a tech whiz or just an internet enthusiast, Deta Space is here to make your online life a whole lot easier and more fun.
 
 And guess what? You don't have to be a tech guru to get it – it's as easy as clicking your favorite websites. Enjoy the magic of Deta Space! 🚀🪐
+**Check out their website:**
 
-
+[Link to Deta Space](https://deta.space/)

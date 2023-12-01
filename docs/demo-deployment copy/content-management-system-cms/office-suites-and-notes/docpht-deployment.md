@@ -2,11 +2,18 @@
   <img src="/img/a33.jpg" alt="Alt Text" width="25%"/>
 </p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 📓 DocPHT Deployment
 
 # DocPHT: Where Documentation Meets Simplicity
 
 DocPHT stands out as a simple yet powerful documentation tool that streamlines note-taking, user management, version control, and backups. Ideal for both solo users and teams, it offers a tailored interface for a personalized workspace. Embrace the agility of a database-free system, ensuring your documentation remains adaptable and easily accessible. DocPHT redefines the documentation experience, bringing order to chaos and encouraging collaboration. Try it out to simplify your digital journey and witness how DocPHT makes documentation smarter and more efficient.
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -124,3 +131,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions,  DocPHT&#x20;
 
 </details>
+</span>
+
+

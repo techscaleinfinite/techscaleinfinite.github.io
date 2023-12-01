@@ -1,9 +1,15 @@
 ---
 sidebar_position: 4
 ---
-
+<p align="center">
+  <img src="/img/addc.jpg" alt="Alt Text" width="100"/>
+</p>
 
 #  Community
+
+
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 ### SLACK
 
@@ -83,3 +89,5 @@ Let's code, collaborate, and innovate. See you on GitHub! 💻🌟
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+</span>

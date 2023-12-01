@@ -2,51 +2,35 @@
   <img src="/img/efefg.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🐈 Tomcat Deployment
 
 ### Apache Tomcat Overview
 
 **Apache Tomcat** is an open-source web server and servlet container, serving as both a web server and a Java servlet/JSP container. It facilitates Java-based web application deployment, handling HTTP requests, servlet processing, and JSP execution. With connectors for communication, context isolation for applications, and a web-based administrative interface, Tomcat provides a configurable and secure platform. Its vibrant community and compatibility with Java EE standards make it a preferred choice for hosting dynamic Java web content.
 
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation
-
-| Docker Image                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------ |
-| [`tomcat`](https://hub.docker.com/\_/tomcat)👈(click me,for the dockerhub image) |
-
-| Application name                                                               |
-| ------------------------------------------------------------------------------ |
-| Eg: tomcat(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-| /etc/mysql/conf.d                                                                       |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |   [`tomcat`](https://hub.docker.com/\_/tomcat)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: tom1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:80                                                                                                   | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  /etc/mysql/conf.d                   |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 
 ### Steps And Procedure
@@ -137,3 +121,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, database, tomcat
 
 </details>
+
+</span>
+

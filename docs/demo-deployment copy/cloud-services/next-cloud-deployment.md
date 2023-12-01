@@ -2,12 +2,17 @@
   <img src="/img/vv.jpg" alt="Alt Text" width="25%"/>
 </p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # ☁ Next Cloud Deployment
 
 ### Nextcloud Overview
 
 **Nextcloud** is an open-source, self-hosted cloud storage and collaboration solution, offering a secure alternative to commercial cloud services. Users set up Nextcloud on a server, becoming administrators to customize the platform. Serving as a digital filing cabinet, Nextcloud allows file uploads, folder organization, and synchronization across multiple devices. With seamless sharing options, users can collaborate effectively, deciding who can access and modify files. Nextcloud empowers users with control over their data, providing a personal file haven accessible anywhere.
+</span>
 
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 ### Installation
 ### Installation
 
@@ -120,3 +125,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+</span>
+
+

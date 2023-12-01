@@ -1,12 +1,22 @@
+<p align="center">
+  <img src="/img/dcv.jpg" alt="Alt Text" width="400"/>
+</p>
 
 
 # ☁ Accessing Persistent Storage Via FTP
 
 ### **What is Filezilla?**
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 **FileZilla: Your Reliable FTP Solution**
 
 _**FileZilla is a popular, open-source, and user-friendly FTP (File Transfer Protocol) client that allows you to easily upload, download, and manage files between your local computer and a remote server**. Whether you need to transfer files to your web hosting server, manage website content, or work with files on remote servers, FileZilla provides a straightforward way to perform these tasks._
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### **How to Install FileZilla: Step-by-Step Guide**
 
@@ -100,3 +110,7 @@ If you're experiencing connection issues with FileZilla, particularly when using
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, FileZilla&#x20;
 
 </details>
+
+</span>
+
+

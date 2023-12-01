@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/img/fefv.jpg" alt="Alt Text" width="100"/>
+</p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # Vercel
 
@@ -30,3 +34,8 @@ Picture Vercel as a magical theater. You're the director, and your website is th
 Vercel is like having a VIP pass for your website. It makes sure your website is top-notch, so you can focus on creating great content. Whether you're a website whiz or just starting, Vercel simplifies hosting and brings out the best in your site.
 
 In simple terms, Vercel is where your website becomes a superstar, ready to impress the world. So, if you want your website to shine, give Vercel a standing ovation! 🌟
+
+**Check out their website:**
+
+[Link to Vercel](https://vercel.com/)
+</span>

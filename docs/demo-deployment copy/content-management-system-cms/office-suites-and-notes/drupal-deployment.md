@@ -2,11 +2,20 @@
 <p align="center">
   <img src="/img/sdsu.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 💧 Drupal deployment
 
 # Drupal: Your Friendly Website Companion
 
 Drupal is your open-source, PHP-powered friend for building and managing websites. With a modular architecture, it's like having building blocks to create a tailored website. Themes and modules allow easy customization, giving your site a unique look and functionality. The Drupal community, a supportive group of developers and users, constantly enhances the platform. Content creation is a breeze with Drupal's user-friendly interface, and its PHP engine ensures dynamic and real-time website interactions. In summary, Drupal is more than a website tool; it's a powerful platform with a friendly community, making web content management flexible and enjoyable.
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
+
 
 ### Installation
 
@@ -129,4 +138,7 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-[^1]: 
+</span>
+
+
+

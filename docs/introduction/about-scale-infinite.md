@@ -1,10 +1,23 @@
 
+#  About Scale Infinite
 
-# ☁ About Scale Infinite
+<p align="center">
+  <img src="/img/sccc.jpg" alt="Alt Text" width="200"/>
+</p>
+
+
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 ## Introduction
 
 **Welcome to Scale Infinite**, _where hosting becomes an art of simplicity and possibilities. Whether you're a pioneering startup, a thriving enterprise, or an ambitious individual, our platform transforms hosting into an extraordinary experience. Your journey to unhindered application growth starts now._
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 
 * **Simplified Hosting:** Scale Infinite takes care of infrastructure provisioning, maintenance, and scaling for your containerized applications.
 * **Instant Accessibility:** Easily host and access applications with just a few clicks.
@@ -47,3 +60,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+
+</span>

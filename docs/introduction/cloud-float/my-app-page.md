@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="/img/ddcdv.jpg" alt="Alt Text" width="400"/>
+</p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # ☁ My APP Page
 
-\
+
 Exploring your deployed apps on the "My Apps" page is a delightful journey. Here's how to embark on this adventure:
 
 **1. Discover Your Apps**: Once you're on the **"My Apps"** page, you'll see a list of your successfully deployed applications. These are the digital wonders you've brought to life.
@@ -28,3 +32,5 @@ By following these steps, you'll effortlessly explore and enjoy your deployed ap
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions , my app page
 
 </details>
+
+</span>

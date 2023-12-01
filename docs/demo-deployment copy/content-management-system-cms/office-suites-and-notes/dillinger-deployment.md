@@ -1,12 +1,18 @@
 <p align="center">
   <img src="/img/ww33.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 📓 Dillinger Deployment
 
 # Dillinger: The Markdown Maestro
 
 Meet Dillinger, the HTML5 Markdown editor that combines simplicity with powerful features. Whether you're a writer, coder, or creative mind, Dillinger has you covered. With a mobile-friendly design and cloud storage, it offers on-the-go convenience and ensures your documents are always accessible. Dillinger's clean interface, offline capability, and live preview feature provide a distraction-free writing experience. It goes beyond basic editing with AngularJS technology, Github integration, and the ability to effortlessly convert Markdown to HTML. Embrace the magic of Dillinger as your Markdown companion for an enchanting and efficient writing journey.
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -117,3 +123,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, Dillinger
 
 </details>
+
+</span>
+

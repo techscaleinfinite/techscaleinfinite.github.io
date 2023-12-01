@@ -3,6 +3,8 @@
 </p>
 
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🖥 Radicale Deployment
 
 ### What's is Radicale?
@@ -10,6 +12,9 @@
 **Your Personal Calendar and Contact Butler**
 
 **The Ultimate Calendar and Contact Sidekick:** Meet Radicale, your trusty companion for calendars, to-do lists, and contacts. It doesn't just manage them; it's a pro at effortlessly organizing and sharing them.
+
+</span>
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 
@@ -121,3 +126,4 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, radicale
 
 </details>
+</span>

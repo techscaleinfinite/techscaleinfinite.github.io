@@ -1,6 +1,7 @@
 
-
 # ☁ Cloud float
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 ## Cloud Float: Revolutionizing Swift Application Deployment
 
@@ -40,6 +41,11 @@ Here at ScaleInfinite, we've redefined simplicity in application deployment. Say
 4. **Access Instantly:** Your application is ready for action. Simply copy the application's hostname and paste it into your search bar. Voila! You have instant access to your newly deployed application.
 
 With ScaleInfinite, you can simplify your deployment process, and in just a few moments, your app is up and running. No fuss, no complications
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Cloud float architecture
 ![Alt Text](/img/c22.jpg)
@@ -120,3 +126,8 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+
+</span>
+
+

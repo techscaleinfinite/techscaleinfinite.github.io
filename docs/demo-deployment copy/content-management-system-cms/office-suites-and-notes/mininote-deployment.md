@@ -3,11 +3,18 @@
   <img src="/img/fss.jpg" alt="Alt Text" width="25%"/>
 </p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 📓 mininote deployment
 
 # MiniNote: Your Secret Sanctuary for Markdown Memoirs
 
 **MiniNote** is a self-hosted, privacy-focused gem for Markdown note-taking. It combines simplicity with security, featuring an uncluttered interface for crafting and storing Markdown-based notes. Your privacy is a priority as MiniNote encrypts your notes, ensuring exclusive ownership. This self-hosted solution puts you in control of your data, offering a no-frills, efficient note-taking experience. MiniNote stands out as a beacon of simplicity and security in a world filled with complicated note-taking apps, providing a digital sanctuary for your Markdown memoirs. 📝🔒✨
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -118,3 +125,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, notes
 
 </details>
+
+</span>
+

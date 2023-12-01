@@ -1,6 +1,7 @@
 <p align="center">
   <img src="/img/vf.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 💻 Grafana deployment
 
@@ -9,7 +10,10 @@
 **Grafana** is the ultimate data analytics and visualization tool, transforming raw numbers into vibrant charts and dashboards. Compatible with various platforms, including PC, Mac, and Raspberry Pi, Grafana is open source, empowering users to customize and share their data playground. Acting as a data detective, it connects seamlessly to diverse data sources, creating a centralized hub for insights.
 
 Grafana's visual prowess turns data into a visual masterpiece, offering real-time updates and dynamic charts. With an alert system, it keeps you informed about data anomalies, serving as your personal data watchdog. Whether you're a seasoned data professional or a newcomer, Grafana is your gateway to turning data chaos into meaningful insights. It's your data, your rules, and your way to visualize and understand numbers like never before! 📊🕵️‍♂️✨
+</span>
 
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 ### Installation
 
 |  Description          | Decription                                                                                                               | 
@@ -113,3 +117,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, grafana
 
 </details>
+
+</span>
+

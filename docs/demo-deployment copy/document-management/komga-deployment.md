@@ -3,51 +3,35 @@
   <img src="/img/fft.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 📙 Komga Deployment
 
 ### Komga: Your Comics and Mangas Server
 
 **Komga** is a free and open-source comics/mangas server with a responsive web UI for easy access. It offers features like metadata management, collections, and read lists, ensuring an organized reading experience. With a REST API, multi-user support, and seamless imports, Komga transforms your comics collection into a delightful and immersive adventure.
 
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation
-
-| Docker Image                                                                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------- |
-| [komga ](https://hub.docker.com/r/gotson/komga)  👈(click me,for the dockerhub image) |
-
-| Application name                                                              |
-| ----------------------------------------------------------------------------- |
-| Eg: komga(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>25600</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------ |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```                                   |
-| Here use ( use the path after   " :"   or the right side after "=")                      |
-||
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |   [komga ](https://hub.docker.com/r/gotson/komga) 👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: kav1(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |   Http:25600                                                                                                  | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  -v /your/manga/directory:/manga \-v /kavita/data/directory:/kavita/config \```                  |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 ### Steps And Procedure
 
@@ -135,3 +119,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, Komga
 
 </details>
+</span>
+

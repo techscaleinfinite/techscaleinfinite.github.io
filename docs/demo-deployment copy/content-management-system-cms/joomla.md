@@ -3,6 +3,8 @@
   <img src="/img/rfgf.jpg" alt="Alt Text" width="25%"/>
 </p>
 
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🖥 Joomla
 
 # Joomla: Your Website's Superhero
@@ -10,7 +12,10 @@
 **Joomla** is the superhero of open-source web development, simplifying website creation and management. With a user-friendly interface, it empowers users to effortlessly add and organize content, be it articles, images, or videos. Think of Joomla as a versatile wardrobe for your website, offering various templates and themes to dress it up.
 
 Its superpowers extend with extensions like modules, plugins, and components, allowing users to add functionality and customize their digital space. Joomla gives you the authority with user management, enabling collaboration on web projects. It's SEO-friendly, multilingual, and part of a supportive community. Whether you're starting a personal blog or a business site,
+</span>
 
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 ### Installation
 
 |  Description          | Decription                                                                                                               | 
@@ -154,3 +159,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, joomla
 
 </details>
+
+</span>

@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/cdve.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Netlify
 
@@ -30,3 +32,4 @@ So, whether you're a seasoned developer or just embarking on your coding journey
 
 **Check out their website:**
 
+[Link to Netlify](https://www.netlify.com/)

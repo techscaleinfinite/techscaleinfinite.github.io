@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/dsc.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Cyclic.sh
 
@@ -28,3 +30,6 @@ Imagine you're baking a cake. You have all the ingredients ready, and you need t
 3. **Smooth Operations:** Cyclic.sh ensures that your software updates don't disrupt your users. It's like changing the engine of a car while it's still running!
 4. **Safety Net:** If something goes wrong, Cyclic.sh can revert to the previous version, so your users won't even notice the hiccup.
 
+**Check out their website:**
+
+[Link to Cyclic.sh](https://www.cyclic.sh/)

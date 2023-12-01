@@ -1,12 +1,18 @@
 <p align="center">
   <img src="/img/dddv.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 📜 flatnotes Deployment
 
 # Flatnotes: Simplicity in Note-Taking Brilliance
 
 Flatnotes redefines digital note-taking with its clean, distraction-free design and minimalist interface. Offering a simple yet powerful organizational approach with tags and advanced search, it ensures your notes are effortlessly accessible. Embrace the flexibility of Markdown with both Raw and WYSIWYG editor modes. Flatnotes prioritizes your ownership and portability, storing notes as plain markdown files under your control. With responsive cross-device functionality, customizable themes, security options, and developer-friendly features like a Restful API, Flatnotes provides an unparalleled note-taking experience that's refreshingly simple and highly functional.
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 
@@ -119,3 +125,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, flatnotes
 
 </details>
+
+</span>
+

@@ -1,8 +1,11 @@
-
+<p align="center">
+  <img src="/img/ffwc.jpg" alt="Alt Text" width="100"/>
+</p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 🛳 Managed Kubernetes
 
-_**Managed Kubernetes****:**_
+_**Managed Kubernetes:**_
 
 * Third-party providers assume responsibility for successful K8s setup and operation, relieving you of certain or all associated tasks.
 * "Managed" can encompass dedicated support, hosting with pre-configured environments, or complete hosting and operation, contingent on the vendor.
@@ -31,3 +34,4 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+</span>

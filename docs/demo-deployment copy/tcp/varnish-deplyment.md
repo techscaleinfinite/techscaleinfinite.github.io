@@ -10,51 +10,21 @@
 Varnish, an open-source caching HTTP reverse proxy, enhances web server performance by caching content in memory. It acts as a reverse proxy, caching requested web pages and resources, reducing server load, and speeding up response times. Varnish supports cache invalidation for content updates, load balancing across multiple servers, and HTTP acceleration, optimizing the overall user experience.
 
 ## Installation
-
-| Docker Image                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------- |
-| [ varnish](https://hub.docker.com/\_/varnish)👈(click me,for the dockerhub image) |
-
-| Application name                                                                |
-| ------------------------------------------------------------------------------- |
-| Eg: varnish(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>80</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-| /etc/varnish/default.vcl:ro                                                             |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
-
-#### How It Works
-
-1. **Client Requests:** Varnish intercepts client requests, checking its cache for the requested content.
-2. **Cache Lookup:** Cached content is served directly, reducing load if found; otherwise, Varnish forwards the request to the backend server.
-3. **Caching Response:** Varnish caches the server's response, expediting future requests for the same content.
-4. **Cache Invalidation:** Mechanisms ensure updated content is fetched from the server, and Varnish supports load balancing and HTTP acceleration for optimal performance.
+|  Description          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Docker Image          |   [ varnish](https://hub.docker.com/\_/varnish))👈(click me,for the dockerhub image)                       |
+| Application name      |  Eg: varnish(you can put any name)                                                                                        | 
+| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
+| `Protocol`            |                                                                                                                          | 
+| Protocol Value        |  Http:80                                                                                            | 
+| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
+| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+| If you choose Advanced option|                                                                                                                   | 
+| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
+| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ``` /etc/varnish/default.vcl:ro```                        |
+| `Access`              |                                                                                                                          | 
+| Public                |    (select this if you want to make it public)                                                                           |
+| Private               |  (select this if you want to make it private)                                                                            |
 
 
 ### Steps And Procedure

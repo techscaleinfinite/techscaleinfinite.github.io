@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/sdgs.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Hostinger
 
@@ -26,4 +28,5 @@ Hostinger, a pioneering web hosting provider with over a decade of experience, o
 
 At Hostinger, it's not just about hosting websites; it's about hosting dreams and enabling online success for everyone.
 
-
+**Check out their website:**
+[Link to Hostinger](https://www.hostinger.in/)

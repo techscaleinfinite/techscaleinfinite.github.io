@@ -1,4 +1,9 @@
+<p align="center">
+  <img src="/img/wdd.jpg" alt="Alt Text" width="100"/>
+</p>
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # Cloudron
 
@@ -33,4 +38,6 @@ In a nutshell, Cloudron is your trusty sidekick, turning the once-daunting world
 
 **Check out their website:**
 
+[Link to Cloudron](https://www.cloudron.io/)
+</span>
 

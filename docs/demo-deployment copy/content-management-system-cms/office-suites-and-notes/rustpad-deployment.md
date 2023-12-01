@@ -2,12 +2,19 @@
 <p align="center">
   <img src="/img/ww37.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 📓 Rustpad Deployment
 
 # Rustpad: Where Real-Time Collaboration Meets Seamless Editing
 
 **Rustpad** redefines collaborative text editing with its open-source marvel. Using operational transformation, edits appear instantaneously for all collaborators, creating a virtual writing party. This web-based editor eliminates complexities—share a link, and colleagues can join the editing fray hassle-free. With live preview and uninterrupted workflow, Rustpad transforms into a dynamic canvas where ideas come to life. Version control ensures easy navigation between document states. Embrace the future of real-time collaboration, bid farewell to traditional delays, and unleash your creative potential with Rustpad. ✨🖋️🤝
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
@@ -112,3 +119,7 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, Rustpad
 
 </details>
+
+</span>
+
+

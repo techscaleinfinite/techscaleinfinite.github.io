@@ -1,12 +1,18 @@
 <p align="center">
   <img src="/img/ghr.jpg" alt="Alt Text" width="25%"/>
 </p>
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 🎨 Asciiflow Deployment
 
 # ASCII Flow: Where Creativity Meets Simplicity
 
 ASCII Flow is a web-based tool that provides an infinite canvas for creating diagrams and flowcharts using simple ASCII characters. With seamless Google Drive integration, your creations are securely stored and accessible from anywhere. The platform offers flexibility in design, allowing you to resize and freeform draw. Export your masterpieces to text or HTML for easy sharing and integration. Supporting both ASCII and Unicode characters, ASCII Flow is a versatile and interactive space for turning simple text into intricate designs. Embrace the elegance of text-based creativity and start diagramming effortlessly with ASCII Flow today!
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -116,3 +122,7 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+</span>
+
+

@@ -1,6 +1,11 @@
 ---
 sidebar_position: 5
 ---
+<p align="center">
+  <img src="/img/scvs.jpg" alt="Alt Text" width="100"/>
+</p>
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # FAQ
 
@@ -47,3 +52,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+</span>

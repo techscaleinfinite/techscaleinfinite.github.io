@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/ffv.jpg" alt="Alt Text" width="100"/>
+</p>
 
 # Neverinstall
 
@@ -39,3 +41,4 @@ So, let Neverinstall be your portal to Linux application nirvana, all within the
 
 **Check out their website:**
 
+[Link to  Neverinstall](https://neverinstall.com)
