@@ -11,6 +11,29 @@
 
 ZNC, an IRC network bouncer or BNC, enhances the IRC experience by allowing users to connect via an intermediary server. Users can detach clients gracefully, focus on specific channels, consolidate nicknames, and connect from multiple devices simultaneously. ZNC ensures security, message buffering, and customization, providing a persistent IRC presence with user-friendly interfaces for management.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                        |
+| --------- | ----------- | ---------------------------------- |
+| Tcp       | 6051        | ZNC is exposed on port 6051.        |
+
+### Volume Configuration
+
+When running the container, you may mount the configuration data directory from the host using the following volume configurations:
+
+| Volume                          | Description                                      |
+| ------------------------------- | ------------------------------------------------ |
+| `/path/to/appdata/config:/config` | Mounts the configuration data directory from the host. |
+
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
@@ -24,15 +47,11 @@ ZNC, an IRC network bouncer or BNC, enhances the IRC experience by allowing user
 | Application name      |  Eg: znc(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:6501                                                                                         | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ``` -v /path/to/appdata/config:/config \```                      |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 6051                                                                                                                      |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+                                                                 
 
 
 ### Steps And Procedure

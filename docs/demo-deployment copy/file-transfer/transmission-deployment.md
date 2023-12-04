@@ -11,6 +11,31 @@
 
 Transmission stands out as a user-friendly, lightweight, and fast BitTorrent client, simplifying the torrenting experience. Designed for simplicity, it offers easy installation and configuration, making it a favorite for both beginners and advanced users. With a minimal system footprint, Transmission ensures speedy performance without consuming excessive resources, making it an ideal choice for various devices, including home NAS and media servers.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                               |
+| --------- | ----------- | ----------------------------------------- |
+| Http      | 9091        | Transmission Web UI is accessible on port 9091. |
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+Transmission uses volume mounts to manage configuration, downloads, and watch folders. You can set these when running the container:
+
+| Volume                          | Description                                        |
+| ------------------------------- | -------------------------------------------------- |
+| `/path/to/data:/config`          | Path to Transmission's configuration files.        |
+| `/path/to/downloads:/downloads`  | Path to the directory where downloads are stored.  |
+| `/path/to/watch/folder:/watch`   | Path to the watch folder for new torrents.         |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
@@ -24,15 +49,10 @@ Transmission stands out as a user-friendly, lightweight, and fast BitTorrent cli
 | Application name      |  Eg: trans1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:9091                                                                                                 | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )   ``` volumes:- /path/to/data:/config- /path/to/downloads:/downloads- /path/to/watch/folder:/watch```                      |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                |     9091                                                                                                                    |
+|  Tcp:                 |                                                                                                                        | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 
 
 ### Steps And Procedure

@@ -11,6 +11,31 @@
 
 **Lidarr** is the music enthusiast's dream assistant, a savvy sidekick and tech virtuoso in the realm of Usenet and BitTorrent. Constantly scanning RSS feeds, it hunts down new tracks from your favorite artists with precision. Beyond mere collection, Lidarr elevates your music library by sorting, renaming, and organizing tracks for a polished look, akin to having a personal butler for your tunes. This virtuoso doesn't settle for any quality; it automatically upgrades tracks with better versions, ensuring your collection remains top-notch. Lidarr is your backstage pass to music management nirvana, delivering an organized and high-quality symphony to your digital world. 🎵🔍🌟
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                                       |
+| --------- | ----------- | ------------------------------------------------- |
+| Http      | 8686        | "Lidarr" application is accessible on port 8686. |
+| Tcp       | -           | -             |
+
+### Path Configuration
+
+Lidarr may use path configuration. Set these when running the container:
+
+| Path                          | Description                             |
+| ----------------------------- | --------------------------------------- |
+| `/path/to/appdata/config`     | Path for Lidarr configuration data.     |
+| `/path/to/music`              | Path for music in Lidarr.               |
+| `/path/to/downloads` (optional) | Path for downloads in Lidarr (optional). |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
@@ -24,17 +49,9 @@
 | Application name      |  Eg: lidarr1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:8686                                                                                               | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) ```- /path/to/appdata/config:/config- /path/to/music:/music #optional- /path/to/downloads:/downloads #optional```                       |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
-
-
+|  Http:                | 8686                                                                                                                      |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 ### Steps And Procedure

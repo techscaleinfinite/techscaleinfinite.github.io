@@ -2,11 +2,33 @@
   <img src="/img/scf.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🖥 Jetty Deployment
 
 ### Jetty: Agile Web Server and Servlet Container
 
 Jetty, or Eclipse Jetty, is a Java-based open-source web server and servlet container celebrated for its scalability and lightweight design.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description                                     |
+| --------- | ----------- | ----------------------------------------------- |
+| Http      | 80          | Jetty is exposed on port 80.                    |
+| Tcp       | -           | -             |
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 
@@ -16,15 +38,11 @@ Jetty, or Eclipse Jetty, is a Java-based open-source web server and servlet cont
 | Application name      |  Eg: jett(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:80/8080/443/8443                                                                                            | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ``` /usr/local/jetty/webapps```                      |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 80                                                                                                                     |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+                                                                         
 
 
 ### Steps And Procedure
@@ -111,3 +129,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, jetty
 
 </details>
+
+</span>

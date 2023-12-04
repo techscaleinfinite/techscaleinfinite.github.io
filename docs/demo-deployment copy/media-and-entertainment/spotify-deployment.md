@@ -9,6 +9,26 @@
 
 **Spotify** is a global music streaming sensation, offering an extensive library of diverse genres and a user-friendly interface. Smart algorithms curate personalized playlists, while users can effortlessly create and share their own. Beyond music, Spotify is a hub for podcasts, audiobooks, and exclusive content. Premium subscribers enjoy perks like offline listening and high-quality streaming. The platform fosters a global community, connecting music enthusiasts worldwide for a shared musical experience. In summary, Spotify is your go-to platform for a personalized and immersive audio journey.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description |
+| --------- | ----------- | ----------- |
+| Http      | 80        | Exposes port 80 for the spotify app. Users can access the  application through this port. |
+| Tcp       | -           | -             |
+
+### Working Directories
+
+| Path Mapping                         | Description |
+| ------------------------------------ | ----------- |
+|-       | - |
+
+
+### Environment Variables
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
@@ -22,16 +42,9 @@
 | Application name      |  Eg: spotify1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:80                                                                                              | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
-
+|  Http:                | 80                                                                                                                      |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 ### Steps And Procedure

@@ -3,11 +3,42 @@
   <img src="/img/fsd.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 💻 Vscode Deployment
 
 ### Visual Studio Code (VS Code): Your Coding Companion
 
 VS Code, an open-source gem, is a cross-platform code editor delivering speed and versatility. It supports various languages through extensions, offers a seamless integrated development environment (IDE) experience, and boasts features like integrated terminal, Git support, and live collaboration. Highly customizable, VS Code adapts to individual preferences, making it an inclusive and user-friendly coding tool.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description                                        |
+| --------- | ----------- | -------------------------------------------------- |
+| Http      | 3000        | Visual Studio Code Server is exposed on port 3000. |
+| Tcp       | -           | -             |
+
+### Volume Configuration
+
+When running the container, you may mount the configuration data directory from the host using the following volume configurations:
+
+| Volume                     | Description                                      |
+| -------------------------- | ------------------------------------------------ |
+| `/path/to/appdata/config:/config` | Mounts the configuration data directory from the host. |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 
@@ -17,15 +48,11 @@ VS Code, an open-source gem, is a cross-platform code editor delivering speed an
 | Application name      |  Eg: vs1 (you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:300                                                                                            | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ``` v /path/to/appdata/config:/config \```                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                |  3000                                                                                                                   |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+
 
 
 ### Steps And Procedure
@@ -120,3 +147,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, vscode
 
 </details>
+
+</span>
+

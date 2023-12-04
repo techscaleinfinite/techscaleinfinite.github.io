@@ -17,23 +17,16 @@ ScaleInfinite offers a dedicated Minecraft server for personalized gaming experi
 
 ### Installation
 
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |  [`minecraft`](https://hub.docker.com/r/itzg/minecraft-server) 👈(click me,for the dockerhub image)                                   |
 | Application name      |  Eg: minicraft1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |                                                                                                  | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
-
-
+|  Http:                |                                                                                                                       |
+|  Tcp:                 |                                                                                                                           | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 ### &#x20;Steps And Procedure&#x20;

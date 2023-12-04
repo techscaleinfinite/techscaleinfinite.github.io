@@ -11,6 +11,30 @@
 
 **mStream** orchestrates your personal music streaming experience. Transforming your home computer into a music hub, it offers both Android and iPhone apps for on-the-go melodies. With an intuitive interface, mStream acts as your personal DJ, curating playlists effortlessly. It liberates your music from location constraints, streaming it to any device with an internet connection. Security is paramount, ensuring your music remains exclusively yours. mStream transforms your home into a music haven and your phone into a portable concert hall, delivering an encore-worthy music streaming experience.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                                       |
+| --------- | ----------- | ------------------------------------------------- |
+| Http      | 3000        | "MStream" application is accessible on port 3000. |
+| Tcp       | -           | -             |
+
+### Path Configuration
+
+"MStream" may use path configuration. Set these when running the container:
+
+| Path                   | Description                            |
+| ---------------------- | -------------------------------------- |
+| `/path/to/data`         | Path for MStream configuration data.   |
+| `/path/to/music`        | Path for music in MStream.              |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
@@ -24,15 +48,11 @@
 | Application name      |  Eg: mstream1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:3000                                                                                             | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) ``` volumes:- /path/to/data:/config- /path/to/music:/music```                       |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 3000                                                                                                                     |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+                                                                           
 
 
 ### Steps And Procedure

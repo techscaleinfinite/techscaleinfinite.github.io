@@ -11,6 +11,31 @@
 
 Lightstreamer is a real-time messaging server optimized for the Internet, facilitating instant data streaming for applications in finance, gaming, and more. Operating on a client-server architecture, it enables bidirectional communication, supporting scalability, failover, and high availability. With versatile integration, a vibrant community, and applications in various domains, Lightstreamer is the conductor of a seamless symphony, ensuring precise real-time data delivery.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                                   |
+| --------- | ----------- | --------------------------------------------- |
+| Http      | 8080        | Lightstreamer application is on port 8080.    |
+| Tcp       | -           | -             |
+
+### Path Configuration
+
+"Lightstreamer" uses path configuration. Set these when running the container:
+
+| Path                                      | Description                                     |
+| ----------------------------------------- | ----------------------------------------------- |
+| `/path/to/my-lightstreamer_conf.xml`      | Path for Lightstreamer configuration file.      |
+| `/lightstreamer/conf/lightstreamer_conf.xml` | Target path within the container for configuration file. |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+
 </span>
 
 
@@ -24,15 +49,11 @@ Lightstreamer is a real-time messaging server optimized for the Internet, facili
 | Application name      |  Eg: light1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:8080                                                                                              | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml                      |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 8080                                                                                                                      |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+                                                                      |
 
 
 ### Steps And Procedure

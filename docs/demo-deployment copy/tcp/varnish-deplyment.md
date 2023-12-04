@@ -3,11 +3,19 @@
   <img src="/img/efgg.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🖥 Varnish Deplyment
 
 ### Varnish: Accelerating Web Performance
 
 Varnish, an open-source caching HTTP reverse proxy, enhances web server performance by caching content in memory. It acts as a reverse proxy, caching requested web pages and resources, reducing server load, and speeding up response times. Varnish supports cache invalidation for content updates, load balancing across multiple servers, and HTTP acceleration, optimizing the overall user experience.
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ## Installation
 |  Description          | Decription                                                                                                               | 
@@ -16,15 +24,9 @@ Varnish, an open-source caching HTTP reverse proxy, enhances web server performa
 | Application name      |  Eg: varnish(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:80                                                                                            | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ``` /etc/varnish/default.vcl:ro```                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 80                                                                                                                     |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 ### Steps And Procedure
@@ -112,3 +114,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, varnish
 
 </details>
+
+</span>
+

@@ -10,6 +10,28 @@
 ### Komga: Your Comics and Mangas Server
 
 **Komga** is a free and open-source comics/mangas server with a responsive web UI for easy access. It offers features like metadata management, collections, and read lists, ensuring an organized reading experience. With a REST API, multi-user support, and seamless imports, Komga transforms your comics collection into a delightful and immersive adventure.
+### Exposed Ports
+
+| Port Type | Port Number | Description                       |
+| --------- | ----------- | --------------------------------- |
+| Http      | 25600       | Komga is accessible on port 25600.|
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+Komga uses volume mounts to manage data. You can set these when running the container:
+
+| Volume                    | Description                   |
+| ------------------------- | ----------------------------- |
+| `/path/to/data:/config`   | Path to Komga configuration.  |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 
 </span>
 
@@ -17,21 +39,18 @@
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |   [komga ](https://hub.docker.com/r/gotson/komga) 👈(click me,for the dockerhub image)                                   |
 | Application name      |  Eg: kav1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:25600                                                                                                  | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  -v /your/manga/directory:/manga \-v /kavita/data/directory:/kavita/config \```                  |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                |     5000                                                                                                                     |
+|  Tcp:                 |                                                                                                                        | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+
 
 ### Steps And Procedure
 

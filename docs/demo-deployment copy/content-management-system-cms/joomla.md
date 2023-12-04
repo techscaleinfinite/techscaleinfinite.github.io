@@ -11,11 +11,44 @@
 
 **Joomla** is the superhero of open-source web development, simplifying website creation and management. With a user-friendly interface, it empowers users to effortlessly add and organize content, be it articles, images, or videos. Think of Joomla as a versatile wardrobe for your website, offering various templates and themes to dress it up.
 
-Its superpowers extend with extensions like modules, plugins, and components, allowing users to add functionality and customize their digital space. Joomla gives you the authority with user management, enabling collaboration on web projects. It's SEO-friendly, multilingual, and part of a supportive community. Whether you're starting a personal blog or a business site,
+Its superpowers extend with extensions like modules, plugins, and components, allowing users to add functionality and customize their digital space. Joomla gives you the authority with user management, enabling collaboration on web projects. It's SEO-friendly, multilingual, and part of a supportive community. Whether you're starting a personal blog or a business site.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description                        |
+| --------- | ----------- | ---------------------------------- |
+| Http      | 80          | Joomla exposes port 80 for HTTP.    |
+| Tcp       | -           | -             |
+
+### Environment Variables
+
+Joomla relies on several environment variables for its configuration. You can set these when running the container:
+
+| Variable            | Default     | Description                                              |
+| ------------------- | ----------- | -------------------------------------------------------- |
+| `JOOMLA_DB_HOST`    | -           | Defaults to the IP and port of the linked `mysql` container. |
+| `JOOMLA_DB_USER`    | "root"      | Defaults to "root".                                      |
+| `JOOMLA_DB_PASSWORD`| -           | Defaults to the value of the `MYSQL_ROOT_PASSWORD` from the linked `mysql` container. |
+| `JOOMLA_DB_NAME`    | "joomla"    | Defaults to "joomla".                                    |
+
+Additionally, when using a linked `mysql` container, you may need to set the `MYSQL_ROOT_PASSWORD` environment variable.
+
+Example:
+
+docker run -p 80:80 \
+  -e JOOMLA_DB_HOST=... \
+  -e JOOMLA_DB_USER=... \
+  -e JOOMLA_DB_PASSWORD=... \
+  -e JOOMLA_DB_NAME=... \
+  -e MYSQL_ROOT_PASSWORD=example \
+  joomla-image:tag
+
+
 </span>
 
 
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation
 
 |  Description          | Decription                                                                                                               | 
@@ -24,15 +57,10 @@ Its superpowers extend with extensions like modules, plugins, and components, al
 | Application name      |  Eg: joomla(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:80                                                                                                           | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) grafana-storage:/var/lib/grafana                      |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                |  80                                                                                                                   |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+                                                                          
 
 ### Steps And Procedure
 

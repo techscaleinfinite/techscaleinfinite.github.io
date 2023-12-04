@@ -2,6 +2,9 @@
   <img src="/img/ssc.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🔒 Caddy Deployment
 
 ### What's is caddy?
@@ -9,6 +12,34 @@
 **Caddy: Simplifying Web Servers**
 
 *Caddy*, the modern web server, excels in simplicity, efficiency, and security. Offering a user-friendly experience, it streamlines configuration with its human-readable Caddyfile. With automatic HTTPS setup, Caddy effortlessly summons SSL/TLS certificates from Let's Encrypt, ensuring secure content delivery. As a master of reverse proxy, it expertly directs requests for hosting multiple services, while graceful load balancing guarantees high availability. Caddy's prowess extends to URL tweaking, SEO-friendly redirects, and efficient handling of multiple connections, making it a speed demon in web server technology. Its feature ensemble, including plugins and middleware, contributes to a harmonious, efficient, and secure web server experience.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description                               |
+| --------- | ----------- | ----------------------------------------- |
+| Http      | 80          | Caddy application is exposed on port 80.  |
+| Tcp       | -           | -             |
+
+### Path Configuration
+
+When running the container, the default Caddy web server may serve content from the following path:
+
+| Path                            | Description                                     |
+| ------------------------------- | ----------------------------------------------- |
+| `/usr/share/caddy/index.html`   | Default path for serving Caddy web server pages. |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 
@@ -18,15 +49,10 @@
 | Application name      |  Eg: cadd(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:80                                                                                            | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```-v uptime-kuma:/app/data```                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 80                                                                                                                     |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 
 ### Steps And Procedure
 
@@ -116,3 +142,7 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, caddy
 
 </details>
+
+</span>
+
+

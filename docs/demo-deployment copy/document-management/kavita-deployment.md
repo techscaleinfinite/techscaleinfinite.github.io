@@ -10,6 +10,29 @@
 ### Kavita: A Swift and Versatile Digital Library
 
 **Kavita** is a self-hosted digital library offering lightning-fast access to a diverse range of file formats. With a sleek design, it caters to bookworms and manga enthusiasts, providing organized series, user reviews, and swift search capabilities. Kavita simplifies library management, offering a command center for users to explore literature seamlessly.
+### Exposed Ports
+
+| Port Type | Port Number | Description                       |
+| --------- | ----------- | --------------------------------- |
+| Http      | 5000        | Kavita is accessible on port 5000.|
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+Kavita uses volume mounts to manage manga and configuration data. You can set these when running the container:
+
+| Volume                                 | Description                              |
+| -------------------------------------- | ---------------------------------------- |
+| `/your/manga/directory:/manga`         | Path to your manga directory.            |
+| `/kavita/data/directory:/kavita/config` | Path to your Kavita configuration data. |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 
 </span>
 
@@ -17,21 +40,17 @@
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |   [kavita ](https://hub.docker.com/r/kizaing/kavita) 👈(click me,for the dockerhub image)                                   |
 | Application name      |  Eg: kav1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:5000                                                                                                   | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  -v /your/manga/directory:/manga \-v /kavita/data/directory:/kavita/config \```                  |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                |     5000                                                                                                                     |
+|  Tcp:                 |                                                                                                                        | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 
 ### Steps And Procedure
 

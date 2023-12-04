@@ -10,6 +10,29 @@
 **Node-RED** transforms programming into an imaginative journey, allowing users to visually wire together hardware devices, APIs, and online services. The browser-based editor acts as a canvas, letting users intuitively connect nodes like digital Lego blocks to create intricate flows. With one-click deployment, your ideas spring to life instantly. For those with a penchant for JavaScript, the editor includes a rich text editor for crafting intricate functions.
 
 Node-RED boasts a library for saving and sharing code snippets, functions, or entire flows. Behind the scenes, flows are stored as JSON, offering flexibility in import, export, and sharing. The platform goes beyond being a tool; it's a canvas for digital artistry, where creativity knows no bounds. Start painting the future of connectivity with Node-RED, where your imagination sets the limits, and innovation is the masterpiece. 🎨💡🌐
+### Exposed Ports
+
+| Port Type | Port Number | Description                        |
+| --------- | ----------- | ---------------------------------- |
+| http       | 1880        | Node-RED exposes port 1880.         |
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+Node-RED uses volume mounts to manage data storage. You can set these when running the container:
+
+| Volume            | Description                            |
+| ----------------- | -------------------------------------- |
+| `myNodeREDdata:/data`   | This is the path where Node-RED data is stored. |
+
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 </span>
 
 
@@ -17,15 +40,17 @@ Node-RED boasts a library for saving and sharing code snippets, functions, or en
 
 ### Installation
 
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          | [node red ](https://hub.docker.com/r/nodered/node-red/)(click me,for the dockerhub image)                                  |
 | Application name      |  Eg: nodered(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:1880                                                                                                           | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+|  Http:                |  1880                                                                                                                    |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 | If you choose Advanced option|                                                                                                                   | 
 | ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
 | WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) ```shell -v myNodeREDdata:/data```                    |

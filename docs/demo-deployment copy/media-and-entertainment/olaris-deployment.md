@@ -10,6 +10,30 @@
 # Olaris: Your Creative Hub for Media Magic 🎨🔮
 
 **Olaris** is a vibrant community-driven space where media enthusiasts unite to manage and transform their digital treasures. At its core is the **olaris-react** project, an intuitive interface that enhances your media management experience. Olaris is not just software; it's an open-source art studio, where a passionate community collaborates to create something beautiful. Acting as your digital curator, Olaris organizes and optimizes your media collection, offering a personalized touch. With transcoding capabilities, Olaris works its magic, seamlessly transforming media formats for any occasion or device. Olaris, with its olari-react gateway, welcomes you to a future of collaborative media management, where your wildest dreams become reality.
+### Exposed Ports
+
+| Port Type | Port Number | Description                                 |
+| --------- | ----------- | ------------------------------------------- |
+| Http      | 8080        | "Olaris" application is accessible on port 8080. |
+| Tcp       | -           | -             |
+
+### Path Configuration
+
+"Olaris" may use path configuration. Set these when running the container:
+
+| Path            | Description                   |
+| --------------- | ----------------------------- |
+| `/var/media`    | Path for Olaris media files.  |
+
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 
 </span>
 
@@ -24,17 +48,10 @@
 | Application name      |  Eg: olaris1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:8080                                                                                              | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )      /var/media                   |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
-
-
+|  Http:                | 8080                                                                                                                      |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+                                                                     
 
 
 ### Steps And Procedure

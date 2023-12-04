@@ -10,7 +10,31 @@
 ### Gatus: Your Digital Health Maestro
 
 Gatus is a versatile health dashboard that monitors HTTP, ICMP, TCP, and DNS, providing real-time insights into service well-being. Acting as a vigilant conductor, it excels in evaluating status codes, response times, and certificate expirations. With a symphony of alerting options, adaptability, and a user-friendly interface, Gatus ensures a seamless monitoring experience. As an open-source orchestra, it invites global collaboration for continuous fine-tuning, making it a reliable sidekick for data-driven decisions in the digital realm.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description                               |
+| --------- | ----------- | ----------------------------------------- |
+| Http      | 80          | Gatus application is exposed on port 80. |
+
+### Path Configuration
+
+"Gatus" utilizes path configuration. Set these when running the container:
+
+| Path                          | Description                                |
+| ----------------------------- | ------------------------------------------ |
+| `$(pwd)/config.yaml`          | Local path to the Gatus configuration file. |
+| `/config/config.yaml`         | Target path within the container.           |
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
+
 
 
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
@@ -22,15 +46,10 @@ Gatus is a versatile health dashboard that monitors HTTP, ICMP, TCP, and DNS, pr
 | Application name      |  Eg: fatus1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:80                                                                                             | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )      ```` --mount type=bind,source="$(pwd)"/config.yaml,target=/config/config.yaml ```                  |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 80                                                                                                                      |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+                                                                       |
 
 
 ### Steps And Procedure

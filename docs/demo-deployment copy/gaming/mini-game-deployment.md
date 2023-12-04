@@ -9,27 +9,52 @@
 ### Mini Games: A Web-based Adventure
 
 Mini Games is an evolving web-based multiplayer experience that serves as a playground for experimenting with web technologies. Players inhabit parallel universes, each with unique physics, and can collaborate through interconnected portals. With user-friendly controls for touch and keyboard devices, the game focuses on refining animations, optimizing input handling, and ensuring seamless frontend-backend communication. Visit [https://mini-game.oliverlanz.ch](https://mini-game.oliverlanz.ch/) to explore this innovative gaming experiment and connect multiple devices for a shared adventure.
+
+In Scale Infinite, applications are assigned specific ports for communication. For example, a mini-game app utilizes port 80 for HTTP, ensuring web-based interaction. This port configuration allows seamless integration, supporting diverse applications with individualized communication protocols within the Scale Infinite ecosystem.
+### Exposed Ports
+
+| Port Type | Port Number | Description |
+| --------- | ----------- | ----------- |
+| Http      | 80        | Exposes port 80 for the mini game app. Users can access the mini game application through this port. |
+| Tcp       | -           | -             |
+
+### Working Directories
+
+| Path Mapping                         | Description |
+| ------------------------------------ | ----------- |
+|-       | - |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+### Environment Variables
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 </span>
 
 
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
+
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |  [minigame](mini-game-deployment.md)👈(click me,for the dockerhub image)                                   |
 | Application name      |  Eg: game1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:80                                                                                                | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 80                                                                                                                       |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 
 
 ### Steps And Procedure

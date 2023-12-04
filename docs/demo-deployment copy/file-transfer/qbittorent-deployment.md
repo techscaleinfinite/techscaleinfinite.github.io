@@ -11,6 +11,30 @@
 
 qBittorrent is a free and open-source BitTorrent client, supporting peer-to-peer file sharing. Available on Windows, macOS, Linux, and FreeBSD, it provides a user-friendly interface for managing torrent downloads. With transparency as an open-source software, qBittorrent offers a secure and accessible alternative to proprietary torrent clients. Users can create, share, and discover torrents seamlessly, enhancing their file-sharing experience.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                               |
+| --------- | ----------- | ----------------------------------------- |
+| Http      | 8080        | qBittorrent Web UI is accessible on port 8080. |
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+qBittorrent uses volume mounts to manage configuration and download data. You can set these when running the container:
+
+| Volume                       | Description                                  |
+| ---------------------------- | -------------------------------------------- |
+| `/path/to/appdata/config`    | Path to qBittorrent's configuration files.  |
+| `/path/to/downloads`         | Path to the directory where downloads are stored. |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
@@ -18,21 +42,18 @@ qBittorrent is a free and open-source BitTorrent client, supporting peer-to-peer
 
 ### Installation
 
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |   | [qbittorent](https://hub.docker.com/r/linuxserver/qbittorrent)👈(click me,for the dockerhub image)                           |
 | Application name      |  Eg: qb1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:8080                                                                                                 | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```volumes:- /path/to/appdata/config:/config - /path/to/downloads:/downloads```                    |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                |     8080                                                                                                                     |
+|  Tcp:                 |                                                                                                                        | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+
 
 
 ### Steps And Procedure

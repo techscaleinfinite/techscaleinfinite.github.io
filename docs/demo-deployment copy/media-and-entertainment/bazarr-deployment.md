@@ -10,6 +10,25 @@ Bazarr seamlessly integrates with media management software, allowing you to set
 
 In a nutshell, Bazarr is your dedicated companion, ensuring your favorite shows and movies are adorned with perfectly matched subtitles. It brings a touch of personalization, convenience, and enjoyment to your media world. 🎬🍿✨
 
+ 
+
+|  **Exposed Ports:**    | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Http port          |       6767 is exposed to facilitate web-based communication for Bazarr. Users can access the Bazarr application through this port.                              |
+| Tcp port      |              -                                                                     | 
+
+|  **Working directory:** | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| /path/to/bazarr/config:/config         |  This is the path  where Bazarr's configuration files are stored. It ensures that the necessary configuration data is accessible.                                  |
+| /path/to/movies:/movies (optional):      |  Points to the directory where TV shows are stored.                                                                                        | 
+| /path/to/tv:/tv (optional):  |  Points to the directory where TV shows are stored.                                | 
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+
 </span>
 
 
@@ -17,28 +36,25 @@ In a nutshell, Bazarr is your dedicated companion, ensuring your favorite shows 
 
 ### Installation
 
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |  [`bazarr`](https://hub.docker.com/r/linuxserver/bazarr)👈(click me,for the dockerhub image)                                   |
 | Application name      |  Eg: bzzz1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:6767                                                                                              | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```  - /path/to/bazarr/config:/config - /path/to/movies:/movies #optional - /path/to/tv:/tv #optional```                       |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 6767                                                                                                                       |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+                                                                        
 
 
 ### Steps And Procedure
 
 **This deployment utilizes the official BAZARR Docker image. Here's a step-by-step guide to get you started:**
 
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the Bazarr application.
+1. Begin by navigating to the "Create Apps" page and use the search bar to find the [`linuxserver/bazarr`](https://hub.docker.com/r/linuxserver/bazarr)👈 application.
 2. Click on the "Install" button to initiate the installation process.
 3. Fill in all the required fields with the necessary information.
 4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).

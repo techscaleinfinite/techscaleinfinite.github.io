@@ -13,11 +13,34 @@
 The collaboration with MySQL or MariaDB databases enhances efficiency in handling diverse website elements. Notably, WordPress prioritizes security by actively supporting HTTPS, encrypting data transmission for enhanced privacy.
 
 In brief, WordPress empowers users with a user-friendly interface for content creation, leverages PHP for dynamic page generation, integrates seamlessly with databases, and prioritizes security through HTTPS encryption. It stands as a versatile and secure solution for crafting and managing websites. 🌐✨
+
+### Exposed Ports
+
+| Port Type | Port Number | Description |
+| --------- | ----------- | ----------- |
+| Http      | 80       | Exposes port 80 for the wordpress app. Users can access the wordpress application through this port. |
+| Tcp       | -           | -             |
+
+### Working Directories
+
+| Path Mapping                         | Description |
+| ------------------------------------ | ----------- |
+|-       | - |
+
+
+### Environment Variables
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation&#x20;
+
 
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
@@ -25,15 +48,10 @@ In brief, WordPress empowers users with a user-friendly interface for content cr
 | Application name      |  Eg: wordpress(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:80                                                                                                           | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )                       |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+||  Http:                |  80                                                                                                                   |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+                                                                       
 
 
 
@@ -65,9 +83,6 @@ Exposing 3306 and 80 ports on the container.
 6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
 7. Copy the Hostname of the wordpress application without the NodePort and paste it into your preferred browser's address bar.
 8. Voilà! You're now able to access the wordpress webpage and explore its content.
-
-
-
 
 
 **Step-by-Step Guide to NGINX Deployment**

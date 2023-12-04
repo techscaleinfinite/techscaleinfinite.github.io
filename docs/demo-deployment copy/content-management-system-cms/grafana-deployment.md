@@ -10,10 +10,34 @@
 **Grafana** is the ultimate data analytics and visualization tool, transforming raw numbers into vibrant charts and dashboards. Compatible with various platforms, including PC, Mac, and Raspberry Pi, Grafana is open source, empowering users to customize and share their data playground. Acting as a data detective, it connects seamlessly to diverse data sources, creating a centralized hub for insights.
 
 Grafana's visual prowess turns data into a visual masterpiece, offering real-time updates and dynamic charts. With an alert system, it keeps you informed about data anomalies, serving as your personal data watchdog. Whether you're a seasoned data professional or a newcomer, Grafana is your gateway to turning data chaos into meaningful insights. It's your data, your rules, and your way to visualize and understand numbers like never before! 📊🕵️‍♂️✨
+### Exposed Ports
+
+| Port Type | Port Number | Description |
+| --------- | ----------- | ----------- |
+| Http      | 80          | Grafana exposes port 80 for HTTP communication. |
+| Http      | 3000        | Additionally, port 3000 is commonly used for Grafana's web interface. |
+
+### Volume Mounts
+
+| Path Mapping                                  | Description                                            |
+| ---------------------------------------------- | ------------------------------------------------------ |
+| grafana-storage:/var/lib/grafana               | Maps the volume named 'grafana-storage' to the container's '/var/lib/grafana' directory. This allows Grafana to store its data in the specified volume. |
+
+This volume mount ensures that Grafana can store its data persistently in the 'grafana-storage' volume. Adjust the volume name and paths as needed.
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+
 </span>
 
 
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
 ### Installation
 
 |  Description          | Decription                                                                                                               | 
@@ -22,9 +46,10 @@ Grafana's visual prowess turns data into a visual masterpiece, offering real-tim
 | Application name      |  Eg: firefox(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:80/3000                                                                                                           | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+|  Http:                |  80/3000                                                                                                                    |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 | If you choose Advanced option|                                                                                                                   | 
 | ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
 | WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) grafana-storage:/var/lib/grafana                      |

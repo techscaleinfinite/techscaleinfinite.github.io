@@ -2,11 +2,39 @@
   <img src="/img/dqq.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # ☕ Gitea
 
 **Gitea: Your Coding Companion**
 
 *Gitea*, the self-hosted platform, is your ultimate software development buddy. It provides Git hosting, seamless code review, and team collaboration under one roof. Gitea simplifies package management, automates CI/CD processes, and ensures cross-platform compatibility. With a user-friendly web interface, customization options, and robust security features, it's a tech wizard for developers. Open-source and community-driven, Gitea offers a backstage pass to efficient and collaborative software development.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description |
+| --------- | ----------- | ----------- |
+| Http      | 80       | Exposes port 80 for the gitea app. Users can access the  application through this port. |
+| Tcp       | -           | -             |
+
+### Working Directories
+
+| Path Mapping                         | Description |
+| ------------------------------------ | ----------- |
+|-       | - |
+
+
+### Environment Variables
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 
@@ -15,15 +43,10 @@
 | Application name      |  Eg: gitea(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:3000                                                                                            | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```-v uptime-kuma:/app/data```                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 3000                                                                                                                      |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 
 
 ### Steps And Procedure
@@ -116,3 +139,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, Gitea
 
 </details>
+
+</span>

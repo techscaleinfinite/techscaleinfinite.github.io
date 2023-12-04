@@ -9,6 +9,29 @@
 
 **Teedy** is a sleek document management system designed to bring order and clarity to your business operations. With a modern interface, it acts as a maestro of organization, providing efficient document upload and retrieval. Teedy ensures the security of your documents with precise user permissions, encryption, and secure data centers in France, offering a symphony of elegance and efficiency in the realm of document management.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                   |
+| --------- | ----------- | ----------------------------- |
+| Http      | 8080        | Teedy is accessible on port 8080.|
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+Teedy uses volume mounts to manage data. You can set these when running the container:
+
+| Volume                         | Description                    |
+| ------------------------------ | ------------------------------ |
+| `/mnt/teedy:/data`             | Path to the Teedy data directory.|
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
@@ -16,21 +39,17 @@
 
 ### Installation
 
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |   [teedy](https://hub.docker.com/r/jdreinhardt/teedy) 👈(click me,for the dockerhub image)                                   |
 | Application name      |  Eg: teedy1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:8080                                                                                                 | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  -v /mnt/teedy:/data          jdreinhardt/teedy:latest                     |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                |     8080                                                                                                                     |
+|  Tcp:                 |                                                                                                                        | 
+|    Advanced           |    Install with Default                                                                                                  |
+                                                                    
 
 ### Steps And Procedure
 

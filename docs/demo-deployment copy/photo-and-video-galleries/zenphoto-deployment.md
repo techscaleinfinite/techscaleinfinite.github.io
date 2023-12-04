@@ -11,6 +11,29 @@
 
 Zenphoto is a versatile Content Management System (CMS) designed for self-hosted websites, focusing on multimedia galleries. It excels in handling various media formats, offers customized page and menu management, robust blogging features, efficient file handling, and multilingual support. With scheduled publishing, user management, and community interaction features, Zenphoto empowers artists, photographers, filmmakers, and musicians to showcase their creativity seamlessly on a global stage.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                              |
+| --------- | ----------- | ---------------------------------------- |
+| Http      | 80          | Zenphoto application is on port 80.      |
+| Tcp       | -           | -             |
+
+### Path Configuration
+
+"Zenphoto" uses path configuration. Set these when running the container:
+
+| Path                          | Description                              |
+| ----------------------------- | ---------------------------------------- |
+| `~/zenphoto/mysql:/var/lib/mysql \`            | Path for Zenphoto MySQL data. Internal path used by Zenphoto for MySQL.            |
+| `~/zenphoto/www:/var/www/html \`              | Path for Zenphoto web content.Internal path used by Zenphoto for HTML.           |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 </span>
 
 
@@ -24,15 +47,11 @@ Zenphoto is a versatile Content Management System (CMS) designed for self-hosted
 | Application name      |  Eg: zen1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:80                                                                                              | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) ```  -v ~/zenphoto/mysql:/var/lib/mysql \-v ~/zenphoto/www:/var/www/html \```                       |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 80                                                                                                                      |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+
 
 
 ### Steps And Procedure

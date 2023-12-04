@@ -10,7 +10,29 @@
 
 **MediaWiki**, the force behind Wikipedia, is more than software; it's the architect of collaborative knowledge creation. Users, like a team of friends, contribute and edit articles, creating a digital playground for learning and sharing. With a detailed version control system, users can navigate through the history of changes and revert if needed.
 
-It's not just about text; MediaWiki embraces media with ease, allowing users to incorporate images, audio, and video seamlessly. With user contributions, personal spaces are created, fostering community interaction. The software's markup language simplifies content creation, making it accessible to all. In essence, MediaWiki is the unsung hero behind
+It's not just about text; MediaWiki embraces media with ease, allowing users to incorporate images, audio, and video seamlessly. With user contributions, personal spaces are created, fostering community interaction. The software's markup language simplifies content creation, making it accessible to all. In essence, MediaWiki is the unsung hero behind.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description                        |
+| --------- | ----------- | ---------------------------------- |
+| Http      | 80          | MediaWiki exposes port 80 for HTTP. |
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+MediaWiki uses volume mounts to manage data storage. You can set these when running the container:
+
+| Volume                                       | Description                                      |
+| -------------------------------------------- | ------------------------------------------------ |
+| `/var/www/html`                              | This is the path where MediaWiki's site files are stored. |
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 </span>
 
 
@@ -18,22 +40,16 @@ It's not just about text; MediaWiki embraces media with ease, allowing users to 
 
 ### Installation
 
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |  [`mediawiki`](https://hub.docker.com/\_/mediawiki)(click me,for the dockerhub image)                                  |
 | Application name      |  Eg: wiki(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:80                                                                                                           | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  ) ```shell /var/www/html/sites```                    |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
-
+|  Http:                |  80                                                                                                                   |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 ### Steps And Procedure

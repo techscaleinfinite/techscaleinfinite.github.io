@@ -11,6 +11,30 @@
 
 **Podgrab** is your dedicated podcast sidekick, simplifying podcast discovery, download, and enjoyment. With auto-download magic, it fetches the latest episodes seamlessly, and its integration with the iTunes API makes podcast discovery a breeze. As a full-fledged podcast player, Podgrab puts you in control—choose to play downloaded episodes or stream directly. Adding podcasts is flexible, and its smart organization prevents storage clutter. With customizable episode names, dark mode, and self-hosted, open-source features, Podgrab transforms your podcast journey into an organized, personalized, and delightful experience. Your passport to podcast excellence awaits with Podgrab!
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                                   |
+| --------- | ----------- | --------------------------------------------- |
+| Http      | 8080        | "Podgrab" application is accessible on port 8080. |
+| Tcp       | -           | -             |
+
+### Path Configuration
+
+"Podgrab" may use path configuration. Set these when running the container:
+
+| Path                          | Description                         |
+| ----------------------------- | ----------------------------------- |
+| `/host/path/to/assets`        | Path for Podgrab assets.            |
+| `/assets`                     | Internal path used by Podgrab.      |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
@@ -24,15 +48,11 @@
 | Application name      |  Eg: pod1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:8080                                                                                              | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )      ```shell /host/path/to/assets:/assets```                   |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 8080                                                                                                                     |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
+
+
 
 
 ### Steps And Procedure

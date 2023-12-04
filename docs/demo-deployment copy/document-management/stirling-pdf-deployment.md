@@ -9,6 +9,22 @@
 ### Stirling PDF: Your PDF Wizard
 
 **Stirling PDF** is a web-based PDF manipulation tool that acts like a digital wizard for your documents. It can split, merge, convert, and compress PDFs, offering a range of enchanting features such as page reordering, image addition, rotation, password protection, watermarking, and more. The tool combines magic and technology to transform mundane PDFs into versatile and visually appealing documents.
+### Exposed Ports
+
+| Port Type | Port Number | Description                       |
+| --------- | ----------- | --------------------------------- |
+| Http      | 8080        | Striling PDF is accessible on port 8080.|
+| Tcp       | -           | -             |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+
 
 </span>
 
@@ -17,6 +33,14 @@
 
 ### Installation
 
+|  stirling               |                                                                                                                          | 
+| --------------------- | ------                                                                                                                   |            
+| Application name      |  Eg:stirling (you can put any name)                                                                                      | 
+| Resource Allocation   |  0-100%( % of your allocated resources (CPU, RAM) will be used for this application.)                                    | 
+| `Exposed Ports`       |                                                                                                                          | 
+|  Http:                |     8080                                                                                                                    |
+|  Tcp:                 |                                                                                                                        | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 ### Steps And Procedure

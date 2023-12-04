@@ -11,27 +11,48 @@
 ### "I Hate Money": Simplifying Shared Finances
 
 "I Hate Money" is a web application designed to streamline shared budget management. It effortlessly tracks expenses, calculates debts, and suggests efficient ways to settle bills, making financial coordination within groups seamless. With an intuitive interface, real-time updates, and a focus on privacy, it transforms financial discussions into a harmonious experience. Accessible across multiple platforms, this tool ensures that managing shared expenses becomes a stress-free endeavor.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description                              |
+| --------- | ----------- | ---------------------------------------- |
+| Http      | 8080        | "I Hate Money" application is accessible on port 8080. |
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+"I Hate Money" may use volume mounts for data and configuration. Set these when running the container:
+
+| Volume                         | Description                                |
+| ------------------------------ | ------------------------------------------ |
+| `/database:/app/data/db`       | Path to the directory for database storage. |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
+
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |   [I Hate Money](https://hub.docker.com/r/ihatemoney/ihatemoney/) 👈(click me,for the dockerhub image)                                   |
 | Application name      |  Eg: money1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:8000                                                                                                 | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )   ```/database```                      |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                |     8000                                                                                                                   |
+|  Tcp:                 |                                                                                                                        | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 
 
 ### Steps And Procedure

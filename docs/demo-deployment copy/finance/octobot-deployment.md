@@ -10,6 +10,28 @@
 ### OctoBot: Streamlining Crypto Trading for All
 
 OctoBot, an open-source cryptocurrency trading robot, offers versatile strategies, user-friendly features, and inclusive accessibility. Traders can adopt strategies from the OctoBot Cloud, customize existing ones, or create their own with OctoBot Pro. The platform prioritizes transparency, allowing users to verify its operations, and it constantly evolves to meet the dynamic demands of the crypto market. With OctoBot, crypto-investors can trade smarter, regardless of their experience level, and unlock the full potential of their investments.
+### Exposed Ports
+
+| Port Type | Port Number | Description                                      |
+| --------- | ----------- | ------------------------------------------------ |
+| Http      | 5001        | "Octo Bot" application is accessible on port 5001. |
+| Tcp       | -           | -             |
+
+### Path Configuration
+
+"I Hate Money" may use path configuration. Set these when running the container:
+
+| Path                         | Description                                       |
+| ---------------------------- | ------------------------------------------------- |
+| `/octobot/user`              | Path for accessing Octo Bot user functionality.  |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 
 </span>
 
@@ -17,6 +39,7 @@ OctoBot, an open-source cryptocurrency trading robot, offers versatile strategie
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
+                                                                                                 
 
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
@@ -24,16 +47,9 @@ OctoBot, an open-source cryptocurrency trading robot, offers versatile strategie
 | Application name      |  Eg: money1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:5001                                                                                                 | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )   ```/octobot/user```                      |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
-
+|  Http:                |     5001                                                                                                                  |
+|  Tcp:                 |                                                                                                                           | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 ### Steps And Procedure
 

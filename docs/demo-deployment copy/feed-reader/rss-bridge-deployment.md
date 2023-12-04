@@ -10,21 +10,46 @@
 
 RSS-Bridge acts as a digital bridge, enabling users to follow content from platforms without native feeds. Offering diverse bridges for YouTube, Twitter, Telegram, Reddit, and more, it transforms web content into personalized feeds. With simple configuration, automatic updates, and privacy emphasis, RSS-Bridge ensures an organized and continuous stream of updates, making content tracking across platforms effortless and accessible.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description                              |
+| --------- | ----------- | ---------------------------------------- |
+| Http      | 8080        | RSS Bridge is accessible on port 8080.   |
+| Tcp       | -           | -             |
+
+### Volume Mounts
+
+RSS Bridge uses volume mounts to manage data. You can set these when running the container:
+
+| Volume                   | Description                             |
+| ------------------------ | --------------------------------------- |
+| `/var/www/rss-bridge`    | Path to the RSS Bridge installation.     |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
 </span>
 
 
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |   [rss bridge  ](https://hub.docker.com/r/rssbridge/rss-bridge/) 👈(click me,for the dockerhub image)                                   |
 | Application name      |  Eg: rss1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:8080                                                                                                 | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
+|  Http:                |     8080                                                                                                                     |
+|  Tcp:                 |                                                                                                                        | 
+|    Advanced           |    Install with Default                                                                                                  |
+
 | If you choose Advanced option|                                                                                                                   | 
 | ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
 | WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )   ```shell /var/www/rss-bridge```                      |

@@ -11,28 +11,43 @@
 
 Etherpad is not just a text editor; it's a virtuoso of collaborative writing. With features like rich editing, minimalist interface, dark mode, and seamless integration of visuals, it transforms your writing into a collaborative masterpiece. The real-time collaboration, version history, time slider, and group chat create a harmonious environment for multiple authors. Etherpad respects privacy with access control and self-hosting options, while its customization and exporting features allow your creativity to take center stage. It's an open-source symphony, where ideas unite, and documents come to life in a world of collaborative creativity.
 
+### Exposed Ports
+
+| Port Type | Port Number | Description |
+| --------- | ----------- | ----------- |
+| Http      | 9001        | Exposes port 9001 for the Etherpad application. Users can access Etherpad through this port. |
+
+### Volume Mounts
+
+| Path Mapping                                     | Description |
+| ------------------------------------------------ | ----------- |
+| application/lib/etherpad-lite/var/dirty.db       | Maps the host directory for Etherpad's dirty.db file to the corresponding directory inside the container. |
+
+### Environment Variables
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+
+
 </span>
 
 
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
+
+
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 | Docker Image          |  [ethepad](https://hub.docker.com/r/etherpad/etherpad)👈(click me,for the dockerhub image                                   |
-| Application name      |  Eg: OWNCLOUD1(you can put any name)                                                                                        | 
+| Application name      |  Eg: etherpad1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |   Http:9001                                                                                                            | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  application/lib/etherpad-lite/var/dirtdb                     |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
-
+|  Http:                | 9001                                                                                                                    |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 ### Steps And Procedure
@@ -50,47 +65,6 @@ Etherpad is not just a text editor; it's a virtuoso of collaborative writing. Wi
 
     By following these straightforward steps, you'll have successfully deployed the ETHERPAD application and gained access to its features through a seamless and user-friendly process.
 
-
-
-### Installation
-
-| Docker Image                                                                                                                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ethepad](https://hub.docker.com/r/etherpad/etherpad)[👈(](https://hub.docker.com/r/linuxserver/firefox)click me,for the dockerhub image) |
-
-| Application name                                                                 |
-| -------------------------------------------------------------------------------- |
-| Eg: etherpad(you can put any name) |
-
-| Resource Allocation                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.) |
-
-`PROTOCOL`
-
-<table><thead><tr><th width="417">Protocol</th><th>Protocol Value</th></tr></thead><tbody><tr><td>Http</td><td>9001</td></tr><tr><td>Tcp</td><td>-</td></tr></tbody></table>
-
-| Install with Default                                                                                                                                        | Advanced                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (select this if you want install with default settings if don't have environment value and working directory) | (select this if you want to go with advanced settings, where you select you own environment value and working directory) |
-
-If you choose Advanced option:
-
-| ENV VARIABLE                                                            |
-| ----------------------------------------------------------------------- |
-| ```Give env variable.``` ```Eg:key==value```  |
-
-| WORKING DIR                                                                             |
-| --------------------------------------------------------------------------------------- |
-| ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```  |
-| Here use ( use the path after   " :"  )                 |
-| application/lib/etherpad-lite/var/dirty.db                                              |
-
-`Access`
-
-| Public                                      | Private                                      |
-| ------------------------------------------- | -------------------------------------------- |
-| (select this if you want to make it public) | (select this if you want to make it private) |
 
 **Step-by-Step Guide to ETHERPAD Deployment**
 

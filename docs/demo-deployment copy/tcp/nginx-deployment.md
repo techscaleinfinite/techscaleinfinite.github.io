@@ -2,11 +2,42 @@
   <img src="/img/vb.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
+
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+
 # 🖥 Nginx deployment
 
 ### Nginx: The Multifaceted Web Tool
 
 Nginx transcends traditional web servers, functioning as a swift web server, diligent reverse proxy, efficient load balancer, proficient mail proxy, and adept HTTP cache. It powers websites, secures applications, orchestrates server resources, handles email routing, and optimizes content delivery with its versatile features.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description                                     |
+| --------- | ----------- | ----------------------------------------------- |
+| Http      | 80          | Nginx is exposed on port 80.                   |
+| Tcp       | -           | -             |
+
+### Volume Configuration
+
+When running the container, you may mount the Nginx configuration file from the host using the following volume configurations:
+
+| Volume                                      | Description                                     |
+| ------------------------------------------- | ----------------------------------------------- |
+| `/host/path/nginx.conf:/etc/nginx/nginx.conf:ro` | Mounts the Nginx configuration file in read-only mode. |
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
+
+</span>
+
+
+<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
 
 ### Installation
 
@@ -16,15 +47,9 @@ Nginx transcends traditional web servers, functioning as a swift web server, dil
 | Application name      |  Eg: nginx (you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:80                                                                                            | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```-v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro-v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro```                      |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 80                                                                                                                     |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 
@@ -112,3 +137,6 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, nginx
 
 </details>
+
+</span>
+

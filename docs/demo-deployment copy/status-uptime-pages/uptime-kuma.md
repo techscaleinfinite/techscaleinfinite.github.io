@@ -11,7 +11,28 @@
 ### Uptime Kuma: Your Digital Sentry
 
 Uptime Kuma is a vigilant monitoring companion for websites, APIs, and services, ensuring their availability and swift response times. It acts as a digital detective, signaling downtime and presenting insightful data through user-friendly graphs. Open-source and user-friendly, Uptime Kuma is a reliable sidekick, simplifying online monitoring for tech enthusiasts worldwide.
+### Exposed Ports
 
+| Port Type | Port Number | Description                                        |
+| --------- | ----------- | -------------------------------------------------- |
+| Http      | 80          | Uptime Kuma application is exposed on port 80.     |
+
+### Path Configuration
+
+For persistent data storage, utilize the following path configuration when running the container:
+
+| Path                        | Description                              |
+| --------------------------- | ---------------------------------------- |
+| `uptime-kuma:/app/data`     | Target path within the container.         |
+
+
+
+### Environment Variables
+
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 </span>
 
 
@@ -25,15 +46,9 @@ Uptime Kuma is a vigilant monitoring companion for websites, APIs, and services,
 | Application name      |  Eg: kuma(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-| Protocol Value        |  Http:3001                                                                                              | 
-| Install with Default  | (select this if you want install with default settings if don't have environment value and working directory)            |
-| Advanced              | (select this if you want to go with advanced settings, where you select you own environment value and working directory) | 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```-v uptime-kuma:/app/data```                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
+|  Http:                | 80                                                                                                                     |
+|  Tcp:                 |                                                                                                                          | 
+|    Advanced           |    Install with Default                                                                                                  |
 
 
 ### Steps And Procedure
