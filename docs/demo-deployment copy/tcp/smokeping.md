@@ -1,29 +1,30 @@
+
 <p align="center">
-  <img src="/img/sd.jpg" alt="Alt Text" width="25%"/>
+  <img src="/img/e7.jpg" alt="Alt Text" width="25%"/>
 </p> 
-
-
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# 🖥 Znc Deployment
 
-### ZNC: IRC Network Bouncer
+## Smokeping
 
-ZNC, an IRC network bouncer or BNC, enhances the IRC experience by allowing users to connect via an intermediary server. Users can detach clients gracefully, focus on specific channels, consolidate nicknames, and connect from multiple devices simultaneously. ZNC ensures security, message buffering, and customization, providing a persistent IRC presence with user-friendly interfaces for management.
+Smokeping is a network monitoring tool designed to meticulously track and analyze network latency. By continuously monitoring the latency of network connections, Smokeping provides valuable insights into the performance of your network. Whether you're managing a complex network infrastructure or troubleshooting connectivity issues, Smokeping serves as a reliable tool to assess and understand the latency patterns, helping you maintain optimal network performance.
+
+
 
 ### Exposed Ports
 
-| Port Type | Port Number | Description                        |
-| --------- | ----------- | ---------------------------------- |
-| Http       | 6051        | ZNC is exposed on port 6051.        |
+| Port Type | Port Number | Description                              |
+| --------- | ----------- | ---------------------------------------- |
+| Http      | 80          | smoke king application is on port 80.      |
+| Tcp       | -           | -             |
 
-### Volume Configuration
+### Path Configuration
 
-When running the container, you may mount the configuration data directory from the host using the following volume configurations:
+"smokeking" uses path configuration. Set these when running the container:
 
-| Volume                          | Description                                      |
-| ------------------------------- | ------------------------------------------------ |
-| `/path/to/appdata/config:/config` | Mounts the configuration data directory from the host. |
+| Path                          | Description                              |
+| ----------------------------- | ---------------------------------------- |
+| /data     |   Path for  data.   |
 
 
 
@@ -33,7 +34,6 @@ When running the container, you may mount the configuration data directory from 
 |   **Environment value:**          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 |-       |  -                              |
-
 </span>
 
 
@@ -43,44 +43,44 @@ When running the container, you may mount the configuration data directory from 
 
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
-| Docker Image          |   [ZNC](https://hub.docker.com/r/linuxserver/znc)👈(click me,for the dockerhub image)                       |
-| Application name      |  Eg: znc(you can put any name)                                                                                        | 
+| Docker Image          | [SmokeKing](https://hub.docker.com/r/linuxserver/smokeping)  👈(click me,for the dockerhub image)                              |
+| Application name      |  Eg: smoke1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-|  Http:                | 6051                                                                                                                      |
+|  Http:                | 80                                                                                                                      |
 |  Tcp:                 |                                                                                                                          | 
 |    Advanced           |    Install with Default                                                                                                  |
 
-                                                                 
+
 
 
 ### Steps And Procedure
 
-*   **This deployment utilizes the official ZNC Docker image. Here's a step-by-step guide to get you started:**
+*   &#x20;**This deployment utilizes the official smoke kingDocker image. Here's a step-by-step guide to get you started:**
 
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the linuxserver/znc application.
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the [SmokeKing](https://hub.docker.com/r/linuxserver/smokeping)  application.
     2. Click on the "Install" button to initiate the installation process.
     3. Fill in all the required fields with the necessary information.
     4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
     5. After making your selections, press the "Install" button to proceed.
     6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the ZNC application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the  ZNC webpage and explore its content.
+    7. Copy the Hostname of the smoke kingapplication without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the smoke kingwebpage and explore its content.
 
-    By following these straightforward steps, you'll have successfully deployed  ZNC application and gained access to its features through a seamless and user-friendly process.
+    By following these straightforward steps, you'll have successfully deployed the smoke king application and gained access to its features through a seamless and user-friendly process.
 
 
 
-**Step-by-Step Guide to ZNC Deployment**
+**Step-by-Step Guide to smoke kingDeployment**
 
 1. **Docker Image Selection:**
-   * Docker Image Name: `ZNC`
+   * Docker Image Name:smoke king
 2. **Application Details:**
-   * Application Name: `ZNC`
+   * Application Name: csmoke
    * Resource Allocation: Set the desired resource allocation from 0-100%.
 3. **Protocol Configuration:**
    * Protocol: `HTTP`
-   * Port: `6501`
+   * Port: `80`
 4. **Installation Options:**
    * Choose between "Default" or "Advanced" installation.
 5. **Advanced Installation (Optional):**
@@ -96,25 +96,23 @@ When running the container, you may mount the configuration data directory from 
 
        * Working Directory: Set the working directory for the application (e.g., `usr/src/yourAPP`).
        * Here use ( use the path after   " :"  )
-       *
-
-           ```bash
-           -v /path/to/appdata/config:/config \
-           ```
+       
 6. **Access Configuration:**
    * Choose between "Public" or "Private" access to the deployed application.
 7. **Installation:**
    * Click the "Install" button to initiate the deployment process.
 
-By following these steps, you can effortlessly deploy an ZNC instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
+By following these steps, you can effortlessly deploy an smoke kingi nstance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
-![Alt Text](/img/433.jpg)
-![Alt Text](/img/432.jpg)
-![Alt Text](/img/asd.jpg)
 
-![Alt Text](/img/qq1.jpg)
-![Alt Text](/img/dd3.jpg)
+![Alt Text](/img/e1.png)
+![Alt Text](/img/e2.png)
+![Alt Text](/img/e3.png)
+![Alt Text](/img/e4.png)
+![Alt Text](/img/e5.png)
+
+
 
 
 ### Youtube Tutorial&#x20;
@@ -125,11 +123,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About ZNC image we used.**
+**About smoke king image we used.**
 
-This is the official ZNC image.
+This is the official smokeking image.
 
-**Can I deploy my own ZNC image with modified configuration ?**
+**Can I deploy my own smokeking with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 
@@ -145,10 +143,8 @@ Stay informed and engaged with our project's latest developments and support on 
 
 <summary>Category</summary>
 
-Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, znc
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, zen photo
 
 </details>
 
 </span>
-
-

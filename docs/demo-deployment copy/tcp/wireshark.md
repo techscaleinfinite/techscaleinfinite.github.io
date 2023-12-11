@@ -1,30 +1,32 @@
+
 <p align="center">
-  <img src="/img/sd.jpg" alt="Alt Text" width="25%"/>
+  <img src="/img/qaw.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# 🖥 Znc Deployment
+# wireshark Deployment
 
-### ZNC: IRC Network Bouncer
 
-ZNC, an IRC network bouncer or BNC, enhances the IRC experience by allowing users to connect via an intermediary server. Users can detach clients gracefully, focus on specific channels, consolidate nicknames, and connect from multiple devices simultaneously. ZNC ensures security, message buffering, and customization, providing a persistent IRC presence with user-friendly interfaces for management.
+
+Wireshark stands as the world's foremost network protocol analyzer, widely utilized for scrutinizing network activities at a microscopic level. Serving as the de facto standard across numerous commercial, non-profit enterprises, government agencies, and educational institutions, Wireshark allows users to gain detailed insights into their network's functioning. Its unparalleled capabilities make it an essential tool for network professionals, enabling them to analyze and understand the intricacies of network protocols with precision.
+
 
 ### Exposed Ports
 
-| Port Type | Port Number | Description                        |
-| --------- | ----------- | ---------------------------------- |
-| Http       | 6051        | ZNC is exposed on port 6051.        |
+| Port Type | Port Number | Description                                        |
+| --------- | ----------- | -------------------------------------------------- |
+| Http      | 3000        | It is exposed on port 3000. |
+| Tcp       | -           | -             |
 
 ### Volume Configuration
 
 When running the container, you may mount the configuration data directory from the host using the following volume configurations:
 
-| Volume                          | Description                                      |
-| ------------------------------- | ------------------------------------------------ |
+| Volume                     | Description                                      |
+| -------------------------- | ------------------------------------------------ |
 | `/path/to/appdata/config:/config` | Mounts the configuration data directory from the host. |
-
 
 
 ### Environment Variables
@@ -43,44 +45,44 @@ When running the container, you may mount the configuration data directory from 
 
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
-| Docker Image          |   [ZNC](https://hub.docker.com/r/linuxserver/znc)👈(click me,for the dockerhub image)                       |
-| Application name      |  Eg: znc(you can put any name)                                                                                        | 
+| Docker Image          |   [wireshark](https://hub.docker.com/r/linuxserver/wireshark)👈(click me,for the dockerhub image)                       |
+| Application name      |  Eg: vs1 (you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-|  Http:                | 6051                                                                                                                      |
+|  Http:                |  3000                                                                                                                   |
 |  Tcp:                 |                                                                                                                          | 
 |    Advanced           |    Install with Default                                                                                                  |
 
-                                                                 
+
 
 
 ### Steps And Procedure
 
-*   **This deployment utilizes the official ZNC Docker image. Here's a step-by-step guide to get you started:**
+*   **This deployment utilizes the official wireshark Docker image. Here's a step-by-step guide to get you started:**
 
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the linuxserver/znc application.
+    1. Begin by navigating to the "Create Apps" page and use the search bar to find the linuxserver/wireshark application.
     2. Click on the "Install" button to initiate the installation process.
     3. Fill in all the required fields with the necessary information.
     4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
     5. After making your selections, press the "Install" button to proceed.
     6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the ZNC application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the  ZNC webpage and explore its content.
+    7. Copy the Hostname of the wireshark application without the NodePort and paste it into your preferred browser's address bar.
+    8. Voilà! You're now able to access the wireshark webpage and explore its content.
 
-    By following these straightforward steps, you'll have successfully deployed  ZNC application and gained access to its features through a seamless and user-friendly process.
+    By following these straightforward steps, you'll have successfully deployed wireshark application and gained access to its features through a seamless and user-friendly process.
 
 
 
-**Step-by-Step Guide to ZNC Deployment**
+**Step-by-Step Guide to wireshark Deployment**
 
 1. **Docker Image Selection:**
-   * Docker Image Name: `ZNC`
+   * Docker Image Name: `wireshark`
 2. **Application Details:**
-   * Application Name: `ZNC`
+   * Application Name: `wireshark`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
 3. **Protocol Configuration:**
    * Protocol: `HTTP`
-   * Port: `6501`
+   * Port: `3000`
 4. **Installation Options:**
    * Choose between "Default" or "Advanced" installation.
 5. **Advanced Installation (Optional):**
@@ -106,15 +108,17 @@ When running the container, you may mount the configuration data directory from 
 7. **Installation:**
    * Click the "Install" button to initiate the deployment process.
 
-By following these steps, you can effortlessly deploy an ZNC instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
+By following these steps, you can effortlessly deploy an wireshark instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
-![Alt Text](/img/433.jpg)
-![Alt Text](/img/432.jpg)
-![Alt Text](/img/asd.jpg)
 
-![Alt Text](/img/qq1.jpg)
-![Alt Text](/img/dd3.jpg)
+![Alt Text](/img/x1.png)
+![Alt Text](/img/x2.png)
+![Alt Text](/img/x3.png)
+![Alt Text](/img/x4.png)
+![Alt Text](/img/x5.png)
+![Alt Text](/img/x6.png)
+
 
 
 ### Youtube Tutorial&#x20;
@@ -125,11 +129,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About ZNC image we used.**
+**About wireshark image we used.**
 
-This is the official ZNC image.
+This is the official wireshark image.
 
-**Can I deploy my own ZNC image with modified configuration ?**
+**Can I deploy my own wireshark image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 
@@ -145,10 +149,9 @@ Stay informed and engaged with our project's latest developments and support on 
 
 <summary>Category</summary>
 
-Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, znc
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, wireshark
 
 </details>
 
 </span>
-
 
