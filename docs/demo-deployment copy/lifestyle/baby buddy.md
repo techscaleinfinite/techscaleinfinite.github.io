@@ -1,14 +1,12 @@
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# 📺 baby buddy Deployment
 
-# baby buddy: Your Subtitle Sidekick
 
-**baby buddy** steps into the spotlight as the unsung hero of your media experience, focusing on perfect subtitles. Acting as the Robin to Sonarr and Radarr's Batman, baby buddy allows you to personalize your subtitle preferences for TV shows and movies. It embarks on a relentless quest, hunting and downloading subtitles that align with your media files, enhancing your viewing experience.
-baby buddy seamlessly integrates with media management software, allowing you to set detailed subtitle preferences. It continuously monitors your media library, searching for new arrivals. Acting as a diligent detective, baby buddy explores subtitle provider websites, downloads, and matches subtitles with precision. Notifications signal the completion of the process, all automated for a worry-free media experience.
+# Babybuddy
 
-In a nutshell, baby buddy is your dedicated companion, ensuring your favorite shows and movies are adorned with perfectly matched subtitles. It brings a touch of personalization, convenience, and enjoyment to your media world. 🎬🍿✨
+**Babybuddy** is a comprehensive companion for caregivers, designed to simplify tracking essential aspects of baby care. It facilitates monitoring sleep patterns, feedings, diaper changes, and tummy time, offering valuable insights into a baby's needs. By leveraging data, caregivers can make informed predictions, reducing the guesswork involved in baby care. The app aims to streamline the caregiving experience, providing a user-friendly tool for efficient and attentive childcare.
+
 
  
 
