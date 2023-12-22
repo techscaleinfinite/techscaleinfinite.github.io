@@ -1,14 +1,12 @@
 
+# 📅  Baikal Deployment
+
+
+### What's is baikal?
+<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 <p align="center">
   <img src="/img/gr4.jpg" alt="Alt Text" width="100"/>
 </p>
-
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
- 
-
-# 🖥 Baikal Deployment
-
-### What's is baikal?
 
 Imagine a web interface that's not just user-friendly but genuinely intuitive. Baïkal offers exactly that. Managing users, address books, and calendars becomes a breeze. It's like having a personal assistant that understands your every command.
  Baïkal doesn't believe in boundaries. It's your bridge to a synchronized digital life. Access your contacts and calendars from every device you own. No more hassles with compatibility issues – it's all about harmonious connectivity.
@@ -55,19 +53,7 @@ Imagine a web interface that's not just user-friendly but genuinely intuitive. B
 
 ### Steps And Procedure
 
-&#x20;**This deployment utilizes the official baikal Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [ckulka/baikal](https://hub.docker.com/r/ckulka/baikal) application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the Baïkal  application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  Baïkal webpage and explore its content.
-
-By following these straightforward steps, you'll have successfully deployed the Baïkal application and gained access to its features through a seamless and user-friendly process.
-
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 **Step-by-Step Guide to baikal Deployment**

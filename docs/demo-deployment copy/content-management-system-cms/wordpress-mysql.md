@@ -57,6 +57,8 @@ In brief, WordPress empowers users with a user-friendly interface for content cr
 
 ### Steps And Procedure
 
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
+
 &#x20;**Docker image of this application consists of following layers :**
 
 ```

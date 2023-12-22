@@ -78,7 +78,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'tutorial',
+            label: 'Tutorial',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -97,7 +97,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://scaleinfinite.fr/',
+            href: 'https://techscaleinfinite.github.io/blogs/',
             label: 'Blog Hub',
             position: 'right',
           }
@@ -124,7 +124,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/scaleinfinite',
               },
             ],
           },

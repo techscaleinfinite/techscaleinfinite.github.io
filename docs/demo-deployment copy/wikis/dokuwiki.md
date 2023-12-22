@@ -5,7 +5,7 @@
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# 💻 Doku Wiki Deployment
+# 📔 Doku Wiki Deployment
 
 
 **DokuWiki** is a standards-compliant wiki tailored for efficient documentation creation. Ideal for small organizations, it boasts simplicity and ease of use. Noteworthy is its data storage approach, utilizing plain text files, eliminating the need for a database. This makes DokuWiki a straightforward and accessible choice for those prioritizing simplicity and efficiency in their documentation processes.
@@ -53,18 +53,7 @@
 
 ### Steps And Procedure
 
-*   **This deployment utilizes the official farm os  Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the [bitnami/dokuwiki ](https://hub.docker.com/r/bitnami/dokuwiki)  application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the Doku Wiki application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the Doku Wiki webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed Doku Wiki application and gained access to its features through a seamless and user-friendly process.
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 

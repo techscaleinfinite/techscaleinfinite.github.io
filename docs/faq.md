@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 <p align="center">
-  <img src="/img/scvs.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/scvs.jpg" alt="Alt Text" width="380"/>
 </p>
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>

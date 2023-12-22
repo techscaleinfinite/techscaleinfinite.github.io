@@ -31,3 +31,11 @@ But let’s not forget the most enchanting part — the practice! Dive into plat
 <img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 
 In the world of tech, Docker isn’t just a parlor trick; it’s a full-fledged magic show that simplifies the complex and ensures that your applications perform with style and grace, no matter the stage. So, grab your ticket, take your seat, and let the Docker show begin!
+
+<details>
+
+<summary>Category</summary>
+
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
+
+</details>

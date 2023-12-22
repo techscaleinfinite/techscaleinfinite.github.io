@@ -5,7 +5,7 @@
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# RETRO game Deployment
+# 🎮 RETRO game Deployment
 
 ### RetroArch Web Player: Nostalgic Gaming Revival
 
@@ -53,18 +53,7 @@ The self-hosted RetroArch web player brings vintage gaming to the web, emulating
 
 ### Steps And Procedure
 
-*   **This deployment utilizes the official Retro game Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the inglebard/retroarch-web application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the retro game   application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the  retro game webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the retro game application and gained access to its features through a seamless and user-friendly process.
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 

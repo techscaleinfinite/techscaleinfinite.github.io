@@ -2,18 +2,16 @@
 sidebar_position: 4
 ---
 <p align="center">
-  <img src="/img/addc.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/addc.jpg" alt="Alt Text" width="380"/>
 </p>
 
-#  Community
+# 👨‍👩‍👦‍👦 Community
 
 
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 ### SLACK
-
-
 
 **Join Our Project Community on Slack!**
 

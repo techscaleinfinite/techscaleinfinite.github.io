@@ -34,6 +34,7 @@ WordPress is a free and open-source content management system written in hyperte
 SQLite offers a convenient solution for applications that require structured data storage without the complexity of a traditional database system. Its lightweight nature and self-contained design make it an ideal choice for various applications.
 
 ### Steps And Procedure&#x20;
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 &#x20;**Docker image of this application consists of following layers :**
 

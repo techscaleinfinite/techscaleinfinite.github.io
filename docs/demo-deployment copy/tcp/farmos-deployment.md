@@ -5,12 +5,32 @@
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# 💻 Farmos Deployment
+# ⚙️ Farmos Deployment
 
 **farmOS: Revolutionizing Farm Management**
 
 farmOS is the collaborative brainchild of farmers, developers, and organizations, providing a community-driven platform for streamlined agricultural data management. Serving as a versatile digital assistant, it simplifies tasks from crop planning to livestock tracking. With seamless data collection, weather monitoring, and customizable features, farmOS brings precision to farm management. Accessible from anywhere, it supports sustainable practices and adapts to the unique needs of each farm. Join the farmOS revolution to navigate the intersection of tradition and innovation in agriculture.
 farmOS: Where technology meets agriculture, cultivating success one byte at a time.
+
+### Exposed Ports
+
+| Port Type | Port Number | Description |
+| --------- | ----------- | ----------- |
+| Http      | 80       | Exposes port 8 for the farmos app. Users can access the  application through this port. |
+| Tcp       | -           | -             |
+
+### Working Directories
+
+| Path Mapping                         | Description |
+| ------------------------------------ | ----------- |
+|-       | - |
+
+
+### Environment Variables
+
+|   **Environment value:**          | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|-       |  -                              |
 
 </span>
 
@@ -29,28 +49,11 @@ farmOS: Where technology meets agriculture, cultivating success one byte at a ti
 |  Tcp:                 |                                                                                                                          | 
 |    Advanced           |    Install with Default                                                                                                  |
 
-| If you choose Advanced option|                                                                                                                   | 
-| ENV VARIABLE          | ```Give env variable.``` ```Eg:key==value```                                                                             | 
-| WORKING DIR           | ```WORKDIR for the application.``` ```Eg:usr/src/yourAPP```Here use ( use the path after   " :"  )  ```-v uptime-kuma:/app/data```                        |
-| `Access`              |                                                                                                                          | 
-| Public                |    (select this if you want to make it public)                                                                           |
-| Private               |  (select this if you want to make it private)                                                                            |
 
 
 ### Steps And Procedure
 
-*   **This deployment utilizes the official farm os  Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the [farmos/farmos](https://hub.docker.com/r/farmos/farmos)  application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the farmOS application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the farmOS webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed farmOS application and gained access to its features through a seamless and user-friendly process.
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 

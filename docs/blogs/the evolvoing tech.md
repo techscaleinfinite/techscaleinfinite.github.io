@@ -9,6 +9,7 @@ Docker is likened to a phoenix, consistently rising from its ashes and transform
 ## The Docker Renaissance
 
 In 2023, Docker remains in the spotlight due to its enduring relevance. The platform adapts to change, introducing new features that enhance its appeal. Far from being an outdated artifact, Docker is a dynamic and ever-evolving tool with a promising future.
+
 <img src="/img/877.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 <img src="/img/888.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 <img src="/img/889.jpeg" alt="Alt Text" style={{ maxWidth: '200px' }} />
@@ -24,3 +25,12 @@ To grasp Docker's allure, theoretical knowledge is not enough; hands-on experien
 ## Setting Sail for Docker Delight
 
 Docker's journey in 2023 resembles an exciting quest with twists and turns. Mastering Docker involves a balanced approach of learning from courses and engaging in hands-on exploration. Dive into Docker courses and anchor at platforms like Render, Napptive, and Scale Infinite to unravel Docker's charm through practical experience.
+
+
+<details>
+
+<summary>Category</summary>
+
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
+
+</details>

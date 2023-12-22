@@ -27,3 +27,12 @@ Now, you might be asking, “How do I become the keeper of my web app garden?”
 But remember, just like the most captivating fantasy novels, practice is the key to becoming a true web app wizard.
 
 *And with that, you’re ready to embark on your personal web app hosting adventure! May your projects flourish and your gardens bloom with digital wonders. Onward, fellow tech travelers!*
+
+
+<details>
+
+<summary>Category</summary>
+
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
+
+</details>

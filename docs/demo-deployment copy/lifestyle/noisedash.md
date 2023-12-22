@@ -6,7 +6,7 @@
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# Noisedash 
+# 🖥️ Noisedash 
 
 noise is a self-hostable web tool crafted for generating ambient noises, enhancing user experience through sound. With features like customization of ambient noises and the ability to upload user-specific samples, it leverages Tone.js for optimal audio output. Users can save and share their noise profiles, offering seamless transitions between personalized soundscapes. The tool includes audio processing tools such as filters, LFOs, and effects for fine-tuning noises. Additionally, it supports the upload and editing of audio samples like rain, wind, and thunder, allowing users to combine them creatively. The platform is also equipped with admin tools for efficient user management and is designed to be mobile-friendly.
 
@@ -57,18 +57,7 @@ noise is a self-hostable web tool crafted for generating ambient noises, enhanci
 
 ### Steps And Procedure
 
-*   **This deployment utilizes the official noisedashDocker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [noisedash/noisedash](https://hub.docker.com/r/noisedash/noisedash) application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the noisedash application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the  noisedash webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the noisedash application and gained access to its features through a seamless and user-friendly process.
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 

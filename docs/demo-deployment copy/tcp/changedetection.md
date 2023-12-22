@@ -5,7 +5,7 @@
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# 🔒 ChangeDetection Deployment
+# ⚙️ ChangeDetection Deployment
 
 **ChangeDetection.io** offers a free and open-source solution for web page monitoring, notifications, and change detection. With this platform, users can track alterations to web pages and receive timely notifications. The service aims to provide an accessible and efficient way to stay informed about changes on the web, making it a valuable tool for various monitoring needs.
 
@@ -53,16 +53,7 @@ When running the container, the default ChangeDetectionweb server may serve cont
 
 ### Steps And Procedure
 
-&#x20; **This deployment utilizes the official ChangeDetectionimage. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the cadd application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the ChangeDetectionapplication without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  ChangeDetectionwebpage and explore its content.
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 

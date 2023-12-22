@@ -26,3 +26,11 @@ To delve deeper into the art of Docker, platforms like Coursera, Udemy, and edX 
 <img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 
 In the world of tech, Docker is your trusty sidekick, a companion ready to help whether you're on a dragon-slaying quest or a journey through the enchanted forests of software development. Docker is more than a solution to imaginary problems; it's a tool for enhancing your entire tech adventure. Onward!
+
+<details>
+
+<summary>Category</summary>
+
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
+
+</details>

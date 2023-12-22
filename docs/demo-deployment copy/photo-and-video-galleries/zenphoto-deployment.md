@@ -5,7 +5,7 @@
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 
-# 🖥 ZenPhoto Deployment
+# 📸 ZenPhoto Deployment
 
 ### Zenphoto: Creative Website CMS
 
@@ -56,18 +56,7 @@ Zenphoto is a versatile Content Management System (CMS) designed for self-hosted
 
 ### Steps And Procedure
 
-*   &#x20;**This deployment utilizes the official zenphoto Docker image. Here's a step-by-step guide to get you started:**
-
-    1. Begin by navigating to the "Create Apps" page and use the search bar to find the  [emieza/zenphoto](https://hub.docker.com/r/emieza/zenphoto) application.
-    2. Click on the "Install" button to initiate the installation process.
-    3. Fill in all the required fields with the necessary information.
-    4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-    5. After making your selections, press the "Install" button to proceed.
-    6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-    7. Copy the Hostname of the Zenphoto application without the NodePort and paste it into your preferred browser's address bar.
-    8. Voilà! You're now able to access the Zenphoto webpage and explore its content.
-
-    By following these straightforward steps, you'll have successfully deployed the Zenphoto  application and gained access to its features through a seamless and user-friendly process.
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 

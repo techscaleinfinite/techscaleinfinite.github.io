@@ -27,3 +27,11 @@ Fortunately, Render, Napptive, and Scale Infinite provide real-world environment
 <img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 
 So, set sail, Docker adventurers, and worry not about the cost of hosting. These options are your ticket to exploring Docker's potential without emptying your pockets. The Docker universe is yours to discover, and these havens offer the perfect launchpad for your digital journeys.
+
+<details>
+
+<summary>Category</summary>
+
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
+
+</details>

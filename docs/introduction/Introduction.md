@@ -1,0 +1,107 @@
+---
+sidebar_position: 2
+slug: /
+---
+
+<p align="center">
+  <img src="/img/sc.jpg" alt="ScaleInfinite Logo" width="500"/>
+</p>
+
+<div style={{ textAlign: 'center', fontSize: '36px', fontWeight: 'bold', color: '#FF5733', marginBottom: '20px' }}>
+  Welcome to <span style={{ color: '#0F9D58' }}>ScaleInfinite</span>
+</div>
+
+# Introduction
+
+<div style={{ textAlign: 'center', fontSize: '20px', lineHeight: '1.6', color: '#34495e', padding: '30px', background: '#3498db', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px' }}>
+  <strong style={{ color: 'white' }}>ScaleInfinite</strong> revolutionizes application hosting, offering effortless deployment, rich telemetry insights, and tailored security for startups, enterprises, and individuals.
+</div>
+
+## Self-Driving Cloud Applications
+
+Put your applications on autopilot mode in our AI managed environment.
+<div style={{ textAlign: 'center', marginTop: '30px' }}>
+  <a href="https://scaleinfinite.fr/" style={{ display: 'inline-block', padding: '20px 40px', fontSize: '24px', fontWeight: 'bold', color: '#fff', background: '#FF5733', borderRadius: '8px', textDecoration: 'none', transition: 'background 0.3s ease' }}>
+    Start Your Journey Today
+  </a>
+</div>
+
+## **Empower Your Applications**
+
+ We're revolutionizing application hosting, so you can focus on what truly matters - your vision. Explore how we're shaping the future of deployment:
+
+### Effortless Hosting
+
+
+
+ Simplify application hosting with streamlined infrastructure management, leaving you free from worries about provisioning, maintenance, and scaling.
+
+### Instant Access
+
+
+   Get your applications up and running with just a few clicks, granting rapid accessibility to your hosted content.
+
+### Rich Telemetry Insights
+
+
+
+- Benefit from detailed telemetry data, including CPU usage, Memory usage, I/O, and Network usage, along with a public IP address.
+
+
+### Tailored Security
+
+
+ Choose the security level that matches your application needs, offering different layers of protection to ensure your data's safety.
+
+### User-Friendly Platform
+
+
+
+ Designed for everyone, our platform bridges the gap between technical and non-technical users. Easily deploy and manage applications securely.
+
+### Limitless Application Freedom
+
+
+
+ Break free from restrictions. Deploy any publicly available application from Docker Hub or sync from your private registry.
+
+### Instant Deployment
+ Link your Docker Hub account and deploy images in mere seconds, allowing you to save time and focus on innovation.
+
+### Insights Dashboard
+
+ Monitor your account and application metrics, including CPU usage, Memory usage, I/O, and Network usage, through the intuitive Dashboard section.
+
+## Join **ScaleInfinite** and Experience Hosting Like Never Before
+
+
+
+<div style={{ background: '#FF5733', color: '#fff', textAlign: 'center', padding: '50px 0', borderRadius: '10px', marginTop: '30px' }}>
+  <h2 style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '20px', color: 'black' }}>Stay Informed with Our Blog Updates!</h2>
+  <p style={{ fontSize: '20px', lineHeight: '1.6' }}>
+    Check out our latest articles for valuable insights and tips. [Read Blogs](https://techscaleinfinite.github.io/blogs/)
+  </p>
+</div>
+
+<div style={{ textAlign: 'center', marginTop: '50px' }}>
+  <h2 style={{ fontSize: '36px', fontWeight: 'bold', color: '#FF5733' }}>Youtube Tutorial</h2>
+  <p style={{ fontSize: '20px', lineHeight: '1.6', color: '#34495e' }}>
+    Check out our [Youtube video](https://www.youtube.com/@scaleinfinite) for more clarification.
+  </p>
+</div>
+
+<div style={{ textAlign: 'center', marginTop: '30px' }}>
+  <h2 style={{ fontSize: '36px', fontWeight: 'bold', color: '#FF5733' }}>Join ScaleInfinite Today</h2>
+  <p style={{ fontSize: '20px', lineHeight: '1.6', color: '#7f8c8d' }}>
+    Whether you're a startup, enterprise, or visionary individual, we're here to elevate your applications and empower your journey. Welcome to limitless possibilities.
+  </p>
+</div>
+
+<div style={{ textAlign: 'center', marginTop: '30px' }}>
+  <a href="https://scaleinfinite.fr/" style={{ display: 'inline-block', padding: '20px 40px', fontSize: '24px', fontWeight: 'bold', color: '#fff', background: '#FF5733', borderRadius: '8px', textDecoration: 'none', transition: 'background 0.3s ease' }}>
+    Join us today
+  </a>
+</div>
+
+
+

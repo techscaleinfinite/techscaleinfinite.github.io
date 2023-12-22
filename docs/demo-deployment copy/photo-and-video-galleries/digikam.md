@@ -1,6 +1,6 @@
 
 
-# 🖥 DigiKam Deployment
+# 📸 DigiKam Deployment
 
 DigiKam is a versatile Content Management System (CMS) designed for self-hosted websites, focusing on multimedia galleries. It excels in handling various media formats, offers customized page and menu management, robust blogging features, efficient file handling, and multilingual support. With scheduled publishing, user management, and community interaction features, DigiKam empowers artists, photographers, filmmakers, and musicians to showcase their creativity seamlessly on a global stage.
 
@@ -30,6 +30,10 @@ DigiKam is a versatile Content Management System (CMS) designed for self-hosted 
 | Http:                 | 3000                                                       |
 | Tcp:                  |                                                            | 
 | Advanced              | Install with Default                                        |
+
+## Steps And Procedure
+
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 ## Steps And Procedure
 

@@ -23,3 +23,11 @@ Visualize Docker as your personal toolkit. Platforms like Render, Napptive, and 
 For those determined to move beyond Docker curiosity, dive into online courses and then apply your knowledge on platforms like Render, and Scale Infinite. Docker is not just a skill; it's an expedition that empowers you to harness the potential of containerization. With the right guidance and practice, you'll navigate Docker's digital landscapes with finesse. Happy learning!
 <img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 <img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+
+<details>
+
+<summary>Category</summary>
+
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
+
+</details>

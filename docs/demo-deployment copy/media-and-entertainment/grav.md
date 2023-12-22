@@ -3,7 +3,7 @@
 </p> 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# Grav - Fast, Simple, and Flexible Web Platform
+# 🎬 Grav - Fast, Simple, and Flexible Web Platform
 
 Grav is a cutting-edge, file-based web platform known for its speed, simplicity, and flexibility. Utilizing a file-based architecture, Grav simplifies content management and web development. Its fast performance and straightforward structure make it an excellent choice for developers seeking a nimble and adaptable solution for building websites. Grav's innovative approach to web platforms sets it apart, providing a user-friendly experience for both content creators and developers.
 
@@ -56,16 +56,7 @@ grav may use path configuration. Set these when running the container:
 
 ### Steps And Procedure
 
-&#x20; **This deployment utilizes the official grav image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the  application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the grav application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the   grav webpage and explore its content.
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 

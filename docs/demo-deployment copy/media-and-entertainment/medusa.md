@@ -3,7 +3,7 @@
 </p> 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# Medusa - Automatic Video Library Manager
+# 🎬 Medusa - Automatic Video Library Manager
 
 Medusa is an automatic Video Library Manager designed for TV Shows. With its advanced capabilities, Medusa monitors your favorite shows for new episodes and automatically manages your video library. Once new episodes are detected, Medusa takes care of the organizational tasks, ensuring your TV show collection is up-to-date without manual intervention. This seamless automation makes Medusa a valuable tool for TV show enthusiasts who want a hassle-free way to keep their libraries current.
 
@@ -57,16 +57,7 @@ grav may use path configuration. Set these when running the container:
 
 ### Steps And Procedure
 
-&#x20; **This deployment utilizes the officialmedusa image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the  application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of themedusa application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the  medusa webpage and explore its content.
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 

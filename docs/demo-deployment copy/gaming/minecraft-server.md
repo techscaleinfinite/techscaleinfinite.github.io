@@ -4,9 +4,8 @@
 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
-# Minecraft Server
+# 🎮 Minecraft Server
 
-### ScaleInfinite's Personalized Minecraft Server
 
 ScaleInfinite offers a dedicated Minecraft server for personalized gaming experiences. Exclusive to you and your friends, the server ensures 24/7 accessibility, custom rules, and data security. Deployed on ScaleInfinite, it provides a secure and immersive platform for collaborative and creative Minecraft adventures.
 
@@ -31,15 +30,7 @@ ScaleInfinite offers a dedicated Minecraft server for personalized gaming experi
 
 ### &#x20;Steps And Procedure&#x20;
 
-* &#x20;**This deployment uses the official Minecraft Docker image.**
-* &#x20;Go to create apps page and Search on the search bar.
-* &#x20;Click on install button.
-* &#x20;Fill all the reqired fields.
-* click on Advanced.
-* &#x20;Click on the Install button.
-* &#x20;You will be redirected to My Apps page, Here you can find all the applications you deployed.
-* &#x20;Copy the minecraft application Hostname without NodePort and search the Url.
-
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 **Step-by-Step Guide to Minecraft Deployment**

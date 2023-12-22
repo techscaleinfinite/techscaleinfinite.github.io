@@ -19,3 +19,11 @@ The decision between self-hosting and third-party hosting depends on your ambiti
 To master hosting, numerous online courses and tutorials are available. However, hands-on experience exploring platforms like Render, Napptive, and Scale Infinite is key to understanding the mysteries of hosting. Whether you choose to self-host or opt for a hosted kingdom, the choice is yours in the vast kingdom of tech.
 <img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 <img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+
+<details>
+
+<summary>Category</summary>
+
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
+
+</details>

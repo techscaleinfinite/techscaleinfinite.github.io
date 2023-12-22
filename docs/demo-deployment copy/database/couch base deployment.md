@@ -7,7 +7,6 @@
 
 # 🖥 Couch Base Deployment
 
-### Couchbase: Unmatched Data Management
 
 **Couchbase** is an award-winning distributed NoSQL cloud database renowned for its versatility, speed, and scalability. It supports a JSON-based data format, providing adaptability and accommodating various data technologies within a single architecture. With features like AI-powered coding assistance (Capella iQ), a memory-first architecture, robust scalability, and SQL++ for versatile querying, Couchbase offers a powerful solution for modern data management, seamlessly bridging the gap between NoSQL and SQL databases.
 
@@ -58,17 +57,7 @@ Couchbase uses volume mounts to manage data storage. You can set these when runn
 
 ### Steps And Procedure&#x20;
 
-**This deployment utilizes the official couchbase Docker image. Here's a step-by-step guide to get you started:**
-
-1. Begin by navigating to the "Create Apps" page and use the search bar to find the  couchbase  application.
-2. Click on the "Install" button to initiate the installation process.
-3. Fill in all the required fields with the necessary information.
-4. If you prefer, you can click on the "Advanced" option to access additional settings (this step is optional).
-5. After making your selections, press the "Install" button to proceed.
-6. Once the installation is complete, you'll be directed to the "My Apps" page, where you'll find a list of all the applications you've deployed.
-7. Copy the Hostname of the  couchbase    application without the NodePort and paste it into your preferred browser's address bar.
-8. Voilà! You're now able to access the couchbase webpage and explore its content.
-
+For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 
 **Step-by-Step Guide to couch db Deployment**

@@ -20,3 +20,12 @@ Qovery is an emerging player in the Docker image hosting realm. While still expa
 <img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 <img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
 Whether you prefer Render's simplicity, Scale Infinite's unique Docker image approach, Napptive's reliability, or are intrigued by Qovery's potential, these platforms provide options for free Docker image hosting in the cloud. Choose the one that aligns with your needs and let your Docker containers sail smoothly across the digital seas.
+
+
+<details>
+
+<summary>Category</summary>
+
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
+
+</details>
