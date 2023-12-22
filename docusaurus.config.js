@@ -78,7 +78,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'About Us',
+            label: 'tutorial',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -93,7 +93,12 @@ const config = {
           },
           {
             href: 'https://scaleinfinite.fr/',
-            label: 'Scale Infinite',
+            label: 'Cloud FLoat',
+            position: 'right',
+          },
+          {
+            href: 'https://scaleinfinite.fr/',
+            label: 'Blog Hub',
             position: 'right',
           }
         ],
