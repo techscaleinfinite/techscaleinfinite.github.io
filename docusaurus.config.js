@@ -8,9 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Scale Infinite',
+  tagline: 'Cloud Hosting',
+  favicon: 'img/u78.png',
 
   // Set the production url of your site here
   url: 'https://techscaleinfinite.github.io',

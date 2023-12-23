@@ -1,6 +1,5 @@
 ---
 sidebar_position: 2
-slug: /
 ---
 
 <p align="center">
@@ -15,7 +14,7 @@ slug: /
 
 # Introduction
 
-<div style={{ textAlign: 'center', fontSize: '20px', lineHeight: '1.6', color: '#34495e', padding: '30px', background: '#3498db', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px' }}>
+<div style={{ textAlign: 'center', fontSize: '20px', lineHeight: '1.6', color: 'white', padding: '30px', background: '#02075d', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px' }}>
   <strong style={{ color: 'white' }}>ScaleInfinite</strong> revolutionizes application hosting, offering effortless deployment, rich telemetry insights, and tailored security for startups, enterprises, and individuals.
 </div>
 
@@ -24,7 +23,7 @@ slug: /
 Put your applications on autopilot mode in our AI managed environment.
 
 <div style={{ textAlign: 'center', marginTop: '30px' }}>
-  <a href="https://scaleinfinite.fr/" style={{ display: 'inline-block', padding: '20px 40px', fontSize: '24px', fontWeight: 'bold', color: '#fff', background: '#3498db', borderRadius: '8px', textDecoration: 'none', transition: 'background 0.3s ease' }}>
+  <a href="https://scaleinfinite.fr/" style={{ display: 'inline-block', padding: '20px 40px', fontSize: '24px', fontWeight: 'bold', color: '#fff', background: 'darkblue', borderRadius: '8px', textDecoration: 'none', transition: 'background 0.3s ease' }}>
     Start Your Journey Today
   </a>
 </div>
@@ -70,10 +69,10 @@ Monitor your account and application metrics, including CPU usage, Memory usage,
 <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '30px' }}>
 
   {/* Competitor Box 1 */}
-  <div style={{ flex: 1, padding: '20px', backgroundColor: '#3498db', borderRadius: '10px', textAlign: 'center', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s ease' }}>
+  <div style={{ flex: 0.6, padding: '20px', backgroundColor: '#02075d', borderRadius: '10px', textAlign: 'center', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s ease' }}>
     <h2 style={{ color: '#fff', fontSize: '24px', marginBottom: '10px', textTransform: 'uppercase' }}>Competitors</h2>
     <p style={{ color: '#fff', fontSize: '16px', lineHeight: '1.6', marginBottom: '20px' }}>Get to know our competitor</p>
-    <a href="https://techscaleinfinite.github.io/category/our-competitor" style={{ display: 'block', padding: '10px 20px', backgroundColor: '#3498db', color: '#fff', borderRadius: '5px', textDecoration: 'none', fontSize: '18px', fontWeight: 'bold', transition: 'background 0.3s ease' }}>Explore</a>
+    <a href="https://techscaleinfinite.github.io/category/our-competitor" style={{ display: 'block', padding: '10px 20px', backgroundColor: '#02075d', color: '#fff', borderRadius: '5px', textDecoration: 'none', fontSize: '18px', fontWeight: 'bold', transition: 'background 0.3s ease' }}>Explore</a>
   </div>
 </div>
 
@@ -82,38 +81,38 @@ Monitor your account and application metrics, including CPU usage, Memory usage,
 <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '30px' }}>
 
   {/* Community Box 1 */}
-  <div style={{ flex: 1, padding: '20px', backgroundColor: '#3498db', borderRadius: '10px', textAlign: 'center', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s ease' }}>
+  <div style={{ flex: 0.6, padding: '20px', backgroundColor: '#02075d', borderRadius: '10px', textAlign: 'center', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', transition: 'transform 0.3s ease' }}>
     <h2 style={{ color: '#fff', fontSize: '24px', marginBottom: '10px', textTransform: 'uppercase' }}>Community </h2>
     <p style={{ color: '#fff', fontSize: '16px', lineHeight: '1.6', marginBottom: '20px' }}>Join our community and discover more related communites </p>
-    <a href="https://techscaleinfinite.github.io/Community" style={{ display: 'block', padding: '10px 20px', backgroundColor: '#3498db', color: '#fff', borderRadius: '5px', textDecoration: 'none', fontSize: '18px', fontWeight: 'bold', transition: 'background 0.3s ease' }}>Explore</a>
+    <a href="https://techscaleinfinite.github.io/Community" style={{ display: 'block', padding: '10px 20px', backgroundColor: '#02075d', color: '#fff', borderRadius: '5px', textDecoration: 'none', fontSize: '18px', fontWeight: 'bold', transition: 'background 0.3s ease' }}>Explore</a>
   </div>
 </div>
 
 ## Join **ScaleInfinite** and Experience Hosting Like Never Before
 
-<div style={{ background: '#3498db', color: '#fff', textAlign: 'center', padding: '50px 0', borderRadius: '10px', marginTop: '30px' }}>
-  <h2 style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '20px', color: 'black' }}>Stay Informed with Our Blog Updates!</h2>
+<div style={{ background: '#02075d', color: '#fff', textAlign: 'center', padding: '20px 0', borderRadius: '5px', marginTop: '10px' }}>
+  <h2 style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '20px', color: 'yellow' }}>Stay Informed with Our Blog Updates!</h2>
   <p style={{ fontSize: '20px', lineHeight: '1.6' }}>
     Check out our latest articles for valuable insights and tips. [Read Blogs](https://techscaleinfinite.github.io/blogs/)
   </p>
 </div>
 
 <div style={{ textAlign: 'center', marginTop: '50px' }}>
-  <h2 style={{ fontSize: '36px', fontWeight: 'bold', color: '#3498db' }}>Youtube Tutorial</h2>
+  <h2 style={{ fontSize: '36px', fontWeight: 'bold', color: '#02075d' }}>Youtube Tutorial</h2>
   <p style={{ fontSize: '20px', lineHeight: '1.6', color: '#34495e' }}>
     Check out our [Youtube video](https://www.youtube.com/@scaleinfinite) for more clarification.
   </p>
 </div>
 
 <div style={{ textAlign: 'center', marginTop: '30px' }}>
-  <h2 style={{ fontSize: '36px', fontWeight: 'bold', color: '#3498db' }}>Join ScaleInfinite Today</h2>
+  <h2 style={{ fontSize: '36px', fontWeight: 'bold', color: '#02075d' }}>Join ScaleInfinite Today</h2>
   <p style={{ fontSize: '20px', lineHeight: '1.6', color: '#7f8c8d' }}>
     Whether you're a startup, enterprise, or visionary individual, we're here to elevate your applications and empower your journey. Welcome to limitless possibilities.
   </p>
 </div>
 
 <div style={{ textAlign: 'center', marginTop: '30px' }}>
-  <a href="https://scaleinfinite.fr/" style={{ display: 'inline-block', padding: '20px 40px', fontSize: '24px', fontWeight: 'bold', color: '#fff', background: '#3498db', borderRadius: '8px', textDecoration: 'none', transition: 'background 0.3s ease' }}>
+  <a href="https://scaleinfinite.fr/" style={{ display: 'inline-block', padding: '20px 40px', fontSize: '24px', fontWeight: 'bold', color: '#fff', background: '#02075d', borderRadius: '8px', textDecoration: 'none', transition: 'background 0.3s ease' }}>
     Join us today
   </a>
 </div>

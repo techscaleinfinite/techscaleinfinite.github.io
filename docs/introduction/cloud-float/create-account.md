@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/img/scv.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/ff43.png" alt="Alt Text" width="600"/>
 </p>
 
 # ☁ Create Account

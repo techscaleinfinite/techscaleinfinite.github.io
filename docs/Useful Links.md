@@ -1,6 +1,10 @@
 ---
 sidebar_position: 6
 ---
+<p align="center">
+  <img src="/img/dffv.png" alt="Alt Text" width="380"/>
+</p>
+
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 👨‍👩‍👦‍👦 Useful links

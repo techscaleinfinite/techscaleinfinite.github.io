@@ -4,12 +4,14 @@ sidebar_position: 4
 
 
 
-# 📑 Blogging Hub 
+
 
 <p align="center">
   <img src="/img/sc.jpg" alt="Alt Text" width="550"/>
 </p>
 <span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+
+# 📑 Blogging Hub 
 
 # Welcome to our Blogging Hub! 📝✨
 

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/img/dwdww.png" alt="Alt Text" width="400"/>
+</p>
+
 # Steps And Procedure
 
  Here's a step-by-step guide to get you started:
