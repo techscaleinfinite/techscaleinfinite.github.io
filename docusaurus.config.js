@@ -100,6 +100,11 @@ const config = {
             href: 'https://techscaleinfinite.github.io/blogs/',
             label: 'Blog Hub',
             position: 'right',
+          },
+          {
+            href: 'https://scaleinfinite.fr/',
+            label: 'Sign In',
+            position: 'left',
           }
         ],
       },

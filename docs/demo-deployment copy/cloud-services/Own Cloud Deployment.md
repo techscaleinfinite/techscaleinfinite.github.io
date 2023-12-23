@@ -10,7 +10,7 @@
 
 ### OwnCloud Overview
 
-**OwnCloud** is a robust open-source platform empowering users with data ownership, security, and seamless collaboration. Users establish their cloud storage system, ensuring data remains under their control. With secure access, seamless sharing, and collaboration tools, OwnCloud acts as a digital fortress for data privacy and control. It offers a user-friendly web interface, facilitates syncing across devices, and stands as a self-hosted solution for enhanced security. OwnCloud, with its extensive features and flexibility, is a reliable ally in the quest for secure, accessible, and well-managed data.
+**OwnCloud** is a robust open-source dplatform empowering users with data ownership, security, and seamless collaboration. Users establish their cloud storage system, ensuring data remains under their control. With secure access, seamless sharing, and collaboration tools, OwnCloud acts as a digital fortress for data privacy and control. It offers a user-friendly web interface, facilitates syncing across devices, and stands as a self-hosted solution for enhanced security. OwnCloud, with its extensive features and flexibility, is a reliable ally in the quest for secure, accessible, and well-managed data.
 
 ### Exposed Ports
 
