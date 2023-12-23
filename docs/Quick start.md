@@ -30,7 +30,7 @@ slug: /
   <div style={{ flex: 0.7, padding: 20, backgroundColor: '#02075d', borderRadius: 55, textAlign: 'center' }}>
     <h2 style={{ color: 'white' }}> About Us </h2>
     <h3 style={{ color: 'white' }}> Welcome to Scale Infinite,where hosting becomes an art of simplicity and possibilities.</h3>
-    <a href="https://techscaleinfinite.github.io/" style={{ display: 'block', marginTop: 10, padding: 10, backgroundColor: 'white', color: 'black', borderRadius: 5, textDecoration: 'none' }}>Explore</a>
+    <a href="https://techscaleinfinite.github.io/introduction/" style={{ display: 'block', marginTop: 10, padding: 10, backgroundColor: 'white', color: 'black', borderRadius: 5, textDecoration: 'none' }}>Explore</a>
   </div>
 
 </div>  
