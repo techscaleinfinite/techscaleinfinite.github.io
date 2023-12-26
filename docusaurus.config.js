@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Scale Infinite',
-  tagline: 'Cloud Hosting',
+  tagline: 'cloud',
   favicon: 'img/u78.png',
 
   // Set the production url of your site here
@@ -44,8 +44,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+           // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
         //blog: {
@@ -66,7 +66,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/picture-removebg-preview.png',
       navbar: {
         title: 'Scale Infinite',
         logo: {
@@ -82,14 +82,9 @@ const config = {
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
-            href: 'https://app.slack.com/client/T04QS32JX6E/C04QKEWE146',
-            label: 'Slack',
-            position: 'right',
+            href: 'https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage',
+            label: 'Pricing',
+            position: 'left',
           },
           {
             href: 'https://scaleinfinite.fr/',
@@ -97,9 +92,9 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://techscaleinfinite.github.io/blogs/',
+            href: 'https://techscaleinfinite.github.io/blogs/Blogging',
             label: 'Blog Hub',
-            position: 'right',
+            position: 'left',
           },
           {
             href: 'https://scaleinfinite.fr/',
@@ -142,12 +137,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/techscaleinfinite',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc.`,
       },
       prism: {
         theme: prismThemes.github,

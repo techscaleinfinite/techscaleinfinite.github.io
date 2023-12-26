@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="/img/65.jpg" alt="Alt Text" width="25%"/>
+  <img src="/img/6io.png" alt="Alt Text" width="25%"/>
 </p> 
 
 

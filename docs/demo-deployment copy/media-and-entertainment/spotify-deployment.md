@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/img/vdd.jpg" alt="Alt Text" width="25%"/>
+  <img src="/img/xcs.jpg" alt="Alt Text" width="25%"/>
 </p> 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 

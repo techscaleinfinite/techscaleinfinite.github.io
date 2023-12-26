@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/w3r.png" alt="Alt Text" width="25%"/>
+</p> 
 <span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
 
 # 📺 Bazarr Deployment

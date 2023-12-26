@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="/img/ddf66.png" alt="Alt Text" width="25%"/>
+</p> 
 
 # 📸 DigiKam Deployment
 
