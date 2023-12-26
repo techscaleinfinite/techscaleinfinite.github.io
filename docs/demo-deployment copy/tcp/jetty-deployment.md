@@ -3,7 +3,7 @@
 </p> 
 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # ⚙️ Jetty Deployment
 
@@ -28,7 +28,7 @@ Jetty, or Eclipse Jetty, is a Java-based open-source web server and servlet cont
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

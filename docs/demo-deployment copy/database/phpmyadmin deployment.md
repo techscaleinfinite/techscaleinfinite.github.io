@@ -3,7 +3,7 @@
   <img src="/img/re2.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 PHPmyADMIN Deployment
 
@@ -39,7 +39,7 @@ phpMyAdmin uses volume mounts to manage configuration. You can set these when ru
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

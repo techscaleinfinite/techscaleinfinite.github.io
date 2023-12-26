@@ -3,7 +3,7 @@
 </p> 
 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # ⚙️ ChangeDetection Deployment
 
@@ -36,7 +36,7 @@ When running the container, the default ChangeDetectionweb server may serve cont
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

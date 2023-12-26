@@ -2,7 +2,7 @@
 <p align="center">
   <img src="/img/sdsu.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 💧 Drupal deployment
 
@@ -34,7 +34,7 @@ Drupal is your open-source, PHP-powered friend for building and managing website
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 
 

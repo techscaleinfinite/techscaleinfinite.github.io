@@ -2,7 +2,7 @@
 <p align="center">
   <img src="/img/sfb.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 
 # 📓 Etherpad
@@ -34,7 +34,7 @@ Etherpad is not just a text editor; it's a virtuoso of collaborative writing. Wi
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

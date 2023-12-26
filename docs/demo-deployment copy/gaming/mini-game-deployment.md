@@ -2,7 +2,7 @@
   <img src="/img/rr41.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🎮 Mini game Deployment
 
@@ -40,7 +40,7 @@ In Scale Infinite, applications are assigned specific ports for communication. F
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

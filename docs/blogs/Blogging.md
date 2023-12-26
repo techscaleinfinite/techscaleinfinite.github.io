@@ -9,7 +9,7 @@ sidebar_position: 4
 <p align="center">
   <img src="/img/sc.jpg" alt="Alt Text" width="550"/>
 </p>
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 📑 Blogging Hub 
 

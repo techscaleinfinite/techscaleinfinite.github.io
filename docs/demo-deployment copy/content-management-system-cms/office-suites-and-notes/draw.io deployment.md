@@ -2,7 +2,7 @@
 <p align="center">
   <img src="/img/sdfe.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🎨 DRAW.IO Deployment
 
@@ -37,7 +37,7 @@ Draw.io simplifies complex diagramming with an intuitive canvas, drag-and-drop m
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 
 

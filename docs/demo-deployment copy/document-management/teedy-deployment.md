@@ -2,7 +2,7 @@
   <img src="/img/fnn.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 Teedy Deployment
 ### Teedy: Symphony of Document Management
@@ -35,7 +35,7 @@ Teedy uses volume mounts to manage data. You can set these when running the cont
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

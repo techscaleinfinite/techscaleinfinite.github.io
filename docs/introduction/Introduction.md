@@ -10,7 +10,7 @@ sidebar_position: 2
   Welcome to <span style={{ color: 'darkblue' }}>ScaleInfinite</span>
 </div>
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '14pt' }}> 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '14pt' }}> 
 
 # Introduction
 

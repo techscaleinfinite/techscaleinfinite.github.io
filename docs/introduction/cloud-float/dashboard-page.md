@@ -3,7 +3,7 @@
 </p>
 
 # ☁ Dashboard page
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 &#x20;Here, you'll gain a holistic view of your app's health and vitality, all wrapped up in stunning visualizations.
 

@@ -1,6 +1,9 @@
 <p align="center">
-  <img src="/img/evv.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/evv.jpg" alt="Alt Text" width="400"/>
 </p>
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # Qovery
 
@@ -35,3 +38,4 @@ You may rest certain that your infrastructure is totally separated from the Qove
 **Check out their website:**
 
 [Link to  Qovery](https://www.qovery.com/solutions/kubernetes-for-developer)
+</span>

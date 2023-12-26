@@ -2,7 +2,7 @@
   <img src="/img/e4r3.png" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 
 # 📺 Mtream Deployment
@@ -38,7 +38,7 @@
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

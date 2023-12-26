@@ -3,7 +3,7 @@
   <img src="/img/dd31.png" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 Couch Base Deployment
 
@@ -36,7 +36,7 @@ Couchbase uses volume mounts to manage data storage. You can set these when runn
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

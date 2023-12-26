@@ -1,6 +1,9 @@
 <p align="center">
-  <img src="/img/cdve.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/cdve.jpg" alt="Alt Text" width="400"/>
 </p>
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # Netlify
 
@@ -33,3 +36,4 @@ So, whether you're a seasoned developer or just embarking on your coding journey
 **Check out their website:**
 
 [Link to Netlify](https://www.netlify.com/)
+</span>

@@ -3,7 +3,7 @@
 </p>
 
 # ☁ Create Account
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 _**Creating an account on Scale Infinite is a breeze.**_
 

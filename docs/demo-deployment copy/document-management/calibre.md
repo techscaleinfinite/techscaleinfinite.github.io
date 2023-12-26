@@ -3,7 +3,7 @@
 </p> 
 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 Calibre Deployment
 
@@ -35,7 +35,7 @@ Calibre uses volume mounts to manage manga and configuration data. You can set t
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 
@@ -52,9 +52,6 @@ Calibre uses volume mounts to manage manga and configuration data. You can set t
 
 ### Steps And Procedure
 For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
-
-
-
 
 
 **Step-by-Step Guide to Calibre Deployment**

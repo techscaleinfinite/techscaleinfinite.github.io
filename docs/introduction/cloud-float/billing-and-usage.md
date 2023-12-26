@@ -6,7 +6,7 @@
 
 # 💴 Billing and usage
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 **At Scale Infinite, we believe in making your hosting experience as straightforward as possible.** That's why we've carefully crafted a range of pricing plans to cater to individuals and teams alike. Whether you're just starting out or you're part of a growing business, we have a plan that's perfect for your needs.
 

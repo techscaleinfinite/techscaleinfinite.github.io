@@ -2,7 +2,7 @@
   <img src="/img/zz31.png" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 Xampp deployment
 
@@ -36,7 +36,7 @@ XAMPP uses volume mounts to manage web pages. You can set these when running the
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation&#x20;
 

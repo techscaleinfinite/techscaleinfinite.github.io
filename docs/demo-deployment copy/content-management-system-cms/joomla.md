@@ -3,7 +3,7 @@
   <img src="/img/rfgf.jpg" alt="Alt Text" width="25%"/>
 </p>
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 Joomla
 
@@ -47,7 +47,7 @@ docker run -p 80:80 \
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/img/e3d.png" alt="Alt Text" width="25%"/>
 </p> 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🎬 Grav - Fast, Simple, and Flexible Web Platform
 
@@ -37,7 +37,7 @@ grav may use path configuration. Set these when running the container:
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

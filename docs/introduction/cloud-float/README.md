@@ -1,7 +1,7 @@
 
 # ☁ Cloud float
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ## Cloud Float: Revolutionizing Swift Application Deployment
 
@@ -45,7 +45,7 @@ With ScaleInfinite, you can simplify your deployment process, and in just a few 
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Cloud float architecture
 ![Alt Text](/img/c22.jpg)

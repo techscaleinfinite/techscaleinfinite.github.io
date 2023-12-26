@@ -7,7 +7,7 @@
 
 ### **What is Filezilla?**
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 **FileZilla: Your Reliable FTP Solution**
 
@@ -16,7 +16,7 @@ _**FileZilla is a popular, open-source, and user-friendly FTP (File Transfer Pro
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### **How to Install FileZilla: Step-by-Step Guide**
 

@@ -2,7 +2,7 @@
   <img src="/img/fds.jpg" alt="Alt Text" width="25%"/>
 </p>
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 WordPress MySQL
 
@@ -37,7 +37,7 @@ In brief, WordPress empowers users with a user-friendly interface for content cr
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation&#x20;
 

@@ -3,7 +3,7 @@
   <img src="/img/j6.png" alt="Alt Text" width="400"/>
 </p>
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # ☁ My Account Page
 

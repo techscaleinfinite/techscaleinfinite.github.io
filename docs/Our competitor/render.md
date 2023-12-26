@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="/img/fefv.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/fefv.jpg" alt="Alt Text" width="400"/>
 </p>
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # Render
 
@@ -35,3 +37,4 @@ Still not convinced? Here's a success story for you. Moving from Heroku to Rende
 
 [Link to Render](https://dashboard.render.com)
 
+</span>

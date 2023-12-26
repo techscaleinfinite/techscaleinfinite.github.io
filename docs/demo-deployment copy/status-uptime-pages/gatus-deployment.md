@@ -3,7 +3,7 @@
 </p> 
 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 📊 Gatus Deployment
 
@@ -37,7 +37,7 @@ Gatus is a versatile health dashboard that monitors HTTP, ICMP, TCP, and DNS, pr
 
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 |  Description          | Decription                                                                                                               | 

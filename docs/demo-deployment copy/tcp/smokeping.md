@@ -2,7 +2,7 @@
 <p align="center">
   <img src="/img/e7.jpg" alt="Alt Text" width="25%"/>
 </p> 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 
 # ⚙️ Smokeping
@@ -37,7 +37,7 @@ Smokeping is a network monitoring tool designed to meticulously track and analyz
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

@@ -4,7 +4,7 @@
 </p> 
 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # ⚙️ Varnish Deplyment
 
@@ -15,7 +15,7 @@ Varnish, an open-source caching HTTP reverse proxy, enhances web server performa
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ## Installation
 |  Description          | Decription                                                                                                               | 

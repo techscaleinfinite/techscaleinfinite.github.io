@@ -1,6 +1,9 @@
 <p align="center">
-  <img src="/img/dsc.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/dsc.jpg" alt="Alt Text" width="400"/>
 </p>
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # Cyclic.sh
 
@@ -33,3 +36,4 @@ Imagine you're baking a cake. You have all the ingredients ready, and you need t
 **Check out their website:**
 
 [Link to Cyclic.sh](https://www.cyclic.sh/)
+</span>

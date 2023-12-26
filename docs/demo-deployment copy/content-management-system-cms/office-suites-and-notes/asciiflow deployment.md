@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/img/ghr.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🎨 Asciiflow Deployment
 
@@ -32,7 +32,7 @@ ASCII Flow is a web-based tool that provides an infinite canvas for creating dia
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

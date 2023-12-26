@@ -3,7 +3,7 @@
 </p>  
 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🎮 RETRO game Deployment
 
@@ -33,7 +33,7 @@ The self-hosted RetroArch web player brings vintage gaming to the web, emulating
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

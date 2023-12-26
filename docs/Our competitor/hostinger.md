@@ -1,6 +1,10 @@
 <p align="center">
-  <img src="/img/sdgs.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/sdgs.jpg" alt="Alt Text" width="400"/>
 </p>
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # Hostinger
 
@@ -30,3 +34,4 @@ At Hostinger, it's not just about hosting websites; it's about hosting dreams an
 
 **Check out their website:**
 [Link to Hostinger](https://www.hostinger.in/)
+</span>

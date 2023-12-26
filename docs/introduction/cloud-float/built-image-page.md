@@ -3,7 +3,7 @@
 </p>
 
 # ☁ Built Image Page
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 _**Building a Docker image is a fundamental step in containerized application deployment.**_&#x20;
 

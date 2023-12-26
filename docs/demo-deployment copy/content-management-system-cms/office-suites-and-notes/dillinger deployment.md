@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/img/ww33.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 📓 Dillinger Deployment
 
@@ -32,7 +32,7 @@ Meet Dillinger, the HTML5 Markdown editor that combines simplicity with powerful
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

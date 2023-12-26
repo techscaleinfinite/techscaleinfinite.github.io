@@ -1,6 +1,9 @@
 <p align="center">
-  <img src="/img/ffv.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/ffv.jpg" alt="Alt Text" width="400"/>
 </p>
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # Neverinstall
 
@@ -42,3 +45,4 @@ So, let Neverinstall be your portal to Linux application nirvana, all within the
 **Check out their website:**
 
 [Link to  Neverinstall](https://neverinstall.com)
+</span>

@@ -6,7 +6,7 @@
 # ☁ Artificial Intelligence
 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 Artificial Intelligence (AI) plays a pivotal role in modern application deployment and management. One of its fascinating applications is in the realm of fault detection and prevention.&#x20;
 

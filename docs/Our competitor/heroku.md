@@ -1,10 +1,14 @@
 <p align="center">
-  <img src="/img/dcc.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/dcc.jpg" alt="Alt Text" width="400"/>
 </p>
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # Heroku
 
-\
+
 **Where Your Apps Go to Flourish**
 
 Imagine a place where deploying, managing, and scaling your web applications feels like a walk in the digital park. That's Heroku in a nutshell—a cloud platform designed to make your life as a developer a whole lot easier.
@@ -32,3 +36,4 @@ So, whether you're a seasoned developer or just dipping your toes into the tech 
 
 **Check out their website:**
 [Link to hereko](https://www.heroku.com/)
+</span>

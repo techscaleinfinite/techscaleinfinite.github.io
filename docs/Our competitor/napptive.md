@@ -1,6 +1,9 @@
 <p align="center">
-  <img src="/img/cvd.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/cvd.jpg" alt="Alt Text" width="400"/>
 </p>
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # Napptive
 
@@ -35,3 +38,4 @@ In the future, Napptive Playground offers a hassle-free experience for people in
 
 
 [Link to Napptive](https://playground.napptive.dev/login)
+</span>

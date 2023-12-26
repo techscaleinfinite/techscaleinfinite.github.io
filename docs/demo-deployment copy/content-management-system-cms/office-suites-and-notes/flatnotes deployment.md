@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/img/dddv.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 📜 flatnotes Deployment
 
@@ -32,7 +32,7 @@ Flatnotes redefines digital note-taking with its clean, distraction-free design 
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

@@ -2,7 +2,7 @@
 <p align="center">
   <img src="/img/eegb.jpg" alt="Alt Text" width="25%"/>
 </p> 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 
 # 📸 ZenPhoto Deployment
@@ -37,7 +37,7 @@ Zenphoto is a versatile Content Management System (CMS) designed for self-hosted
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

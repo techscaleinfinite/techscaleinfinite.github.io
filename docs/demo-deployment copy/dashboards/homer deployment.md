@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/img/efv.jpg" alt="Alt Text" width="25%"/>
 </p> 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 Homer Deployment
 
@@ -34,7 +34,7 @@ Homer uses volume mounts to manage data storage. You can set these when running 
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

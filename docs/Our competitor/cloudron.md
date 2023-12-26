@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="/img/wdd.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/wdd.jpg" alt="Alt Text" width="400"/>
 </p>
 
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # Cloudron
 

@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/img/ddf.jpg" alt="Alt Text" width="25%"/>
 </p> 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🖥 Heimdall Deployment
 
@@ -35,7 +35,7 @@ Heimdall uses volume mounts to manage data storage. You can set these when runni
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

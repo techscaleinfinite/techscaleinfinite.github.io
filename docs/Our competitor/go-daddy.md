@@ -1,6 +1,11 @@
 <p align="center">
-  <img src="/img/sdsc.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/sdsc.jpg" alt="Alt Text" width="400"/>
 </p>
+
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # Go daddy
 
@@ -40,3 +45,4 @@ In a nutshell, GoDaddy is your partner in the digital world. It's where your ide
 
 
 [Link to GoDaddy ](https://www.godaddy.com/en-in)
+</span>

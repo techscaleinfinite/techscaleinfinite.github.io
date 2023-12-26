@@ -3,7 +3,7 @@
 
 
 ### What's is baikal?
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">
   <img src="/img/gr4.jpg" alt="Alt Text" width="100"/>
 </p>
@@ -35,7 +35,7 @@ Imagine a web interface that's not just user-friendly but genuinely intuitive. B
 
 </span>
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 

@@ -2,7 +2,7 @@
   <img src="/img/vdb.jpg" alt="Alt Text" width="400"/>
 </p>
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # ☁ Server Detail Page
 
@@ -39,7 +39,7 @@ In the intricate realm of server management, gaining control over your server's 
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 _**Inbound Traffic Rules: Mastering the Flow**_
 

@@ -5,7 +5,7 @@
 
 # ☁ Architecture
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Some Key Concepts
 
@@ -26,7 +26,7 @@ In summary, Kubernetes offers you control over data persistence during applicati
 </span>
 
 
-<span style={{ fontFamily: 'Helvetica', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Benefits of persistence:
 
