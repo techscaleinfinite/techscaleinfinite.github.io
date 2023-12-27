@@ -2,92 +2,157 @@
 sidebar_position: 1
 slug: /
 ---
+
 <p align="center">
   <img src="/img/wdwd.png" alt="Alt Text" width="680"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '14pt' }}>
 
-# Quick Start
+# **Quick Start**
 
-**Welcome to ScaleInfinite, where deploying and managing applications becomes a seamless experience! Our Quick Start guide is designed to help you navigate the first steps effortlessly.**
+Welcome to ScaleInfinite, where deploying and managing applications becomes a seamless experience! Our Quick Start guide is designed to help you navigate the first steps effortlessly
 
 ## Get Started in a Few Clicks!!
 
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px', marginBottom: '20px' }}>
+<table style={{ width: '100%', margin: '0 auto', tableLayout: 'fixed' }}>
+  <tr>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/664.png" alt="Create Account Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover', marginBottom: '20px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>Create Account</h2>
+          <p style={{ marginBottom: '0px', fontSize: '12px' }}>
+            Creating an account on Scale Infinite is a breeze. Simply follow our easy registration process and gain access to a world of possibilities. Experience seamless account management and enjoy the benefits of being part of our community.
+          </p>
+          <a href="https://techscaleinfinite.github.io/introduction/cloud-float/create-account" style={{ display: 'inline-block', padding: '8px 12px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none', fontSize: '12px' }}>Explore</a>
+        </div>
+      </div>
+    </td>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/660.png" alt="Explore Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover',  marginBottom: '20px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>About us</h2>
+          <p style={{ marginBottom: '0px', fontSize: '12px' }}>
+            Simplify application hosting with streamlined infrastructure management, leaving you free from worries about provisioning, maintenance, and scaling. Our platform provides a robust environment for hosting various applications, ensuring optimal performance and scalability.
+          </p>
+          <a href="https://techscaleinfinite.github.io/introduction/" style={{ display: 'inline-block', padding: '8px 12px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none', fontSize: '12px' }}>Explore</a>
+        </div>
+      </div>
+    </td>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/666.png" alt="Explore Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover', marginBottom: '20px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>Community</h2>
+          <p style={{ marginBottom: '0px', fontSize: '12px' }}>
+            Welcome to our thriving community! Discover the heart of our platform, where like-minded individuals connect, share insights, and engage in lively discussions. Join us to experience a sense of belonging and collaborative learning.
+          </p>
+          <a href="https://techscaleinfinite.github.io/Community" style={{ display: 'inline-block', padding: '8px 12px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none', fontSize: '12px' }}>Explore</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/661.png" alt="Create Account Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover', marginBottom: '20px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>Applications</h2>
+          <p style={{ marginBottom: '0px', fontSize: '12px' }}>
+            Explore a universe of applications and digital solutions tailored to your needs. Our diverse range of applications caters to various industries, providing innovative solutions to enhance your digital experience.
+          </p>
+          <a href="https://techscaleinfinite.github.io/category/-demo-deployment" style={{ display: 'inline-block', padding: '8px 12px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none', fontSize: '12px' }}>Explore</a>
+        </div>
+      </div>
+    </td>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/662.png" alt="Explore Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover',  marginBottom: '20px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>FAQ</h2>
+          <p style={{ marginBottom: '0px', fontSize: '12px' }}>
+            Explore our FAQ section to find valuable information on a wide range of topics. Whether you have questions about our platform, services, or technical details, our FAQ section provides comprehensive answers to ensure a smooth experience.
+          </p>
+          <a href="https://techscaleinfinite.github.io/FAQ" style={{ display: 'inline-block', padding: '8px 12px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none', fontSize: '12px' }}>Explore</a>
+        </div>
+      </div>
+    </td>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/665.png" alt="Explore Icon" style={{ width: '1000px', height: '100px', marginBottom: '20px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>Kubernetes</h2>
+          <p style={{ marginBottom: '0px', fontSize: '12px' }}>
+            Welcome to the Kubernetes Knowledge Hub! Your Gateway to the Dynamic World of Kubernetes, Containers, and Managed Kubernetes. Explore our resources, tutorials, and documentation to master the art of Kubernetes and container orchestration.
+          </p>
+          <a href="https://techscaleinfinite.github.io/introduction/kubernetes/" style={{ display: 'inline-block', padding: '8px 12px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none', fontSize: '12px' }}>Explore</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <!-- Repeat the structure for the remaining sections -->
+</table>
 
-  {/* Create your account */}
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'center', border: '2px solid #02075d' }}>
-    <img src="/img/pop.png" alt="Create Account Icon" style={{ width: '50px', height: '50px', marginBottom: '10px' }} />
-    <h2 style={{ color: 'black' }}>Create your account</h2>
-    <h3 style={{ color: 'black' }}>Creating an account on Scale Infinite is a breeze.</h3>
-    <a href="https://techscaleinfinite.github.io/introduction/cloud-float/create-account" style={{ display: 'block', marginTop: '10px', padding: '10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Explore</a>
-  </div>
 
-  {/* Explore */}
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'center', border: '2px solid #02075d' }}>
-    <img src="/img/ppopi.png" alt="Explore Icon" style={{ width: '50px', height: '50px', marginBottom: '10px' }} />
-    <h2 style={{ color: 'black' }}>About Us</h2>
-    <h3 style={{ color: 'black' }}>Scale Infinite, where hosting becomes an art of simplicity and possibilities.</h3>
-    <a href="https://techscaleinfinite.github.io/introduction/" style={{ display: 'block', marginTop: '10px', padding: '10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Explore</a>
-  </div>
 
-</div>
 
 <div style={{ marginBottom: '20px' }}>
-  ## Explore a Universe of Applications and also get your doubts cleared!!
+  ## **Our Pricing Plans !!**
 </div>
 
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px', marginBottom: '20px' }}>
-
-  {/* Applications */}
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'center', border: '2px solid #02075d' }}>
-    <img src="/img/ssvss.png" alt="Applications Icon" style={{ width: '50px', height: '50px', marginBottom: '10px' }} />
-    <h2 style={{ color: 'black' }}>Applications</h2>
-    <h3 style={{ color: 'black' }}>Explore a universe of applications and digital solutions tailored to your needs.</h3>
-    <a href="https://techscaleinfinite.github.io/category/-demo-deployment" style={{ display: 'block', marginTop: '10px', padding: '10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Explore</a>
-  </div>
-  
-  {/* FAQs */}
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'center', border: '2px solid #02075d' }}>
-    <img src="/img/ddvd.png" alt="FAQ Icon" style={{ width: '50px', height: '50px', marginBottom: '10px' }} />
-    <h2 style={{ color: 'black' }}>FAQ</h2>
-    <h3 style={{ color: 'black' }}>Explore our FAQ section to find valuable information on a wide range of topics.</h3>
-    <a href="https://techscaleinfinite.github.io/FAQ" style={{ display: 'block', marginTop: '10px', padding: '10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Get Answers</a>
-  </div>
-
-</div>
-
-<div style={{ marginBottom: '20px' }}>
-  ## Our Pricing Plans !!
-</div>
-
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', marginBottom: '20px' }}>
-
-  {/* Pricing Plan 1 */}
-  <div style={{ padding: '20px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'center', border: '2px solid #02075d' }}>
-    <h2 style={{ color: 'black' }}>Basic Plan</h2>
-    <p>Perfect for individuals</p>
-    <img src="/img/mm09.png" alt="Basic Plan" width="100" height="50" />
-    <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'block', marginTop: '10px', padding: '10px', backgroundColor: 'black', color: '#fff', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
-  </div>
-
-  {/* Pricing Plan 2 */}
-  <div style={{ padding: '20px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'center', border: '2px solid #02075d' }}>
-    <h2 style={{ color: 'black' }}>Pro Plan</h2>
-    <p>For growing businesses</p>
-    <img src="/img/mm09.png" alt="Pro Plan" width="100" height="50" />
-    <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'block', marginTop: '10px', padding: '10px', backgroundColor: 'black', color: '#fff', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
-  </div>
-
-  {/* Pricing Plan 3 */}
-  <div style={{ padding: '20px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'center', border: '2px solid #02075d' }}>
-    <h2 style={{ color: 'black' }}>Enterprise Plan</h2>
-    <p>For enterprises</p>
-    <img src="/img/mm09.png" alt="Enterprise Plan" width="100" height="50" />
-    <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'block', marginTop: '10px', padding: '10px', backgroundColor: 'black', color: '#fff', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
-  </div>
-
-</div>
+<table style={{ width: '100%', tableLayout: 'fixed' }}>
+  <tr>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'row' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/mm09.png" alt="Create Account Icon" style={{ width: '126px', height: '116px', marginBottom: '30px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ color: 'black', fontSize: '18pt', fontWeight: 'bold', marginBottom: '10px' }}>Basic Plan</h2>
+          <p style={{ marginBottom: '10px' }}>Perfect for individuals</p>
+          <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'inline-block', padding: '8px 10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
+        </div>
+      </div>
+    </td>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'row' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/mm09.png" alt="Explore Icon" style={{ width: '116px', height: '116px', marginBottom: '10px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ color: 'black', fontSize: '18pt', fontWeight: 'bold', marginBottom: '10px' }}>Pro Plan</h2>
+          <p style={{ marginBottom: '10px' }}>For growing businesses</p>
+          <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'inline-block', padding: '8px 10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
+        </div>
+      </div>
+    </td>
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'row' }}>
+        <div style={{ marginRight: '20px' }}>
+          <img src="/img/mm09.png" alt="Explore Icon" style={{ width: '116px', height: '116px', marginBottom: '10px' }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <h2 style={{ color: 'black', fontSize: '18pt', fontWeight: 'bold', marginBottom: '10px' }}>Enterprise Plan</h2>
+          <p style={{ marginBottom: '10px' }}>For enterprises.</p>
+          <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'inline-block', padding: '8px 10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
 
 </span>

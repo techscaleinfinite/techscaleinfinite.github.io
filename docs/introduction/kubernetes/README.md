@@ -1,10 +1,8 @@
 
-
 # 🐋 Kubernetes
-<p align="center">
-  <img src="/img/ffwc.jpg" alt="Alt Text" width="100"/>
-</p>
+
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 **Welcome to the Kubernetes Knowledge Hub! Your Gateway to the Dynamic World of Kubernetes, Containers, and Managed Kubernetes.**
 
 _Are you ready to embark on an exciting journey into the dynamic realm of Kubernetes, Containers, and Managed Kubernetes? Look no further; you've arrived at the perfect destination. Whether you're a seasoned pro or just setting out on your exploration, our knowledge hub is your reliable compass to navigate these robust technologies._
