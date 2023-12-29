@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
-draft: false
 ---
-import Comments from '/src/components/HomepageFeatures/Comment'; 
+
 
 <p align="center">
   <img src="/img/sc.jpg" alt="ScaleInfinite Logo" width="500"/>
@@ -122,4 +121,3 @@ Monitor your account and application metrics, including CPU usage, Memory usage,
 
 </span> 
 
-<Comments />

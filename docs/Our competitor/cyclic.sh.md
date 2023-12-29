@@ -1,7 +1,4 @@
----
-draft: false
----
-import Comments from '/src/components/HomepageFeatures/Comment';
+
 
 <p align="center">
   <img src="/img/dsc.jpg" alt="Alt Text" width="400"/>
@@ -43,4 +40,3 @@ Imagine you're baking a cake. You have all the ingredients ready, and you need t
 [Link to Cyclic.sh](https://www.cyclic.sh/)
 </span>
 
-<Comments />

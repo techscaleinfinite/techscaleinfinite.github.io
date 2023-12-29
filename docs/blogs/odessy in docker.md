@@ -1,8 +1,3 @@
----
-draft: false
----
-
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # An Odyssey in Docker Hosting: Exploring Free Havens
 
@@ -42,5 +37,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-## Comments
-<Comments />

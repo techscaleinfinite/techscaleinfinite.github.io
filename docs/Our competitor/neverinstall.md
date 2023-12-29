@@ -1,7 +1,4 @@
----
-draft: false
----
-import Comments from '/src/components/HomepageFeatures/Comment';
+
 
 <p align="center">
   <img src="/img/ffv.jpg" alt="Alt Text" width="400"/>
@@ -51,5 +48,3 @@ So, let Neverinstall be your portal to Linux application nirvana, all within the
 
 [Link to  Neverinstall](https://neverinstall.com)
 </span>
-
-<Comments />

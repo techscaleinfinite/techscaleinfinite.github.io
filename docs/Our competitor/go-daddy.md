@@ -1,7 +1,4 @@
----
-draft: false
----
-import Comments from '/src/components/HomepageFeatures/Comment';
+
 
 <p align="center">
   <img src="/img/sdsc.jpg" alt="Alt Text" width="400"/>
@@ -52,4 +49,3 @@ In a nutshell, GoDaddy is your partner in the digital world. It's where your ide
 [Link to GoDaddy ](https://www.godaddy.com/en-in)
 </span>
 
-<Comments />

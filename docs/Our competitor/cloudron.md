@@ -1,7 +1,4 @@
----
-draft: false
----
-import Comments from '/src/components/HomepageFeatures/Comment';
+
 
 <p align="center">
   <img src="/img/wdd.jpg" alt="Alt Text" width="400"/>
@@ -46,4 +43,3 @@ In a nutshell, Cloudron is your trusty sidekick, turning the once-daunting world
 [Link to Cloudron](https://www.cloudron.io/)
 </span>
 
-<Comments />

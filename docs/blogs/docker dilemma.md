@@ -1,8 +1,4 @@
----
-draft: false
----
 
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # The Docker Dilemma: A Quest for Real-World Relevance
 
@@ -41,5 +37,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-## Comments
-<Comments />

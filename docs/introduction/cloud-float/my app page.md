@@ -1,8 +1,7 @@
 ---
 sidebar_position: 6
-draft: false
 ---
-import Comments from '/src/components/HomepageFeatures/Comment'; 
+
 
 <p align="center">
   <img src="/img/ddcdv.jpg" alt="Alt Text" width="400"/>
@@ -41,4 +40,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </span>
 
-<Comments />

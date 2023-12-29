@@ -1,7 +1,4 @@
----
-draft: false
----
-import Comments from '/src/components/HomepageFeatures/Comment';
+
 
 <p align="center">
   <img src="/img/evv.jpg" alt="Alt Text" width="400"/>
@@ -45,4 +42,3 @@ You may rest certain that your infrastructure is totally separated from the Qove
 [Link to  Qovery](https://www.qovery.com/solutions/kubernetes-for-developer)
 </span>
 
-<Comments />

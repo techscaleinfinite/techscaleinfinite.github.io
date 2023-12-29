@@ -1,7 +1,4 @@
----
-draft: false
----
-import Comments from '/src/components/HomepageFeatures/Comment';
+
 
 <p align="center">
   <img src="/img/cvd.jpg" alt="Alt Text" width="400"/>
@@ -45,4 +42,3 @@ In the future, Napptive Playground offers a hassle-free experience for people in
 [Link to Napptive](https://playground.napptive.dev/login)
 </span>
 
-<Comments />

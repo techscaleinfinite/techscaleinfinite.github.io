@@ -1,9 +1,8 @@
 ---
 sidebar_position: 1
 slug: /
-draft: false
 ---
-import Comments from '/src/components/HomepageFeatures/Comment';
+
 
 
 
@@ -162,6 +161,3 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
 
 
 </span>
-
-## Comments
-<Comments />

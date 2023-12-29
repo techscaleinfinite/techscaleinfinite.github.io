@@ -1,8 +1,4 @@
----
-draft: false
----
 
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # Demystifying Managed Kubernetes Services: A Not-So-Geeky Guide
 
@@ -47,5 +43,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-## Comments
-<Comments />

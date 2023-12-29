@@ -1,8 +1,4 @@
----
-draft: false
----
 
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # Navigating the Docker Discovery Journey in 2023
 
@@ -38,5 +34,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-## Comments
-<Comments />

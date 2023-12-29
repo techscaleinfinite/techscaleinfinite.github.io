@@ -1,8 +1,4 @@
----
-draft: false
----
 
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # Docker: A Game-Changer in Software Deployment
 
@@ -42,5 +38,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-## Comments
-<Comments />

@@ -1,7 +1,3 @@
----
-draft: false
----
-import Comments from '/src/components/HomepageFeatures/Comment'; 
 
 # 🐋 Kubernetes
 
@@ -35,4 +31,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 </details>
 
 </span>
-<Comments />

@@ -1,8 +1,3 @@
----
-draft: false
----
-
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # The Secret Hideout for Our Web App Dreams
 
@@ -42,6 +37,3 @@ But remember, just like the most captivating fantasy novels, practice is the key
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
-
-## Comments
-<Comments />

@@ -1,8 +1,3 @@
----
-draft: false
----
-
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # Exploring Free Cloud Platforms for Hosting Docker Images
 
@@ -36,5 +31,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-## Comments
-<Comments />

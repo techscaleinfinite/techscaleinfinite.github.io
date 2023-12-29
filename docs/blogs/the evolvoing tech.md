@@ -1,8 +1,4 @@
----
-draft: false
----
 
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # Docker: The Ever-Evolving Phoenix of Tech
 
@@ -40,6 +36,3 @@ Docker's journey in 2023 resembles an exciting quest with twists and turns. Mast
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
-
-## Comments
-<Comments />

@@ -1,8 +1,3 @@
----
-draft: false
----
-
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # To Host or Not to Host: The Self-Hosting Dilemma
 
@@ -34,5 +29,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-## Comments
-<Comments />

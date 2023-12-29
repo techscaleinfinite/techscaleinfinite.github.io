@@ -1,7 +1,4 @@
----
-draft: false
----
-import Comments from '/src/components/HomepageFeatures/Comment';
+
 
 <p align="center">
   <img src="/img/wwc.jpg" alt="Alt Text" width="400"/>
@@ -37,4 +34,3 @@ So, whether you're a tech enthusiast or someone looking for an efficient way to 
 [Link to Railway.app](https://docs.railway.app/)
 </span>
 
-<Comments />

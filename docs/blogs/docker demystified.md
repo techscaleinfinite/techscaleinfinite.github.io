@@ -1,8 +1,3 @@
----
-draft: false
----
-
-import Comments from '/src/components/HomepageFeatures/Comment';
 
 # Docker Demystified: More Than Just a Box of Tricks
 
@@ -46,5 +41,3 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-## Comments
-<Comments />
