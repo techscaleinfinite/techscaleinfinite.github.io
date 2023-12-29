@@ -1,3 +1,7 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
@@ -137,3 +141,4 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </span>
 
+<Comments />

@@ -1,3 +1,9 @@
+---
+draft: false
+---
+
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 # The Secret Hideout for Our Web App Dreams
 
 *Greetings, fellow tech enthusiasts! Today, we’re about to embark on a thrilling quest through the enchanted realm of web application hosting. Have you ever wondered where developers like us, with grand ideas and personal projects, find a cozy nest for our web apps to thrive?*
@@ -36,3 +42,6 @@ But remember, just like the most captivating fantasy novels, practice is the key
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+## Comments
+<Comments />

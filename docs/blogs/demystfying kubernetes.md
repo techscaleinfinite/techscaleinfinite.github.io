@@ -1,3 +1,9 @@
+---
+draft: false
+---
+
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 # Demystifying Managed Kubernetes Services: A Not-So-Geeky Guide
 
 Kubernetes, the buzzword in tech, might sound intimidating, but Managed Kubernetes Services make it accessible even for non-tech experts. Here's a quick guide to unravel the mystery.
@@ -40,3 +46,6 @@ Whether you're a tech enthusiast or a newbie, Managed Kubernetes Services are yo
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+## Comments
+<Comments />

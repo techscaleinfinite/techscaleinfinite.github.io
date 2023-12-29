@@ -1,3 +1,8 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 # Simple Static Website
 
 ### Getting Started
@@ -55,3 +60,6 @@ Absolutely, you can install your own Static application, Make Sure you have prop
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+
+<Comments />

@@ -1,3 +1,8 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 <p align="center">
   <img src="/img/fefv.jpg" alt="Alt Text" width="400"/>
 </p>
@@ -38,3 +43,5 @@ Still not convinced? Here's a success story for you. Moving from Heroku to Rende
 [Link to Render](https://dashboard.render.com)
 
 </span>
+
+<Comments />

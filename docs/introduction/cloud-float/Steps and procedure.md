@@ -1,3 +1,9 @@
+---
+sidebar_position: 4
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment'; 
+
 <p align="center">
   <img src="/img/dwdww.png" alt="Alt Text" width="400"/>
 </p>
@@ -16,3 +22,5 @@
 8. Voilà! You're now able to access the particular applications webpage and explore its content.
 
 By following these straightforward steps, you'll have successfully deployed the  application and gained access to its features through a seamless and user-friendly process.
+
+<Comments />

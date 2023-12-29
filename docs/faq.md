@@ -1,11 +1,14 @@
 ---
 sidebar_position: 5
+draft: false
 ---
+import Comments from '/src/components/HomepageFeatures/Comment'; 
+
 <p align="center">
   <img src="/img/scvs.jpg" alt="Alt Text" width="380"/>
 </p>
 
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # FAQ
 
@@ -54,3 +57,5 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 </details>
 
 </span>
+
+<Comments />

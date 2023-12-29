@@ -1,15 +1,18 @@
 ---
 sidebar_position: 4
+draft: false
 ---
+import Comments from '/src/components/HomepageFeatures/Comment'; 
+
 <p align="center">
   <img src="/img/addc.jpg" alt="Alt Text" width="380"/>
 </p>
 
 # 👨‍👩‍👦‍👦 Community
 
+Welcome to our thriving community! Discover the heart of our platform, where like-minded individuals connect, share insights, and engage in lively discussions.
 
-
-<span style={{ fontFamily: 'Georgia', fontSize: '12pt' }}>
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### SLACK
 
@@ -37,7 +40,7 @@ Join us on Slack and be a part of our thriving project community. Together, we'l
 Are you ready to embark on a journey through the fascinating realms of video content? Look no further because we've got the perfect invitation for you: Join us on our YouTube channel!
 
 Ready to hit that subscribe button? 🚀
-}
+[Youtube](https://www.youtube.com/@scaleinfinite)
 
 Don't miss out on the fun, the knowledge, and the sheer joy of being a part of our YouTube community. Join us today, and let's embark on this exciting journey together!
 
@@ -60,7 +63,7 @@ Your next career move, insightful connections, and a world of opportunities are 
 
 See you on LinkedIn! 👥📈
 
-
+[LinkedIn](https://www.linkedin.com/company/scaleinfinite/about/)
 
 ### GitHub
 
@@ -89,3 +92,5 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 </details>
 
 </span>
+
+<Comments />

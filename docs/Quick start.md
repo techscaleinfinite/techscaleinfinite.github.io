@@ -1,7 +1,12 @@
 ---
 sidebar_position: 1
 slug: /
+draft: false
 ---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
+
+
 
 <p align="center">
   <img src="/img/wdwd.png" alt="Alt Text" width="680"/>
@@ -17,10 +22,10 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
 
 <table style={{ width: '100%', margin: '0 auto', tableLayout: 'fixed' }}>
   <tr>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/664.png" alt="Create Account Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover', marginBottom: '20px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <img src="/img/664.png" alt="Create Account Icon" style={{ width: '116px', height: '100px', objectFit: 'cover' }} />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>Create Account</h2>
@@ -31,10 +36,10 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
         </div>
       </div>
     </td>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/660.png" alt="Explore Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover',  marginBottom: '20px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <img src="/img/660.png" alt="Explore Icon" style={{ width: '116px', height: '100px', objectFit: 'cover' }} />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>About us</h2>
@@ -45,10 +50,10 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
         </div>
       </div>
     </td>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/666.png" alt="Explore Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover', marginBottom: '20px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <img src="/img/666.png" alt="Explore Icon" style={{ width: '116px', height: '100px', objectFit: 'cover' }} />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>Community</h2>
@@ -61,10 +66,10 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
     </td>
   </tr>
   <tr>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/661.png" alt="Create Account Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover', marginBottom: '20px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <img src="/img/661.png" alt="Create Account Icon" style={{ width: '116px', height: '100px', objectFit: 'cover' }} />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>Applications</h2>
@@ -75,10 +80,10 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
         </div>
       </div>
     </td>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/662.png" alt="Explore Icon" style={{ width: '1000px', height: '100px', objectFit: 'cover',  marginBottom: '20px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <img src="/img/662.png" alt="Explore Icon" style={{ width: '116px', height: '100px', objectFit: 'cover' }} />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>FAQ</h2>
@@ -89,10 +94,10 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
         </div>
       </div>
     </td>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/665.png" alt="Explore Icon" style={{ width: '1000px', height: '100px', marginBottom: '20px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <img src="/img/665.png" alt="Explore Icon" style={{ width: '116px', height: '100px', objectFit: 'cover' }} />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <h2 style={{ marginBottom: '10px', fontWeight: 'normal', fontSize: '14px' }}>Kubernetes</h2>
@@ -107,7 +112,7 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
   <!-- Repeat the structure for the remaining sections -->
 </table>
 
-
+<br />
 
 
 <div style={{ marginBottom: '20px' }}>
@@ -116,36 +121,36 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
 
 <table style={{ width: '100%', tableLayout: 'fixed' }}>
   <tr>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'row' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/mm09.png" alt="Create Account Icon" style={{ width: '126px', height: '116px', marginBottom: '30px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '30px' }}>
+          <img src="/img/mm09.png" alt="Create Account Icon" style={{ width: '126px', height: '116px' }} />
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <h2 style={{ color: 'black', fontSize: '18pt', fontWeight: 'bold', marginBottom: '10px' }}>Basic Plan</h2>
           <p style={{ marginBottom: '10px' }}>Perfect for individuals</p>
           <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'inline-block', padding: '8px 10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
         </div>
       </div>
     </td>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'row' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/mm09.png" alt="Explore Icon" style={{ width: '116px', height: '116px', marginBottom: '10px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '10px' }}>
+          <img src="/img/mm09.png" alt="Explore Icon" style={{ width: '116px', height: '116px' }} />
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <h2 style={{ color: 'black', fontSize: '18pt', fontWeight: 'bold', marginBottom: '10px' }}>Pro Plan</h2>
           <p style={{ marginBottom: '10px' }}>For growing businesses</p>
           <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'inline-block', padding: '8px 10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
         </div>
       </div>
     </td>
-    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #02075d' }}>
-      <div style={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'row' }}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/img/mm09.png" alt="Explore Icon" style={{ width: '116px', height: '116px', marginBottom: '10px' }} />
+    <td style={{ padding: '15px', backgroundColor: 'darkwhite', borderRadius: '15px', textAlign: 'left', border: '2px solid #808080' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ marginBottom: '10px' }}>
+          <img src="/img/mm09.png" alt="Explore Icon" style={{ width: '116px', height: '116px' }} />
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <h2 style={{ color: 'black', fontSize: '18pt', fontWeight: 'bold', marginBottom: '10px' }}>Enterprise Plan</h2>
           <p style={{ marginBottom: '10px' }}>For enterprises.</p>
           <a href="https://techscaleinfinite.github.io/introduction/cloud-float/billing-and-usage" style={{ display: 'inline-block', padding: '8px 10px', backgroundColor: 'black', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>Learn More</a>
@@ -155,4 +160,8 @@ Welcome to ScaleInfinite, where deploying and managing applications becomes a se
   </tr>
 </table>
 
+
 </span>
+
+## Comments
+<Comments />

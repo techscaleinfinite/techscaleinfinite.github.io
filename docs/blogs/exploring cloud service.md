@@ -1,3 +1,9 @@
+---
+draft: false
+---
+
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 # Exploring Free Cloud Platforms for Hosting Docker Images
 
 If you're a Docker enthusiast or developer, the convenience of a reliable platform for hosting Docker images is crucial. Here's a glimpse of cloud platforms where you can host Docker images for free.
@@ -29,3 +35,6 @@ Whether you prefer Render's simplicity, Scale Infinite's unique Docker image app
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+## Comments
+<Comments />

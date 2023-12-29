@@ -1,4 +1,7 @@
-
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment'; 
 
 <p align="center">
   <img src="/img/dbb.jpg" alt="Alt Text" width="400"/>
@@ -35,3 +38,5 @@ So, let's dive into the world of hosting solutions and discover the ideal plan f
 | Pricing               | ₹0     | <p>₹299/month</p><p>₹199 / per Public IP</p> | As per the Requirements |
 
 </span>
+
+<Comments />

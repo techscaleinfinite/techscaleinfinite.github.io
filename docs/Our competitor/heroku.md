@@ -1,3 +1,8 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 <p align="center">
   <img src="/img/dcc.jpg" alt="Alt Text" width="400"/>
 </p>
@@ -37,3 +42,5 @@ So, whether you're a seasoned developer or just dipping your toes into the tech 
 **Check out their website:**
 [Link to hereko](https://www.heroku.com/)
 </span>
+
+<Comments />

@@ -1,7 +1,8 @@
 ---
 sidebar_position: 3
+draft: false
 ---
-
+import Comments from '/src/components/HomepageFeatures/Comment'; 
 
 # 📼What is Demo Deployment
 
@@ -160,3 +161,4 @@ In a world dominated by visual storytelling, having a reliable gallery software 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions , demo,http&#x20;
 
 </details>
+<Comments />

@@ -1,6 +1,12 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment'; 
+
 <p align="center">
   <img src="/img/ffwc.jpg" alt="Alt Text" width="100"/>
 </p>
+
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 🛳 Managed Kubernetes
@@ -35,3 +41,5 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 </span>
+
+<Comments />

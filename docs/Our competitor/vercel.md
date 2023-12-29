@@ -1,3 +1,8 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 <p align="center">
   <img src="/img/fefv.jpg" alt="Alt Text" width="400"/>
 </p>
@@ -39,3 +44,5 @@ In simple terms, Vercel is where your website becomes a superstar, ready to impr
 
 [Link to Vercel](https://vercel.com/)
 </span>
+
+<Comments />

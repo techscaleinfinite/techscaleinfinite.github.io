@@ -1,3 +1,8 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 <p align="center">
   <img src="/img/ff.jpg" alt="Alt Text" width="400"/>
 </p>
@@ -49,3 +54,5 @@ And guess what? You don't have to be a tech guru to get it – it's as easy as c
 
 [Link to Deta Space](https://deta.space/)
 </span>
+
+<Comments />

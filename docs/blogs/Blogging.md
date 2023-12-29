@@ -1,8 +1,9 @@
 ---
 sidebar_position: 4
+draft: false
 ---
 
-
+import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
@@ -23,5 +24,5 @@ Stay tuned for a fusion of knowledge, creativity, and inspiration—crafted just
 
 
 </span>
-
+<Comments />
 

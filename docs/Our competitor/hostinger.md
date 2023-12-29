@@ -1,3 +1,8 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 <p align="center">
   <img src="/img/sdgs.jpg" alt="Alt Text" width="400"/>
 </p>
@@ -35,3 +40,5 @@ At Hostinger, it's not just about hosting websites; it's about hosting dreams an
 **Check out their website:**
 [Link to Hostinger](https://www.hostinger.in/)
 </span>
+
+<Comments />

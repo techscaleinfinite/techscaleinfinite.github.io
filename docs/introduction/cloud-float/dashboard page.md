@@ -1,3 +1,9 @@
+---
+sidebar_position: 5
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment'; 
+
 <p align="center">
   <img src="/img/sfsf8.jpg" alt="Alt Text" width="400"/>
 </p>
@@ -48,3 +54,5 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 </details>
 
 </span>
+
+<Comments />

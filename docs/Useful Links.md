@@ -1,6 +1,9 @@
 ---
 sidebar_position: 6
+draft: false
 ---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 <p align="center">
   <img src="/img/dffv.png" alt="Alt Text" width="380"/>
 </p>
@@ -77,3 +80,6 @@ Its is an in-depth interactive tutorial that helps you understand the Kubernetes
 [Link to kubernetes](https://kubernetes.io/docs/tutorials/)
 
 </span>
+
+## Comments
+<Comments />

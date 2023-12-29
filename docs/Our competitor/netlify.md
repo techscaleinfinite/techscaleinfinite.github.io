@@ -1,3 +1,8 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 <p align="center">
   <img src="/img/cdve.jpg" alt="Alt Text" width="400"/>
 </p>
@@ -37,3 +42,5 @@ So, whether you're a seasoned developer or just embarking on your coding journey
 
 [Link to Netlify](https://www.netlify.com/)
 </span>
+
+<Comments />

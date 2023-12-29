@@ -1,3 +1,7 @@
+---
+draft: false
+---
+import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 # 📃 Document Management
@@ -25,3 +29,5 @@ DMS isn't just a digital file cabinet; it's a dynamic, intelligent ally in the p
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, document
 
 </details>
+
+<Comments />

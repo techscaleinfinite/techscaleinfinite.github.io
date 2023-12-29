@@ -1,3 +1,9 @@
+---
+draft: false
+---
+
+import Comments from '/src/components/HomepageFeatures/Comment';
+
 # Navigating the Docker Discovery Journey in 2023
 
 Welcome to the captivating realm of Docker in 2023! If you're embarking on a journey to master Docker, the renowned containerization platform, get ready for an exciting adventure. To begin this quest, let's explore the hidden treasures of Docker together.
@@ -31,3 +37,6 @@ For those determined to move beyond Docker curiosity, dive into online courses a
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions&#x20;
 
 </details>
+
+## Comments
+<Comments />
