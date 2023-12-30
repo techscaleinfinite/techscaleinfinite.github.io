@@ -101,6 +101,11 @@ By following these steps, you can effortlessly deploy an minigame instance with 
 
 ### Visual Snapshots
 
+![Alt Text](/img/Picture1.png)
+
+![Alt Text](/img/ee37.png)
+![Alt Text](/img/v5.png)
+![Alt Text](/img/fb4.png)
 
 
 ### Youtube Tutorial&#x20;

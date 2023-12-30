@@ -4,36 +4,36 @@ draft: false
 import Comments from '/src/components/HomepageFeatures/Comment';
 
 <p align="center">
-  <img src="/img/fsf.jpg" alt="Alt Text" width="25%"/>
-</p>  
+  <img src="/img/f3g.png" alt="Alt Text" width="25%"/>
+</p> 
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 🎮 RETRO game Deployment
+# A Dark Room
 
-### RetroArch Web Player: Nostalgic Gaming Revival
+*"awake. head throbbing. vision blurry. come light the fire."*
 
-The self-hosted RetroArch web player brings vintage gaming to the web, emulating classic consoles like NES and SNES. Accessible in your browser, it offers a nostalgic gaming experience without extensive downloads. Users have control over hosting, intuitive interfaces, emulator cores, and support for various input methods. The community-driven platform enables game library organization and customization, providing a delightful journey into the world of retro gaming.
-### Exposed Ports
-
-| Port Type | Port Number | Description |
-| --------- | ----------- | ----------- |
-| Http      | 80       | Exposes port 80 for the retro gmae app. Users can access the retro game application through this port. |
-| Tcp       | -           | -             |
-
-### Working Directories
-
-| Path Mapping                         | Description |
-| ------------------------------------ | ----------- |
-|-       | - |
+A minimalist text adventure game for your browser.
 
 
-### Environment Variables
+
+
+|  **Exposed Ports:**    | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+| Http port          |       80 is exposed to facilitate web-based communication for Darkroom. Users can access the Darkroom application through this port.                              |
+| Tcp port      |              -                                                                     | 
+
+|  **Working directory:** | Decription                                                                                                               | 
+| --------------------- | ------                                                                                                                   | 
+|                                  | |
+
+
 
 |   **Environment value:**          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
 |-       |  -                              |
+
 
 </span>
 
@@ -43,17 +43,17 @@ The self-hosted RetroArch web player brings vintage gaming to the web, emulating
 ### Installation
 
 
-
 |  Description          | Decription                                                                                                               | 
 | --------------------- | ------                                                                                                                   | 
-| Docker Image          |  [retrogame](https://hub.docker.com/r/inglebard/retroarch-web)👈(click me,for the dockerhub image)                                   |
-| Application name      |  Eg: retro1(you can put any name)                                                                                        | 
+| Docker Image          |  [`liwangsheng/adarkroom`](https://hub.docker.com/r/liwangsheng/adarkroom)👈(click me,for the dockerhub image)                                   |
+| Application name      |  Eg: darkroom1(you can put any name)                                                                                        | 
 | Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
 | `Protocol`            |                                                                                                                          | 
-|  Http:                |    80                                                                                                                   |
-|  Tcp:                 |                                                                                                                           | 
+|  Http:                | 80                                                                                                                       |
+|  Tcp:                 |                                                                                                                          | 
 |    Advanced           |    Install with Default                                                                                                  |
 
+                                                                        
 
 
 ### Steps And Procedure
@@ -62,12 +62,12 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 
-**Step-by-Step Guide to MINI GAME Deployment**
+**Step-by-Step Guide to Darkroom Deployment**
 
 1. **Docker Image Selection:**
-   * Docker Image Name: `minigame`
+   * Docker Image Name: `Darkroom`
 2. **Application Details:**
-   * Application Name: `MINIGAME`
+   * Application Name: `dark1`
    * Resource Allocation: Set the desired resource allocation from 0-100%.
 3. **Protocol Configuration:**
    * Protocol: `HTTP`
@@ -86,18 +86,24 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
        The working directory is the starting point inside a container where an app's files are located. It affects relative file paths and operations. For example, if set to `/usr/src/yourAPP`, an app will reference files from there, like `/usr/src/yourAPP/data.txt`.
 
        * Working Directory: Set the working directory for the application (e.g., `usr/src/yourAPP`).
+       * Here use ( use the path after   " :"  )
+      
 6. **Access Configuration:**
    * Choose between "Public" or "Private" access to the deployed application.
 7. **Installation:**
    * Click the "Install" button to initiate the deployment process.
 
-By following these steps, you can effortlessly deploy an minigame instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
+By following these steps, you can effortlessly deploy an Darkroom instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
 
-![Alt Text](/img/fbc.png)
+![Alt Text](/img/5j.png)
+![Alt Text](/img/5k.png)
+![Alt Text](/img/5t.png)
+![Alt Text](/img/5y.png)
 
-![Alt Text](/img/cb.png)
+
+
 
 
 ### Youtube Tutorial&#x20;
@@ -108,11 +114,11 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About retro game image we used.**
+**About Darkroom image we used.**
 
-This is the official retro game image.
+This is the official Darkroom image.
 
-**Can I deploy my own retro game image with modified configuration ?**
+**Can I deploy my own Darkroom image with modified configuration ?**
 
 Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 
@@ -122,17 +128,16 @@ For the free user there is no persistence, and for the premium user you can diff
 
 ### Join us
 
-Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going!&#x20;
+Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going.
 
 <details>
 
 <summary>Category</summary>
 
-Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, gaming, retro gaming
+Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions , media, entertainment
 
 </details>
 
 </span>
-
 
 <Comments />
