@@ -63,46 +63,6 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 
-
-
-**Step-by-Step Guide to kavita Deployment**
-
-1. **Docker Image Selection:**
-   * Docker Image Name: Kavita
-2. **Application Details:**
-   * Application Name:  Kavita
-   * Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration:**
-   * Protocol: `HTTP`
-   * Port: `5000`
-4. **Installation Options:**
-   * Choose between "Default" or "Advanced" installation.
-5. **Advanced Installation (Optional):**
-   * If selecting "Advanced," you can customize the environment variables and working directory:
-   *   **Environment Variables:**
-
-       Environment variables are dynamic values used by a containerized application for configuration. They are defined as key-value pairs, like `API_KEY=xyz`, and provide flexibility to adjust an app's behavior without changing its code.
-
-       * Environment Variables: Define environment variables with keys and values (e.g., `key=value`).
-   *   **Working Directory:**
-
-       The working directory is the starting point inside a container where an app's files are located. It affects relative file paths and operations. For example, if set to `/usr/src/yourAPP`, an app will reference files from there, like `/usr/src/yourAPP/data.txt`.
-
-       * Working Directory: Set the working directory for the application (e.g., `usr/src/yourAPP`).
-       * Here use ( use the path after   " :"  )
-       *
-
-           ```
-           -v /your/manga/directory:/manga \
-           -v /kavita/data/directory:/kavita/config \
-           ```
-6. **Access Configuration:**
-   * Choose between "Public" or "Private" access to the deployed application.
-7. **Installation:**
-   * Click the "Install" button to initiate the deployment process.
-
-By following these steps, you can effortlessly deploy an  Kavita instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
-
 ### Visual Snapshots
 
 ![Alt Text](/img/swee.jpg)

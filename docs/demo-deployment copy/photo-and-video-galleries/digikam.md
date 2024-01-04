@@ -42,31 +42,6 @@ DigiKam is a versatile Content Management System (CMS) designed for self-hosted 
 
 For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
-## Steps And Procedure
-
-1. **Docker Image Selection:**
-   - Docker Image Name: DigiKam
-2. **Application Details:**
-   - Application Name: DigiKam
-   - Resource Allocation: Set the desired resource allocation from 0-100%.
-3. **Protocol Configuration:**
-   - Protocol: HTTP
-   - Port: 3000
-4. **Installation Options:**
-   - Choose between "Default" or "Advanced" installation.
-5. **Advanced Installation (Optional):**
-   - If selecting "Advanced," you can customize the environment variables and working directory:
-      - **Environment Variables:**
-         - Define environment variables with keys and values (e.g., `key=value`).
-      - **Working Directory:**
-         - Set the working directory for the application (e.g., `usr/src/yourAPP`).
-         - Here use (use the path after ":")
-6. **Access Configuration:**
-   - Choose between "Public" or "Private" access to the deployed application.
-7. **Installation:**
-   - Click the "Install" button to initiate the deployment process.
-
-By following these steps, you can effortlessly deploy a DigiKam instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ## Visual Snapshots
 
