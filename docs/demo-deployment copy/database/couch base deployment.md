@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/dd31.png" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # 🖥 Couch Base Deployment
 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/dd31.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Couchbase** is an award-winning distributed NoSQL cloud database renowned for its versatility, speed, and scalability. It supports a JSON-based data format, providing adaptability and accommodating various data technologies within a single architecture. With features like AI-powered coding assistance (Capella iQ), a memory-first architecture, robust scalability, and SQL++ for versatile querying, Couchbase offers a powerful solution for modern data management, seamlessly bridging the gap between NoSQL and SQL databases.
 
@@ -66,36 +68,16 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/1111.jpg)
-![Alt Text](/img/2121.jpg)
-![Alt Text](/img/23233.jpg)
-![Alt Text](/img/23231.jpg)
+<img src="/img/1111.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/2121.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/23233.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/23231.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/44.jpg)
-![Alt Text](/img/gg4.jpg)
-![Alt Text](/img/d221.jpg)
-![Alt Text](/img/dd211.jpg)
+<img src="/img/44.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/gg4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/d221.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/dd211.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/dede.jpg)
+<img src="/img/dede.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 ### FAQ
 
-**About couchbase image we used.**
-
-This is the official couchbase image.
-
-**Are there any restrictions on adding data sources ?**
-
-you can add any data source that couchbase supports.
-
-**Can i deploy older version of  Mondo or my own modified couchbase image ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

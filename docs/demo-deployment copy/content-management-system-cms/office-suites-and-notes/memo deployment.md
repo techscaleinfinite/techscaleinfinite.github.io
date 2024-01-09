@@ -3,13 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 📜 memo Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 <p align="center">
   <img src="/img/vf.jpg" alt="Alt Text" width="25%"/>
 </p>
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 📜 memo Deployment
 
 # memos: Your Personal Memo Assistant
 
@@ -60,10 +64,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/oo4.jpg)
-![Alt Text](/img/eee55.jpg)
-![Alt Text](/img/kk2.jpg)
-![Alt Text](/img/ff5.jpg)
+<img src="/img/oo4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/eee55.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/kk2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ff5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -75,17 +77,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About memos image we used.**
-
-This is the official memos image.
-
-**Can I deploy my own memos image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

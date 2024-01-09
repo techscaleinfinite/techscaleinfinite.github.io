@@ -4,14 +4,17 @@ draft: false
 import Comments from '/src/components/HomepageFeatures/Comment';
 
 
-<p align="center">
-  <img src="/img/34r.png" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 
 # Grocy - Self-Hosted Recipe Manager and Meal Planner
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/34r.png" alt="Alt Text" width="25%"/>
+</p> 
 
 Grocy, is a self-hosted recipe manager and meal planner. This application features a RestAPI backend and a reactive frontend, offering a comprehensive solution for organizing and planning meals. With the convenience of Docker, you can easily deploy and manage Grocy for a seamless recipe-keeping experience.
 
@@ -65,18 +68,16 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/y676.png)
+<img src="/img/y676.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/y76.png)
-![Alt Text](/img/y88.png)
+<img src="/img/y76.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/y88.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/y764.png)
+<img src="/img/y764.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/y887.png)
-![Alt Text](/img/y987.png)
+<img src="/img/y887.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/y987.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/y7657.png)
-![Alt Text](/img/y7777.png)
+<img src="/img/y7657.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/y7777.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -88,17 +89,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Grocy image we used.**
-
-This is the official Grocy image.
-
-**Can I deploy my own Grocy image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

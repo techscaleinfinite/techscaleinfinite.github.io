@@ -3,13 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# Domoticz
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">
   <img src="/img/cbcf.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-# Domoticz
 
 Domoticz is a versatile Home Automation System that enables monitoring and configuration of various devices. These include lights, switches, and a range of sensors/meters such as temperature, rain, wind, UV, electricity, gas, water, and more. Additionally, Domoticz supports sending notifications and alerts to any mobile device.
 
@@ -62,15 +65,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/9h.png)
-![Alt Text](/img/9i.png)
-![Alt Text](/img/9j.png)
-![Alt Text](/img/9k.png)
-v
-![Alt Text](/img/9l.png)
+<img src="/img/9h.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/9i.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/9j.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/9k.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/9l.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/9m.png)
-![Alt Text](/img/9o.png)
+<img src="/img/9m.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/9o.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -82,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About domoticz image we used.**
-
-This is the official domoticz image.
-
-**Can I deploy my own domoticz image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

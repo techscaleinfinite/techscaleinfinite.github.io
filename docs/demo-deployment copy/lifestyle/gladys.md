@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/llkm.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+# Gladys Assistant
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# Gladys Assistant
+<p align="center">
+  <img src="/img/llkm.png" alt="Alt Text" width="25%"/>
+</p> 
 
 Craft your perfect smart home experience with Gladys Assistant.
 
@@ -67,16 +70,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/1c.png)
-![Alt Text](/img/1d.png)
-![Alt Text](/img/1de.png)
-![Alt Text](/img/1e.png)
-![Alt Text](/img/1f.png)
-![Alt Text](/img/1q.png)
-![Alt Text](/img/1r.png)
-![Alt Text](/img/1s.png)
-![Alt Text](/img/1s.png)
-![Alt Text](/img/15.png)
+<img src="/img/1c.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/1d.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/1de.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/1e.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/1f.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/1q.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/1r.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/1s.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/1s.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/15.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 ### Youtube Tutorial&#x20;
 
@@ -84,17 +81,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Gladys image we used.**
-
-This is the official Gladys  mage.
-
-**Can I deploy my own media Gladys with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

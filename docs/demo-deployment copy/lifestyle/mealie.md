@@ -4,14 +4,16 @@ draft: false
 import Comments from '/src/components/HomepageFeatures/Comment';
 
 
-<p align="center">
-  <img src="/img/dvs.png" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 
 # Mealie - Self-Hosted Recipe Manager and Meal Planner
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+<p align="center">
+  <img src="/img/dvs.png" alt="Alt Text" width="25%"/>
+</p> 
 
 Mealie, is a self-hosted recipe manager and meal planner. This application features a RestAPI backend and a reactive frontend, offering a comprehensive solution for organizing and planning meals. With the convenience of Docker, you can easily deploy and manage Mealie for a seamless recipe-keeping experience.
 
@@ -63,11 +65,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/4bb.png)
-![Alt Text](/img/4bv.png)
-![Alt Text](/img/4f.png)
-![Alt Text](/img/4g.png)
-![Alt Text](/img/4gg.png)
+<img src="/img/4bb.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/4bv.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/4f.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/4g.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/4gg.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -78,17 +78,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Mealie image we used.**
-
-This is the official Mealie image.
-
-**Can I deploy my own Mealie image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

@@ -3,16 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/4443.png" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 
 # 🎵 sickgear Deployment
 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 ## SickGear - Your TV Show and Anime Manager
+<p align="center">
+  <img src="/img/4443.png" alt="Alt Text" width="25%"/>
+</p> 
+
 
 **SickGear** is your go-to solution for managing TV shows and Anime. It excels at detecting new episodes, seamlessly integrating with downloader apps, and offering a range of additional features. Whether you're a TV show enthusiast or an Anime lover, SickGear simplifies and enhances your media management experience.
 
@@ -69,11 +72,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/y4.png)
-![Alt Text](/img/y44.png)
-![Alt Text](/img/y433.png)
-![Alt Text](/img/y442.png)
-![Alt Text](/img/y4424.png)
+<img src="/img/y4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/y44.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/y433.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/y442.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/y4424.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 ### Youtube Tutorial&#x20;
@@ -84,17 +85,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About sickgear image we used.**
-
-This is the official sickgear image.
-
-**Can I deploy my own sickgear image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

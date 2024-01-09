@@ -1,6 +1,6 @@
 
 
-#  About Scale Infinite
+# 🌩️ About Scale Infinite
 
 <p align="center">
   <img src="/img/sccc.jpg" alt="Alt Text" width="200"/>

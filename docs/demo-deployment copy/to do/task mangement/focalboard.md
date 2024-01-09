@@ -3,14 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/csc.jpg" alt="Alt Text" width="25%"/>
-</p> 
+# Focalboard
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# Focalboard
+
+<p align="center">
+  <img src="/img/csc.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Focalboard:** Open-source, self-hosted project management tool with multilingual support. Ideal for collaborative task management, it uses Markdown (MD) format for data storage. Developed by Mattermost, Focalboard allows users to organize projects using boards, lists, and cards. Users can deploy it on their own servers, ensuring data control and privacy.
 
@@ -64,19 +65,15 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/9iik.png)
-
-![Alt Text](/img/9ii.png)
-
-![Alt Text](/img/9lll.png)
-![Alt Text](/img/9lp.png)
-![Alt Text](/img/9oo.png)
-![Alt Text](/img/9pp.png)
-![Alt Text](/img/9z.png)
 
 
 
-
+<img src="/img/9iik.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/9lll.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/9ii.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/9oo.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/9pp.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/9z.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
 
 ### Youtube Tutorial&#x20;
 
@@ -86,17 +83,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About kerberosimage we used.**
-
-This is the official kerberosimage.
-
-**Can I deploy my ow kerberosimage with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

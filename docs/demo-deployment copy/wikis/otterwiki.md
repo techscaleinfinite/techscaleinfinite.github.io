@@ -3,14 +3,14 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/dd23" alt="Alt Text" width="25%"/>
-</p> 
-
+# 📔 otterwiki Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 📔 otterwiki Deployment
+
+<p align="center">
+  <img src="/img/dd23" alt="Alt Text" width="25%"/>
+</p> 
 
 
 **Otter Wiki** is a minimalistic wiki that operates on the power of Python, Markdown, and Git. This lightweight solution is designed for simplicity and efficiency in managing your content. By leveraging the versatility of Markdown and the collaborative capabilities of Git, Otter Wiki provides a user-friendly platform for creating and organizing your documentation.
@@ -69,6 +69,12 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ![Alt Text](/img/r22222.png)
 
 
+<img src="/img/t6.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/r22.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/r33.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/r22221.png)" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/r223.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/r22222.png)" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 ### Youtube Tutorial&#x20;
 
@@ -78,17 +84,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About otterwiki image we used.**
-
-This is the official otterwiki image.
-
-**Can I deploy my ow otterwiki image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

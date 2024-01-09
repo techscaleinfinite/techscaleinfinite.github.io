@@ -3,15 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ssca.png" alt="Alt Text" width="25%"/>
-</p> 
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # ⚙️ Simply shorten deployment
 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/ssca.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **SimpleURL** is a straightforward, self-hosted URL shortener designed with simplicity in mind. Offering no unnecessary features, this tool focuses on the core functionality of shortening URLs efficiently. As a self-hosted solution, it provides users with control over their URL shortening needs, ensuring privacy and customization without the burden of unnecessary complexities.
 .
@@ -64,10 +66,8 @@ When running the container, you may mount the Simply shorten configuration file 
 For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 s
 ### Visual Snapshots
-![Alt Text](/img/n1.png)
-![Alt Text](/img/n2.png)
-![Alt Text](/img/n3.png)
-![Alt Text](/img/n4.png)
+<img src="/img/n1.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/n2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/n3.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/n4.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -78,17 +78,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Simply shorten image we used.**
-
-This is the official Simply shorten image.
-
-**Can I deploy my own Simply shorten image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

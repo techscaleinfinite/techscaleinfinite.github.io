@@ -3,16 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+
+# ⚙️ Nginx deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">
   <img src="/img/vb.jpg" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# ⚙️ Nginx deployment
-
-### Nginx: The Multifaceted Web Tool
 
 Nginx transcends traditional web servers, functioning as a swift web server, diligent reverse proxy, efficient load balancer, proficient mail proxy, and adept HTTP cache. It powers websites, secures applications, orchestrates server resources, handles email routing, and optimizes content delivery with its versatile features.
 
@@ -65,8 +65,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/ss2.jpg)
-![Alt Text](/img/jje4.jpg)
+<img src="/img/ss2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/jje4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -76,17 +76,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About nginx image we used.**
-
-This is the official nginx image.
-
-**Can I deploy my own nginx image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

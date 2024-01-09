@@ -2,14 +2,16 @@
 sidebar_position: 3
 ---
 
+# ☁ Create App Page
+
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">
   <img src="/img/ddv4.jpg" alt="Alt Text" width="400"/>
 </p>
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# ☁ Create App Page
 
 1. _**Navigate to the Create App Page**: To begin the deployment process, head over to our user-friendly Create App page._
 2. _**Search for Your Desired App**: In the search bar, type the name of the app you want to deploy. Our platform offers a wide range of pre-configured apps to choose from._

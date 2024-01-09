@@ -3,16 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/kol.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # 🔒 Cyber Chef Deployment
 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 ## GCHQ CyberChef
+<p align="center">
+  <img src="/img/kol.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **GCHQ CyberChef** is an essential tool for cybersecurity enthusiasts, available in a convenient container. This web application functions as a versatile Cyber Swiss Army Knife, providing features for encryption, encoding, compression, and data analysis. With a user-friendly interface, it serves as a go-to solution for various cybersecurity tasks.
 
@@ -64,11 +66,7 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/s2.png)
-![Alt Text](/img/s3.png)
-![Alt Text](/img/s33.png)
-![Alt Text](/img/s44.png)
-![Alt Text](/img/s55.png)
+<img src="/img/s2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/s3.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/s33.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/s44.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/s55.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -81,17 +79,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Cyber Chef image we used.**
-
-This is the official Cyber Chef image.
-
-**Can I deploy my own Cyber Chef image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

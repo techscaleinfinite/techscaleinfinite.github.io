@@ -3,15 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/rr41.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # 🎮 Mini game Deployment
 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 ### Mini Games: A Web-based Adventure
+<p align="center">
+  <img src="/img/rr41.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 Mini Games is an evolving web-based multiplayer experience that serves as a playground for experimenting with web technologies. Players inhabit parallel universes, each with unique physics, and can collaborate through interconnected portals. With user-friendly controls for touch and keyboard devices, the game focuses on refining animations, optimizing input handling, and ensuring seamless frontend-backend communication. Visit [https://mini-game.oliverlanz.ch](https://mini-game.oliverlanz.ch/) to explore this innovative gaming experiment and connect multiple devices for a shared adventure.
 
@@ -71,11 +73,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/Picture1.png)
+<img src="/img/Picture1.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/ee37.png)
-![Alt Text](/img/v5.png)
-![Alt Text](/img/fb4.png)
+<img src="/img/ee37.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/v5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/fb4.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -86,17 +87,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About minigame image we used.**
-
-This is the official minigame image.
-
-**Can I deploy my own minigame image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

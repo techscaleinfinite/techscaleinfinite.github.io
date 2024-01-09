@@ -3,12 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 📚 Christmas Community
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/erwdf.jpg" alt="Alt Text" width="25%"/>
 </p> 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 📚 Christmas Community
 
 **Christmas Community**
 
@@ -67,12 +70,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/wq1.png)
-![Alt Text](/img/aaa11.png)
-![Alt Text](/img/aaaa1.png)
-![Alt Text](/img/aaaa11.png)
-![Alt Text](/img/aqq.png)
-![Alt Text](/img/aaaaa.png)
+<img src="/img/wq1.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/aaa11.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/aaaa1.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/aaaa11.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/aqq.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/aaaaa.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -84,17 +85,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Christmas image we used.**
-
-This is the official christmas image.
-
-**Can I deploy my own Christmasimage with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

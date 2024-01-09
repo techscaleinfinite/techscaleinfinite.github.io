@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# Prowlarr Deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/scaa.png" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# Prowlarr Deployment
 
 **Prowlarr:**
 A lightweight, cross-platform BitTorrent client that is free and open-source. Prowlarr features full encryption, a WebUI for remote management, and a plugin system, making it a versatile and user-friendly solution for BitTorrent downloading.
@@ -68,14 +72,13 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/b444.png)
+<img src="/img/b444.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/b1.png)
+<img src="/img/b1.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/b4.png)
-![Alt Text](/img/b44.png)
+<img src="/img/b4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/b44.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/b555.png)
+<img src="/img/b555.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -88,17 +91,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Prowlarr image we used.**
-
-This is the official Prowlarr image.
-
-**Can I deploy my own Prowlarr image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

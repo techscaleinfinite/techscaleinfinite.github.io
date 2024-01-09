@@ -5,12 +5,13 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 # 📅  Baikal Deployment
 
-
-### What's is baikal?
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">
   <img src="/img/gr4.jpg" alt="Alt Text" width="100"/>
-</p>
+</p> 
+
+### What's is baikal?
+
 
 Imagine a web interface that's not just user-friendly but genuinely intuitive. Baïkal offers exactly that. Managing users, address books, and calendars becomes a breeze. It's like having a personal assistant that understands your every command.
  Baïkal doesn't believe in boundaries. It's your bridge to a synchronized digital life. Access your contacts and calendars from every device you own. No more hassles with compatibility issues – it's all about harmonious connectivity.
@@ -63,11 +64,12 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/dyy.jpg)
-![Alt Text](/img/dty.jpg)
-![Alt Text](/img/ewd.jpg)
-![Alt Text](/img/ed36.jpg)
-![Alt Text](/img/ffee3.jpg)
+<img src="/img/dyy.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/dty.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ewd.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ed36.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ffee3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -79,17 +81,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Baïkal image we used.**
-
-This is the official Baïkal  image.
-
-**Can I deploy my own Baïkal image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 ### Join us
 

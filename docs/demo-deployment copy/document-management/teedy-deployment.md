@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 🖥 Teedy Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/fnn.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🖥 Teedy Deployment
-### Teedy: Symphony of Document Management
 
 **Teedy** is a sleek document management system designed to bring order and clarity to your business operations. With a modern interface, it acts as a maestro of organization, providing efficient document upload and retrieval. Teedy ensures the security of your documents with precise user permissions, encryption, and secure data centers in France, offering a symphony of elegance and efficiency in the realm of document management.
 
@@ -63,11 +65,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/ddd2.jpg)
-![Alt Text](/img/dfr5.jpg)
-![Alt Text](/img/dd322.jpg)
-![Alt Text](/img/dwr.jpg)
-![Alt Text](/img/sw2.jpg)
+<img src="/img/ddd2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/dfr5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/dd322.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/dwr.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/sw2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 ### Youtube Tutorial&#x20;
 
@@ -77,17 +77,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Teedy image we used.**
-
-This is the official  Teedy image.
-
-**Can I deploy my own Teedy image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

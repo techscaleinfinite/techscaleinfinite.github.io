@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# 💹 Octobot Deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/sdsd.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 💹 Octobot Deployment
 
 ### OctoBot: Streamlining Crypto Trading for All
 
@@ -66,18 +70,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/ree.png)
-![Alt Text](/img/f3.jpg)
-![Alt Text](/img/ff3.jpg)
-
-![Alt Text](/img/eef3.jpg)
-![Alt Text](/img/eeg3.jpg)
-![Alt Text](/img/ee22.jpg)
-![Alt Text](/img/ww21.jpg)
-![Alt Text](/img/eee3.jpg)
-![Alt Text](/img/f4.jpg)
-
-![Alt Text](/img/eer.jpg)
+<img src="/img/ree.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ff3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/eef3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/eeg3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ee22.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ww21.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/eee3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/eer.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 ### Youtube Tutorial&#x20;
 
@@ -85,17 +81,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About OctoBot  image we used.**
-
-This is the official OctoBot   image.
-
-**Can I deploy my own media OctoBot  with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

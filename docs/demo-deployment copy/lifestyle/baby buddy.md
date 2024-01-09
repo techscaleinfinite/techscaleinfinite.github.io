@@ -3,11 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 
 
 # 👶 Babybuddy
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/111.jpeg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Babybuddy** is a comprehensive companion for caregivers, designed to simplify tracking essential aspects of baby care. It facilitates monitoring sleep patterns, feedings, diaper changes, and tummy time, offering valuable insights into a baby's needs. By leveraging data, caregivers can make informed predictions, reducing the guesswork involved in baby care. The app aims to streamline the caregiving experience, providing a user-friendly tool for efficient and attentive childcare.
 
@@ -58,14 +63,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/q1.png)
-![Alt Text](/img/q2.png)
-![Alt Text](/img/q3.png)
+<img src="/img/q1.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/q2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/q3.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/q4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/q5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/q6.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/q7.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/q4.png)
-![Alt Text](/img/q5.png)
-![Alt Text](/img/q6.png)
-![Alt Text](/img/q7.png)
 
 
 ### Youtube Tutorial&#x20;
@@ -76,17 +76,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About baby buddy image we used.**
-
-This is the official baby buddy image.
-
-**Can I deploy my own baby buddy image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

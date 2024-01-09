@@ -3,16 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/e4r.png" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 
 # 🎵 Podgrab Deployment
 
-# Podgrab: Elevate Your Podcast Experience 🎙️
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/e4r.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Podgrab** is your dedicated podcast sidekick, simplifying podcast discovery, download, and enjoyment. With auto-download magic, it fetches the latest episodes seamlessly, and its integration with the iTunes API makes podcast discovery a breeze. As a full-fledged podcast player, Podgrab puts you in control—choose to play downloaded episodes or stream directly. Adding podcasts is flexible, and its smart organization prevents storage clutter. With customizable episode names, dark mode, and self-hosted, open-source features, Podgrab transforms your podcast journey into an organized, personalized, and delightful experience. Your passport to podcast excellence awaits with Podgrab!
 
@@ -69,8 +71,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/er3.jpg)
-![Alt Text](/img/344.jpg)
+<img src="/img/er3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/344.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 ### Youtube Tutorial&#x20;
 
@@ -80,17 +82,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Podgrab image we used.**
-
-This is the official Podgrab image.
-
-**Can I deploy my own Podgrab image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

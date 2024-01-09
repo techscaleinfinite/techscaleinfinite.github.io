@@ -2,13 +2,15 @@
 sidebar_position: 7
 ---
 
+
+
+# ☁ Server Detail Page
+
 <p align="center">
   <img src="/img/vdb.jpg" alt="Alt Text" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# ☁ Server Detail Page
 
 Welcome to the Server Detail page – your command center for fine-tuning, monitoring, and managing your deployed app.  Imagine this as your backstage pass to the inner workings of your app. It's where you can fine-tune, troubleshoot, and ensure everything is running like a well-oiled machine. From a developer's perspective, it's like having a control panel for your digital creation.
 

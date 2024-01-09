@@ -1,5 +1,5 @@
 
-# Docker Demystified: More Than Just a Box of Tricks
+# 📑 Docker Demystified: More Than Just a Box of Tricks
 
 *Ladies and gentlemen, step right up, because today, we’re diving deep into the world of Docker. But hold on to your top hats, because this isn’t your ordinary rabbit-out-of-a-hat magic show. Docker is like the magician’s wand of the tech realm, but instead of pulling rabbits, it pulls off some serious technical wizardry.*
 

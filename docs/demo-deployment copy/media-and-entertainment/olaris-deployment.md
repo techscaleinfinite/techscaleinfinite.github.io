@@ -3,15 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/sffw.jpg" alt="Alt Text" width="25%"/>
-</p> 
+ 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # 📺 Olaris Deployment
 
-# Olaris: Your Creative Hub for Media Magic 🎨🔮
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/sffw.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 **Olaris** is a vibrant community-driven space where media enthusiasts unite to manage and transform their digital treasures. At its core is the **olaris-react** project, an intuitive interface that enhances your media management experience. Olaris is not just software; it's an open-source art studio, where a passionate community collaborates to create something beautiful. Acting as your digital curator, Olaris organizes and optimizes your media collection, offering a personalized touch. With transcoding capabilities, Olaris works its magic, seamlessly transforming media formats for any occasion or device. Olaris, with its olari-react gateway, welcomes you to a future of collaborative media management, where your wildest dreams become reality.
 ### Exposed Ports
@@ -67,11 +69,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/bb.jpg)
-![Alt Text](/img/bbf.jpg)
+<img src="/img/bb.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/bbf.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/jjt.jpg)
-![Alt Text](/img/hjhj.jpg)
+<img src="/img/jjt.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/hjhj.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 ### Youtube Tutorial&#x20;
 
@@ -81,17 +81,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About olaris image we used.**
-
-This is the official olaris image.
-
-**Can I deploy my own olaris image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

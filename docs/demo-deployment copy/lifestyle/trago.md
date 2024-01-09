@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ccs.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+
+# 🖥️ Traggo Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 🖥️ Traggo Deployment
+<p align="center">
+  <img src="/img/ccs.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Traggo** is a tag-based time tracking tool that revolutionizes traditional task tracking. Instead of tasks, it focuses on tagged time spans, providing a flexible approach to time management. For a hassle-free experience, you can deploy a fully managed Traggo on elest.io. This service offers automated backups, SSL termination with a reverse proxy, firewall protection, and continuous OS and software updates. The platform is maintained by a team of Linux experts and open source enthusiasts, ensuring the safety and functionality of your services.
 
@@ -66,13 +70,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/r43.png)
-![Alt Text](/img/r444.png)
+<img src="/img/r43.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r444.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/r544.png)
-![Alt Text](/img/r555.png)
-![Alt Text](/img/r4443.png)
-![Alt Text](/img/r5554.png)
+<img src="/img/r544.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r555.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r4443.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r5554.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -81,17 +82,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Traggo  image we used.**
-
-This is the official Traggo   image.
-
-**Can I deploy my own media Traggo  with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

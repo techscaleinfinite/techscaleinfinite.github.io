@@ -3,16 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# 🔒 Caddy Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/ssc.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🔒 Caddy Deployment
-
-### What's is caddy?
 
 **Caddy: Simplifying Web Servers**
 
@@ -64,8 +65,7 @@ When running the container, the default Caddy web server may serve content from 
 For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 ### Visual Snapshots
-![Alt Text](/img/ve3.jpg)
-![Alt Text](/img/fef3.jpg)
+<img src="/img/ve3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/fef3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 ### Youtube Tutorial&#x20;
@@ -76,17 +76,33 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About caddy image we used.**
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
-This is the official caddy image.
 
-**Can I deploy my own caddy image with modified configuration ?**
 
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
 
-**Are my data persistent ?**
 
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Join us
 

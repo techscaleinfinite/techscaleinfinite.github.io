@@ -3,6 +3,9 @@ sidebar_position: 2
 ---
 
 
+
+
+# 🌩️ Introduction
 <p align="center">
   <img src="/img/sc.jpg" alt="ScaleInfinite Logo" width="500"/>
 </p>
@@ -12,8 +15,6 @@ sidebar_position: 2
 </div>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '14pt' }}> 
-
-# Introduction
 
 <div style={{ textAlign: 'center', fontSize: '20px', lineHeight: '1.6', color: 'white', padding: '30px', background: '#02075d', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px' }}>
   <strong style={{ color: 'white' }}>ScaleInfinite</strong> revolutionizes application hosting, offering effortless deployment, rich telemetry insights, and tailored security for startups, enterprises, and individuals.

@@ -3,14 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+
+# pairdrop Deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/decc.png" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# pairdrop Deployment
 **PairDrop:**
 A sublime alternative to AirDrop, PairDrop is a cross-platform solution that enables the seamless transfer of images, documents, or text via peer-to-peer connections. It functions within the same local network or Wi-Fi, offering an easy way to share files between paired devices.
 
@@ -72,12 +77,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 
+<img src="/img/g5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g54.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g67.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g444.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/664.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/g5.png)
-![Alt Text](/img/g54.png)
-![Alt Text](/img/g67.png)
-![Alt Text](/img/g444.png)
-![Alt Text](/img/664.png)
 
 
 
@@ -93,17 +94,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About pairdrop image we used.**
-
-This is the official pairdrop image.
-
-**Can I deploy my own pairdrop image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

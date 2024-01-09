@@ -3,15 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ss9.png" alt="Alt Text" width="25%"/>
-</p> 
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 
 # 🖥️ Atheos
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/ss9.png" alt="Alt Text" width="25%"/>
+</p> 
 
 Atheos is a modern and actively maintained fork of Codiad, which is a web-based Integrated Development Environment (IDE) framework. Rooted in simplicity, Codiad facilitates swift and interactive development with minimal resource requirements. Atheos inherits these qualities while providing updates and ongoing support, making it an excellent choice for developers seeking an efficient web-based IDE without the burden of heavyweight desktop editors.
 
@@ -61,13 +65,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/r1.png)
-![Alt Text](/img/r2.png)
-![Alt Text](/img/r3.png)
-![Alt Text](/img/r5.png)
-![Alt Text](/img/r6.png)
-![Alt Text](/img/r8.png)
-![Alt Text](/img/r65.png)
+<img src="/img/r1.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r3.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/r5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r6.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r8.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/r65.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -79,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About atheos image we used.**
-
-This is the official atheos image.
-
-**Can I deploy my ow atheos image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

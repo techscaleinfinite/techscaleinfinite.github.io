@@ -3,13 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/e4e.png" alt="Alt Text" width="25%"/>
-</p> 
+
+
+
+# 🖥 NocoDB Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 🖥 NocoDB Deployment
+<p align="center">
+  <img src="/img/e4e.png" alt="Alt Text" width="25%"/>
+</p> 
 
 
 **NocoDB:** The Open Source Airtable Alternative. Transform MySQL, PostgreSQL, SQL Server, SQLite, and MariaDB databases into smart spreadsheets. NocoDB provides a user-friendly interface for managing data, offering an open-source solution akin to Airtable.
@@ -69,36 +72,19 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/vv.png)
+<img src="/img/vv.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/vbb.png)
-![Alt Text](/img/vbbg.png)
-![Alt Text](/img/vdx.png)
-![Alt Text](/img/vfd.png)
+<img src="/img/vbb.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vbbg.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vdx.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vfd.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/vvc.png)
-![Alt Text](/img/vvg.png)
+<img src="/img/vvc.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vvg.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
 
 ### FAQ
 
-**About nocodb image we used.**
-
-This is the official nocodb image.
-
-**Are there any restrictions on adding data sources ?**
-
-you can add any data source that nocodb supports.
-
-**Can i deploy older version of  Mondo or my own modified nocodb image ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

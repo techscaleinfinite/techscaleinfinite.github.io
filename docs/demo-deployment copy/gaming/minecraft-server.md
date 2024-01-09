@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ssd.jpg" alt="Alt Text" width="25%"/>
-</p> 
+ 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # 🎮 Minecraft Server
 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/ssd.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 ScaleInfinite offers a dedicated Minecraft server for personalized gaming experiences. Exclusive to you and your friends, the server ensures 24/7 accessibility, custom rules, and data security. Deployed on ScaleInfinite, it provides a secure and immersive platform for collaborative and creative Minecraft adventures.
 
@@ -40,13 +43,7 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### FAQ
 
-**About minecraft image we used.**
-
-This is the official minecraft image.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

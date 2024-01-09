@@ -3,15 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/efv.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 # 🖥 Homer Deployment
 
 ### What's is homer?
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/efv.jpg" alt="Alt Text" width="25%"/>
+</p> 
+
 
 _Homer is a user-friendly, self-hosted dashboard that simplifies the management of your various services and applications. This web-based dashboard offers quick and convenient access to a wide range of self-hosted tools and services from a single interface. It's designed to streamline your experience in organizing and interacting with your self-hosted applications, enhancing accessibility and productivity._
 ### Exposed Ports
@@ -66,8 +69,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/ht5.jpg)
-![Alt Text](/img/kkr.jpg)
+<img src="/img/ht5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/kkr.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -78,17 +81,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About homer image we used.**
-
-This is the official homer image.
-
-**Can I deploy my own homer image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

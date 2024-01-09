@@ -3,16 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/rhrt.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🖥 Kavita Deployment
 
-### Kavita: A Swift and Versatile Digital Library
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/rhrt.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Kavita** is a self-hosted digital library offering lightning-fast access to a diverse range of file formats. With a sleek design, it caters to bookworms and manga enthusiasts, providing organized series, user reviews, and swift search capabilities. Kavita simplifies library management, offering a command center for users to explore literature seamlessly.
 ### Exposed Ports
@@ -65,11 +67,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/swee.jpg)
-![Alt Text](/img/gt.jpg)
-
-![Alt Text](/img/ju.jpg)
-![Alt Text](/img/fdfd4.jpg)
+<img src="/img/swee.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/gt.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ju.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/fdfd4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -80,18 +79,7 @@ Check out our youtube video for more clarification.
 
 
 ### FAQ
-
-**About Kavita image we used.**
-
-This is the official  Kavita image.
-
-**Can I deploy my own Kavita image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

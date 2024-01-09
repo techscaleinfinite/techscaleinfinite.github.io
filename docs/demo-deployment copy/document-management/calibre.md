@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/65.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+
+# 🖥 Calibre Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 🖥 Calibre Deployment
+<p align="center">
+  <img src="/img/65.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Calibre** stands out as a robust and user-friendly e-book manager, highly praised by users who consider it essential. Its extensive capabilities go beyond typical e-book software, catering to both casual readers and tech-savvy individuals. The software is not only feature-rich but also completely free and open source.
 
@@ -64,13 +68,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/t4.png)
-![Alt Text](/img/t5.png)
-![Alt Text](/img/t44.png)
-![Alt Text](/img/t54.png)
-![Alt Text](/img/t55.png)
-![Alt Text](/img/t443.png)
-![Alt Text](/img/t444.png)
+<img src="/img/t4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t44.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t54.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/t55.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t443.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t444.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 ### Youtube Tutorial&#x20;
 
@@ -80,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Calibre image we used.**
-
-This is the official  Calibre image.
-
-**Can I deploy my own Calibre image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

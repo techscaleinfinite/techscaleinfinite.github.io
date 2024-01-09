@@ -3,12 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 🎨 Asciiflow Deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/ghr.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 🎨 Asciiflow Deployment
 
 # ASCII Flow: Where Creativity Meets Simplicity
 
@@ -65,10 +70,13 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/gg1.jpg)
-![Alt Text](/img/f22.jpg)
-![Alt Text](/img/jtt.jpg)
-<img src="/img/gg1.jpg" alt="Alt Text" style={{ maxWidth: '200px' }} />
+
+<img src="/img/gg1.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/f22.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/jtt.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -77,18 +85,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About ASCII Flow image we used.**
-
-This is the official ASCII Flow  mage.
-
-**Can I deploy my own media ASCII Flow with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
-
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 ### Join us
 
 Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going!&#x20;

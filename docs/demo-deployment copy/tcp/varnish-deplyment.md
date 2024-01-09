@@ -3,16 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/efgg.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # ⚙️ Varnish Deplyment
 
-### Varnish: Accelerating Web Performance
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/efgg.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 Varnish, an open-source caching HTTP reverse proxy, enhances web server performance by caching content in memory. It acts as a reverse proxy, caching requested web pages and resources, reducing server load, and speeding up response times. Varnish supports cache invalidation for content updates, load balancing across multiple servers, and HTTP acceleration, optimizing the overall user experience.
 
@@ -49,17 +51,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About httpd image we used.**
-
-This is the official httpd image.
-
-**Can I deploy my own httpd image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

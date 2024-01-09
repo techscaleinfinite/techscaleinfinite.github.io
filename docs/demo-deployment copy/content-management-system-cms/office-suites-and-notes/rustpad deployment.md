@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ww37.jpg" alt="Alt Text" width="25%"/>
-</p>
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 📓 Rustpad Deployment
 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 # Rustpad: Where Real-Time Collaboration Meets Seamless Editing
+
+<p align="center">
+  <img src="/img/ww37.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 **Rustpad** redefines collaborative text editing with its open-source marvel. Using operational transformation, edits appear instantaneously for all collaborators, creating a virtual writing party. This web-based editor eliminates complexities—share a link, and colleagues can join the editing fray hassle-free. With live preview and uninterrupted workflow, Rustpad transforms into a dynamic canvas where ideas come to life. Version control ensures easy navigation between document states. Embrace the future of real-time collaboration, bid farewell to traditional delays, and unleash your creative potential with Rustpad. ✨🖋️🤝
 
@@ -62,27 +66,15 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/r1.jpg)
-![Alt Text](/img/r2.jpg)
-![Alt Text](/img/r3.jpg)
+<img src="/img/r1.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+)
 
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.
 
 ### FAQ
-
-**About Rustpad image we used.**
-
-This is the official Rustpad mage.
-
-**Can I deploy my own media Rustpad with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

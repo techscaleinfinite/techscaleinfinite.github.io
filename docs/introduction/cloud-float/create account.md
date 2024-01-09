@@ -2,11 +2,14 @@
 sidebar_position: 2
 ---
 
+
+
+# ☁ Create Account
+
 <p align="center">
   <img src="/img/ff43.png" alt="Alt Text" width="600"/>
 </p>
 
-# ☁ Create Account
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 _**Creating an account on Scale Infinite is a breeze.**_

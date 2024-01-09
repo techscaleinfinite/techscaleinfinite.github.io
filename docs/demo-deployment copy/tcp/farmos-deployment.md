@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/oopl.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+# ⚙️ Farmos Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# ⚙️ Farmos Deployment
+<p align="center">
+  <img src="/img/oopl.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **farmOS: Revolutionizing Farm Management**
 
@@ -62,13 +64,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/ww.jpg)
-![Alt Text](/img/aao.jpg)
-![Alt Text](/img/aa.jpg)
+<img src="/img/ww.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/aao.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/aa.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/eee24.jpg)
-![Alt Text](/img/dcd3.jpg)
-![Alt Text](/img/qw3.jpg)
+<img src="/img/eee24.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/dcd3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/qw3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 ### Youtube Tutorial&#x20;
@@ -79,18 +77,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About farmOS image we used.**
-
-This is the official farmOS image.
-
-**Can I deploy my ow farmOS image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
-
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 ### Join us
 
 Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going!&#x20;

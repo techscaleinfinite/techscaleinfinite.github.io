@@ -3,15 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/rfgf.jpg" alt="Alt Text" width="25%"/>
-</p>
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🖥 Joomla
 
 # Joomla: Your Website's Superhero
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/rfgf.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 **Joomla** is the superhero of open-source web development, simplifying website creation and management. With a user-friendly interface, it empowers users to effortlessly add and organize content, be it articles, images, or videos. Think of Joomla as a versatile wardrobe for your website, offering various templates and themes to dress it up.
 
@@ -145,9 +148,7 @@ Here are the general steps to configure Joomla to work with a MySQL database:
 By following these steps, you can effortlessly deploy an joomla instance with your chosen configurations. This enables you to tailor the environment to match your application's requirements and specifications. Whether opting for the default installation or delving into advanced settings, our platform ensures a seamless deployment experience while providing you the flexibility to customize according to your needs.
 
 ### Visual Snapshots
-![Alt Text](/img/kk0.jpg)
-![Alt Text](/img/oo0.jpg)
-![Alt Text](/img/kko.jpg)
+<img src="/img/kk0.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/oo0.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/kko.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -157,17 +158,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About joomla image we used.**
-
-This is the official joomla image.
-
-**Can I deploy my own media joomla with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

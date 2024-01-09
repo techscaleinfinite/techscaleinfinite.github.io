@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/aac.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+# ⚙️ ChangeDetection Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# ⚙️ ChangeDetection Deployment
+<p align="center">
+  <img src="/img/aac.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **ChangeDetection.io** offers a free and open-source solution for web page monitoring, notifications, and change detection. With this platform, users can track alterations to web pages and receive timely notifications. The service aims to provide an accessible and efficient way to stay informed about changes on the web, making it a valuable tool for various monitoring needs.
 
@@ -63,11 +66,7 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/c45.png)
-![Alt Text](/img/c55.png)
-![Alt Text](/img/c555.png)
-![Alt Text](/img/c55555.png)
-![Alt Text](/img/c555555.png)
+<img src="/img/c45.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/c55.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/c555.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/c55555.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/c555555.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -79,17 +78,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About ChangeDetectionimage we used.**
-
-This is the official ChangeDetectionimage.
-
-**Can I deploy my own ChangeDetectionimage with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

@@ -3,12 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 🎨 DRAW.IO Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/sdfe.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🎨 DRAW.IO Deployment
 
 # Draw.io: Unleash Your Visual Creativity
 
@@ -83,9 +86,7 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/r4.jpg)
-![Alt Text](/img/r5.jpg)
-![Alt Text](/img/r6.jpg)
+<img src="/img/r4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/r6.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -95,17 +96,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** Draw.io  **image we used.**
-
-This is the official Draw.io  mage.
-
-**Can I deploy my own media** Draw.io **with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

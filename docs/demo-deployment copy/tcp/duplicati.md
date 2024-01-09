@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/a3w.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+# ⚙️ Duplicati
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# ⚙️ Duplicati
+<p align="center">
+  <img src="/img/a3w.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Duplicati** is a versatile backup solution that seamlessly integrates with standard protocols including FTP, SSH, and WebDAV. It extends its compatibility to well-known cloud services such as Microsoft OneDrive, Amazon Cloud Drive & S3, Google Drive, box.com, Mega, hubiC, and more. This broad support makes Duplicati a robust choice for users seeking flexibility and compatibility across various storage and service options.
 
@@ -64,11 +67,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/o8.png)
-![Alt Text](/img/o9.png)
-![Alt Text](/img/o77.png)
-![Alt Text](/img/o776.png)
-![Alt Text](/img/o777.png)
+<img src="/img/o8.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/o9.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/o77.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/o776.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/o777.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -81,17 +83,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Duplicati image we used.**
-
-This is the official Duplicatiimage.
-
-**Can I deploy my own Duplicati image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

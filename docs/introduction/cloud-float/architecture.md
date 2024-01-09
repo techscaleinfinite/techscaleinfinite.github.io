@@ -2,11 +2,13 @@
 sidebar_position: 1
 ---
 
+
+
+# ☁ Architecture
+
 <p align="center">
   <img src="/img/ohh.jpg" alt="Alt Text" width="400"/>
 </p>
-
-# ☁ Architecture
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

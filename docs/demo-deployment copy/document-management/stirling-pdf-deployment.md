@@ -3,15 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/gchnh.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🖥 Stirling PDF Deployment
 
-### Stirling PDF: Your PDF Wizard
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/gchnh.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Stirling PDF** is a web-based PDF manipulation tool that acts like a digital wizard for your documents. It can split, merge, convert, and compress PDFs, offering a range of enchanting features such as page reordering, image addition, rotation, password protection, watermarking, and more. The tool combines magic and technology to transform mundane PDFs into versatile and visually appealing documents.
 ### Exposed Ports
@@ -57,10 +59,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/cs.jpg)
-![Alt Text](/img/fee2.jpg)
-![Alt Text](/img/sffq.jpg)
-![Alt Text](/img/asq.jpg)
+<img src="/img/cs.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/fee2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/sffq.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/asq.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -71,18 +72,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Stirling PDF  image we used.**
-
-This is the official Stirling PDF image.
-
-**Can I deploy my own Stirling PDF image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
-
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 ### Join us
 
 Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going!&#x20;

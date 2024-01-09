@@ -3,12 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 🎬 Grav - Fast, Simple, and Flexible Web Platform
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/e3d.png" alt="Alt Text" width="25%"/>
 </p> 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🎬 Grav - Fast, Simple, and Flexible Web Platform
 
 Grav is a cutting-edge, file-based web platform known for its speed, simplicity, and flexibility. Utilizing a file-based architecture, Grav simplifies content management and web development. Its fast performance and straightforward structure make it an excellent choice for developers seeking a nimble and adaptable solution for building websites. Grav's innovative approach to web platforms sets it apart, providing a user-friendly experience for both content creators and developers.
 
@@ -67,11 +70,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/b5.png)
-![Alt Text](/img/b45.png)
-![Alt Text](/img/b53.png)
-![Alt Text](/img/b54.png)
-![Alt Text](/img/b55.png)
+<img src="/img/b5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/b45.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/b53.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/b54.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/b55.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -82,17 +82,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About grav image we used.**
-
-This is the official grav image.
-
-**Can I deploy my own grav image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

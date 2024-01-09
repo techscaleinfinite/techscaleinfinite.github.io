@@ -3,14 +3,14 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/swdww.jpg" alt="Alt Text" width="25%"/>
-</p>
-
+# 🖥 Radicale Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 🖥 Radicale Deployment
+
+<p align="center">
+  <img src="/img/swdww.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 ### What's is Radicale?
 
@@ -69,12 +69,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/dwd3.jpg)
-![Alt Text](/img/jjh4.jpg)
+<img src="/img/dwd3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/jjh4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/sder.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/swd.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vsvs.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/sder.jpg)
-![Alt Text](/img/swd.jpg)
-![Alt Text](/img/vsvs.jpg)
 
 ### Youtube Tutorial&#x20;
 
@@ -84,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About radical image we used.**
-
-This is the official radical image.
-
-**Can I deploy my own radical image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

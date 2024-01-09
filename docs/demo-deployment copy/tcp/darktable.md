@@ -3,14 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/xxcsw.png" alt="Alt Text" width="25%"/>
-</p> 
+
+
+
+# Darktable Deployment
+
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# Darktable Deployment
+<p align="center">
+  <img src="/img/xxcsw.png" alt="Alt Text" width="25%"/>
+</p> 
+
 **darktable:**
 An open-source photography workflow application and raw developer, darktable serves as a virtual lighttable and darkroom for photographers. It organizes digital negatives in a database, offers a zoomable lighttable for viewing, and facilitates the development and enhancement of raw images, providing comprehensive tools for photographers.
 
@@ -73,13 +78,12 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 
-![Alt Text](/img/v66.png)
+<img src="/img/v66.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/v44.png)
-![Alt Text](/img/v55.png)
+<img src="/img/v44.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/v55.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/v77.png)
-![Alt Text](/img/v88.png)
+<img src="/img/v77.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/v88.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -98,17 +102,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About darktable image we used.**
-
-This is the official darktable image.
-
-**Can I deploy my own darktable image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

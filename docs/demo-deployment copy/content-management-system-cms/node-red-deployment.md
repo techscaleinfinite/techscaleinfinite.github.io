@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/sad.jpg" alt="Alt Text" width="25%"/>
-</p>
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🖥 Node Red Deployment
 
 # Node-RED: Unleash Creativity in Connectivity
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/sad.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 **Node-RED** transforms programming into an imaginative journey, allowing users to visually wire together hardware devices, APIs, and online services. The browser-based editor acts as a canvas, letting users intuitively connect nodes like digital Lego blocks to create intricate flows. With one-click deployment, your ideas spring to life instantly. For those with a penchant for JavaScript, the editor includes a rich text editor for crafting intricate functions.
 
@@ -74,9 +77,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
  
-![Alt Text](/img/zz1.jpg)
-![Alt Text](/img/kk3.jpg)
-![Alt Text](/img/oo3.jpg)
+<img src="/img/zz1.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/kk3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/oo3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 ### Youtube Tutorial&#x20;
 
@@ -86,17 +88,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About media** Node-RED **we used.**
-
-This is the official Node-RED image.
-
-**Can I deploy my own media** Node-RED **with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

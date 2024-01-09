@@ -2,11 +2,14 @@
 sidebar_position: 5
 ---
 
+# ☁ Dashboard page
+
+
 <p align="center">
   <img src="/img/sfsf8.jpg" alt="Alt Text" width="400"/>
 </p>
 
-# ☁ Dashboard page
+
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 &#x20;Here, you'll gain a holistic view of your app's health and vitality, all wrapped up in stunning visualizations.

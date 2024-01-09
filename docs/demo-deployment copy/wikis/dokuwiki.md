@@ -3,15 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/d23.png" alt="Alt Text" width="25%"/>
-</p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # 📔 Doku Wiki Deployment
 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
+<p align="center">
+  <img src="/img/d23.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **DokuWiki** is a standards-compliant wiki tailored for efficient documentation creation. Ideal for small organizations, it boasts simplicity and ease of use. Noteworthy is its data storage approach, utilizing plain text files, eliminating the need for a database. This makes DokuWiki a straightforward and accessible choice for those prioritizing simplicity and efficiency in their documentation processes.
 
@@ -63,14 +63,14 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/m3.png)
-![Alt Text](/img/m44.png)
-![Alt Text](/img/m54.png)
-![Alt Text](/img/m55.png)
-![Alt Text](/img/m554.png)
 
 
 
+<img src="/img/m3.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/m44.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/m54.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/m55.png)" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/m554.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 ### Youtube Tutorial&#x20;
 
@@ -80,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Doku Wiki image we used.**
-
-This is the official Doku Wiki image.
-
-**Can I deploy my ow Doku Wiki image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

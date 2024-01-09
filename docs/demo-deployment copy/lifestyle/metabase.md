@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+## Metabase - Simplifying Data Exploration
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/ddd3.png" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-## Metabase - Simplifying Data Exploration
 
 **Metabase** is an accessible and open-source platform designed for effortless data inquiry and knowledge acquisition within your organization. It provides a user-friendly interface for individuals across your company to pose questions and glean insights from the available data.
 
@@ -66,30 +68,17 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/g6.png)
-![Alt Text](/img/g56.png)
-![Alt Text](/img/g66.png)
+<img src="/img/g6.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g56.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g66.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/g565.png)
-![Alt Text](/img/g666.png)
-![Alt Text](/img/g5654.png)
+<img src="/img/g565.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g666.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g5654.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About metabase image we used.**
-
-This is the official metabase  mage.
-
-**Can I deploy my own media metabase with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

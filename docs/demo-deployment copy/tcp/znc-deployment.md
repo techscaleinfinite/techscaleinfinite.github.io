@@ -3,16 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/sd.jpg" alt="Alt Text" width="25%"/>
-</p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # ⚙️ Znc Deployment
 
-### ZNC: IRC Network Bouncer
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
+
+<p align="center">
+  <img src="/img/sd.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 ZNC, an IRC network bouncer or BNC, enhances the IRC experience by allowing users to connect via an intermediary server. Users can detach clients gracefully, focus on specific channels, consolidate nicknames, and connect from multiple devices simultaneously. ZNC ensures security, message buffering, and customization, providing a persistent IRC presence with user-friendly interfaces for management.
 
@@ -66,13 +66,13 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/433.jpg)
-![Alt Text](/img/432.jpg)
-![Alt Text](/img/asd.jpg)
 
-![Alt Text](/img/qq1.jpg)
-![Alt Text](/img/dd3.jpg)
 
+<img src="/img/433.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/432.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/asd.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/qq1.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/dd3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 ### Youtube Tutorial&#x20;
 
@@ -82,17 +82,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About ZNC image we used.**
-
-This is the official ZNC image.
-
-**Can I deploy my own ZNC image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

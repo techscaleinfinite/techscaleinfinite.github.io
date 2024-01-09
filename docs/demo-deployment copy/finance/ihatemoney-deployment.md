@@ -3,16 +3,20 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/e5r.png" alt="Alt Text" width="25%"/>
-</p> 
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 💹 ihatemoney Deployment
 
 ### "I Hate Money": Simplifying Shared Finances
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/e5r.png" alt="Alt Text" width="25%"/>
+</p> 
 
 "I Hate Money" is a web application designed to streamline shared budget management. It effortlessly tracks expenses, calculates debts, and suggests efficient ways to settle bills, making financial coordination within groups seamless. With an intuitive interface, real-time updates, and a focus on privacy, it transforms financial discussions into a harmonious experience. Accessible across multiple platforms, this tool ensures that managing shared expenses becomes a stress-free endeavor.
 
@@ -67,13 +71,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/ww21.jpg)
-![Alt Text](/img/eee3.jpg)
-![Alt Text](/img/f4.jpg)
+<img src="/img/ww21.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/eee3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ge3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/gg42.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ee333.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/ge3.jpg)
-![Alt Text](/img/gg42.jpg)
-![Alt Text](/img/ee333.jpg)
 
 ### Youtube Tutorial&#x20;
 
@@ -81,17 +81,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About I Hate Money image we used.**
-
-This is the official I Hate Money  mage.
-
-**Can I deploy my own media I Hate Money with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

@@ -3,14 +3,14 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/jnhnn.png" alt="Alt Text" width="25%"/>
-</p> 
-
+# taskwarrior-web
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# taskwarrior-web
+
+<p align="center">
+  <img src="/img/jnhnn.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Taskwarrior-Web Container:** Run the Taskwarrior-Web UI synchronized with a Taskwarrior server. This container enables seamless integration, allowing users to manage tasks using the Taskwarrior-Web interface in sync with a Taskwarrior server.
 
@@ -66,24 +66,18 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/50.png)
-
-![Alt Text](/img/45.png)
-
-![Alt Text](/img/46.png)
-
-![Alt Text](/img/47.png)
-
-![Alt Text](/img/48.png)
-
-![Alt Text](/img/49.png)
 
 
 
 
 
 
-
+<img src="/img/50.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/45.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/46.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/47.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/48.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/49.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -95,17 +89,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About taskwarrior-webimage we used.**
-
-This is the official taskwarrior-webimage.
-
-**Can I deploy my ow taskwarrior-webimage with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

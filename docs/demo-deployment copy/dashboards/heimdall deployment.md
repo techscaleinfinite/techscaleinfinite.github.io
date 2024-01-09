@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ddf.jpg" alt="Alt Text" width="25%"/>
-</p> 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🖥 Heimdall Deployment
 
-### Heimdall Dashboard Overview
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/ddf.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Heimdall Application Dashboard** is a unified hub for organizing web applications, tools, and services. It eliminates tab overload by neatly organizing digital essentials in one visually pleasing space. With extensive customization options, Heimdall allows users to tailor their dashboard, making it a personal canvas. The platform combines aesthetic appeal with efficiency, providing API access for quick app navigation and extending beyond apps to offer limitless organization possibilities. Heimdall transforms digital chaos into an elegantly orchestrated symphony, offering a more organized and enjoyable online experience.
 
@@ -65,11 +67,7 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/bfl5.jpg)
-![Alt Text](/img/fmgm4.jpg)
-![Alt Text](/img/dmm4.jpg)
-![Alt Text](/img/grr.jpg)
-![Alt Text](/img/ejf.jpg)
+<img src="/img/bfl5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/fmgm4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/dmm4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/grr.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ejf.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -82,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** _Heimdall_ **image we used.**
-
-This is the official _Heimdall_ image.
-
-**Can I deploy my own** _Heimdall_ **image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

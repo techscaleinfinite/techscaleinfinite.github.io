@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/dd311.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+# ☕ Calligra
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# ☕ Calligra
+<p align="center">
+  <img src="/img/dd311.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Calligra:**
 An office and graphic art suite developed by KDE. Available across desktop PCs, tablet computers, and smartphones, Calligra comprises applications for word processing, spreadsheets, presentations, vector graphics, and database editing, providing a comprehensive suite for various productivity needs.
@@ -61,13 +64,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/g65.png)
+<img src="/img/g65.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
+<img src="/img/g2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g3.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g44.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/g2.png)
-![Alt Text](/img/g3.png)
-![Alt Text](/img/g4.png)
-![Alt Text](/img/g44.png)
 
 
 
@@ -81,17 +81,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Calligra image we used.**
-
-This is the official Calligra  image.
-
-**Can I deploy my own Calligra image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

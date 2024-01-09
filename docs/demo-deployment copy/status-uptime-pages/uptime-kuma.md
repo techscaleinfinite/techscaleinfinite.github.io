@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ggdg.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+# 📊 uptime kuma
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 📊 uptime kuma
+<p align="center">
+  <img src="/img/ggdg.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 ### Uptime Kuma: Your Digital Sentry
 
@@ -62,13 +65,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
+<img src="/img/t4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/gg5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/mm4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/t4.jpg)
-![Alt Text](/img/gg5.jpg)
-![Alt Text](/img/mm4.jpg)
-![Alt Text](/img/ff4.jpg)
-![Alt Text](/img/m3.jpg)
-![Alt Text](/img/eee33.jpg)
+<img src="/img/ff4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/m3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/eee33.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 ### Youtube Tutorial&#x20;
 
@@ -78,17 +78,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About uptime kuma image we used.**
-
-This is the official uptime kuma  image.
-
-**Can I deploy my own uptime kuma image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

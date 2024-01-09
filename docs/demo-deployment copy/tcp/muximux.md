@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ljh.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+# muximux Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# muximux Deployment
+<p align="center">
+  <img src="/img/ljh.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Muximux:**
 A lightweight portal designed for managing Home Theater PC (HTPC) apps. Muximux allows users to view and control their HTPC applications through a single interface, eliminating the need for multiple tabs or bookmarks. It operates with just a PHP-enabled web server, providing a streamlined solution for HTPC app management.
@@ -76,13 +79,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 
-![Alt Text](/img/a1.png)
-![Alt Text](/img/a2.png)
+<img src="/img/a1.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/a2.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/a3.png)
-![Alt Text](/img/a4.png)
-![Alt Text](/img/a6.png)
-![Alt Text](/img/a7.png)
+<img src="/img/a3.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/a4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/a6.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/a7.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -104,17 +103,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About muximux image we used.**
-
-This is the official muximux image.
-
-**Can I deploy my own muximux image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

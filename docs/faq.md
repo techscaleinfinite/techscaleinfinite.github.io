@@ -2,13 +2,16 @@
 sidebar_position: 5
 ---
 
+
+
+# ❓ FAQ
+
+
 <p align="center">
   <img src="/img/scvs.jpg" alt="Alt Text" width="380"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# FAQ
 
 **Do my applications Highly available, scalable, and reliable?**
 

@@ -3,14 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/rrv.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
+# 📊 nullboard Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 📊 nullboard Deployment
+
+<p align="center">
+  <img src="/img/rrv.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Nullboard:** A minimalist kanban board and task list manager designed for compactness, readability, and quick usability. This lightweight tool offers a streamlined approach to visualizing and managing tasks in a simple yet efficient manner.
 
@@ -65,15 +66,13 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/ttt.png)
-
-![Alt Text](/img/ttf.png)
-![Alt Text](/img/ttg.png)
-![Alt Text](/img/tth.png)
-
-![Alt Text](/img/ttv.png)
 
 
+<img src="/img/ttt.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ttf.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ttg.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/tth.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/ttv.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 ### Youtube Tutorial&#x20;
@@ -84,17 +83,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About**  nullboard**image we used.**
-
-This is the official nullboard image.
-
-**Can I deploy my own** nullboard **image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

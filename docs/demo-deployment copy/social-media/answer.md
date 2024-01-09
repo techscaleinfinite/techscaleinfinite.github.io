@@ -3,16 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+
+# 📱 AnswerDeployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/34.png" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 📱 AnswerDeployment
-
-## Answer - Your Q&A Platform for Teams
 
 **Answer** is a versatile Q&A platform designed for teams of all sizes. Whether you need a community forum, a help center, or a knowledge management platform, Answer has you covered. With its user-friendly interface and powerful features, Answer ensures seamless collaboration and effective information sharing within your team.
 
@@ -67,12 +68,9 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 ### Visual Snapshots
-![Alt Text](/img/u55.png)
-![Alt Text](/img/u66.png)
-![Alt Text](/img/u76.png)
-![Alt Text](/img/u664.png)
-![Alt Text](/img/u665.png)
-![Alt Text](/img/u666.png)
+<img src="/img/u55.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u66.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u76.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/u664.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u665.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u666.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -84,17 +82,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About  Answerimage we used.**
-
-This is the officia Answerimage.
-
-**Can I deploy my own Answerimage with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

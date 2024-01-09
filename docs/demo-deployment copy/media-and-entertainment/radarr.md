@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+
+# Radarr' Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/scaas.png" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# Radarr' Deployment
 
 **Radarr:**
 A fork of Sonarr designed for managing movies, inspired by Couchpotato. Radarr is a powerful tool for automating the downloading and organization of movies, providing a user-friendly interface for movie enthusiasts.
@@ -68,12 +71,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/z21.png)
-![Alt Text](/img/z22.png)
-![Alt Text](/img/z33.png)
-![Alt Text](/img/z55.png)
-![Alt Text](/img/z88.png)
-![Alt Text](/img/z551.png)
+<img src="/img/z21.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/z22.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/z33.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/z55.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/z88.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/z551.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -86,18 +86,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Radarr' image we used.**
-
-This is the official Radarr' image.
-
-**Can I deploy my own Radarr' image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
-
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 ### Join us
 
 Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going!&#x20;

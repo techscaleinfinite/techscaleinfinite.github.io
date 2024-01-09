@@ -3,14 +3,14 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ddb.jpg" alt="Alt Text" width="25%"/>
-</p> 
+# ⚙️String-IS deployment
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# ⚙️String-IS deployment
+<p align="center">
+  <img src="/img/ddb.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
  it is an open-source, privacy-focused toolkit tailored for developers. With a strong emphasis on user privacy, it refrains from setting any cookies and adheres to a strict Content Security Policy. As an opinionated conversion tool, it prioritizes transparency and security, making it a trustworthy choice for developers seeking reliable and privacy-friendly solutions.
 
@@ -64,13 +64,7 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/e234.png)
-![Alt Text](/img/e343.png)
-![Alt Text](/img/e422.png)
-![Alt Text](/img/e443.png)
-![Alt Text](/img/e444.png)
-![Alt Text](/img/e553.png)
-
+<img src="/img/e234.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/e343.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/e422.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/e443.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/e444.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/e553.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -81,17 +75,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About String-IS image we used.**
-
-This is the official String-IS image.
-
-**Can I deploy my own String-IS image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

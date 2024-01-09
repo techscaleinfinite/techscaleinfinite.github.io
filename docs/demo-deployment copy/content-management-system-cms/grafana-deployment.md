@@ -3,12 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 💻 Grafana deployment
+
 <p align="center">
   <img src="/img/vf.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 💻 Grafana deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 # Grafana: Your Data's Picasso and Detective
 
@@ -69,28 +73,11 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/nn6.jpg)
-![Alt Text](/img/hbh7.jpg)
-![Alt Text](/img/jjj6.jpg)
-![Alt Text](/img/ght6.jpg)
+<img src="/img/nn6.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/hbh7.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/jjj6.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ght6.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 ### FAQ
 
-**About grafana image we used.**
-
-This is the official grafana image.
-
-**Are there any restrictions on adding data sources ?**
-
-you can add any data source that grafana supports.
-
-**Can i deploy older version of grafana or my own modified grafana image ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

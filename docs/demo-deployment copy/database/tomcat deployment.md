@@ -3,15 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/efefg.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🐈 Tomcat Deployment
 
 ### Apache Tomcat Overview
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/efefg.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Apache Tomcat** is an open-source web server and servlet container, serving as both a web server and a Java servlet/JSP container. It facilitates Java-based web application deployment, handling HTTP requests, servlet processing, and JSP execution. With connectors for communication, context isolation for applications, and a web-based administrative interface, Tomcat provides a configurable and secure platform. Its vibrant community and compatibility with Java EE standards make it a preferred choice for hosting dynamic Java web content.
 ### Exposed Ports
@@ -74,18 +78,7 @@ Check out our youtube video for more clarification.
 
 
 ### FAQ
-
-**About tomcat image we used.**
-
-This is the officia tomcat image.
-
-**Can I deploy my own tomcat image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

@@ -1,11 +1,13 @@
 
 
-<p align="center">
-  <img src="/img/vbvcx.jpg" alt="Alt Text" width="400"/>
-</p>
 
 # ☁ Artificial Intelligence
 
+
+
+<p align="center">
+  <img src="/img/vbvcx.jpg" alt="Alt Text" width="400"/>
+</p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

@@ -3,15 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 📙 rss bridge  Deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/e45.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 📙 rss bridge  Deployment
-
-### RSS-Bridge: Bridging the Gap for Seamless Content Tracking
 
 RSS-Bridge acts as a digital bridge, enabling users to follow content from platforms without native feeds. Offering diverse bridges for YouTube, Twitter, Telegram, Reddit, and more, it transforms web content into personalized feeds. With simple configuration, automatic updates, and privacy emphasis, RSS-Bridge ensures an organized and continuous stream of updates, making content tracking across platforms effortless and accessible.
 
@@ -73,9 +75,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/vtg.jpg)
-![Alt Text](/img/ewdf.jpg)
-![Alt Text](/img/tgh.jpg)
+<img src="/img/vtg.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ewdf.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/tgh.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -87,17 +88,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** rss bridge **image we used.**
-
-This is the officia rss bridge  image.
-
-**Can I deploy my own** rss bridge **image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

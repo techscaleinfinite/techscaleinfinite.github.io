@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# Flame - Self-Hosted Startpage
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/xda.png" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# Flame - Self-Hosted Startpage
 
 Flame is a self-hosted startpage designed for your server, drawing heavy inspiration from SUI. Setting up and using Flame is a breeze, thanks to its user-friendly interface. With built-in editors, Flame allows you to effortlessly create your personalized application hub without the need for manual file editing. Simplify your startpage customization with Flame.
 
@@ -64,12 +66,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/cbc.png)
-![Alt Text](/img/cbd.png)
-![Alt Text](/img/cc.png)
-![Alt Text](/img/ccvb.png)
-![Alt Text](/img/cdc.png)
-![Alt Text](/img/cfc.png)
+<img src="/img/cbc.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/cbd.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/cc.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/ccvb.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/cdc.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/cfc.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -80,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About flame image we used.**
-
-This is the official flame image.
-
-**Can I deploy my own flame image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

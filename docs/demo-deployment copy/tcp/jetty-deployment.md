@@ -3,16 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# ⚙️ Jetty Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/uu0.png" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# ⚙️ Jetty Deployment
-
-### Jetty: Agile Web Server and Servlet Container
 
 Jetty, or Eclipse Jetty, is a Java-based open-source web server and servlet container celebrated for its scalability and lightweight design.
 
@@ -66,17 +66,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About httpd image we used.**
-
-This is the official httpd image.
-
-**Can I deploy my own httpd image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

@@ -3,15 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/ddve.jpg" alt="Alt Text" width="25%"/>
-</p>  
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🖥 Mongo DB
 
 ### MongoDB: The Gem of NoSQL
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/ddve.jpg" alt="Alt Text" width="25%"/>
+</p>  
 
 **MongoDB** shines as a NoSQL database, offering flexibility and scalability. Departing from traditional databases, it embraces document orientation with BSON, allowing diverse and nested data structures. MongoDB's dynamic schema, powerful query language, and CRUD operations provide a creative and efficient approach to data management. It's a gem for those who seek a flexible, document-friendly, and infinitely scalable database solution.
 
@@ -129,9 +133,7 @@ By following these steps, you can effortlessly deploy an mongodb instance with y
 
 ### Visual Snapshots
 
-![Alt Text](/img/ee2.jpg)
-![Alt Text](/img/ef33.jpg)
-![Alt Text](/img/rr32.jpg)
+<img src="/img/ee2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ef33.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/rr32.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -139,21 +141,7 @@ By following these steps, you can effortlessly deploy an mongodb instance with y
 
 ### FAQ
 
-**About Mongo DB image we used.**
-
-This is the official Mongo DB image.
-
-**Are there any restrictions on adding data sources ?**
-
-you can add any data source that Mongo Db supports.
-
-**Can i deploy older version of  Mondo or my own modified Mongo db image ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

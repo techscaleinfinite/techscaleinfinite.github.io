@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+
+# blender Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/scsa.png" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# blender Deployment
 
 **blender:**
 Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games.
@@ -67,12 +70,11 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/k888.png)
+<img src="/img/k888.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/k65.png)
-![Alt Text](/img/k78.png)
-![Alt Text](/img/k777.png)
-![Alt Text](/img/k786.png)
+<img src="/img/k65.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/k78.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/k777.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/k786.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -87,17 +89,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About blender image we used.**
-
-This is the official blender image.
-
-**Can I deploy my own blender image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

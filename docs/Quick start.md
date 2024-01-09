@@ -7,13 +7,15 @@ slug: /
 
 
 
+
+
+# 💥 Quick Start
+
 <p align="center">
   <img src="/img/wdwd.png" alt="Alt Text" width="680"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '14pt' }}>
-
-# **Quick Start**
 
 Welcome to ScaleInfinite, where deploying and managing applications becomes a seamless experience! Our Quick Start guide is designed to help you navigate the first steps effortlessly
 

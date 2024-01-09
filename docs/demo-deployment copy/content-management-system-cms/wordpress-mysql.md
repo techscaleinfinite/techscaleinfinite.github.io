@@ -3,15 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/fds.jpg" alt="Alt Text" width="25%"/>
-</p>
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🖥 WordPress MySQL
 
 # WordPress: Crafting Websites with Ease and Security
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/fds.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 **WordPress** is a dynamic, open-source content management system (CMS) powered by PHP and designed to seamlessly integrate with MySQL or MariaDB databases. As an open-source CMS, it provides an adaptable platform for website creation and management. WordPress utilizes PHP to dynamically generate web content, ensuring flexibility.
 
@@ -95,30 +99,14 @@ Exposing 3306 and 80 ports on the container.
 
 ### Visual snapshots
 
-![Alt Text](/img/zz3.jpg)
-![Alt Text](/img/ddq.jpg)
-![Alt Text](/img/rr5.jpg)
-![Alt Text](/img/cccf.jpg)
+<img src="/img/zz3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ddq.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/rr5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/cccf.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
 ### FAQ
 
-**About Wordpress mysql image we used.**
-
-This image is maintained by the scaleinfinite.
-
-**Is Mysql is in the same container ?**
-
-Yes, both WordPress and MySQL are inbuilt into the same container securely.
-
-**Do the image secure to use ?**
-
-The image is created and verified by the scaleinfinite. it is a 100% secure image.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

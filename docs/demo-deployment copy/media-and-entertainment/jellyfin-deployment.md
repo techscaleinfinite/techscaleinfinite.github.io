@@ -3,15 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/dsd.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 📺 Jellyfin Deployment
 
-# Jellyfin: Your Personal Media Maestro
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/dsd.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Jellyfin** is the open-source maestro for your personal media symphony, providing a cost-free platform to organize and stream diverse content types. Its versatility extends to movies, music, and photos, ensuring your entire collection is easily accessible. Jellyfin harmoniously streams your media to various devices, allowing you to indulge in your favorites wherever you go. With customizable server aesthetics, it creates a private media haven tailored to your style. Security is paramount with Jellyfin's self-hosted solution, ensuring your digital treasures remain private and protected. In a media-dominated world, Jellyfin stands as your personal curator, delivering a neat, accessible, and private collection curated to your preferences. 🎬🎵📷
 
@@ -66,33 +68,16 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/l7.jpg)
-![Alt Text](/img/k5k.jpg)
-![Alt Text](/img/ll.jpg)
-![Alt Text](/img/ooog.jpg)
-![Alt Text](/img/kkkj.jpg)
-![Alt Text](/img/kkn.jpg)
+<img src="/img/l7.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/k5k.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ll.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/ooog.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/kkkj.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/kkn.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
 
 ### FAQ
 
-**About Jellyfin image we used.**
-
-This is the official linuxserver/jellyfin image.
-
-**Are there any restrictions on adding data sources ?**
-
-you can add any data source that Jellyfin supports.
-
-**Can i deploy older version of Jellyfin or my own modified Jellyfin image ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

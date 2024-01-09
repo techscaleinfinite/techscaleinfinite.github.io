@@ -1,10 +1,13 @@
+---
+sidebar_position: 10
+---
+
+# 💴 Billing and usage
 
 
 <p align="center">
   <img src="/img/dbb.jpg" alt="Alt Text" width="400"/>
 </p>
-
-# 💴 Billing and usage
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

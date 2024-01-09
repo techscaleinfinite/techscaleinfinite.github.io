@@ -51,6 +51,8 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 Absolutely, you can install your own Static application, Make Sure you have proper Docker image created on your dockerhub.
 
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
+
 #### [Join us](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146)&#x20;
 
 <details>

@@ -2,13 +2,15 @@
 sidebar_position: 7
 ---
 
+
+
+# ☁ User info Page
+
 <p align="center">
   <img src="/img/vvdu.jpg" alt="Alt Text" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# ☁ User info Page
 
 _**User Info Page in Scale Infinite**_
 

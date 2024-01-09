@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/xcs.jpg" alt="Alt Text" width="25%"/>
-</p> 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🎵 Spotify Deployment
 
-# Spotify: Your Musical Companion 🎶
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/xcs.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Spotify** is a global music streaming sensation, offering an extensive library of diverse genres and a user-friendly interface. Smart algorithms curate personalized playlists, while users can effortlessly create and share their own. Beyond music, Spotify is a hub for podcasts, audiobooks, and exclusive content. Premium subscribers enjoy perks like offline listening and high-quality streaming. The platform fosters a global community, connecting music enthusiasts worldwide for a shared musical experience. In summary, Spotify is your go-to platform for a personalized and immersive audio journey.
 
@@ -59,8 +61,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/dfr.jpg)
-![Alt Text](/img/eee6.jpg)
+<img src="/img/dfr.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/eee6.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -71,18 +73,7 @@ Check out our youtube video for more clarification.
 
 
 ### FAQ
-
-**About SPOTIFY image we used.**
-
-This is the official SPOTIFY image.
-
-**Can I deploy my own SPOTIFY image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# ☁ Own Cloud Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/ty5.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# ☁ Own Cloud Deployment
 
 ### OwnCloud Overview
 
@@ -77,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About owncloud image we used.**
-
-This is the official owncloud image.
-
-**Can I deploy my own owncloud image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

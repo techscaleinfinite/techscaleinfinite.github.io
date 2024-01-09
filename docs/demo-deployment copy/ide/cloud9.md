@@ -3,15 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+#  🖥️ Cloud9 - Web-Based IDE with Terminal Access
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/xcxa.png" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-
-#  🖥️ Cloud9 - Web-Based IDE with Terminal Access
 
 Cloud9 is a comprehensive web-based Integrated Development Environment (IDE) that offers terminal access. This container is designed to run the core Software Development Kit (SDK) of Cloud9 locally, enabling developers to create and enhance plugins seamlessly. With its user-friendly interface and terminal capabilities, Cloud9 facilitates efficient and collaborative coding. As an open-source platform, Cloud9 empowers developers with a flexible and feature-rich environment for web development.
 
@@ -60,12 +63,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/78.png)
-![Alt Text](/img/71.png)
-![Alt Text](/img/73.png)
-
-![Alt Text](/img/74.png)
-![Alt Text](/img/77.png)
+<img src="/img/78.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/71.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/73.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/74.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/77.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 ### Youtube Tutorial&#x20;
@@ -76,17 +75,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About cloud9 image we used.**
-
-This is the official cloud9 image.
-
-**Can I deploy my own cloud9 image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

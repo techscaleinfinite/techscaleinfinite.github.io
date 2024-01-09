@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/090.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+
+# 📙 LazyLibrarian - Automated Digital Reading Metadata Manager
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# 📙 LazyLibrarian - Automated Digital Reading Metadata Manager
+<p align="center">
+  <img src="/img/090.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 LazyLibrarian is a versatile program designed to streamline your digital reading experience. It allows users to follow authors and automatically retrieve metadata for their digital reading needs. By leveraging sources such as Goodreads, LibraryThing, and optionally Google Books, LazyLibrarian ensures comprehensive author and book information. This automation eliminates the manual effort of managing metadata, making it an essential tool for those seeking an efficient and organized approach to digital reading.
 
@@ -62,11 +66,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/81.png)
-![Alt Text](/img/84.png)
-![Alt Text](/img/86.png)
-![Alt Text](/img/87.png)
-![Alt Text](/img/89.png)
+<img src="/img/81.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/84.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/86.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/87.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/89.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -78,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About linuxserver/lazylibrarian image we used.**
-
-This is the official  linuxserver/lazylibrarian image.
-
-**Can I deploy my own linuxserver/lazylibrarian image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

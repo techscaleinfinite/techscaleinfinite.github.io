@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
@@ -13,14 +14,6 @@ In the realm of digital productivity, an office suite stands as the Swiss Army k
 
 In a nutshell, an office suite is the catalyst for unleashing your productivity potential. It empowers you to create, calculate, and communicate with finesse, all while maintaining a professional edge. So, as you embark on your next digital endeavor, remember that your trusty office suite is more than just software—it's your partner in productivity, your creative canvas, and your ticket to success.
 
-### Sub-page Explanation:
-
-
-
-
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |   |   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | - | - |
-|  |   |   |
 
 <details>
 

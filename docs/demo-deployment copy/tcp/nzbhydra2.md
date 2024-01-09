@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# nzbhydra2 Deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/d4r.png" alt="Alt Text" width="25%"/>
 </p> 
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# nzbhydra2 Deployment
 **NZBHydra2:**
 A meta-search application for NZB indexers, NZBHydra2 is the "spiritual successor" to NZBmegasearcH and an evolution of the original NZBHydra. It facilitates easy access to various raw and newznab-based indexers. NZBHydra 2 is designed to replace NZBHydra 1, supporting migration from V1 with a note of potential compatibility issues. Users are advised to back up their old configuration before transitioning to the new version.
 
@@ -71,15 +75,12 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
+<img src="/img/zz3.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/zz3.png)
+<img src="/img/zz1.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/zz2.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/zz1.png)
-![Alt Text](/img/zz2.png)
+<img src="/img/zz4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/zz5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/zz7.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/zz4.png)
-![Alt Text](/img/zz5.png)
-![Alt Text](/img/zz7.png)
 
 
 
@@ -97,17 +98,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About nzbhydra2 image we used.**
-
-This is the official nzbhydra2 image.
-
-**Can I deploy my own nzbhydra2 image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

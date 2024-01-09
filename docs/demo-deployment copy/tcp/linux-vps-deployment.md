@@ -4,16 +4,17 @@ draft: false
 import Comments from '/src/components/HomepageFeatures/Comment';
 
 
+
+
+
+
+# 🖥 Linux VPS deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/vbfbn.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🖥 Linux VPS deployment
-
-### Linux VPS: Your Virtual Playground
 
 A Linux Virtual Private Server (VPS) provides a personal virtual space for projects and experiments. Rapid deployment, remote accessibility, complete control, and isolation from other users make it a versatile tool. With the ability to customize and configure your environment, a Linux VPS serves as a dynamic and secure platform for various applications.
 ### Exposed Ports
@@ -69,8 +70,7 @@ Exposing the port '80' to access the vps.
 For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
 
 ### Visual Snapshots
-![Alt Text](/img/add7.jpg)
-![Alt Text](/img/sds9.jpg)
+<img src="/img/add7.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/sds9.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -83,17 +83,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Linux VPS image we used.**
-
-This image is maintained by the scale infinite.
-
-**Do the image secure to use?**
-
-The image is created and verified by the scale infinite. it is a 100% secure image.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

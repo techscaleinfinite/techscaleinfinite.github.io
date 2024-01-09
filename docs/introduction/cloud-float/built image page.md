@@ -1,10 +1,13 @@
+---
+sidebar_position: 9
+---
 
+# ☁ Built Image Page
 
 <p align="center">
   <img src="/img/zv.jpg" alt="Alt Text" width="400"/>
 </p>
 
-# ☁ Built Image Page
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 _**Building a Docker image is a fundamental step in containerized application deployment.**_&#x20;

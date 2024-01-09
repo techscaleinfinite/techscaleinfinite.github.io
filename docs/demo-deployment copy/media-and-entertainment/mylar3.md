@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/w1a.png" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 
 # 🎵 Mylar3 Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/w1a.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Mylar3:**
 An automated Comic Book downloader (cbr/cbz) written in Python, compatible with NZB and torrents. Mylar3 supports integration with SABnzbd, NZBGET, various torrent clients, and Direct Download Links (DDL), providing versatile options for acquiring comic book content.
@@ -69,12 +71,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/g65.png)
+<img src="/img/g65.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/g2.png)
-![Alt Text](/img/g4.png)
-![Alt Text](/img/g3.png)
-![Alt Text](/img/g44.png)
+<img src="/img/g2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g3.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/g44.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -87,17 +86,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Mylar3 image we used.**
-
-This is the official Mylar3 image.
-
-**Can I deploy my own Mylar3 image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

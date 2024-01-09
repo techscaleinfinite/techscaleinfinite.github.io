@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/99i.png" alt="Alt Text" width="25%"/>
-</p> 
+
+
+
+
+# ⚙️  Raneto Deployment
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# ⚙️  Raneto Deployment
+<p align="center">
+  <img src="/img/99i.png" alt="Alt Text" width="25%"/>
+</p> 
 
 Raneto is an open-source Knowledgebase platform designed to empower your Knowledgebase using static Markdown files. It simplifies the creation and management of your knowledge repository without the need for a complex system. By leveraging static Markdown files, Raneto provides an efficient and user-friendly solution for organizing and sharing information. It is an ideal choice for those seeking a straightforward Knowledgebase platform that is easy to set up and maintain. With Raneto, you can effortlessly power your Knowledgebase with the simplicity and versatility of Markdown.
 
@@ -65,13 +69,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 ### Visual Snapshots
-![Alt Text](/img/z1.png)
-![Alt Text](/img/z2.png)
-![Alt Text](/img/z3.png)
+<img src="/img/z1.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/z2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/z3.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/z4.png)
-![Alt Text](/img/z5.png)
-![Alt Text](/img/z6.png)
+<img src="/img/z4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/z5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/z6.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -82,17 +83,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Raneto image we used.**
-
-This is the official Raneto image.
-
-**Can I deploy my own Raneto image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

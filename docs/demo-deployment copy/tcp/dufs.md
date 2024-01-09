@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# 🔒 Dufs Deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/r4c.jpg" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🔒 Dufs Deployment
 
 **Dufs:** A distinctive utility file server featuring static serving, file uploading, search capabilities, access control, and WebDAV support. Dufs provides a versatile solution for managing and accessing files with a range of functionalities.
 
@@ -63,11 +67,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/fffr.png)
+<img src="/img/fffr.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/ffd.png)
-![Alt Text](/img/ff.png)
-![Alt Text](/img/fffg.png)
+<img src="/img/ffd.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ff.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/fffg.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 
@@ -81,17 +84,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Dufs image we used.**
-
-This is the official Dufs image.
-
-**Can I deploy my own Dufs image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

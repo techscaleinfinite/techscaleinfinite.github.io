@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/33.png" alt="Alt Text" width="25%"/>
-</p> 
+# Krita Deployment
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# Krita Deployment
+
+
+<p align="center">
+  <img src="/img/33.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Krita:**
 Krita is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone..
@@ -71,13 +73,11 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/d3.png)
+<img src="/img/d3.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/d12.png)
+<img src="/img/d12.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/d31.png)
-![Alt Text](/img/d33.png)
-![Alt Text](/img/d232.png)
+<img src="/img/d31.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/d33.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/d232.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -95,17 +95,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Krita image we used.**
-
-This is the official Krita image.
-
-**Can I deploy my own Krita image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

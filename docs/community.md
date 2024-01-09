@@ -2,11 +2,14 @@
 sidebar_position: 4
 ---
 
+
+
+# 👨‍👩‍👦‍👦 Community
+
+
 <p align="center">
   <img src="/img/addc.jpg" alt="Alt Text" width="380"/>
 </p>
-
-# 👨‍👩‍👦‍👦 Community
 
 Welcome to our thriving community! Discover the heart of our platform, where like-minded individuals connect, share insights, and engage in lively discussions.
 

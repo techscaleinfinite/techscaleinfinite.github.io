@@ -3,15 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/fds.jpg" alt="Alt Text" width="25%"/>
-</p>
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 # 🖥 WordPress SQLite
 
 ### What's WordPress SQLite?
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/fds.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 WordPress is a free and open-source content management system written in hypertext preprocessor language and paired with a MySQL or MariaDB database with supported HTTPS. SQLite is an open-source SQL database system that stores data in a text file on a device. It provides a simple and efficient way to manage and retrieve structured information locally.
 
@@ -106,29 +110,13 @@ If you choose Advanced option:
 ### Visual SnapShots
 
 
-![Alt Text](/img/zz3.jpg)
-![Alt Text](/img/ddq.jpg)
-![Alt Text](/img/rr5.jpg)
-![Alt Text](/img/cccf.jpg)
+<img src="/img/zz3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ddq.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/rr5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/cccf.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### FAQ
 
-**About Wordpress sqlite image we used.**
-
-This image is maintained by the scaleinfinite.
-
-**Is sqlite good with wordpress ?**
-
-Sqlite is widely used and lightweight database which makes your sight fast.
-
-**Do the image secure to use ?**
-
-The image is created and verified by the scaleinfinite. it is a 100% secure image.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

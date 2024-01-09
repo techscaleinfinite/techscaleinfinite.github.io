@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/dqq.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+
+# ☕ Gitea
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# ☕ Gitea
+<p align="center">
+  <img src="/img/dqq.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Gitea: Your Coding Companion**
 
@@ -62,12 +66,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/gg432.jpg)
-![Alt Text](/img/iir.jpg)
-![Alt Text](/img/oii.jpg)
-![Alt Text](/img/ki.jpg)
-![Alt Text](/img/jji.jpg)
-![Alt Text](/img/ii.jpg)
+<img src="/img/gg432.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/iir.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/oii.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/ki.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/jji.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ii.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 ### Youtube Tutorial&#x20;
@@ -77,18 +78,7 @@ Check out our youtube video for more clarification.
 
 
 ### FAQ
-
-**About GITEA image we used.**
-
-This is the official GITEA  image.
-
-**Can I deploy my own GITEA image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

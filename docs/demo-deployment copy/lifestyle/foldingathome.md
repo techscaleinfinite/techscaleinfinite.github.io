@@ -3,14 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# foldingathome Deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/kh.png" alt="Alt Text" width="25%"/>
 </p> 
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# foldingathome Deployment
 **Foldinghome:**
 A distributed computing project focused on simulating protein dynamics, including the complex processes of protein folding and the movements of proteins associated with various diseases. Folding@home engages citizen scientists who volunteer their personal computers to run simulations. The insights derived from this collaborative effort contribute to a deeper understanding of biology and open new avenues for therapeutic development.
 
@@ -73,13 +77,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 
 
-![Alt Text](/img/t9.png)
+<img src="/img/t9.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/t1.png)
-![Alt Text](/img/t2.png)
-![Alt Text](/img/t3.png)
-![Alt Text](/img/t7.png)
-![Alt Text](/img/t8.png)
+<img src="/img/t1.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t3.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t7.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t8.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -102,17 +102,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About foldingathome image we used.**
-
-This is the official foldingathome image.
-
-**Can I deploy my own foldingathome image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

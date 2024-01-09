@@ -3,16 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+# ⚙️ Yopass Deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
+
 <p align="center">
   <img src="/img/ooph.png" alt="Alt Text" width="25%"/>
 </p> 
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# ⚙️ Yopass Deployment
-
-## Yopass - Secure Secrets Sharing
 
 **Yopass** is a dedicated project for swiftly and securely sharing confidential information. Its primary objective is to reduce the proliferation of passwords in ticket management systems, Slack messages, and emails. Messages are locally encrypted/decrypted in the browser before being sent to Yopass, which never stores the decryption key. Yopass generates a one-time URL with a defined expiry date, ensuring a secure and temporary sharing solution.
 
@@ -73,6 +73,11 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ![Alt Text](/img/f66.png)
 ![Alt Text](/img/f666.png)
 
+<img src="/img/f6.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/f55.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/f66.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/f666.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+
 
 
 
@@ -84,17 +89,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About yopass image we used.**
-
-This is the official yopass image.
-
-**Can I deploy my own yopass image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

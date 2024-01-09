@@ -3,13 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# EMQ X - Scalable MQTT Broker
+
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">
   <img src="/img/tyh.png" alt="Alt Text" width="25%"/>
 </p> 
 
-# EMQ X - Scalable MQTT Broker
 
 EMQ X is a highly scalable open-source MQTT broker designed for IoT, IIoT, connected vehicles, and more. With continuous updates and improvements, it ensures optimal performance and seamless communication for a wide range of devices and application
 
@@ -61,15 +65,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/3b.png)
-![Alt Text](/img/3c.png)
+<img src="/img/3b.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/3c.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/3e.png)
-![Alt Text](/img/3ee.png)
-![Alt Text](/img/3f.png)
-![Alt Text](/img/3fg.png)
-![Alt Text](/img/3h.png)
-![Alt Text](/img/3k.png)
+<img src="/img/3e.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/3ee.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/3f.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/3fg.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/3h.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/3k.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -80,17 +79,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About EMQX image we used.**
-
-This is the official EMQX image.
-
-**Can I deploy my own EMQX image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

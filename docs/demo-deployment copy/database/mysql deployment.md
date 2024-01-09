@@ -3,12 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 🖥 Mysql deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/kkkw.jpg" alt="Alt Text" width="25%"/>
 </p> 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🖥 Mysql deployment
 
 ### MySQL: The Trusty Librarian of Data
 
@@ -83,16 +87,12 @@ When deploying a MySQL application, you can't directly connect to it via a web b
 
 ### Visual Snapshot
 
-![Alt Text](/img/13w.jpg)
-![Alt Text](/img/ew22.jpg)
+<img src="/img/13w.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ew22.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/dwe3.jpg)
-![Alt Text](/img/fwd2.jpg)
-![Alt Text](/img/we2.jpg)
-![Alt Text](/img/dw2.jpg)
+<img src="/img/dwe3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/fwd2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/we2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/dw2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/gfw3.jpg)
-![Alt Text](/img/ed3.jpg)
+<img src="/img/gfw3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ed3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.
@@ -101,18 +101,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About mysql image we used.**
-
-This is the official mysql image.
-
-**Are there any restrictions on adding data sources ?**
-
-you can add any data source that mysql supports.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
-
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 #### Join us
 
 Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going!&#x20;

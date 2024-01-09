@@ -3,15 +3,19 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/f3g3.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+
+# Word Mastermind
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 
-# Word Mastermind
+<p align="center">
+  <img src="/img/f3g3.png" alt="Alt Text" width="25%"/>
+</p> 
 
 Word Mastermind clone: A Mastermind-like game where you guess words instead of colors.
 
@@ -61,13 +65,11 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/4r.png)
+<img src="/img/4r.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/4b.png)
-![Alt Text](/img/4c.png)
-![Alt Text](/img/4h.png)
+<img src="/img/4b.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/4c.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/4h.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/4t.png)
+<img src="/img/4t.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -80,17 +82,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Word Mastermind image we used.**
-
-This is the official Word Mastermind image.
-
-**Can I deploy my own Word Mastermind image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

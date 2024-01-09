@@ -3,15 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+# 🖥 Xampp deployment
+
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/zz31.png" alt="Alt Text" width="25%"/>
 </p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🖥 Xampp deployment
-
-### XAMPP Overview
 
 **XAMPP** is an all-in-one web server solution by Apache Friends, bundling Apache HTTP server, MariaDB database, and PHP/Perl interpreters. It's a versatile toolbox for web development, offering universal compatibility across Windows, macOS, and Linux. As an open-source project, XAMPP encourages community collaboration and innovation in web development. With its local server environment, it serves as a testing ground for dynamic web applications, providing a convenient and comprehensive solution for developers.
 
@@ -92,10 +93,10 @@ And exposing 3306, 22 and 80 ports.
 
 ### Visual Snapshots
 
-![Alt Text](/img/ww23.jpg)
-![Alt Text](/img/rr4.jpg)
+<img src="/img/ww23.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/rr4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/rrr2.jpg)
+<img src="/img/rrr2.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -105,17 +106,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Xampp image we used.**
-
-This image is maintained by the scale infinite.
-
-**Do the image secure to use ?**
-
-The image is created and verified by the scale infinite. it is a 100% secure image.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 #### Join us
 

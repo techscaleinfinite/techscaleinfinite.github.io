@@ -3,13 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/q13.jpeg" alt="Alt Text" width="25%"/>
-</p> 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 
 # ⚙️ IT-tools
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/q13.jpeg" alt="Alt Text" width="25%"/>
+</p> 
 
 **IT Tools Collection :**
 A compilation of useful online tools designed for developers, offering a seamless user experience as a web app. Explore a variety of handy utilities to streamline development tasks and enhance productivity.
@@ -70,15 +73,11 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/vv.png)
+<img src="/img/vv.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/vbb.png)
-![Alt Text](/img/vbbg.png)
-![Alt Text](/img/vdx.png)
-![Alt Text](/img/vfd.png)
+<img src="/img/vbb.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vbbg.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vdx.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vfd.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/vvc.png)
-![Alt Text](/img/vvg.png)
+<img src="/img/vvc.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vvg.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -92,17 +91,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About IT-tools image we used.**
-
-This is the official smokeking image.
-
-**Can I deploy my own smokeking with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)s
 
 ### Join us
 

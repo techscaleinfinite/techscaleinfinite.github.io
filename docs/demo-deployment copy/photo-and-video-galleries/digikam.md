@@ -3,11 +3,12 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+# 📸 DigiKam Deployment
 <p align="center">
   <img src="/img/ddf66.png" alt="Alt Text" width="25%"/>
 </p> 
-
-# 📸 DigiKam Deployment
 
 DigiKam is a versatile Content Management System (CMS) designed for self-hosted websites, focusing on multimedia galleries. It excels in handling various media formats, offers customized page and menu management, robust blogging features, efficient file handling, and multilingual support. With scheduled publishing, user management, and community interaction features, DigiKam empowers artists, photographers, filmmakers, and musicians to showcase their creativity seamlessly on a global stage.
 
@@ -45,12 +46,10 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ## Visual Snapshots
 
-![Alt Text](/img/f2.png)
-![Alt Text](/img/f22.png)
-![Alt Text](/img/f32.png)
-![Alt Text](/img/f221.png)
-![Alt Text](/img/f223.png)
-![Alt Text](/img/f323.png)
+<img src="/img/f2.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f22.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f32.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/f221.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f223.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f323.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 ## Youtube Tutorial
 
@@ -58,14 +57,7 @@ Check out our YouTube video for more clarification.
 
 ## FAQ
 
-**About DigiKam image we used:**
-This is the official DigiKam image.
-
-**Can I deploy my own DigiKam image with modified configuration?**
-Yes, you can simply deploy any version or modified image to our platform by linking your Docker Hub account to our platform.
-
-**Are my data persistent?**
-For the free user, there is no persistence, and for the premium user, you can choose different types of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ## Join us
 

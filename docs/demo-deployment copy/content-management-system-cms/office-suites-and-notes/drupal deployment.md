@@ -3,12 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+# 💧 Drupal deployment
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/sdsu.jpg" alt="Alt Text" width="25%"/>
 </p>
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 💧 Drupal deployment
 
 # Drupal: Your Friendly Website Companion
 
@@ -72,10 +75,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/g3.jpg)
-![Alt Text](/img/t5.jpg)
-![Alt Text](/img/d343.jpg)
-![Alt Text](/img/gg.jpg)
+<img src="/img/g3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/t5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/d343.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/gg.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -86,21 +87,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Drupal image we used.**
-
-This is the official Drupal image.
-
-**Is the Database inbuilted in the same image ?**
-
-No, you need to add your database while you are login and setting your website.
-
-**Can i deploy older version of drupal or my own modified drupal image ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

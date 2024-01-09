@@ -3,14 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/uhun.png" alt="Alt Text" width="25%"/>
-</p> 
-
+ 
+# TASK.MD
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# TASK.MD
+
+<p align="center">
+  <img src="/img/uhun.png" alt="Alt Text" width="25%"/>
+</p>
 
 **Tasks.md:** A self-hosted task management board utilizing file-based storage, supporting Markdown syntax. Ideal for organizing and tracking tasks, it provides a flexible and Markdown-friendly environment for efficient task management.
 
@@ -61,16 +62,13 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/3ff.png)
-
-![Alt Text](/img/3fff.png)
-![Alt Text](/img/3gg.png)
-
-![Alt Text](/img/3ggg.png)
-![Alt Text](/img/3nn.png)
-![Alt Text](/img/3tt.png)
 
 
+<img src="/img/3ff.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/3fff.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/3gg.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/3ggg.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/3nn.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 ### Youtube Tutorial&#x20;
 
@@ -80,17 +78,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About tasks.md image we used.**
-
-This is the official tasks.md  image.
-
-**Can I deploy my own tasks.md image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

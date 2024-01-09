@@ -3,16 +3,18 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/e4r3.png" alt="Alt Text" width="25%"/>
-</p> 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 
 # 📺 Mtream Deployment
 
-# mStream: Your Symphony Anywhere, Anytime 🎶
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/e4r3.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **mStream** orchestrates your personal music streaming experience. Transforming your home computer into a music hub, it offers both Android and iPhone apps for on-the-go melodies. With an intuitive interface, mStream acts as your personal DJ, curating playlists effortlessly. It liberates your music from location constraints, streaming it to any device with an internet connection. Security is paramount, ensuring your music remains exclusively yours. mStream transforms your home into a music haven and your phone into a portable concert hall, delivering an encore-worthy music streaming experience.
 
@@ -68,8 +70,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/fee.jpg)
-![Alt Text](/img/efef3.jpg)
+<img src="/img/fee.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/efef3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 
 ### Youtube Tutorial&#x20;
@@ -80,17 +82,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About** mstream **image we used.**
-
-This is the official mstream image.
-
-**Can I deploy my own** mstream **image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

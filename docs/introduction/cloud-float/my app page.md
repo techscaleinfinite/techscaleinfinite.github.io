@@ -3,14 +3,16 @@ sidebar_position: 6
 ---
 
 
+
+# ☁ My APP Page
+
+
+
 <p align="center">
   <img src="/img/ddcdv.jpg" alt="Alt Text" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# ☁ My APP Page
-
 
 Exploring your deployed apps on the "My Apps" page is a delightful journey. Here's how to embark on this adventure:
 

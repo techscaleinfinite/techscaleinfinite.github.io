@@ -3,15 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/eegb.jpg" alt="Alt Text" width="25%"/>
-</p> 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+
 
 
 # 📸 ZenPhoto Deployment
-
-### Zenphoto: Creative Website CMS
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+<p align="center">
+  <img src="/img/eegb.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 Zenphoto is a versatile Content Management System (CMS) designed for self-hosted websites, focusing on multimedia galleries. It excels in handling various media formats, offers customized page and menu management, robust blogging features, efficient file handling, and multilingual support. With scheduled publishing, user management, and community interaction features, Zenphoto empowers artists, photographers, filmmakers, and musicians to showcase their creativity seamlessly on a global stage.
 
@@ -65,15 +65,12 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/t555.jpg)
-![Alt Text](/img/eer44.jpg)
-![Alt Text](/img/uyt5.jpg)
-![Alt Text](/img/s22.jpg)
-![Alt Text](/img/rw4.jpg)
-![Alt Text](/img/e333.jpg)
-![Alt Text](/img/fr4.jpg)
-![Alt Text](/img/htt.jpg)
-![Alt Text](/img/tht5.jpg)
+<img src="/img/t555.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/eer44.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/uyt5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/s22.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/rw4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/e333.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
+<img src="/img/fr4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/htt.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/tht5.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+
 
 ### Youtube Tutorial&#x20;
 
@@ -82,18 +79,7 @@ Check out our youtube video for more clarification.
 
 
 ### FAQ
-
-**About Zenphoto image we used.**
-
-This is the official Zenphoton image.
-
-**Can I deploy my own Zenphoto image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

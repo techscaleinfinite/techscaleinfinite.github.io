@@ -3,14 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+# 🖥️ Noisedash 
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/fgg.jpg" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 🖥️ Noisedash 
 
 noise is a self-hostable web tool crafted for generating ambient noises, enhancing user experience through sound. With features like customization of ambient noises and the ability to upload user-specific samples, it leverages Tone.js for optimal audio output. Users can save and share their noise profiles, offering seamless transitions between personalized soundscapes. The tool includes audio processing tools such as filters, LFOs, and effects for fine-tuning noises. Additionally, it supports the upload and editing of audio samples like rain, wind, and thunder, allowing users to combine them creatively. The platform is also equipped with admin tools for efficient user management and is designed to be mobile-friendly.
 
@@ -67,29 +69,16 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/f3.png)
-![Alt Text](/img/f4.png)
-![Alt Text](/img/f5.png)
+<img src="/img/f3.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f4.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/f5.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/f33.png)
+<img src="/img/f33.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.
 
 ### FAQ
-
-**About noisedash image we used.**
-
-This is the official noisedash  mage.
-
-**Can I deploy my own media noisedash with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

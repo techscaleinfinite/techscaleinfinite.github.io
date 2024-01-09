@@ -3,15 +3,16 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/vv.jpg" alt="Alt Text" width="25%"/>
-</p>
 
 
 
 # ☁ Next Cloud Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
+<p align="center">
+  <img src="/img/vv.jpg" alt="Alt Text" width="25%"/>
+</p>
 
 ### Nextcloud Overview
 
@@ -65,8 +66,8 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/aa12.jpg)
-![Alt Text](/img/ee34.jpg)
+
+<img src="/img/aa12.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/ee34.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -79,17 +80,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About nextcloud image we used.**
-
-This is the official nextcloud image.
-
-**Can I deploy my own nextcloud image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

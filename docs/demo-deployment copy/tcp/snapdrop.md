@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/d5g.png" alt="Alt Text" width="25%"/>
-</p> 
 
+
+
+
+# Snapdrop Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# Snapdrop Deployment
+<p align="center">
+  <img src="/img/d5g.png" alt="Alt Text" width="25%"/>
+</p> 
 
 **Snapdrop:**
 A local file-sharing solution accessible through your web browser, inspired by Apple's Airdrop. Snapdrop provides a user-friendly and efficient way to share files between devices within the same local network, offering a seamless experience for browser-based file transfers.
@@ -74,15 +77,11 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 ### Visual Snapshots
 
 
-![Alt Text](/img/3hh.png)
+<img src="/img/3hh.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/3g.png)
+<img src="/img/3g.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-
-![Alt Text](/img/3r.png)
-![Alt Text](/img/3t.png)
-![Alt Text](/img/3y.png)
-
+<img src="/img/3r.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/3t.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/3y.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -100,17 +99,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Snapdrop image we used.**
-
-This is the official Snapdrop image.
-
-**Can I deploy my own Snapdrop image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

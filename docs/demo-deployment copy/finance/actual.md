@@ -3,14 +3,17 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
+
+
+
+
+
+# 💹 Actual Budget
+<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 <p align="center">
   <img src="/img/sscv.jpg" alt="Alt Text" width="25%"/>
 </p> 
-
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-# 💹 Actual Budget
 
 Actual Budget is a high-speed and privacy-centric financial management app centered around the trusted Envelope Budgeting methodology. With a focus on user control, it allows complete ownership of your data, providing the flexibility to manage it as you see fit. Boasting multi-device synchronization, optional end-to-end encryption, and a plethora of additional features, Actual Budget is a robust solution for individuals seeking efficient and secure financial planning.
 
@@ -67,31 +70,16 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/u7.png)
-![Alt Text](/img/u8.png)
-![Alt Text](/img/u77.png)
+<img src="/img/u7.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u8.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u77.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/u88.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u99.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u776.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/u7776.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
-![Alt Text](/img/u88.png)
-![Alt Text](/img/u99.png)
-![Alt Text](/img/u776.png)
-![Alt Text](/img/u7776.png)
 ### Youtube Tutorial&#x20;
 
 Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About actual image we used.**
-
-This is the official actual  mage.
-
-**Can I deploy my own media actual with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 

@@ -3,14 +3,15 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-<p align="center">
-  <img src="/img/caaac.jpg" alt="Alt Text" width="25%"/>
-</p> 
 
+# Webtop Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
-# Webtop Deployment
+
+<p align="center">
+  <img src="/img/caaac.jpg" alt="Alt Text" width="25%"/>
+</p> 
 
 **Webtop:**
 Webtop - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.
@@ -68,14 +69,14 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-![Alt Text](/img/p5.png)
-![Alt Text](/img/p0.png)
-
-![Alt Text](/img/p6.png)
-![Alt Text](/img/p8.png)
-![Alt Text](/img/p9.png)
 
 
+
+<img src="/img/p5.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/p0.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/p6.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
+<img src="/img/p8.png" alt="Alt Text" style={{ maxWidth: '350px' }} /> 
+<img src="/img/p9.png" alt="Alt Text" style={{ maxWidth: '350px' }} />
 
 
 
@@ -87,17 +88,7 @@ Check out our youtube video for more clarification.
 
 ### FAQ
 
-**About Webtop image we used.**
-
-This is the official Webtop image.
-
-**Can I deploy my own Webtop image with modified configuration ?**
-
-Yes, you can simply deploy any version or modified image to our platform by linking your docker hub account to our platform.
-
-**Are my data persistent ?**
-
-For the free user there is no persistence, and for the premium user you can different type of persistence.
+For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
 
 ### Join us
 
