@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# Grocy - Self-Hosted Recipe Manager and Meal Planner
+# 🍟 Grocy 
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

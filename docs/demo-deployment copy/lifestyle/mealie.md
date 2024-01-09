@@ -9,7 +9,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# Mealie - Self-Hosted Recipe Manager and Meal Planner
+# 🍔 Mealie - 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">
   <img src="/img/dvs.png" alt="Alt Text" width="25%"/>

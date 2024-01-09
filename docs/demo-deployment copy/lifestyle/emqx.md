@@ -6,7 +6,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# EMQ X - Scalable MQTT Broker
+# 💻 EMQ X - Scalable MQTT Broker
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

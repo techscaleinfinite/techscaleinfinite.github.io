@@ -6,7 +6,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# Paperless-ng - Document Indexing and Management
+# 	📖 Paperless-ng - 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

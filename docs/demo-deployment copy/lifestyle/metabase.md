@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-## Metabase - Simplifying Data Exploration
+## 💻 Metabase - Simplifying Data Exploration
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">

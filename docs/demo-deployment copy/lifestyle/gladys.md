@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# Gladys Assistant
+# 💻 Gladys Assistant
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
