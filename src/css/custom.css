@@ -5,26 +5,215 @@
  */
 
 /* You can override the default Infima variables here. */
+/* Roboto font */
+
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #6b73fa;
+  --ifm-color-primary-dark: #4852f9;
+  --ifm-color-primary-darker: #3742f8;
+  --ifm-color-primary-darkest: #0815f2;
+  --ifm-color-primary-light: #8e94fb;
+  --ifm-color-primary-lighter: #9fa4fc;
+  --ifm-color-primary-lightest: #d3d5fe;
+
+  --ifm-color-primary-title-dark: #383839;
+  --ifm-color-primary-font-dark:#000000;
+  --ifm-color-primary-footer-border:#e1e1e1;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Custom */
+  --ifm-navbar-height: 80px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #6b73fa;
+  --ifm-color-primary-dark: #4852f9;
+  --ifm-color-primary-darker: #3742f8;
+  --ifm-color-primary-darkest: #0815f2;
+  --ifm-color-primary-light: #8e94fb;
+  --ifm-color-primary-lighter: #9fa4fc;
+  --ifm-color-primary-lightest: #d3d5fe;
+  --ifm-color-primary-footer-border:#e1e1e1;
+  --ifm-color-primary-title-dark: #d2d2d4;
+  --ifm-color-primary-font-dark:#fff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* Fonts */
+@font-face {
+  font-family: 'RobotoFlex';
+  src: url('/fonts/RobotoFlex.ttf');
+}
+@font-face {
+  font-family: 'RobotoFlex_Regular';
+  src: url('/fonts/RobotoFlex_Regular.ttf');
+}
+@font-face {
+  font-family: 'Nexa_Bold';
+  src: url('/fonts/Nexa_Bold.otf');
+}
+@font-face {
+  font-family: 'Nexa_Light';
+  src: url('/fonts/Nexa_Light.otf');
+}
+/* logo */
+.navbar__logo img {
+  height: 160%;
+  margin-top: -10px;
+}
+nav.navbar {
+  font-family: 'RobotoFlex';
+  color: var(--ifm-color-primary-title-dark);
+   font-size: 18px;   
+   border-bottom:1px solid var(--ifm-color-primary-title-dark);
+}
+
+/* Sidebar */
+.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module{
+  font-weight: 300;
+  font-family: 'RobotoFlex';
+
+}
+.menu__link{
+  color: var(--ifm-color-primary-font-dark);
+  font-size: 1rem;
+}
+.menu__list-item-collapsible:hover,.menu__list-item-collapsible--active{
+  background: none;
+}
+/* Paragraph */
+.markdown > p{
+  font-family: 'RobotoFlex_Regular';
+  font-weight: 200;
+}
+.menu__link--active:not(.menu__link--sublist){
+  background: none;
+}
+.menu__link--active{
+  background: none;
+}
+.menu__link:hover{
+  background: none;
+}
+/* Toggle */
+.toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  width: 4rem;
+  height: 4rem;
+}
+.navbar__link:hover {  
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 var(--ifm-color-primary-title-dark);
+}
+.navbar__link--active{
+  color: var(--ifm-color-primary-font-dark);
+ 
+}
+.navbar__link {
+ font-weight: 200;
+  font-family: 'RobotoFlex';
+  box-shadow: inset 0 0 0 0 var(--ifm-color-primary-title-dark);
+  color: var(--ifm-color-primary-title-dark);
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);    
+  letter-spacing: 0.1px;
+  font-size: 1.2rem;
+}
+
+.pagination-nav__label{
+  font-family: 'Nexa_light';
+  font-weight: 900;
+}
+/* Breadcrumbs */
+.breadcrumbs__item--active .breadcrumbs__link{
+background: none;
+font-size: 0.9rem;
+
+}
+h1{
+   font-family: 'Nexa_Light'; 
+  color: var(--ifm-color-primary-title-dark);
+  font-weight: 200;
+  text-align: center;
+}
+.subtitle{
+  font-family:'Nexa_bold';
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: var(--ifm-color-primary-font-dark);
+  letter-spacing: 3px;
+  margin-bottom: -10px;
+  }
+  .avatar__name{
+    font-family: 'RobotoFlex';
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--ifm-color-primary-font-dark);
+  }
+  .text-center{
+    text-align: center;
+  }
+  .text-right{
+    text-align: right;
+  }
+  .text-left{
+    text-align: left;
+  }
+.get-started{
+  text-align: center;
+  font-family: 'Nexa_light';
+  font-size: 0.9rem;
+  font-weight: 600;
+  
+}
+.footer{
+  font-family: 'RobotoFlex';
+  color: var(--ifm-color-primary-font-dark);
+   font-size: 16px;
+   font-weight: 400;
+   border-top:1px solid var(--ifm-color-primary-footer-border);
+  background: none;
+  display: flex; 
+   
+}
+.footer__links{
+  margin: 0;
+}
+.footer__links a{
+  text-decoration: none;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);    
+  letter-spacing: 0.1px;
+}
+.footer__items {
+  display: flex;
+  
+}
+.footer__link-item{
+  padding: 1em;
+}
+.footer__copyright{
+  color: var(--ifm-color-primary-font-dark);
+  -webkit-transform: scale(0.9);
+transform: scale(0.9);    
+letter-spacing: 0.1px;
+}
+.breadcrumbs{
+  display: none;
+}
+.border{
+  border:1px solid var( --ifm-color-emphasis-300);
+}
+.avatar__name a{
+  text-decoration: none;
+  color: var(--ifm-color-primary-font-dark);
+}
+.avatar__name a:hover{
+  color: #7a49ff;
+}
+/* Quick start page */
+
+/* .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module{ */
+  /* max-width: 100% !important; */
+/* } */

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 
 
-# 🌩️ Introduction
+#  Introduction
 <p align="center">
   <img src="/img/sc.jpg" alt="ScaleInfinite Logo" width="500"/>
 </p>
