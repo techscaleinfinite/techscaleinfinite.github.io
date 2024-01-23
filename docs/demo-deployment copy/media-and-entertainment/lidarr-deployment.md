@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🎶 Lidarr Deployment
+# Lidarr Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

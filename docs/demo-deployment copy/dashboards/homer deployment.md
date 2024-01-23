@@ -6,7 +6,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥 Homer Deployment
+# Homer Deployment
 
 ### What's is homer?
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

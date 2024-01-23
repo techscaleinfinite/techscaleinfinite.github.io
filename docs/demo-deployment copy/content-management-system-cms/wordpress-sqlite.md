@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥 WordPress SQLite
+# WordPress SQLite
 
 ### What's WordPress SQLite?
 

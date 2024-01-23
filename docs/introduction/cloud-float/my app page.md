@@ -4,7 +4,7 @@ sidebar_position: 6
 
 
 
-# ☁ My APP Page
+# My APP Page
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-# 🛳 Containers and Kubernetes
+# Containers and Kubernetes
 
 <p align="center">
   <img src="/img/ffwc.jpg" alt="Alt Text" width="100"/>

@@ -9,7 +9,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥️ Pylon - Web-Based IDE
+# Pylon - Web-Based IDE
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">

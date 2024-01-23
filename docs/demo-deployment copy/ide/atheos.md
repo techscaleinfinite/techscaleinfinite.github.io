@@ -9,7 +9,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥️ Atheos
+# Atheos
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🐈 Tomcat Deployment
+# Tomcat Deployment
 
 ### Apache Tomcat Overview
 

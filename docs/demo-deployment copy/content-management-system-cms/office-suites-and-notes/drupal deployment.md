@@ -6,7 +6,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 💧 Drupal deployment
+# Drupal deployment
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">

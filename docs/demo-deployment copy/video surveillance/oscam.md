@@ -8,7 +8,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 📹 oscam Deployment
+# oscam Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">

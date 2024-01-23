@@ -1,6 +1,6 @@
 
 
-# ☁ Cloud float
+# Cloud float
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

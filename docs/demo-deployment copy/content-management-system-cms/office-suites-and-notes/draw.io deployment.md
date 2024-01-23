@@ -6,7 +6,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🎨 DRAW.IO Deployment
+# DRAW.IO Deployment
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">

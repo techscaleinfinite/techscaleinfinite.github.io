@@ -4,7 +4,7 @@ sidebar_position: 2
 
 
 
-# ☁ Create Account
+# Create Account
 
 <p align="center">
   <img src="/img/ff43.png" alt="Alt Text" width="600"/>

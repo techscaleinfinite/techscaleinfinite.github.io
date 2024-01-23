@@ -6,7 +6,7 @@ sidebar_position: 6
 
 
 
-# 👨‍👩‍👦‍👦 Useful links
+# Useful links
 
 <p align="center">
   <img src="/img/dffv.png" alt="Alt Text" width="380"/>

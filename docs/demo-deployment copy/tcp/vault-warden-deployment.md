@@ -8,7 +8,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# ⚙️ Vault Warden Deployment
+# Vault Warden Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

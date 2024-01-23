@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# ☁ Built Image Page
+# Built Image Page
 
 <p align="center">
   <img src="/img/zv.jpg" alt="Alt Text" width="400"/>

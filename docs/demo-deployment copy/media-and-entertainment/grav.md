@@ -5,8 +5,8 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-
-# 🎬 Grav - Fast, Simple, and Flexible Web Platform
+# Flexible Web Platform
+## Grav - Fast, Simple, and Flexible Web Platform
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">

@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥 Joomla
+# Joomla
 
 # Joomla: Your Website's Superhero
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

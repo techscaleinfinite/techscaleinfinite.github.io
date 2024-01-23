@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# ☁ Dashboard page
+# Dashboard page
 
 
 <p align="center">

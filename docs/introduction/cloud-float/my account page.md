@@ -5,7 +5,7 @@ sidebar_position: 4
 
 
 
-# ☁ My Account Page
+# My Account Page
 
 <p align="center">
   <img src="/img/j6.png" alt="Alt Text" width="400"/>

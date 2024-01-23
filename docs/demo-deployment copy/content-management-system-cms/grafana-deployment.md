@@ -6,7 +6,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 💻 Grafana deployment
+# Grafana deployment
 
 <p align="center">
   <img src="/img/vf.jpg" alt="Alt Text" width="25%"/>

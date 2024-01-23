@@ -8,7 +8,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 📱 Friendica Deployment
+# Friendica Deployment
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">

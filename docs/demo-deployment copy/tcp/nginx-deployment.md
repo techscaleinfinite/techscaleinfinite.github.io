@@ -8,7 +8,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# ⚙️ Nginx deployment
+# Nginx deployment
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">
   <img src="/img/vb.jpg" alt="Alt Text" width="25%"/>

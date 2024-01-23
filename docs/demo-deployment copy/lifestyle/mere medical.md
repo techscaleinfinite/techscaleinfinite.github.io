@@ -5,7 +5,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 💉 Mere MEdical 
+# Mere MEdical 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">
   <img src="/img/ffvw.jpg" alt="Alt Text" width="25%"/>

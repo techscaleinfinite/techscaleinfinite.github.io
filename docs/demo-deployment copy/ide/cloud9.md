@@ -6,8 +6,8 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-
-#  🖥️ Cloud9 - Web-Based IDE with Terminal Access
+# Cloud 9
+## Cloud9 - Web-Based IDE with Terminal Access
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

@@ -4,7 +4,7 @@ draft: false
 import Comments from '/src/components/HomepageFeatures/Comment';
 
 
-# 📊 nullboard Deployment
+# nullboard Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

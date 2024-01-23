@@ -1,6 +1,6 @@
 
 
-# 📑 Navigating the Docker Discovery Journey in 2023
+# Navigating the Docker 
 
 Welcome to the captivating realm of Docker in 2023! If you're embarking on a journey to master Docker, the renowned containerization platform, get ready for an exciting adventure. To begin this quest, let's explore the hidden treasures of Docker together.
 

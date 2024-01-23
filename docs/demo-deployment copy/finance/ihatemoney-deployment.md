@@ -8,7 +8,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 💴 ihatemoney Deployment
+# ihatemoney Deployment
 
 ### "I Hate Money": Simplifying Shared Finances
 

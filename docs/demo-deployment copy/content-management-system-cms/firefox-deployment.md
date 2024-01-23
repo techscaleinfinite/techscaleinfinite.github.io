@@ -5,7 +5,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🦊 Firefox Deployment
+# Firefox Deployment
 
 # Firefox: Your Open-Source Gateway to Secure and Customizable Browsing
 

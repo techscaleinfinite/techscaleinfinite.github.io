@@ -4,7 +4,7 @@ sidebar_position: 7
 
 
 
-# ☁ Server Detail Page
+# Server Detail Page
 
 <p align="center">
   <img src="/img/vdb.jpg" alt="Alt Text" width="400"/>

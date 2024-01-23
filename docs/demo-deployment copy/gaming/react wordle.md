@@ -9,7 +9,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🎮 Open Source Wordle Game
+# Open Source Wordle Game
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">

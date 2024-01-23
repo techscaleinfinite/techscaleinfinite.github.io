@@ -66,9 +66,15 @@ const config = {
   ],
 
   plugins: [
-     'docusaurus-plugin-image-zoom',
-     '@cmfcmf/docusaurus-search-local'
-      
+     //'docusaurus-plugin-image-zoom',
+     //'@cmfcmf/docusaurus-search-local'
+     [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+        indexBlog: false,
+      },
+    ],      
      
   ],
 

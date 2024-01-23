@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🦭 Maria Db Deployment
+# Maria Db Deployment
 
 ### MariaDB: Your Data Guardian
 

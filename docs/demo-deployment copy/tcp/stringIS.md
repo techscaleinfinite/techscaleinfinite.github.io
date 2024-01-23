@@ -3,7 +3,7 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-# ⚙️String-IS deployment
+# String-IS deployment
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

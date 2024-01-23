@@ -3,7 +3,7 @@ draft: false
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
-# ⚙️ Yopass Deployment
+# Yopass Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

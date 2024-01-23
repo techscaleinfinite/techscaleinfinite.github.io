@@ -1,9 +1,9 @@
 ---
 draft: false
 ---
-import Comments from '/src/components/HomepageFeatures/Comment';
+<!-- import Comments from '/src/components/HomepageFeatures/Comment'; -->
 
-# 📅  Baikal Deployment
+# Baikal Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">
@@ -11,7 +11,6 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 </p> 
 
 ### What's is baikal?
-
 
 Imagine a web interface that's not just user-friendly but genuinely intuitive. Baïkal offers exactly that. Managing users, address books, and calendars becomes a breeze. It's like having a personal assistant that understands your every command.
  Baïkal doesn't believe in boundaries. It's your bridge to a synchronized digital life. Access your contacts and calendars from every device you own. No more hassles with compatibility issues – it's all about harmonious connectivity.

@@ -6,7 +6,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥 Node Red Deployment
+# Node Red Deployment
 
 # Node-RED: Unleash Creativity in Connectivity
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

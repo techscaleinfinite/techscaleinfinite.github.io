@@ -1,5 +1,5 @@
 
-# 📑 Exploring Free Cloud Platforms for Hosting Docker Images
+# Hosting Docker Images
 
 If you're a Docker enthusiast or developer, the convenience of a reliable platform for hosting Docker images is crucial. Here's a glimpse of cloud platforms where you can host Docker images for free.
 

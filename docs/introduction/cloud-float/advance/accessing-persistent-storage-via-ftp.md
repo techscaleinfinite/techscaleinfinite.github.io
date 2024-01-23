@@ -2,8 +2,8 @@
 
 
 
-
-# ☁ Accessing Persistent Storage Via FTP
+# Persistent Storage
+## Accessing Persistent Storage Via FTP
 
 <p align="center">
   <img src="/img/dcv.jpg" alt="Alt Text" width="400"/>

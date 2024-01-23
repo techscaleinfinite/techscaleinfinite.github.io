@@ -1,7 +1,7 @@
 
-# 🐋 Kubernetes
+# Kubernetes
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+<span>
 
 **Welcome to the Kubernetes Knowledge Hub! Your Gateway to the Dynamic World of Kubernetes, Containers, and Managed Kubernetes.**
 
@@ -10,7 +10,7 @@ _Are you ready to embark on an exciting journey into the dynamic realm of Kubern
 </span>
 
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+<span>
 
 **Let's Dive Right In:**
 

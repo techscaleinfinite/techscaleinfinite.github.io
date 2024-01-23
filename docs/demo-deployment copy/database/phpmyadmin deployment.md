@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥 PHPmyADMIN Deployment
+# PHPmyADMIN Deployment
 
 ### What's  php myadmin?
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

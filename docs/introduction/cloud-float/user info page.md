@@ -4,7 +4,7 @@ sidebar_position: 7
 
 
 
-# ☁ User info Page
+# User info Page
 
 <p align="center">
   <img src="/img/vvdu.jpg" alt="Alt Text" width="400"/>

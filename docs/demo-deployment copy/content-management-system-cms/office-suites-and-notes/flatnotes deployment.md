@@ -5,7 +5,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 📜 flatnotes Deployment
+# flatnotes Deployment
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

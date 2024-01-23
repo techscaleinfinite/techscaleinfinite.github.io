@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥 Mongo DB
+# Mongo DB
 
 ### MongoDB: The Gem of NoSQL
 

@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 
 
-#  ☁ Steps And Procedure
+# Steps And Procedure
 
 <p align="center">
   <img src="/img/dwdww.png" alt="Alt Text" width="400"/>

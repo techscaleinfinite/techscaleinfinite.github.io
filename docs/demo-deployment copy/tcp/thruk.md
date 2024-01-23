@@ -7,8 +7,8 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-
-# ⚙️ Thruk - Multibackend Monitoring Web Interface
+# Thruk
+## Thruk - Multibackend Monitoring Web Interface
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">

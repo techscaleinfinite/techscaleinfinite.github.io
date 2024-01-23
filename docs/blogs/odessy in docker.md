@@ -1,5 +1,5 @@
 
-# 📑 An Odyssey in Docker Hosting: Exploring Free Havens
+# An Odyssey in Docker Hosting
 
 If you're navigating the sea of Docker and seeking budget-friendly hosting options, let's embark on a quest to discover the best free Docker hosting havens.
 

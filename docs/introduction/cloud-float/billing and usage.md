@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# 💴 Billing and usage
+# Billing and usage
 
 
 <p align="center">

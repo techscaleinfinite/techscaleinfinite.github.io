@@ -8,7 +8,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
  
 
-# 🏋️‍♀️ wger workout Manager
+# Wger workout Manager
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

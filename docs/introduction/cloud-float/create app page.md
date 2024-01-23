@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# ☁ Create App Page
+# Create App Page
 
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

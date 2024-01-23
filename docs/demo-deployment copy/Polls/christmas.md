@@ -4,68 +4,109 @@ draft: false
 import Comments from '/src/components/HomepageFeatures/Comment';
 
 
+# Christmas Community
 
 
-# 📚 Christmas Community
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-
-<p align="center">
-  <img src="/img/erwdf.jpg" alt="Alt Text" width="25%"/>
-</p> 
+<!-- <p align="center"> -->
+  <!-- <img src="/img/erwdf.jpg" alt="Alt Text" width="25%"/> -->
+<!-- </p>  -->
 
 **Christmas Community**
 
-Create a centralized space for your family's gift-giving with Christmas Community. This simple platform ensures everyone can discover desired gifts, eliminating the risk of double-gifting. Designed to streamline the holiday season, it offers an efficient solution for organizing and coordinating presents within your family. Enjoy a hassle-free and joyous gift-sharing experience with Christmas Community, bringing festive cheer to your celebrations.
+<p>Create a centralized space for your family's gift-giving with Christmas Community. This simple platform ensures everyone can discover desired gifts, eliminating the risk of double-gifting. Designed to streamline the holiday season, it offers an efficient solution for organizing and coordinating presents within your family. Enjoy a hassle-free and joyous gift-sharing experience with Christmas Community, bringing festive cheer to your celebrations.</p>
 
 
 ### Exposed Ports
 
-| Port Type | Port Number | Description                              |
-| --------- | ----------- | ---------------------------------------- |
-| Http      | 80          | christmas application is on port 80.      |
-| Tcp       | -           | -             |
+<table>
+  <tr class="text-center">
+        <th>Port Type</th>
+       <th>Port Number</th>
+        <th>Description</th>
+  </tr>
+  <tr>
+        <td>HTTP</td>
+        <td>80</td>
+        <td>Christmas Application is on port 80</td>
+  </tr>
+   <tr>
+       <td>TCP</td>
+       <td>-</td>
+       <td>-</td>
+ </tr>
+</table>
 
-### Path Configuration
 
-"Zenphoto" uses path configuration. Set these when running the container:
+## Path Configuration
 
-| Path                          | Description                              |
-| ----------------------------- | ---------------------------------------- |
-| /data     |   Path for  data.   |
-
-
+<p>"Zenphoto" uses path configuration. Set these when running the container:</p>
+<table>
+  <tr class="text-center">
+        <th>Path</th>
+       <th>Description</th>       
+  </tr>
+  <tr>
+        <td>/data</td>
+        <td>Path for data</td>
+      
+  </tr>
+  </table>
 
 ### Environment Variables
 
 
-|   **Environment value:**          | Decription                                                                                                               | 
-| --------------------- | ------                                                                                                                   | 
-|-       |  -                              |
-</span>
 
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+<table>
+  <tr class="text-center">
+        <th>Environment value</th>
+       <th>Description</th>       
+  </tr>
+  <tr>
+        <td>-</td>
+        <td>-</td>      
+  </tr>
+  </table>                                                  
+                                                
 
 ### Installation
-
-|  Description          | Decription                                                                                                               | 
-| --------------------- | ------                                                                                                                   | 
-| Docker Image          | [Chritmas community ](https://hub.docker.com/r/wingysam/christmas-community)  👈(click me,for the dockerhub image)                              |
-| Application name      |  Eg: zen1(you can put any name)                                                                                        | 
-| Resource Allocation   |  0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)                                  | 
-| `Protocol`            |                                                                                                                          | 
-|  Http:                | 80                                                                                                                      |
-|  Tcp:                 |                                                                                                                          | 
-|    Advanced           |    Install with Default                                                                                                  |
-
-
-
-
+<table>
+  <tr class="text-center">
+        <th>Name</th>
+       <th>Description</th>       
+  </tr>
+  <tr>
+        <td>Docker Image</td>
+        <td>[Chritmas community ](https://hub.docker.com/r/wingysam/christmas-community)  👈(click me,for the dockerhub image) </td>      
+  </tr>
+  <tr>
+      <td>Application Name</td>
+      <td>Eg: zen1(you can put any name)</td>      
+</tr>
+<tr>
+      <td>Resource Allocation</td>
+      <td> 0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application)</td>      
+</tr>
+<tr>
+      <td>Protocol</td>
+      <td></td>      
+</tr>
+<tr>
+      <td>HTTP</td>
+      <td>80</td>      
+</tr>
+<tr>
+      <td>TCP</td>
+      <td>-</td>      
+</tr>
+<tr>
+      <td>Advance</td>
+      <td>Install with Default</td>      
+</tr>
+  </table>
+             
 ### Steps And Procedure
 
-For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)
-
-
+<p>For Detailed steps and procedure please vist this page: [Click here](https://techscaleinfinite.github.io/introduction/cloud-float/Steps%20and%20procedure)</p>
 
 
 ### Visual Snapshots
@@ -79,26 +120,24 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Youtube Tutorial&#x20;
 
-Check out our youtube video for more clarification.
+<p>Check out our youtube video for more clarification.</p>
 
 
 
 ### FAQ
 
-For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)
+<p>For Detailed FAQ please vist this page: [FAQ](https://techscaleinfinite.github.io/FAQ)</p>
 
 ### Join us
 
-Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going!&#x20;
+<p>Stay informed and engaged with our project's latest developments and support on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join us today to connect, collaborate, and keep the momentum going!&#x20;</p>
 
 <details>
 
 <summary>Category</summary>
-
-Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, zen photo
+<p>Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, zen photo</p>
 
 </details>
 
-</span>
 
-<Comments />
+

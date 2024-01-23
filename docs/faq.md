@@ -4,7 +4,7 @@ sidebar_position: 5
 
 
 
-# ❓ FAQ
+# FAQ
 
 
 <p align="center">

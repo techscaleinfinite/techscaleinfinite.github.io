@@ -7,7 +7,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🖥 WordPress MySQL
+# WordPress MySQL
 
 # WordPress: Crafting Websites with Ease and Security
 

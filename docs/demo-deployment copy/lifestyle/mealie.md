@@ -9,7 +9,7 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-# 🍔 Mealie - 
+# Mealie - 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 <p align="center">
   <img src="/img/dvs.png" alt="Alt Text" width="25%"/>

@@ -5,8 +5,8 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
-
-# 🎬 Medusa - Automatic Video Library Manager
+# Medusa
+## Medusa - Automatic Video Library Manager
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 

@@ -1,7 +1,7 @@
 
 
 
-# 🛳 Managed Kubernetes
+# Managed Kubernetes
 
 
 <p align="center">

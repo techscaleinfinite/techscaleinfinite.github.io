@@ -4,7 +4,7 @@ sidebar_position: 1
 
 
 
-# ☁ Architecture
+# Architecture
 
 <p align="center">
   <img src="/img/ohh.jpg" alt="Alt Text" width="400"/>

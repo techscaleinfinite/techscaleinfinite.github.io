@@ -6,9 +6,9 @@ import Comments from '/src/components/HomepageFeatures/Comment';
 
 
 
+# Lazy Librarian
 
-
-# 📙 LazyLibrarian - Automated Digital Reading Metadata Manager
+## LazyLibrarian - Automated Digital Reading Metadata Manager
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
