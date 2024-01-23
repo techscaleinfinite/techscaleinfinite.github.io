@@ -6,26 +6,21 @@ sidebar_position: 4
 
 # Community
 
-
-<p align="center">
-  <img src="/img/addc.jpg" alt="Alt Text" width="380"/>
-</p>
-
 Welcome to our thriving community! Discover the heart of our platform, where like-minded individuals connect, share insights, and engage in lively discussions.
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
+
 
 ### SLACK
 
 **Join Our Project Community on Slack!**
 
 Stay connected, collaborate, and get real-time updates about our project on [Slack](https://app.slack.com/client/T04QS32JX6E/C04QKEWE146). Join our vibrant community to:
-
-* Receive project updates, announcements, and feature releases.
-* Get assistance and support from fellow members and experts.
-* Share your insights, feedback, and ideas for continuous improvement.
-* Engage in discussions, ask questions, and stay in the loop.
-
+<ul class="square">
+<li> Receive project updates, announcements, and feature releases.</li>
+<li>Get assistance and support from fellow members and experts.</li>
+<li>Share your insights, feedback, and ideas for continuous improvement.</li>
+<li>Engage in discussions, ask questions, and stay in the loop.</li>
+</ul>
 Join us on Slack and be a part of our thriving project community. Together, we'll make this journey even more rewarding and successful!
 
 
@@ -92,5 +87,5 @@ Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container
 
 </details>
 
-</span>
+
 

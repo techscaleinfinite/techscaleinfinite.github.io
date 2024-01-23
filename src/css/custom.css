@@ -331,6 +331,26 @@ font-weight: 300;
 }
 .highlight-border-tag:hover a{
 color: var(--ifm-color-primary-right-sidebar-acive);
+}
+/* Bullet Poinst */
+ul.circle {
+  list-style-type: circle;
+}
 
+ul.square {
+  list-style-type: square;
+  /* color: var(--ifm-color-primary); */
+}
 
+ol.upper-roman {
+  list-style-type: upper-roman;
+}
+
+ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+/* Folder  page */
+.cardContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocCard-styles-module{
+  border-radius: 0;
+  box-shadow:none;
 }
