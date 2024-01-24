@@ -42,15 +42,18 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').Options} */
         ({
            docs: {
-              routeBasePath: '/',
+             routeBasePath: '/',
               sidebarPath: './sidebars.js',
-              // Please change this to your repo.
+              breadcrumbs: false,
+              sidebarCollapsed: false,
+              lastVersion: 'current',
+           // Please change this to your repo.
               // Remove this to remove the "edit this page" links.
               //editUrl:
               // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
            },
-           blog: false,
-           //blog: {
+           blog: false, 
+           //blog: {}
            //showReadingTime: true,
            // Please change this to your repo.
            // Remove this to remove the "edit this page" links.
@@ -80,6 +83,7 @@ const config = {
 
   themeConfig:
      /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+     
      ({
         // Replace with your project's social card
         image: 'img/picture-removebg-preview.png',
@@ -91,6 +95,12 @@ const config = {
           // appId: '3DIIG4MP9J',
           
         // },
+      //   Side bar auto colopse
+      //   docs: {
+         // sidebar: {
+         //   autoCollapseCategories: true,
+         // },
+      //  },
         navbar: {
            // title: 'ScaleInfinite',
            logo: {

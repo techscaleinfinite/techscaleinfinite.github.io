@@ -71,8 +71,7 @@ slug: /
    src="/img/quick_start/community.png" />
  <div class="avatar__intro">
    <div class="avatar__name">Community</div>
-   <small class="avatar__subtitle">Together, we'll make this journey even more rewarding and successful! </
-small>
+   <small class="avatar__subtitle">Together, we'll make this journey even more rewarding and successful! </small>
  </div>
 </div>
    </div>

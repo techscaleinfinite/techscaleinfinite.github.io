@@ -1,17 +1,21 @@
 ---
 draft: false
+hide_title: true
+title: Christmas Community
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
 
-# Christmas Community
 
-
+<div class="avatar avatar_margin">
+  <img    class="avatar__photo avatar__photo--xl"   src="/img/erwdf.jpg" />
+  <div class="avatar__intro">
+    <div class="avatar__name-title">Christmas Community</div>  
+  </div>
+</div>
 <!-- <p align="center"> -->
   <!-- <img src="/img/erwdf.jpg" alt="Alt Text" width="25%"/> -->
 <!-- </p>  -->
-
-**Christmas Community**
 
 <p>Create a centralized space for your family's gift-giving with Christmas Community. This simple platform ensures everyone can discover desired gifts, eliminating the risk of double-gifting. Designed to streamline the holiday season, it offers an efficient solution for organizing and coordinating presents within your family. Enjoy a hassle-free and joyous gift-sharing experience with Christmas Community, bringing festive cheer to your celebrations.</p>
 

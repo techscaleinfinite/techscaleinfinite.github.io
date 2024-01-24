@@ -1,14 +1,15 @@
 ---
 draft: false
+title: Baikal Deployment
+hide_title: true
 ---
 <!-- import Comments from '/src/components/HomepageFeatures/Comment'; -->
-
-# Baikal Deployment
-
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
-<p align="center">
-  <img src="/img/gr4.jpg" alt="Alt Text" width="100"/>
-</p> 
+<div class="avatar avatar_margin">
+  <img    class="avatar__photo avatar__photo--xl"   src="/img/gr4.jpg" />
+  <div class="avatar__intro">
+    <div class="avatar__name-title">Baikal Deployment</div>  
+  </div>
+</div>
 
 ### What's is baikal?
 
@@ -37,9 +38,7 @@ Imagine a web interface that's not just user-friendly but genuinely intuitive. B
 | --------------------- | ------                                                                                                                   | 
 |-       |  -                              |
 
-</span>
 
-<span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 ### Installation
 
@@ -93,6 +92,5 @@ Stay informed and engaged with our project's latest developments and support on 
 Kubernetes, cloud computing, DevOps, cloud services, hosting platform, container orchestration, cloud infrastructure, cloud deployment, cloud management, cloud technology, cloud solutions, baikal, calender
 
 </details>
-</span>
 
 <Comments />
