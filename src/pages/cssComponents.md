@@ -131,3 +131,77 @@ sidebar_label: Document
   <div class="col-demo tr">80</div>
 </div>
 </div>
+
+<div class="spacing-hr-line"></div>
+
+**Pup-up**
+
+<div class="row">
+<div class = "col col--6">
+<div class="card-demo border">
+  <div class="card">
+    <div class="card__header border-bottom-1 ">
+      <div class="avatar">
+        <img
+          class="avatar__photo "   src="/img/665.png" />
+        <div class="avatar__intro">
+          <div class="avatar__name ">Scaleinfinte / Xampp</div>    
+            </div>
+      </div>
+    </div>
+    <div class="card__body ">
+      <p>Application Name  </p>
+      <div class="border p-1">Xampp 1111</div>
+      <img  src="/img/slider.jpg"   />
+  <span class="small-rext">
+  (90% of your allocated resources (CPU, RAM) used for this application) 
+  </span>
+
+<input type="checkbox" checked="checked" /> HTTP
+
+<input type="checkbox" checked="" />  TCP / UDP
+    </div>    
+    <div class="card__footer border-top-1">
+      <div class="button-group button-group--block">
+        <button class="button button--secondary">Previous</button>
+        <button class="button button--warning">Install with default</button>
+        <button class="button button--primary">Advance</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class = "col col--6">
+<div class="card-demo border">
+  <div class="card">
+    <div class="card__header border-bottom-1 ">
+      <div class="avatar">
+        <img
+          class="avatar__photo "   src="/img/665.png" />
+        <div class="avatar__intro">
+          <div class="avatar__name ">Scaleinfinte / Xampp</div>    
+            </div>
+      </div>
+    </div>
+    <div class="card__body ">
+      <p>ENV Variable  </p>
+      <div class="border p-1">Enter variable</div >  
+        Working Directory  
+
+<div class="border p-1">Enter Working Directory</div >   
+<input type="radio" checked="checked" /> Public
+<input type="radio" checked="" />  Private
+    </div>    
+    <div class="card__footer border-top-1">
+      <div class="button-group button-group--block">
+         <button class="button button--info">Previous</button>
+        <button class="button button--success">Install</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
