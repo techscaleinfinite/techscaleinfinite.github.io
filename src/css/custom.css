@@ -63,8 +63,8 @@
 }
 /* logo */
 .navbar__logo img {
-  height: 160%;
-  margin-top: -10px;
+  height: 135%;
+  margin-top: -8px;
 }
 nav.navbar {
   font-family: 'RobotoFlex';
@@ -447,4 +447,8 @@ ol.lower-alpha {
   width: 100%;
   border-bottom: 1px solid #747bfc;
   margin-bottom: 1rem;
+}
+/* Hide search place holder  */
+.aa-DetachedSearchButtonPlaceholder {
+  display: none !important;
 }
