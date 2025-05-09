@@ -454,3 +454,9 @@ ol.lower-alpha {
 .aa-DetachedSearchButtonPlaceholder {
   display: none !important;
 }
+.aa-DetachedSearchButton{
+  border-radius: 50% !important;
+    height: 40px !important;
+    width: 40px !important;
+    padding: 0px !important;
+}
