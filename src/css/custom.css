@@ -63,7 +63,7 @@
 }
 /* logo */
 .navbar__logo img {
-  height: 135%;
+  height: 160%;
   margin-top: -8px; 
   /* testing-2 */
 
@@ -458,6 +458,10 @@ ol.lower-alpha {
   border-radius: 50% !important;
     height: 40px !important;
     width: 40px !important;
-    padding: 0px !important;
-    
+    padding: 0px !important;    
+}
+@media (max-width: 768px) {
+  .navbar__logo img {
+    height: 130%;
+  }
 }
