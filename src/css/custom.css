@@ -64,7 +64,9 @@
 /* logo */
 .navbar__logo img {
   height: 135%;
-  margin-top: -8px;
+  margin-top: -8px; 
+
+  
 }
 nav.navbar {
   font-family: 'RobotoFlex';
