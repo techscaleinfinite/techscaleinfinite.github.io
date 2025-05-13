@@ -8,23 +8,85 @@ slug: /
 import Head from '@docusaurus/Head';
 
 <Head>
-<!-- Structured data Schema -->
+  {/* Organization structured data */}
   <script type="application/ld+json">
-    {`
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Scaleinfinite Technologies",
-        "url": "https://docs.scaleinfinite.fr",
-        "logo": "https://docs.scaleinfinite.fr/img/logo.svg",
-        "sameAs": [
-          "https://github.com/techscaleinfinite",
-          "https://scaleinfinite.fr"
-        ]
-      }
-    `}
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Scale Infinite Private Limited",
+      "alternateName": "Scaleinfinite",
+      "url": "https://scaleinfinite.fr/",
+      "logo": "https://scaleinfinite.fr/images/scaleinfinite-logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+33 9 70 44 00 55",
+        "contactType": "customer service",
+        "areaServed": "FR"
+      },
+      "sameAs": [
+        "https://www.instagram.com/scaleinfinite/",
+        "https://www.youtube.com/channel/UCyqMBvdl3onfBG4bJ31uk-A",
+        "https://www.linkedin.com/company/scaleinfinite/",
+        "https://scaleinfinite.fr/"
+      ]
+    })}
+  </script>
+
+  {/* BreadcrumbList structured data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Demo Deployment",
+          "item": "https://docs.scaleinfinite.fr/category/demo-deployment/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kubernetes Services",
+          "item": "https://docs.scaleinfinite.fr/introduction/kubernetes/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Docker Services",
+          "item": "https://docs.scaleinfinite.fr/blogs/docker%20a%20game%20changer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "About Scale Infinite",
+          "item": "https://docs.scaleinfinite.fr/introduction/about-scale-infinite/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "About Cloudfloat",
+          "item": "https://docs.scaleinfinite.fr/introduction/cloud-float/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Tutorial",
+          "item": "https://docs.scaleinfinite.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Support",
+          "item": "https://docs.scaleinfinite.fr/community/"
+        }
+      ]
+    })}
   </script>
 </Head>
+
+
+
 
 <p class="text-center">
   Welcome to ScaleInfinite, where deploying and managing applications becomes a seamless experience! Our Quick Start guide is designed to help you navigate the first steps effortlessly.
