@@ -62,6 +62,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/picture-removebg-preview.png',
+      
+        metadata: [
+      { name: 'keywords', content: 'scaleinfinite, devops, kubernetes, cloud deployment' },
+      { name: 'description', content: 'ScaleInfinite helps you deploy and manage applications seamlessly with cloud-native tools.' },
+      { name: 'author', content: 'ScaleInfinite Technologies' },
+    ],
 
       navbar: {
         logo: {
@@ -124,22 +130,6 @@ const config = {
         },
       },
 
-      // ✅ Structured Data Injection
-      headTags: [
-        {
-          tagName: 'script',
-          attributes: {
-            type: 'application/ld+json',
-          },
-          innerHTML: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Scaleinfinite Technologies",
-            "url": "https://docs.scaleinfinite.fr",
-            "logo": "https://docs.scaleinfinite.fr/img/logo.svg"
-          }),
-        },
-      ],
     }),
 };
 
