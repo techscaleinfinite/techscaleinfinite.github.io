@@ -67,6 +67,10 @@ const config = {
       { name: 'keywords', content: 'scaleinfinite, devops, kubernetes, cloud deployment' },
       { name: 'description', content: 'ScaleInfinite helps you deploy and manage applications seamlessly with cloud-native tools.' },
       { name: 'author', content: 'ScaleInfinite Technologies' },
+      {
+       name: 'google-site-verification',
+        content: 'oa5QCCKVNejAXvsZQ7w7l0K9wRbfjGaHLikdK9gtLOk',
+      }
     ],
 
       navbar: {
