@@ -1,5 +1,9 @@
 ---
 draft: false
+id: stringis
+title: StringIS TCP Tool
+slug: /demo-deployment-copy/tcp/stringis
+canonical: https://docs.scaleinfinite.fr/demo-deployment-copy/tcp/stringis/
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 

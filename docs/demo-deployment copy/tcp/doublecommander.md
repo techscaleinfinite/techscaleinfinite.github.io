@@ -1,5 +1,9 @@
 ---
 draft: false
+id: doublecommander
+title: Double Commander TCP Setup
+slug: /demo-deployment-copy/tcp/doublecommander
+canonical: https://docs.scaleinfinite.fr/demo-deployment-copy/tcp/doublecommander/
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 

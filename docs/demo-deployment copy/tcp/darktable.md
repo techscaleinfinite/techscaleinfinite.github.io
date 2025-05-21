@@ -1,5 +1,9 @@
 ---
 draft: false
+id: darktable
+title: Darktable TCP Tool
+slug: /demo-deployment-copy/tcp/darktable
+canonical: https://docs.scaleinfinite.fr/demo-deployment-copy/tcp/darktable/
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 

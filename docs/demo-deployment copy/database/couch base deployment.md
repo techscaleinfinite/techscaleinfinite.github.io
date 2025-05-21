@@ -1,5 +1,9 @@
 ---
 draft: false
+id: couch-base-deployment
+title: Couchbase Deployment
+slug: /demo-deployment-copy/database/couch-base-deployment
+canonical: https://docs.scaleinfinite.fr/demo-deployment-copy/database/couch-base-deployment/
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 

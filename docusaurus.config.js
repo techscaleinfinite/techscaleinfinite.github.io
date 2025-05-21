@@ -70,7 +70,11 @@ const config = {
       {
        name: 'google-site-verification',
         content: 'oa5QCCKVNejAXvsZQ7w7l0K9wRbfjGaHLikdK9gtLOk',
-      }
+      },
+      {
+        name: 'canonical',
+        content: 'https://docs.scaleinfinite.fr/',
+    },
     ],
 
       navbar: {

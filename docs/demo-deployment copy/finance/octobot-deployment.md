@@ -1,5 +1,9 @@
 ---
 draft: false
+id: category-feed-reader
+title: Feed Reader Tools
+slug: /category/feed-reader
+canonical: https://docs.scaleinfinite.fr/category/feed-reader/
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
