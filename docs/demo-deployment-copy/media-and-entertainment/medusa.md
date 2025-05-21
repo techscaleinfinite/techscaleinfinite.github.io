@@ -1,5 +1,8 @@
 ---
 draft: false
+title: Medusa
+slug: /demo-deployment-copy/media-and-entertainment/medusa
+canonical: https://docs.scaleinfinite.fr/demo-deployment-copy/media-and-entertainment/medusa/
 ---
 import Comments from '/src/components/HomepageFeatures/Comment';
 
