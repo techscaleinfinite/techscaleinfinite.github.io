@@ -89,12 +89,12 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+            to:'/quick-start'
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+          {     
             position: 'left',
-            label: 'Pricing',
+            label: 'Playstore',
+            to:'/playstore'
           },
           {
             to: '/blog',

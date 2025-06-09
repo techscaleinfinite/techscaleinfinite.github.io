@@ -1,0 +1,352 @@
+// File: src/components/PlaystoreLandingPage.jsx
+
+import React from 'react';
+import Link from '@docusaurus/Link';
+import Layout from '@theme/Layout'
+// Header Section
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+// import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// </>
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './css/style.css';
+// import './css/responsive.css';
+import './css/bootstrap.min.css';
+import './css/ionicons.min.css';
+import './css/font-awesome.min.css';
+// import './css/pe-icon-7-stroke.css';
+// import './css/plugins.css';
+import { FaStar } from 'react-icons/fa';
+// images
+
+
+const AppItem = ({ image, title, desc, rating }) => (
+  <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
+    <a href="#">
+      <div className="feature-content d-flex">
+        <img src={image} className="img-fluid" alt={title} />
+        <div className="text-start m-1 ps-3">
+          <h2>{title}</h2>
+          <p>{desc}</p>
+          <div className="d-flex align-items-center">
+          <strong className="me-2">{rating}</strong>
+          <span className='d-flex' style={{ color: 'rgb(250, 206, 27)' }}>
+            {[...Array(4)].map((_, i) => (
+              <FaStar key={i} />
+            ))}
+          </span>
+        </div>
+        </div>
+      </div>
+    </a>
+  </div>
+);
+
+const PlaystoreLandingPage = () => {
+  const apps = [
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/wordpress.webp', title: 'Wordpress', desc: 'Open source', rating: '4.3' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/amazonlinux.webp', title: 'Amazon Linux', desc: 'Operating system', rating: '4.7' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/caddy.webp', title: 'Caddy', desc: 'Open source', rating: '4.5' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/couchdb.webp', title: 'CoachDB', desc: 'Data Base', rating: '4.6' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/groovy.webp', title: 'Groovy', desc: 'Programming Language', rating: '4.3' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/erlang.webp', title: 'ERLang', desc: 'Programming Language', rating: '4.7' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/grafana_grafana.webp', title: 'Grafana', desc: 'Data Visualization Platform', rating: '4.5' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_postgresql.webp', title: 'Bitnami', desc: 'Deployment Platform', rating: '4.6' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/mediawiki.webp', title: 'Mediawiki', desc: 'Open source', rating: '4.5' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/mono.webp', title: 'Mono', desc: 'Operating system', rating: '4.0' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/ros.webp', title: 'Ros', desc: 'Operating System', rating: '4.5' },
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/photon.webp', title: 'Photon', desc: 'Opensource', rating: '4.6' },
+  ];
+const products = [
+  {
+    img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
+    name: 'Amazon',
+    category: 'Web services',
+    rating: 4,
+  },
+   {
+    img: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_mariadb.webp',
+    name: 'MariaDB',
+    category: 'Database',
+    rating: 4.3,
+  },
+     {
+    img: 'https://cdn.scaleinfinite.fr/app-images-webp/fluentd.webp',
+    name: 'Fluentd',
+    category: 'OpenSource',
+    rating: 4.9,
+  },
+     {
+    img: 'https://cdn.scaleinfinite.fr/app-images-webp/circleci_postgres.webp',
+    name: 'Circleci',
+    category: 'Database',
+    rating: 4.2,
+  },
+
+     {
+    img: 'https://cdn.scaleinfinite.fr/app-images-webp/almalinux.webp',
+    name: 'Almalinux',
+    category: 'Operating System',
+    rating: 4.5,
+  },
+     {
+    img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
+    name: 'Amazon',
+    category: 'Webservice',
+    rating: 4.5,
+  },
+   {
+    img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
+    name: 'Amazon',
+    category: 'Web services',
+    rating: 4,
+  },
+   {
+    img: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_mariadb.webp',
+    name: 'MariaDB',
+    category: 'Database',
+    rating: 4.3,
+  },
+
+  // Add more products here...
+];
+  return (
+     <Layout title="Playstore" description="Explore top-rated open-source and commercial apps">
+      {/* Header Section */}
+        <section className="primary-slider-section mb-0 position-relative">
+      <Swiper
+        modules={[Navigation, Pagination]}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
+        pagination={{ clickable: true }}
+        spaceBetween={5}
+        slidesPerView={1}
+        loop={true}
+        className="slider-type-1"
+      >
+      <SwiperSlide>
+  <div className="slide-inner image-placeholder" style={{backgroundColor:'#f6f6f6'}}>
+    <div className="">
+      <div className="row align-items-center">
+        {/* Text Section */}
+        <div className="col-lg-6 p-5">
+          <div className="slide-content layer-animation-1">
+            <h1 className="main-title" style={{ fontWeight: 700, color: '#3e4d76' }}>
+              <span>Self-Driving Cloud Applications</span>
+            </h1>
+            <p className="subtitle">
+              Smarter, faster, and always-on — the future of autonomous cloud computing.
+            </p>
+          </div>
+        </div>
+
+        {/* Image Section */}
+       <div className="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+  <img
+    src={require('./images/slider/slider1.png').default}
+    className="img-fluid"
+    alt="Slider Image" 
+    style={{width:'500px', height:'auto'}}
+  />
+</div>
+      </div>
+    </div>
+  </div>
+</SwiperSlide>
+
+
+
+        {/* You can add more <SwiperSlide> blocks below */}
+      </Swiper>
+
+      {/* Swiper custom navigation buttons */}
+      {/* <div className="swiper-button-next">
+        <i className="fa fa-angle-right"style={{color:'#e8e5e5'}}></i>
+      </div>
+      <div className="swiper-button-prev">
+        <i className="fa fa-angle-left" style={{color:'#e8e5e5'}}></i>
+      </div> */}
+    </section>
+      {/* HeaderSection close  */}
+    <div className="container py-5">
+      <div className="row">
+        {apps.slice(0, 4).map((app, idx) => <AppItem key={idx} {...app} />)}
+      </div>
+      <hr style={{ opacity: 0.1 }} />
+      <div className="row">
+        {apps.slice(4, 8).map((app, idx) => <AppItem key={idx + 4} {...app} />)}
+      </div>
+      <hr style={{ opacity: 0.1 }} />
+      <div className="row">
+        {apps.slice(8, 12).map((app, idx) => <AppItem key={idx + 8} {...app} />)}
+      </div>
+    </div>
+    {/* Open source Slider  */}
+    <section className="new-arrivals-section position-relative">
+      <div className="container">
+        <div className="row mb-0 mt-2">
+          <div className="col-12">
+            <div className="section-title text-start">
+              <h2>Open Source Products</h2>
+            </div>
+          </div>
+        </div>
+
+        {/* Custom Arrows - outside Swiper */}
+        <div className="swiper-button-prev custom-swiper-button">
+          <i className="fa fa-angle-left" ></i>
+        </div>
+        <div className="swiper-button-next custom-swiper-button">
+          <i className="fa fa-angle-right"></i>
+        </div>
+
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+          spaceBetween={10}
+          slidesPerView={1}
+          loop={true}
+          speed={1000}
+          breakpoints={{
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            992: { slidesPerView: 4 },
+            1200: { slidesPerView: 5 },
+          }}
+          centeredSlides={false}
+          grabCursor={true}
+        >
+          {products.map((product, index) => (
+            <SwiperSlide key={index}>
+              <div className="product-layout d-flex justify-content-center">
+                <div className="product-thumb">
+                  <div className="product-inner">
+                    <div className="product-image">
+                      <a href="#">
+                        <img src={product.img} alt={product.name} title={product.name} />
+                      </a>
+                    </div>
+                    <div className="product-caption">
+                      <div className="product-meta d-flex flex-column align-items-center">
+                        <p className="product-price mb-2">
+                          <span className="price-new">{product.name}</span>
+                        </p>
+                        <div className="product-manufacturer mb-1">
+                          <a href="#">{product.category}</a>
+                        </div>
+                        <div className="product-ratings">
+                          <ul className="rating d-flex justify-content-center list-unstyled mb-0">
+                            {[...Array(5)].map((_, i) => (
+                              <li key={i}>
+                                <i
+                                  className={`ion ion-md-star-outline${
+                                    i >= product.rating ? ' disabled' : ''
+                                  }`}
+                                ></i>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+    {/* Operating System Products */}
+    <section className="new-arrivals-section position-relative">
+      <div className="container">
+        <div className="row mb-0 mt-2">
+          <div className="col-12">
+            <div className="section-title text-start">
+              <h2>Operating System</h2>
+            </div>
+          </div>
+        </div>
+
+        {/* Custom Arrows - outside Swiper */}
+        <div className="swiper-button-prev custom-swiper-button">
+          <i className="fa fa-angle-left" ></i>
+        </div>
+        <div className="swiper-button-next custom-swiper-button">
+          <i className="fa fa-angle-right"></i>
+        </div>
+
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+          spaceBetween={10}
+          slidesPerView={1}
+          loop={true}
+          speed={1000}
+          breakpoints={{
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            992: { slidesPerView: 4 },
+            1200: { slidesPerView: 5 },
+          }}
+          centeredSlides={false}
+          grabCursor={true}
+        >
+          {products.map((product, index) => (
+            <SwiperSlide key={index}>
+              <div className="product-layout d-flex justify-content-center">
+                <div className="product-thumb">
+                  <div className="product-inner">
+                    <div className="product-image">
+                      <a href="#">
+                        <img src={product.img} alt={product.name} title={product.name} />
+                      </a>
+                    </div>
+                    <div className="product-caption">
+                      <div className="product-meta d-flex flex-column align-items-center">
+                        <p className="product-price mb-2">
+                          <span className="price-new">{product.name}</span>
+                        </p>
+                        <div className="product-manufacturer mb-1">
+                          <a href="#">{product.category}</a>
+                        </div>
+                        <div className="product-ratings">
+                          <ul className="rating d-flex justify-content-center list-unstyled mb-0">
+                            {[...Array(5)].map((_, i) => (
+                              <li key={i}>
+                                <i
+                                  className={`ion ion-md-star-outline${
+                                    i >= product.rating ? ' disabled' : ''
+                                  }`}
+                                ></i>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+
+    </Layout>
+  );
+};
+
+export default PlaystoreLandingPage;

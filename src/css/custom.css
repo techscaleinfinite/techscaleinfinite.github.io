@@ -61,6 +61,24 @@
   font-family: 'Nexa_Light';
   src: url('/fonts/Nexa_Light.otf');
 }
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+}
+/* Top nav bar */
+body{
+  top:80px;
+}
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ 
+}
 /* logo */
 .navbar__logo img {
   height: 160%;
@@ -71,8 +89,9 @@
 nav.navbar {
   font-family: 'RobotoFlex';
   color: var(--ifm-color-primary-title-dark);
-   font-size: 18px;   
+   font-size: 20px;   
    border-bottom:1px solid var(--ifm-color-primary-title-dark);
+   padding: 0 20px;
 }
 
 /* Sidebar */
@@ -134,7 +153,7 @@ nav.navbar {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);    
   letter-spacing: 0.1px;
-  font-size: 1.2rem;
+  
 }
 
 .pagination-nav__label{
@@ -189,7 +208,7 @@ text-align: left;
   font-size: 1.3rem;
   font-weight: 100;
   color: var(--ifm-color-primary-font-dark);
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
   margin-bottom: -10px;
   }
   .sub-highlight{
