@@ -414,7 +414,7 @@ header,
     c01 - Base - Typography
 *************************************************************/
 
-html,
+/* html,
 body {
     font-size: 13px;
 }
@@ -425,7 +425,7 @@ body {
     color: #000;
     font-weight: 400;
     background: #fff;
-}
+} */
 
 h1 {
     font-size: 22px;
@@ -1212,7 +1212,7 @@ header.header-type-3 .list-inline .language-menu ul a.current,
     color: #0b3b86;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -1233,7 +1233,7 @@ a,
 header.header-type-4 .header-text,
 .footer-type-2 .widgettitle {
     color: #242424;
-}
+} */
 
 .color-transparent {
     color: transparent;
@@ -2605,19 +2605,21 @@ header .list-inline .dropdown-menu ul li:last-child a {
  }
 
 .feature-box h2 {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 700;
     margin-bottom: 5px;
     letter-spacing: -.025em;
     text-transform: capitalize;
+     color: var(--ifm-color-primary-title-dark);
 }
 
 .feature-box p {
     font-size: 13px;
+    color: var(--ifm-color-primary-title-dark);
 }
 .feature-box :hover{
-    background-color: #eeefef;
-    color: #fff;
+    background-color: #cac9cb;
+    color: #323131;
 }
 
 .feature-box.type-2 {
@@ -2772,6 +2774,7 @@ header .list-inline .dropdown-menu ul li:last-child a {
     display: inline-block;
     letter-spacing: -.05em;
     text-transform: capitalize;
+     color: var(--ifm-color-primary-title-dark);
 }
 
 .section-title h2::before {

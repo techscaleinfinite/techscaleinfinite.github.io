@@ -10,8 +10,8 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // </>
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './css/style.css';
 // import './css/responsive.css';
 import './css/bootstrap.min.css';
@@ -177,11 +177,11 @@ const products = [
       <div className="row">
         {apps.slice(0, 4).map((app, idx) => <AppItem key={idx} {...app} />)}
       </div>
-      <hr style={{ opacity: 0.1 }} />
+      <hr style={{ opacity: 0.5 }} />
       <div className="row">
         {apps.slice(4, 8).map((app, idx) => <AppItem key={idx + 4} {...app} />)}
       </div>
-      <hr style={{ opacity: 0.1 }} />
+      <hr style={{ color: 'var(--ifm-color-primary-title-dark)' }} />
       <div className="row">
         {apps.slice(8, 12).map((app, idx) => <AppItem key={idx + 8} {...app} />)}
       </div>
