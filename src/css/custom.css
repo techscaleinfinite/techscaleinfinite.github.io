@@ -26,7 +26,14 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   /* Custom */
+  --ifm-card-background: #fff;
   --ifm-navbar-height: 80px;
+  --ifm-button-bg:#040564;
+  --ifm-hover-icon:#d7d4d4;
+  /* cloud appkication title */
+  --ifm-color-title-darker: #251f5d;
+  /* Gradient Background */
+  --ifm-gradient-bg-color: linear-gradient(20deg, rgb(77, 92, 201) 0%, rgba(2, 6, 92, 0.5) 25%, rgb(255, 255, 255) 62%);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -43,6 +50,14 @@
   --ifm-color-primary-font-dark:#fff;
   --ifm-color-primary-alert-background-color: #9fa4fc;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-card-background: #1b1b1d;
+  --ifm-button-bg:#5555fc;
+   --ifm-hover-icon:#383839;
+   /* cloud appkication title */
+  --ifm-color-title-darker: #8b91e6;
+  /* bg gradient color */
+ --ifm-gradient-bg-color: linear-gradient(20deg, rgb(77, 92, 201) 0%, rgba(2, 6, 92, 0.5) 25%, rgb(27, 27, 29) 62%);
+
 }
 /* Fonts */
 @font-face {
@@ -483,5 +498,97 @@ ol.lower-alpha {
 @media (max-width: 768px) {
   .navbar__logo img {
     height: 130%;
+  }
+}
+/* App- Decription page Hero image Responsive for .MD file */
+.app-card {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  background-color: #f1f2f35e;
+  border: 1px solid #f1f2f3;
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 20rem;
+  max-width: 800px;
+  margin: 1rem auto;
+  padding:20px 30px;
+}
+
+.app-card__logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.app-card__content {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.app-card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.app-card__rating {
+  font-size: 0.95rem;
+}
+
+.app-card__rating .stars {
+  color: #face1b;
+  margin-left: 4px;
+}
+
+.app-card__rating .reviews {
+  color: #6c757d;
+  margin-left: 6px;
+}
+
+.app-card__meta {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.app-card__meta .age {
+  color: #7b81e0;
+}
+
+.app-card__install-btn {
+  align-self: flex-end;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #7b81e0;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .app-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  
+  }
+
+  .app-card__logo {
+    width: 64px;
+    height: 64px;
+    
+  }
+
+  .app-card__content {
+    width: 100%;
+    align-items: center;
+  }
+  .app-card__install-btn {
+   align-self: auto;
+   
   }
 }

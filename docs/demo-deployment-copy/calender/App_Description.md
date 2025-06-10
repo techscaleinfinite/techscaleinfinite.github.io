@@ -5,15 +5,13 @@ hide_title: true
 ---
 
 <!-- # Build and run your apps with lightning speed and flexible -->
-<div class="avatar " style={{ padding: '1rem',  backgroundColor: '#f1f2f35e',  margin: '1rem',
+<!-- <div class="avatar " style={{ padding: '1rem',  backgroundColor: '#f1f2f35e',  margin: '1rem',
   border: '1px solid #f1f2f3'}}>
   <img    class="avatar__photo avatar__photo--xl"   src="https://cdn.scaleinfinite.fr/app-images-webp/alpine.webp" />
   <div class="avatar__intro">
     <div class="avatar__name-title">Alphine</div>  
   </div>
 
-
-<!-- <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'flex-end', justifyContent: 'flex-end', paddingBottom: '0.5rem' }}> -->
 <div style={{
   display: 'flex',
   flexDirection: 'column',
@@ -36,7 +34,33 @@ hide_title: true
     > Install App</a></strong></div>
 
 </div>
+</div> -->
+
+
+<div className="app-card">
+  <img
+    className="app-card__logo"
+    src="https://cdn.scaleinfinite.fr/app-images-webp/alpine.webp"
+    alt="Alphine"
+  />
+
+  <div className="app-card__content">
+    <div className="app-card__title">Alphine</div>
+
+    <div className="app-card__rating">
+      <strong>4.3</strong>
+      <span className="stars">★★★★</span>
+      <span className="reviews">(5.8K reviews)</span>
+    </div>
+
+    <div className="app-card__meta"><strong>10L+</strong> Downloads</div>
+    <div className="app-card__meta"><strong>Rated for</strong> <span className="age">3+</span></div>
+
+    <a href="#" className="app-card__install-btn">Install App</a>
+  </div>
 </div>
+
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 

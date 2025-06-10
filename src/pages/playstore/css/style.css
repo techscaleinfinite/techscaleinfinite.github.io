@@ -1348,7 +1348,7 @@ body .checkout-wrapper .checkout-payment .form-check a:hover,
 .single-post-wrapper blockquote .blockquote-footer,
 .single-post-wrapper .pagination li a,
 .error-wrapper h2 {
-    color: #252525;
+    color: var(--ifm-hover-icon);
 }
 
 .nice-select .list .option,
@@ -2618,8 +2618,8 @@ header .list-inline .dropdown-menu ul li:last-child a {
     color: var(--ifm-color-primary-title-dark);
 }
 .feature-box :hover{
-    background-color: #cac9cb;
-    color: #323131;
+    background-color: var(--ifm-hover-icon);   
+     color: #040000;
 }
 
 .feature-box.type-2 {

@@ -29,7 +29,7 @@ const AppItem = ({ image, title, desc, rating }) => (
       <div className="feature-content d-flex">
         <img src={image} className="img-fluid" alt={title} />
         <div className="text-start m-1 ps-3">
-          <h2>{title}</h2>
+          <h2 className='cloud-title'>{title}</h2>
           <p>{desc}</p>
           <div className="d-flex align-items-center">
           <strong className="me-2">{rating}</strong>
@@ -130,14 +130,14 @@ const products = [
         className="slider-type-1"
       >
       <SwiperSlide>
-  <div className="slide-inner image-placeholder" style={{backgroundColor:'#f6f6f6'}}>
+  <div className="slide-inner image-placeholder"  style={{ background: 'var(--ifm-card-background)' }}>
     <div className="">
       <div className="row align-items-center">
         {/* Text Section */}
         <div className="col-lg-6 p-5">
           <div className="slide-content layer-animation-1">
             <h1 className="main-title" style={{ fontWeight: 700, color: '#3e4d76' }}>
-              <span>Self-Driving Cloud Applications</span>
+              <span className="cloud-title" style={{fontSize:'60px'}}>Self-Driving Cloud Applications</span>
             </h1>
             <p className="subtitle">
               Smarter, faster, and always-on — the future of autonomous cloud computing.
