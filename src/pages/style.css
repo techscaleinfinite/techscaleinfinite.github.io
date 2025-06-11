@@ -3515,6 +3515,6 @@ background-color: #040564;
 }
 
 .cloud-title{
-  color: var(--ifm-color-title-darker);
+  color: var(--ifm-color-title-darker) !important;
   	text-transform: capitalize;
 }
