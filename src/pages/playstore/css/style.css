@@ -3300,6 +3300,7 @@ header .list-inline .dropdown-menu ul li:last-child a {
   border: 1px solid #d7d9db;
   border-radius: 10px;
   padding: 10px;
+  background-color: #fff;
 }
 
 .product-image .action-links {
