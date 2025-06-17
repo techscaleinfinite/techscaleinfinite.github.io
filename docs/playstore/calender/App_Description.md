@@ -3,29 +3,10 @@ draft: false
 title: App Description
 hide_title: true
 ---
+import AlphineCard from '@site/docs/components/AlphineCard'
+import { alphineData } from '@site/docs/data/alphineData'
 
-<div className="app-card">
-  <img
-    className="app-card__logo"
-    src="https://cdn.scaleinfinite.fr/app-images-webp/alpine.webp"
-    alt="Alphine"
-  />
-
-  <div className="app-card__content">
-    <div className="app-card__title">Alphine</div>
-
-    <div className="app-card__rating">
-      <strong>4.3</strong>
-      <span className="stars">★★★★</span>
-      <span className="reviews">(5.8K reviews)</span>
-    </div>
-
-    <div className="app-card__meta"><strong>10L+</strong> Downloads</div>
-    <div className="app-card__meta"><strong>Rated for</strong> <span className="age">3+</span></div>
-
-    <a href="#" className="app-card__install-btn">Install App</a>
-  </div>
-</div>
+<AlphineCard {...alphineData} />
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -50,14 +31,17 @@ Discover quality products across fashion, home essentials, beauty, and more at a
 
 ---
 
-### Ratings and Reviews
+<!-- ### Ratings and Reviews
 **4.5★** · 68.7 lakh reviews
----
+--- -->
 
-## Similar Apps
+### Similar Apps
 ---
+import { products } from '@site/docs/data/products'
+import SimilarApps from '@site/docs/components/SimilarApps'
 
-<div
+<SimilarApps products={products.filter(p => p.category === 'Operating System')} />
+<!-- <div
   style={{
     overflow: 'hidden',
     width: '100%',
@@ -136,7 +120,7 @@ Discover quality products across fashion, home essentials, beauty, and more at a
       }
     `}
   </style>
-</div>
+</div> -->
 
 <br />
 [Back to Top](#)

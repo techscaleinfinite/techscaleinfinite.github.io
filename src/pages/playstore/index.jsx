@@ -1,27 +1,16 @@
-// File: src/components/PlaystoreLandingPage.jsx
 
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout'
-// Header Section
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-// import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// </>
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './css/style.css';
-// import './css/responsive.css';
 import './css/bootstrap.min.css';
 import './css/ionicons.min.css';
 import './css/font-awesome.min.css';
-// import './css/pe-icon-7-stroke.css';
-// import './css/plugins.css';
 import { FaStar } from 'react-icons/fa';
-// images
-
 
 const AppItem = ({ image, title, desc, rating }) => (
   <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
@@ -111,7 +100,6 @@ const products = [
     rating: 4.3,
   },
 
-  // Add more products here...
 ];
   return (
      <Layout title="Playstore" description="Explore top-rated open-source and commercial apps">
@@ -158,19 +146,7 @@ const products = [
     </div>
   </div>
 </SwiperSlide>
-
-
-
-        {/* You can add more <SwiperSlide> blocks below */}
       </Swiper>
-
-      {/* Swiper custom navigation buttons */}
-      {/* <div className="swiper-button-next">
-        <i className="fa fa-angle-right"style={{color:'#e8e5e5'}}></i>
-      </div>
-      <div className="swiper-button-prev">
-        <i className="fa fa-angle-left" style={{color:'#e8e5e5'}}></i>
-      </div> */}
     </section>
       {/* HeaderSection close  */}
     <div className="container py-5">

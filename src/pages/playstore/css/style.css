@@ -7442,3 +7442,20 @@ header.header-type-4 .header-text span:first-child {
     color: #cbcbcd !important;
     opacity: 0.5;
    }
+     .swiper-button-prev, .swiper-button-next-apps{
+    color: #cbcbcd !important;
+    opacity: 0.5;
+   }
+    .swiper-button-prev, .swiper-button-prev-apps{
+    color: #cbcbcd !important;
+    opacity: 0.5;
+   }
+   .swiper-button-prev, .swiper-container-rtl .swiper-button-next-apps{
+    left:0px !important;
+    right: auto;
+    
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev-apps{
+    right:0px !important;
+    left: auto;
+   }
