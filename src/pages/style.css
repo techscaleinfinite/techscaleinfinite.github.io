@@ -3518,3 +3518,53 @@ background-color: #040564;
   color: var(--ifm-color-title-darker) !important;
   	text-transform: capitalize;
 }
+/* styles.css or inside <style jsx> */
+.cloud-title {
+  font-size: 60px;
+}
+
+@media (max-width: 991px) {
+  .cloud-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cloud-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cloud-title {
+    font-size: 24px;
+  }
+}
+
+.subtitle {
+  font-size: 1.3rem; /* Default for large screens */
+}
+
+@media (max-width: 1200px) {
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .subtitle {
+    font-size: 0.95rem;
+  }
+}

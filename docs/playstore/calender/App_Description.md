@@ -40,14 +40,13 @@ Discover quality products across fashion, home essentials, beauty, and more at a
 import { products } from '@site/docs/data/products'
 import SimilarApps from '@site/docs/components/SimilarApps'
 
-<SimilarApps products={products.filter(p => p.category === 'Operating System')} />
+<SimilarApps products={products.filter(p => p.category === 'Web Service')} />
 <!-- <div
   style={{
     overflow: 'hidden',
     width: '100%',
     position: 'relative'
-  }}
->
+  }}>
   <div
     id="slider"
     style={{

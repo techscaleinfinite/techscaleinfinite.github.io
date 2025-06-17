@@ -6,7 +6,7 @@ import 'swiper/css/navigation'
 import products from '../data/products'
 
 const SimilarApps = ({ products }) => {
-  const filtered = products.filter(p => p.category === 'Operating System')
+  const filtered = products.filter(p => p.category === 'Web Service')
 
   return (
     <section className="new-arrivals-section position-relative">
