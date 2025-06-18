@@ -1,12 +1,16 @@
 import React from 'react'
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import styles from './index.module.css'
 import './style.css'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import $ from 'jquery';
+
 
  const settings = {
     centerMode: true,          // Equivalent to `center: true`
@@ -67,14 +71,20 @@ import $ from 'jquery';
   };
 
 
-
 export default function Home() {
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
   return (
     <Layout title="Welcome" description="This is my custom landing page">
   <section className="gj do  hj sp  i pg">         
   <div className="bb ze ki xn 2xl:ud-px-0">
    <div className="tc _o">
-               <div className="animate_left jn/2" data-sr-id="25" >
+     
+               <div className="animate_left jn/2" data-sr-id="25" data-aos="fade-right" >
                   <div class="fk vj zp or kk wm wb cloud-title" >Self-Driving Cloud Applications</div>
                   <p className="fq" >
                   Put your applications on autopilot mode in our AI managed environment
@@ -84,14 +94,17 @@ export default function Home() {
                   </div>
                </div>
             </div>
+           
   </div>
   <div>
-    <div className="animate_right xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 po-ab q r">
+    
+    <div data-aos="fade-left" className=" xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 po-ab q r">
       <img 
         src="/images/kubernetes-docker-services.png" 
         alt="kubernetes-docker-services" 
         className="q r ua mt-5 mr-2 bf" 
       />
+    
     </div>
   </div>
 </section>       
@@ -99,7 +112,7 @@ export default function Home() {
   <section id="features">
   <div className="bb ze ki yn 2xl:ud-px-12.5">
     <div className="tc uf zo xf ap zf bp mq">
-      <div className="animate_top kn to/3 tc cg oq">
+      <div className="animate_top kn to/3 tc cg oq" data-aos="fade-left">
         <div className="tc wf xf cf ae cd rg mh">
           <img src="images/icon-01.svg" alt="Icon" />
         </div>
@@ -108,7 +121,7 @@ export default function Home() {
           <p>Round-the-Clock Support for Seamless Operations</p>
         </div>
       </div>
-      <div className="animate_top kn to/3 tc cg oq">
+      <div className="animate_top kn to/3 tc cg oq" data-aos="fade-up">
         <div className="tc wf xf cf ae cd rg nh">
           <img src="images/icon-02.svg" alt="Icon" />
         </div>
@@ -117,7 +130,7 @@ export default function Home() {
           <p>Quick resolutions to keep you moving forward</p>
         </div>
       </div>
-      <div className="animate_top kn to/3 tc cg oq">
+      <div className="animate_top kn to/3 tc cg oq" data-aos="fade-right">
         <div className="tc wf xf cf ae cd rg oh">
           <img src="images/icon-03.svg" alt="Icon" />
         </div>
@@ -134,7 +147,7 @@ export default function Home() {
   <div className="bb ye i z-10 ki xn dr">
     <div className="bb ze ki xn wq">
       <div className="tc_display wf gg qq">
-        <div className="animate_left xc_cstm gn gg xc/2 i">
+        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
           <div>
             <img
               src="images/shape-05.svg"
@@ -144,7 +157,7 @@ export default function Home() {
             <img src="images/image-creator.png" alt="About" />
           </div>
         </div>
-        <div className="animate_right xc_cstm xc/2 i">
+        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
           <h2 className="fk vj zp pr kk wm qb cloud-title">What is Cloudfloat</h2>
           <p className="uo">
             Instantly install Apps. Easily deploy production ready apps. No more
@@ -163,7 +176,7 @@ export default function Home() {
     </div>
   </div>
   {/* Flash card Slider */}
-  <div className="container mt-5 pt-5">
+  <div className="container mt-5 pt-5" data-aos="fade-down">
     <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`}">
       <div className="animate_top bb ze rj ki xn vq">
         <h2 x-text="sectionTitle" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title" >We Offer Great Affordable Premium Prices.</h2>
@@ -205,27 +218,27 @@ export default function Home() {
 
 <section className="pg pj vp mr oj wp nr">
   <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
-    <div className="animate_top bb ze rj ki xn vq">
+    <div className="animate_top bb ze rj ki xn vq" data-aos="fade-up">
           <h2 x-text="" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title" >We Offer Great Affordable Premium Prices.</h2>
       <p className="bb on/5 wo/5 hq" x-text="sectionTitleText" >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
   
     </div>
   </div>
   <div className="bb ze ki xn 2xl:ud-px-0 jb">
-    <div className="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc">
+    <div className="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc" >
       <button
        
-        className="project-tab-btn ek rg ml il vi mi gh lk storage_btn"  style={{background:'var(--ifm-button-bg)', color: '#fff' }} onClick={() => showTab('storage')}
+        className="project-tab-btn ek rg ml il vi mi gh lk storage_btn"  data-aos="fade-left" style={{background:'var(--ifm-button-bg)', color: '#fff' }} onClick={() => showTab('storage')}
       >
         Storage
       </button>
       <button
-        className="project-tab-btn ek rg ml il vi mi compute_btn"  style={{background:'var(--ifm-button-bg)', color: '#fff' }} onClick={() => showTab('compute')}
+        className="project-tab-btn ek rg ml il vi mi compute_btn" data-aos="fade-down"  style={{background:'var(--ifm-button-bg)', color: '#fff' }} onClick={() => showTab('compute')}
       >
         Compute
       </button>
       <button
-        className="project-tab-btn ek rg ml il vi mi dashboard_btn"  style={{background:'var(--ifm-button-bg)' , color: '#fff' }} onClick={() => showTab('dashboard')}
+        className="project-tab-btn ek rg ml il vi mi dashboard_btn" data-aos="fade-right"  style={{background:'var(--ifm-button-bg)' , color: '#fff' }} onClick={() => showTab('dashboard')}
       >
         Dashboard
       </button>
@@ -236,7 +249,7 @@ export default function Home() {
         <div className="bb ye i z-10 ki xn dr">
           <div className="bb ze ki xn wq">
             <div className="tc_display wf gg qq">
-              <div className="animate_left xc_cstm gn gg xc/2 i">
+              <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
                 <img
                   src="images/shape-06.svg"
                   alt="Shape"
@@ -247,7 +260,7 @@ export default function Home() {
                   <img src="images/storage.png" alt="About" />
                 </div>
               </div>
-              <div className="animate_right xc_cstm xc/2 i">
+              <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
                 <h2 className="fk vj zp pr kk wm qb cloud-title">About File Storage</h2>
                 <p className="uo">
                   Instantly install Apps. Easily deploy production ready apps.
@@ -359,18 +372,18 @@ export default function Home() {
   <div className="bb ye i z-10 ki xn dr">
     <div className="tc uf sn tn un gg">
       <img src="images/shape-14.svg" alt="Shape" className="h ja ka mt-5" />
-      <div className="animate_left to/2">
+      <div className="animate_left to/2" data-aos="fade-left">
         <h2 className="fk vj zp pr lk ac cloud-title " >
           Install unlimited applications with our service.
         </h2>
       </div>
-      <div className="animate_left ">
+      <div className="animate_left " data-aos="fade-down">
         <h2 className="fk vj zp pr lk ac cloud-title">
           50K+
         </h2>
         <p className="">Registered Users</p>
       </div>
-      <div className="animate_left ">
+      <div className="animate_left " data-aos="fade-right">
         <h2 className="fk vj zp pr lk ac cloud-title">
           50K+
         </h2>
@@ -381,7 +394,7 @@ export default function Home() {
   <div className="bb ze ki xn yq mb en">
     <div className="wc qf pn xo ng">
       <div
-        className="animate_top sg oi pi zq ml il am cn _m"
+        className="animate_top sg oi pi zq ml il am cn _m" data-aos="fade-left"
         style={{
           background: 'var( --ifm-card-background)',
           margin: 10,
@@ -398,14 +411,14 @@ export default function Home() {
         </p>
       </div>
       <div
-        className="animate_top sg oi pi zq ml il am cn _m"
+        className="animate_top sg oi pi zq ml il am cn _m" data-aos="zoom-in"
        style={{
           background: 'var( --ifm-card-background)',
           margin: 10,
           padding: 20,
        
         }}
-      >
+       >
         {/* <img src="images/icon-05.svg" alt="Icon" /> */}
         <h4 className="ek zj kk wm _b cloud-title">Install application easily</h4>
         <p>
@@ -415,7 +428,7 @@ export default function Home() {
         </p>
       </div>
       <div
-        className="animate_top sg oi pi zq ml il am cn _m"
+        className="animate_top sg oi pi zq ml il am cn _m" data-aos="fade-right"
       style={{
           background: 'var( --ifm-card-background)',
           margin: 10,
@@ -435,7 +448,7 @@ export default function Home() {
   <div className="bb ze ki xn yq mb en">
     <div className="wc qf pn xo ng">
       <div
-        className="animate_top sg oi pi zq ml il am cn _m"
+        className="animate_top sg oi pi zq ml il am cn _m" data-aos="fade-left"
          style={{
           background: 'var( --ifm-card-background)',
           margin: 10,
@@ -452,7 +465,7 @@ export default function Home() {
         </p>
       </div>
       <div
-        className="animate_top sg oi pi zq ml il am cn _m"
+        className="animate_top sg oi pi zq ml il am cn _m" data-aos="zoom-out"
         style={{
           background: 'var( --ifm-card-background)',
           margin: 10,
@@ -469,7 +482,7 @@ export default function Home() {
         </p>
       </div>
       <div
-        className="animate_top sg oi pi zq ml il am cn _m"
+        className="animate_top sg oi pi zq ml il am cn _m" data-aos="fade-right"
       style={{
           background: 'var( --ifm-card-background)',
           margin: 10,
@@ -496,15 +509,15 @@ export default function Home() {
   <img src="images/shape-15.svg" alt="Shape" className="h q p" />
   <div className="bb ze i va ki xn br">
     <div className="tc uf sn tn xf un gg">
-      <div className="animate_top me/5 ln rj">
+      <div className="animate_top me/5 ln rj" data-aos="fade-left">
         <h2 className="gk vj zp or kk wm hc cloud-title">1000+</h2>
         <p className="ek bk aq">Applications</p>
       </div>
-      <div className="animate_top me/5 ln rj">
+      <div className="animate_top me/5 ln rj" data-aos="zoom-in">
         <h2 className="gk vj zp or kk wm hc cloud-title">200+</h2>
         <p className="ek bk aq">Happy Clients</p>
       </div>
-      <div className="animate_top me/5 ln rj">
+      <div className="animate_top me/5 ln rj" data-aos="fade-right">
         <h2 className="gk vj zp or kk wm hc cloud-title">50K+</h2>
         <p className="ek bk aq">Registered Users</p>
       </div>
@@ -518,15 +531,14 @@ export default function Home() {
   <img src="images/shape-07.svg" alt="Shape" className="h w da ee" />
   <img src="images/shape-12.svg" alt="Shape" className="h p s" />
   <img src="images/shape-13.svg" alt="Shape" className="h r q" />
-  <div x-data="{ sectionTitle: `Let’s Stay Connected`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
-    <div className="animate_top bb ze rj ki xn vq">
-      <h2 x-text="sectionTitle" className="fk vj pr kk wm on/5 gq/2 bb _b" />
-      <p className="bb on/5 wo/5 hq" x-text="sectionTitleText" />
+     <div className="animate_top bb ze rj ki xn vq" data-aos="fade-up">
+          <h2 x-text="" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title"  data-aos="fade-left">Let’s Stay Connected`</h2>
+      <p className="bb on/5 wo/5 hq" x-text="sectionTitleText" data-aos="fade-right">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+  
     </div>
-  </div>
   <div className="i va bb ye ki xn wq jb mo">
     <div className="tc uf sn tf rn un zf xl:gap-10">
-      <div className="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
+      <div className="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg" data-aos="fade-down">
         <img src="images/shape-03.svg" alt="Shape" className="h la x wd" />
         <img src="images/shape-06.svg" alt="Shape" className="h la ma ne kf" />
         <div className="fb">
@@ -568,6 +580,7 @@ export default function Home() {
                 <img
                   src="images/instagram.png"
                   style={{ width: 35, height: "auto" }}
+                  
                 />
               </a>
             </li>
@@ -582,7 +595,7 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
+      <div className="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq" data-aos="fade-up">
         <img src="images/connect.png" alt="" />
       </div>
     </div>

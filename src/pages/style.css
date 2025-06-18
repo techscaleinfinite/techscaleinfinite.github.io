@@ -3519,9 +3519,9 @@ background-color: #040564;
   	text-transform: capitalize;
 }
 /* styles.css or inside <style jsx> */
-.cloud-title {
+/* .cloud-title {
   font-size: 60px;
-}
+} */
 
 @media (max-width: 991px) {
   .cloud-title {
@@ -3568,3 +3568,5 @@ background-color: #040564;
     font-size: 0.95rem;
   }
 }
+
+

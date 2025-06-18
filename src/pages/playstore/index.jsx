@@ -135,13 +135,13 @@ const products = [
 
         {/* Image Section */}
        <div className="col-lg-6 d-flex justify-content-lg-end justify-content-center">
-  <img
-    src={require('./images/slider/slider1.png').default}
-    className="img-fluid"
-    alt="Slider Image" 
-    style={{width:'500px', height:'auto'}}
-  />
-</div>
+          <img
+            src={require('./images/slider/slider1.png').default}
+            className="img-fluid"
+            alt="Slider Image" 
+            style={{width:'500px', height:'auto'}}
+          />
+      </div>
       </div>
     </div>
   </div>
