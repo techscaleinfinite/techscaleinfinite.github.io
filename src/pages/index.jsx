@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout'
 import AOS from 'aos';
@@ -71,13 +71,20 @@ import $ from 'jquery';
   };
 
 
+
 export default function Home() {
-    useEffect(() => {
+     useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true
     });
   }, []);
+  const sectionTitle = "We Offer Great Affordable Premium Prices.";
+  const sectionTitleText =
+    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.";
+
+  const [filterTab, setFilterTab] = React.useState(0); // 0 = all, 2 = storage, 3 = compute, 4 = dashboard
+ 
   return (
     <Layout title="Welcome" description="This is my custom landing page">
   <section className="gj do  hj sp  i pg">         
@@ -183,7 +190,7 @@ export default function Home() {
         <p className="bb on/5 wo/5 hq" x-text="sectionTitleText" />
       </div>
     </div>
-    <Slider {...settings}>
+    <Slider {...settings}  className="customSlider">
       <div className="item">
     <div className="shadow-effect">
       <img className="img-circle" src="images/cards/mangodb.jpg" />
@@ -215,142 +222,128 @@ export default function Home() {
   
 </section>
 
-
-<section className="pg pj vp mr oj wp nr">
-  <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
-    <div className="animate_top bb ze rj ki xn vq" data-aos="fade-up">
-          <h2 x-text="" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title" >We Offer Great Affordable Premium Prices.</h2>
-      <p className="bb on/5 wo/5 hq" x-text="sectionTitleText" >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
-  
+  <section className="pg pj vp mr oj wp nr">
+  <div>
+    <div className="animate_top bb ze rj ki xn vq">
+      <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">{sectionTitle}</h2>
+      <p className="bb on/5 wo/5 hq">{sectionTitleText}</p>
     </div>
   </div>
+
   <div className="bb ze ki xn 2xl:ud-px-0 jb">
-    <div className="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc" >
+    {/* Tab Buttons */}
+    <div className="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc">
       <button
-       
-        className="project-tab-btn ek rg ml il vi mi gh lk storage_btn"  data-aos="fade-left" style={{background:'var(--ifm-button-bg)', color: '#fff' }} onClick={() => showTab('storage')}
+        onClick={() => setFilterTab(0)}
+        className={`project-tab-btn ek rg ml il vi mi ${filterTab === 0 ? 'gh lk' : ''}`}
+      >
+        All
+      </button>
+      <button
+        onClick={() => setFilterTab(2)}
+        className={`project-tab-btn ek rg ml il vi mi ${filterTab === 2 ? 'gh lk' : ''}`}
       >
         Storage
       </button>
       <button
-        className="project-tab-btn ek rg ml il vi mi compute_btn" data-aos="fade-down"  style={{background:'var(--ifm-button-bg)', color: '#fff' }} onClick={() => showTab('compute')}
+        onClick={() => setFilterTab(3)}
+        className={`project-tab-btn ek rg ml il vi mi ${filterTab === 3 ? 'gh lk' : ''}`}
       >
         Compute
       </button>
       <button
-        className="project-tab-btn ek rg ml il vi mi dashboard_btn" data-aos="fade-right"  style={{background:'var(--ifm-button-bg)' , color: '#fff' }} onClick={() => showTab('dashboard')}
+        onClick={() => setFilterTab(4)}
+        className={`project-tab-btn ek rg ml il vi mi ${filterTab === 4 ? 'gh lk' : ''}`}
       >
         Dashboard
       </button>
     </div>
-    <div className="projects-wrapper tc -ud-mx-5" style={{ position: "relative", height: "499px" }}>
-      <div className="project-sizer" />
-      <div className="project-item bj  storage" style={{ position:"absolute" , 'left': "0px" ,'top': "0px" }}>
-        <div className="bb ye i z-10 ki xn dr">
-          <div className="bb ze ki xn wq">
-            <div className="tc_display wf gg qq">
-              <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
-                <img
-                  src="images/shape-06.svg"
-                  alt="Shape"
-                  className="h p s"
-                  style={{ transform: "scaleX(-1)", opacity: "0.5" }}
-                />
-                <div>
-                  <img src="images/storage.png" alt="About" />
-                </div>
+
+    {/* Tab Content */}
+    <div className="projects-wrapper  -ud-mx-5 space-y-10">
+      {/* Storage */}
+      {(filterTab === 0 || filterTab === 2) && (
+        <div className="project-item bj">
+          <div className="bb ye i z-10 ki xn dr">
+            <div className={`tc_display ${filterTab === 0 ? 'flex flex-col gap-5' : 'wf gg qq'}`}>
+              <div className="animate_left xc_cstm gn gg md:w-1/2 w-full" data-aos="float-right">
+                <img src="images/shape-06.svg" alt="Shape" className="h p s opacity-50 -scale-x-100" />
+                <img src="images/storage.png" alt="Storage" />
               </div>
-              <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
-                <h2 className="fk vj zp pr kk wm qb cloud-title">About File Storage</h2>
-                <p className="uo">
-                  Instantly install Apps. Easily deploy production ready apps.
-                  No more tinkering with Dockerfiles and manually provisioning
-                  databases.
-                </p>
-                <div className="tc tf yo zf mb">
-                  <a
-                    href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-                    className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}                
-                  >
-                    Get Started Now
-                  </a>
-                </div>
-              </div>
+                <div   className="animate_right xc_cstm md:w-1/2 w-full flex flex-col justify-center h-full"   style={{marginTop:'3rem'}} data-aos="float-left"        >
+                      <h2 className="fk vj zp pr kk wm qb">About File Storage</h2>
+                      <p className="uo">
+                        Instantly install Apps. Easily deploy production ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
+                      </p>
+                      <div className="tc tf yo zf mb">
+                        <a
+                          href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
+                          className="ek jk lk gh gi hi rg ml il vc _d _l"
+                          style={{
+                            background: '#fff',
+                            border: '1px solid #e6e2e2',
+                            color: '#000',
+                          }}
+                        >
+                          Get Started Now
+                        </a>
+                      </div>
+                    </div>
+
+
             </div>
           </div>
         </div>
-      </div>
-      <div className="project-item bj compute" style={{ display: "none" , position:"absolute" , 'left': "0px" ,'top': "0px" }}>
-        <div className="bb ye i z-10 ki xn dr">
-          <div className="bb ze ki xn wq">
-            <div className="tc_display wf gg qq">
-              <div className="animate_right xc_cstm xc/2 i">
-                <h2 className="fk vj zp pr kk wm qb cloud-title">About Compute</h2>
+      )}
+
+      {/* Compute */}
+      {(filterTab === 0 || filterTab === 3) && (
+        <div className="project-item bj">
+          <div className="bb ye i z-10 ki xn dr">
+            <div className={`tc_display ${filterTab === 0 ? 'flex flex-col gap-5' : 'wf gg qq'}`}>
+              <div className="animate_right xc_cstm md:w-1/2 w-full" style={{marginTop:'3rem'}} data-aos="float-right">
+                <h2 className="fk vj zp pr kk wm qb">About Compute</h2>
                 <p className="uo">
-                  Instantly install Apps. Easily deploy production ready apps.
-                  No more tinkering with Dockerfiles and manually provisioning
-                  databases.
-                </p>
-                <div className="tc tf yo zf mb">
-                  <a
-                    href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-                    className="ek jk lk gh gi hi rg ml il vc _d _l"
-                    style={{
-                      background: 'var(--ifm-button-bg)',
-                      border: "1px solid #e6e2e2",
-                       color: '#fff',
-                    
-                    }}
-                     
-                  >
-                    Get Started Now
-                  </a>
-                </div>
-              </div>
-              <div className="animate_left xc_cstm gn gg xc/2 i">
-                <div>
-                  <img
-                    src="images/shape-05.svg"
-                    alt="Shape"
-                    className="h -ud-left-5 x"
-                  />
-                  <img src="images/compute2.png" alt="About" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="project-item bj dashboard" style={{ display: "none" , position:"absolute" , 'left': "0px" ,'top': "0px" }}>
-        <div className="bb ye i z-10 ki xn dr">
-          <div className="bb ze ki xn wq">
-            <div className="tc_display wf gg qq">
-              <div className="animate_left xc_cstm gn gg xc/2 i">
-                <div>
-                  <img
-                    src="images/shape-05.svg"
-                    alt="Shape"
-                    className="h -ud-left-5 x"
-                  />
-                  <img src="images/dashboard.png" alt="About" />
-                </div>
-              </div>
-              <div className="animate_right xc_cstm xc/2 i">
-                <h2 className="fk vj zp pr kk wm qb cloud-title">About Cloud Float</h2>
-                <p className="uo">
-                  Instantly install Apps. Easily deploy production ready apps.
-                  No more tinkering with Dockerfiles and manually provisioning
-                  databases.
+                  Instantly install Apps. Easily deploy production ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
                 </p>
                 <div className="tc tf yo zf mb">
                   <a
                     href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
                     className="ek jk lk gh gi hi rg ml il vc _d _l"
-                    style={{
-                      background: "#fff",
-                      border: "1px solid #e6e2e2",
-                      color: "#000"
-                    }}
+                    style={{ background: '#fff', border: '1px solid #e6e2e2', color: '#000' }}
+                  >
+                    Get Started Now
+                  </a>
+                </div>
+              </div>
+              <div className="animate_left xc_cstm md:w-1/2 w-full" data-aos="float-left">
+                <img src="images/shape-05.svg" alt="Shape" className="h -ud-left-5 x" />
+                <img src="images/compute2.png" alt="Compute" />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Dashboard */}
+      {(filterTab === 0 || filterTab === 4) && (
+        <div className="project-item bj">
+          <div className="bb ye i z-10 ki xn dr">
+            <div className={`tc_display ${filterTab === 0 ? 'flex flex-col gap-5' : 'wf gg qq'}`}>
+              <div className="animate_left xc_cstm md:w-1/2 w-full" data-aos="float-left">
+                <img src="images/shape-05.svg" alt="Shape" className="h -ud-left-5 x" />
+                <img src="images/dashboard.png" alt="Dashboard" />
+              </div>
+              <div className="animate_right xc_cstm md:w-1/2 w-full" style={{marginTop:'3rem'}} data-aos="float-right">
+                <h2 className="fk vj zp pr kk wm qb">About Cloud Float</h2>
+                <p className="uo">
+                  Instantly install Apps. Easily deploy production ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
+                </p>
+                <div className="tc tf yo zf mb">
+                  <a
+                    href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
+                    className="ek jk lk gh gi hi rg ml il vc _d _l"
+                    style={{ background: '#fff', border: '1px solid #e6e2e2', color: '#000' }}
                   >
                     Get Started Now
                   </a>
@@ -359,10 +352,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   </div>
 </section>
+
+
 
 
 <section

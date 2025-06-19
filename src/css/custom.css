@@ -106,7 +106,7 @@ nav.navbar {
   font-family: 'RobotoFlex';
   color: var(--ifm-color-primary-title-dark);
    font-size: 20px;   
-   border-bottom:1px solid var(--ifm-color-primary-title-dark);
+   /* border-bottom:1px solid var(--ifm-color-primary-title-dark); */
    padding: 0 20px;
 }
 
@@ -592,3 +592,19 @@ ol.lower-alpha {
    
   }
 }
+/* landing page slider slick */
+/* General transition for smooth scaling */
+.customSlider .slick-slide {
+  transform: scale(0.7);
+  transition: transform 0.3s ease;
+  opacity: 0.6;
+}
+
+/* Active slide is centered and enlarged */
+.customSlider .slick-center {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+
