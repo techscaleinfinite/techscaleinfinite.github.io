@@ -69,7 +69,9 @@ For Detailed steps and procedure please vist this page: [Click here](https://tec
 
 ### Visual Snapshots
 
-<img src="/img/dwd3.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/jjh4.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/sder.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/swd.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} /> <img src="/img/vsvs.jpg" alt="Alt Text" style={{ maxWidth: '350px' }} />
+import RadicaleDeployment from '@site/src/components/Playstore/RadicaleDeployment';
+
+<RadicaleDeployment />
 
 
 ### Youtube Tutorial&#x20;
