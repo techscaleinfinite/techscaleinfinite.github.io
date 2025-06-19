@@ -29,9 +29,9 @@ const ImageGallery = () => {
 
   return (
     <div style={{ position: 'relative', padding: '2rem' }}>
-      {/* Swiper Section */}
-      <div className="swiper-button-prev" style={arrowStyle('left')}></div>
-      <div className="swiper-button-next" style={arrowStyle('right')}></div>
+      {/* Swiper Arrows */}
+      <div className="swiper-button-prev" style={arrowStyle('left')} />
+      <div className="swiper-button-next" style={arrowStyle('right')} />
 
       <Swiper
         modules={[Navigation]}
@@ -40,8 +40,13 @@ const ImageGallery = () => {
           prevEl: '.swiper-button-prev',
         }}
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={1}
         loop={true}
+        breakpoints={{
+          576: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          992: { slidesPerView: 4 },
+        }}
         style={{ padding: '1rem 3rem' }}
       >
         {images.map((img, index) => (
@@ -75,37 +80,70 @@ const ImageGallery = () => {
             justifyContent: 'center',
             alignItems: 'center',
             zIndex: 10000,
+            padding: '1rem',
           }}
         >
           {/* Left Arrow */}
-          <button onClick={showPrev} style={popupArrowStyle('left')}>&lsaquo;</button>
+          <button
+            onClick={showPrev}
+            style={{
+              position: 'fixed',
+              top: '50%',
+              left: '2vw',
+              transform: 'translateY(-50%)',
+              fontSize: '2.5rem',
+              color: '#fff',
+              background: 'transparent',
+              border: 'none',
+              cursor: 'pointer',
+              zIndex: 10001,
+            }}
+          >
+            ‹
+          </button>
 
-          {/* Image */}
+          {/* Popup Image */}
           <img
             src={images[activeIndex]}
-            alt="Popup"
+            alt="popup"
+            onClick={(e) => e.stopPropagation()}
             style={{
-              maxHeight: '90vh',
+              maxHeight: '85vh',
               maxWidth: '90vw',
               borderRadius: '10px',
               boxShadow: '0 0 30px rgba(255,255,255,0.2)',
             }}
-            onClick={(e) => e.stopPropagation()}
           />
 
           {/* Right Arrow */}
-          <button onClick={showNext} style={popupArrowStyle('right')}>&rsaquo;</button>
+          <button
+            onClick={showNext}
+            style={{
+              position: 'fixed',
+              top: '50%',
+              right: '2vw',
+              transform: 'translateY(-50%)',
+              fontSize: '2.5rem',
+              color: '#fff',
+              background: 'transparent',
+              border: 'none',
+              cursor: 'pointer',
+              zIndex: 10001,
+            }}
+          >
+            ›
+          </button>
         </div>
       )}
     </div>
   )
 }
 
-// Inline arrow styles
+// Carousel Arrows
 const arrowStyle = (side) => ({
   position: 'absolute',
   top: '50%',
-  [side]: '-25px',
+  [side]: '-20px',
   transform: 'translateY(-50%)',
   fontSize: '2rem',
   color: '#000',
@@ -113,20 +151,6 @@ const arrowStyle = (side) => ({
   zIndex: 5,
   background: 'transparent',
   border: 'none',
-})
-
-// Popup arrow styles
-const popupArrowStyle = (side) => ({
-  position: 'fixed',
-  top: '50%',
-  [side]: '30px',
-  transform: 'translateY(-50%)',
-  fontSize: '3rem',
-  color: 'white',
-  background: 'transparent',
-  border: 'none',
-  cursor: 'pointer',
-  zIndex: 10001,
 })
 
 export default ImageGallery
