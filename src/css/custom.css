@@ -604,7 +604,10 @@ ol.lower-alpha {
 .customSlider .slick-center {
   transform: scale(1);
   opacity: 1;
-  z-index: 2;
-}
+  z-index: 2; 
 
+}
+.customSlider .slick-center .img-circle{
+  border-radius: 0;
+}
 

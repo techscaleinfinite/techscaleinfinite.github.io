@@ -222,7 +222,7 @@ export default function Home() {
   
 </section>
 
-  <section className="pg pj vp mr oj wp nr">
+  <section className="pg pj vp mr oj wp nr" data-aos="float-up">
   <div>
     <div className="animate_top bb ze rj ki xn vq">
       <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">{sectionTitle}</h2>
@@ -233,12 +233,12 @@ export default function Home() {
   <div className="bb ze ki xn 2xl:ud-px-0 jb">
     {/* Tab Buttons */}
     <div className="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc">
-      <button
+      {/* <button
         onClick={() => setFilterTab(0)}
         className={`project-tab-btn ek rg ml il vi mi ${filterTab === 0 ? 'gh lk' : ''}`}
       >
         All
-      </button>
+      </button> */}
       <button
         onClick={() => setFilterTab(2)}
         className={`project-tab-btn ek rg ml il vi mi ${filterTab === 2 ? 'gh lk' : ''}`}
