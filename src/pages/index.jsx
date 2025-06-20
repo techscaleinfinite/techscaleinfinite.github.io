@@ -124,7 +124,7 @@ export default function Home() {
           <img src="images/icon-01.svg" alt="Icon" />
         </div>
         <div>
-          <h4 className="ek yj go kk wm xb cloud-title">24/7 Availability</h4>
+          <h4 className="ek yj go kk wm xb sub-heading">24/7 Availability</h4>
           <p>Round-the-Clock Support for Seamless Operations</p>
         </div>
       </div>
@@ -133,7 +133,7 @@ export default function Home() {
           <img src="images/icon-02.svg" alt="Icon" />
         </div>
         <div>
-          <h4 className="ek yj go kk wm xb cloud-title">Proactive Solutions</h4>
+          <h4 className="ek yj go kk wm xb sub-heading">Proactive Solutions</h4>
           <p>Quick resolutions to keep you moving forward</p>
         </div>
       </div>
@@ -142,7 +142,7 @@ export default function Home() {
           <img src="images/icon-03.svg" alt="Icon" />
         </div>
         <div>
-          <h4 className="ek yj go kk wm xb cloud-title">Experienced Team</h4>
+          <h4 className="ek yj go kk wm xb sub-heading">Experienced Team</h4>
           <p>Skilled professionals ready to assist</p>
         </div>
       </div>
@@ -222,140 +222,99 @@ export default function Home() {
   
 </section>
 
-  <section className="pg pj vp mr oj wp nr" data-aos="float-up">
-  <div>
-    <div className="animate_top bb ze rj ki xn vq">
-      <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">{sectionTitle}</h2>
-      <p className="bb on/5 wo/5 hq">{sectionTitleText}</p>
+  <section className="gj do ir hj sp jr i pg ">
+    <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`}" data-aos="fade-down">
+      <div className="animate_top bb ze rj ki xn vq">
+        <h2 x-text="sectionTitle" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title" >We Offer Great Affordable Premium Prices.</h2>
+        <p className="bb on/5 wo/5 hq"  >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+      </div>
+    </div>
+  <div className="bb ye i z-10 ki xn dr">
+    <div className="bb ze ki xn wq">
+      <div className="tc_display wf gg qq">
+        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
+          <div>
+            <img
+              src="images/shape-05.svg"
+              alt="Shape"
+              className="h -ud-left-5 x"
+            />
+            <img src="images/shape-06.svg" alt="Shape" className="opacity-30 mb-4" />
+            <img src="images/storage.png" alt="Storage" className="w-full rounded" />
+          </div>
+        </div>
+        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
+          <h2 className="fk vj zp pr kk wm qb cloud-title">About File Storage</h2>
+            <p className="text-gray-700 mb-6">
+              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
+            </p>
+          <div className="tc tf yo zf mb">
+            <a
+              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
+              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
+              >
+              Get Started Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+        <div className="tc_display wf gg qq">
+        
+        <div className="w-full md:w-1/2 mt-5 md:mt-0" data-aos="fade-right">
+            <h2 className="fk vj zp pr kk wm qb cloud-title">About Compute</h2>
+            <p className="text-gray-700 mb-6">
+              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
+            </p>
+            <div className="tc tf yo zf mb">
+            <a
+              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
+              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
+              >
+              Get Started Now
+            </a>
+          </div>
+          </div>
+        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
+        <div className="w-full md:w-1/2">
+            <img src="images/shape-05.svg" alt="Shape" className="opacity-30 mb-4" />
+            <img src="images/compute2.png" alt="Compute" className="w-full rounded" />
+          </div>
+        </div>
+      </div>
+
+       <div className="tc_display wf gg qq">
+        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
+          <div>
+            <img
+              src="images/shape-05.svg"
+              alt="Shape"
+              className="h -ud-left-5 x"
+            />
+            <img src="images/shape-05.svg" alt="Shape" className="opacity-30 mb-4" />
+            <img src="images/compute2.png" alt="Storage" className="w-full rounded" />
+          </div>
+        </div>
+        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
+          <h2 className="fk vj zp pr kk wm qb cloud-title">About Cloudfloat</h2>
+            <p className="text-gray-700 mb-6">
+              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
+            </p>
+          <div className="tc tf yo zf mb">
+            <a
+              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
+              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
+              >
+              Get Started Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
-
-  <div className="bb ze ki xn 2xl:ud-px-0 jb">
-    {/* Tab Buttons */}
-    <div className="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc">
-      {/* <button
-        onClick={() => setFilterTab(0)}
-        className={`project-tab-btn ek rg ml il vi mi ${filterTab === 0 ? 'gh lk' : ''}`}
-      >
-        All
-      </button> */}
-      <button
-        onClick={() => setFilterTab(2)}
-        className={`project-tab-btn ek rg ml il vi mi ${filterTab === 2 ? 'gh lk' : ''}`}
-      >
-        Storage
-      </button>
-      <button
-        onClick={() => setFilterTab(3)}
-        className={`project-tab-btn ek rg ml il vi mi ${filterTab === 3 ? 'gh lk' : ''}`}
-      >
-        Compute
-      </button>
-      <button
-        onClick={() => setFilterTab(4)}
-        className={`project-tab-btn ek rg ml il vi mi ${filterTab === 4 ? 'gh lk' : ''}`}
-      >
-        Dashboard
-      </button>
-    </div>
-
-    {/* Tab Content */}
-    <div className="projects-wrapper  -ud-mx-5 space-y-10">
-      {/* Storage */}
-      {(filterTab === 0 || filterTab === 2) && (
-        <div className="project-item bj">
-          <div className="bb ye i z-10 ki xn dr">
-            <div className={`tc_display ${filterTab === 0 ? 'flex flex-col gap-5' : 'wf gg qq'}`}>
-              <div className="animate_left xc_cstm gn gg md:w-1/2 w-full" data-aos="float-right">
-                <img src="images/shape-06.svg" alt="Shape" className="h p s opacity-50 -scale-x-100" />
-                <img src="images/storage.png" alt="Storage" />
-              </div>
-                <div   className="animate_right xc_cstm md:w-1/2 w-full flex flex-col justify-center h-full"   style={{marginTop:'3rem'}} data-aos="float-left"        >
-                      <h2 className="fk vj zp pr kk wm qb">About File Storage</h2>
-                      <p className="uo">
-                        Instantly install Apps. Easily deploy production ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-                      </p>
-                      <div className="tc tf yo zf mb">
-                        <a
-                          href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-                          className="ek jk lk gh gi hi rg ml il vc _d _l"
-                          style={{
-                            background: '#fff',
-                            border: '1px solid #e6e2e2',
-                            color: '#000',
-                          }}
-                        >
-                          Get Started Now
-                        </a>
-                      </div>
-                    </div>
-
-
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Compute */}
-      {(filterTab === 0 || filterTab === 3) && (
-        <div className="project-item bj">
-          <div className="bb ye i z-10 ki xn dr">
-            <div className={`tc_display ${filterTab === 0 ? 'flex flex-col gap-5' : 'wf gg qq'}`}>
-              <div className="animate_right xc_cstm md:w-1/2 w-full" style={{marginTop:'3rem'}} data-aos="float-right">
-                <h2 className="fk vj zp pr kk wm qb">About Compute</h2>
-                <p className="uo">
-                  Instantly install Apps. Easily deploy production ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-                </p>
-                <div className="tc tf yo zf mb">
-                  <a
-                    href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-                    className="ek jk lk gh gi hi rg ml il vc _d _l"
-                    style={{ background: '#fff', border: '1px solid #e6e2e2', color: '#000' }}
-                  >
-                    Get Started Now
-                  </a>
-                </div>
-              </div>
-              <div className="animate_left xc_cstm md:w-1/2 w-full" data-aos="float-left">
-                <img src="images/shape-05.svg" alt="Shape" className="h -ud-left-5 x" />
-                <img src="images/compute2.png" alt="Compute" />
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Dashboard */}
-      {(filterTab === 0 || filterTab === 4) && (
-        <div className="project-item bj">
-          <div className="bb ye i z-10 ki xn dr">
-            <div className={`tc_display ${filterTab === 0 ? 'flex flex-col gap-5' : 'wf gg qq'}`}>
-              <div className="animate_left xc_cstm md:w-1/2 w-full" data-aos="float-left">
-                <img src="images/shape-05.svg" alt="Shape" className="h -ud-left-5 x" />
-                <img src="images/dashboard.png" alt="Dashboard" />
-              </div>
-              <div className="animate_right xc_cstm md:w-1/2 w-full" style={{marginTop:'3rem'}} data-aos="float-right">
-                <h2 className="fk vj zp pr kk wm qb">About Cloud Float</h2>
-                <p className="uo">
-                  Instantly install Apps. Easily deploy production ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-                </p>
-                <div className="tc tf yo zf mb">
-                  <a
-                    href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-                    className="ek jk lk gh gi hi rg ml il vc _d _l"
-                    style={{ background: '#fff', border: '1px solid #e6e2e2', color: '#000' }}
-                  >
-                    Get Started Now
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -397,7 +356,7 @@ export default function Home() {
        
         }}
       >  
-        <h5 className="ek zj kk wm _b cloud-title">
+        <h5 className="ek zj kk wm _b sub-heading">
           Look for the application you are searching for
         </h5>
         <p>
@@ -415,7 +374,7 @@ export default function Home() {
         }}
        >
         {/* <img src="images/icon-05.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b cloud-title">Install application easily</h4>
+        <h4 className="ek zj kk wm _b sub-heading">Install application easily</h4>
         <p>
           Once you have found the application, you can instantly install the
           app. Don't forget to specify custom name, ports &amp; environnement
@@ -432,7 +391,7 @@ export default function Home() {
         }}
       >
         {/* <img src="images/icon-06.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b cloud-title">Ready to use!</h4>
+        <h4 className="ek zj kk wm _b sub-heading">Ready to use!</h4>
         <p>
           You can now use your application peacefully. You can access it with
           HTTP or TCP/UDP adress.
@@ -452,7 +411,7 @@ export default function Home() {
         }}
       >
         {/* <img src="images/icon-07.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b cloud-title">Secured</h4>
+        <h4 className="ek zj kk wm _b sub-heading">Secured</h4>
         <p>
           We offer different layer of security options. Users can choose the
           right security level that suits well for the application as well for
@@ -469,7 +428,7 @@ export default function Home() {
         }}
       >
         {/* <img src="images/icon-05.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b cloud-title">User Friendly</h4>
+        <h4 className="ek zj kk wm _b sub-heading">User Friendly</h4>
         <p>
           The plateform is designed in a way that anybody from technical and
           most importantly the non-technical background can easily deploy and
@@ -486,7 +445,7 @@ export default function Home() {
         }}
       >
         {/* <img src="images/icon-06.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b cloud-title">Choice</h4>
+        <h4 className="ek zj kk wm _b sub-heading">Choice</h4>
         <p>
           Your are not limited to one application from a list of applications
           that are supported.{" "}
@@ -537,7 +496,7 @@ export default function Home() {
         <img src="images/shape-03.svg" alt="Shape" className="h la x wd" />
         <img src="images/shape-06.svg" alt="Shape" className="h la ma ne kf" />
         <div className="fb">
-          <h4 className="wj kk wm cc cloud-title">Email Address</h4>
+          <h4 className="wj kk wm cc sub-heading">Email Address</h4>
           <p>
             <a href="#">
               <span
@@ -550,11 +509,11 @@ export default function Home() {
           </p>
         </div>
         <div className="fb">
-          <h4 className="wj kk wm cc cloud-title">Office Location</h4>
+          <h4 className="wj kk wm cc sub-heading">Office Location</h4>
           <p>78 Avenue Des Champs Elysees</p>
         </div>
         <div className="fb">
-          <h4 className="wj kk wm cc cloud-title">Phone Number</h4>
+          <h4 className="wj kk wm cc sub-heading">Phone Number</h4>
           <p>
             <a href="#">+33 9 70 44 00 55</a>
           </p>
@@ -565,7 +524,7 @@ export default function Home() {
             </div> */}
         <span className="rc nd rh tm lc fb" />
         <div>
-          <h4 className="wj kk wm qb cloud-title">Social Media</h4>
+          <h4 className="wj kk wm qb sub-heading">Social Media</h4>
           <ul className="tc wf fg">
             <li>
               <a

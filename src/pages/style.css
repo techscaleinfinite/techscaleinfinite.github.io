@@ -3434,7 +3434,7 @@ background-color: #040564;
 /* Slider show */
  .shadow-effect {
   background: #0e075d;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 4px;
   text-align: center;
   border: 1px solid #ECECEC;
@@ -3516,12 +3516,16 @@ background-color: #040564;
 
 .cloud-title{
   color: var(--ifm-color-title-darker) !important;
-  	text-transform: capitalize;
+  text-transform: capitalize;
+  font-size: 50px;
 }
 /* styles.css or inside <style jsx> */
-/* .cloud-title {
-  font-size: 60px;
-} */
+.sub-heading {
+color: var(--ifm-color-title-darker) !important;
+text-transform: capitalize;
+font-size: 27px;
+font-weight: 600;
+}
 
 @media (max-width: 991px) {
   .cloud-title {
@@ -3537,7 +3541,13 @@ background-color: #040564;
 
 @media (max-width: 480px) {
   .cloud-title {
-    font-size: 24px;
+    font-size: 32px;
+  }
+  .subtitle{
+    text-align: center;
+  }
+  .sub-heading{
+    font-size: 20px;
   }
 }
 
@@ -3566,6 +3576,9 @@ background-color: #040564;
 @media (max-width: 576px) {
   .subtitle {
     font-size: 0.95rem;
+  }
+  .gj {
+    padding-top: 2rem;
   }
 }
 
