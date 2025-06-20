@@ -56,7 +56,23 @@ const config = {
         indexBlog: false,
       },
     ],
-  ],
+  function webpackFallbackPlugin() {
+    return {
+      name: 'webpack-fallback-plugin',
+      configureWebpack() {
+        return {
+          resolve: {
+            fallback: {
+              fs: false,
+              path: false,
+              crypto: false,
+            },
+          },
+        };
+      },
+    };
+  },
+],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
