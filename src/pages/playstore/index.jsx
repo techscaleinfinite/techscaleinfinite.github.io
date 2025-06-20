@@ -11,6 +11,8 @@ import './css/bootstrap.min.css';
 import './css/ionicons.min.css';
 import './css/font-awesome.min.css';
 import { FaStar } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import initSqlJs from 'sql.js/dist/sql-wasm.js';
 
 const AppItem = ({ image, title, desc, rating }) => (
   <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
@@ -35,8 +37,33 @@ const AppItem = ({ image, title, desc, rating }) => (
 );
 
 const PlaystoreLandingPage = () => {
-  const apps = [
-    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/wordpress.webp', title: 'Wordpress', desc: 'Open source', rating: '4.3' },
+  const [apps, setApps] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const SQL = await initSqlJs({
+        locateFile: file => `/sql-wasm.wasm`,
+      });
+
+      const response = await fetch('/apps.sqlite');
+      const buffer = await response.arrayBuffer();
+      const db = new SQL.Database(new Uint8Array(buffer));
+            const result = db.exec("SELECT * FROM apps");
+
+
+      // Convert result[0] to array of objects
+      const loadedApps = result[0].values.map(row => ({
+        image: row[1],
+        title: row[2],
+        desc: row[3],
+        rating: row[4],
+      }));
+
+      setApps(loadedApps);
+       })();
+       }, []);
+  /*const apps = [
+    { image: 'https://cdn.scaleinfinite.fr/app-images-webp/wordpress.webp', title: 'Wordpress 2', desc: 'Open source', rating: '4.3' },
     { image: 'https://cdn.scaleinfinite.fr/app-images-webp/amazonlinux.webp', title: 'Amazon Linux', desc: 'Operating system', rating: '4.7' },
     { image: 'https://cdn.scaleinfinite.fr/app-images-webp/caddy.webp', title: 'Caddy', desc: 'Open source', rating: '4.5' },
     { image: 'https://cdn.scaleinfinite.fr/app-images-webp/couchdb.webp', title: 'CoachDB', desc: 'Data Base', rating: '4.6' },
@@ -48,7 +75,7 @@ const PlaystoreLandingPage = () => {
     { image: 'https://cdn.scaleinfinite.fr/app-images-webp/mono.webp', title: 'Mono', desc: 'Operating system', rating: '4.0' },
     { image: 'https://cdn.scaleinfinite.fr/app-images-webp/ros.webp', title: 'Ros', desc: 'Operating System', rating: '4.5' },
     { image: 'https://cdn.scaleinfinite.fr/app-images-webp/photon.webp', title: 'Photon', desc: 'Opensource', rating: '4.6' },
-  ];
+  ];*/
 const products = [
   {
     img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
