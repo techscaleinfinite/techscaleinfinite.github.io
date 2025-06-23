@@ -172,7 +172,7 @@ nav.navbar {
   
 }
 
-.pagination-nav__label{
+.pagination-nav__label .description-page-heading{
   font-family: 'Nexa_light';
   font-weight: 900;
 }
@@ -642,5 +642,9 @@ ol.lower-alpha {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+}
+/* Search textbox zoom */
+input[type="search"]{
+  font-size: 16px;
 }
 
