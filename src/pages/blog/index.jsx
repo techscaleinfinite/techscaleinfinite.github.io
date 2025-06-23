@@ -58,110 +58,112 @@ const WithingsAppCard = () => {
           margin: '2rem 3rem',
         }}
       >
-        <div style={{ width: '100%' }}>
-          <h1 style={{ fontSize: '2.5rem', fontWeight: '400', textAlign: 'left', textTransform: 'capitalize' }}>
-            Baikal Deployment
-          </h1>
-          <p style={{ color: '#1a73e8', fontWeight: 500, margin: 0 }}>Baikal Deployment</p>
-          <p style={{ color: '#555', marginTop: 4 }}>In-app purchases</p>
+          {/* Logo First - shows on top in mobile */}
+  <div className="withings-logo" style={{ textAlign: 'center' }}>
+    <img
+      src="/img/gr4.jpg"
+      alt="Withings Logo"
+      style={{
+        width: '100%',
+        maxWidth: '300px',
+        height: 'auto',
+        borderRadius: '20px',
+        boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+      }}
+    />
+  </div>
 
-          <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', margin: '1rem 0' }}>
-            <div>
-              <strong>4.5★</strong>
-              <p style={{ color: '#555', margin: 0 }}>196K reviews</p>
-            </div>
-            <div>
-              <strong>5M+</strong>
-              <p style={{ color: '#555', margin: 0 }}>Downloads</p>
-            </div>
-            <div>
-              <strong>3+</strong>
-              <p style={{ color: '#555', margin: 0 }}>Rated for 3+</p>
-            </div>
-          </div>
+  {/* Content Second */}
+  <div className="withings-content" style={{ width: '100%' }}>
+    <h1 style={{ fontSize: '2.5rem', fontWeight: '400', textAlign: 'left', textTransform: 'capitalize' }}>
+      Baikal Deployment
+    </h1>
+    <p style={{ color: '#1a73e8', fontWeight: 500, margin: 0 }}>Baikal Deployment</p>
+    <p style={{ color: '#555', marginTop: 4 }}>In-app purchases</p>
 
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-            <button
-              style={{
-                backgroundColor: 'var(--ifm-button-bg)',
-                color: '#fff',
-                padding: '0 4rem',
-                borderRadius: '0.5rem',
-                border: 'none',
-                fontSize: '1rem',
-                fontWeight: 500,
-              }}
-            >
-              Install
-            </button>
-            <button
-              style={{
-                display: 'flex',
-                background: 'none',
-                border: 'none',
-                color: 'var(--ifm-button-bg)',
-                cursor: 'pointer',
-                fontWeight: 500,
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <ShareIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
-              Share
-            </button>
-            <button
-              style={{
-                display: 'flex',
-                background: 'none',
-                border: 'none',
-                color: 'var(--ifm-button-bg)',
-                cursor: 'pointer',
-                fontWeight: 500,
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <HeartIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
-              Add to wishlist
-            </button>
-          </div>
-        </div>
+    <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', margin: '1rem 0' }}>
+      <div>
+        <strong>4.5★</strong>
+        <p style={{ color: '#555', margin: 0 }}>196K reviews</p>
+      </div>
+      <div>
+        <strong>5M+</strong>
+        <p style={{ color: '#555', margin: 0 }}>Downloads</p>
+      </div>
+      <div>
+        <strong>3+</strong>
+        <p style={{ color: '#555', margin: 0 }}>Rated for 3+</p>
+      </div>
+    </div>
 
-        <div style={{ textAlign: 'center' }}>
-          <img
-            src="/img/gr4.jpg"
-            alt="Withings Logo"
-            style={{
-              width: '100%',
-              maxWidth: '300px',
-              height: 'auto',
-              borderRadius: '20px',
-              boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-            }}
-          />
-        </div>
+    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+      <button
+        style={{
+          backgroundColor: 'var(--ifm-button-bg)',
+          color: '#fff',
+          padding: '0 4rem',
+          borderRadius: '0.5rem',
+          border: 'none',
+          fontSize: '1rem',
+          fontWeight: 500,
+        }}
+      >
+        Install
+      </button>
+      <button
+        style={{
+          display: 'flex',
+          background: 'none',
+          border: 'none',
+          color: 'var(--ifm-button-bg)',
+          cursor: 'pointer',
+          fontWeight: 500,
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <ShareIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
+        Share
+      </button>
+      <button
+        style={{
+          display: 'flex',
+          background: 'none',
+          border: 'none',
+          color: 'var(--ifm-button-bg)',
+          cursor: 'pointer',
+          fontWeight: 500,
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <HeartIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
+        Add to wishlist
+      </button>
+    </div>
+  </div>
+ {/* Responsive styling */}
+  <style>
+    {`
+      @media (min-width: 768px) {
+        .withings-wrapper {
+          flex-direction: row;
+          align-items: flex-start;
+        }
 
-           
+        .withings-logo {
+          order: 2;
+          width: 40%;
+          text-align: right;
+        }
 
-        <style>
-          {`
-            @media (min-width: 768px) {
-              .withings-wrapper {
-                flex-direction: row !important;
-                align-items: flex-start !important;
-              }
-
-              .withings-wrapper > div:first-child {
-                width: 60%;
-              }
-
-              .withings-wrapper > div:last-child {
-                width: 40%;
-                text-align: right;
-              }
-            }
-          `}
-        </style>
+        .withings-content {
+          order: 1;
+          width: 60%;          
+        }
+      }
+    `}
+  </style>
       </div>
 
       <div
