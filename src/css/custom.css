@@ -645,6 +645,6 @@ ol.lower-alpha {
 }
 /* Search textbox zoom */
 input[type="search"]{
-  font-size: 16px;
+  font-size: 16px !important;
 }
 

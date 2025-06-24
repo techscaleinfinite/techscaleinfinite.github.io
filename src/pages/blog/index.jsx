@@ -31,6 +31,24 @@ const similarApps = [
     rating: 4.6,
   },
 ];
+const categoryApps = [
+  {
+    logo: '/img/swdww.jpg',
+    name: 'Operating System',   
+  },
+  {
+    logo: '/img/oo8u.png',
+    name: 'Web Services',  
+  },
+   {
+    logo: '/img/swdww.jpg',
+    name: 'CMS',   
+  },
+  {
+    logo: '/img/oo8u.png',
+    name: 'DataBase',  
+  },
+];
 
 const WithingsAppCard = () => {
   const [popupIndex, setPopupIndex] = useState(null);
@@ -239,21 +257,15 @@ const WithingsAppCard = () => {
                           <table><thead><tr><th>Path Mapping</th><th>Description</th></tr></thead><tbody><tr><td>-</td><td>-</td></tr></tbody></table>
                           <h3>Installation</h3>
                           <table><thead><tr><th>Description</th><th>Decription</th></tr></thead><tbody><tr><td>Docker Image</td><td><a href="https://hub.docker.com/r/ckulka/baikal" target="_blank" rel="noopener noreferrer">baikal</a> 👈(click me,for the dockerhub image)</td></tr><tr><td>Application name</td><td>Eg: baikal(you can put any name)</td></tr><tr><td>Resource Allocation</td><td>0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)</td></tr><tr><td><code>Protocol</code></td><td></td></tr><tr><td>Http:</td><td>80</td></tr><tr><td>Tcp:</td><td></td></tr><tr><td>Advanced</td><td>Install with Default</td></tr></tbody></table>
-                            {/* <h3>Visual Snapshots</h3>
-                        <div >
-                            <img src="/img/dyy.jpg" alt="Alt Text" style="max-width: 350px;"/>
-                            <img src="/img/dty.jpg" alt="Alt Text" style="max-width: 350px;"/>
-                            <img src="/img/ewd.jpg" alt="Alt Text" style="max-width: 350px;"/>
-                            <img src="/img/ed36.jpg" alt="Alt Text" style="max-width: 350px;"/>
-                            <img src="/img/ffee3.jpg" alt="Alt Text" style="max-width: 350px;"/>
-                          </div> */}
+                         
                 </div>
                 
 
                 {/* 30% Column */}
                 <div className="col-md-3">           
                   {/* Similar app list */}
-                 <h3>Similar apps</h3>
+                 <h4>Similar apps</h4>
+                 <div style={{paddingBottom: '3rem'}}>           
                     {similarApps.map((app, idx) => (
                       <div
                         key={idx}
@@ -273,6 +285,40 @@ const WithingsAppCard = () => {
                         </div>
                       </div>
                     ))}
+                    <div style={{fontSize:'0.8rem', alignItem:'center', justifyContent:'right',display:'flex' }}>
+                    <a href='#' >More Apps</a>
+                    </div>
+                    </div>
+                    <h4>App Category</h4>
+                    <div className='mb-2'>
+                    {categoryApps.map((app, idx) => (
+                      <div 
+                        key={idx}
+                        style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}
+                      >
+                        <a href='#'>
+                          <div style={{display:'flex', alignItems: 'center', justifyContent: 'center', color:'#4b545b'}}>
+                        <img
+                          src={app.logo}
+                          alt={app.name}
+                          style={{ width: '48px', height: '48px', borderRadius: '12px', marginRight: '1rem' }}
+                        />
+                        <div>
+                          <div style={{ fontWeight: 'bold' }}>{app.name}</div>
+                          <div style={{ fontSize: '0.9rem', color: '#555' }}>{app.publisher}</div>
+                          {app.rating && (
+                            <div style={{ fontSize: '0.9rem', color: '#777' }}>{app.rating} ★</div>
+                          )}
+                          </div>
+                        </div>
+                        </a>
+                        
+                      </div>
+                    ))}
+                    </div>
+                    <div style={{fontSize:'0.8rem', alignItem:'center', justifyContent:'right',display:'flex' }}>
+                    <a href='#' >More Catagory</a>
+                    </div>
                 </div>
               </div>
             </div>
