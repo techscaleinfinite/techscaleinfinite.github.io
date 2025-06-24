@@ -85,7 +85,7 @@ a:active {
 /* Top nav bar */
 body{
   top:80px;
-  background-color: none !important;
+  background-color: unset !important;
 }
 .navbar {
   position: fixed !important;

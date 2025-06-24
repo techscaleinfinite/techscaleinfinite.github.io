@@ -221,104 +221,6 @@ export default function Home() {
   </div>
   
 </section>
-
-  <section className="gj do ir hj sp jr i pg ">
-    <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`}" data-aos="fade-down">
-      <div className="animate_top bb ze rj ki xn vq">
-        <h2 x-text="sectionTitle" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title" >We Offer Great Affordable Premium Prices.</h2>
-        <p className="bb on/5 wo/5 hq"  >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
-      </div>
-    </div>
-  <div className="bb ye i z-10 ki xn dr">
-    <div className="bb ze ki xn wq">
-      <div className="tc_display wf gg qq">
-        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
-          <div>
-            <img
-              src="images/shape-05.svg"
-              alt="Shape"
-              className="h -ud-left-5 x"
-            />
-            <img src="images/shape-06.svg" alt="Shape" className="opacity-30 mb-4" />
-            <img src="images/storage.png" alt="Storage" className="w-full rounded" />
-          </div>
-        </div>
-        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
-          <h2 className="fk vj zp pr kk wm qb cloud-title">About File Storage</h2>
-            <p className="text-gray-700 mb-6">
-              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-            </p>
-          <div className="tc tf yo zf mb">
-            <a
-              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
-              >
-              Get Started Now
-            </a>
-          </div>
-        </div>
-      </div>
-
-        <div className="tc_display wf gg qq">
-        
-        <div className="w-full md:w-1/2 mt-5 md:mt-0" data-aos="fade-right">
-            <h2 className="fk vj zp pr kk wm qb cloud-title">About Compute</h2>
-            <p className="text-gray-700 mb-6">
-              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-            </p>
-            <div className="tc tf yo zf mb">
-            <a
-              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
-              >
-              Get Started Now
-            </a>
-          </div>
-          </div>
-        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
-        <div className="w-full md:w-1/2">
-            <img src="images/shape-05.svg" alt="Shape" className="opacity-30 mb-4" />
-            <img src="images/compute2.png" alt="Compute" className="w-full rounded" />
-          </div>
-        </div>
-      </div>
-
-       <div className="tc_display wf gg qq">
-        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
-          <div>
-            <img
-              src="images/shape-05.svg"
-              alt="Shape"
-              className="h -ud-left-5 x"
-            />
-            <img src="images/shape-05.svg" alt="Shape" className="opacity-30 mb-4" />
-            <img src="images/compute2.png" alt="Storage" className="w-full rounded" />
-          </div>
-        </div>
-        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
-          <h2 className="fk vj zp pr kk wm qb cloud-title">About Cloudfloat</h2>
-            <p className="text-gray-700 mb-6">
-              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-            </p>
-          <div className="tc tf yo zf mb">
-            <a
-              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
-              >
-              Get Started Now
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-  </section>
-
-
-
-
 <section
   className="lj tp kr"
   style={{ background: 'var(--ifm-gradient-bg-color)' }}
@@ -454,7 +356,95 @@ export default function Home() {
     </div>
   </div>
 </section>
+  <section className="gj do ir hj sp jr i pg ">
+    <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`}" data-aos="fade-down">
+      <div className="animate_top bb ze rj ki xn vq">
+        <h2 x-text="sectionTitle" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title" >We Offer Great Affordable Premium Prices.</h2>
+        <p className="bb on/5 wo/5 hq"  >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+      </div>
+    </div>
+  <div className="bb ye i z-10 ki xn dr">
+    <div className="bb ze ki xn wq">
+      <div className="tc_display wf gg qq">
+        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
+          <div>
+            <img
+              src="images/shape-05.svg"
+              alt="Shape"
+              className="h -ud-left-5 x"
+            />
+            <img src="images/shape-06.svg" alt="Shape" className="opacity-30 mb-4" />
+            <img src="images/storage.png" alt="Storage" className="w-full rounded" />
+          </div>
+        </div>
+        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
+          <h2 className="fk vj zp pr kk wm qb cloud-title">About File Storage</h2>
+            <p className="text-gray-700 mb-6">
+              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
+            </p>
+          <div className="tc tf yo zf mb">
+            <a
+              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
+              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
+              >
+              Get Started Now
+            </a>
+          </div>
+        </div>
+      </div>
 
+        <div className="tc_display wf gg qq">
+        
+        <div className="w-full md:w-1/2 mt-5 md:mt-0" data-aos="fade-right">
+            <h2 className="fk vj zp pr kk wm qb cloud-title">About Compute</h2>
+            <p className="text-gray-700 mb-6">
+              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
+            </p>
+            <div className="tc tf yo zf mb">
+            <a
+              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
+              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
+              >
+              Get Started Now
+            </a>
+          </div>
+          </div>
+        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
+        <div className="w-full md:w-1/2">
+            <img src="images/shape-05.svg" alt="Shape" className="opacity-30 mb-4" />
+            <img src="images/compute2.png" alt="Compute" className="w-full rounded" />
+          </div>
+        </div>
+      </div>
+
+       <div className="tc_display wf gg qq">
+        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
+          <div>
+          
+            <img src="images/shape-05.svg" alt="Shape" className="opacity-30 mb-4" />
+            <img src="images/compute2.png" alt="Storage" className="w-full rounded" />
+          </div>
+        </div>
+        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
+          <h2 className="fk vj zp pr kk wm qb cloud-title">About Cloudfloat</h2>
+            <p className="text-gray-700 mb-6">
+              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
+            </p>
+          <div className="tc tf yo zf mb">
+            <a
+              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
+              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
+              >
+              Get Started Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </section>
 
 <section className="i pg qh rm ji hp"   style={{ background: 'var(--ifm-card-background)' }}>
   <img src="images/shape-11.svg" alt="Shape" className="of h ga ha ke" />
