@@ -85,7 +85,7 @@ a:active {
 /* Top nav bar */
 body{
   top:80px;
-  background-color: none;
+  background-color: none !important;
 }
 .navbar {
   position: fixed !important;
@@ -647,4 +647,32 @@ ol.lower-alpha {
 input[type="search"]{
   font-size: 16px !important;
 }
+
+
+/* Slide mobile sidebar from the RIGHT */
+/* .mobile-sidebar-right .navbar-sidebar {
+  left: auto !important;
+  right: 0 !important;
+  transform: translateX(100%) !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.mobile-sidebar-right .navbar-sidebar--show {
+  transform: translateX(0) !important;
+}
+
+.navbar__items {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.navbar__toggle {
+  margin-left: auto;
+  order: 3;
+}
+.navbar__brand {
+  order: 1;
+  margin-right: auto;
+} */
 

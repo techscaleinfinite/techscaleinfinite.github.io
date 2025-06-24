@@ -64,7 +64,7 @@ const WithingsAppCard = () => {
   };
 
   return (
-    <Layout title="Welcome" description="This is my custom landing page">
+    <Layout title="" description="">
       <div
         className="wrapper"
         style={{
@@ -264,7 +264,7 @@ const WithingsAppCard = () => {
                 {/* 30% Column */}
                 <div className="col-md-3">           
                   {/* Similar app list */}
-                 <h4>Similar apps</h4>
+                 <h3 className='custom-h3'>Similar apps</h3>
                  <div style={{paddingBottom: '3rem'}}>           
                     {similarApps.map((app, idx) => (
                       <div
@@ -289,32 +289,27 @@ const WithingsAppCard = () => {
                     <a href='#' >More Apps</a>
                     </div>
                     </div>
-                    <h4>App Category</h4>
+                    <h3 className="mb-4 custom-h3">App Category</h3>
                     <div className='mb-2'>
                     {categoryApps.map((app, idx) => (
-                      <div 
-                        key={idx}
-                        style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}
-                      >
-                        <a href='#'>
-                          <div style={{display:'flex', alignItems: 'center', justifyContent: 'center', color:'#4b545b'}}>
-                        <img
-                          src={app.logo}
-                          alt={app.name}
-                          style={{ width: '48px', height: '48px', borderRadius: '12px', marginRight: '1rem' }}
-                        />
-                        <div>
-                          <div style={{ fontWeight: 'bold' }}>{app.name}</div>
-                          <div style={{ fontSize: '0.9rem', color: '#555' }}>{app.publisher}</div>
-                          {app.rating && (
-                            <div style={{ fontSize: '0.9rem', color: '#777' }}>{app.rating} ★</div>
-                          )}
-                          </div>
-                        </div>
-                        </a>
-                        
-                      </div>
-                    ))}
+                <div 
+                    key={idx}
+                    className="category-hover d-flex align-items-center mb-3"
+                >
+                    <a href="#" className="d-flex align-items-center text-decoration-none text-dark w-100 ">
+                    <img
+                        src={app.logo}
+                        alt={app.name}
+                        style={{ width: '48px', height: '48px', borderRadius: '12px', marginRight: '1rem' }}
+                    />
+                    <div>
+                        <div className='category-title' >{app.name}</div>
+                       
+                    </div>
+                    </a>
+                </div>
+                ))}
+
                     </div>
                     <div style={{fontSize:'0.8rem', alignItem:'center', justifyContent:'right',display:'flex' }}>
                     <a href='#' >More Catagory</a>
