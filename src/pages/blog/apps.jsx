@@ -91,10 +91,9 @@ export default function AppGrid() {
         {/* Similar Apps Section */}
         <div className="col-md-8 mb-4">
           <h3 className="mb-4 custom-h3">Similar apps</h3>
-          <div className="row g-3">
-            
+          <div className="row g-3">            
                         {similarApps.map((app, idx) => (
-                            <div key={idx} className="col-6 col-sm-4 col-md-3 custom-col-lg-5 text-center">
+                            <div key={idx} className="col-6 col-sm-4 col-md-3 custom-col-lg-4 text-center">
                             <div className="hover-zoom p-2 border rounded shadow-sm bg-white h-100">
                                 <a href='#'>
                                 <img
