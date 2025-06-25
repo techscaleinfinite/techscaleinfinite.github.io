@@ -10,7 +10,7 @@ import {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
- title: 'ScaleInfinite | Self-Driving Cloud Applications with Kubernets and Docker Services',
+ title: 'ScaleInfinite | AI Managed, Self-Driving Cloud Applications with Kubernets and Docker Services',
   tagline: 'AI-Managed Solutions for Automated Application Performance',
   url: 'https://techscaleinfinite.github.io',
   baseUrl: '/',
