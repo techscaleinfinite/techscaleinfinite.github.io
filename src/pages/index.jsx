@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout'
+import { useLocation } from '@docusaurus/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -73,6 +74,11 @@ import $ from 'jquery';
 
 
 export default function Home() {
+  // Hide search icon//
+  const location = useLocation();
+const isHome = location.pathname === '/';
+  // Hide Search icon end//
+
      useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -86,6 +92,7 @@ export default function Home() {
   const [filterTab, setFilterTab] = React.useState(0); // 0 = all, 2 = storage, 3 = compute, 4 = dashboard
  
   return (
+     <div className={isHome ? 'is-home' : ''}>
     <Layout title="Welcome" description="This is my custom landing page">
   <section className="gj do  hj sp  i pg">         
   <div className="bb ze ki xn 2xl:ud-px-0">
@@ -550,6 +557,7 @@ export default function Home() {
 
 
     </Layout>
+    </div>
   )
 }
 
