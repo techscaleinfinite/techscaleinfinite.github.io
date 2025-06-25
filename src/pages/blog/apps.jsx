@@ -85,7 +85,7 @@ const categoryApps = [
 ];
 export default function AppGrid() {
   return (
-     <Layout title="" description="">
+     <Layout title="Cloudfloat Apps" description="">
          <div className="container py-5">
       <div className="row">
         {/* Similar Apps Section */}

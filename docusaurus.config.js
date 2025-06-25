@@ -10,12 +10,12 @@ import {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Scale Infinite',
-  tagline: 'cloud',
-
-  // Set the production url of your site here
+ title: 'ScaleInfinite | Self-Driving Cloud Applications with Kubernets and Docker Services',
+  tagline: 'AI-Managed Solutions for Automated Application Performance',
   url: 'https://techscaleinfinite.github.io',
   baseUrl: '/',
+  favicon: 'img/favicon.png',
+
 
   // GitHub pages deployment config.
   organizationName: 'techscaleinfinite', // Usually your GitHub org/user name.

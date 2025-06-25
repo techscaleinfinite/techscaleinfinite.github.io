@@ -93,7 +93,7 @@ const isHome = location.pathname === '/';
  
   return (
      <div className={isHome ? 'is-home' : ''}>
-    <Layout title="Welcome" description="This is my custom landing page">
+    <Layout  description="AI-Managed Solutions for Automated Application Performance">
   <section className="gj do  hj sp  i pg">         
   <div className="bb ze ki xn 2xl:ud-px-0">
    <div className="tc _o">
