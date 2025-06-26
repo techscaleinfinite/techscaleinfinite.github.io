@@ -7,6 +7,7 @@
 import {
   themes as prismThemes
 } from 'prism-react-renderer';
+const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -55,6 +56,19 @@ const config = {
       {
         indexBlog: false,
       },
+      
+    ],
+    [
+      path.resolve(__dirname, "plugin-dynamic-routes"),
+      {
+        routes: [
+          {
+            path: "/example",
+            exact: false,
+            component: "@site/src/components/ExampleRouter"
+          }
+        ]
+      }
     ],
   function webpackFallbackPlugin() {
     return {
