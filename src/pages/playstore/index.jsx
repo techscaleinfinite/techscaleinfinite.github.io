@@ -268,7 +268,7 @@ const products = [
                               <span className="price-new">{product.title}</span>
                             </p>
                             <div className="product-manufacturer mb-1">
-                              <a href="#">{product.category}</a>
+                              <a href={`example/${product.category}`}>{product.category}</a>
                             </div>
                             <div className="product-ratings">
                               <ul className="rating d-flex justify-content-center list-unstyled mb-0">
