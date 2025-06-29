@@ -52,7 +52,7 @@ const PlaystoreLandingPage = () => {
     const catBuffer = await catRes.arrayBuffer();
     const catDB = new SQL.Database(new Uint8Array(catBuffer));
 
-    const catResult = catDB.exec("SELECT * FROM category");
+    const catResult = catDB.exec("SELECT * FROM category order by sort_order desc");
     const categories = catResult[0].values.map(row => ({
       id: row[0],
       name: row[1],
@@ -67,7 +67,8 @@ const PlaystoreLandingPage = () => {
 
       // Convert result[0] to array of objects
       const loadedApps = result[0].values.map(row => ({
-        image: row[3],
+        image: row[4],
+        slug: row[3],
         title: row[2],
         desc: row[1],
         rating: row[5],
@@ -253,7 +254,7 @@ const products = [
                     <div className="product-thumb">
                       <div className="product-inner">
                         <div className="product-image">
-                          <a href="#">
+                          <a href={`example/${product.category.toLowerCase()}/${product.slug}`}>
                             <img
                               src={product.image}
                               alt={product.name}
@@ -267,7 +268,7 @@ const products = [
                               <span className="price-new">{product.title}</span>
                             </p>
                             <div className="product-manufacturer mb-1">
-                              <a href="#">{product.category}</a>
+                              <a href={`example/${product.category}`}>{product.category}</a>
                             </div>
                             <div className="product-ratings">
                               <ul className="rating d-flex justify-content-center list-unstyled mb-0">
