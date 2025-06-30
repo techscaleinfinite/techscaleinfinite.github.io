@@ -19,7 +19,7 @@ const images = [
  'img/ffee3.jpg'
 ];
 
-const similarApps = [
+/*const similarApps = [
   {
     logo: '/img/swdww.jpg',
     name: 'PulseLife ex 360 medics',
@@ -32,7 +32,7 @@ const similarApps = [
     publisher: 'Manish Singh Tomar',
     rating: 4.6,
   },
-];
+];*/
 const categoryApps = [
   {
     logo: '/img/swdww.jpg',
@@ -52,7 +52,7 @@ const categoryApps = [
   },
 ];
 
-const AppTemplate = ({ group, category, slug }) => {
+const AppTemplate = ({ group, categoryname, slug }) => {
   const [popupIndex, setPopupIndex] = useState(null);
 
   const showNext = (e) => {
@@ -66,6 +66,9 @@ const AppTemplate = ({ group, category, slug }) => {
   };
 
   const [apps, setApps] = useState([]);
+  const [similarApps, setSimilarapps] = useState([]);
+  const [category, setCategory] = useState([]);
+
 
 useEffect(() => {
     (async () => {
@@ -94,12 +97,49 @@ useEffect(() => {
         pull_count:row[7]
       }));
 
+       const similar_response = await fetch('/apps.sqlite');
+      const similar_buffer = await similar_response.arrayBuffer();
+      const similar_db = new SQL.Database(new Uint8Array(similar_buffer));
+      
+      //const result = db.exec("SELECT * FROM apps where slug='linuxserver-heimdall'");
+      const similar_result = similar_db.exec(`SELECT * FROM apps WHERE slug!='${slug.replace(/'/g, "''")}' and category='${loadedApps[0]['category']}'  limit 0,3`);
+
+
+
+      // Convert result[0] to array of objects
+      const loadedsimilarApps = similar_result[0].values.map(row => ({
+        logo: row[4],
+        slug: row[3],
+        name: row[2],
+        desc: row[1],
+        rating: row[6],
+        category:row[1],
+        publisher:row[5],
+        pull_count:row[7]
+      }));
+
+         // Load category.sqlite
+    const catRes = await fetch('/category.sqlite');
+    const catBuffer = await catRes.arrayBuffer();
+    const catDB = new SQL.Database(new Uint8Array(catBuffer));
+
+    const catResult = catDB.exec(`SELECT * FROM category order by sort_order desc limit 0, 5`);
+    const categories = catResult[0].values.map(row => ({
+      id: row[0],
+      name: row[1],
+      catslug: row[2],
+      image: row[3],
+    }));
+
       setApps(loadedApps);
+      setSimilarapps(loadedsimilarApps);
+      setCategory(categories);
+
        })();
        }, []);
 
   return (
-    <Layout title="" description="">
+    <>
       <div
         className="wrapper"
         style={{
@@ -150,7 +190,7 @@ useEffect(() => {
     </div>
 
     <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-      <button
+      <a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}`}
         style={{
           backgroundColor: 'var(--ifm-button-bg)',
           color: '#fff',
@@ -162,7 +202,7 @@ useEffect(() => {
         }}
       >
         Install
-      </button>
+      </a>
       <button
         style={{
           display: 'flex',
@@ -321,19 +361,19 @@ useEffect(() => {
                       </div>
                     ))}
                     <div style={{fontSize:'0.8rem', alignItem:'center', justifyContent:'right',display:'flex' }}>
-                    <a href='#' >More Apps</a>
+                    <a href={`../${categoryname}`} >More Apps</a>
                     </div>
                     </div>
                     <h3 className="mb-4 custom-h3">App Category</h3>
                     <div className='mb-2'>
-                    {categoryApps.map((app, idx) => (
+                    {category.map((app, idx) => (
                 <div 
                     key={idx}
                     className="category-hover d-flex align-items-center mb-3"
                 >
                     <a href="#" className="d-flex align-items-center text-decoration-none text-dark w-100 ">
                     <img
-                        src={app.logo}
+                        src={app.image}
                         alt={app.name}
                         style={{ width: '48px', height: '48px', borderRadius: '12px', marginRight: '1rem' }}
                     />
@@ -347,7 +387,7 @@ useEffect(() => {
 
                     </div>
                     <div style={{fontSize:'0.8rem', alignItem:'center', justifyContent:'right',display:'flex' }}>
-                    <a href='#' >More Catagory</a>
+                    <a href='/example' >More Catagory</a>
                     </div>
                 </div>
               </div>
@@ -365,7 +405,7 @@ useEffect(() => {
     }
   `}
 </style>
-    </Layout>
+    </>
   );
 };
 
