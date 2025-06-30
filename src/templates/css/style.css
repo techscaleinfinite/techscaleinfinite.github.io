@@ -2599,9 +2599,10 @@ header .list-inline .dropdown-menu ul li:last-child a {
 }
 .feature-box .feature-content  img {
   border-radius: 10px;
-  height: 60px;
+  height: 70px;
   border: 1px solid #d5d6d8;
   padding: 0.5rem;
+  width: 70px;
  }
 
 .feature-box h2 {
