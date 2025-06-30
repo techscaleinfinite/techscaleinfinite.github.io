@@ -85,14 +85,30 @@ const categoryApps = [
     name: 'DataBase',  
   },
 ];
-export default function CategoryTemplate({ category, slug }) {
+export default function CategoryTemplate({ categoryname, slug }) {
   const [apps, setApps] = useState([]);
+  const [category, setCategory] = useState([]);
+
 
 useEffect(() => {
     (async () => {
       const SQL = await initSqlJs({
         locateFile: file => `/sql-wasm.wasm`,
       });
+
+         // Load category.sqlite
+    const catRes = await fetch('/category.sqlite');
+    const catBuffer = await catRes.arrayBuffer();
+    const catDB = new SQL.Database(new Uint8Array(catBuffer));
+
+    const catResult = catDB.exec(`SELECT * FROM category WHERE name!='${slug.replace(/'/g, "''")}' order by sort_order desc`);
+    const categories = catResult[0].values.map(row => ({
+      id: row[0],
+      name: row[1],
+      catslug: row[2],
+      image: row[3],
+    }));
+
 
       const response = await fetch('/apps.sqlite');
       const buffer = await response.arrayBuffer();
@@ -116,10 +132,11 @@ useEffect(() => {
       }));
 
       setApps(loadedApps);
+       setCategory(categories);
        })();
        }, []);
   return (
-     <Layout title="Cloudfloat Apps" description="">
+     <>
          <div className="container py-5">
       <div className="row">
         {/* Similar Apps Section */}
@@ -149,14 +166,14 @@ useEffect(() => {
         {/* Similar Category Section */}
         <div className="col-md-4 mb-4">
           <h3 className="mb-4 custom-h3">Similar Category</h3>
-           {categoryApps.map((app, idx) => (
+           {category.map((app, idx) => (
                 <div 
                     key={idx}
                     className="category-hover d-flex align-items-center mb-3"
                 >
-                    <a href="#" className="d-flex align-items-center text-decoration-none text-dark w-100 ">
+                    <a href={`${app.catslug}`} className="d-flex align-items-center text-decoration-none text-dark w-100 ">
                     <img
-                        src={app.logo}
+                        src={app.image}
                         alt={app.name}
                         style={{ width: '48px', height: '48px', borderRadius: '12px', marginRight: '1rem' }}
                     />
@@ -171,6 +188,6 @@ useEffect(() => {
       </div>
     </div>
     
-    </Layout>
+    </>
   )
 }

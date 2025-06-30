@@ -11,39 +11,44 @@ import './css/bootstrap.min.css';
 import './css/ionicons.min.css';
 import './css/font-awesome.min.css';
 import { FaStar } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 
-const AppItem = ({ image, title, desc, rating }) => (
-  <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
-    <a href="#">
-      <div className="feature-content text-center">
-  <div className="d-flex justify-content-center">
-    <img src={image} className="img-fluid mb-3" alt={title} style={{ maxWidth: '120px' }} />
-  </div>
+const AppItem = ({ image, title, desc, rating,category,slug}) => (
+ <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
+  <a href={`example/${category.toLowerCase()}/${slug}`}>
+    <div className="feature-content text-center">
+      <div className="d-flex justify-content-center">
+        <img src={image} className="img-fluid mb-3" alt={title} style={{ maxWidth: '120px' }} />
+      </div>
 
-  <div className="text-center px-3">
-    <h2 className="cloud-title">{title}</h2>
-    <p className="cloud-title">{desc}</p>
+      <div className="text-center px-3">
+        <h2 className="cloud-title">{title}</h2>
+        <p className="cloud-title">
+          <a href={`example/${category}`}>{desc}</a>
+        </p>
 
-    <div className="d-flex justify-content-center align-items-center">
-      <strong className="me-2">{rating}</strong>
-      <span className="d-flex" style={{ color: 'rgb(250, 206, 27)' }}>
-        {[...Array(4)].map((_, i) => (
-          <FaStar key={i} />
-        ))}
-      </span>
+        <div className="d-flex justify-content-center align-items-center">
+          <strong className="me-2">{rating}</strong>
+          <span className="d-flex" style={{ color: 'rgb(250, 206, 27)' }}>
+            {[...Array(4)].map((_, i) => (
+              <FaStar key={i} />
+            ))}
+          </span>
+        </div>
+      </div>
     </div>
-  </div>
+  </a>
 </div>
 
-    </a>
-  </div>
 );
 
 const PlaystoreLandingPage = () => {
   const [apps, setApps] = useState([]);
   const [category, setCategory] = useState([]);
+  const [populaapps, setPopularapps] = useState([]);
+  const prevRef = useRef(null);
+const nextRef = useRef(null);
 
 
   useEffect(() => {
@@ -80,8 +85,25 @@ const PlaystoreLandingPage = () => {
         category:row[1],
       }));
 
+      const appresponse = await fetch('/apps.sqlite');
+      const appbuffer = await appresponse.arrayBuffer();
+      const app_db = new SQL.Database(new Uint8Array(appbuffer));
+      const app_result = app_db.exec("SELECT * FROM apps order by sort_order desc limit 0,12");
+
+
+      // Convert result[0] to array of objects
+      const loadedPouplarApps = app_result[0].values.map(row => ({
+        image: row[4],
+        slug: row[3],
+        title: row[2],
+        desc: row[1],
+        rating: row[5],
+        category:row[1],
+      }));
+
       setApps(loadedApps);
       setCategory(categories);
+      setPopularapps(loadedPouplarApps);
        })();
        }, []);
   /*const apps = [
@@ -200,15 +222,15 @@ const products = [
       {/* HeaderSection close  */}
     <div className="container py-5">
       <div className="row">
-        {apps.slice(0, 4).map((app, idx) => <AppItem key={idx} {...app} />)}
+        {populaapps.slice(0, 4).map((app, idx) => <AppItem key={idx} {...app} />)}
       </div>
       <hr style={{ opacity: 0.5 }} />
       <div className="row">
-        {apps.slice(4, 8).map((app, idx) => <AppItem key={idx + 4} {...app} />)}
+        {populaapps.slice(4, 8).map((app, idx) => <AppItem key={idx + 4} {...app} />)}
       </div>
       <hr style={{ color: 'var(--ifm-color-primary-title-dark)' }} />
       <div className="row">
-        {apps.slice(8, 12).map((app, idx) => <AppItem key={idx + 8} {...app} />)}
+        {populaapps.slice(8, 12).map((app, idx) => <AppItem key={idx + 8} {...app} />)}
       </div>
     </div>
     <>
@@ -227,19 +249,23 @@ const products = [
             </div>
 
             {/* Custom Arrows - outside Swiper */}
-            <div className="swiper-button-prev custom-swiper-button">
+            <div className="swiper-button-prev custom-swiper-button" ref={prevRef}>
               <i className="fa fa-angle-left"></i>
             </div>
-            <div className="swiper-button-next custom-swiper-button">
+            <div className="swiper-button-next custom-swiper-button" ref={nextRef} >
               <i className="fa fa-angle-right"></i>
             </div>
 
             <Swiper
               modules={[Navigation]}
-              navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              }}
+             navigation={{
+    prevEl: prevRef.current,
+    nextEl: nextRef.current,
+  }}
+  onBeforeInit={(swiper) => {
+    swiper.params.navigation.prevEl = prevRef.current;
+    swiper.params.navigation.nextEl = nextRef.current;
+  }}
               spaceBetween={10}
               slidesPerView={1}
               loop={true}

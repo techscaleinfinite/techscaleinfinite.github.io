@@ -99,7 +99,7 @@ const popupArrowStyle = (side) => ({
      if (segments.length === 2) {
       return <CategoryTemplate slug={segments[1]} />;
     } else if (segments.length === 3) {
-      return <AppTemplate group={segments[0]} category={segments[1]} slug={segments[2]} />;
+      return <AppTemplate group={segments[0]} categoryname={segments[1]} slug={segments[2]} />;
     } else if (segments.length === 1) {
       return <PlaystoreTemplate   category={segments[1]} slug={segments[2]} />;
     } else {
