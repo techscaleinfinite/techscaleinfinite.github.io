@@ -497,7 +497,7 @@ ol.lower-alpha {
 }
 @media (max-width: 768px) {
   .navbar__logo img {
-    height: 130%;
+    height: 120%;
   }
 }
 /* App- Decription page Hero image Responsive for .MD file */
@@ -667,7 +667,7 @@ input[type="search"]{
   .menu__list-item {
     justify-content: right;
     display: grid;
-    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 /* ============== */
