@@ -667,7 +667,7 @@ input[type="search"]{
   .menu__list-item {
     justify-content: right;
     display: grid;
-    padding: 0 20px;
+    padding-left: 10px;
   }
 }
 /* ============== */
