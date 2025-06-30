@@ -11,7 +11,7 @@ import './css/bootstrap.min.css';
 import './css/ionicons.min.css';
 import './css/font-awesome.min.css';
 import { FaStar } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 
 const AppItem = ({ image, title, desc, rating,category,slug}) => (
@@ -40,6 +40,8 @@ const PlaystoreLandingPage = () => {
   const [apps, setApps] = useState([]);
   const [category, setCategory] = useState([]);
   const [populaapps, setPopularapps] = useState([]);
+  const prevRef = useRef(null);
+const nextRef = useRef(null);
 
 
   useEffect(() => {
@@ -240,19 +242,23 @@ const products = [
             </div>
 
             {/* Custom Arrows - outside Swiper */}
-            <div className="swiper-button-prev custom-swiper-button">
+            <div className="swiper-button-prev custom-swiper-button" ref={prevRef}>
               <i className="fa fa-angle-left"></i>
             </div>
-            <div className="swiper-button-next custom-swiper-button">
+            <div className="swiper-button-next custom-swiper-button" ref={nextRef} >
               <i className="fa fa-angle-right"></i>
             </div>
 
             <Swiper
               modules={[Navigation]}
-              navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              }}
+             navigation={{
+    prevEl: prevRef.current,
+    nextEl: nextRef.current,
+  }}
+  onBeforeInit={(swiper) => {
+    swiper.params.navigation.prevEl = prevRef.current;
+    swiper.params.navigation.nextEl = nextRef.current;
+  }}
               spaceBetween={10}
               slidesPerView={1}
               loop={true}
