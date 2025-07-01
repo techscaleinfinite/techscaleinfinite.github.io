@@ -196,7 +196,7 @@ const WithingsAppCard = () => {
           
         </div>
      
-         <div className="container py-4">
+        <div className="container-fluid container-md px-2 px-md-4 py-4">
               <div className="row">
                 {/* 70% Column */}
                       <div className="col-md-9 mb-4">

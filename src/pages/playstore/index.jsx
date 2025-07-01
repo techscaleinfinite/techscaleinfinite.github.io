@@ -295,7 +295,7 @@ const products = [
                         </div>
                         <div className="product-caption">
                           <div className="product-meta d-flex flex-column align-items-center">
-                            <p className="product-price mb-2">
+                            <p className="product-price mb-2" style={{textAlign:'center'}}>
                               <span className="price-new">{product.title}</span>
                             </p>
                             <div className="product-manufacturer mb-1">

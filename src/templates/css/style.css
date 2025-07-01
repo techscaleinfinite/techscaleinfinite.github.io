@@ -392,7 +392,19 @@ header,
     position: absolute;
 }
 
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* or whatever height fits your design */
+  overflow: hidden;
+}
 
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 /* Tooltips */
 
@@ -2599,10 +2611,10 @@ header .list-inline .dropdown-menu ul li:last-child a {
 }
 .feature-box .feature-content  img {
   border-radius: 10px;
-  height: 70px;
+  height: 120px !important;
   border: 1px solid #d5d6d8;
   padding: 0.5rem;
-  width: 70px;
+  width: 120px !important;
  }
 
 .feature-box h2 {
@@ -3297,11 +3309,12 @@ header .list-inline .dropdown-menu ul li:last-child a {
 }
 
 .product-image img {
-    width: 150px;
+  width: 150px;
   border: 1px solid #d7d9db;
   border-radius: 10px;
   padding: 10px;
   background-color: #fff;
+  height: 150px;
 }
 
 .product-image .action-links {
@@ -3411,8 +3424,11 @@ header .list-inline .dropdown-menu ul li:last-child a {
 .product-price .price-new {
     font-size: 18px;
     font-weight: 500;
+    text-align: center;
 }
-
+.product-price>p .price-discount{
+    text-align: center;
+}
 .product-caption {
     margin-top: 15px;
 }
