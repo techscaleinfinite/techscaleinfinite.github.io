@@ -15,25 +15,32 @@ import { useRef, useEffect, useState } from 'react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 
 const AppItem = ({ image, title, desc, rating,category,slug}) => (
-  <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
-    <a href={`example/${category.toLowerCase()}/${slug}`}>
-      <div className="feature-content d-flex">
-        <img src={image} className="img-fluid" alt={title} />
-        <div className="text-start m-1 ps-3">
-          <h2 className='cloud-title'>{title}</h2>
-          <p className='cloud-title'><a href={`example/${category}`}>{desc}</a></p>
-          <div className="d-flex align-items-center">
+ <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
+  <a href={`example/${category.toLowerCase()}/${slug}`}>
+    <div className="feature-content text-center">
+      <div className="d-flex justify-content-center">
+        <img src={image} className="img-fluid mb-3" alt={title} style={{ maxWidth: '120px' }} />
+      </div>
+
+      <div className="text-center px-3">
+        <h2 className="cloud-title">{title}</h2>
+        <p className="cloud-title">
+          <a href={`example/${category}`}>{desc}</a>
+        </p>
+
+        <div className="d-flex justify-content-center align-items-center">
           <strong className="me-2">{rating}</strong>
-          <span className='d-flex' style={{ color: 'rgb(250, 206, 27)' }}>
+          <span className="d-flex" style={{ color: 'rgb(250, 206, 27)' }}>
             {[...Array(4)].map((_, i) => (
               <FaStar key={i} />
             ))}
           </span>
         </div>
-        </div>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
+</div>
+
 );
 
 const PlaystoreLandingPage = () => {
