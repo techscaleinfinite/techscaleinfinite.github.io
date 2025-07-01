@@ -87,14 +87,15 @@ useEffect(() => {
 
       // Convert result[0] to array of objects
       const loadedApps = result[0].values.map(row => ({
-        image: row[4],
+        image: row[5],
+        description: row[4],
         slug: row[3],
         title: row[2],
         desc: row[1],
-        rating: row[6],
+        rating: row[7],
         category:row[1],
-        user:row[5],
-        pull_count:row[7]
+        user:row[6],
+        pull_count:row[8]
       }));
 
        const similar_response = await fetch('/apps.sqlite');
@@ -108,14 +109,14 @@ useEffect(() => {
 
       // Convert result[0] to array of objects
       const loadedsimilarApps = similar_result[0].values.map(row => ({
-        logo: row[4],
+        logo: row[5],
         slug: row[3],
         name: row[2],
         desc: row[1],
-        rating: row[6],
+        rating: row[7],
         category:row[1],
-        publisher:row[5],
-        pull_count:row[7]
+        publisher:row[6],
+        pull_count:row[8]
       }));
 
          // Load category.sqlite
@@ -320,19 +321,10 @@ useEffect(() => {
               <button onClick={showNext} style={popupArrowStyle('right')}>&rsaquo;</button>
             </div>
           )}
-                    <div className='row pt-5'>
-                            <h3 className='description-page-heading'>What is Baikal?</h3>
-                            <p>
-                              Imagine a web interface that's not just user-friendly but genuinely intuitive. Baïkal offers exactly that. Managing users, address books, and calendars becomes a breeze. It's like having a personal assistant that understands your every command. Baïkal doesn't believe in boundaries. It's your bridge to a synchronized digital life. Access your contacts and calendars from every device you own. No more hassles with compatibility issues – it's all about harmonious connectivity.
-                            </p>
+                          <div className='row pt-5'>
+                                 <div dangerouslySetInnerHTML={{ __html: apps[0]?.description }} />
                           </div>
-                          <h3>Exposed Ports</h3>
-                          <table><thead><tr><th>Port Type</th><th>Port Number</th><th>Description</th></tr></thead><tbody><tr><td>Http</td><td>80</td><td>Exposes port 80 for the Baikal app. Users can access the Baikal application through this port.</td></tr><tr><td>Tcp</td><td>-</td><td>-</td></tr></tbody></table>
-                          <h3>Working Directories</h3>
-                          <table><thead><tr><th>Path Mapping</th><th>Description</th></tr></thead><tbody><tr><td>-</td><td>-</td></tr></tbody></table>
-                          <h3>Installation</h3>
-                          <table><thead><tr><th>Description</th><th>Decription</th></tr></thead><tbody><tr><td>Docker Image</td><td><a href="https://hub.docker.com/r/ckulka/baikal" target="_blank" rel="noopener noreferrer">baikal</a> 👈(click me,for the dockerhub image)</td></tr><tr><td>Application name</td><td>Eg: baikal(you can put any name)</td></tr><tr><td>Resource Allocation</td><td>0-100%(10 % of your allocated resources (CPU, RAM) will be used for this application.)</td></tr><tr><td><code>Protocol</code></td><td></td></tr><tr><td>Http:</td><td>80</td></tr><tr><td>Tcp:</td><td></td></tr><tr><td>Advanced</td><td>Install with Default</td></tr></tbody></table>
-                         
+                        
                 </div>
                 
 
