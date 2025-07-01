@@ -60,7 +60,7 @@ export default function ExampleRouter() {
   const location = useLocation();
 
   const slug = location.pathname.split('/').filter(Boolean)[2]; // playstore/:slug
-  const fullPath = location.pathname.replace(/^\/example\/?/, '');
+  const fullPath = location.pathname.replace(/^\/playstore\/?/, '');
   const segments = location.pathname.split('/').filter(Boolean); // removes "example"
 
 

@@ -63,7 +63,7 @@ const config = {
       {
         routes: [
           {
-            path: "/example",
+            path: "/playstore",
             exact: false,
             component: "@site/src/components/ExampleRouter"
           }

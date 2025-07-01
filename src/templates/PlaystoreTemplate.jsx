@@ -16,12 +16,12 @@ import initSqlJs from 'sql.js/dist/sql-wasm.js';
 
 const AppItem = ({ image, title, desc, rating,category,slug}) => (
   <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
-    <a href={`example/${category.toLowerCase()}/${slug}`}>
+    <a href={`playstore/${category.toLowerCase()}/${slug}`}>
       <div className="feature-content d-flex">
         <img src={image} className="img-fluid" alt={title} />
         <div className="text-start m-1 ps-3">
           <h2 className='cloud-title'>{title}</h2>
-          <p className='cloud-title'><a href={`example/${category}`}>{desc}</a></p>
+          <p className='cloud-title'><a href={`playstore/${category}`}>{desc}</a></p>
           <div className="d-flex align-items-center">
           <strong className="me-2">{rating}</strong>
           <span className='d-flex' style={{ color: 'rgb(250, 206, 27)' }}>
@@ -278,7 +278,7 @@ const products = [
                     <div className="product-thumb">
                       <div className="product-inner">
                         <div className="product-image">
-                          <a href={`example/${product.category.toLowerCase()}/${product.slug}`}>
+                          <a href={`playstore/${product.category.toLowerCase()}/${product.slug}`}>
                             <img
                               src={product.image}
                               alt={product.name}
@@ -292,7 +292,7 @@ const products = [
                               <span className="price-new">{product.title}</span>
                             </p>
                             <div className="product-manufacturer mb-1">
-                              <a href={`example/${product.category}`}>{product.category}</a>
+                              <a href={`playstore/${product.category}`}>{product.category}</a>
                             </div>
                             <div className="product-ratings">
                               <ul className="rating d-flex justify-content-center list-unstyled mb-0">

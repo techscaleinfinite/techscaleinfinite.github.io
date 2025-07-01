@@ -88,6 +88,7 @@ useEffect(() => {
       // Convert result[0] to array of objects
       const loadedApps = result[0].values.map(row => ({
         image: row[5],
+        images: row[12],
         description: row[4],
         slug: row[3],
         title: row[2],
@@ -135,6 +136,8 @@ useEffect(() => {
       setApps(loadedApps);
       setSimilarapps(loadedsimilarApps);
       setCategory(categories);
+console.log('Images:', apps[0]?.images);
+console.log('Type:', typeof apps[0]?.images);
 
        })();
        }, []);
@@ -277,7 +280,7 @@ useEffect(() => {
                 {/* 70% Column */}
                       <div className="col-md-9 mb-4">
                       <Swiper modules={[Navigation]} spaceBetween={10} slidesPerView={3} navigation loop>
-                        {images.map((src, index) => (
+                        {JSON.parse(apps[0]?.images || '[]').map((src, index) => (
                       <SwiperSlide key={index}>
                       <img
                         src={src}
@@ -344,7 +347,7 @@ useEffect(() => {
                           style={{ width: '48px', height: '48px', borderRadius: '12px', marginRight: '1rem' }}
                         />
                         <div>
-                          <div style={{ fontWeight: 'bold' }}>{app.name}</div>
+                          <div style={{ fontWeight: 'bold' }}><a href={`/playstore/${app.category.toLowerCase()}/${app.slug}`}>{app.name}</a></div>
                           <div style={{ fontSize: '0.9rem', color: '#555' }}>{app.publisher}</div>
                           {app.rating && (
                             <div style={{ fontSize: '0.9rem', color: '#777' }}>{app.rating} ★</div>
@@ -363,7 +366,7 @@ useEffect(() => {
                     key={idx}
                     className="category-hover d-flex align-items-center mb-3"
                 >
-                    <a href="#" className="d-flex align-items-center text-decoration-none text-dark w-100 ">
+                    <a href={`/playstore/${app.catslug}`} className="d-flex align-items-center text-decoration-none text-dark w-100 ">
                     <img
                         src={app.image}
                         alt={app.name}
@@ -379,7 +382,7 @@ useEffect(() => {
 
                     </div>
                     <div style={{fontSize:'0.8rem', alignItem:'center', justifyContent:'right',display:'flex' }}>
-                    <a href='/example' >More Catagory</a>
+                    <a href='/playstore' >More Catagory</a>
                     </div>
                 </div>
               </div>
