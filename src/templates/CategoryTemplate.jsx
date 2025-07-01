@@ -121,14 +121,14 @@ useEffect(() => {
 
       // Convert result[0] to array of objects
       const loadedApps = result[0].values.map(row => ({
-        image: row[4],
+        image: row[5],
         slug: row[3],
         title: row[2],
         desc: row[1],
-        rating: row[6],
+        rating: row[7],
         category:row[1],
-        user:row[5],
-        pull_count:row[7]
+        user:row[6],
+        pull_count:row[8]
       }));
 
       setApps(loadedApps);

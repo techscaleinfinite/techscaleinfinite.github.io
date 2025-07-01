@@ -70,11 +70,11 @@ const nextRef = useRef(null);
 
       // Convert result[0] to array of objects
       const loadedApps = result[0].values.map(row => ({
-        image: row[4],
+        image: row[5],
         slug: row[3],
         title: row[2],
         desc: row[1],
-        rating: row[5],
+        rating: row[6],
         category:row[1],
       }));
 
@@ -86,11 +86,11 @@ const nextRef = useRef(null);
 
       // Convert result[0] to array of objects
       const loadedPouplarApps = app_result[0].values.map(row => ({
-        image: row[4],
+        image: row[5],
         slug: row[3],
         title: row[2],
         desc: row[1],
-        rating: row[5],
+        rating: row[6],
         category:row[1],
       }));
 
@@ -166,7 +166,7 @@ const products = [
 
 ];
   return (
-     <Layout title="Playstore" description="Explore top-rated open-source and commercial apps">
+       <>
       {/* Header Section */}
         <section className="primary-slider-section mb-0 position-relative">
       <Swiper
@@ -226,7 +226,7 @@ const products = [
         {populaapps.slice(8, 12).map((app, idx) => <AppItem key={idx + 8} {...app} />)}
       </div>
     </div>
-    <>
+  
     {category.map((cat, index) => {
       // 🔍 Filter products for this category
         const filteredProducts = apps.filter(app => app.category.toLowerCase() === cat.slug.toLowerCase());
@@ -320,7 +320,7 @@ const products = [
       );
     })}
   </>
-       </Layout>
+       
   );
 };
 
