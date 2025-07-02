@@ -84,6 +84,8 @@ const isHome = location.pathname === '/';
       duration: 1000,
       once: true
     });
+    const loader = document.getElementById('global-loader');
+    if (loader) loader.remove();
   }, []);
   const sectionTitle = "We Offer Great Affordable Premium Prices.";
   const sectionTitleText =
