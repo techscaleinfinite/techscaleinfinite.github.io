@@ -502,7 +502,7 @@ ol.lower-alpha {
 }
 @media (max-width: 995px){
 [class*='navbarSearchContainer'] {
-  right: 70px !important;
+  right: 60px !important;
   position: relative; /* Or absolute depending on context */
 }
 }

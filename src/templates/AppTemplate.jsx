@@ -5,6 +5,9 @@ import { ShareIcon, HeartIcon } from '@heroicons/react/24/outline';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -52,9 +55,18 @@ const categoryApps = [
   },
 ];
 
-const AppTemplate = ({ group, categoryname, slug }) => {
-  const [popupIndex, setPopupIndex] = useState(null);
+const AppTemplate = ({ group, categoryname, slug, children }) => {
 
+  const handleShare = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      toast.success('URL Copied');
+    } catch (err) {
+      toast.error('Failed to copy URL');
+    }
+  };
+
+  const [popupIndex, setPopupIndex] = useState(null);
   const showNext = (e) => {
     e.stopPropagation();
     setPopupIndex((prev) => (prev + 1) % images.length);
@@ -142,8 +154,11 @@ console.log('Type:', typeof apps[0]?.images);
        })();
        }, []);
 
-  return (
-    <>
+  return (    
+    <>    
+      {children}
+      <ToastContainer position="bottom-center" autoClose={1500} />
+    
       <div
         className="wrapper"
         style={{
@@ -152,7 +167,7 @@ console.log('Type:', typeof apps[0]?.images);
           alignItems: 'center',
           gap: '2rem',
           padding: '2rem',
-          margin: '2rem 3rem',
+         
         }}
       >
           {/* Logo First - shows on top in mobile */}
@@ -179,14 +194,26 @@ console.log('Type:', typeof apps[0]?.images);
     <p style={{ color: '#555', marginTop: 4 }}>In-app purchases</p>
 
     <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', margin: '1rem 0' }}>
-      <div>
-        <strong>{apps[0]?.rating}★</strong>
-        <p style={{ color: '#555', margin: 0 }}>196K reviews</p>
+      <div style={{alignItems:'center', justifyContent: 'center', display:'grid', padding:'5px'}}
+      >
+        <strong style={{fontSize:'1.5rem'}}>{apps[0]?.rating} ★</strong>
+        {/* <p style={{ color: '#555', margin: 0 }}>196K reviews</p> */}
       </div>
       <div>
-        <strong>{apps[0]?.pull_count}+</strong>
-        <p style={{ color: '#555', margin: 0 }}>Downloads</p>
-      </div>
+  <strong
+    style={{
+      backgroundColor: 'rgba(191,191,451,0.5)',
+      color: '#333',
+      padding: '0.3rem 0.6rem',
+      borderRadius: '999px',
+      fontSize: '0.9rem',
+      display: 'inline-block',
+    }}
+  >
+    {apps[0]?.pull_count}+
+  </strong>
+  <p style={{ color: '#555', margin: 0, marginTop: '4px' }}>Downloads</p>
+</div>
       <div>
         <strong>3+</strong>
         <p style={{ color: '#555', margin: 0 }}>Rated for 3+</p>
@@ -198,7 +225,7 @@ console.log('Type:', typeof apps[0]?.images);
         style={{
           backgroundColor: 'var(--ifm-button-bg)',
           color: '#fff',
-          padding: '0 4rem',
+          padding: '6px 4rem',
           borderRadius: '0.5rem',
           border: 'none',
           fontSize: '1rem',
@@ -208,35 +235,60 @@ console.log('Type:', typeof apps[0]?.images);
         Install
       </a>
       <button
-        style={{
-          display: 'flex',
-          background: 'none',
-          border: 'none',
-          color: 'var(--ifm-button-bg)',
-          cursor: 'pointer',
-          fontWeight: 500,
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <ShareIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
-        Share
-      </button>
+      onClick={handleShare}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'none',
+        border: '1px solid var(--ifm-button-bg)',
+        color: 'var(--ifm-button-bg)',
+        padding: '0.4rem 0.75rem',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontWeight: 500,
+        transition: 'all 0.3s ease',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = 'var(--ifm-button-bg)';
+        e.currentTarget.style.color = '#fff';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = 'none';
+        e.currentTarget.style.color = 'var(--ifm-button-bg)';
+      }}
+    >
+      <ShareIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
+      Share
+    </button>
+     
       <button
-        style={{
-          display: 'flex',
-          background: 'none',
-          border: 'none',
-          color: 'var(--ifm-button-bg)',
-          cursor: 'pointer',
-          fontWeight: 500,
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'none',
+        border: '1px solid var(--ifm-button-bg)', // border color
+        color: 'var(--ifm-button-bg)',             // text/icon color
+        padding: '0.4rem 0.75rem',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontWeight: 500,
+        transition: 'all 0.3s ease',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = 'var(--ifm-button-bg)';
+        e.currentTarget.style.color = '#fff';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = 'none';
+        e.currentTarget.style.color = 'var(--ifm-button-bg)';
+      }}
+    >
         <HeartIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
         Add to wishlist
-      </button>
+    </button>
+
     </div>
   </div>
  {/* Responsive styling */}
@@ -267,7 +319,7 @@ console.log('Type:', typeof apps[0]?.images);
         style={{
           display: 'flex',
           flexWrap: 'wrap',
-          padding: '2rem',
+          // padding: '2rem',
           gap: '2rem',
         }}
       >
