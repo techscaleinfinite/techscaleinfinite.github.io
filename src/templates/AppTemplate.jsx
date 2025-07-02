@@ -148,11 +148,12 @@ useEffect(() => {
       setApps(loadedApps);
       setSimilarapps(loadedsimilarApps);
       setCategory(categories);
-console.log('Images:', apps[0]?.images);
-console.log('Type:', typeof apps[0]?.images);
+
 
        })();
+       
        }, []);
+const parsedImages = JSON.parse(apps[0]?.images || '[]');
 
   return (    
     <>    
@@ -332,7 +333,7 @@ console.log('Type:', typeof apps[0]?.images);
                 {/* 70% Column */}
                       <div className="col-md-9 mb-4">
                       <Swiper modules={[Navigation]} spaceBetween={10} slidesPerView={3} navigation loop>
-                        {JSON.parse(apps[0]?.images || '[]').map((src, index) => (
+                        {parsedImages.map((src, index) => (
                       <SwiperSlide key={index}>
                       <img
                         src={src}
@@ -363,7 +364,7 @@ console.log('Type:', typeof apps[0]?.images);
             >
               <button onClick={showPrev} style={popupArrowStyle('left')}>&lsaquo;</button>
               <img
-                src={images[popupIndex]}
+                src={parsedImages[popupIndex]}
                 alt="Popup"
                 style={{
                   maxWidth: '90%',
