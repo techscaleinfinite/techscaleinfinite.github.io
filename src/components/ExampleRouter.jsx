@@ -92,7 +92,12 @@ const popupArrowStyle = (side) => ({
   cursor: 'pointer',
   zIndex: 10000,
 });
-
+useEffect(() => {
+  const loader = document.getElementById('global-loader');
+  if (loader) {
+    loader.style.display = 'none';
+  }
+}, []);
 
 
   const renderTemplate = () => {

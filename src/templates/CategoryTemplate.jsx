@@ -147,7 +147,7 @@ useEffect(() => {
                         {apps.map((app, idx) => (
                             <div key={idx} className="col-6 col-sm-4 col-md-3 custom-col-lg-4 text-center">
                             <div className="hover-zoom p-2 border rounded shadow-sm bg-white h-100">
-                                <a href={`${app.category.toLowerCase()}/${app.slug}`}>
+                                <a href={`/playstore/${app.category.toLowerCase()}/${app.slug}`}>
                                 <img
                                 src={app.image}
                                 alt={app.title}
@@ -171,7 +171,7 @@ useEffect(() => {
                     key={idx}
                     className="category-hover d-flex align-items-center mb-3"
                 >
-                    <a href={`${app.catslug}`} className="d-flex align-items-center text-decoration-none text-dark w-100 ">
+                    <a href={`/playstore/${app.catslug}`} className="d-flex align-items-center text-decoration-none text-dark w-100 ">
                     <img
                         src={app.image}
                         alt={app.name}

@@ -70,7 +70,51 @@ const config = {
         ]
       }
     ],
-  function webpackFallbackPlugin() {
+[
+    async function injectHtmlLoader() {
+      return {
+        name: 'inject-html-loader',
+        injectHtmlTags() {
+          return {
+            headTags: [],
+            preBodyTags: [
+              {
+                tagName: 'div',
+                attributes: {
+                  id: 'global-loader',
+                  style: `
+                    position: fixed;
+                    z-index: 9999;
+                    inset: 0;
+                    background: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  `,
+                },
+                innerHTML: `<div class="loader-spinner" style="
+                  width: 40px;
+                  height: 40px;
+                  border: 4px solid #eee;
+                  border-top: 4px solid #333;
+                  border-radius: 50%;
+                  animation: spin 1s linear infinite;"></div>`,
+              },
+              {
+                tagName: 'style',
+                innerHTML: `
+                  @keyframes spin {
+                    to { transform: rotate(360deg); }
+                  }
+                `,
+              },
+            ],
+          };
+        },
+      };
+    },
+  ],
+    function webpackFallbackPlugin() {
     return {
       name: 'webpack-fallback-plugin',
       configureWebpack() {
