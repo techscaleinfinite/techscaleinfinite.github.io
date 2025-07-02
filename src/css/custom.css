@@ -500,6 +500,12 @@ ol.lower-alpha {
     height: 120%;
   }
 }
+@media (max-width: 995px){
+[class*='navbarSearchContainer'] {
+  right: 70px !important;
+  position: relative; /* Or absolute depending on context */
+}
+}
 /* App- Decription page Hero image Responsive for .MD file */
 .app-card {
   display: flex;

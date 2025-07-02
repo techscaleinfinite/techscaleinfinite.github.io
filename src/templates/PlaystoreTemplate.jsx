@@ -15,14 +15,17 @@ import { useRef, useEffect, useState } from 'react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 
 const AppItem = ({ image, title, desc, rating,category,slug}) => (
-  <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
-    <a href={`/playstore/${category.toLowerCase()}/${slug}`}>
-      <div className="feature-content d-flex">
-        <img src={image} className="img-fluid" alt={title} />
-        <div className="text-start m-1 ps-3">
-          <h2 className='cloud-title'>{title}</h2>
-          <p className='cloud-title'><a href={`/playstore/${category}`}>{desc}</a></p>
-          <div className="d-flex align-items-center">
+  <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4">
+  <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
+    <div className="feature-content d-flex flex-column align-items-center text-center h-100">
+      <img src={image} className="img-fluid mb-3" alt={title} style={{ maxHeight: '150px', objectFit: 'contain' }} />
+      
+      <div className="px-2">
+        <h2 className='cloud-title'>{title}</h2>
+        <p className='cloud-title'>
+          <a href={`/playstore/${category}`} className="text-decoration-none">{desc}</a>
+        </p>
+        <div className="d-flex justify-content-center align-items-center">
           <strong className="me-2">{rating}</strong>
           <span className='d-flex' style={{ color: 'rgb(250, 206, 27)' }}>
             {[...Array(4)].map((_, i) => (
@@ -30,10 +33,30 @@ const AppItem = ({ image, title, desc, rating,category,slug}) => (
             ))}
           </span>
         </div>
-        </div>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
+</div>
+
+  // <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-0">
+  //   <a href={`/playstore/${category.toLowerCase()}/${slug}`}>
+  //     <div className="feature-content d-flex">
+  //       <img src={image} className="img-fluid" alt={title} />
+  //       <div className="text-start m-1 ps-3">
+  //         <h2 className='cloud-title'>{title}</h2>
+  //         <p className='cloud-title'><a href={`/playstore/${category}`}>{desc}</a></p>
+  //         <div className="d-flex align-items-center">
+  //         <strong className="me-2">{rating}</strong>
+  //         <span className='d-flex' style={{ color: 'rgb(250, 206, 27)' }}>
+  //           {[...Array(4)].map((_, i) => (
+  //             <FaStar key={i} />
+  //           ))}
+  //         </span>
+  //       </div>
+  //       </div>
+  //     </div>
+  //   </a>
+  // </div>
 );
 
 const PlaystoreTemplate = () => {
@@ -217,7 +240,7 @@ const products = [
       <div className="row">
         {populaapps.slice(0, 4).map((app, idx) => <AppItem key={idx} {...app} />)}
       </div>
-      <hr style={{ opacity: 0.5 }} />
+      <hr style={{ opacity: 0.1 }} />
       <div className="row">
         {populaapps.slice(4, 8).map((app, idx) => <AppItem key={idx + 4} {...app} />)}
       </div>

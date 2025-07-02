@@ -2593,7 +2593,7 @@ header .list-inline .dropdown-menu ul li:last-child a {
 
 .feature-box {
     border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
+    /* border-right: 1px solid #ebebeb; */
 }
 /* Remove left border from first column in each row */
 .row .feature-box:first-child {
@@ -7476,3 +7476,10 @@ header.header-type-4 .header-text span:first-child {
     right:0px !important;
     left: auto;
    }
+
+   .feature-box {
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-5px);
+}
