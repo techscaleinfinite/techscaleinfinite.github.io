@@ -7489,3 +7489,6 @@ header.header-type-4 .header-text span:first-child {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+.no-border {
+  border: none !important;
+}

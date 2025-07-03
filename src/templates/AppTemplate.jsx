@@ -220,7 +220,7 @@ const parsedImages = JSON.parse(apps[0]?.images || '[]');
   }}
 >
   <span>{Math.floor(apps[0]?.pull_count / 1_000_000)}</span>
-  <span style={{ fontSize: '1rem',  }}>M+</span>
+  <span style={{ fontSize: '1rem',  }}>M</span>
   <ArrowDownTrayIcon style={{ width: '1.3rem', height: '1.3rem', color:'red'}} />
 </strong>
   {/* <p style={{ color: '#555', margin: 0, marginTop: '4px' }}>Downloads</p> */}
@@ -313,13 +313,13 @@ const parsedImages = JSON.parse(apps[0]?.images || '[]');
 
         .withings-logo {
           order: 2;
-          width: 40%;
+          width:30%;
           text-align: right;
         }
 
         .withings-content {
           order: 1;
-          width: 60%;          
+          width: 50%;          
         }
       }
     `}
