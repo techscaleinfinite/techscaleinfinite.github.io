@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-import { ShareIcon, HeartIcon } from '@heroicons/react/24/outline';
+import { ShareIcon, HeartIcon, ArrowDownTrayIcon, StarIcon } from '@heroicons/react/24/outline';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
@@ -158,7 +158,11 @@ const parsedImages = JSON.parse(apps[0]?.images || '[]');
   return (    
     <>    
       {children}
-      <ToastContainer position="bottom-center" autoClose={1500} />
+      <ToastContainer 
+          position="bottom-center" 
+          autoClose={1500} 
+         style={{ marginBottom: 0, paddingBottom: 0 }} 
+       />
     
       <div
         className="wrapper"
@@ -175,7 +179,7 @@ const parsedImages = JSON.parse(apps[0]?.images || '[]');
   <div className="withings-logo" style={{ textAlign: 'center' }}>
     <img
       src={apps[0]?.image}
-      alt="Withings Logo"
+      alt="App Logo"
       style={{
         width: '100%',
         maxWidth: '300px',
@@ -192,33 +196,39 @@ const parsedImages = JSON.parse(apps[0]?.images || '[]');
       {apps[0]?.title}
     </h1>
     <p style={{ color: '#1a73e8', fontWeight: 500, margin: 0 }}>{apps[0]?.user}</p>
-    <p style={{ color: '#555', marginTop: 4 }}>In-app purchases</p>
+    {/* <p style={{ color: '#555', marginTop: 4 }}>In-app purchases</p> */}
 
     <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', margin: '1rem 0' }}>
       <div style={{alignItems:'center', justifyContent: 'center', display:'grid', padding:'5px'}}
       >
-        <strong style={{fontSize:'1.5rem'}}>{apps[0]?.rating} ★</strong>
+        <strong style={{fontSize:'1.5rem', display: 'flex', alignItems:'center', justifyContent: 'center' }}>{apps[0]?.rating} 
+          <StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
+        </strong>
         {/* <p style={{ color: '#555', margin: 0 }}>196K reviews</p> */}
       </div>
       <div>
-  <strong
-    style={{
-      backgroundColor: 'rgba(191,191,451,0.5)',
-      color: '#333',
-      padding: '0.3rem 0.6rem',
-      borderRadius: '999px',
-      fontSize: '0.9rem',
-      display: 'inline-block',
-    }}
-  >
-    {apps[0]?.pull_count}+
-  </strong>
-  <p style={{ color: '#555', margin: 0, marginTop: '4px' }}>Downloads</p>
+ <strong
+  style={{
+    color: '#333',
+    padding: '0.3rem 0.6rem',
+    borderRadius: '999px',
+    fontSize: '1.7rem',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.2rem',
+    fontWeight: 'bold'
+  }}
+>
+  <span>{Math.floor(apps[0]?.pull_count / 1_000_000)}</span>
+  <span style={{ fontSize: '1rem',  }}>M+</span>
+  <ArrowDownTrayIcon style={{ width: '1.3rem', height: '1.3rem', color:'red'}} />
+</strong>
+  {/* <p style={{ color: '#555', margin: 0, marginTop: '4px' }}>Downloads</p> */}
 </div>
-      <div>
+      {/* <div>
         <strong>3+</strong>
         <p style={{ color: '#555', margin: 0 }}>Rated for 3+</p>
-      </div>
+      </div> */}
     </div>
 
     <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
@@ -259,7 +269,7 @@ const parsedImages = JSON.parse(apps[0]?.images || '[]');
         e.currentTarget.style.color = 'var(--ifm-button-bg)';
       }}
     >
-      <ShareIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
+      <ShareIcon style={{ width: '20px', height: '20px', marginRight: '4px',  }} />
       Share
     </button>
      
