@@ -7483,3 +7483,9 @@ header.header-type-4 .header-text span:first-child {
 .feature-box:hover {
   transform: translateY(-5px);
 }
+
+/* Toasty - copy url */
+.Toastify {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}

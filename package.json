@@ -27,6 +27,7 @@
     "clsx": "^1.2.1",
     "docusaurus-plugin-image-zoom": "^1.0.1",
     "jquery": "^3.7.1",
+    "js-cookie": "^3.0.5",
     "prism-react-renderer": "^2.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
