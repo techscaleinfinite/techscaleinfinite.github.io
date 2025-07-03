@@ -340,56 +340,117 @@ const parsedImages = JSON.parse(apps[0]?.images || '[]');
      
          <div className="container py-4">
               <div className="row">
-                {/* 70% Column */}
-                      <div className="col-md-9 mb-4">
-                      <Swiper modules={[Navigation]} spaceBetween={10} slidesPerView={3} navigation loop>
+                    {/* 70% Column */}
+                          <div className="col-md-9 mb-4">
+                          {/* <Swiper modules={[Navigation]} spaceBetween={10} slidesPerView={3} navigation loop>
+                            {parsedImages.map((src, index) => (
+                          <SwiperSlide key={index}>
+                          <img
+                            src={src}
+                            alt={`Slide ${index}`}
+                            style={{  borderRadius: '12px', cursor: 'pointer', width:'250px', height:'auto'}}
+                            onClick={() => setPopupIndex(index)}
+                          />
+                        </SwiperSlide>
+                      ))}
+                    </Swiper> */}
+                  <div style={{ position: 'relative'/* for outside space */ }}>
+                      <Swiper
+                        modules={[Navigation]}
+                        spaceBetween={10}
+                        navigation
+                        loop
+                        breakpoints={{
+                          0: { slidesPerView: 1 },
+                          576: { slidesPerView: 2 },
+                          768: { slidesPerView: 3 },
+                        }}
+                      >
                         {parsedImages.map((src, index) => (
-                      <SwiperSlide key={index}>
-                      <img
-                        src={src}
-                        alt={`Slide ${index}`}
-                        style={{  borderRadius: '12px', cursor: 'pointer', width:'250px', height:'auto'}}
-                        onClick={() => setPopupIndex(index)}
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-          
+                          <SwiperSlide key={index}>
+                            <img
+                              src={src}
+                              alt={`Slide ${index}`}
+                              style={{
+                                borderRadius: '12px',
+                                cursor: 'pointer',
+                                width: '100%',
+                                height: 'auto',
+                              }}
+                              onClick={() => setPopupIndex(index)}
+                            />
+                          </SwiperSlide>
+                        ))}
+                      </Swiper>
 
-          {popupIndex !== null && (
-            <div
-              onClick={() => setPopupIndex(null)}
-              style={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                width: '100vw',
-                height: '100vh',
-                background: 'rgba(0,0,0,0.85)',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                zIndex: 9999,
-              }}
-            >
-              <button onClick={showPrev} style={popupArrowStyle('left')}>&lsaquo;</button>
-              <img
-                src={parsedImages[popupIndex]}
-                alt="Popup"
-                style={{
-                  maxWidth: '90%',
-                  maxHeight: '90%',
-                  borderRadius: '12px',
-                  boxShadow: '0 0 40px rgba(255,255,255,0.2)',
-                }}
-                onClick={(e) => e.stopPropagation()}
-              />
-              <button onClick={showNext} style={popupArrowStyle('right')}>&rsaquo;</button>
-            </div>
-          )}
-                          <div className='row pt-5'>
-                                 <div dangerouslySetInnerHTML={{ __html: apps[0]?.description }} />
-                          </div>
+                      {/* Inline style for Swiper buttons */}
+                      <style>
+                        {`
+                          .swiper-button-prev,
+                          .swiper-button-next {
+                            position: absolute;
+                            top: 50%;
+                            width: 30px;
+                            height: 30px;
+                            background: rgba(0, 0, 0, 0.8);
+                            color: white;
+                            border-radius: 50%;
+                            z-index: 10;
+                          }
+
+                          .swiper-button-prev {
+                            left: -10px;
+                          }
+
+                          .swiper-button-next {
+                            right: -10px;
+                          }
+
+                          .swiper-button-prev::after,
+                          .swiper-button-next::after {
+                            font-size: 16px;
+                          }
+                        `}
+                      </style>
+                    </div>
+
+ 
+              
+
+                    {popupIndex !== null && (
+                      <div
+                        onClick={() => setPopupIndex(null)}
+                        style={{
+                          position: 'fixed',
+                          top: 0,
+                          left: 0,
+                          width: '100vw',
+                          height: '100vh',
+                          background: 'rgba(0,0,0,0.85)',
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                          zIndex: 9999,
+                        }}
+                      >
+                        <button onClick={showPrev} style={popupArrowStyle('left')}>&lsaquo;</button>
+                        <img
+                          src={parsedImages[popupIndex]}
+                          alt="Popup"
+                          style={{
+                            maxWidth: '90%',
+                            maxHeight: '90%',
+                            borderRadius: '12px',
+                            boxShadow: '0 0 40px rgba(255,255,255,0.2)',
+                          }}
+                          onClick={(e) => e.stopPropagation()}
+                        />
+                        <button onClick={showNext} style={popupArrowStyle('right')}>&rsaquo;</button>
+                      </div>
+                    )}
+                                    <div className='row pt-5'>
+                                          <div dangerouslySetInnerHTML={{ __html: apps[0]?.description }} />
+                                    </div>
                         
                 </div>
                 
