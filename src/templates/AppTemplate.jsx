@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-import { ShareIcon, HeartIcon, ArrowDownTrayIcon, StarIcon } from '@heroicons/react/24/outline';
+import { ShareIcon, CloudArrowDownIcon, ArrowDownTrayIcon, StarIcon,BookmarkIcon } from '@heroicons/react/24/outline';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
+import Cookies from 'js-cookie';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,20 +20,6 @@ const images = [
 'img/ed36.jpg',
 'img/ffee3.jpg'
 ];
-/*const similarApps = [
-{
-logo: '/img/swdww.jpg',
-name: 'PulseLife ex 360 medics',
-publisher: 'Pulselife',
-rating: 4.4,
-},
-{
-logo: '/img/oo8u.png',
-name: 'Herbs Info',
-publisher: 'Manish Singh Tomar',
-rating: 4.6,
-},
-];*/
 const categoryApps = [
 {
 logo: '/img/swdww.jpg',
@@ -52,6 +39,7 @@ name: 'DataBase',
 },
 ];
 const AppTemplate = ({ group, categoryname, slug, children }) => {
+
 const handleShare = async () => {
 try {
 await navigator.clipboard.writeText(window.location.href);
@@ -72,6 +60,8 @@ setPopupIndex((prev) => (prev - 1 + images.length) % images.length);
 const [apps, setApps] = useState([]);
 const [similarApps, setSimilarapps] = useState([]);
 const [category, setCategory] = useState([]);
+const [isWishlisted, setIsWishlisted] = useState(false); // State for Cookies
+
 useEffect(() => {
 (async () => {
 const SQL = await initSqlJs({
@@ -125,8 +115,37 @@ image: row[3],
 setApps(loadedApps);
 setSimilarapps(loadedsimilarApps);
 setCategory(categories);
+ // Check if already in wishlist in Cookies
+      const wishlist = JSON.parse(Cookies.get('wishlist') || '[]');
+      const isInWishlist = wishlist.some(item => item.slug === slug);
+      setIsWishlisted(isInWishlist);
 })();
 }, []);
+//  Wishlist
+const handleWishlist = () => {
+  const currentApp = {
+    logo: apps[0]?.image,
+    slug: apps[0]?.slug,
+    name: apps[0]?.title,
+    category: apps[0]?.category,
+  };
+
+  let wishlist = JSON.parse(Cookies.get('wishlist') || '[]');
+
+  if (isWishlisted) {
+    // Remove from wishlist
+    wishlist = wishlist.filter(item => item.slug !== currentApp.slug);
+    toast.info('Removed from Wishlist');
+  } else {
+    // Add to wishlist
+    wishlist.push(currentApp);
+    toast.success('Added to Wishlist');
+  }
+
+  Cookies.set('wishlist', JSON.stringify(wishlist), { expires: 30 });
+  setIsWishlisted(!isWishlisted);
+};
+// Wishlist End
 const parsedImages = JSON.parse(apps[0]?.images || '[]');
 return (    
 <>    
@@ -165,7 +184,13 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 <h1 style={{ fontSize: '2.5rem', fontWeight: '400', textAlign: 'left', textTransform: 'capitalize' }}>
 {apps[0]?.title}
 </h1>
-<p style={{ color: '#1a73e8', fontWeight: 500, margin: 0 }}>{apps[0]?.user}</p>
+<a
+  href={`/playstore/${apps[0]?.category.toLowerCase()}/`}
+  style={{ color: '#1a73e8', fontWeight: 500, margin: 0, textDecoration: 'none' }}
+>
+  {apps[0]?.category}
+</a>
+{/* <p style={{ color: '#1a73e8', fontWeight: 500, margin: 0 }}>{apps[0]?.category}</p> */}
 {/* <p style={{ color: '#555', marginTop: 4 }}>In-app purchases</p> */}
 <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', margin: '1rem 0' }}>
 <div style={{alignItems:'center', justifyContent: 'center', display:'grid', padding:'5px'}}
@@ -190,7 +215,7 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
    >
    <span>{Math.floor(apps[0]?.pull_count / 1_000_000)}</span>
    <span style={{ fontSize: '1rem',  }}>M</span>
-   <ArrowDownTrayIcon style={{ width: '1.3rem', height: '1.3rem', color:'red'}} />
+   <CloudArrowDownIcon style={{ width: '1.3rem', height: '1.3rem', color:'red'}} />
    </strong>
    {/* <p style={{ color: '#555', margin: 0, marginTop: '4px' }}>Downloads</p> */}
 </div>
@@ -203,16 +228,30 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 </div>
 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
 <a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}`}
+ onClick={handleShare}
 style={{
-backgroundColor: 'var(--ifm-button-bg)',
-color: '#fff',
-padding: '6px 4rem',
-borderRadius: '0.5rem',
-border: 'none',
-fontSize: '1rem',
+display: 'flex',
+alignItems: 'center',
+justifyContent: 'center',
+background: 'none',
+border: '1px solid var(--ifm-button-bg)',
+color: 'var(--ifm-button-bg)',
+padding: '0.4rem 0.75rem',
+borderRadius: '6px',
+cursor: 'pointer',
 fontWeight: 500,
+transition: 'all 0.3s ease',
+}}
+onMouseEnter={(e) => {
+e.currentTarget.style.background = 'var(--ifm-button-bg)';
+e.currentTarget.style.color = '#fff';
+}}
+onMouseLeave={(e) => {
+e.currentTarget.style.background = 'none';
+e.currentTarget.style.color = 'var(--ifm-button-bg)';
 }}
 >
+<ArrowDownTrayIcon style={{ width: '20px', height: '20px', marginRight: '4px',  }} />
 Install
 </a>
 <button
@@ -243,31 +282,35 @@ e.currentTarget.style.color = 'var(--ifm-button-bg)';
 Share
 </button>
 <button
-style={{
-display: 'flex',
-alignItems: 'center',
-justifyContent: 'center',
-background: 'none',
-border: '1px solid var(--ifm-button-bg)', // border color
-color: 'var(--ifm-button-bg)',             // text/icon color
-padding: '0.4rem 0.75rem',
-borderRadius: '6px',
-cursor: 'pointer',
-fontWeight: 500,
-transition: 'all 0.3s ease',
-}}
-onMouseEnter={(e) => {
-e.currentTarget.style.background = 'var(--ifm-button-bg)';
-e.currentTarget.style.color = '#fff';
-}}
-onMouseLeave={(e) => {
-e.currentTarget.style.background = 'none';
-e.currentTarget.style.color = 'var(--ifm-button-bg)';
-}}
+  onClick={handleWishlist}
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    background: isWishlisted ? 'var(--ifm-button-bg)' : 'none',
+    border: '1px solid var(--ifm-button-bg)',
+    color: isWishlisted ? '#fff' : 'var(--ifm-button-bg)',
+    padding: '0.4rem 0.75rem',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontWeight: 500,
+    transition: 'all 0.3s ease',
+  }}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.background = 'var(--ifm-button-bg)';
+    e.currentTarget.style.color = '#fff';
+  }}
+  onMouseLeave={(e) => {
+    if (!isWishlisted) {
+      e.currentTarget.style.background = 'none';
+      e.currentTarget.style.color = 'var(--ifm-button-bg)';
+    }
+  }}
 >
-<HeartIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
-Add to wishlist
+  <BookmarkIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
+  {isWishlisted ? 'Remove Wishlist' : 'Add to Wishlist'}
 </button>
+     
 </div>
 </div>
 {/* Responsive styling */}
@@ -305,20 +348,7 @@ gap: '2rem',
    <div className="row">
       {/* 70% Column */}
       <div className="col-md-9 mb-4">
-         {/* 
-         <Swiper modules={[Navigation]} spaceBetween={10} slidesPerView={3} navigation loop>
-            {parsedImages.map((src, index) => (
-            <SwiperSlide key={index}>
-               <img
-               src={src}
-               alt={`Slide ${index}`}
-               style={{  borderRadius: '12px', cursor: 'pointer', width:'250px', height:'auto'}}
-               onClick={() => setPopupIndex(index)}
-               />
-            </SwiperSlide>
-            ))}
-         </Swiper>
-         */}
+
          <div style={{ position: 'relative'/* for outside space */ }}>
          <Swiper
          modules={[Navigation]}
