@@ -87,46 +87,128 @@ const config = {
     };
   },
   function injectHtmlLoader() {
+  return {
+    name: 'inject-html-loader',
+    injectHtmlTags() {
       return {
-        name: 'inject-html-loader',
-        injectHtmlTags() {
-          return {
-            preBodyTags: [
-              {
-                tagName: 'div',
-                attributes: {
-                  id: 'global-loader',
-                  style: `
-                    position: fixed;
-                    z-index: 9999;
-                    inset: 0;
-                    background: #fff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  `,
+        preBodyTags: [
+          {
+            tagName: 'div',
+            attributes: {
+              id: 'global-loader',
+              style: `
+                position: fixed;
+                z-index: 9999;
+                inset: 0;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              `,
+            },
+            innerHTML: `<div class="loader-spinner" style="
+              width: 40px;
+              height: 40px;
+              border: 4px solid #eee;
+              border-top: 4px solid #333;
+              border-radius: 50%;
+              animation: spin 1s linear infinite;"></div>`,
+          },
+          {
+            tagName: 'style',
+            innerHTML: `
+              @keyframes spin {
+                to { transform: rotate(360deg); }
+              }
+            `,
+          },
+        ],
+        headTags: [
+          {
+            tagName: 'script',
+            attributes: {
+              type: 'application/ld+json',
+            },
+            innerHTML: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Scale Infinite Private Limited",
+              "alternateName": "Scaleinfinite",
+              "url": "https://scaleinfinite.fr/",
+              "logo": "https://scaleinfinite.fr/images/scaleinfinite-logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+33 9 70 44 00 55",
+                "contactType": "customer service",
+                "areaServed": "FR"
+              },
+              "sameAs": [
+                "https://www.instagram.com/scaleinfinite/",
+                "https://www.youtube.com/channel/UCyqMBvdl3onfBG4bJ31uk-A",
+                "https://www.linkedin.com/company/scaleinfinite/",
+                "https://scaleinfinite.fr/"
+              ]
+            }),
+          },
+          {
+            tagName: 'script',
+            attributes: {
+              type: 'application/ld+json',
+            },
+            innerHTML: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Demo Deployment",
+                  "item": "https://docs.scaleinfinite.fr/category/demo-deployment/"
                 },
-                innerHTML: `<div class="loader-spinner" style="
-                  width: 40px;
-                  height: 40px;
-                  border: 4px solid #eee;
-                  border-top: 4px solid #333;
-                  border-radius: 50%;
-                  animation: spin 1s linear infinite;"></div>`,
-              },
-              {
-                tagName: 'style',
-                innerHTML: `
-                  @keyframes spin {
-                    to { transform: rotate(360deg); }
-                  }
-                `,
-              },
-            ],
-          };
-        },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Kubernetes Services",
+                  "item": "https://docs.scaleinfinite.fr/introduction/kubernetes/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Docker Services",
+                  "item": "https://docs.scaleinfinite.fr/blogs/docker%20a%20game%20changer/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "About Scale Infinite",
+                  "item": "https://docs.scaleinfinite.fr/introduction/about-scale-infinite/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "About Cloudfloat",
+                  "item": "https://docs.scaleinfinite.fr/introduction/cloud-float/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "name": "Tutorial",
+                  "item": "https://docs.scaleinfinite.fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "name": "Support",
+                  "item": "https://docs.scaleinfinite.fr/community/"
+                }
+              ]
+                    }),
+          },
+        ],
       };
     },
+  };
+}
 ],
 
   themeConfig:
