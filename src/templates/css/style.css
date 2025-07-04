@@ -396,7 +396,7 @@ header,
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* or whatever height fits your design */
+  height: 180px; /* or whatever height fits your design */
   overflow: hidden;
 }
 
@@ -3429,9 +3429,9 @@ header .list-inline .dropdown-menu ul li:last-child a {
 .product-price>p .price-discount{
     text-align: center;
 }
-.product-caption {
+/* .product-caption {
     margin-top: 15px;
-}
+} */
 
 .product-caption .product-name {
     font-weight: 400;

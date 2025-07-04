@@ -4,6 +4,8 @@ import Layout from '@theme/Layout'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { BookmarkIcon, StarIcon, ArrowDownTrayIcon} from '@heroicons/react/24/outline'
+import { BookmarkIcon as OutlineBookmarkIcon } from '@heroicons/react/24/outline';
+import { BookmarkIcon as SolidBookmarkIcon } from '@heroicons/react/24/solid';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './css/style.css';
@@ -13,87 +15,152 @@ import './css/font-awesome.min.css';
 import { FaStar } from 'react-icons/fa';
 import { useRef, useEffect, useState } from 'react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
-const AppItem = ({ image, title, desc, rating,category,slug}) => (
-<div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border">
-   <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
+import Cookies from 'js-cookie';
+
+
+const AppItem = ({ image, title, category, slug }) => {
+  const [isWishlisted, setIsWishlisted] = useState(false);
+
+  // Load wishlist from cookies on component mount
+  useEffect(() => {
+    const wishlist = JSON.parse(Cookies.get('wishlist') || '[]');
+    const found = wishlist.find(item => item.slug === slug);
+    setIsWishlisted(!!found);
+  }, [slug]);
+
+  const handleWishlistToggle = () => {
+    const wishlist = JSON.parse(Cookies.get('wishlist') || '[]');
+    const exists = wishlist.some(item => item.slug === slug);
+
+    let updatedWishlist;
+    if (exists) {
+      updatedWishlist = wishlist.filter(item => item.slug !== slug);
+    } else {
+      updatedWishlist = [...wishlist, { image, title, category, slug }];
+    }
+
+    Cookies.set('wishlist', JSON.stringify(updatedWishlist), { expires: 7 });
+    setIsWishlisted(!exists);
+  };
+   {isWishlisted ? (
+            <SolidBookmarkIcon
+               style={{
+                  width: '2rem',
+                  height: '2.5rem',
+                  color: 'var(--ifm-color-primary-title-dark)',
+               }}
+            />
+            ) : (
+            <OutlineBookmarkIcon
+               style={{
+                  width: '2rem',
+                  height: '2.5rem',
+                  color: 'var(--ifm-color-primary-title-dark)',
+               }}
+            />
+            )}
+
+  // ✅ RETURN your JSX here
+  return (
+    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border">
       <div
-      className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
-      style={{
-      border: '1px solid var(--ifm-color-primary-title-dark)',
-      borderRadius: '10px',
-      paddingBottom: '2.5rem', // make room for bottom icons
-      }}
+        className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
+        style={{
+          border: '1px solid var(--ifm-color-primary-title-dark)',
+          borderRadius: '10px',
+          paddingBottom: '2.5rem',
+        }}
       >
-      {/* Bookmark Icon Top Right */}
-      <button
-      style={{
-      position: 'absolute',
-      top: '-10px',
-      right: '5px',
-      background: 'none',
-      border: 'none',
-      cursor: 'pointer',
-      padding: 0,
-      zIndex: '99',
-      }}
-      onClick={() => handleBookmark(app)}
-      >
-      <BookmarkIcon
-      style={{ width: '2rem', height: '2.5rem', color: 'var(--ifm-color-primary-title-dark)' }}
-      />
-      </button>
-      {/* Main Image */}
-      <img
-      src={image}
-      className="img-fluid mb-3"
-      alt={title}
-      style={{ maxHeight: '150px', objectFit: 'contain' }}
-      />
-      {/* Title + Description */}
-      <div className="px-2">
-         <h2 className="cloud-title">{title}</h2>
-         <p className="cloud-title">
-            <strong>
-   <a href={`/playstore/${category}`} className="text-decoration-none">{desc}</a>
-   </strong>
-   </p>
-   </div>
-   {/* Bottom Left StarIcon */}
-   <div
-   style={{
-   position: 'absolute',
-   bottom: '8px',
-   left: '10px',
-   display: 'flex',
-   alignItems: 'center',
-   fontSize: '1rem',
-   fontWeight: 500,
-   color:' var(--ifm-color-primary-title-dark)'
-   }}
-   >
-   49
-   <StarIcon style={{ width: '1rem', height: '1rem', color: 'red', marginLeft: '4px' }} />
-</div>
-{/* Bottom Right ArrowDownTrayIcon */}
-<div
-style={{
-position: 'absolute',
-bottom: '8px',
-right: '10px',
-display: 'flex',
-alignItems: 'center',
-fontSize: '1rem',
-fontWeight: 500,
-color:' var(--ifm-color-primary-title-dark)'
-}}
+        
+
+       <button
+  style={{
+    position: 'absolute',
+    top: '-10px',
+    right: '5px',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    padding: 0,
+    zIndex: '99',
+  }}
+  onClick={handleWishlistToggle}
 >
-<span style={{ marginRight: '4px' }}>26 M</span>
-<ArrowDownTrayIcon style={{ width: '1.2rem', height: '1.2rem', color: 'red' }} />
-</div>
-</div>
-</a>
-</div>
-);
+  {isWishlisted ? (
+    <SolidBookmarkIcon
+      style={{
+        width: '2rem',
+        height: '2.5rem',
+        color: 'var(--ifm-color-title-darker)',
+      }}
+    />
+  ) : (
+    <OutlineBookmarkIcon
+      style={{
+        width: '2rem',
+        height: '2.5rem',
+        color: 'var(--ifm-color-title-darker)',
+      }}
+    />
+  )}
+</button>
+
+
+        <a href={`/playstore/${category}`} className="text-decoration-none">
+          <img
+            src={image}
+            className="img-fluid mb-3"
+            alt={title}
+            style={{ maxHeight: '150px', objectFit: 'contain' }}
+          />
+        </a>
+
+        <div className="px-2">
+          <h2 className="cloud-title">{title}</h2>
+          <p className="cloud-title">
+            <strong>
+              <a href={`/playstore/${category}`} className="text-decoration-none">
+                {category}
+              </a>
+            </strong>
+          </p>
+        </div>
+
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '8px',
+            left: '10px',
+            display: 'flex',
+            alignItems: 'center',
+            fontSize: '1.2rem',
+            fontWeight: '500',
+            color: 'var(--ifm-color-primary-title-dark)',
+          }}
+        >
+          49
+          <StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
+        </div>
+
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '8px',
+            right: '10px',
+            display: 'flex',
+            alignItems: 'center',
+            fontSize: '1rem',
+            fontWeight: 500,
+            color: 'var(--ifm-color-primary-title-dark)',
+          }}
+        >
+          <span style={{ marginRight: '4px' }}>26 M</span>
+          <ArrowDownTrayIcon style={{ width: '20px', height: '20px', marginRight: '4px', color: 'red'  }} />
+        </div>
+      </div>
+    </div>
+  );
+};
 const PlaystoreTemplate = () => {
 const [apps, setApps] = useState([]);
 const [category, setCategory] = useState([]);
@@ -362,7 +429,7 @@ return (
             }}
             >
             49
-            <StarIcon style={{ width: '1rem', height: '1rem', color: 'red', marginLeft: '4px' }} />
+           <StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
          </div>
          {/* Bottom Right ArrowDownTrayIcon */}
          <div
