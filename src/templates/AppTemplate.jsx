@@ -76,6 +76,7 @@ const result = db.exec(`SELECT * FROM apps WHERE slug='${slug.replace(/'/g, "''"
 const loadedApps = result[0].values.map(row => ({
 image: row[5],
 images: row[12],
+port: row[13],
 description: row[4],
 slug: row[3],
 title: row[2],
@@ -227,7 +228,7 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 */}
 </div>
 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-<a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}`}
+<a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}`}
  onClick={handleShare}
 style={{
 display: 'flex',
