@@ -337,7 +337,7 @@ return (
          </div>
       </div>
       {/* Custom Arrows - outside Swiper */}
-      <div className="swiper-button-prev custom-swiper-button" ref={prevRef}>
+      <div className="swiper-button-prev custom-swiper-button"  ref={prevRef}>
          <i className="fa fa-angle-left"></i>
       </div>
       <div className="swiper-button-next custom-swiper-button" ref={nextRef}>

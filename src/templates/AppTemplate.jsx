@@ -191,8 +191,7 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 >
   {apps[0]?.category}
 </a>
-{/* <p style={{ color: '#1a73e8', fontWeight: 500, margin: 0 }}>{apps[0]?.category}</p> */}
-{/* <p style={{ color: '#555', marginTop: 4 }}>In-app purchases</p> */}
+
 <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', margin: '1rem 0' }}>
 <div style={{alignItems:'center', justifyContent: 'center', display:'grid', padding:'5px'}}
 >
@@ -218,13 +217,10 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
    <span style={{ fontSize: '1rem',  }}>M</span>
    <CloudArrowDownIcon style={{ width: '1.3rem', height: '1.3rem', color:'red'}} />
    </strong>
-   {/* <p style={{ color: '#555', margin: 0, marginTop: '4px' }}>Downloads</p> */}
+ 
 </div>
 {/* 
-<div>
-   <strong>3+</strong>
-   <p style={{ color: '#555', margin: 0 }}>Rated for 3+</p>
-</div>
+
 */}
 </div>
 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>

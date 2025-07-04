@@ -7492,3 +7492,15 @@ header.header-type-4 .header-text span:first-child {
 .no-border {
   border: none !important;
 }
+
+@media (max-width: 768px){
+    .custom-swiper-button.swiper-button-next{
+      right: -10px !important; /* if absolutely needed */
+}
+.custom-swiper-button.swiper-button-prev {
+  left: -10px !important; /* if absolutely needed */
+  
+  
+}
+}
+
