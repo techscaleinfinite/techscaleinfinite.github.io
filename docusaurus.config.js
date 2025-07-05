@@ -222,7 +222,7 @@ const config = {
       { name: 'author', content: 'ScaleInfinite Technologies' },
       {
        name: 'google-site-verification',
-        content: 'oa5QCCKVNejAXvsZQ7w7l0K9wRbfjGaHLikdK9gtLOk',
+        content: '2JzgmPkp_0tCo7F-8PxrKPYz1IZLNKHYHG7TQPjdlYM',
       },
       {
         name: 'canonical',
