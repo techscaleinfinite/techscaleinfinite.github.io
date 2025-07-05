@@ -47,7 +47,7 @@ const AppItem = ({ image, title, category, slug }) => {
                style={{
                   width: '2rem',
                   height: '2.5rem',
-                  color: 'var(--ifm-color-primary-title-dark)',
+                  color: 'rgb(245, 81, 81)',
                }}
             />
             ) : (
@@ -55,7 +55,7 @@ const AppItem = ({ image, title, category, slug }) => {
                style={{
                   width: '2rem',
                   height: '2.5rem',
-                  color: 'var(--ifm-color-primary-title-dark)',
+                  color: 'rgb(245, 81, 81)',
                }}
             />
             )}
@@ -72,7 +72,7 @@ const AppItem = ({ image, title, category, slug }) => {
                      style={{
                      width: '2rem',
                      height: '2.5rem',
-                     color: 'var(--ifm-color-title-darker)',
+                     color: 'rgb(245, 81, 81)',
                      }}
                   />
                   ) : (
@@ -80,12 +80,12 @@ const AppItem = ({ image, title, category, slug }) => {
                         style={{
                         width: '2rem',
                         height: '2.5rem',
-                        color: 'var(--ifm-color-title-darker)',
+                        color: 'rgb(245, 81, 81)',
                         }}
                      />
                   )}
             </button>
-               <a href={`/playstore/${category}`} className="text-decoration-none">
+               <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
                   <img  src={image}     className="img-fluid mb-3"    alt={title}  style={{ maxHeight: '150px', objectFit: 'contain' }}  />
                </a>
                <div className="px-2">
@@ -148,10 +148,12 @@ desc: row[1],
 rating: row[6],
 category:row[1],
 }));
+// Loading apps for top section
 const appresponse = await fetch('/apps.sqlite');
 const appbuffer = await appresponse.arrayBuffer();
 const app_db = new SQL.Database(new Uint8Array(appbuffer));
-const app_result = app_db.exec("SELECT * FROM apps order by sort_order desc limit 0,12");
+// const app_result = app_db.exec("SELECT * FROM apps order by sort_order desc limit 0,12");
+const app_result = app_db.exec("SELECT * FROM apps order by sort_order desc ");
 // Convert result[0] to array of objects
 const loadedPouplarApps = app_result[0].values.map(row => ({
 image: row[5],
@@ -166,56 +168,7 @@ setCategory(categories);
 setPopularapps(loadedPouplarApps);
 })();
 }, []);
-// const products = [
-// {
-// img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
-// name: 'Amazon',
-// category: 'Web services',
-// rating: 4,
-// },
-// {
-// img: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_mariadb.webp',
-// name: 'MariaDB',
-// category: 'Database',
-// rating: 4.3,
-// },
-// {
-// img: 'https://cdn.scaleinfinite.fr/app-images-webp/fluentd.webp',
-// name: 'Fluentd',
-// category: 'OpenSource',
-// rating: 4.9,
-// },
-// {
-// img: 'https://cdn.scaleinfinite.fr/app-images-webp/circleci_postgres.webp',
-// name: 'Circleci',
-// category: 'Database',
-// rating: 4.2,
-// },
-// {
-// img: 'https://cdn.scaleinfinite.fr/app-images-webp/almalinux.webp',
-// name: 'Almalinux',
-// category: 'Operating System',
-// rating: 4.5,
-// },
-// {
-// img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
-// name: 'Amazon',
-// category: 'Webservice',
-// rating: 4.5,
-// },
-// {
-// img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
-// name: 'Amazon',
-// category: 'Web services',
-// rating: 4,
-// },
-// {
-// img: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_mariadb.webp',
-// name: 'MariaDB',
-// category: 'Database',
-// rating: 4.3,
-// },
-// ];
+
 return (
 <>
 {/* Header Section */}
@@ -265,7 +218,7 @@ return (
 {/* HeaderSection close  */}
 
 <div className="container py-5">
-   <div className="row align-items-center justify-content-between mb-4">
+   <div className="row align-items-center justify-content-between mb-4" style={{backgroundColor:'#f8f9fa', padding:'10px', borderRadius:'8px'}}>
     {/* Left - Radio Buttons */}
     <div className="col-md-6 d-flex gap-4" >
       <div className="form-check" >
@@ -290,17 +243,24 @@ return (
       />
     </div>
   </div>
-   <div className="row">
-      {populaapps.slice(0, 4).map((app, idx) => 
-      <AppItem key={idx} {...app} />
-      )}
-   </div>
-   <div className="row">
+  <div
+  className="row"
+  style={
+    populaapps.length > 12
+      ? { maxHeight: '900px', overflowY: 'auto' }
+      : {}
+  }
+>
+  {populaapps.slice().map((app, idx) => (
+    <AppItem key={idx} {...app} />
+  ))}
+</div>
+   {/* <div className="row">
       {populaapps.slice(4, 8).map((app, idx) => <AppItem key={idx + 4} {...app} />)}
    </div>
    <div className="row">
       {populaapps.slice(8, 12).map((app, idx) => <AppItem key={idx + 8} {...app} />)}
-   </div>
+   </div> */}
 </div>
 {category.map((cat, index) => {
 // 🔍 Filter products for this category
