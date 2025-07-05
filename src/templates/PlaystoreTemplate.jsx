@@ -61,105 +61,58 @@ const AppItem = ({ image, title, category, slug }) => {
             )}
 
   // ✅ RETURN your JSX here
-  return (
-    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border">
-      <div
-        className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
-        style={{
-          border: '1px solid var(--ifm-color-primary-title-dark)',
-          borderRadius: '10px',
-          paddingBottom: '2.5rem',
-        }}
-      >
-        
+  return (  
+    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border">     
+      <div  className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
+        style={{  border: '1px solid var(--ifm-color-primary-title-dark)',  borderRadius: '10px', paddingBottom: '2.5rem',  }} >
+         <button style={{position: 'absolute', top: '-10px', right: '5px', background: 'none', border: 'none', cursor: 'pointer',    padding: 0,   zIndex: '99', }}
+            onClick={handleWishlistToggle} >
+               {isWishlisted ? (
+                  <SolidBookmarkIcon
+                     style={{
+                     width: '2rem',
+                     height: '2.5rem',
+                     color: 'var(--ifm-color-title-darker)',
+                     }}
+                  />
+                  ) : (
+                     <OutlineBookmarkIcon
+                        style={{
+                        width: '2rem',
+                        height: '2.5rem',
+                        color: 'var(--ifm-color-title-darker)',
+                        }}
+                     />
+                  )}
+            </button>
+               <a href={`/playstore/${category}`} className="text-decoration-none">
+                  <img  src={image}     className="img-fluid mb-3"    alt={title}  style={{ maxHeight: '150px', objectFit: 'contain' }}  />
+               </a>
+               <div className="px-2">
+                  <h2 className="cloud-title">{title}</h2>
+                  <p className="cloud-title">
+                        <strong>
+                        <a href={`/playstore/${category}`} className="text-decoration-none">
+                           {category}
+                        </a>
+                        </strong>
+                     </p>
+            </div>
+               <div style={{ position: 'absolute', bottom: '8px', left: '10px', display: 'flex', alignItems: 'center',  fontSize: '1.2rem', fontWeight: '500',
+                        color: 'var(--ifm-color-primary-title-dark)',  }} >
+                     49
+                     <StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
+               </div>
 
-       <button
-  style={{
-    position: 'absolute',
-    top: '-10px',
-    right: '5px',
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    padding: 0,
-    zIndex: '99',
-  }}
-  onClick={handleWishlistToggle}
->
-  {isWishlisted ? (
-    <SolidBookmarkIcon
-      style={{
-        width: '2rem',
-        height: '2.5rem',
-        color: 'var(--ifm-color-title-darker)',
-      }}
-    />
-  ) : (
-    <OutlineBookmarkIcon
-      style={{
-        width: '2rem',
-        height: '2.5rem',
-        color: 'var(--ifm-color-title-darker)',
-      }}
-    />
-  )}
-</button>
-
-
-        <a href={`/playstore/${category}`} className="text-decoration-none">
-          <img
-            src={image}
-            className="img-fluid mb-3"
-            alt={title}
-            style={{ maxHeight: '150px', objectFit: 'contain' }}
-          />
-        </a>
-
-        <div className="px-2">
-          <h2 className="cloud-title">{title}</h2>
-          <p className="cloud-title">
-            <strong>
-              <a href={`/playstore/${category}`} className="text-decoration-none">
-                {category}
-              </a>
-            </strong>
-          </p>
-        </div>
-
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '8px',
-            left: '10px',
-            display: 'flex',
-            alignItems: 'center',
-            fontSize: '1.2rem',
-            fontWeight: '500',
-            color: 'var(--ifm-color-primary-title-dark)',
-          }}
-        >
-          49
-          <StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
-        </div>
-
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '8px',
-            right: '10px',
-            display: 'flex',
-            alignItems: 'center',
-            fontSize: '1rem',
-            fontWeight: 500,
-            color: 'var(--ifm-color-primary-title-dark)',
-          }}
-        >
-          <span style={{ marginRight: '4px' }}>26 M</span>
-          <ArrowDownTrayIcon style={{ width: '20px', height: '20px', marginRight: '4px', color: 'red'  }} />
-        </div>
-      </div>
-    </div>
-  );
+                  <div  style={{ position: 'absolute',  bottom: '8px',  right: '10px',   display: 'flex',  alignItems: 'center',  fontSize: '1rem',  fontWeight: 500,
+                        color: 'var(--ifm-color-primary-title-dark)',   }} >
+                     <span style={{ marginRight: '4px' }}>26 M</span>
+                     <ArrowDownTrayIcon style={{ width: '20px', height: '20px', marginRight: '4px', color: 'red'  }} />
+                  </div>
+            </div>
+         </div>
+     
+      );
 };
 const PlaystoreTemplate = () => {
 const [apps, setApps] = useState([]);
@@ -213,56 +166,56 @@ setCategory(categories);
 setPopularapps(loadedPouplarApps);
 })();
 }, []);
-const products = [
-{
-img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
-name: 'Amazon',
-category: 'Web services',
-rating: 4,
-},
-{
-img: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_mariadb.webp',
-name: 'MariaDB',
-category: 'Database',
-rating: 4.3,
-},
-{
-img: 'https://cdn.scaleinfinite.fr/app-images-webp/fluentd.webp',
-name: 'Fluentd',
-category: 'OpenSource',
-rating: 4.9,
-},
-{
-img: 'https://cdn.scaleinfinite.fr/app-images-webp/circleci_postgres.webp',
-name: 'Circleci',
-category: 'Database',
-rating: 4.2,
-},
-{
-img: 'https://cdn.scaleinfinite.fr/app-images-webp/almalinux.webp',
-name: 'Almalinux',
-category: 'Operating System',
-rating: 4.5,
-},
-{
-img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
-name: 'Amazon',
-category: 'Webservice',
-rating: 4.5,
-},
-{
-img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
-name: 'Amazon',
-category: 'Web services',
-rating: 4,
-},
-{
-img: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_mariadb.webp',
-name: 'MariaDB',
-category: 'Database',
-rating: 4.3,
-},
-];
+// const products = [
+// {
+// img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
+// name: 'Amazon',
+// category: 'Web services',
+// rating: 4,
+// },
+// {
+// img: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_mariadb.webp',
+// name: 'MariaDB',
+// category: 'Database',
+// rating: 4.3,
+// },
+// {
+// img: 'https://cdn.scaleinfinite.fr/app-images-webp/fluentd.webp',
+// name: 'Fluentd',
+// category: 'OpenSource',
+// rating: 4.9,
+// },
+// {
+// img: 'https://cdn.scaleinfinite.fr/app-images-webp/circleci_postgres.webp',
+// name: 'Circleci',
+// category: 'Database',
+// rating: 4.2,
+// },
+// {
+// img: 'https://cdn.scaleinfinite.fr/app-images-webp/almalinux.webp',
+// name: 'Almalinux',
+// category: 'Operating System',
+// rating: 4.5,
+// },
+// {
+// img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
+// name: 'Amazon',
+// category: 'Webservice',
+// rating: 4.5,
+// },
+// {
+// img: 'https://cdn.scaleinfinite.fr/app-images-webp/amazon_aws-cli.webp',
+// name: 'Amazon',
+// category: 'Web services',
+// rating: 4,
+// },
+// {
+// img: 'https://cdn.scaleinfinite.fr/app-images-webp/bitnami_mariadb.webp',
+// name: 'MariaDB',
+// category: 'Database',
+// rating: 4.3,
+// },
+// ];
 return (
 <>
 {/* Header Section */}
@@ -310,7 +263,33 @@ return (
    </Swiper>
 </section>
 {/* HeaderSection close  */}
+
 <div className="container py-5">
+   <div className="row align-items-center justify-content-between mb-4">
+    {/* Left - Radio Buttons */}
+    <div className="col-md-6 d-flex gap-4" >
+      <div className="form-check" >
+        <input  className="form-check-input"  type="radio"  name="appFilter"  id="recommendedApps"
+          defaultChecked
+        />
+        <label className="form-check-label" htmlFor="recommendedApps"style={{ color: 'var(--ifm-color-primary-font-dark)' }}>
+          Recommended Apps
+        </label>
+      </div>
+      <div className="form-check">
+        <input   className="form-check-input"   type="radio"   name="appFilter"  id="wishlistApps" />
+        <label className="form-check-label" htmlFor="wishlistApps" style={{ color: 'var(--ifm-color-primary-font-dark)' }}>
+          Wishlist
+        </label>
+      </div>
+    </div>
+
+    {/* Right - Search Box */}
+    <div className="col-md-4 text-end">
+      <input type="text" className="form-control"  placeholder="Search apps..."   style={{color: 'var(--ifm-color-primary-font-dark)', background:'none' , borderRadius:'10px'}} 
+      />
+    </div>
+  </div>
    <div className="row">
       {populaapps.slice(0, 4).map((app, idx) => 
       <AppItem key={idx} {...app} />
