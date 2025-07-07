@@ -18,8 +18,9 @@ import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import Cookies from 'js-cookie';
 
 
-const AppItem = ({ image, title, category, slug }) => {
+const AppItem = ({ image, title, category, slug, rating, pull_count }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
+
 
   // Load wishlist from cookies on component mount
   useEffect(() => {
@@ -100,13 +101,15 @@ const AppItem = ({ image, title, category, slug }) => {
             </div>
                <div style={{ position: 'absolute', bottom: '8px', left: '10px', display: 'flex', alignItems: 'center',  fontSize: '1.2rem', fontWeight: '500',
                         color: 'var(--ifm-color-primary-title-dark)',  }} >
-                     49
-                     <StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
+                     <strong style={{fontSize:'1.5rem', display: 'flex', alignItems:'center', justifyContent: 'center' }}>{rating} 
+<StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
+</strong>
                </div>
 
                   <div  style={{ position: 'absolute',  bottom: '8px',  right: '10px',   display: 'flex',  alignItems: 'center',  fontSize: '1rem',  fontWeight: 500,
                         color: 'var(--ifm-color-primary-title-dark)',   }} >
-                     <span style={{ marginRight: '4px' }}>26 M</span>
+                     <span>{Math.floor(pull_count / 1_000_000)}</span>
+   <span style={{ fontSize: '1rem',  }}>M</span>
                      <ArrowDownTrayIcon style={{ width: '20px', height: '20px', marginRight: '4px', color: 'red'  }} />
                   </div>
             </div>
@@ -118,6 +121,8 @@ const PlaystoreTemplate = () => {
 const [apps, setApps] = useState([]);
 const [category, setCategory] = useState([]);
 const [populaapps, setPopularapps] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+
 const prevRef = useRef(null);
 const nextRef = useRef(null);
 useEffect(() => {
@@ -145,7 +150,8 @@ image: row[5],
 slug: row[3],
 title: row[2],
 desc: row[1],
-rating: row[6],
+rating: row[7],
+pull_count: row[8],
 category:row[1],
 }));
 // Loading apps for top section
@@ -160,14 +166,23 @@ image: row[5],
 slug: row[3],
 title: row[2],
 desc: row[1],
-rating: row[6],
+rating: row[7],
+pull_count: row[8],
 category:row[1],
 }));
 setApps(loadedApps);
 setCategory(categories);
 setPopularapps(loadedPouplarApps);
 })();
+
 }, []);
+
+const filteredApps = populaapps.filter(app =>
+    app.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    app.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    app.desc.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
 
 return (
 <>
@@ -240,18 +255,19 @@ return (
     {/* Right - Search Box */}
     <div className="col-md-4 text-end">
       <input type="text" className="form-control"  placeholder="Search apps..."   style={{color: 'var(--ifm-color-primary-font-dark)', background:'none' , borderRadius:'10px'}} 
-      />
+       value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)} />
     </div>
   </div>
   <div
   className="row"
   style={
-    populaapps.length > 12
+    filteredApps.length > 12
       ? { maxHeight: '900px', overflowY: 'auto' }
       : {}
   }
 >
-  {populaapps.slice().map((app, idx) => (
+  {filteredApps.slice().map((app, idx) => (
     <AppItem key={idx} {...app} />
   ))}
 </div>
@@ -367,8 +383,9 @@ return (
             color:' var(--ifm-color-primary-title-dark)'
             }}
             >
-            49
-           <StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
+           <strong style={{fontSize:'1.5rem', display: 'flex', alignItems:'center', justifyContent: 'center' }}>{product.rating} 
+<StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
+</strong>
          </div>
          {/* Bottom Right ArrowDownTrayIcon */}
          <div
@@ -383,7 +400,8 @@ return (
          color:' var(--ifm-color-primary-title-dark)'
          }}
          >
-         <span style={{ marginRight: '4px' }}>26 M</span>
+            <span>{Math.floor(product.pull_count / 1_000_000)}</span>
+         <span style={{ marginRight: '4px' }}>M</span>
          <ArrowDownTrayIcon style={{ width: '1.2rem', height: '1.2rem', color: 'red' }} />
    </div>
    </div>

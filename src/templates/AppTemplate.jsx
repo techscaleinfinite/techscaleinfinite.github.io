@@ -148,6 +148,11 @@ const handleWishlist = () => {
 };
 // Wishlist End
 const parsedImages = JSON.parse(apps[0]?.images || '[]');
+const config = {
+  env_key_1: "env_value_1",
+  env_key_2: "env_value_2",
+  env_key_3: "env_value_3"
+};
 return (    
 <>    
 {children}
@@ -224,7 +229,7 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 */}
 </div>
 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-<a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}`}
+<a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&env=${encodeURIComponent(JSON.stringify(config))}`}
  onClick={handleShare}
 style={{
 display: 'flex',
