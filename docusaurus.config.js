@@ -51,6 +51,19 @@ const config = {
   ],
 
   plugins: [
+   [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'blogs',
+      path: 'docs-blogs',
+      routeBasePath: 'blogs',
+      sidebarPath: require.resolve('./sidebars.blogs.js'),
+      showLastUpdateAuthor: true,
+      showLastUpdateTime: true,
+    },
+    
+  ],
+  
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
@@ -255,10 +268,18 @@ const config = {
             to:'/playstore'
           },
           {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
+            type: 'docSidebar',
+            sidebarId: 'blogSidebar',
+            docId: 'index',
+            docsPluginId: 'blogs', // 👈 important
+            position: 'left',
+            label: 'Blogs',
           },
+          // {
+          //   to: '/blog',
+          //   label: 'Blog',
+          //   position: 'left'
+          // },
            // Custom Google Sign-in button as raw HTML
     {
       type: 'html',

@@ -135,6 +135,9 @@ nav.navbar {
 .markdown > span{
    font-weight: 500;
 }
+.markdown > span > p{
+  font-family: Roobert, sans-serif;
+}
 .menu__link--active:not(.menu__link--sublist){
   background: none;
 }
@@ -211,6 +214,7 @@ h1{
   color: var(--ifm-color-primary-title-dark);
   font-weight: 800;
   text-align: left;
+  /* font-size: 1.75rem; */
 }
 .markdown > h3{
   font-family: 'Nexa_Light'; 
@@ -289,9 +293,9 @@ text-align: left;
 transform: scale(0.9);    
 letter-spacing: 0.1px;
 }
-/* .breadcrumbs{ */
-  /* display: none; */
-/* } */
+.breadcrumbs{
+  display: none;
+} 
 .border{
   border:1px solid var( --ifm-color-emphasis-300);
 }

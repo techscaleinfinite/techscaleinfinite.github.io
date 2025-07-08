@@ -18,106 +18,174 @@ import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import Cookies from 'js-cookie';
 
 
-const AppItem = ({ image, title, category, slug, rating, pull_count }) => {
+const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistChange }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
 
-
-  // Load wishlist from cookies on component mount
   useEffect(() => {
-    const wishlist = JSON.parse(Cookies.get('wishlist') || '[]');
-    const found = wishlist.find(item => item.slug === slug);
+    const wishlist = JSON.parse(Cookies.get("wishlist") || "[]");
+    const found = wishlist.find((item) => item.slug === slug);
     setIsWishlisted(!!found);
   }, [slug]);
 
   const handleWishlistToggle = () => {
-    const wishlist = JSON.parse(Cookies.get('wishlist') || '[]');
-    const exists = wishlist.some(item => item.slug === slug);
+    const wishlist = JSON.parse(Cookies.get("wishlist") || "[]");
+    const exists = wishlist.some((item) => item.slug === slug);
 
     let updatedWishlist;
     if (exists) {
-      updatedWishlist = wishlist.filter(item => item.slug !== slug);
+      updatedWishlist = wishlist.filter((item) => item.slug !== slug);
     } else {
       updatedWishlist = [...wishlist, { image, title, category, slug }];
     }
 
-    Cookies.set('wishlist', JSON.stringify(updatedWishlist), { expires: 7 });
+    Cookies.set("wishlist", JSON.stringify(updatedWishlist), { expires: 7 });
     setIsWishlisted(!exists);
+
+    if (onWishlistChange) {
+      onWishlistChange(updatedWishlist); // 🔁 notify parent
+    }
   };
-   {isWishlisted ? (
+
+  return (
+    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border">
+      <div
+        className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
+        style={{
+          border: "1px solid var(--ifm-color-primary-title-dark)",
+          borderRadius: "10px",
+          paddingBottom: "2.5rem",
+        }}
+      >
+        <button
+          style={{
+            position: "absolute",
+            top: "-10px",
+            right: "5px",
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: 0,
+            zIndex: "99",
+          }}
+          onClick={handleWishlistToggle}
+        >
+          {isWishlisted ? (
             <SolidBookmarkIcon
-               style={{
-                  width: '2rem',
-                  height: '2.5rem',
-                  color: 'rgb(245, 81, 81)',
-               }}
+              style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }}
             />
-            ) : (
+          ) : (
             <OutlineBookmarkIcon
-               style={{
-                  width: '2rem',
-                  height: '2.5rem',
-                  color: 'rgb(245, 81, 81)',
-               }}
+              style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }}
             />
-            )}
+          )}
+        </button>
 
-  // ✅ RETURN your JSX here
-  return (  
-    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border">     
-      <div  className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
-        style={{  border: '1px solid var(--ifm-color-primary-title-dark)',  borderRadius: '10px', paddingBottom: '2.5rem',  }} >
-         <button style={{position: 'absolute', top: '-10px', right: '5px', background: 'none', border: 'none', cursor: 'pointer',    padding: 0,   zIndex: '99', }}
-            onClick={handleWishlistToggle} >
-               {isWishlisted ? (
-                  <SolidBookmarkIcon
-                     style={{
-                     width: '2rem',
-                     height: '2.5rem',
-                     color: 'rgb(245, 81, 81)',
-                     }}
-                  />
-                  ) : (
-                     <OutlineBookmarkIcon
-                        style={{
-                        width: '2rem',
-                        height: '2.5rem',
-                        color: 'rgb(245, 81, 81)',
-                        }}
-                     />
-                  )}
-            </button>
-               <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
-                  <img  src={image}     className="img-fluid mb-3"    alt={title}  style={{ maxHeight: '150px', objectFit: 'contain' }}  />
-               </a>
-               <div className="px-2">
-                  <h2 className="cloud-title">{title}</h2>
-                  <p className="cloud-title">
-                        <strong>
-                        <a href={`/playstore/${category}`} className="text-decoration-none">
-                           {category}
-                        </a>
-                        </strong>
-                     </p>
-            </div>
-               <div style={{ position: 'absolute', bottom: '8px', left: '10px', display: 'flex', alignItems: 'center',  fontSize: '1.2rem', fontWeight: '500',
-                        color: 'var(--ifm-color-primary-title-dark)',  }} >
-                     <strong style={{fontSize:'1.5rem', display: 'flex', alignItems:'center', justifyContent: 'center' }}>{rating} 
-<StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
-</strong>
-               </div>
+        <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
+          <img
+            src={image}
+            className="img-fluid mb-3"
+            alt={title}
+            style={{ maxHeight: "150px", objectFit: "contain" }}
+          />
+        </a>
 
-                  <div  style={{ position: 'absolute',  bottom: '8px',  right: '10px',   display: 'flex',  alignItems: 'center',  fontSize: '1rem',  fontWeight: 500,
-                        color: 'var(--ifm-color-primary-title-dark)',   }} >
-                     <span>{Math.floor(pull_count / 1_000_000)}</span>
-   <span style={{ fontSize: '1rem',  }}>M</span>
-                     <ArrowDownTrayIcon style={{ width: '20px', height: '20px', marginRight: '4px', color: 'red'  }} />
-                  </div>
-            </div>
-         </div>
-     
-      );
+        <div className="px-2">
+          <h2 className="cloud-title">{title}</h2>
+          <p className="cloud-title">
+            <strong>
+              <a href={`/playstore/${category}`} className="text-decoration-none">
+                {category}
+              </a>
+            </strong>
+          </p>
+        </div>
+
+        <div
+          style={{
+            position: "absolute",
+            bottom: "8px",
+            left: "10px",
+            display: "flex",
+            alignItems: "center",
+            fontSize: "1.2rem",
+            fontWeight: "500",
+            color: "var(--ifm-color-primary-title-dark)",
+          }}
+        >
+          <strong
+            style={{
+              fontSize: "1rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {rating}
+            <StarIcon style={{ width: "1.3rem", height: "1.3rem", color: "red" }} />
+          </strong>
+        </div>
+
+        <div
+          style={{
+            position: "absolute",
+            bottom: "8px",
+            right: "10px",
+            display: "flex",
+            alignItems: "center",
+            fontSize: "1rem",
+            fontWeight: 500,
+            color: "var(--ifm-color-primary-title-dark)",
+          }}
+        >
+          <span>{Math.floor(pull_count / 1_000_000)}</span>
+          <span style={{ fontSize: "1rem" }}>M</span>
+          <ArrowDownTrayIcon
+            style={{ width: "20px", height: "20px", marginRight: "4px", color: "red" }}
+          />
+        </div>
+      </div>
+    </div>
+  );
 };
 const PlaystoreTemplate = () => {
+
+   // Book mark for slider catagory START
+   const [bookmarkedSlugs, setBookmarkedSlugs] = useState(() => {
+    const saved = Cookies.get('scaleBookmarks');
+    const scaleBookmarks = saved ? JSON.parse(saved) : [];
+    return scaleBookmarks.map((b) => b.slug);
+  });
+
+  const handleBookmark = (product) => {
+  const existing = Cookies.get('scaleBookmarks');
+  let scaleBookmarks = existing ? JSON.parse(existing) : [];
+
+  const isBookmarked = scaleBookmarks.find((item) => item.slug === product.slug);
+
+  if (isBookmarked) {
+  
+    const updated = scaleBookmarks.filter((item) => item.slug !== product.slug);
+    Cookies.set('scaleBookmarks', JSON.stringify(updated), { expires: 7 });   
+    setBookmarkedSlugs((prev) => prev.filter((slug) => slug !== product.slug));
+  } else {
+    // ✅ Add to cookies
+    scaleBookmarks.push({
+      image: product.image,
+      title: product.title,
+      slug: product.slug,
+    });
+
+    Cookies.set('scaleBookmarks', JSON.stringify(scaleBookmarks), { expires: 7 });
+
+    // ✅ Add to state
+    setBookmarkedSlugs((prev) => [...prev, product.slug]);
+  }
+};
+
+
+   // Book mark for Slider Category END
+
+
 const [apps, setApps] = useState([]);
 const [category, setCategory] = useState([]);
 const [populaapps, setPopularapps] = useState([]);
@@ -333,23 +401,30 @@ return (
          <div className="product-thumb">
             <div className="product-inner">
                {/* Bookmark Icon Top Right */}
-               <button
-               style={{
-               position: 'absolute',
-               top: '-10px',
-               right: '5px',
-               background: 'none',
-               border: 'none',
-               cursor: 'pointer',
-               padding: 0,
-               zIndex: '99',
-               }}
-               onClick={() => handleBookmark(app)}
-               >
-               <BookmarkIcon
-               style={{ width: '2rem', height: '2.5rem', color: 'var(--ifm-color-primary-title-dark)' }}
-               />
-               </button>
+              <button
+                  style={{
+                     position: 'absolute',
+                     top: '-10px',
+                     right: '5px',
+                     background: 'none',
+                     border: 'none',
+                     cursor: 'pointer',
+                     padding: 0,
+                     zIndex: '99',
+                  }}
+                  onClick={() => handleBookmark(product)}
+                  >
+                  {bookmarkedSlugs.includes(product.slug) ? (
+                     <SolidBookmarkIcon
+                        style={{ width: '2rem', height: '2.5rem', color: 'rgb(245, 81, 81)' }}
+                     />
+                  ) : (
+                     <BookmarkIcon
+                        style={{ width: '2rem', height: '2.5rem', color: 'var(--ifm-color-primary-title-dark)' }}
+                     />
+                  )}
+                  </button>
+
                <div className="product-image">
                   <a href={`/playstore/${product.category.toLowerCase()}/${product.slug}`}>
                   <img
@@ -383,8 +458,8 @@ return (
             color:' var(--ifm-color-primary-title-dark)'
             }}
             >
-           <strong style={{fontSize:'1.5rem', display: 'flex', alignItems:'center', justifyContent: 'center' }}>{product.rating} 
-<StarIcon style={{  width: '1.3rem', height: '1.3rem', color:'red' }} />
+           <strong style={{fontSize:'1rem', display: 'flex', alignItems:'center', justifyContent: 'center' }}>{product.rating} 
+<StarIcon style={{  width: '1rem', height: '1rem', color:'red' }} />
 </strong>
          </div>
          {/* Bottom Right ArrowDownTrayIcon */}
@@ -402,7 +477,7 @@ return (
          >
             <span>{Math.floor(product.pull_count / 1_000_000)}</span>
          <span style={{ marginRight: '4px' }}>M</span>
-         <ArrowDownTrayIcon style={{ width: '1.2rem', height: '1.2rem', color: 'red' }} />
+         <ArrowDownTrayIcon style={{ width: '1rem', height: '1rem', color: 'red' }} />
    </div>
    </div>
    </div>
