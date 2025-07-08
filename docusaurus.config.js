@@ -226,7 +226,7 @@ const config = {
       },
       {
         name: 'canonical',
-        content: 'https://docs.scaleinfinite.fr/',
+        content: 'https://scaleinfinite.fr/',
     },
     ],
 
