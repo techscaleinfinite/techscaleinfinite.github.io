@@ -13,7 +13,7 @@ const path = require("path");
 const config = {
  title: 'ScaleInfinite | AI Managed, Self-Driving Cloud Applications with Kubernets and Docker Services',
   tagline: 'AI-Managed Solutions for Automated Application Performance',
-  url: 'https://techscaleinfinite.github.io',
+  url: 'https://scaleinfinite.fr',
   baseUrl: '/',
   favicon: 'img/favicon.png',
 
@@ -237,10 +237,6 @@ const config = {
        name: 'google-site-verification',
         content: '2JzgmPkp_0tCo7F-8PxrKPYz1IZLNKHYHG7TQPjdlYM',
       },
-      {
-        name: 'canonical',
-        content: 'https://docs.scaleinfinite.fr/',
-    },
     ],
 
       navbar: {
