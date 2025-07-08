@@ -37,7 +37,7 @@ const AppItem = ({ image, title, category, slug, rating, pull_count }) => {
     if (exists) {
       updatedWishlist = wishlist.filter(item => item.slug !== slug);
     } else {
-      updatedWishlist = [...wishlist, { image, title, category, slug }];
+      updatedWishlist = [...wishlist, { image, title, category, slug, rating, pull_count }];
     }
 
     Cookies.set('wishlist', JSON.stringify(updatedWishlist), { expires: 7 });
@@ -121,7 +121,9 @@ const PlaystoreTemplate = () => {
 const [apps, setApps] = useState([]);
 const [category, setCategory] = useState([]);
 const [populaapps, setPopularapps] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+const [searchTerm, setSearchTerm] = useState('');
+const [selectedFilter, setSelectedFilter] = useState('recommended');
+
 
 const prevRef = useRef(null);
 const nextRef = useRef(null);
@@ -176,8 +178,10 @@ setPopularapps(loadedPouplarApps);
 })();
 
 }, []);
+const wishlistapps = JSON.parse(Cookies.get('wishlist') || '[]');
+const selectedApps = selectedFilter === 'recommended' ? populaapps : wishlistapps;
 
-const filteredApps = populaapps.filter(app =>
+const filteredApps = selectedApps.filter(app =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.desc.toLowerCase().includes(searchTerm.toLowerCase())
@@ -237,7 +241,11 @@ return (
     {/* Left - Radio Buttons */}
     <div className="col-md-6 d-flex gap-4" >
       <div className="form-check" >
-        <input  className="form-check-input"  type="radio"  name="appFilter"  id="recommendedApps"
+        <input  className="form-check-input"  type="radio"  name="appFilter"
+            id="recommendedApps"
+            value="recommended"
+            checked={selectedFilter === 'recommended'}
+            onChange={(e) => setSelectedFilter(e.target.value)}
           defaultChecked
         />
         <label className="form-check-label" htmlFor="recommendedApps"style={{ color: 'var(--ifm-color-primary-font-dark)' }}>
@@ -245,7 +253,11 @@ return (
         </label>
       </div>
       <div className="form-check">
-        <input   className="form-check-input"   type="radio"   name="appFilter"  id="wishlistApps" />
+        <input   className="form-check-input"   type="radio"  name="appFilter"
+            id="wishlistApps"
+            value="wishlist"
+            checked={selectedFilter === 'wishlist'}
+            onChange={(e) => setSelectedFilter(e.target.value)} />
         <label className="form-check-label" htmlFor="wishlistApps" style={{ color: 'var(--ifm-color-primary-font-dark)' }}>
           Wishlist
         </label>

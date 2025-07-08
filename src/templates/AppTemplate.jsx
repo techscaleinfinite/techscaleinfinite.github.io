@@ -129,6 +129,8 @@ const handleWishlist = () => {
     slug: apps[0]?.slug,
     name: apps[0]?.title,
     category: apps[0]?.category,
+    rating: apps[0]?.rating,
+    pull_count: apps[0]?.pull_count,
   };
 
   let wishlist = JSON.parse(Cookies.get('wishlist') || '[]');
