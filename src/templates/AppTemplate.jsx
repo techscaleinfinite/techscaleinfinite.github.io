@@ -532,5 +532,6 @@ textAlign: 'center',
 // lineHeight: '38px',
 cursor: 'pointer',
 zIndex: 10000,
+padding: '0px' 
 });
 export default AppTemplate;
