@@ -60,6 +60,7 @@ const config = {
       sidebarPath: require.resolve('./sidebars.blogs.js'),
       showLastUpdateAuthor: true,
       showLastUpdateTime: true,
+        sidebarCollapsed: false,
     },
     
   ],
