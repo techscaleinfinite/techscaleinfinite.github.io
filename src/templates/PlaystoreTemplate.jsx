@@ -352,9 +352,10 @@ setPopularapps(loadedPouplarApps);
 
 }, []);
 const wishlistapps = JSON.parse(Cookies.get('wishlist') || '[]');
-const selectedApps = selectedFilter === 'recommended' ? populaapps : wishlistapps;
+//const selectedApps = selectedFilter === 'recommended' ? populaapps : wishlistapps;
+const baseList = searchTerm.trim() ? populaapps : (selectedFilter === 'recommended' ? populaapps : wishlistapps);
 
-const filteredApps = selectedApps.filter(app =>
+const filteredApps = baseList.filter(app =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.desc.toLowerCase().includes(searchTerm.toLowerCase())
