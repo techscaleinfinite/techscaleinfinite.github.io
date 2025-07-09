@@ -89,7 +89,7 @@ const toggleWishlist = () => {
    {showPrivacyPopup && (
         <PrivacyPopup onAccept={handleAcceptCookies} onDecline={handleDeclineCookies} />
       )}
-    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border">
+    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border d-flex justify-content-center align-items-center">
       <div
         className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
         style={{
@@ -515,7 +515,8 @@ return (
          borderRadius: '10px',
          paddingBottom: '2rem', // make room for bottom icons
          width: '220px',
-         height:'auto'
+         height:'auto',
+        marginBottom: '0.1rem',
          }}
          className="product-layout d-flex justify-content-center flex-column align-items-center text-center h-100 position-relative">
          <div className="product-thumb">
