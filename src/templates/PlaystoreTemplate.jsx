@@ -54,6 +54,8 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
           border: "1px solid var(--ifm-color-primary-title-dark)",
           borderRadius: "10px",
           paddingBottom: "2.5rem",
+          width:'220px',
+         
         }}
       >
         <button
@@ -305,7 +307,7 @@ return (
 {/* HeaderSection close  */}
 
 <div className="container py-5">
-   <div className="row align-items-center justify-content-between mb-4" style={{backgroundColor:'#f8f9fa', padding:'10px', borderRadius:'8px'}}>
+   <div className="row align-items-center justify-content-between mb-4" style={{backgroundColor:'var(--ifm-wishlist-background)', padding:'10px', borderRadius:'8px'}}>
     {/* Left - Radio Buttons */}
     <div className="col-md-6 d-flex gap-4" >
       <div className="form-check" >
@@ -408,6 +410,8 @@ return (
          border: '1px solid var(--ifm-color-primary-title-dark)',
          borderRadius: '10px',
          paddingBottom: '2rem', // make room for bottom icons
+         width: '220px',
+         height:'auto'
          }}
          className="product-layout d-flex justify-content-center flex-column align-items-center text-center h-100 position-relative">
          <div className="product-thumb">

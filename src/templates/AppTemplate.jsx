@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import { ShareIcon, CloudArrowDownIcon, ArrowDownTrayIcon, StarIcon,BookmarkIcon } from '@heroicons/react/24/outline';
+import { BookmarkIcon as OutlineBookmarkIcon } from '@heroicons/react/24/outline';
+import { BookmarkIcon as SolidBookmarkIcon } from '@heroicons/react/24/solid';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
@@ -61,6 +63,7 @@ const [apps, setApps] = useState([]);
 const [similarApps, setSimilarapps] = useState([]);
 const [category, setCategory] = useState([]);
 const [isWishlisted, setIsWishlisted] = useState(false); // State for Cookies
+const [isHovered, setIsHovered] = useState(false);
 
 useEffect(() => {
 (async () => {
@@ -232,28 +235,28 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 </div>
 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
 <a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&env=${encodeURIComponent(JSON.stringify(config))}`}
- onClick={handleShare}
+//  onClick={handleShare}
 style={{
 display: 'flex',
 alignItems: 'center',
 justifyContent: 'center',
-background: 'none',
+background: 'var(--ifm-button-bg)',
 border: '1px solid var(--ifm-button-bg)',
-color: 'var(--ifm-button-bg)',
+color: '#fff',
 padding: '0.4rem 0.75rem',
 borderRadius: '6px',
 cursor: 'pointer',
 fontWeight: 500,
 transition: 'all 0.3s ease',
 }}
-onMouseEnter={(e) => {
-e.currentTarget.style.background = 'var(--ifm-button-bg)';
-e.currentTarget.style.color = '#fff';
-}}
-onMouseLeave={(e) => {
-e.currentTarget.style.background = 'none';
-e.currentTarget.style.color = 'var(--ifm-button-bg)';
-}}
+// onMouseEnter={(e) => {
+// e.currentTarget.style.background = 'var(--ifm-button-bg)';
+// e.currentTarget.style.color = '#fff';
+// }}
+// onMouseLeave={(e) => {
+// e.currentTarget.style.background = 'none';
+// e.currentTarget.style.color = 'var(--ifm-button-bg)';
+// }}
 >
 <ArrowDownTrayIcon style={{ width: '20px', height: '20px', marginRight: '4px',  }} />
 Install
@@ -287,12 +290,52 @@ Share
 </button>
 <button
   onClick={handleWishlist}
+  onMouseEnter={() => setIsHovered(true)}
+  onMouseLeave={() => setIsHovered(false)}
   style={{
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    background: isWishlisted ? 'var(--ifm-button-bg)' : 'none',
+    background: 'none',
+    color: 'var(--ifm-button-bg)',
     border: '1px solid var(--ifm-button-bg)',
+    padding: '0.4rem 0.75rem',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontWeight: 500,
+    transition: 'all 0.3s ease',
+  }}
+>
+  {(isHovered || isWishlisted) ? (
+  <SolidBookmarkIcon
+    style={{
+      color: 'red',
+      width: '20px',
+      height: '20px',
+      marginRight: '4px',
+    }}
+  />
+) : (
+  <OutlineBookmarkIcon
+    style={{
+      width: '20px',
+      height: '20px',
+      marginRight: '4px',
+    }}
+  />
+)}
+
+  {isWishlisted ? 'Remove Wishlist' : 'Add to Wishlist'}
+</button>
+
+{/* <button
+  onClick={handleWishlist}
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    background : 'none',
+   background: isWishlisted ? 'var(--ifm-button-bg)' : 'none',
     color: isWishlisted ? '#fff' : 'var(--ifm-button-bg)',
     padding: '0.4rem 0.75rem',
     borderRadius: '6px',
@@ -303,6 +346,7 @@ Share
   onMouseEnter={(e) => {
     e.currentTarget.style.background = 'var(--ifm-button-bg)';
     e.currentTarget.style.color = '#fff';
+
   }}
   onMouseLeave={(e) => {
     if (!isWishlisted) {
@@ -313,7 +357,7 @@ Share
 >
   <BookmarkIcon style={{ width: '20px', height: '20px', marginRight: '4px' }} />
   {isWishlisted ? 'Remove Wishlist' : 'Add to Wishlist'}
-</button>
+</button> */}
      
 </div>
 </div>

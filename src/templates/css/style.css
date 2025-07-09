@@ -2632,7 +2632,7 @@ header .list-inline .dropdown-menu ul li:last-child a {
 }
 .feature-box :hover{
     background-color: var(--ifm-hover-icon);   
-     color: #040000;
+     /* color: #040000; */
 }
 
 .feature-box.type-2 {
@@ -7480,9 +7480,10 @@ header.header-type-4 .header-text span:first-child {
    .feature-box {
   transition: transform 0.3s ease;
 }
-.feature-box:hover {
+/* .feature-box:hover {
   transform: translateY(-5px);
-}
+
+} */
 
 /* Toasty - copy url */
 .Toastify {
