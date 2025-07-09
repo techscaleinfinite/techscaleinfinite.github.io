@@ -20,6 +20,7 @@ import Cookies from 'js-cookie';
 
 const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistChange }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
+  const [showPrivacyPopup, setShowPrivacyPopup] = useState(false);
 
   useEffect(() => {
     const wishlist = JSON.parse(Cookies.get("wishlist") || "[]");
@@ -28,6 +29,16 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
   }, [slug]);
 
   const handleWishlistToggle = () => {
+    // Only show popup if not accepted before
+    const accepted = Cookies.get('cookieConsent');
+    if (!accepted) {
+      setShowPrivacyPopup(true);
+      return;
+    }
+
+    toggleWishlist();
+  };
+const toggleWishlist = () => {
     const wishlist = JSON.parse(Cookies.get("wishlist") || "[]");
     const exists = wishlist.some((item) => item.slug === slug);
 
@@ -42,11 +53,42 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
     setIsWishlisted(!exists);
 
     if (onWishlistChange) {
-      onWishlistChange(updatedWishlist); // 🔁 notify parent
+      onWishlistChange(updatedWishlist);
     }
-  };
+      };
+      const handleAcceptCookies = () => {
+         Cookies.set('cookieConsent', 'true', { expires: 365 });
+         setShowPrivacyPopup(false);
+         toggleWishlist();
+      };
+
+      const handleDeclineCookies = () => {
+         setShowPrivacyPopup(false);
+      };
+//   const handleWishlistToggle = () => {
+//     const wishlist = JSON.parse(Cookies.get("wishlist") || "[]");
+//     const exists = wishlist.some((item) => item.slug === slug);
+
+//     let updatedWishlist;
+//     if (exists) {
+//       updatedWishlist = wishlist.filter((item) => item.slug !== slug);
+//     } else {
+//       updatedWishlist = [...wishlist, { image, title, category, slug, rating, pull_count }];
+//     }
+
+//     Cookies.set("wishlist", JSON.stringify(updatedWishlist), { expires: 7 });
+//     setIsWishlisted(!exists);
+
+//     if (onWishlistChange) {
+//       onWishlistChange(updatedWishlist); // 🔁 notify parent
+//     }
+//   };
 
   return (
+   <>
+   {showPrivacyPopup && (
+        <PrivacyPopup onAccept={handleAcceptCookies} onDecline={handleDeclineCookies} />
+      )}
     <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border">
       <div
         className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
@@ -58,7 +100,26 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
          
         }}
       >
-        <button
+          <button
+          style={{
+            position: "absolute",
+            top: "-10px",
+            right: "5px",
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: 0,
+            zIndex: "99",
+          }}
+          onClick={handleWishlistToggle}
+        >
+          {isWishlisted ? (
+            <SolidBookmarkIcon style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }} />
+          ) : (
+            <OutlineBookmarkIcon style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }} />
+          )}
+        </button>
+        {/* <button
           style={{
             position: "absolute",
             top: "-10px",
@@ -80,7 +141,7 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
               style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }}
             />
           )}
-        </button>
+        </button> */}
 
         <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
           <img
@@ -147,8 +208,48 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
         </div>
       </div>
     </div>
+    </>
   );
 };
+// Modal Components for privacy policy popup - STRT
+const PrivacyPopup = ({ onAccept, onDecline }) => {
+  return (
+    <div
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        zIndex: 9999,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        width: '100vw',
+        height: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <div
+        style={{
+          background: '#fff',
+          padding: '20px',
+          borderRadius: '10px',
+          maxWidth: '400px',
+          textAlign: 'center',
+        }}
+      >
+        <h5>Your Privacy</h5>
+        <p>
+          By clicking “Accept all cookies”, you agree Scale Infinite can store cookies on your device and disclose information in accordance with our Cookie Policy.
+        </p>
+        <div className="d-flex justify-content-center gap-3 mt-3">
+          <button className="btn btn-success" onClick={onAccept}>Accept</button>
+          <button className="btn btn-secondary" onClick={onDecline}>Decline</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+// Modal Components for privacy policy popup - END
 const PlaystoreTemplate = () => {
 
    // Book mark for slider catagory START
@@ -159,6 +260,8 @@ const PlaystoreTemplate = () => {
   });
 
   const handleBookmark = (product) => {
+
+   
   const existing = Cookies.get('scaleBookmarks');
   let scaleBookmarks = existing ? JSON.parse(existing) : [];
 
@@ -170,7 +273,7 @@ const PlaystoreTemplate = () => {
     Cookies.set('scaleBookmarks', JSON.stringify(updated), { expires: 7 });   
     setBookmarkedSlugs((prev) => prev.filter((slug) => slug !== product.slug));
   } else {
-    // ✅ Add to cookies
+    //  Add to cookies
     scaleBookmarks.push({
       image: product.image,
       title: product.title,
@@ -179,7 +282,7 @@ const PlaystoreTemplate = () => {
 
     Cookies.set('scaleBookmarks', JSON.stringify(scaleBookmarks), { expires: 7 });
 
-    // ✅ Add to state
+    //  Add to state
     setBookmarkedSlugs((prev) => [...prev, product.slug]);
   }
 };
