@@ -158,6 +158,11 @@ const config = {
   env_key_2: "env_value_2",
   env_key_3: "env_value_3"
 };
+const working_dir = {
+  work_key_1: "work_value_1",
+  work_key_2: "work_value_2",
+  work_key_3: "work_value_3"
+};
 return (    
 <>    
 {children}
@@ -234,7 +239,7 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 */}
 </div>
 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-<a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&env=${encodeURIComponent(JSON.stringify(config))}`}
+<a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&env=${encodeURIComponent(JSON.stringify(config))}&work_dir=${encodeURIComponent(JSON.stringify(working_dir))}`}
 //  onClick={handleShare}
 style={{
 display: 'flex',
