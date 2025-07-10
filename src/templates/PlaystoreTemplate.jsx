@@ -16,6 +16,7 @@ import { FaStar } from 'react-icons/fa';
 import { useRef, useEffect, useState } from 'react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import Cookies from 'js-cookie';
+import HeaderSection from '../components/Playstore/HeaderSection';
 
 
 const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistChange }) => {
@@ -237,9 +238,9 @@ const PrivacyPopup = ({ onAccept, onDecline }) => {
           textAlign: 'center',
         }}
       >
-        <h5>Your Privacy</h5>
         <p>
-          By clicking “Accept all cookies”, you agree Scale Infinite can store cookies on your device and disclose information in accordance with our Cookie Policy.
+          We hate using cookies, but in order to protect your privacy and for your convenience in using the platform, we need to store your wish list on your local computer as cookie. 
+Allow Decline
         </p>
         <div className="d-flex justify-content-center gap-3 mt-3">
           <button className="btn btn-success" onClick={onAccept}>Accept</button>
@@ -352,10 +353,9 @@ setPopularapps(loadedPouplarApps);
 
 }, []);
 const wishlistapps = JSON.parse(Cookies.get('wishlist') || '[]');
-//const selectedApps = selectedFilter === 'recommended' ? populaapps : wishlistapps;
-const baseList = searchTerm.trim() ? populaapps : (selectedFilter === 'recommended' ? populaapps : wishlistapps);
+const selectedApps = selectedFilter === 'recommended' ? populaapps : wishlistapps;
 
-const filteredApps = baseList.filter(app =>
+const filteredApps = selectedApps.filter(app =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.desc.toLowerCase().includes(searchTerm.toLowerCase())
@@ -364,8 +364,9 @@ const filteredApps = baseList.filter(app =>
 
 return (
 <>
+<HeaderSection />
 {/* Header Section */}
-<section className="primary-slider-section mb-0 position-relative">
+{/* <section className="primary-slider-section mb-0 position-relative">
    <Swiper
    modules={[Navigation, Pagination]}
    navigation={{
@@ -382,7 +383,7 @@ return (
       <div className="slide-inner image-placeholder"  style={{ background: 'var(--ifm-card-background)' }}>
       <div className="">
          <div className="row align-items-center">
-            {/* Text Section */}
+      
             <div className="col-lg-6 p-5">
                <div className="slide-content layer-animation-1">
                   <h1 className="main-title" style={{ fontWeight: 700, color: '#3e4d76' }}>
@@ -393,7 +394,7 @@ return (
                   </p>
                </div>
             </div>
-            {/* Image Section */}
+         
             <div className="col-lg-6 d-flex justify-content-lg-end justify-content-center">
                <img
                src={require('./images/slider/slider1.png').default}
@@ -407,7 +408,7 @@ return (
       </div>
    </SwiperSlide>
    </Swiper>
-</section>
+</section> */}
 {/* HeaderSection close  */}
 
 <div className="container py-5">
@@ -516,7 +517,7 @@ return (
          paddingBottom: '2rem', // make room for bottom icons
          width: '220px',
          height:'auto',
-        marginBottom: '0.1rem',
+        marginBottom: '0.3rem',
          }}
          className="product-layout d-flex justify-content-center flex-column align-items-center text-center h-100 position-relative">
          <div className="product-thumb">
