@@ -335,7 +335,7 @@ const appresponse = await fetch('/apps.sqlite');
 const appbuffer = await appresponse.arrayBuffer();
 const app_db = new SQL.Database(new Uint8Array(appbuffer));
 // const app_result = app_db.exec("SELECT * FROM apps order by sort_order desc limit 0,12");
-const app_result = app_db.exec("SELECT * FROM apps order by sort_order desc ");
+const app_result = app_db.exec("SELECT * FROM apps  order by sort_order desc limit 0,12");
 // Convert result[0] to array of objects
 const loadedPouplarApps = app_result[0].values.map(row => ({
 image: row[5],
@@ -353,9 +353,11 @@ setPopularapps(loadedPouplarApps);
 
 }, []);
 const wishlistapps = JSON.parse(Cookies.get('wishlist') || '[]');
-const selectedApps = selectedFilter === 'recommended' ? populaapps : wishlistapps;
+//const selectedApps = selectedFilter === 'recommended' ? populaapps : wishlistapps;
+const baseList = searchTerm.trim() ? apps : (selectedFilter === 'recommended' ? populaapps : wishlistapps);
 
-const filteredApps = selectedApps.filter(app =>
+
+const filteredApps = baseList.filter(app =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.desc.toLowerCase().includes(searchTerm.toLowerCase())

@@ -176,38 +176,38 @@ const config = {
                 {
                   "@type": "ListItem",
                   "position": 1,
-                  "name": "Demo Deployment",
-                  "item": "https://docs.scaleinfinite.fr/category/demo-deployment/"
+                  "name": "Play Store",
+                  "item": "https://scaleinfinite.fr/playstore"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Kubernetes Services",
-                  "item": "https://docs.scaleinfinite.fr/introduction/kubernetes/"
+                  "item": "https://scaleinfinite.fr/introduction/kubernetes/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Docker Services",
-                  "item": "https://docs.scaleinfinite.fr/blogs/docker%20a%20game%20changer/"
+                  "item": "https://scaleinfinite.fr/blogs/Docker/docker-a-game-changer"
                 },
                 {
                   "@type": "ListItem",
                   "position": 4,
                   "name": "About Scale Infinite",
-                  "item": "https://docs.scaleinfinite.fr/introduction/about-scale-infinite/"
+                  "item": "https://scaleinfinite.fr/introduction/about-scale-infinite/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 5,
                   "name": "About Cloudfloat",
-                  "item": "https://docs.scaleinfinite.fr/introduction/cloud-float/"
+                  "item": "https://scaleinfinite.fr/introduction/cloud-float/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 6,
                   "name": "Tutorial",
-                  "item": "https://docs.scaleinfinite.fr/"
+                  "item": "https://scaleinfinite.fr/"
                 },
                 {
                   "@type": "ListItem",
