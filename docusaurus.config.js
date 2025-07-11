@@ -11,7 +11,7 @@ const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
- title: 'ScaleInfinite | AI Managed, Self-Driving Cloud Applications with Kubernets and Docker Services',
+ title: 'Scale Infinite | AI Managed, Self-Driving Cloud Applications with Kubernets and Docker Services',
   tagline: 'AI-Managed Solutions for Automated Application Performance',
   url: 'https://scaleinfinite.fr',
   baseUrl: '/',
