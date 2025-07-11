@@ -2630,10 +2630,17 @@ header .list-inline .dropdown-menu ul li:last-child a {
     font-size: 13px;
     color: var(--ifm-color-primary-title-dark);
 }
-.feature-box :hover{
-    background-color: var(--ifm-hover-icon);   
-     /* color: #040000; */
+/* Remove this if previously added */
+.feature-box:hover {
+  box-shadow: none;
 }
+
+/* Apply hover effect to actual visible card */
+.feature-content:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
 
 .feature-box.type-2 {
     padding: 23px 20px;

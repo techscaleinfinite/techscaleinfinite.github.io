@@ -722,3 +722,18 @@ input[type="search"]{
  /* .dsla-search-wrapper {
   display: none !important;
 } */
+
+/* .ellipsis-title {
+  max-width: 100%;
+  width: max-content;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+ @media (max-width: 576px) {
+  .swiper-slide .product-layout {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

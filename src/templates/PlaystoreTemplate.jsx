@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import { BookmarkIcon, StarIcon, ArrowDownTrayIcon} from '@heroicons/react/24/outline'
+import { BookmarkIcon, StarIcon,  ArrowDownTrayIcon, CloudArrowDownIcon} from '@heroicons/react/24/outline'
 import { BookmarkIcon as OutlineBookmarkIcon } from '@heroicons/react/24/outline';
 import { BookmarkIcon as SolidBookmarkIcon } from '@heroicons/react/24/solid';
 import 'swiper/css/navigation';
@@ -90,7 +90,7 @@ const toggleWishlist = () => {
    {showPrivacyPopup && (
         <PrivacyPopup onAccept={handleAcceptCookies} onDecline={handleDeclineCookies} />
       )}
-    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border d-flex justify-content-center align-items-center">
+    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box  mb-4 no-border d-flex justify-content-center align-items-center">
       <div
         className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
         style={{
@@ -120,29 +120,7 @@ const toggleWishlist = () => {
             <OutlineBookmarkIcon style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }} />
           )}
         </button>
-        {/* <button
-          style={{
-            position: "absolute",
-            top: "-10px",
-            right: "5px",
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            padding: 0,
-            zIndex: "99",
-          }}
-          onClick={handleWishlistToggle}
-        >
-          {isWishlisted ? (
-            <SolidBookmarkIcon
-              style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }}
-            />
-          ) : (
-            <OutlineBookmarkIcon
-              style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }}
-            />
-          )}
-        </button> */}
+       
 
         <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
           <img
@@ -154,8 +132,10 @@ const toggleWishlist = () => {
         </a>
 
         <div className="px-2">
-          <h2 className="cloud-title">{title}</h2>
-          <p className="cloud-title">
+          <h2 className="cloud-title text-center">
+            {title.length > 15 ? title.slice(0, 10) + '...' : title}
+        </h2>
+          <p className="cloud-title" style={{lineHeight:"1rem", padding:"10px 0px"}}>
             <strong>
               <a href={`/playstore/${category}`} className="text-decoration-none">
                 {category}
@@ -163,50 +143,73 @@ const toggleWishlist = () => {
             </strong>
           </p>
         </div>
-
         <div
-          style={{
-            position: "absolute",
-            bottom: "8px",
-            left: "10px",
-            display: "flex",
-            alignItems: "center",
-            fontSize: "1.2rem",
-            fontWeight: "500",
-            color: "var(--ifm-color-primary-title-dark)",
-          }}
-        >
+        style={{       
+           position: "absolute",
+          bottom: "0px",
+          left: "0px",
+          right: "0px",
+          borderTop: "1px  solid var(--ifm-button-bg)",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "8px 12px", // Optional spacing
+          fontSize: "1rem",
+          fontWeight: 500,
+         
+        
+        }}
+      >
+        {/* ⭐ Rating */}
+        <div style={{ display: "flex", alignItems: "center" }}>
           <strong
             style={{
-              fontSize: "1rem",
+              fontSize: "0.8rem",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              color: "var(--ifm-button-bg)",
             }}
           >
             {rating}
-            <StarIcon style={{ width: "1.3rem", height: "1.3rem", color: "red" }} />
+            <StarIcon
+              style={{ width: "15px", height: "15xp", color: "red", marginLeft: "4px" }}
+            />
           </strong>
         </div>
 
-        <div
-          style={{
-            position: "absolute",
-            bottom: "8px",
-            right: "10px",
-            display: "flex",
-            alignItems: "center",
-            fontSize: "1rem",
-            fontWeight: 500,
-            color: "var(--ifm-color-primary-title-dark)",
-          }}
-        >
-          <span>{Math.floor(pull_count / 1_000_000)}</span>
-          <span style={{ fontSize: "1rem" }}>M</span>
-          <ArrowDownTrayIcon
-            style={{ width: "20px", height: "20px", marginRight: "4px", color: "red" }}
-          />
+            {/* ⬇️ Install Button */}
+            <a
+              href="#"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                // border: "1px solid var(--ifm-button-bg)",
+                color: "var(--ifm-button-bg)",
+                // padding: "0.3rem 0.75rem",
+                // borderRadius: "6px",
+                fontWeight: 500,
+                textDecoration: "none",
+                transition: "color 0.3s ease",
+                fontSize:"0.9rem"
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "red")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ifm-button-bg)")}
+            >Install
+              <ArrowDownTrayIcon style={{ width: "15px", height: "15px", marginRight: "4px", color:"red" }} />
+              
+            </a>
+
+          {/* 📥 Pull Count */}
+          <div style={{ display: "flex", alignItems: "center", fontSize: '0.9rem', color: "var(--ifm-button-bg)", }}>
+            <span>{Math.floor(pull_count / 1_000_000)}</span>
+            <span style={{ margin: "0 4px" }}>M</span>
+            <CloudArrowDownIcon
+              style={{ width: "15px", height: "15px", color: "red" }}
+            />
         </div>
+      </div>
+
       </div>
     </div>
     </>
@@ -367,51 +370,7 @@ const filteredApps = baseList.filter(app =>
 return (
 <>
 <HeaderSection />
-{/* Header Section */}
-{/* <section className="primary-slider-section mb-0 position-relative">
-   <Swiper
-   modules={[Navigation, Pagination]}
-   navigation={{
-   nextEl: '.swiper-button-next',
-   prevEl: '.swiper-button-prev',
-   }}
-   pagination={{ clickable: true }}
-   spaceBetween={5}
-   slidesPerView={1}
-   loop={true}
-   className="slider-type-1"
-   >
-   <SwiperSlide>
-      <div className="slide-inner image-placeholder"  style={{ background: 'var(--ifm-card-background)' }}>
-      <div className="">
-         <div className="row align-items-center">
-      
-            <div className="col-lg-6 p-5">
-               <div className="slide-content layer-animation-1">
-                  <h1 className="main-title" style={{ fontWeight: 700, color: '#3e4d76' }}>
-                  <span className="cloud-title">Self-Driving Cloud Applications</span>
-                  </h1>
-                  <p className="subtitle">
-                     Smarter, faster, and always-on — the future of autonomous cloud computing.
-                  </p>
-               </div>
-            </div>
-         
-            <div className="col-lg-6 d-flex justify-content-lg-end justify-content-center">
-               <img
-               src={require('./images/slider/slider1.png').default}
-               className="img-fluid"
-               alt="Slider Image" 
-               style={{width:'500px', height:'auto'}}
-               />
-            </div>
-         </div>
-      </div>
-      </div>
-   </SwiperSlide>
-   </Swiper>
-</section> */}
-{/* HeaderSection close  */}
+
 
 <div className="container py-5">
    <div className="row align-items-center justify-content-between mb-4" style={{backgroundColor:'var(--ifm-wishlist-background)', padding:'10px', borderRadius:'8px'}}>
@@ -442,11 +401,45 @@ return (
     </div>
 
     {/* Right - Search Box */}
-    <div className="col-md-4 text-end">
+    {/* <div className="col-md-4 text-end">
       <input type="text" className="form-control"  placeholder="Search apps..."   style={{color: 'var(--ifm-color-primary-font-dark)', background:'none' , borderRadius:'10px'}} 
        value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)} />
-    </div>
+    </div> */}
+    <div className="col-md-4 text-end position-relative">
+        <input
+          type="text"
+          className="form-control pe-5" // Add space on the right for the button
+          placeholder="Search apps..."
+          style={{
+            color: 'var(--ifm-color-primary-font-dark)',
+            background: 'none',
+            borderRadius: '10px',
+          }}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+
+        {searchTerm && (
+          <button
+            type="button"
+            onClick={() => setSearchTerm('')}
+            className="btn btn-sm position-absolute"
+            style={{
+              top: '50%',
+              right: '10px',
+              transform: 'translateY(-50%)',
+              background: 'transparent',
+              border: 'none',
+              color: 'gray',
+              fontSize: '1.2rem',
+              cursor: 'pointer',
+            }}
+          >
+            &times;
+          </button>
+        )}
+      </div>
   </div>
   <div
   className="row"
@@ -460,12 +453,7 @@ return (
     <AppItem key={idx} {...app} />
   ))}
 </div>
-   {/* <div className="row">
-      {populaapps.slice(4, 8).map((app, idx) => <AppItem key={idx + 4} {...app} />)}
-   </div>
-   <div className="row">
-      {populaapps.slice(8, 12).map((app, idx) => <AppItem key={idx + 8} {...app} />)}
-   </div> */}
+
 </div>
 {category.map((cat, index) => {
 // 🔍 Filter products for this category
@@ -512,16 +500,17 @@ return (
       >
       {filteredProducts.map((product, pIndex) => (
       <SwiperSlide key={pIndex}>
-         <div 
-         style={{
-         border: '1px solid var(--ifm-color-primary-title-dark)',
-         borderRadius: '10px',
-         paddingBottom: '2rem', // make room for bottom icons
-         width: '220px',
-         height:'auto',
-        marginBottom: '0.3rem',
-         }}
-         className="product-layout d-flex justify-content-center flex-column align-items-center text-center h-100 position-relative">
+        <div 
+          style={{
+            border: '1px solid var(--ifm-color-primary-title-dark)',
+            borderRadius: '10px',
+            paddingBottom: '2rem',
+            width: '220px',
+            height: 'auto',
+            marginBottom: '0.3rem',
+          }}
+          className="product-layout d-flex justify-content-center flex-column align-items-center text-center h-100 position-relative mx-auto"
+        >
          <div className="product-thumb">
             <div className="product-inner">
                {/* Bookmark Icon Top Right */}
@@ -561,50 +550,85 @@ return (
                <div className="product-caption">
                   <div className="product-meta d-flex flex-column align-items-center">
                      <p className="product-price mb-2">
-                        <span className="price-new">{product.title}</span>
+                        {/* <span className="price-new">{product.title}</span> */}
+                        <span className="cloud-title text-center" style={{fontSize:"18px"}}>
+                           {product.title.length > 20 ? product.title.slice(0, 10) + '...' : product.title}
+                    </span>
                      </p>
-                     <div className="product-manufacturer mb-1">
+                     <div className="product-manufacturer mb-4">
                         <a href={`/playstore/${product.category}`}>{product.category}</a>
                      </div>
                   </div>
                </div>
             </div>
-            {/* Bottom Left StarIcon */}
-            <div
+        <div
+        style={{       
+           position: "absolute",
+          bottom: "0px",
+          left: "0px",
+          right: "0px",
+          borderTop: "1px  solid var(--ifm-button-bg)",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "8px 12px", // Optional spacing
+          fontSize: "1rem",
+          fontWeight: 500,
+         
+        
+        }}
+       >
+        {/* ⭐ Rating */}
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <strong
             style={{
-            position: 'absolute',
-            bottom: '8px',
-            left: '10px',
-            display: 'flex',
-            alignItems: 'center',
-            fontSize: '1rem',
-            fontWeight: 500,
-            color:' var(--ifm-color-primary-title-dark)'
+              fontSize: "0.8rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "var(--ifm-button-bg)",
             }}
-            >
-           <strong style={{fontSize:'1rem', display: 'flex', alignItems:'center', justifyContent: 'center' }}>{product.rating} 
-<StarIcon style={{  width: '1rem', height: '1rem', color:'red' }} />
-</strong>
-         </div>
-         {/* Bottom Right ArrowDownTrayIcon */}
-         <div
-         style={{
-         position: 'absolute',
-         bottom: '8px',
-         right: '10px',
-         display: 'flex',
-         alignItems: 'center',
-         fontSize: '1rem',
-         fontWeight: 500,
-         color:' var(--ifm-color-primary-title-dark)'
-         }}
-         >
-            <span>{Math.floor(product.pull_count / 1_000_000)}</span>
-         <span style={{ marginRight: '4px' }}>M</span>
-         <ArrowDownTrayIcon style={{ width: '1rem', height: '1rem', color: 'red' }} />
-   </div>
-   </div>
-   </div>
+          >
+            {product.rating}
+            <StarIcon
+              style={{ width: "15px", height: "15xp", color: "red", marginLeft: "4px" }}
+            />
+          </strong>
+        </div>
+
+            {/* ⬇️ Install Button */}
+            <a
+              href="#"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                // border: "1px solid var(--ifm-button-bg)",
+                color: "var(--ifm-button-bg)",
+                // padding: "0.3rem 0.75rem",
+                // borderRadius: "6px",
+                fontWeight: 500,
+                textDecoration: "none",
+                transition: "color 0.3s ease",
+                fontSize:"0.9rem"
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "red")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ifm-button-bg)")}
+            >Install
+              <ArrowDownTrayIcon style={{ width: "15px", height: "15px", marginRight: "4px", color:"red" }} />
+              
+            </a>
+
+          {/* 📥 Pull Count */}
+          <div style={{ display: "flex", alignItems: "center", fontSize: '0.9rem', color: "var(--ifm-button-bg)", }}>
+             <span>{Math.floor(product.pull_count / 1_000_000)}</span>
+            <span style={{ margin: "0 4px" }}>M</span>
+            <CloudArrowDownIcon
+              style={{ width: "15px", height: "15px", color: "red" }}
+            />
+        </div>
+       </div>          
+      </div>
+      </div>
    </SwiperSlide>
    ))}
    </Swiper>
