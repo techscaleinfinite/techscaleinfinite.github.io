@@ -191,11 +191,12 @@ const toggleWishlist = () => {
                 fontWeight: 500,
                 textDecoration: "none",
                 transition: "color 0.3s ease",
-                fontSize:"0.9rem"
+                fontSize:"0.9rem",
+               
               }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "red")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ifm-button-bg)")}
-            >Install
+            ><span style={{ margin: "0 4px" }}>Install </span>
               <ArrowDownTrayIcon style={{ width: "15px", height: "15px", marginRight: "4px", color:"red" }} />
               
             </a>

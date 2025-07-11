@@ -3,7 +3,7 @@ import {  StarIcon, ArrowDownTrayIcon} from '@heroicons/react/24/outline'
 import './cardStyle.css';
 const PlayCard = ({ promoImage, rating, title, category, logo }) => {
   return (
-    <div className='container'>
+
     <div className="first hero ">
       {/* Background Image */}
       <img src={promoImage} alt={title} className="image " />
@@ -24,19 +24,20 @@ const PlayCard = ({ promoImage, rating, title, category, logo }) => {
 
       {/* Date */}
       <div className="rating d-flex">
-        {rating} <StarIcon style={{ width: "1.3rem", height: "1.3rem", color: "#fff" }} />
+        {rating} 
+        {/* <StarIcon style={{ width: "1.3rem", height: "1.3rem", color: "#fff" }} /> */}
       </div>
       {/* Button */}
      <div className="hero-btn d-flex align-items-center gap-2">
   <a href="#" className="d-flex align-items-center text-white text-decoration-none">
-    Install 
-    <ArrowDownTrayIcon
+    Access 
+    {/* <ArrowDownTrayIcon
       style={{ width: "20px", height: "20px", marginLeft: "6px", color: "#fff" }}
-    />
+    /> */}
   </a>
 </div>
     </div>
-    </div>
+   
   );
 };
 
