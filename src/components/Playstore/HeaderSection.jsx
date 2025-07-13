@@ -84,8 +84,8 @@ const HeaderSection = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-button-prev custom-nav"></div>
-        <div className="swiper-button-next custom-nav"></div>
+      <div className="swiper-button-prev  custom-nav hs-nav-button"  style={{  left: '-20px',  top: '40%'}}></div>
+        <div className="swiper-button-next  custom-nav hs-nav-button" style={{  right: '-20px',  top: '40%'}}></div>
       </div>
     </div>
   )

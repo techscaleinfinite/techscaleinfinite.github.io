@@ -204,11 +204,11 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 25px;
-  color: #111111; /* grey arrow */
+  color: #111111; 
 }
 
-/* Adjust positioning */
-.swiper-button-next {
+
+/* .swiper-button-next {
   right: -20px;
    top: 40%;
 }
@@ -216,13 +216,14 @@
 .swiper-button-prev {
   left: -20px;
   top: 40%;
-}
+} */
 @media (max-width: 768px) {
       .custom-nav {
-      width: 30px;
-      height: 30px; 
+      /* width: 30px;
+      height: 30px;  */
+      display: none;
     }
-    .swiper-button-next { 
+    /* .swiper-button-next { 
       top: 20%;
       right:10px !important;
     }
@@ -233,7 +234,6 @@
     .swiper-button-next::after,
     .swiper-button-prev::after {
       font-size: 15px;
-
-    }
+    } */
     
-}
+} 

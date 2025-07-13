@@ -7449,6 +7449,8 @@ header.header-type-4 .header-text span:first-child {
 .fa-angle-left, .fa-angle-right{
     color:#cbcbcd !important;
 }
+
+
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
     left:70px !important;
     right: auto;
