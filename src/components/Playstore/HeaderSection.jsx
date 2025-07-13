@@ -10,43 +10,43 @@ import PlayCard from './PlayCard'
 const HeaderSection = () => {
   const cardData = [
     {
-      promoImage: 'images/headersection/nextcloud.jpg',
-      logo: 'images/headersection/nextcloud.jpg',
+      promoImage: '/images/headersection/nextcloud.jpg',
+      logo: '/images/headersection/nextcloud.jpg',
       title: 'Nextcloud',
       rating: 'A suite of client-server software ',
       category: 'Opensource'
     },
     {
-      promoImage: 'images/headersection/pdf.jpg',
-      logo: 'images/headersection/pdf-logo.png',
+      promoImage: '/images/headersection/pdf.jpg',
+      logo: '/images/headersection/pdf-logo.png',
       title: 'PDF Reader',
       rating: 'Software -  Portable Document Format',
       category: 'Tools'
     },
     {
-      promoImage: 'images/headersection/wp.jpg',
-      logo: 'images/headersection/wordpress-logo.png',
+      promoImage: '/images/headersection/wp.jpg',
+      logo: '/images/headersection/wordpress-logo.png',
       title: 'WordPress',
       rating: 'Open-Source Content Management System',
       category: 'CMS'
     },
       {
-      promoImage: 'images/headersection/nextcloud.jpg',
-      logo: 'images/headersection/nextcloud.jpg',
+      promoImage: '/images/headersection/nextcloud.jpg',
+      logo: '/images/headersection/nextcloud.jpg',
       title: 'Nextcloud',
       rating: 'A suite of client-server software ',
       category: 'Opensource'
     },
     {
-      promoImage: 'images/headersection/pdf.jpg',
-      logo: 'images/headersection/pdf-logo.png',
+      promoImage: '/images/headersection/pdf.jpg',
+      logo: '/images/headersection/pdf-logo.png',
       title: 'PDF Reader',
       rating: 'Software -  Portable Document Format',
       category: 'Tools'
     },
     {
-      promoImage: 'images/headersection/wp.jpg',
-      logo: 'images/headersection/wordpress-logo.png',
+      promoImage: '/images/headersection/wp.jpg',
+      logo: '/images/headersection/wordpress-logo.png',
       title: 'WordPress',
       rating: 'Open-Source Content Management System',
       category: 'CMS'
