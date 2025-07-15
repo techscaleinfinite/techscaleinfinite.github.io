@@ -283,7 +283,7 @@ const config = {
       position: 'right',
       value: `
         <li style="list-style: none; border: 1px solid #d1cdcd; width: 220px; border-radius: 30px;">
-          <a href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google-oauth2" target="_blank"
+          <a href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google" target="_blank"
              style="padding: 0.5rem 1rem; display: flex; align-items: center; width: 220px; text-decoration: none; font-size: 15px;color: var(--ifm-color-primary-title-dark);">
             <img src="/images/g.png" alt="Sign in with Google"
                  style="margin-right: 8px; width: 30px; height: 30px;   " />
