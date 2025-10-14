@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import { BookmarkIcon, StarIcon,  ArrowDownTrayIcon, CloudArrowDownIcon} from '@heroicons/react/24/outline'
+import { Navigation } from 'swiper/modules';
+import { BookmarkIcon, StarIcon, ArrowDownTrayIcon, CloudArrowDownIcon } from '@heroicons/react/24/outline'
 import { BookmarkIcon as OutlineBookmarkIcon } from '@heroicons/react/24/outline';
 import { BookmarkIcon as SolidBookmarkIcon } from '@heroicons/react/24/solid';
 import 'swiper/css/navigation';
@@ -13,15 +13,15 @@ import './css/bootstrap.min.css';
 import './css/ionicons.min.css';
 import './css/font-awesome.min.css';
 import { FaStar } from 'react-icons/fa';
-import { useRef, useEffect, useState } from 'react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import Cookies from 'js-cookie';
 import HeaderSection from '../components/Playstore/HeaderSection';
 
-
-const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistChange }) => {
+// =======================
+// App Card Component
+// =======================
+const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistChange, onRequireCookieConsent }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
-  const [showPrivacyPopup, setShowPrivacyPopup] = useState(false);
 
   useEffect(() => {
     const wishlist = JSON.parse(Cookies.get("wishlist") || "[]");
@@ -30,16 +30,15 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
   }, [slug]);
 
   const handleWishlistToggle = () => {
-    // Only show popup if not accepted before
     const accepted = Cookies.get('cookieConsent');
     if (!accepted) {
-      setShowPrivacyPopup(true);
+      onRequireCookieConsent({ image, title, category, slug, rating, pull_count });
       return;
     }
-
     toggleWishlist();
   };
-const toggleWishlist = () => {
+
+  const toggleWishlist = () => {
     const wishlist = JSON.parse(Cookies.get("wishlist") || "[]");
     const exists = wishlist.some((item) => item.slug === slug);
 
@@ -56,52 +55,21 @@ const toggleWishlist = () => {
     if (onWishlistChange) {
       onWishlistChange(updatedWishlist);
     }
-      };
-      const handleAcceptCookies = () => {
-         Cookies.set('cookieConsent', 'true', { expires: 365 });
-         setShowPrivacyPopup(false);
-         toggleWishlist();
-      };
-
-      const handleDeclineCookies = () => {
-         setShowPrivacyPopup(false);
-      };
-//   const handleWishlistToggle = () => {
-//     const wishlist = JSON.parse(Cookies.get("wishlist") || "[]");
-//     const exists = wishlist.some((item) => item.slug === slug);
-
-//     let updatedWishlist;
-//     if (exists) {
-//       updatedWishlist = wishlist.filter((item) => item.slug !== slug);
-//     } else {
-//       updatedWishlist = [...wishlist, { image, title, category, slug, rating, pull_count }];
-//     }
-
-//     Cookies.set("wishlist", JSON.stringify(updatedWishlist), { expires: 7 });
-//     setIsWishlisted(!exists);
-
-//     if (onWishlistChange) {
-//       onWishlistChange(updatedWishlist); // 🔁 notify parent
-//     }
-//   };
+  };
 
   return (
-   <>
-   {showPrivacyPopup && (
-        <PrivacyPopup onAccept={handleAcceptCookies} onDecline={handleDeclineCookies} />
-      )}
-    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box  mb-4 no-border d-flex justify-content-center align-items-center">
+    <div className="col-12 col-sm-6 col-md-3 col-lg-3 feature-box mb-4 no-border d-flex justify-content-center align-items-center">
       <div
         className="feature-content d-flex flex-column align-items-center text-center h-100 position-relative"
         style={{
           border: "1px solid var(--ifm-color-primary-title-dark)",
           borderRadius: "10px",
           paddingBottom: "2.5rem",
-          width:'220px',
-         
+          width: '220px',
         }}
       >
-          <button
+        {/* Wishlist button */}
+        <button
           style={{
             position: "absolute",
             top: "-10px",
@@ -120,7 +88,6 @@ const toggleWishlist = () => {
             <OutlineBookmarkIcon style={{ width: "2rem", height: "2.5rem", color: "rgb(245, 81, 81)" }} />
           )}
         </button>
-       
 
         <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
           <img
@@ -134,8 +101,8 @@ const toggleWishlist = () => {
         <div className="px-2">
           <h2 className="cloud-title text-center">
             {title.length > 15 ? title.slice(0, 10) + '...' : title}
-        </h2>
-          <p className="cloud-title" style={{lineHeight:"1rem", padding:"10px 0px"}}>
+          </h2>
+          <p className="cloud-title" style={{ lineHeight: "1rem", padding: "10px 0px" }}>
             <strong>
               <a href={`/playstore/${category}`} className="text-decoration-none">
                 {category}
@@ -143,501 +110,478 @@ const toggleWishlist = () => {
             </strong>
           </p>
         </div>
+
+        {/* Footer */}
         <div
-        style={{       
-           position: "absolute",
-          bottom: "0px",
-          left: "0px",
-          right: "0px",
-          borderTop: "1px  solid var(--ifm-button-bg)",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "8px 12px", // Optional spacing
-          fontSize: "1rem",
-          fontWeight: 500,
-         
-        
-        }}
-      >
-        {/* ⭐ Rating */}
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <strong
-            style={{
+          style={{
+            position: "absolute",
+            bottom: "0px",
+            left: "0px",
+            right: "0px",
+            borderTop: "1px solid var(--ifm-button-bg)",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "8px 12px",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <strong style={{
               fontSize: "0.8rem",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               color: "var(--ifm-button-bg)",
+            }}>
+              {rating}
+              <StarIcon style={{ width: "15px", height: "15px", color: "red", marginLeft: "4px" }} />
+            </strong>
+          </div>
+
+          <a
+            href="#"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              color: "var(--ifm-button-bg)",
+              fontWeight: 500,
+              textDecoration: "none",
+              transition: "color 0.3s ease",
+              fontSize: "0.9rem",
             }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "red")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ifm-button-bg)")}
           >
-            {rating}
-            <StarIcon
-              style={{ width: "15px", height: "15xp", color: "red", marginLeft: "4px" }}
-            />
-          </strong>
-        </div>
+            <span style={{ margin: "0 4px" }}>Install</span>
+            <ArrowDownTrayIcon style={{ width: "15px", height: "15px", marginRight: "4px", color: "red" }} />
+          </a>
 
-            {/* ⬇️ Install Button */}
-            <a
-              href="#"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                // border: "1px solid var(--ifm-button-bg)",
-                color: "var(--ifm-button-bg)",
-                // padding: "0.3rem 0.75rem",
-                // borderRadius: "6px",
-                fontWeight: 500,
-                textDecoration: "none",
-                transition: "color 0.3s ease",
-                fontSize:"0.9rem",
-               
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "red")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ifm-button-bg)")}
-            ><span style={{ margin: "0 4px" }}>Install </span>
-              <ArrowDownTrayIcon style={{ width: "15px", height: "15px", marginRight: "4px", color:"red" }} />
-              
-            </a>
-
-          {/* 📥 Pull Count */}
-          <div style={{ display: "flex", alignItems: "center", fontSize: '0.9rem', color: "var(--ifm-button-bg)", }}>
+          <div style={{ display: "flex", alignItems: "center", fontSize: '0.9rem', color: "var(--ifm-button-bg)" }}>
             <span>{Math.floor(pull_count / 1_000_000)}</span>
             <span style={{ margin: "0 4px" }}>M</span>
-            <CloudArrowDownIcon
-              style={{ width: "15px", height: "15px", color: "red" }}
-            />
+            <CloudArrowDownIcon style={{ width: "15px", height: "15px", color: "red" }} />
+          </div>
         </div>
       </div>
-
-      </div>
     </div>
-    </>
   );
 };
-// Modal Components for privacy policy popup - STRT
-const PrivacyPopup = ({ onAccept, onDecline }) => {
-  return (
+
+// =======================
+// Privacy Popup
+// =======================
+const PrivacyPopup = ({ onAccept, onDecline }) => (
+  <div
+    style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      zIndex: 9999,
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      width: '100vw',
+      height: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
     <div
       style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        zIndex: 9999,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        width: '100vw',
-        height: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        background: '#fff',
+        padding: '20px',
+        borderRadius: '10px',
+        maxWidth: '400px',
+        textAlign: 'center',
       }}
     >
-      <div
-        style={{
-          background: '#fff',
-          padding: '20px',
-          borderRadius: '10px',
-          maxWidth: '400px',
-          textAlign: 'center',
-        }}
-      >
-        <p>
-          We hate using cookies, but in order to protect your privacy and for your convenience in using the platform, we need to store your wish list on your local computer as cookie. 
-Allow Decline
-        </p>
-        <div className="d-flex justify-content-center gap-3 mt-3">
-          <button className="btn btn-success" onClick={onAccept}>Accept</button>
-          <button className="btn btn-secondary" onClick={onDecline}>Decline</button>
-        </div>
+      <p>
+        We hate using cookies, but to protect your privacy and for your convenience,
+        we need to store your wish list locally on your computer as cookies.
+      </p>
+      <div className="d-flex justify-content-center gap-3 mt-3">
+        <button className="btn btn-success" onClick={onAccept}>Accept</button>
+        <button className="btn btn-secondary" onClick={onDecline}>Decline</button>
       </div>
     </div>
-  );
-};
-// Modal Components for privacy policy popup - END
+  </div>
+);
+
+// =======================
+// Main Playstore Template
+// =======================
 const PlaystoreTemplate = () => {
+  const [bookmarkedSlugs, setBookmarkedSlugs] = useState([]);
+  const [wishlistApps, setWishlistApps] = useState(JSON.parse(Cookies.get('wishlist') || '[]'));
+  const [apps, setApps] = useState([]);
+  const [category, setCategory] = useState([]);
+  const [populaapps, setPopularapps] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedFilter, setSelectedFilter] = useState('recommended');
+  const [showPrivacyPopup, setShowPrivacyPopup] = useState(false);
+  const [pendingBookmark, setPendingBookmark] = useState(null);
 
-   // Book mark for slider catagory START
-   const [bookmarkedSlugs, setBookmarkedSlugs] = useState(() => {
-    const saved = Cookies.get('scaleBookmarks');
-    const scaleBookmarks = saved ? JSON.parse(saved) : [];
-    return scaleBookmarks.map((b) => b.slug);
-  });
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
+  // ======================
+  // Fetch apps & categories
+  // ======================
+  useEffect(() => {
+    (async () => {
+      const SQL = await initSqlJs({ locateFile: file => `/sql-wasm.wasm` });
+
+      const catRes = await fetch('/category.sqlite');
+      const catBuffer = await catRes.arrayBuffer();
+      const catDB = new SQL.Database(new Uint8Array(catBuffer));
+      const catResult = catDB.exec("SELECT * FROM category order by sort_order desc");
+      const categories = catResult[0].values.map(row => ({
+        id: row[0],
+        name: row[1],
+        slug: row[2],
+      }));
+
+      const response = await fetch('/apps.sqlite');
+      const buffer = await response.arrayBuffer();
+      const db = new SQL.Database(new Uint8Array(buffer));
+      const result = db.exec("SELECT * FROM apps");
+
+      const loadedApps = result[0].values.map(row => ({
+        image: row[5],
+        slug: row[3],
+        title: row[2],
+        desc: row[1],
+        rating: row[7],
+        pull_count: row[8],
+        category: row[1],
+      }));
+
+      const appResult = db.exec("SELECT * FROM apps order by sort_order desc limit 0,12");
+      const loadedPouplarApps = appResult[0].values.map(row => ({
+        image: row[5],
+        slug: row[3],
+        title: row[2],
+        desc: row[1],
+        rating: row[7],
+        pull_count: row[8],
+        category: row[1],
+      }));
+
+      setApps(loadedApps);
+      setCategory(categories);
+      setPopularapps(loadedPouplarApps);
+    })();
+  }, []);
+
+  // ======================
+  // Handle bookmarks (category apps)
+  // ======================
   const handleBookmark = (product) => {
+    const accepted = Cookies.get('cookieConsent');
+    if (!accepted) {
+      setPendingBookmark(product);
+      setShowPrivacyPopup(true);
+      return;
+    }
+    toggleBookmark(product);
+  };
 
-   
-  const existing = Cookies.get('scaleBookmarks');
-  let scaleBookmarks = existing ? JSON.parse(existing) : [];
+  const toggleBookmark = (product) => {
+    const existing = Cookies.get('wishlist');
+    let wishlist = existing ? JSON.parse(existing) : [];
 
-  const isBookmarked = scaleBookmarks.find((item) => item.slug === product.slug);
+    const isBookmarked = wishlist.find((item) => item.slug === product.slug);
+    if (isBookmarked) {
+      wishlist = wishlist.filter((item) => item.slug !== product.slug);
+    } else {
+      wishlist.push({
+        image: product.image,
+        title: product.title,
+        category: product.category,
+        slug: product.slug,
+        rating: product.rating,
+        pull_count: product.pull_count,
+      });
+    }
 
-  if (isBookmarked) {
-  
-    const updated = scaleBookmarks.filter((item) => item.slug !== product.slug);
-    Cookies.set('scaleBookmarks', JSON.stringify(updated), { expires: 7 });   
-    setBookmarkedSlugs((prev) => prev.filter((slug) => slug !== product.slug));
-  } else {
-    //  Add to cookies
-    scaleBookmarks.push({
-      image: product.image,
-      title: product.title,
-      slug: product.slug,
-    });
+    Cookies.set('wishlist', JSON.stringify(wishlist), { expires: 7 });
+    setWishlistApps(wishlist);
+    setBookmarkedSlugs(wishlist.map((item) => item.slug));
+  };
 
-    Cookies.set('scaleBookmarks', JSON.stringify(scaleBookmarks), { expires: 7 });
+  const handleAcceptCookies = () => {
+    Cookies.set('cookieConsent', 'true', { expires: 365 });
+    setShowPrivacyPopup(false);
+    if (pendingBookmark) {
+      toggleBookmark(pendingBookmark);
+      setPendingBookmark(null);
+    }
+  };
 
-    //  Add to state
-    setBookmarkedSlugs((prev) => [...prev, product.slug]);
-  }
-};
+  const handleDeclineCookies = () => {
+    setShowPrivacyPopup(false);
+    setPendingBookmark(null);
+  };
 
+  // ======================
+  // Filtered apps
+  // ======================
+  const baseList = searchTerm.trim()
+    ? apps
+    : selectedFilter === 'recommended'
+    ? populaapps
+    : wishlistApps;
 
-   // Book mark for Slider Category END
-
-
-const [apps, setApps] = useState([]);
-const [category, setCategory] = useState([]);
-const [populaapps, setPopularapps] = useState([]);
-const [searchTerm, setSearchTerm] = useState('');
-const [selectedFilter, setSelectedFilter] = useState('recommended');
-
-
-const prevRef = useRef(null);
-const nextRef = useRef(null);
-useEffect(() => {
-(async () => {
-const SQL = await initSqlJs({
-locateFile: file => `/sql-wasm.wasm`,
-});
-// Load category.sqlite
-const catRes = await fetch('/category.sqlite');
-const catBuffer = await catRes.arrayBuffer();
-const catDB = new SQL.Database(new Uint8Array(catBuffer));
-const catResult = catDB.exec("SELECT * FROM category order by sort_order desc");
-const categories = catResult[0].values.map(row => ({
-id: row[0],
-name: row[1],
-slug: row[2],
-}));
-const response = await fetch('/apps.sqlite');
-const buffer = await response.arrayBuffer();
-const db = new SQL.Database(new Uint8Array(buffer));
-const result = db.exec("SELECT * FROM apps");
-// Convert result[0] to array of objects
-const loadedApps = result[0].values.map(row => ({
-image: row[5],
-slug: row[3],
-title: row[2],
-desc: row[1],
-rating: row[7],
-pull_count: row[8],
-category:row[1],
-}));
-// Loading apps for top section
-const appresponse = await fetch('/apps.sqlite');
-const appbuffer = await appresponse.arrayBuffer();
-const app_db = new SQL.Database(new Uint8Array(appbuffer));
-// const app_result = app_db.exec("SELECT * FROM apps order by sort_order desc limit 0,12");
-const app_result = app_db.exec("SELECT * FROM apps  order by sort_order desc limit 0,12");
-// Convert result[0] to array of objects
-const loadedPouplarApps = app_result[0].values.map(row => ({
-image: row[5],
-slug: row[3],
-title: row[2],
-desc: row[1],
-rating: row[7],
-pull_count: row[8],
-category:row[1],
-}));
-setApps(loadedApps);
-setCategory(categories);
-setPopularapps(loadedPouplarApps);
-})();
-
-}, []);
-const wishlistapps = JSON.parse(Cookies.get('wishlist') || '[]');
-//const selectedApps = selectedFilter === 'recommended' ? populaapps : wishlistapps;
-const baseList = searchTerm.trim() ? apps : (selectedFilter === 'recommended' ? populaapps : wishlistapps);
-
-
-const filteredApps = baseList.filter(app =>
+  const filteredApps = baseList.filter(app =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
     app.desc.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  return (
+    <>
+      <HeaderSection />
 
-return (
-<>
-<HeaderSection />
+      {/* Privacy Popup */}
+      {showPrivacyPopup && (
+        <PrivacyPopup onAccept={handleAcceptCookies} onDecline={handleDeclineCookies} />
+      )}
 
-
-<div className="container py-5">
-   <div className="row align-items-center justify-content-between mb-4" style={{backgroundColor:'var(--ifm-wishlist-background)', padding:'10px', borderRadius:'8px'}}>
-    {/* Left - Radio Buttons */}
-    <div className="col-md-6 d-flex gap-4" >
-      <div className="form-check" >
-        <input  className="form-check-input"  type="radio"  name="appFilter"
-            id="recommendedApps"
-            value="recommended"
-            checked={selectedFilter === 'recommended'}
-            onChange={(e) => setSelectedFilter(e.target.value)}
-          defaultChecked
-        />
-        <label className="form-check-label" htmlFor="recommendedApps"style={{ color: 'var(--ifm-color-primary-font-dark)' }}>
-          Recommended Apps
-        </label>
-      </div>
-      <div className="form-check">
-        <input   className="form-check-input"   type="radio"  name="appFilter"
-            id="wishlistApps"
-            value="wishlist"
-            checked={selectedFilter === 'wishlist'}
-            onChange={(e) => setSelectedFilter(e.target.value)} />
-        <label className="form-check-label" htmlFor="wishlistApps" style={{ color: 'var(--ifm-color-primary-font-dark)' }}>
-          Wishlist
-        </label>
-      </div>
-    </div>
-
-    {/* Right - Search Box */}
-    {/* <div className="col-md-4 text-end">
-      <input type="text" className="form-control"  placeholder="Search apps..."   style={{color: 'var(--ifm-color-primary-font-dark)', background:'none' , borderRadius:'10px'}} 
-       value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)} />
-    </div> */}
-    <div className="col-md-4 text-end position-relative">
-        <input
-          type="text"
-          className="form-control pe-5" // Add space on the right for the button
-          placeholder="Search apps..."
-          style={{
-            color: 'var(--ifm-color-primary-font-dark)',
-            background: 'none',
-            borderRadius: '10px',
-          }}
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-
-        {searchTerm && (
-          <button
-            type="button"
-            onClick={() => setSearchTerm('')}
-            className="btn btn-sm position-absolute"
-            style={{
-              top: '50%',
-              right: '10px',
-              transform: 'translateY(-50%)',
-              background: 'transparent',
-              border: 'none',
-              color: 'gray',
-              fontSize: '1.2rem',
-              cursor: 'pointer',
-            }}
-          >
-            &times;
-          </button>
-        )}
-      </div>
-  </div>
-  <div
-  className="row"
-  style={
-    filteredApps.length > 12
-      ? { maxHeight: '900px', overflowY: 'auto' }
-      : {}
-  }
->
-  {filteredApps.slice().map((app, idx) => (
-    <AppItem key={idx} {...app} />
-  ))}
-</div>
-
-</div>
-{category.map((cat, index) => {
-// 🔍 Filter products for this category
-const filteredProducts = apps.filter(app => app.category.toLowerCase() === cat.slug.toLowerCase());
-return (
-<section key={index} className="new-arrivals-section position-relative">
-   <div className="container">
-      <div className="row mb-0 mt-2">
-         <div className="col-12">
-            <div className="section-title text-start">
-               <h2>{cat.name}</h2>
+      <div className="container py-5">
+        {/* Filter + Search */}
+        <div className="row align-items-center justify-content-between mb-4" style={{ backgroundColor: 'var(--ifm-wishlist-background)', padding: '10px', borderRadius: '8px' }}>
+          <div className="col-md-6 d-flex gap-4">
+            <div className="form-check">
+              <input className="form-check-input" type="radio" name="appFilter" id="recommendedApps"
+                value="recommended"
+                checked={selectedFilter === 'recommended'}
+                onChange={(e) => setSelectedFilter(e.target.value)}
+              />
+              <label className="form-check-label" htmlFor="recommendedApps" style={{ color: 'var(--ifm-color-primary-font-dark)' }}>
+                Recommended Apps
+              </label>
             </div>
-         </div>
-      </div>
-      {/* Custom Arrows - outside Swiper */}
-      <div className="swiper-button-prev custom-swiper-button"  ref={prevRef}>
-         <i className="fa fa-angle-left"></i>
-      </div>
-      <div className="swiper-button-next custom-swiper-button" ref={nextRef}>
-         <i className="fa fa-angle-right"></i>
-      </div>
-      <Swiper
-      modules={[Navigation]}
-      navigation={{
-      prevEl: prevRef.current,
-      nextEl: nextRef.current,
-      }}
-      onBeforeInit={(swiper) => {
-      swiper.params.navigation.prevEl = prevRef.current;
-      swiper.params.navigation.nextEl = nextRef.current;
-      }}
-      spaceBetween={10}
-      slidesPerView={1}
-      loop={true}
-      speed={1000}
-      breakpoints={{
-      576: { slidesPerView: 2 },
-      768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
-      1200: { slidesPerView: 4 },
-      }}
-      centeredSlides={false}
-      grabCursor={true}
-      >
-      {filteredProducts.map((product, pIndex) => (
-      <SwiperSlide key={pIndex}>
-        <div 
-          style={{
-            border: '1px solid var(--ifm-color-primary-title-dark)',
-            borderRadius: '10px',
-            paddingBottom: '2rem',
-            width: '220px',
-            height: 'auto',
-            marginBottom: '0.3rem',
-          }}
-          className="product-layout d-flex justify-content-center flex-column align-items-center text-center h-100 position-relative mx-auto"
-        >
-         <div className="product-thumb">
-            <div className="product-inner">
-               {/* Bookmark Icon Top Right */}
-              <button
-                  style={{
-                     position: 'absolute',
-                     top: '-10px',
-                     right: '5px',
-                     background: 'none',
-                     border: 'none',
-                     cursor: 'pointer',
-                     padding: 0,
-                     zIndex: '99',
-                  }}
-                  onClick={() => handleBookmark(product)}
-                  >
-                  {bookmarkedSlugs.includes(product.slug) ? (
-                     <SolidBookmarkIcon
-                        style={{ width: '2rem', height: '2.5rem', color: 'rgb(245, 81, 81)' }}
-                     />
-                  ) : (
-                     <BookmarkIcon
-                        style={{ width: '2rem', height: '2.5rem', color: 'var(--ifm-color-primary-title-dark)' }}
-                     />
-                  )}
-                  </button>
-
-               <div className="product-image">
-                  <a href={`/playstore/${product.category.toLowerCase()}/${product.slug}`}>
-                  <img
-                     src={product.image}
-                     alt={product.name}
-                     title={product.name}
-                     />
-                  </a>
-               </div>
-               <div className="product-caption">
-                  <div className="product-meta d-flex flex-column align-items-center">
-                     <p className="product-price mb-2">
-                        {/* <span className="price-new">{product.title}</span> */}
-                        <span className="cloud-title text-center" style={{fontSize:"18px"}}>
-                           {product.title.length > 20 ? product.title.slice(0, 10) + '...' : product.title}
-                    </span>
-                     </p>
-                     <div className="product-manufacturer mb-4">
-                        <a href={`/playstore/${product.category}`}>{product.category}</a>
-                     </div>
-                  </div>
-               </div>
+            <div className="form-check">
+              <input className="form-check-input" type="radio" name="appFilter" id="wishlistApps"
+                value="wishlist"
+                checked={selectedFilter === 'wishlist'}
+                onChange={(e) => setSelectedFilter(e.target.value)} />
+              <label className="form-check-label" htmlFor="wishlistApps" style={{ color: 'var(--ifm-color-primary-font-dark)' }}>
+                Wishlist
+              </label>
             </div>
-        <div
-        style={{       
-           position: "absolute",
-          bottom: "0px",
-          left: "0px",
-          right: "0px",
-          borderTop: "1px  solid var(--ifm-button-bg)",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "8px 12px", // Optional spacing
-          fontSize: "1rem",
-          fontWeight: 500,
-         
-        
-        }}
-       >
-        {/* ⭐ Rating */}
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <strong
-            style={{
-              fontSize: "0.8rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "var(--ifm-button-bg)",
-            }}
-          >
-            {product.rating}
-            <StarIcon
-              style={{ width: "15px", height: "15xp", color: "red", marginLeft: "4px" }}
-            />
-          </strong>
-        </div>
+          </div>
 
-            {/* ⬇️ Install Button */}
-            <a
-              href="#"
+          <div className="col-md-4 text-end position-relative">
+            <input
+              type="text"
+              className="form-control pe-5"
+              placeholder="Search apps..."
               style={{
-                display: "flex",
-                alignItems: "center",
-                // border: "1px solid var(--ifm-button-bg)",
-                color: "var(--ifm-button-bg)",
-                // padding: "0.3rem 0.75rem",
-                // borderRadius: "6px",
-                fontWeight: 500,
-                textDecoration: "none",
-                transition: "color 0.3s ease",
-                fontSize:"0.9rem"
+                color: 'var(--ifm-color-primary-font-dark)',
+                background: 'none',
+                borderRadius: '10px',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "red")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ifm-button-bg)")}
-            >Install
-              <ArrowDownTrayIcon style={{ width: "15px", height: "15px", marginRight: "4px", color:"red" }} />
-              
-            </a>
-
-          {/* 📥 Pull Count */}
-          <div style={{ display: "flex", alignItems: "center", fontSize: '0.9rem', color: "var(--ifm-button-bg)", }}>
-             <span>{Math.floor(product.pull_count / 1_000_000)}</span>
-            <span style={{ margin: "0 4px" }}>M</span>
-            <CloudArrowDownIcon
-              style={{ width: "15px", height: "15px", color: "red" }}
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
+            {searchTerm && (
+              <button
+                type="button"
+                onClick={() => setSearchTerm('')}
+                className="btn btn-sm position-absolute"
+                style={{
+                  top: '50%',
+                  right: '10px',
+                  transform: 'translateY(-50%)',
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'gray',
+                  fontSize: '1.2rem',
+                  cursor: 'pointer',
+                }}
+              >
+                &times;
+              </button>
+            )}
+          </div>
         </div>
-       </div>          
+
+        {/* App Grid */}
+        <div
+          className="row"
+          style={filteredApps.length > 12 ? { maxHeight: '900px', overflowY: 'auto' } : {}}
+        >
+          {filteredApps.map((app, idx) => (
+            <AppItem
+              key={idx}
+              {...app}
+              onWishlistChange={setWishlistApps}
+              onRequireCookieConsent={handleBookmark}
+            />
+          ))}
+        </div>
       </div>
-      </div>
-   </SwiperSlide>
-   ))}
-   </Swiper>
-   </div>
-</section>
-);
-})}
-</>
-);
+
+      {/* Category Slider Sections */}
+      {category.map((cat, index) => {
+        const filteredProducts = apps.filter(app => app.category.toLowerCase() === cat.slug.toLowerCase());
+        return (
+          <section key={index} className="new-arrivals-section position-relative">
+            <div className="container">
+              <div className="row mb-0 mt-2">
+                <div className="col-12">
+                  <div className="section-title text-start">
+                    <h2>{cat.name}</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div className="swiper-button-prev custom-swiper-button" ref={prevRef}>
+                <i className="fa fa-angle-left"></i>
+              </div>
+              <div className="swiper-button-next custom-swiper-button" ref={nextRef}>
+                <i className="fa fa-angle-right"></i>
+              </div>
+
+              <Swiper
+                modules={[Navigation]}
+                navigation={{
+                  prevEl: prevRef.current,
+                  nextEl: nextRef.current,
+                }}
+                onBeforeInit={(swiper) => {
+                  swiper.params.navigation.prevEl = prevRef.current;
+                  swiper.params.navigation.nextEl = nextRef.current;
+                }}
+                spaceBetween={10}
+                slidesPerView={1}
+                loop={true}
+                speed={1000}
+                breakpoints={{
+                  576: { slidesPerView: 2 },
+                  768: { slidesPerView: 3 },
+                  992: { slidesPerView: 4 },
+                  1200: { slidesPerView: 4 },
+                }}
+                centeredSlides={false}
+                grabCursor={true}
+              >
+                {filteredProducts.map((product, pIndex) => (
+                  <SwiperSlide key={pIndex}>
+                    <div
+                      style={{
+                        border: '1px solid var(--ifm-color-primary-title-dark)',
+                        borderRadius: '10px',
+                        paddingBottom: '2rem',
+                        width: '220px',
+                        height: 'auto',
+                        marginBottom: '0.3rem',
+                      }}
+                      className="product-layout d-flex justify-content-center flex-column align-items-center text-center h-100 position-relative mx-auto"
+                    >
+                      {/* Bookmark */}
+                      <button
+                        style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '5px',
+                          background: 'none',
+                          border: 'none',
+                          cursor: 'pointer',
+                          padding: 0,
+                          zIndex: '99',
+                        }}
+                        onClick={() => handleBookmark(product)}
+                      >
+                        {bookmarkedSlugs.includes(product.slug) ? (
+                          <SolidBookmarkIcon style={{ width: '2rem', height: '2.5rem', color: 'rgb(245, 81, 81)' }} />
+                        ) : (
+                          <BookmarkIcon style={{ width: '2rem', height: '2.5rem', color: 'var(--ifm-color-primary-title-dark)' }} />
+                        )}
+                      </button>
+
+                      <div className="product-image">
+                        <a href={`/playstore/${product.category.toLowerCase()}/${product.slug}`}>
+                          <img src={product.image} alt={product.title} title={product.title} style={{ maxHeight: '150px', objectFit: 'contain' }} />
+                        </a>
+                      </div>
+
+                    <div className="product-caption">
+                        <div className="product-meta d-flex flex-column align-items-center">
+                          <p className="product-price mb-2">
+                            <span className="cloud-title text-center" style={{ fontSize: "18px" }}>
+                              {product.title.length > 20 ? product.title.slice(0, 10) + '...' : product.title}
+                            </span>
+                          </p>
+                          <div className="product-manufacturer mb-4">
+                            <Link to={`/playstore/${product.category.toLowerCase()}`}>
+                              <span style={{textTransform: "capitalize", fontSize: "20px", color:"#160e85"}}>
+                                {product.category}
+                              </span>
+                            </Link>
+                          </div>
+
+                          {/* Rating, Install, Pull Count */}
+                          <div style={{
+                            position: "absolute",
+                            bottom: "0px",
+                            left: "0px",
+                            right: "0px",
+                            borderTop: "1px solid var(--ifm-button-bg)",
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            padding: "8px 12px",
+                          }}>
+                            <div style={{ display: "flex", alignItems: "center" }}>
+                              <strong style={{
+                                fontSize: "0.8rem",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                color: "var(--ifm-button-bg)",
+                              }}>
+                                {product.rating}
+                                <StarIcon style={{ width: "15px", height: "15px", color: "red", marginLeft: "4px" }} />
+                              </strong>
+                            </div>
+
+                            <a
+                              href="#"
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                color: "var(--ifm-button-bg)",
+                                fontWeight: 500,
+                                textDecoration: "none",
+                                transition: "color 0.3s ease",
+                                fontSize: "0.9rem",
+                              }}
+                              onMouseEnter={(e) => (e.currentTarget.style.color = "red")}
+                              onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ifm-button-bg)")}
+                            >
+                              <span style={{ margin: "0 4px" }}>Install</span>
+                              <ArrowDownTrayIcon style={{ width: "15px", height: "15px", marginRight: "4px", color: "red" }} />
+                            </a>
+
+                            <div style={{ display: "flex", alignItems: "center", fontSize: '0.9rem', color: "var(--ifm-button-bg)" }}>
+                              <span>{Math.floor(product.pull_count / 1_000_000)}</span>
+                              <span style={{ margin: "0 4px" }}>M</span>
+                              <CloudArrowDownIcon style={{ width: "15px", height: "15px", color: "red" }} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </section>
+        );
+      })}
+    </>
+  );
 };
+
 export default PlaystoreTemplate;
