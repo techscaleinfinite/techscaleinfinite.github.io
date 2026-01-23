@@ -17,6 +17,25 @@ import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import Cookies from 'js-cookie';
 import HeaderSection from '../components/Playstore/HeaderSection';
 
+const STATIC_APP_NAME = "nginx";
+const STATIC_PORT = 8080;
+const ARGUMENT = 3256;
+
+const CONFIG = {
+  env_key_1: "env_value_1",
+  env_key_2: "env_value_2",
+};
+
+const WORKING_DIR = {
+  work_key_1: "work_value_1",
+};
+const INSTALL_URL = `https://legacy.scaleinfinite.fr/index.php/apps/cloudfloat/create-app
+?install-app=${encodeURIComponent(STATIC_APP_NAME)}
+&port=${STATIC_PORT}
+&argument=${ARGUMENT}
+&env=${encodeURIComponent(JSON.stringify(CONFIG))}
+&work_dir=${encodeURIComponent(JSON.stringify(WORKING_DIR))}`;
+
 // =======================
 // App Card Component
 // =======================
@@ -139,7 +158,9 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
           </div>
 
           <a
-            href="#"
+             href={INSTALL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               display: "flex",
               alignItems: "center",

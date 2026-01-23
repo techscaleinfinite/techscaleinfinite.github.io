@@ -15,6 +15,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import"./style.css"
+const argument = 3256;
+
 const images = [
 'img/dyy.jpg',
 'img/dty.jpg',
@@ -239,7 +241,10 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 */}
 </div>
 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-<a href={`https://cloud.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&env=${encodeURIComponent(JSON.stringify(config))}&work_dir=${encodeURIComponent(JSON.stringify(working_dir))}`}
+ <a href={`https://legacy.scaleinfinite.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(config))}&work_dir=${encodeURIComponent(JSON.stringify(working_dir))}`}
+ target="_blank"
+  rel="noopener noreferrer"
+
 //  onClick={handleShare}
 style={{
 display: 'flex',
@@ -565,6 +570,7 @@ gap: '2rem',
 </>
 );
 };
+
 const popupArrowStyle = (side) => ({
 position: 'fixed',
 top: '50%',
