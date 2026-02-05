@@ -17,29 +17,46 @@ import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import Cookies from 'js-cookie';
 import HeaderSection from '../components/Playstore/HeaderSection';
 
-const STATIC_APP_NAME = "nginx";
-const STATIC_PORT = 8080;
-const ARGUMENT = 3256;
+// const STATIC_APP_NAME = "nginx";
+// const STATIC_PORT = 8080;
+// const ARGUMENT = 3256;
 
-const CONFIG = {
+// const CONFIG = {
+//   env_key_1: "env_value_1",
+//   env_key_2: "env_value_2",
+// };
+
+// const WORKING_DIR = {
+//   work_key_1: "work_value_1",
+// };
+const buildInstallUrl = ({
+  title,
+  port,
+  argument = 3256,
+ env = {
   env_key_1: "env_value_1",
   env_key_2: "env_value_2",
+  env_key_3: "env_value_3"
+},
+work_dir = {
+  work_key_1: "work_value_1",
+  work_key_2: "work_value_2",
+  work_key_3: "work_value_3"
+}
+}) => {
+  return `https://pprod.fltt.fr/index.php/apps/cloudfloat/create-app
+?install-app=${encodeURIComponent(title)}
+&port=${encodeURIComponent(port)}
+&argument=${argument}
+&env=${encodeURIComponent(JSON.stringify(env))}
+&work_dir=${encodeURIComponent(JSON.stringify(work_dir))} `;
 };
 
-const WORKING_DIR = {
-  work_key_1: "work_value_1",
-};
-const INSTALL_URL = `https://legacy.scaleinfinite.fr/index.php/apps/cloudfloat/create-app
-?install-app=${encodeURIComponent(STATIC_APP_NAME)}
-&port=${STATIC_PORT}
-&argument=${ARGUMENT}
-&env=${encodeURIComponent(JSON.stringify(CONFIG))}
-&work_dir=${encodeURIComponent(JSON.stringify(WORKING_DIR))}`;
 
 // =======================
 // App Card Component
 // =======================
-const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistChange, onRequireCookieConsent }) => {
+const AppItem = ({ image, title, category, slug, rating, pull_count, port, onWishlistChange, onRequireCookieConsent }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
 
   useEffect(() => {
@@ -158,7 +175,14 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, onWishlistC
           </div>
 
           <a
-             href={INSTALL_URL}
+            href={buildInstallUrl({            
+             title,
+             port,
+              // port,
+              // argument,
+              // env,
+              // work_dir,
+            })}
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -273,7 +297,8 @@ const PlaystoreTemplate = () => {
         desc: row[1],
         rating: row[7],
         pull_count: row[8],
-        category: row[1],
+        category: row[1],       
+        port: row[13] !== null && row[13] !== undefined ? String(row[13]) : null,
       }));
 
       const appResult = db.exec("SELECT * FROM apps order by sort_order desc limit 0,12");
@@ -285,6 +310,7 @@ const PlaystoreTemplate = () => {
         rating: row[7],
         pull_count: row[8],
         category: row[1],
+        port: row[13] !== null && row[13] !== undefined ? String(row[13]) : null,
       }));
 
       setApps(loadedApps);
@@ -321,6 +347,7 @@ const PlaystoreTemplate = () => {
         slug: product.slug,
         rating: product.rating,
         pull_count: product.pull_count,
+        port: product.port,
       });
     }
 
@@ -568,7 +595,12 @@ const PlaystoreTemplate = () => {
                             </div>
 
                             <a
-                              href="#"
+                                 href={buildInstallUrl({            
+                                    title: product.title,
+                                    port: product.port,                              
+                                  })}
+                                   target="_blank"
+                                 rel="noopener noreferrer"
                               style={{
                                 display: "flex",
                                 alignItems: "center",
