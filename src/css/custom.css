@@ -510,8 +510,10 @@ ol.lower-alpha {
 }
 @media (max-width: 995px){
 [class*='navbarSearchContainer'] {
+ 
   right: 60px !important;
   position: relative; /* Or absolute depending on context */
+
 }
 }
 /* App- Decription page Hero image Responsive for .MD file */
@@ -737,3 +739,7 @@ input[type="search"]{
     margin-right: auto !important;
   }
 }
+.navbarSearchContainer_Bca1{
+  display: none;
+}
+
