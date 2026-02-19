@@ -66,11 +66,13 @@ const config = {
   ],
   
     [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
+      require.resolve("@easyops-cn/docusaurus-search-local"),
       {
-        indexBlog: false,
+        hashed: true,
+        language: ['en', 'fr'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
       },
-      
     ],
     [
       path.resolve(__dirname, "plugin-dynamic-routes"),
