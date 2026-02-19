@@ -24,8 +24,8 @@ jobs:
           cache: yarn
       - name: Install dependencies
         run: yarn install
-      - name: Update browserslist DB
-        run: npx update-browserslist-db@latest
+      - name: run npm ci
+        run: npm ci
       - name: Build
         run: yarn build
       # 👆 Build steps
