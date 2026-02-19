@@ -10,6 +10,13 @@ import PlayCard from './PlayCard'
 const HeaderSection = () => {
   const cardData = [
     {
+      promoImage: '/images/headersection/duckdb.jpg',
+      logo: '/images/headersection/duckdb-logo.png',
+      title: 'DuckDB',
+      rating: ' DBMS for Online Analytical Processing ', 
+      category: 'Opensource'
+    },
+    {
       promoImage: '/images/headersection/nextcloud.jpg',
       logo: '/images/headersection/nextcloud.jpg',
       title: 'Nextcloud',
