@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '@theme-original/Layout';
 import { useLocation } from '@docusaurus/router';
+import ChatbotWidget from '@site/src/components/Chatbot/ChatbotWidget';
 
 export default function LayoutWrapper(props) {
   const location = useLocation();
@@ -10,5 +11,10 @@ export default function LayoutWrapper(props) {
     if (loader) loader.remove();
   }, [location.pathname]);
 
-  return <Layout {...props} />;
+  return (
+    <>
+      <Layout {...props} />
+      <ChatbotWidget />
+    </>
+  );
 }

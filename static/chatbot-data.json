@@ -1,0 +1,58 @@
+{
+	"greeting": {
+		"title": "Hi there! &#128075;",
+		"subtitle": "How can we help you today?",
+		"botWelcome": "Hi! How can I help you today? Feel free to ask anything or check the Help section for FAQs."
+	},
+	"faqs": [
+		{
+			"q": "How do I upload files?",
+			"a": "Open the Files app and either drag files into the browser window or click the + button and select \"Upload file\".",
+			"keywords": ["upload", "uploading"]
+		},
+		{
+			"q": "How do I share a file?",
+			"a": "Select a file, click the share icon, and enter a username or email. You can also create public share links!",
+			"keywords": ["share", "sharing"]
+		},
+		{
+			"q": "How do I recover deleted files?",
+			"a": "Deleted files are moved to the Trash. Go to \"Deleted files\" in the Files app to restore them within 30 days.",
+			"keywords": ["delete", "trash", "remove", "recover", "restore"]
+		},
+		{
+			"q": "How do I change my password?",
+			"a": "Go to Settings > Security. You can change your password and enable two-factor authentication there.",
+			"keywords": ["password", "security", "2fa", "two-factor"]
+		},
+		{
+			"q": "How do I add external storage?",
+			"a": "Go to Settings > Administration > External storage. You can connect services like FTP, S3, Google Drive, and more.",
+			"keywords": ["external", "storage", "s3", "ftp", "drive"]
+		},
+		{
+			"q": "How do I search for files?",
+			"a": "Use the search icon in the top header bar to search for files, contacts, and more across your cloud.",
+			"keywords": ["search", "find", "looking"]
+		}
+	],
+	"responses": [
+		{
+			"keywords": ["hi", "hello", "hey", "good morning", "good afternoon"],
+			"reply": "Hello! Welcome to Scale Infinite. How can I assist you today?"
+		},
+		{
+			"keywords": ["thank", "thanks", "thx"],
+			"reply": "You're welcome! Let me know if there's anything else I can help with."
+		},
+		{
+			"keywords": ["help"],
+			"reply": "I can help with uploading, sharing, deleting files, security settings, storage, and more. Just ask!"
+		},
+		{
+			"keywords": ["bye", "goodbye", "see you"],
+			"reply": "Goodbye! Have a great day. I'm always here if you need help."
+		}
+	],
+	"fallback": "I'm not sure about that. Try asking about uploads, sharing, storage, or security — or check the Help section for common questions!"
+}
