@@ -63,7 +63,7 @@
 /* --- Chat Window --- */
 #cb-window {
 	position: fixed;
-	top: 15px;
+	bottom: 15px;
 	right: 24px;
 	width: 400px;
 	height: 567px;
@@ -790,7 +790,7 @@
 /* --- Responsive --- */
 @media (max-width: 480px) {
 	#cb-window {
-		top: 0;
+		bottom: 0;
 		right: 0;
 		left: 0;
 		width: 100%;
