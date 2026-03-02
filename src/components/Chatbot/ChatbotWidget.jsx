@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import './chatbot.css';
 
 // SVG icon components
@@ -298,8 +297,8 @@ export default function ChatbotWidget() {
   const pendingRequestsRef = useRef({});
   const activeChatIdRef = useRef(null);
 
-  const chatbotDataUrl = useBaseUrl('/chatbot-data.json');
-  const apiUrl = useBaseUrl('/api/chatbot.php');
+  const chatbotDataUrl = 'https://legacy.scaleinfinite.fr/themes/cloudfloat/core/js/chatbot-data.json';
+  const apiUrl = 'https://legacy.scaleinfinite.fr/themes/cloudfloat/core/api/chatbot.php';
 
   // Keep ref in sync
   useEffect(() => {
