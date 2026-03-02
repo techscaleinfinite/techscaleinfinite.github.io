@@ -297,8 +297,8 @@ export default function ChatbotWidget() {
   const pendingRequestsRef = useRef({});
   const activeChatIdRef = useRef(null);
 
-  const chatbotDataUrl = 'https://legacy.scaleinfinite.fr/themes/cloudfloat/core/js/chatbot-data.json';
-  const apiUrl = 'https://legacy.scaleinfinite.fr/themes/cloudfloat/core/api/chatbot.php';
+  const chatbotDataUrl = 'https://cloud.scaleinfinite.fr/themes/cloudfloat/core/js/chatbot-data.json';
+  const apiUrl = 'https://cloud.scaleinfinite/themes.fr/cloudfloat/core/api/chatbot.php';
 
   // Keep ref in sync
   useEffect(() => {
