@@ -13,7 +13,7 @@
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
-	background: var(--ifm-color-primary, #6b73fa);
+	background: #02075d;
 	box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
 	cursor: grab;
 	z-index: 10000;
@@ -1158,7 +1158,7 @@
 	}
 	#cb-window .cb-input{
 		width: 100%;
-		font-size: 16px;
+		font-size: 18px;
 	}
 	#cb-window .cb-footer {
 		padding-bottom: env(safe-area-inset-bottom);
