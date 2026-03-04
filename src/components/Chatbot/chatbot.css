@@ -1156,7 +1156,10 @@
 		padding: 10px 12px;
 		padding-bottom: max(10px, env(safe-area-inset-bottom));
 	}
-
+	#cb-window .cb-input{
+		width: 100%;
+		font-size: 16px;
+	}
 	#cb-window .cb-footer {
 		padding-bottom: env(safe-area-inset-bottom);
 	}
