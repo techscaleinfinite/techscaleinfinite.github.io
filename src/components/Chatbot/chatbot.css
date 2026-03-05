@@ -35,7 +35,7 @@
 
 #cb-launcher:hover {
 	box-shadow: 0 6px 26px rgba(0, 0, 0, 0.3);
-	background: var(--ifm-color-primary, #6b73fa);
+	background: #02075d;
 }
 
 #cb-launcher.dragging {
@@ -64,7 +64,7 @@
 /* --- Chat Window --- */
 #cb-window {
 	position: fixed;
-	bottom: 15px;
+	top: 15px;
 	right: 24px;
 	width: 400px;
 	height: 567px;
@@ -851,7 +851,7 @@
 	border: 1px solid #e0e0e0;
 	border-radius: 20px;
 	padding: 10px 16px;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: inherit;
 	outline: none;
 	resize: none;
@@ -1156,10 +1156,7 @@
 		padding: 10px 12px;
 		padding-bottom: max(10px, env(safe-area-inset-bottom));
 	}
-	#cb-window .cb-input{
-		width: 100%;
-		font-size: 18px;
-	}
+
 	#cb-window .cb-footer {
 		padding-bottom: env(safe-area-inset-bottom);
 	}
