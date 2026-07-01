@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Store | Scale Infinite</title>
+<meta name="description" content="Browse and install self-hosted applications with one click on Scale Infinite.">
+<link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --primary:#2563eb;
+  --primary-dark:#1d4ed8;
+  --bg:#f8fafc;
+  --card-bg:#fff;
+  --text:#0f172a;
+  --text-secondary:#64748b;
+  --border:#e2e8f0;
+  --radius:12px;
+  --shadow:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.06);
+  --shadow-hover:0 10px 25px rgba(0,0,0,.1),0 4px 10px rgba(0,0,0,.06);
+  --cat-bg:#f1f5f9;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+
+/* Navbar */
+.navbar{background:#fff;border-bottom:1px solid var(--border);padding:0 24px;height:64px;display:flex;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.navbar__brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:700;font-size:1.15rem}
+.navbar__brand img{height:32px}
+.navbar__links{display:flex;gap:20px;margin-left:auto;align-items:center}
+.navbar__links a{text-decoration:none;color:var(--text-secondary);font-size:.875rem;font-weight:500;transition:color .15s}
+.navbar__links a:hover{color:var(--primary)}
+.navbar__links a.active{color:var(--primary);font-weight:600}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 50%,#7c3aed 100%);color:#fff;padding:48px 24px;text-align:center}
+.hero h1{font-size:2rem;font-weight:700;margin-bottom:8px}
+.hero p{font-size:1.05rem;opacity:.9;max-width:600px;margin:0 auto 24px}
+.search-box{max-width:520px;margin:0 auto;position:relative}
+.search-box input{width:100%;padding:14px 20px 14px 48px;border:none;border-radius:50px;font-size:1rem;background:rgba(255,255,255,.95);color:#0f172a;outline:none;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.search-box input::placeholder{color:#94a3b8}
+.search-box svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:#94a3b8;pointer-events:none}
+
+/* Container */
+.container{max-width:1280px;margin:0 auto;padding:24px}
+
+/* Category filter */
+.categories{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;padding:0 0 16px;border-bottom:1px solid var(--border)}
+.cat-btn{padding:8px 16px;border:1px solid var(--border);background:var(--card-bg);border-radius:50px;cursor:pointer;font-size:.85rem;font-weight:500;color:var(--text-secondary);transition:all .15s;white-space:nowrap}
+.cat-btn:hover{border-color:var(--primary);color:var(--primary)}
+.cat-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+/* Grid */
+.app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+
+/* Card */
+.app-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s;box-shadow:var(--shadow)}
+.app-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px)}
+.app-card__header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.app-card__icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700;color:#fff;flex-shrink:0;background:linear-gradient(135deg,#2563eb,#7c3aed)}
+.app-card__icon img{width:52px;height:52px;border-radius:12px;object-fit:cover}
+.app-card__title{font-size:1.05rem;font-weight:600;color:var(--text)}
+.app-card__category{font-size:.75rem;color:var(--text-secondary);margin-top:2px}
+.app-card__desc{font-size:.85rem;color:var(--text-secondary);flex:1;margin-bottom:14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.app-card__meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.app-card__tag{padding:3px 8px;background:var(--cat-bg);border-radius:6px;font-size:.7rem;font-weight:500;color:var(--text-secondary)}
+.app-card__footer{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
+.app-card__info{font-size:.75rem;color:var(--text-secondary)}
+.btn-install{padding:10px 22px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:.875rem;font-weight:600;cursor:pointer;transition:background .15s,transform .1s;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn-install:hover{background:var(--primary-dark);transform:scale(1.02)}
+.btn-install:active{transform:scale(.98)}
+.btn-install svg{width:16px;height:16px}
+
+/* No results */
+.no-results{text-align:center;padding:60px 20px;color:var(--text-secondary)}
+.no-results h3{font-size:1.2rem;margin-bottom:8px;color:var(--text)}
+
+/* Stats bar */
+.stats-bar{display:flex;gap:24px;justify-content:center;margin-top:20px}
+.stat{text-align:center}
+.stat__num{font-size:1.5rem;font-weight:700}
+.stat__label{font-size:.8rem;opacity:.8}
+
+/* Footer */
+.footer{text-align:center;padding:32px 24px;color:var(--text-secondary);font-size:.85rem;border-top:1px solid var(--border);margin-top:40px}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero h1{font-size:1.5rem}
+  .app-grid{grid-template-columns:1fr}
+  .categories{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+  .navbar__links{gap:12px}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="navbar__brand" href="/">
+    <img src="/img/logo.svg" alt="Scale Infinite">
+    Scale Infinite
+  </a>
+  <div class="navbar__links">
+    <a href="/">Docs</a>
+    <a href="/playstore" class="active">App Store</a>
+    <a href="https://pods.fltt.fr" target="_blank">Dashboard</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>App Store</h1>
+  <p>Deploy self-hosted applications with one click. Browse, choose, and install instantly on your cloud.</p>
+  <div class="search-box">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="searchInput" placeholder="Search apps..." autocomplete="off">
+  </div>
+  <div class="stats-bar">
+    <div class="stat"><div class="stat__num" id="appCount">0</div><div class="stat__label">Apps</div></div>
+    <div class="stat"><div class="stat__num" id="catCount">0</div><div class="stat__label">Categories</div></div>
+    <div class="stat"><div class="stat__num">1-Click</div><div class="stat__label">Install</div></div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="categories" id="categoryFilters"></div>
+  <div class="app-grid" id="appGrid"></div>
+  <div class="no-results" id="noResults" style="display:none">
+    <h3>No apps found</h3>
+    <p>Try a different search term or category.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  Copyright &copy; 2024 Scale Infinite. All rights reserved.
+</footer>
+
+<script>
+const PODS_BASE = 'https://pods.fltt.fr';
+
+const apps = [
+  // CMS
+  {
+    name: 'WordPress (MySQL)',
+    image: 'wordpress',
+    category: 'CMS',
+    description: 'The most popular open-source content management system, powered by MySQL database backend.',
+    http_port: 80,
+    tcp_port: null,
+    env: { WORDPRESS_DB_HOST: 'db', WORDPRESS_DB_USER: 'wordpress', WORDPRESS_DB_PASSWORD: 'wordpress', WORDPRESS_DB_NAME: 'wordpress' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/wordpress-mysql'
+  },
+  {
+    name: 'WordPress (SQLite)',
+    image: 'wordpress',
+    category: 'CMS',
+    description: 'WordPress CMS with SQLite backend - no separate database server needed.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/wordpress-sqlite'
+  },
+  {
+    name: 'Joomla',
+    image: 'joomla',
+    category: 'CMS',
+    description: 'Award-winning CMS for building websites and powerful online applications.',
+    http_port: 80,
+    tcp_port: null,
+    env: { JOOMLA_DB_HOST: 'db', JOOMLA_DB_PASSWORD: 'example' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/joomla'
+  },
+  {
+    name: 'Drupal',
+    image: 'drupal',
+    category: 'CMS',
+    description: 'Flexible CMS for ambitious digital experiences and complex content workflows.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/drupal deployment'
+  },
+  {
+    name: 'MediaWiki',
+    image: 'mediawiki',
+    category: 'CMS',
+    description: 'The wiki software that powers Wikipedia. Perfect for collaborative documentation.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/media-wiki-deployment'
+  },
+  {
+    name: 'Grafana',
+    image: 'grafana/grafana',
+    category: 'CMS',
+    description: 'Open-source analytics and monitoring solution for every database.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/grafana-deployment'
+  },
+  {
+    name: 'Node-RED',
+    image: 'nodered/node-red',
+    category: 'CMS',
+    description: 'Low-code programming for event-driven applications. Wire together APIs and services.',
+    http_port: 1880,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/node-red-deployment'
+  },
+  {
+    name: 'Firefox',
+    image: 'jlesage/firefox',
+    category: 'CMS',
+    description: 'Run Firefox browser in a Docker container with web-based VNC access.',
+    http_port: 5800,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/firefox-deployment'
+  },
+
+  // Office & Notes
+  {
+    name: 'Etherpad',
+    image: 'etherpad/etherpad',
+    category: 'Office & Notes',
+    description: 'Real-time collaborative document editor. Great for meetings, classrooms, and teams.',
+    http_port: 9001,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/etherpad'
+  },
+  {
+    name: 'Excalidraw',
+    image: 'excalidraw/excalidraw',
+    category: 'Office & Notes',
+    description: 'Virtual whiteboard for sketching hand-drawn like diagrams collaboratively.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/excalidraw'
+  },
+  {
+    name: 'DRAW.IO',
+    image: 'jgraph/drawio',
+    category: 'Office & Notes',
+    description: 'Professional diagramming tool for flowcharts, UML, network diagrams and more.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/draw.io deployment'
+  },
+  {
+    name: 'LibreOffice',
+    image: 'linuxserver/libreoffice',
+    category: 'Office & Notes',
+    description: 'Full-featured office suite accessible through your web browser.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/libre office deployment'
+  },
+  {
+    name: 'OnlyOffice',
+    image: 'onlyoffice/documentserver',
+    category: 'Office & Notes',
+    description: 'Online office suite with document, spreadsheet, and presentation editors.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/onlyoffice deployment'
+  },
+  {
+    name: 'Flatnotes',
+    image: 'dullage/flatnotes',
+    category: 'Office & Notes',
+    description: 'Self-hosted, database-less note-taking app with flat file storage.',
+    http_port: 8080,
+    tcp_port: null,
+    env: { FLATNOTES_AUTH_TYPE: 'none' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/flatnotes deployment'
+  },
+  {
+    name: 'Asciiflow',
+    image: 'lewish/asciiflow2',
+    category: 'Office & Notes',
+    description: 'Draw ASCII diagrams in your browser. Great for documentation and code comments.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/asciiflow deployment'
+  },
+  {
+    name: 'Rustpad',
+    image: 'ekzhang/rustpad',
+    category: 'Office & Notes',
+    description: 'Efficient and minimal collaborative text editor powered by Rust.',
+    http_port: 3030,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/rustpad deployment'
+  },
+  {
+    name: 'Dillinger',
+    image: 'linuxserver/dillinger',
+    category: 'Office & Notes',
+    description: 'Cloud-enabled, mobile-ready, offline-capable Markdown editor.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/dillinger deployment'
+  },
+  {
+    name: 'Inkscape',
+    image: 'linuxserver/inkscape',
+    category: 'Office & Notes',
+    description: 'Professional vector graphics editor accessible through your browser.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/inkscape'
+  },
+  {
+    name: 'Krita',
+    image: 'linuxserver/krita',
+    category: 'Office & Notes',
+    description: 'Professional free and open-source painting program for digital art.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/content-management-system-cms/office-suites-and-notes/krita'
+  },
+
+  // Database
+  {
+    name: 'MySQL',
+    image: 'mysql',
+    category: 'Database',
+    description: 'The most popular open-source relational database management system.',
+    http_port: null,
+    tcp_port: 3306,
+    env: { MYSQL_ROOT_PASSWORD: 'example' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/database/mysql deployment'
+  },
+  {
+    name: 'MariaDB',
+    image: 'mariadb',
+    category: 'Database',
+    description: 'Community-developed fork of MySQL. Drop-in replacement with extra features.',
+    http_port: null,
+    tcp_port: 3306,
+    env: { MARIADB_ROOT_PASSWORD: 'example' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/database/maria db deployment'
+  },
+  {
+    name: 'MongoDB',
+    image: 'mongo',
+    category: 'Database',
+    description: 'Document-oriented NoSQL database for modern applications.',
+    http_port: null,
+    tcp_port: 27017,
+    env: { MONGO_INITDB_ROOT_USERNAME: 'root', MONGO_INITDB_ROOT_PASSWORD: 'example' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/database/mongo db'
+  },
+  {
+    name: 'CouchBase',
+    image: 'couchbase',
+    category: 'Database',
+    description: 'Distributed NoSQL cloud database with built-in caching and SQL-like queries.',
+    http_port: 8091,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/database/couch base deployment'
+  },
+  {
+    name: 'phpMyAdmin',
+    image: 'phpmyadmin',
+    category: 'Database',
+    description: 'Web-based MySQL/MariaDB administration tool with intuitive UI.',
+    http_port: 80,
+    tcp_port: null,
+    env: { PMA_ARBITRARY: '1' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/database/phpmyadmin deployment'
+  },
+  {
+    name: 'NocoDB',
+    image: 'nocodb/nocodb',
+    category: 'Database',
+    description: 'Open-source Airtable alternative. Turn any database into a smart spreadsheet.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/database/nocodb'
+  },
+  {
+    name: 'Tomcat',
+    image: 'tomcat',
+    category: 'Database',
+    description: 'Apache Tomcat web server and servlet container for Java applications.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/database/tomcat deployment'
+  },
+  {
+    name: 'XAMPP',
+    image: 'tomsik68/xampp',
+    category: 'Database',
+    description: 'Complete web development stack with Apache, MySQL, PHP and Perl.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/database/xamppdeployment'
+  },
+
+  // Media & Entertainment
+  {
+    name: 'Jellyfin',
+    image: 'jellyfin/jellyfin',
+    category: 'Media & Entertainment',
+    description: 'Free software media system for managing and streaming digital media.',
+    http_port: 8096,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/media-and-entertainment/jellyfin-deployment'
+  },
+  {
+    name: 'Emby',
+    image: 'emby/embyserver',
+    category: 'Media & Entertainment',
+    description: 'Personal media server for organizing and streaming your content.',
+    http_port: 8096,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/media-and-entertainment/emby-deployment'
+  },
+  {
+    name: 'Spotify',
+    image: 'lscr.io/linuxserver/spotify',
+    category: 'Media & Entertainment',
+    description: 'Access Spotify web player through a containerized browser interface.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/media-and-entertainment/spotify-deployment'
+  },
+  {
+    name: 'Radarr',
+    image: 'linuxserver/radarr',
+    category: 'Media & Entertainment',
+    description: 'Movie collection manager for Usenet and BitTorrent users.',
+    http_port: 7878,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/media-and-entertainment/radarr'
+  },
+  {
+    name: 'Lidarr',
+    image: 'linuxserver/lidarr',
+    category: 'Media & Entertainment',
+    description: 'Music collection manager for Usenet and BitTorrent users.',
+    http_port: 8686,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/media-and-entertainment/lidarr-deployment'
+  },
+  {
+    name: 'Bazarr',
+    image: 'linuxserver/bazarr',
+    category: 'Media & Entertainment',
+    description: 'Companion app for Sonarr and Radarr to manage and download subtitles.',
+    http_port: 6767,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/media-and-entertainment/bazarr-deployment'
+  },
+  {
+    name: 'Podgrab',
+    image: 'akhilrex/podgrab',
+    category: 'Media & Entertainment',
+    description: 'Self-hosted podcast manager and player with automatic downloading.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/media-and-entertainment/podgrab-deployment'
+  },
+  {
+    name: 'Booksonic-Air',
+    image: 'linuxserver/booksonic-air',
+    category: 'Media & Entertainment',
+    description: 'Self-hosted audiobook server for streaming your audiobook collection.',
+    http_port: 4040,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/media-and-entertainment/booksonic-air'
+  },
+
+  // Social Media
+  {
+    name: 'Friendica',
+    image: 'friendica',
+    category: 'Social Media',
+    description: 'Decentralized social network with support for ActivityPub and diaspora protocols.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/social-media/friendica-deployment'
+  },
+  {
+    name: 'The Lounge',
+    image: 'thelounge/thelounge',
+    category: 'Social Media',
+    description: 'Modern, self-hosted IRC client with a beautiful web interface.',
+    http_port: 9000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/social-media/thelounge'
+  },
+  {
+    name: 'Answer',
+    image: 'answerdev/answer',
+    category: 'Social Media',
+    description: 'Open-source Q&A platform for team knowledge sharing and collaboration.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/social-media/answer'
+  },
+
+  // Cloud
+  {
+    name: 'Nextcloud',
+    image: 'nextcloud',
+    category: 'Cloud',
+    description: 'Self-hosted productivity platform with file sync, sharing, and collaboration.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/cloud-services/Next Cloud Deployment'
+  },
+  {
+    name: 'OwnCloud',
+    image: 'owncloud/server',
+    category: 'Cloud',
+    description: 'Open-source file sync and share solution with enterprise features.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/cloud-services/Own Cloud Deployment'
+  },
+
+  // IDE
+  {
+    name: 'Code Server (VS Code)',
+    image: 'linuxserver/code-server',
+    category: 'IDE',
+    description: 'Run VS Code in the browser. Full IDE experience from any device.',
+    http_port: 8443,
+    tcp_port: null,
+    env: { PASSWORD: 'password' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/ide/code server'
+  },
+  {
+    name: 'Cloud9',
+    image: 'linuxserver/cloud9',
+    category: 'IDE',
+    description: 'Cloud-based integrated development environment with terminal access.',
+    http_port: 8000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/ide/cloud9'
+  },
+  {
+    name: 'Atheos',
+    image: 'hlsiira/atheos',
+    category: 'IDE',
+    description: 'Lightweight, web-based IDE for quick code editing and project management.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/ide/atheos'
+  },
+
+  // Dashboard
+  {
+    name: 'Heimdall',
+    image: 'linuxserver/heimdall',
+    category: 'Dashboards',
+    description: 'Application dashboard and launcher for organizing your web apps.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/dashboards/heimdall deployment'
+  },
+  {
+    name: 'Homer',
+    image: 'b4bz/homer',
+    category: 'Dashboards',
+    description: 'Simple static homepage for your server with YAML configuration.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/dashboards/homer deployment'
+  },
+
+  // Finance
+  {
+    name: 'Actual Budget',
+    image: 'actualbudget/actual-server',
+    category: 'Finance',
+    description: 'Privacy-focused personal finance tool with local-first sync.',
+    http_port: 5006,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/finance/actual'
+  },
+  {
+    name: 'IHateMoney',
+    image: 'ihatemoney/ihatemoney',
+    category: 'Finance',
+    description: 'Simple shared budget manager for splitting expenses with friends.',
+    http_port: 8000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/finance/ihatemoney-deployment'
+  },
+  {
+    name: 'Octobot',
+    image: 'drakkarsoftware/octobot',
+    category: 'Finance',
+    description: 'Open-source cryptocurrency trading bot for automated trading strategies.',
+    http_port: 5001,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/finance/octobot-deployment'
+  },
+
+  // Gaming
+  {
+    name: 'Minecraft Server',
+    image: 'itzg/minecraft-server',
+    category: 'Gaming',
+    description: 'Dedicated Minecraft server with easy configuration and mod support.',
+    http_port: null,
+    tcp_port: 25565,
+    env: { EULA: 'TRUE' },
+    work_dir: {},
+    doc_url: '/demo-deployment copy/gaming/minecraft-server'
+  },
+  {
+    name: 'Scribble.rs',
+    image: 'sarnthil/scribblrs',
+    category: 'Gaming',
+    description: 'Open-source Pictionary/Skribbl.io alternative for drawing and guessing games.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/gaming/scribblers'
+  },
+  {
+    name: 'Retro Games',
+    image: 'linuxserver/emulatorjs',
+    category: 'Gaming',
+    description: 'Play retro games in your browser with this self-hosted emulator.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/gaming/retro-game-deployment'
+  },
+
+  // Status & Monitoring
+  {
+    name: 'Uptime Kuma',
+    image: 'louislam/uptime-kuma',
+    category: 'Status & Monitoring',
+    description: 'Fancy self-hosted monitoring tool with beautiful status pages.',
+    http_port: 3001,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/status-uptime-pages/uptime-kuma'
+  },
+  {
+    name: 'Gatus',
+    image: 'twinproduction/gatus',
+    category: 'Status & Monitoring',
+    description: 'Automated health dashboard for monitoring your services and APIs.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/status-uptime-pages/gatus-deployment'
+  },
+
+  // Document Management
+  {
+    name: 'Stirling PDF',
+    image: 'frooodle/s-pdf',
+    category: 'Document Management',
+    description: 'Self-hosted PDF manipulation tool for merging, splitting, and converting PDFs.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/document-management/stirling-pdf-deployment'
+  },
+  {
+    name: 'Calibre',
+    image: 'linuxserver/calibre',
+    category: 'Document Management',
+    description: 'Powerful e-book management with format conversion and library organization.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/document-management/calibre'
+  },
+  {
+    name: 'Kavita',
+    image: 'kizaing/kavita',
+    category: 'Document Management',
+    description: 'Fast, feature-rich, cross-platform reading server for comics and books.',
+    http_port: 5000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/document-management/kavita'
+  },
+  {
+    name: 'Teedy',
+    image: 'sismics/docs',
+    category: 'Document Management',
+    description: 'Lightweight document management system with workflow and full-text search.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/document-management/teedy-deployment'
+  },
+
+  // Lifestyle
+  {
+    name: 'Mealie',
+    image: 'hkotel/mealie',
+    category: 'Lifestyle',
+    description: 'Self-hosted recipe manager and meal planner with shopping list integration.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/lifestyle/mealie'
+  },
+  {
+    name: 'Grocy',
+    image: 'linuxserver/grocy',
+    category: 'Lifestyle',
+    description: 'ERP beyond your fridge - groceries and household management solution.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/lifestyle/grocy'
+  },
+  {
+    name: 'Metabase',
+    image: 'metabase/metabase',
+    category: 'Lifestyle',
+    description: 'Business intelligence and analytics platform with easy-to-use interface.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/lifestyle/metabase'
+  },
+  {
+    name: 'Paperless-ngx',
+    image: 'ghcr.io/paperless-ngx/paperless-ngx',
+    category: 'Lifestyle',
+    description: 'Document management system that transforms physical documents into searchable archives.',
+    http_port: 8000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/lifestyle/paperless'
+  },
+  {
+    name: 'Wger',
+    image: 'wger/server',
+    category: 'Lifestyle',
+    description: 'Open-source workout manager for tracking exercises, nutrition and body weight.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/lifestyle/wger'
+  },
+
+  // File Transfer
+  {
+    name: 'qBittorrent',
+    image: 'linuxserver/qbittorrent',
+    category: 'File Transfer',
+    description: 'Free, open-source BitTorrent client with a feature-rich web UI.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/file-transfer/qbittorent-deployment'
+  },
+  {
+    name: 'Deluge',
+    image: 'linuxserver/deluge',
+    category: 'File Transfer',
+    description: 'Lightweight BitTorrent client with a full-featured web interface.',
+    http_port: 8112,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/file-transfer/deluge'
+  },
+  {
+    name: 'Transmission',
+    image: 'linuxserver/transmission',
+    category: 'File Transfer',
+    description: 'Fast, easy-to-use BitTorrent client designed for simplicity.',
+    http_port: 9091,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/file-transfer/transmission-deployment'
+  },
+
+  // Other Tools
+  {
+    name: 'Nginx',
+    image: 'nginx',
+    category: 'Web Servers & Tools',
+    description: 'High-performance web server, reverse proxy, and load balancer.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/nginx-deployment'
+  },
+  {
+    name: 'Caddy',
+    image: 'caddy',
+    category: 'Web Servers & Tools',
+    description: 'Powerful web server with automatic HTTPS and easy configuration.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/caddy-deployment'
+  },
+  {
+    name: 'HTTPd (Apache)',
+    image: 'httpd',
+    category: 'Web Servers & Tools',
+    description: 'The Apache HTTP Server - the world\'s most used web server software.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/httpd-deployment'
+  },
+  {
+    name: 'Gitea',
+    image: 'gitea/gitea',
+    category: 'Web Servers & Tools',
+    description: 'Lightweight self-hosted Git service. Painless and easy to set up.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/gitea'
+  },
+  {
+    name: 'Vault Warden',
+    image: 'vaultwarden/server',
+    category: 'Web Servers & Tools',
+    description: 'Lightweight Bitwarden-compatible password manager server.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/vault-warden-deployment'
+  },
+  {
+    name: 'IT-Tools',
+    image: 'corentinth/it-tools',
+    category: 'Web Servers & Tools',
+    description: 'Collection of handy online tools for developers and IT professionals.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/It-tools'
+  },
+  {
+    name: 'CyberChef',
+    image: 'mpepping/cyberchef',
+    category: 'Web Servers & Tools',
+    description: 'The Cyber Swiss Army Knife - a web app for data operations and analysis.',
+    http_port: 8000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/cyberchef'
+  },
+  {
+    name: 'VS Code (Web)',
+    image: 'linuxserver/openvscode-server',
+    category: 'Web Servers & Tools',
+    description: 'Run VS Code on a remote server accessible via the browser.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/vscode-deployment'
+  },
+  {
+    name: 'Webtop',
+    image: 'linuxserver/webtop',
+    category: 'Web Servers & Tools',
+    description: 'Full Linux desktop environment accessible through your web browser.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/webtop'
+  },
+  {
+    name: 'Linux VPS',
+    image: 'linuxserver/webtop',
+    category: 'Web Servers & Tools',
+    description: 'Full Linux virtual private server with desktop environment in the cloud.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/linux-vps-deployment'
+  },
+  {
+    name: 'Yopass',
+    image: 'jhaals/yopass',
+    category: 'Web Servers & Tools',
+    description: 'Share secrets securely with end-to-end encrypted, self-destructing messages.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/youpass'
+  },
+  {
+    name: 'PairDrop',
+    image: 'linuxserver/pairdrop',
+    category: 'Web Servers & Tools',
+    description: 'Local file sharing in your browser. AirDrop-like experience on any device.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/pairdrop'
+  },
+  {
+    name: 'Snapdrop',
+    image: 'linuxserver/snapdrop',
+    category: 'Web Servers & Tools',
+    description: 'Local file sharing inspired by Apple\'s AirDrop. Works on any platform.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/snapdrop'
+  },
+  {
+    name: 'Flame',
+    image: 'pawelmalak/flame',
+    category: 'Dashboards',
+    description: 'Self-hosted startpage for your server with built-in application management.',
+    http_port: 5005,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/flame'
+  },
+  {
+    name: 'Wireshark',
+    image: 'linuxserver/wireshark',
+    category: 'Web Servers & Tools',
+    description: 'Network protocol analyzer with web-based GUI for traffic inspection.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/wireshark'
+  },
+  {
+    name: 'ChangeDetection',
+    image: 'dgtlmoon/changedetection.io',
+    category: 'Web Servers & Tools',
+    description: 'Monitor web pages for changes and get notified when content updates.',
+    http_port: 5000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/changedetection'
+  },
+  {
+    name: 'Smokeping',
+    image: 'linuxserver/smokeping',
+    category: 'Status & Monitoring',
+    description: 'Network latency monitoring tool with beautiful RRD-based graphs.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/smokeping'
+  },
+  {
+    name: 'Duplicati',
+    image: 'linuxserver/duplicati',
+    category: 'Web Servers & Tools',
+    description: 'Free backup software to store encrypted backups online.',
+    http_port: 8200,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/duplicati'
+  },
+  {
+    name: 'Blender',
+    image: 'linuxserver/blender',
+    category: 'Office & Notes',
+    description: '3D creation suite accessible via web browser for modeling and animation.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/tcp/blender'
+  },
+
+  // Calendar
+  {
+    name: 'Baikal',
+    image: 'ckulka/baikal',
+    category: 'Calendar',
+    description: 'Lightweight CalDAV+CardDAV server for calendar and contact syncing.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/calender/Baikal Deployment'
+  },
+  {
+    name: 'Radicale',
+    image: 'tomsquest/docker-radicale',
+    category: 'Calendar',
+    description: 'Simple CalDAV and CardDAV server with a minimal footprint.',
+    http_port: 5232,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/calender/Radicale Deployment'
+  },
+
+  // Photo & Video
+  {
+    name: 'DigiKam',
+    image: 'linuxserver/digikam',
+    category: 'Photo & Video',
+    description: 'Professional photo management application with advanced editing features.',
+    http_port: 3000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/photo-and-video-galleries/digikam'
+  },
+  {
+    name: 'ZenPhoto',
+    image: 'zenphoto/zenphoto',
+    category: 'Photo & Video',
+    description: 'CMS for self-hosted media-focused and gallery websites.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/photo-and-video-galleries/zenphoto-deployment'
+  },
+
+  // Wikis
+  {
+    name: 'DokuWiki',
+    image: 'linuxserver/dokuwiki',
+    category: 'Wikis',
+    description: 'Simple to use wiki that doesn\'t require a database. File-based storage.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/wikis/dokuwiki'
+  },
+  {
+    name: 'Otter Wiki',
+    image: 'redimp/otterwiki',
+    category: 'Wikis',
+    description: 'Simple, easy-to-use wiki powered by Python with Git-based storage.',
+    http_port: 8080,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/wikis/otterwiki'
+  },
+
+  // Task Management
+  {
+    name: 'Focalboard',
+    image: 'mattermost/focalboard',
+    category: 'Task Management',
+    description: 'Open-source project management tool - alternative to Trello, Notion, and Asana.',
+    http_port: 8000,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/to do/task mangement/focalboard'
+  },
+  {
+    name: 'Kanboard',
+    image: 'kanboard/kanboard',
+    category: 'Task Management',
+    description: 'Free, open-source Kanban project management software.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/to do/task mangement/kanboard'
+  },
+
+  // Video Surveillance
+  {
+    name: 'Kerberos',
+    image: 'kerberos/kerberos',
+    category: 'Video Surveillance',
+    description: 'Open-source video surveillance solution with motion detection.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/video surveillance/kerberos'
+  },
+
+  // Feed Reader
+  {
+    name: 'RSS Bridge',
+    image: 'rssbridge/rss-bridge',
+    category: 'Feed Reader',
+    description: 'Generate RSS/Atom feeds for websites that don\'t provide them.',
+    http_port: 80,
+    tcp_port: null,
+    env: {},
+    work_dir: {},
+    doc_url: '/demo-deployment copy/feed-reader/rss-bridge-deployment'
+  }
+];
+
+const categoryColors = {
+  'CMS': '#2563eb',
+  'Office & Notes': '#7c3aed',
+  'Database': '#dc2626',
+  'Media & Entertainment': '#ea580c',
+  'Social Media': '#0891b2',
+  'Cloud': '#0d9488',
+  'IDE': '#4f46e5',
+  'Dashboards': '#c026d3',
+  'Finance': '#16a34a',
+  'Gaming': '#e11d48',
+  'Status & Monitoring': '#0284c7',
+  'Document Management': '#9333ea',
+  'Lifestyle': '#d97706',
+  'File Transfer': '#059669',
+  'Web Servers & Tools': '#475569',
+  'Calendar': '#2563eb',
+  'Photo & Video': '#be185d',
+  'Wikis': '#7c3aed',
+  'Task Management': '#0369a1',
+  'Video Surveillance': '#b91c1c',
+  'Feed Reader': '#15803d'
+};
+
+function getInitials(name) {
+  return name.split(/[\s-]+/).map(w => w[0]).join('').substring(0, 2).toUpperCase();
+}
+
+function getCategoryColor(cat) {
+  return categoryColors[cat] || '#64748b';
+}
+
+function buildInstallUrl(app) {
+  const params = new URLSearchParams();
+
+  if (app.image) params.set('image', app.image);
+
+  const port = app.http_port || app.tcp_port || '';
+  if (port) params.set('port', port.toString());
+
+  if (app.http_port) params.set('protocol', 'http');
+  else if (app.tcp_port) params.set('protocol', 'tcp');
+
+  if (app.env && Object.keys(app.env).length > 0) {
+    params.set('env', JSON.stringify(app.env));
+  }
+
+  if (app.work_dir && Object.keys(app.work_dir).length > 0) {
+    params.set('work_dir', JSON.stringify(app.work_dir));
+  }
+
+  return PODS_BASE + '/create-app?' + params.toString();
+}
+
+function createAppCard(app) {
+  const color = getCategoryColor(app.category);
+  const initials = getInitials(app.name);
+  const installUrl = buildInstallUrl(app);
+  const port = app.http_port || app.tcp_port;
+  const protocol = app.http_port ? 'HTTP' : 'TCP';
+
+  const card = document.createElement('div');
+  card.className = 'app-card';
+  card.dataset.category = app.category;
+  card.dataset.name = app.name.toLowerCase();
+
+  card.innerHTML = `
+    <div class="app-card__header">
+      <div class="app-card__icon" style="background:linear-gradient(135deg,${color},${color}dd)">
+        ${initials}
+      </div>
+      <div>
+        <div class="app-card__title">${app.name}</div>
+        <div class="app-card__category">${app.category}</div>
+      </div>
+    </div>
+    <div class="app-card__desc">${app.description}</div>
+    <div class="app-card__meta">
+      <span class="app-card__tag">${protocol}: ${port || 'N/A'}</span>
+      <span class="app-card__tag">${app.image.split('/').pop()}</span>
+      ${Object.keys(app.env).length ? '<span class="app-card__tag">ENV</span>' : ''}
+    </div>
+    <div class="app-card__footer">
+      <a href="${app.doc_url}" class="app-card__info" title="View documentation">Docs</a>
+      <a href="${installUrl}" target="_blank" rel="noopener" class="btn-install">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Install
+      </a>
+    </div>
+  `;
+
+  return card;
+}
+
+function getCategories() {
+  const cats = [...new Set(apps.map(a => a.category))];
+  cats.sort();
+  return cats;
+}
+
+function renderCategories() {
+  const container = document.getElementById('categoryFilters');
+  const categories = getCategories();
+
+  const allBtn = document.createElement('button');
+  allBtn.className = 'cat-btn active';
+  allBtn.textContent = 'All';
+  allBtn.dataset.category = 'all';
+  allBtn.addEventListener('click', () => filterByCategory('all'));
+  container.appendChild(allBtn);
+
+  categories.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'cat-btn';
+    btn.textContent = cat;
+    btn.dataset.category = cat;
+    btn.addEventListener('click', () => filterByCategory(cat));
+    container.appendChild(btn);
+  });
+
+  document.getElementById('catCount').textContent = categories.length;
+}
+
+function renderApps(filteredApps) {
+  const grid = document.getElementById('appGrid');
+  const noResults = document.getElementById('noResults');
+  grid.innerHTML = '';
+
+  if (filteredApps.length === 0) {
+    noResults.style.display = 'block';
+    return;
+  }
+
+  noResults.style.display = 'none';
+  filteredApps.forEach(app => grid.appendChild(createAppCard(app)));
+}
+
+let activeCategory = 'all';
+
+function filterByCategory(category) {
+  activeCategory = category;
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.category === category);
+  });
+  applyFilters();
+}
+
+function applyFilters() {
+  const search = document.getElementById('searchInput').value.toLowerCase().trim();
+  let filtered = apps;
+
+  if (activeCategory !== 'all') {
+    filtered = filtered.filter(a => a.category === activeCategory);
+  }
+
+  if (search) {
+    filtered = filtered.filter(a =>
+      a.name.toLowerCase().includes(search) ||
+      a.description.toLowerCase().includes(search) ||
+      a.category.toLowerCase().includes(search) ||
+      a.image.toLowerCase().includes(search)
+    );
+  }
+
+  renderApps(filtered);
+}
+
+document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+document.getElementById('appCount').textContent = apps.length;
+renderCategories();
+renderApps(apps);
+</script>
+</body>
+</html>
