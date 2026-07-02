@@ -241,7 +241,7 @@ boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
 */}
 </div>
 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
- <a href={`https://pprod.fltt.fr/index.php/apps/cloudfloat/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(config))}&work_dir=${encodeURIComponent(JSON.stringify(working_dir))}`}
+ <a href={`https://pods.fltt.fr/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(config))}&work_dir=${encodeURIComponent(JSON.stringify(working_dir))}`}
  target="_blank"
   rel="noopener noreferrer"
 

@@ -44,12 +44,7 @@ work_dir = {
   work_key_3: "work_value_3"
 }
 }) => {
-  return `https://pprod.fltt.fr/index.php/apps/cloudfloat/create-app
-?install-app=${encodeURIComponent(title)}
-&port=${encodeURIComponent(port)}
-&argument=${argument}
-&env=${encodeURIComponent(JSON.stringify(env))}
-&work_dir=${encodeURIComponent(JSON.stringify(work_dir))} `;
+  return `https://pods.fltt.fr/create-app?install-app=${encodeURIComponent(title)}&port=${encodeURIComponent(port)}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(env))}&work_dir=${encodeURIComponent(JSON.stringify(work_dir))}`;
 };
 
 
