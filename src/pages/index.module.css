@@ -322,12 +322,12 @@
 
 .brandsLabel {
   text-align: center;
-  font-size: 0.85rem;
-  color: var(--si-text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 500;
-  margin-bottom: 24px;
+  font-family: 'Nexa_Bold', 'Inter', sans-serif;
+  font-size: 1.5rem;
+  color: var(--si-text-primary);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0 0 28px;
 }
 
 .brandsTrack {
@@ -340,7 +340,7 @@
   display: flex;
   gap: 48px;
   align-items: center;
-  animation: scroll 25s linear infinite;
+  animation: scroll 50s linear infinite;
   width: max-content;
 }
 
@@ -350,16 +350,20 @@
 }
 
 .brandLogo {
-  height: 32px;
-  opacity: 0.4;
-  transition: opacity 0.3s ease;
-  filter: grayscale(1);
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  border-radius: 12px;
   flex-shrink: 0;
+  opacity: 0.6;
+  filter: grayscale(1);
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
 }
 
 .brandLogo:hover {
-  opacity: 0.8;
+  opacity: 1;
   filter: grayscale(0);
+  transform: scale(1.08);
 }
 
 /* ===== SECTION COMMON ===== */

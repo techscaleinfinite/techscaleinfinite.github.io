@@ -8,6 +8,9 @@
   --ap-green: #22c55e;
   --ap-green-soft: rgba(34, 197, 94, 0.12);
   --ap-warn: #f59e0b;
+  --ap-warn-soft: rgba(245, 158, 11, 0.12);
+  --ap-red: #ef4444;
+  --ap-red-soft: rgba(239, 68, 68, 0.1);
   --ap-bg: #ffffff;
   --ap-card-bg: #f8fafc;
   --ap-dash-bg: #ffffff;
@@ -175,7 +178,26 @@
     0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* --- Dashboard header --- */
+/* --- Scan line --- */
+.scanLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--ap-accent) 30%, var(--ap-accent) 70%, transparent 100%);
+  z-index: 10;
+  opacity: 0.4;
+  animation: scanSweep 3s ease-in-out infinite;
+  pointer-events: none;
+  box-shadow: 0 0 12px var(--ap-accent);
+}
+
+@keyframes scanSweep {
+  0% { top: 0; }
+  100% { top: 100%; }
+}
+
+/* --- Header --- */
 .dashHeader {
   display: flex;
   align-items: center;
@@ -199,89 +221,210 @@
   letter-spacing: -0.01em;
 }
 
-.dashStatus {
+/* --- Phase label badge --- */
+.phaseLabel {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: var(--ap-green);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  transition: all 0.5s ease;
 }
 
-.statusDot {
+.phaseDot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--ap-green);
-  animation: statusPulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+  animation: phasePulse 2s ease-in-out infinite;
 }
 
-@keyframes statusPulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
-  50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(34, 197, 94, 0); }
+@keyframes phasePulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 currentColor; }
+  50% { opacity: 0.7; box-shadow: 0 0 0 4px transparent; }
 }
 
-/* --- Nodes row --- */
-.nodesRow {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  padding: 12px 14px;
+.phase_monitoring { color: var(--ap-green); background: var(--ap-green-soft); }
+.phase_monitoring .phaseDot { background: var(--ap-green); }
+
+.phase_detecting { color: var(--ap-red); background: var(--ap-red-soft); }
+.phase_detecting .phaseDot { background: var(--ap-red); animation-duration: 0.8s; }
+
+.phase_responding { color: var(--ap-accent); background: var(--ap-accent-soft); }
+.phase_responding .phaseDot { background: var(--ap-accent); }
+
+.phase_resolved { color: var(--ap-green); background: var(--ap-green-soft); }
+.phase_resolved .phaseDot { background: var(--ap-green); }
+
+.phase_summary { color: var(--ap-green); background: var(--ap-green-soft); }
+.phase_summary .phaseDot { background: var(--ap-green); }
+
+/* --- Top row: Health ring + Actions --- */
+.topRow {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
   border-bottom: 1px solid var(--ap-dash-border);
 }
 
-.nodeCard {
-  background: var(--ap-card-bg);
-  border: 1px solid var(--ap-dash-border);
-  border-radius: 10px;
-  padding: 8px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.nodeHeader {
+.healthPanel {
+  flex-shrink: 0;
+  width: 110px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+}
+
+.healthRing {
+  width: 100%;
+  height: auto;
+}
+
+.healthArc {
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.5s ease;
+}
+
+.healthValue {
+  font-size: 1.4rem;
+  font-weight: 800;
+  fill: var(--ap-text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.healthCaption {
+  font-size: 0.6rem;
+  font-weight: 600;
+  fill: var(--ap-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* --- Actions panel --- */
+.actionsPanel {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.actionsTitle {
   font-size: 0.62rem;
-  font-weight: 600;
-  color: var(--ap-text-primary);
-}
-
-.nodeHeader svg {
-  color: var(--ap-accent);
-}
-
-.nodeBar {
-  height: 4px;
-  border-radius: 2px;
-  background: var(--ap-bar-track);
-  overflow: hidden;
-}
-
-.nodeBarFill {
-  height: 100%;
-  border-radius: 2px;
-  transition: width 2.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nodePercent {
-  font-size: 0.58rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--ap-text-tertiary);
-  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
 }
 
-/* --- Pods table --- */
-.podsSection {
+.actionRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: actionFadeIn 0.5s ease;
+}
+
+@keyframes actionFadeIn {
+  from { opacity: 0; transform: translateX(8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.actionText {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--ap-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Action icons */
+.iconScan,
+.iconSpin,
+.iconAction {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid var(--ap-accent);
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+.iconScan {
+  border-color: var(--ap-green);
+  border-top-color: transparent;
+}
+
+.iconAction {
+  border-color: var(--ap-accent);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.iconCheck {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--ap-green-soft);
+  color: var(--ap-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconWarn {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--ap-warn-soft);
+  color: var(--ap-warn);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconDone {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--ap-green);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconStar {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--ap-accent-soft);
+  color: var(--ap-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* --- Services table --- */
+.svcSection {
   padding: 10px 14px;
   border-bottom: 1px solid var(--ap-dash-border);
 }
 
-.podsHeader {
+.svcHeaderRow {
   display: grid;
-  grid-template-columns: 1.4fr 0.9fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1.1fr 1.1fr;
   gap: 6px;
   font-size: 0.58rem;
   font-weight: 600;
@@ -293,46 +436,67 @@
   margin-bottom: 4px;
 }
 
-.podRow {
+.svcRow {
   display: grid;
-  grid-template-columns: 1.4fr 0.9fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1.1fr 1.1fr;
   gap: 6px;
   padding: 5px 0;
   align-items: center;
+  border-radius: 6px;
+  transition: background 0.5s ease;
 }
 
-.podName {
+.svcRowHighlight {
+  background: var(--ap-red-soft);
+  padding: 5px 6px;
+  margin: 0 -6px;
+}
+
+.svcName {
   font-size: 0.65rem;
   font-weight: 600;
   color: var(--ap-text-primary);
   font-family: 'SF Mono', 'Fira Code', monospace;
 }
 
-.podStatus {
-  font-size: 0.6rem;
-  font-weight: 600;
-  display: flex;
+/* --- Status badge --- */
+.statusBadge {
+  display: inline-flex;
   align-items: center;
   gap: 4px;
+  font-size: 0.6rem;
+  font-weight: 600;
 }
 
-.podRunning {
-  color: var(--ap-green);
-}
-
-.podScaling {
-  color: var(--ap-accent);
-}
-
-.scalingPulse {
+.statusBadgeDot {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--ap-accent);
-  animation: statusPulse 1.5s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
-.podMetric {
+.status_healthy { color: var(--ap-green); }
+.status_healthy .statusBadgeDot { background: var(--ap-green); }
+
+.status_warning { color: var(--ap-warn); }
+.status_warning .statusBadgeDot { background: var(--ap-warn); animation: statusBlink 1s ease-in-out infinite; }
+
+.status_critical { color: var(--ap-red); }
+.status_critical .statusBadgeDot { background: var(--ap-red); animation: statusBlink 0.6s ease-in-out infinite; }
+
+.status_scaling { color: var(--ap-accent); }
+.status_scaling .statusBadgeDot { background: var(--ap-accent); animation: statusBlink 1.2s ease-in-out infinite; }
+
+.status_optimizing { color: var(--ap-mem); }
+.status_optimizing .statusBadgeDot { background: var(--ap-mem); animation: statusBlink 1.2s ease-in-out infinite; }
+
+@keyframes statusBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* --- Service metrics --- */
+.svcMetric {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -341,29 +505,31 @@
   color: var(--ap-text-secondary);
 }
 
-.metricBar {
+.svcBar {
   flex: 1;
-  height: 3px;
-  border-radius: 1.5px;
+  height: 4px;
+  border-radius: 2px;
   background: var(--ap-bar-track);
   overflow: hidden;
   min-width: 24px;
 }
 
-.metricFill {
+.svcBarFill,
+.svcBarFillMem {
   display: block;
   height: 100%;
-  border-radius: 1.5px;
-  background: var(--ap-accent);
-  transition: width 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1), background 0.5s ease;
 }
 
-.metricFillMem {
-  display: block;
-  height: 100%;
-  border-radius: 1.5px;
-  background: var(--ap-mem);
-  transition: width 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+.svcValWarn {
+  color: var(--ap-warn);
+  font-weight: 700;
+}
+
+.svcValCrit {
+  color: var(--ap-red);
+  font-weight: 700;
 }
 
 /* --- Event ticker --- */
@@ -376,6 +542,17 @@
   color: var(--ap-accent);
   font-size: 0.65rem;
   font-weight: 600;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.eventTickerWarn {
+  background: var(--ap-red-soft);
+  color: var(--ap-red);
+}
+
+.eventTickerAction {
+  background: var(--ap-accent-soft);
+  color: var(--ap-accent);
 }
 
 .eventTicker svg {
@@ -433,52 +610,83 @@
   .storyGrid {
     padding: 0 20px 60px;
   }
+
+  .topRow {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .healthPanel {
+    width: 90px;
+  }
+
+  .healthValue {
+    font-size: 1.2rem;
+  }
+
+  .actionText {
+    font-size: 0.62rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .nodesRow {
-    gap: 6px;
-    padding: 10px 10px;
+  .topRow {
+    gap: 8px;
+    padding: 10px;
   }
 
-  .nodeCard {
-    padding: 6px 8px;
+  .healthPanel {
+    width: 80px;
   }
 
-  .podsSection {
+  .healthValue {
+    font-size: 1rem;
+  }
+
+  .svcSection {
     padding: 8px 10px;
   }
 
-  .podsHeader,
-  .podRow {
+  .svcHeaderRow,
+  .svcRow {
     grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
     gap: 4px;
   }
 
-  .podName {
+  .svcName {
     font-size: 0.6rem;
+  }
+
+  .actionsTitle {
+    font-size: 0.55rem;
+  }
+
+  .actionText {
+    font-size: 0.58rem;
   }
 }
 
 /* === REDUCED MOTION === */
 @media (prefers-reduced-motion: reduce) {
   .glowOrb1,
-  .glowOrb2 {
-    animation: none !important;
-  }
+  .glowOrb2 { animation: none !important; }
 
-  .statusDot,
-  .scalingPulse {
-    animation: none !important;
-  }
+  .phaseDot { animation: none !important; }
 
-  .nodeBarFill,
-  .metricFill,
-  .metricFillMem {
-    transition: none !important;
-  }
+  .statusBadgeDot { animation: none !important; }
 
-  .eventText {
-    animation: none !important;
-  }
+  .iconScan,
+  .iconSpin,
+  .iconAction { animation: none !important; }
+
+  .scanLine { animation: none !important; }
+
+  .svcBarFill,
+  .svcBarFillMem { transition: none !important; }
+
+  .healthArc { transition: none !important; }
+
+  .eventText { animation: none !important; }
+
+  .actionRow { animation: none !important; }
 }

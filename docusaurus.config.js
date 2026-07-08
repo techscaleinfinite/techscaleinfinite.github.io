@@ -307,51 +307,7 @@ const config = {
 
       footer: {
         style: 'light',
-        links: [
-          {
-            title: 'Product',
-            items: [
-              { label: 'Playstore', to: '/playstore' },
-              { label: 'Tutorial', to: '/quick-start' },
-              { label: 'Cloud Float', to: '/introduction/cloud-float' },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              { label: 'Blogs', to: '/blogs' },
-              { label: 'FAQ', to: '/faq' },
-              { label: 'Community', to: '/community' },
-            ],
-          },
-          {
-            title: 'Company',
-            items: [
-              { label: 'About', to: '/introduction/about-scale-infinite' },
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/scaleinfinite/',
-              },
-              {
-                label: 'Instagram',
-                href: 'https://www.instagram.com/scaleinfinite/',
-              },
-            ],
-          },
-          {
-            title: 'Get Started',
-            items: [
-              {
-                label: 'Sign in with Google',
-                href: 'https://pods.fltt.fr',
-              },
-              {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/channel/UCyqMBvdl3onfBG4bJ31uk-A',
-              },
-            ],
-          },
-        ],
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()} ScaleInfinite Private Limited. All rights reserved.`,
       },
 

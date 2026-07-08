@@ -972,7 +972,7 @@ nav.navbar {
   border-top: 1px solid var(--ifm-color-primary-footer-border);
   background: var(--si-bg-secondary);
   display: flex;
-  padding: 48px 24px 32px;
+  padding: 0 24px 16px;
   transition: background var(--si-transition-slow), border-color var(--si-transition-slow);
 }
 
@@ -1014,9 +1014,9 @@ nav.navbar {
   font-size: 0.875rem;
   opacity: 0.5;
   letter-spacing: 0.01em;
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--si-border-color);
+  margin-top: 0;
+  padding-top: 1rem;
+  border-top: none;
 }
 
 /* ============================================

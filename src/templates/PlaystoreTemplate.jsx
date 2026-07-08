@@ -33,6 +33,29 @@ const buildInstallUrl = ({
   return `https://pods.fltt.fr/create-app?install-app=${encodeURIComponent(title)}&port=${encodeURIComponent(port)}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(env))}&work_dir=${encodeURIComponent(JSON.stringify(work_dir))}`;
 };
 
+const FallbackImg = ({ src, alt, className, fallbackColor, fallbackStyle }) => {
+  const [failed, setFailed] = useState(false);
+  if (failed || !src) {
+    const color = fallbackColor || 'var(--ifm-color-primary)';
+    return (
+      <div
+        className="ps-json-initial"
+        style={{ color, background: `${color}12`, ...fallbackStyle }}
+      >
+        {(alt || '?').charAt(0).toUpperCase()}
+      </div>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      onError={() => setFailed(true)}
+    />
+  );
+};
+
 const stripHtml = (html) => {
   if (!html) return '';
   return html.replace(/<[^>]*>/g, '').replace(/&[a-zA-Z]+;/g, ' ').replace(/\s+/g, ' ').trim();
@@ -90,7 +113,7 @@ const AppItem = ({ image, title, category, slug, rating, pull_count, port, descr
 
       <a href={`/playstore/${category.toLowerCase()}/${slug}`} className="ps-app-image-link">
         <div className="ps-app-image-wrap">
-          <img src={image} alt={title} className="ps-app-image" />
+          <FallbackImg src={image} alt={title} className="ps-app-image" />
         </div>
       </a>
 
@@ -182,6 +205,42 @@ const EXCLUDED_CATEGORIES = new Set([
   'other tools', 'video surveillance', 'wikis', 'custom docker image', 'to do',
 ]);
 
+const SkeletonCard = () => (
+  <div className="ps-app-card ps-skeleton-card">
+    <div className="ps-app-image-wrap ps-skeleton-shimmer" />
+    <div className="ps-app-body">
+      <div className="ps-skeleton-line ps-skeleton-title ps-skeleton-shimmer" />
+      <div className="ps-skeleton-line ps-skeleton-desc-1 ps-skeleton-shimmer" />
+      <div className="ps-skeleton-line ps-skeleton-desc-2 ps-skeleton-shimmer" />
+      <div className="ps-skeleton-badge ps-skeleton-shimmer" />
+    </div>
+    <div className="ps-app-footer ps-skeleton-footer">
+      <div className="ps-skeleton-stat ps-skeleton-shimmer" />
+      <div className="ps-skeleton-btn ps-skeleton-shimmer" />
+      <div className="ps-skeleton-stat ps-skeleton-shimmer" />
+    </div>
+  </div>
+);
+
+const SkeletonCategorySection = () => (
+  <section className="ps-category-section ps-json-section">
+    <div className="ps-container">
+      <div className="ps-category-header">
+        <div className="ps-json-title-wrap">
+          <div className="ps-skeleton-icon ps-skeleton-shimmer" />
+          <div className="ps-skeleton-line ps-skeleton-section-title ps-skeleton-shimmer" />
+        </div>
+        <div className="ps-skeleton-line ps-skeleton-viewall ps-skeleton-shimmer" />
+      </div>
+      <div className="ps-skeleton-slider">
+        {[0, 1, 2, 3].map((i) => (
+          <SkeletonCard key={i} />
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 const PlaystoreTemplate = () => {
   const [bookmarkedSlugs, setBookmarkedSlugs] = useState([]);
   const [wishlistApps, setWishlistApps] = useState(JSON.parse(Cookies.get('wishlist') || '[]'));
@@ -193,6 +252,7 @@ const PlaystoreTemplate = () => {
   const [selectedFilter, setSelectedFilter] = useState('recommended');
   const [showPrivacyPopup, setShowPrivacyPopup] = useState(false);
   const [pendingBookmark, setPendingBookmark] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -252,6 +312,8 @@ const PlaystoreTemplate = () => {
         const appCategories = await catResponse.json();
         setJsonCategories(appCategories);
       } catch (e) { /* appCategories.json not available */ }
+
+      setLoading(false);
     })();
   }, []);
 
@@ -376,7 +438,9 @@ const PlaystoreTemplate = () => {
 
         {/* App Grid */}
         <div className={`ps-app-grid ${filteredApps.length > 12 ? 'ps-app-grid-scroll' : ''}`}>
-          {filteredApps.length > 0 ? (
+          {loading ? (
+            Array.from({ length: 8 }).map((_, i) => <SkeletonCard key={i} />)
+          ) : filteredApps.length > 0 ? (
             filteredApps.map((app, idx) => (
               <AppItem
                 key={idx}
@@ -402,6 +466,11 @@ const PlaystoreTemplate = () => {
       </div>
 
       {/* JSON Category Sections */}
+      {loading && (
+        <>
+          {[0, 1, 2].map((i) => <SkeletonCategorySection key={i} />)}
+        </>
+      )}
       {jsonCategories.map((cat) => {
         const CatIcon = CATEGORY_ICONS[cat.icon] || BrainCircuit;
         const catColor = CATEGORY_COLORS[cat.id] || '#6366f1';
@@ -458,13 +527,12 @@ const PlaystoreTemplate = () => {
 
                         <div className="ps-app-image-link">
                           <div className="ps-app-image-wrap">
-                            {app.logo ? (
-                              <img src={app.logo} alt={app.display} className="ps-app-image" />
-                            ) : (
-                              <div className="ps-json-initial" style={{ color: catColor, background: `${catColor}12` }}>
-                                {app.display.charAt(0).toUpperCase()}
-                              </div>
-                            )}
+                            <FallbackImg
+                              src={app.logo}
+                              alt={app.display}
+                              className="ps-app-image"
+                              fallbackColor={catColor}
+                            />
                           </div>
                         </div>
 

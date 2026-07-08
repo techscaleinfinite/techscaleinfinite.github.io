@@ -1,16 +1,17 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import styles from './styles.module.css';
 
-const TOTAL_CYCLE = 18000;
+const TOTAL_CYCLE = 20000;
 
 const PHASES = [
-  { id: 'idle',      start: 0,    end: 1500 },
-  { id: 'typing',    start: 1500, end: 4000 },
-  { id: 'searching', start: 4000, end: 5500 },
-  { id: 'results',   start: 5500, end: 8000 },
-  { id: 'installing',start: 8000, end: 13500 },
-  { id: 'deployed',  start: 13500,end: 17000 },
-  { id: 'reset',     start: 17000,end: 18000 },
+  { id: 'idle',       start: 0,     end: 1200 },
+  { id: 'typing',     start: 1200,  end: 3800 },
+  { id: 'searching',  start: 3800,  end: 4500 },
+  { id: 'results',    start: 4500,  end: 6500 },
+  { id: 'popup',      start: 6500,  end: 10000 },
+  { id: 'deployed',   start: 10000, end: 13500 },
+  { id: 'appPage',    start: 13500, end: 18000 },
+  { id: 'reset',      start: 18000, end: 20000 },
 ];
 
 function getPhase(elapsed) {
@@ -20,15 +21,7 @@ function getPhase(elapsed) {
   return 'idle';
 }
 
-const SEARCH_TEXT = 'Nextcloud';
-
-const INSTALL_STEPS = [
-  { label: 'Pulling image…', duration: 1500 },
-  { label: 'Creating container…', duration: 1200 },
-  { label: 'Configuring network…', duration: 1000 },
-  { label: 'Starting services…', duration: 800 },
-  { label: 'Running health checks…', duration: 1000 },
-];
+const SEARCH_TEXT = 'jellyfin';
 
 export default function CloudFloatVisual() {
   const [elapsed, setElapsed] = useState(0);
@@ -48,146 +41,112 @@ export default function CloudFloatVisual() {
     return () => cancelAnimationFrame(rafRef.current);
   }, [tick]);
 
+  useEffect(() => {
+    ['/images/jellyfin.jpg', '/images/install-popup.jpg', '/images/myaccount.jpg', '/images/jellyfin-page.jpg'].forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   const phase = getPhase(elapsed);
 
   const typingProgress = phase === 'typing'
-    ? Math.min(1, (elapsed - 1500) / 2200)
+    ? Math.min(1, (elapsed - 1200) / 2300)
     : phase === 'idle' ? 0 : 1;
   const visibleChars = Math.floor(typingProgress * SEARCH_TEXT.length);
   const searchValue = SEARCH_TEXT.slice(0, visibleChars);
   const showCursor = phase === 'typing' || phase === 'idle';
-
   const showSearching = phase === 'searching';
-  const showResults = ['results', 'installing', 'deployed'].includes(phase);
 
-  const installElapsed = phase === 'installing' ? elapsed - 8000 : phase === 'deployed' ? 5500 : 0;
-  let totalStepTime = 0;
-  let currentStep = -1;
-  let stepProgress = 0;
-  for (let i = 0; i < INSTALL_STEPS.length; i++) {
-    if (installElapsed > totalStepTime) {
-      const inStep = installElapsed - totalStepTime;
-      currentStep = i;
-      stepProgress = Math.min(1, inStep / INSTALL_STEPS[i].duration);
-    }
-    totalStepTime += INSTALL_STEPS[i].duration;
-  }
+  const isScreen0 = ['idle', 'typing', 'searching'].includes(phase);
+  const isScreen1 = phase === 'results';
+  const isScreen2 = phase === 'popup';
+  const isScreen3 = phase === 'deployed';
+  const isScreen4 = phase === 'appPage';
+  const isReset = phase === 'reset';
 
-  const overallProgress = phase === 'deployed' ? 100 : phase === 'installing'
-    ? Math.min(99, Math.round((installElapsed / 5500) * 100))
-    : 0;
+  const showInstallClick = phase === 'results' && (elapsed - 4500) > 1400;
+  const showPopupInstallClick = phase === 'popup' && (elapsed - 6500) > 2800;
+  const showUrlClick = phase === 'deployed' && (elapsed - 10000) > 2500;
 
-  const showInstall = phase === 'installing';
-  const showDeployed = phase === 'deployed';
+  const steps = ['Search', 'Discover', 'Install', 'Deploy', 'Launch'];
+  let activeStep = 0;
+  if (phase === 'results') activeStep = 1;
+  if (phase === 'popup') activeStep = 2;
+  if (phase === 'deployed') activeStep = 3;
+  if (phase === 'appPage') activeStep = 4;
 
   return (
     <div className={styles.wrapper}>
-      <img
-        src="/images/cloud-compute.jpg"
-        alt="CloudFloat Create App interface"
-        className={styles.baseImage}
-        loading="lazy"
-      />
-
-      {/* Search overlay */}
-      <div className={styles.searchOverlay}>
-        <div className={styles.searchBar}>
-          <svg className={styles.searchIcon} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-          </svg>
-          <span className={styles.searchText}>
-            {searchValue}
-            {showCursor && <span className={styles.cursor}>|</span>}
-          </span>
-          {showSearching && (
-            <div className={styles.spinner} />
-          )}
-        </div>
+      {/* Screen 0: Create App — in flow, sets container height */}
+      <div className={styles.screenBase} style={{ opacity: isScreen0 || isReset ? 1 : 0 }}>
+        <img
+          src="/images/cloud-compute.jpg"
+          alt="Create App – Docker Hub search"
+          className={styles.baseImage}
+        />
+        {isScreen0 && (
+          <div className={styles.searchTextOverlay}>
+            <span className={styles.typedText}>
+              {searchValue}
+              {showCursor && <span className={styles.cursor}>|</span>}
+            </span>
+            {showSearching && <div className={styles.searchSpinner} />}
+          </div>
+        )}
       </div>
 
-      {/* Results card */}
-      <div className={`${styles.resultCard} ${showResults ? styles.resultVisible : ''}`}>
-        <div className={styles.resultInner}>
-          <div className={styles.resultIcon}>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-              <rect width="24" height="24" rx="6" fill="#0082c9"/>
-              <path d="M12 6.5a5.5 5.5 0 0 0-5.5 5.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5S15.04 6.5 12 6.5zm0 9.5c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="white"/>
-              <circle cx="12" cy="12" r="1.5" fill="white"/>
-            </svg>
-          </div>
-          <div className={styles.resultInfo}>
-            <span className={styles.resultName}>Nextcloud</span>
-            <span className={styles.resultDesc}>Self-hosted file sync, share and collaboration platform</span>
-          </div>
-          <div className={styles.resultMeta}>
-            <span className={styles.metaTag}>Port 80</span>
-            <span className={styles.metaTag}>200 mcpu</span>
-            <span className={styles.metaTag}>384 MB</span>
-          </div>
-          {!showInstall && !showDeployed && (
-            <button className={styles.installBtn}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
-              </svg>
-              Install
-            </button>
-          )}
-        </div>
-
-        {/* Install progress */}
-        {showInstall && (
-          <div className={styles.installSection}>
-            <div className={styles.progressWrap}>
-              <div className={styles.progressTrack}>
-                <div className={styles.progressFill} style={{ width: `${overallProgress}%` }} />
-              </div>
-              <span className={styles.progressPct}>{overallProgress}%</span>
-            </div>
-            <div className={styles.stepsList}>
-              {INSTALL_STEPS.map((step, i) => (
-                <div key={i} className={`${styles.stepItem} ${i < currentStep ? styles.stepDone : i === currentStep ? styles.stepActive : styles.stepPending}`}>
-                  <div className={styles.stepDot}>
-                    {i < currentStep ? (
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    ) : i === currentStep ? (
-                      <div className={styles.stepSpinner} />
-                    ) : null}
-                  </div>
-                  <span className={styles.stepLabel}>{step.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+      {/* Screen 1: Jellyfin search result */}
+      <div className={styles.screenOverlay} style={{ opacity: isScreen1 ? 1 : 0 }}>
+        <img src="/images/jellyfin.jpg" alt="Jellyfin search result" className={styles.overlayImage} />
+        {showInstallClick && (
+          <div className={`${styles.clickRipple} ${styles.installClickPos}`} />
         )}
+      </div>
 
-        {/* Deployed */}
-        {showDeployed && (
-          <div className={styles.deployedSection}>
-            <div className={styles.deployedBanner}>
-              <div className={styles.deployedCheck}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div className={styles.deployedText}>
-                <span className={styles.deployedTitle}>Deployed Successfully</span>
-                <span className={styles.deployedUrl}>nextcloud.pods.fltt.fr</span>
-              </div>
-            </div>
-            <div className={styles.deployedStats}>
-              <div className={styles.dStat}>
-                <span className={styles.dStatValue}>Running</span>
-                <span className={styles.dStatLabel}>Status</span>
-              </div>
-              <div className={styles.dStat}>
-                <span className={styles.dStatValue}>1/1</span>
-                <span className={styles.dStatLabel}>Pods</span>
-              </div>
-              <div className={styles.dStat}>
-                <span className={styles.dStatValue}>Healthy</span>
-                <span className={styles.dStatLabel}>Health</span>
-              </div>
-            </div>
-          </div>
+      {/* Screen 2: Install popup */}
+      <div className={styles.screenOverlay} style={{ opacity: isScreen2 ? 1 : 0 }}>
+        <img src="/images/install-popup.jpg" alt="Jellyfin install configuration" className={styles.overlayImage} />
+        {showPopupInstallClick && (
+          <div className={`${styles.clickRipple} ${styles.popupInstallClickPos}`} />
         )}
+      </div>
+
+      {/* Screen 3: My Apps (deployed) */}
+      <div className={styles.screenOverlay} style={{ opacity: isScreen3 ? 1 : 0 }}>
+        <img src="/images/myaccount.jpg" alt="My Apps – deployed" className={styles.overlayImage} />
+        {isScreen3 && <div className={styles.urlHighlight} />}
+        {showUrlClick && (
+          <div className={`${styles.clickRipple} ${styles.urlClickPos}`} />
+        )}
+      </div>
+
+      {/* Screen 4: Jellyfin running */}
+      <div className={styles.screenOverlay} style={{ opacity: isScreen4 ? 1 : 0 }}>
+        <img src="/images/jellyfin-page.jpg" alt="Jellyfin application running" className={styles.overlayImage} />
+      </div>
+
+      {/* Workflow step indicator */}
+      <div className={styles.stepIndicator}>
+        {steps.map((label, i) => (
+          <React.Fragment key={label}>
+            {i > 0 && (
+              <div className={`${styles.stepLine} ${i <= activeStep ? styles.stepLineDone : ''}`} />
+            )}
+            <div className={`${styles.stepChip} ${i === activeStep ? styles.stepChipActive : i < activeStep ? styles.stepChipDone : ''}`}>
+              <div className={styles.stepDot}>
+                {i < activeStep ? (
+                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                ) : i === activeStep ? (
+                  <div className={styles.stepPulse} />
+                ) : null}
+              </div>
+              <span className={styles.stepLabel}>{label}</span>
+            </div>
+          </React.Fragment>
+        ))}
       </div>
     </div>
   );

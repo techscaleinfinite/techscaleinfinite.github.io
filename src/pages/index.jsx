@@ -89,42 +89,40 @@ const howItWorksCards = [
   {
     step: 1,
     icon: Search,
-    title: 'Search Applications',
-    desc: 'Find 1000+ applications from our database & Docker Hub using the search bar.',
+    title: 'Live Search on Docker Hub',
+    desc: 'Search thousands of Docker images in real time directly from Docker Hub. Find the exact application or service you need instantly.',
   },
   {
     step: 2,
     icon: Download,
-    title: 'Install Easily',
-    desc: 'Instantly install with custom names, ports & environment variables. No complex configuration needed.',
+    title: 'Install in Seconds',
+    desc: 'Deploy any application with one click. Just set a name, port, and environment variables — your app is live in seconds, not hours.',
   },
   {
     step: 3,
     icon: Globe,
-    title: 'Ready to Use',
-    desc: 'Access your application via HTTP or TCP/UDP. Everything is configured and ready to go.',
+    title: 'S3 Volume Mount',
+    desc: 'Attach S3-compatible storage as persistent volumes for your applications. Your data stays safe across redeployments and scales with you.',
   },
   {
     step: 4,
     icon: Lock,
-    title: 'Fully Secured',
-    desc: 'Choose from different security layers. SSL, firewalls, and access controls built right in.',
+    title: 'AI Autopilot',
+    desc: 'Let AI handle the heavy lifting. Auto-configure ports, environment variables, and resources based on the image — smart deployment with zero guesswork.',
   },
   {
     step: 5,
     icon: UserCheck,
-    title: 'User Friendly',
-    desc: 'Designed for both technical and non-technical users to deploy applications securely.',
+    title: 'Live Monitoring',
+    desc: 'Track CPU, memory, and network usage in real time. Get instant visibility into your application health with live performance dashboards.',
   },
   {
     step: 6,
     icon: LayoutGrid,
-    title: 'Unlimited Choice',
-    desc: "You're not limited to a list. Install anything from Docker Hub or our curated marketplace.",
+    title: 'Terminal, Logs & Events',
+    desc: 'Access a built-in terminal, stream live logs, and track deployment events — all from your browser. Debug and manage without leaving the dashboard.',
   },
 ];
-
-
 
 
 const platformSections = [
@@ -163,13 +161,21 @@ const platformSections = [
   },
 ];
 
-const brandLogos = [
-  'images/brand-light-01.svg',
-  'images/brand-light-02.svg',
-  'images/brand-light-03.svg',
-  'images/brand-light-04.svg',
-  'images/brand-light-05.svg',
-  'images/brand-light-06.svg',
+const showcaseApps = [
+  'https://cdn.scaleinfinite.fr/app-images-webp/nextcloud.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/wordpress.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/grafana/grafana.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/postgres.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/jenkins.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/nginx.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/redis.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/mysql.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/ghost.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/drupal.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/joomla.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/mongo.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/traefik.webp',
+  'https://cdn.scaleinfinite.fr/app-images-webp/caddy.webp',
 ];
 
 export default function Home() {
@@ -287,13 +293,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== BRAND LOGOS ===== */}
+        {/* ===== MUST TRY APPS ===== */}
         <section className={styles.brands}>
           <div className={styles.brandsContainer}>
-            <p className={styles.brandsLabel}>Powering applications with industry-leading technologies</p>
+            <h2 className={styles.brandsLabel}>Must Try Self Hosted Applications</h2>
             <div className={styles.brandsTrack}>
               <div className={styles.brandsSlide}>
-                {[...brandLogos, ...brandLogos].map((logo, i) => (
+                {[...showcaseApps, ...showcaseApps].map((logo, i) => (
                   <img key={i} src={logo} alt="" className={styles.brandLogo} />
                 ))}
               </div>
@@ -349,10 +355,10 @@ export default function Home() {
                 <span className={styles.sectionBadge}>Platform</span>
                 <h2 className={styles.twoColTitle}>What is CloudFloat</h2>
                 <p className={styles.twoColDesc}>
-                  Instantly install apps. Easily deploy production-ready applications.
-                  No more tinkering with Dockerfiles and manually provisioning
-                  databases. Get up and running in minutes with our intelligent
-                  deployment platform.
+                  Live search images on Docker Hub and get them up and running
+                  in seconds. No more tinkering with Dockerfiles and manually
+                  provisioning databases. Deploy production-ready applications
+                  with our intelligent deployment platform.
                 </p>
                 <a href={OAUTH_URL} className={styles.ctaPrimary}>
                   Get Started Free
@@ -394,7 +400,7 @@ export default function Home() {
               <div className={styles.sectionHeader}>
                 <span className={styles.sectionBadge}>How It Works</span>
                 <h2 className={styles.sectionTitle}>
-                  Deploy applications in minutes
+                  Deploy applications in seconds
                 </h2>
                 <p className={styles.sectionSubtitle}>
                   From search to deploy in simple steps. Our platform makes

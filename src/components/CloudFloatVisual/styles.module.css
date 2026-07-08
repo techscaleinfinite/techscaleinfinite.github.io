@@ -1,40 +1,6 @@
 /* ===========================================
-   CloudFloatVisual – Create App Workflow
+   CloudFloatVisual – Docker Hub Search & Deploy Workflow
    =========================================== */
-
-:root {
-  --cfv-overlay-bg: rgba(255, 255, 255, 0.88);
-  --cfv-card-bg: #ffffff;
-  --cfv-card-border: #e2e8f0;
-  --cfv-card-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  --cfv-search-bg: #ffffff;
-  --cfv-search-border: #cbd5e1;
-  --cfv-text-primary: #0f172a;
-  --cfv-text-secondary: #475569;
-  --cfv-text-tertiary: #94a3b8;
-  --cfv-accent: #6366f1;
-  --cfv-accent-soft: rgba(99, 102, 241, 0.1);
-  --cfv-green: #22c55e;
-  --cfv-green-soft: rgba(34, 197, 94, 0.1);
-  --cfv-progress-track: #e2e8f0;
-  --cfv-tag-bg: #f1f5f9;
-  --cfv-tag-border: #e2e8f0;
-}
-
-[data-theme='dark'] {
-  --cfv-overlay-bg: rgba(15, 23, 42, 0.88);
-  --cfv-card-bg: #1e293b;
-  --cfv-card-border: #334155;
-  --cfv-card-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-  --cfv-search-bg: #1e293b;
-  --cfv-search-border: #475569;
-  --cfv-text-primary: #f1f5f9;
-  --cfv-text-secondary: #94a3b8;
-  --cfv-text-tertiary: #64748b;
-  --cfv-progress-track: #334155;
-  --cfv-tag-bg: #334155;
-  --cfv-tag-border: #475569;
-}
 
 /* === Wrapper === */
 .wrapper {
@@ -44,52 +10,63 @@
   overflow: hidden;
 }
 
+/* === Base screen (in flow, sets container height) === */
+.screenBase {
+  position: relative;
+  width: 100%;
+  transition: opacity 0.7s ease;
+}
+
 .baseImage {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* === Search bar overlay === */
-.searchOverlay {
+/* === Overlay screens (absolute, crossfade) === */
+.screenOverlay {
   position: absolute;
-  top: 2.8%;
-  left: 20%;
-  right: 14%;
-  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+}
+
+.overlayImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  display: block;
+}
+
+/* === Search text overlay (over the search bar in cloud-compute.jpg) === */
+.searchTextOverlay {
+  position: absolute;
+  top: 2.2%;
+  left: 39.5%;
+  width: 39%;
+  height: 4.2%;
   display: flex;
   align-items: center;
+  padding: 0 8px;
+  z-index: 3;
+  background: #f0f2f5;
+  pointer-events: none;
 }
 
-.searchBar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 58%;
-  padding: 7px 14px;
-  background: var(--cfv-search-bg);
-  border: 1.5px solid var(--cfv-search-border);
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.searchIcon {
-  color: var(--cfv-text-tertiary);
-  flex-shrink: 0;
-}
-
-.searchText {
-  font-size: 0.78rem;
-  font-family: 'Inter', 'RobotoFlex', sans-serif;
-  color: var(--cfv-text-primary);
+.typedText {
+  font-size: 0.85rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1e293b;
   font-weight: 500;
   white-space: nowrap;
-  min-height: 1.2em;
 }
 
 .cursor {
-  color: var(--cfv-accent);
+  color: #6366f1;
   font-weight: 300;
   animation: blink 1s step-end infinite;
 }
@@ -99,11 +76,11 @@
   50% { opacity: 0; }
 }
 
-.spinner {
+.searchSpinner {
   width: 14px;
   height: 14px;
-  border: 2px solid var(--cfv-progress-track);
-  border-top-color: var(--cfv-accent);
+  border: 2px solid #e2e8f0;
+  border-top-color: #6366f1;
   border-radius: 50%;
   animation: spin 0.7s linear infinite;
   margin-left: auto;
@@ -114,311 +91,161 @@
   to { transform: rotate(360deg); }
 }
 
-/* === Result card === */
-.resultCard {
+/* === Click ripple effect === */
+.clickRipple {
   position: absolute;
-  top: 22%;
-  left: 20%;
-  right: 6%;
-  z-index: 3;
-  background: var(--cfv-card-bg);
-  border: 1px solid var(--cfv-card-border);
-  border-radius: 14px;
-  box-shadow: var(--cfv-card-shadow);
-  opacity: 0;
-  transform: translateY(12px) scale(0.97);
-  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 50px;
+  height: 50px;
+  z-index: 5;
   pointer-events: none;
-  overflow: hidden;
 }
 
-.resultCard.resultVisible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  pointer-events: auto;
-}
-
-.resultInner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 16px;
-  flex-wrap: wrap;
-}
-
-.resultIcon {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 130, 201, 0.15);
-}
-
-.resultIcon svg {
-  display: block;
-}
-
-.resultInfo {
-  flex: 1;
-  min-width: 120px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.resultName {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--cfv-text-primary);
-  letter-spacing: -0.01em;
-}
-
-.resultDesc {
-  font-size: 0.68rem;
-  color: var(--cfv-text-secondary);
-  line-height: 1.4;
-}
-
-.resultMeta {
-  display: flex;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.metaTag {
-  font-size: 0.6rem;
-  font-weight: 600;
-  color: var(--cfv-text-tertiary);
-  background: var(--cfv-tag-bg);
-  border: 1px solid var(--cfv-tag-border);
-  padding: 2px 8px;
-  border-radius: 6px;
-}
-
-.installBtn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 16px;
-  border: none;
-  border-radius: 8px;
-  background: var(--cfv-accent);
-  color: white;
-  font-size: 0.72rem;
-  font-weight: 600;
-  cursor: pointer;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
-  animation: btnPulse 1.5s ease-in-out infinite;
-}
-
-@keyframes btnPulse {
-  0%, 100% { box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3); }
-  50% { box-shadow: 0 2px 16px rgba(99, 102, 241, 0.5); }
-}
-
-/* === Install progress === */
-.installSection {
-  padding: 12px 16px 14px;
-  border-top: 1px solid var(--cfv-card-border);
-  animation: fadeSlideIn 0.4s ease;
-}
-
-@keyframes fadeSlideIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.progressWrap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.progressTrack {
-  flex: 1;
-  height: 6px;
-  border-radius: 3px;
-  background: var(--cfv-progress-track);
-  overflow: hidden;
-}
-
-.progressFill {
-  height: 100%;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--cfv-accent), #818cf8);
-  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-}
-
-.progressFill::after {
+.clickRipple::before,
+.clickRipple::after {
   content: '';
   position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-  animation: shimmer 1.5s ease-in-out infinite;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2.5px solid #6366f1;
+  animation: ripple 0.9s ease-out infinite;
 }
 
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+.clickRipple::after {
+  animation-delay: 0.2s;
 }
 
-.progressPct {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--cfv-accent);
-  min-width: 32px;
-  text-align: right;
+@keyframes ripple {
+  0% { transform: translate(-50%, -50%) scale(0.3); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1.8); opacity: 0; }
 }
 
-.stepsList {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+/* Click position: Install button on jellyfin.jpg card */
+.installClickPos {
+  top: 59%;
+  left: 31%;
 }
 
-.stepItem {
+/* Click position: Install button inside install-popup.jpg */
+.popupInstallClickPos {
+  top: 85%;
+  left: 51%;
+}
+
+/* Click position: Jellyfin URL on myaccount.jpg */
+.urlClickPos {
+  top: 32.5%;
+  left: 61%;
+}
+
+/* === URL highlight on My Apps screen === */
+.urlHighlight {
+  position: absolute;
+  top: 31%;
+  left: 52%;
+  width: 18%;
+  height: 4%;
+  border: 2.5px solid #6366f1;
+  border-radius: 8px;
+  z-index: 4;
+  animation: highlightPulse 1.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes highlightPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(99, 102, 241, 0); }
+}
+
+/* === Workflow step indicator === */
+.stepIndicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.65rem;
-  color: var(--cfv-text-tertiary);
-  transition: color 0.3s ease;
+  z-index: 6;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+  padding: 7px 14px;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+  gap: 0;
 }
 
-.stepDone {
-  color: var(--cfv-green);
+.stepLine {
+  width: 16px;
+  height: 2px;
+  background: #d1d5db;
+  flex-shrink: 0;
+  transition: background 0.4s ease;
 }
 
-.stepActive {
-  color: var(--cfv-accent);
-  font-weight: 600;
+.stepLineDone {
+  background: #6366f1;
 }
 
-.stepPending {
-  color: var(--cfv-text-tertiary);
+.stepChip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
 }
 
 .stepDot {
   width: 16px;
   height: 16px;
   border-radius: 50%;
+  background: #d1d5db;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: var(--cfv-progress-track);
-  transition: background 0.3s ease;
+  transition: all 0.4s ease;
+  position: relative;
 }
 
-.stepDone .stepDot {
-  background: var(--cfv-green);
-}
-
-.stepActive .stepDot {
-  background: var(--cfv-accent-soft);
-  border: 2px solid var(--cfv-accent);
-}
-
-.stepSpinner {
-  width: 8px;
-  height: 8px;
-  border: 1.5px solid transparent;
-  border-top-color: var(--cfv-accent);
+.stepPulse {
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  animation: spin 0.7s linear infinite;
+  background: white;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.7); }
+}
+
+.stepChipActive .stepDot {
+  background: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+.stepChipDone .stepDot {
+  background: #22c55e;
+  color: white;
 }
 
 .stepLabel {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #94a3b8;
   white-space: nowrap;
+  transition: color 0.4s ease;
+  line-height: 1;
 }
 
-/* === Deployed === */
-.deployedSection {
-  padding: 12px 16px 14px;
-  border-top: 1px solid var(--cfv-card-border);
-  animation: fadeSlideIn 0.5s ease;
+.stepChipActive .stepLabel {
+  color: #6366f1;
 }
 
-.deployedBanner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 14px;
-  background: var(--cfv-green-soft);
-  border: 1px solid rgba(34, 197, 94, 0.2);
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.deployedCheck {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--cfv-green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-@keyframes popIn {
-  0% { transform: scale(0); }
-  100% { transform: scale(1); }
-}
-
-.deployedText {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.deployedTitle {
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--cfv-green);
-}
-
-.deployedUrl {
-  font-size: 0.65rem;
-  color: var(--cfv-text-secondary);
-  font-family: 'SF Mono', 'Fira Code', monospace;
-}
-
-.deployedStats {
-  display: flex;
-  gap: 8px;
-}
-
-.dStat {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  padding: 8px;
-  background: var(--cfv-tag-bg);
-  border: 1px solid var(--cfv-tag-border);
-  border-radius: 8px;
-}
-
-.dStatValue {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--cfv-green);
-}
-
-.dStatLabel {
-  font-size: 0.58rem;
-  color: var(--cfv-text-tertiary);
-  font-weight: 500;
+.stepChipDone .stepLabel {
+  color: #22c55e;
 }
 
 /* ======================================
@@ -426,72 +253,24 @@
    ====================================== */
 
 @media (max-width: 768px) {
-  .searchBar {
+  .searchTextOverlay {
+    top: 2%;
+    left: 38%;
+    width: 42%;
+    height: 4.5%;
+  }
+
+  .typedText {
+    font-size: 0.68rem;
+  }
+
+  .stepIndicator {
     padding: 5px 10px;
-    gap: 6px;
+    bottom: 6px;
   }
 
-  .searchIcon {
-    width: 12px;
-    height: 12px;
-  }
-
-  .searchText {
-    font-size: 0.65rem;
-  }
-
-  .resultCard {
-    top: 20%;
-    left: 18%;
-    right: 4%;
-    border-radius: 10px;
-  }
-
-  .resultInner {
-    padding: 10px 12px;
-    gap: 8px;
-  }
-
-  .resultIcon {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-  }
-
-  .resultIcon svg {
-    width: 22px;
-    height: 22px;
-  }
-
-  .resultName {
-    font-size: 0.78rem;
-  }
-
-  .resultDesc {
-    font-size: 0.6rem;
-  }
-
-  .metaTag {
-    font-size: 0.52rem;
-    padding: 1px 5px;
-  }
-
-  .installBtn {
-    padding: 5px 12px;
-    font-size: 0.65rem;
-  }
-
-  .installSection,
-  .deployedSection {
-    padding: 8px 12px 10px;
-  }
-
-  .progressPct {
-    font-size: 0.65rem;
-  }
-
-  .stepItem {
-    font-size: 0.58rem;
+  .stepLine {
+    width: 10px;
   }
 
   .stepDot {
@@ -499,103 +278,63 @@
     height: 14px;
   }
 
-  .deployedBanner {
-    padding: 8px 10px;
-    gap: 8px;
-  }
-
-  .deployedCheck {
-    width: 24px;
-    height: 24px;
-  }
-
-  .deployedCheck svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .deployedTitle {
-    font-size: 0.68rem;
-  }
-
-  .deployedUrl {
-    font-size: 0.58rem;
-  }
-
-  .dStat {
-    padding: 6px;
-  }
-
-  .dStatValue {
-    font-size: 0.62rem;
-  }
-
-  .dStatLabel {
+  .stepLabel {
     font-size: 0.5rem;
+  }
+
+  .clickRipple {
+    width: 36px;
+    height: 36px;
+  }
+
+  .urlHighlight {
+    border-width: 2px;
   }
 }
 
 @media (max-width: 480px) {
-  .searchOverlay {
-    top: 2.5%;
-    left: 18%;
-    right: 12%;
+  .searchTextOverlay {
+    top: 1.8%;
+    left: 37%;
+    width: 45%;
   }
 
-  .searchBar {
-    width: 65%;
-    padding: 4px 8px;
+  .typedText {
+    font-size: 0.55rem;
   }
 
-  .searchText {
-    font-size: 0.58rem;
-  }
-
-  .resultCard {
-    top: 18%;
-    left: 5%;
-    right: 5%;
-  }
-
-  .resultMeta {
+  .stepLabel {
     display: none;
   }
 
-  .stepsList {
-    gap: 4px;
+  .stepLine {
+    width: 8px;
   }
 
-  .deployedStats {
-    gap: 4px;
+  .stepDot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .stepIndicator {
+    padding: 5px 8px;
+    border-radius: 16px;
+  }
+
+  .clickRipple {
+    width: 28px;
+    height: 28px;
   }
 }
 
 /* === REDUCED MOTION === */
 @media (prefers-reduced-motion: reduce) {
-  .cursor {
-    animation: none !important;
-    opacity: 1;
-  }
-
-  .spinner,
-  .stepSpinner {
-    animation: none !important;
-  }
-
-  .progressFill::after {
-    animation: none !important;
-  }
-
-  .installBtn {
-    animation: none !important;
-  }
-
-  .resultCard {
-    transition: opacity 0.1s ease !important;
-    transform: none !important;
-  }
-
-  .deployedCheck {
-    animation: none !important;
-  }
+  .cursor { animation: none !important; opacity: 1; }
+  .searchSpinner { animation: none !important; }
+  .screenBase,
+  .screenOverlay { transition: opacity 0.1s ease !important; }
+  .clickRipple::before,
+  .clickRipple::after { animation: none !important; }
+  .urlHighlight { animation: none !important; }
+  .stepPulse { animation: none !important; }
 }

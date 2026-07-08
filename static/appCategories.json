@@ -123,6 +123,16 @@
         "port": 80,
         "cpu": 200,
         "memory": 256
+      },
+      {
+        "name": "open-webui/open-webui",
+        "image": "open-webui/open-webui",
+        "display": "OpenClaw",
+        "description": "Open-source AI agent platform for building and deploying autonomous agents.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
       }
     ]
   },

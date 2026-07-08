@@ -14,6 +14,25 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './style.css';
 
+const FallbackImg = ({ src, alt, className, fallbackClassName }) => {
+  const [failed, setFailed] = useState(false);
+  if (failed || !src) {
+    return (
+      <div className={fallbackClassName || 'ps-json-initial'}>
+        {(alt || '?').charAt(0).toUpperCase()}
+      </div>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      onError={() => setFailed(true)}
+    />
+  );
+};
+
 const argument = 3256;
 
 const AppTemplate = ({ group, categoryname, slug, children }) => {
@@ -156,7 +175,7 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
       <div className="ps-container">
         <div className="ps-app-hero">
           <div className="ps-app-hero-image">
-            <img src={apps[0]?.image} alt="App Logo" />
+            <FallbackImg src={apps[0]?.image} alt={apps[0]?.title || 'App Logo'} fallbackClassName="ps-json-initial ps-hero-initial" />
           </div>
 
           <div className="ps-app-hero-content">
@@ -280,7 +299,7 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
                   href={`/playstore/${app.category.toLowerCase()}/${app.slug}`}
                   className="ps-sidebar-item"
                 >
-                  <img src={app.logo} alt={app.name} className="ps-sidebar-image" />
+                  <FallbackImg src={app.logo} alt={app.name} className="ps-sidebar-image" fallbackClassName="ps-json-initial ps-sidebar-initial" />
                   <div className="ps-sidebar-item-info">
                     <span className="ps-sidebar-name">{app.name}</span>
                     <span className="ps-sidebar-publisher">{app.publisher}</span>
@@ -307,7 +326,7 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
                   href={`/playstore/${cat.catslug}`}
                   className="ps-sidebar-item"
                 >
-                  <img src={cat.image} alt={cat.name} className="ps-sidebar-image" />
+                  <FallbackImg src={cat.image} alt={cat.name} className="ps-sidebar-image" fallbackClassName="ps-json-initial ps-sidebar-initial" />
                   <span className="ps-sidebar-name">{cat.name}</span>
                 </a>
               ))}

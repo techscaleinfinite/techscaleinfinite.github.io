@@ -4,6 +4,29 @@ import { Star, Download, BrainCircuit } from 'lucide-react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import './style.css';
 
+const FallbackImg = ({ src, alt, className, fallbackColor, fallbackClassName }) => {
+  const [failed, setFailed] = useState(false);
+  if (failed || !src) {
+    const color = fallbackColor || 'var(--ifm-color-primary)';
+    return (
+      <div
+        className={fallbackClassName || 'ps-json-initial'}
+        style={{ color, background: `${color}12` }}
+      >
+        {(alt || '?').charAt(0).toUpperCase()}
+      </div>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      onError={() => setFailed(true)}
+    />
+  );
+};
+
 const buildInstallUrl = ({ title, port }) => {
   const env = { env_key_1: 'env_value_1', env_key_2: 'env_value_2', env_key_3: 'env_value_3' };
   const work_dir = { work_key_1: 'work_value_1', work_key_2: 'work_value_2', work_key_3: 'work_value_3' };
@@ -112,13 +135,12 @@ export default function CategoryTemplate({ categoryname, slug }) {
                 {apps.map((app, idx) => (
                   <div key={idx} className="ps-cat-card ps-cat-card-json">
                     <div className="ps-cat-card-image-wrap">
-                      {app.hasLogo ? (
-                        <img src={app.image} alt={app.title} className="ps-cat-card-image" />
-                      ) : (
-                        <div className="ps-json-initial ps-cat-card-initial">
-                          {app.title.charAt(0).toUpperCase()}
-                        </div>
-                      )}
+                      <FallbackImg
+                        src={app.image}
+                        alt={app.title}
+                        className="ps-cat-card-image"
+                        fallbackClassName="ps-json-initial ps-cat-card-initial"
+                      />
                     </div>
                     <div className="ps-cat-card-title">{app.title}</div>
                     <p className="ps-cat-card-desc">{app.desc}</p>
@@ -142,10 +164,11 @@ export default function CategoryTemplate({ categoryname, slug }) {
                     href={`/playstore/${app.category.toLowerCase()}/${app.slug}`}
                     className="ps-cat-card"
                   >
-                    <img
+                    <FallbackImg
                       src={app.image}
                       alt={app.title}
                       className="ps-cat-card-image"
+                      fallbackClassName="ps-json-initial ps-cat-card-initial"
                     />
                     <div className="ps-cat-card-title">{app.title}</div>
                     <div className="ps-cat-card-rating">
