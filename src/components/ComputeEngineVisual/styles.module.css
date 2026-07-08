@@ -1,0 +1,324 @@
+.visual {
+  position: relative;
+  padding: 20px 22px 16px;
+  font-family: 'Inter', 'RobotoFlex_Regular', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--ifm-color-primary-alert-background-color, #eef2ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-primary, #4f46e5);
+}
+
+[data-theme='dark'] .headerIcon {
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.headerTitle {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--si-text-primary, #0f172a);
+  letter-spacing: -0.01em;
+}
+
+.headerBadge {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 3px 10px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.headerBadge::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #10b981;
+  animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+  0%, 100% { opacity: 0.5; }
+  50%      { opacity: 1; }
+}
+
+/* ===== Server rack ===== */
+.rack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rackNode {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--si-border-color, #e2e8f0);
+  background: var(--ifm-card-background, #fff);
+  animation: nodeSlide 0.4s ease both;
+}
+
+[data-theme='dark'] .rackNode {
+  background: rgba(30, 41, 59, 0.45);
+}
+
+@keyframes nodeSlide {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.nodeHead {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 95px;
+  flex-shrink: 0;
+}
+
+.nodeIndicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.nodeId {
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: var(--si-text-primary, #0f172a);
+  white-space: nowrap;
+}
+
+.nodeChip {
+  font-size: 0.58rem;
+  font-weight: 600;
+  color: var(--si-text-tertiary, #94a3b8);
+  background: var(--si-bg-secondary, #f8fafc);
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .nodeChip {
+  background: rgba(51, 65, 85, 0.4);
+}
+
+/* Core blocks grid */
+.coreGrid {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.coreBlock {
+  width: 14px;
+  height: 18px;
+  border-radius: 3px;
+  background: var(--si-border-color, #e2e8f0);
+  flex-shrink: 0;
+  transition: background 0.3s ease;
+}
+
+[data-theme='dark'] .coreBlock {
+  background: rgba(51, 65, 85, 0.5);
+}
+
+.coreActive {
+  background: var(--core-color);
+  opacity: 0.8;
+  animation: corePop 0.5s ease both;
+}
+
+@keyframes corePop {
+  from { opacity: 0; transform: scaleY(0.5); }
+  to   { opacity: 0.8; transform: scaleY(1); }
+}
+
+/* Node load bar */
+.nodeLoad {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  min-width: 70px;
+}
+
+.loadTrack {
+  flex: 1;
+  height: 5px;
+  border-radius: 100px;
+  background: var(--si-border-color, #e2e8f0);
+  overflow: hidden;
+}
+
+[data-theme='dark'] .loadTrack {
+  background: rgba(51, 65, 85, 0.5);
+}
+
+.loadFill {
+  height: 100%;
+  border-radius: 100px;
+  background: var(--load-color);
+  width: 0;
+  animation: loadGrow 1.2s ease-out forwards;
+}
+
+@keyframes loadGrow {
+  to { width: var(--load-w); }
+}
+
+.loadPct {
+  font-size: 0.66rem;
+  font-weight: 700;
+  min-width: 26px;
+  text-align: right;
+}
+
+/* ===== Scaling diagram ===== */
+.scaleDiagram {
+  border-radius: 10px;
+  background: var(--si-bg-secondary, #f8fafc);
+  border: 1px solid var(--si-border-color, #e2e8f0);
+  padding: 10px 8px 6px;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .scaleDiagram {
+  background: rgba(30, 41, 59, 0.35);
+}
+
+[data-theme='dark'] .scaleDiagram rect[fill="var(--si-bg-secondary, #f8fafc)"] {
+  fill: rgba(30, 41, 59, 0.5);
+}
+
+.scaleSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Bottom resource row ===== */
+.bottomRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.bottomCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 6px 8px;
+  border-radius: 8px;
+  background: var(--si-bg-secondary, #f8fafc);
+  border: 1px solid var(--si-border-color, #e2e8f0);
+}
+
+[data-theme='dark'] .bottomCard {
+  background: rgba(30, 41, 59, 0.35);
+}
+
+.bottomValue {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--si-text-primary, #0f172a);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.bottomLabel {
+  font-size: 0.58rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--si-text-tertiary, #94a3b8);
+}
+
+/* Uptime dot strip */
+.uptimeDots {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  height: 18px;
+}
+
+.uptimeDot {
+  width: 4px;
+  border-radius: 2px;
+  background: #10b981;
+  animation: dotUp 0.6s ease both;
+}
+
+@keyframes dotUp {
+  from { height: 3px; opacity: 0.3; }
+  to   { height: 14px; opacity: 0.8; }
+}
+
+.uptimeDot:nth-child(1)  { animation-delay: 0s;     height: 14px; }
+.uptimeDot:nth-child(2)  { animation-delay: 0.05s;  height: 12px; }
+.uptimeDot:nth-child(3)  { animation-delay: 0.1s;   height: 14px; }
+.uptimeDot:nth-child(4)  { animation-delay: 0.15s;  height: 13px; }
+.uptimeDot:nth-child(5)  { animation-delay: 0.2s;   height: 14px; }
+.uptimeDot:nth-child(6)  { animation-delay: 0.25s;  height: 11px; }
+.uptimeDot:nth-child(7)  { animation-delay: 0.3s;   height: 14px; }
+.uptimeDot:nth-child(8)  { animation-delay: 0.35s;  height: 14px; }
+.uptimeDot:nth-child(9)  { animation-delay: 0.4s;   height: 12px; }
+.uptimeDot:nth-child(10) { animation-delay: 0.45s;  height: 14px; }
+.uptimeDot:nth-child(11) { animation-delay: 0.5s;   height: 13px; }
+.uptimeDot:nth-child(12) { animation-delay: 0.55s;  height: 14px; }
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .visual {
+    padding: 14px 12px 12px;
+    gap: 10px;
+  }
+
+  .nodeHead {
+    min-width: 75px;
+  }
+
+  .nodeChip {
+    display: none;
+  }
+
+  .coreBlock {
+    width: 10px;
+    height: 14px;
+  }
+
+  .bottomRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

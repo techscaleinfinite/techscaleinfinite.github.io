@@ -1,564 +1,551 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from '@docusaurus/Link';
-import Layout from '@theme/Layout'
+import Layout from '@theme/Layout';
 import { useLocation } from '@docusaurus/router';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-import styles from './index.module.css'
-import './style.css'
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import $ from 'jquery';
+import { motion, useInView, useAnimation } from 'framer-motion';
+import {
+  ArrowRight, Play, Cloud, Shield, Clock, Users, Zap,
+  Server, HardDrive, Database, Search, Download, Lock,
+  UserCheck, LayoutGrid, Mail, MapPin, Phone,
+  ChevronRight, Star, Rocket, Globe
+} from 'lucide-react';
+import InfraStorySection from '../components/InfraStory';
+import CloudFloatVisual from '../components/CloudFloatVisual';
+import AppShowcaseCards from '../components/AppShowcaseCards';
+import PlaystoreShowcase from '../components/PlaystoreShowcase';
+import S3StorageVisual from '../components/S3StorageVisual';
+import UnifiedCloudDashboardVisual from '../components/UnifiedCloudDashboardVisual';
+import ServerOverviewVisual from '../components/ServerOverviewVisual';
+import DockerHubVisual from '../components/DockerHubVisual';
+import styles from './index.module.css';
 
- const settings = {
-    centerMode: true,          // Equivalent to `center: true`
-    centerPadding: '0px',      // No padding for centered slide
-    slidesToShow: 3,           // Display 3 items (default)
-    autoplay: true,
-    autoplaySpeed: 5000,       // Same as `autoplayTimeout`
-    speed: 450,                // Same as `smartSpeed`
-    dots: true,
-    arrows: false,             // Same as `nav: false`
-    infinite: true,            // Same as `loop: true`
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1
-        }
-      },
-      {
-        breakpoint: 0,
-        settings: {
-          slidesToShow: 1
-        }
+const OAUTH_URL = 'https://pods.fltt.fr';
+
+function AnimatedSection({ children, className = '', delay = 0 }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-80px' });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+      transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+function AnimatedCounter({ target, suffix = '', duration = 2 }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (!isInView) return;
+    const num = parseInt(target.replace(/[^0-9]/g, ''));
+    let start = 0;
+    const increment = num / (duration * 60);
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= num) {
+        setCount(num);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(start));
       }
-    ]
-  };
+    }, 1000 / 60);
+    return () => clearInterval(timer);
+  }, [isInView, target, duration]);
 
- const showTab = (name) => {
-  //  alert(`Hello, ${name}!`);
-  $('.storage_btn').removeClass('gh lk');
-  $('.compute_btn').removeClass('gh lk');
-  $('.dashboard_btn').removeClass('gh lk');
-  $('.storage').hide();
-  $('.compute').hide();
-  $('.dashboard').hide();
-  if(name=='storage')
+  return (
+    <span ref={ref}>
+      {count.toLocaleString()}{suffix}
+    </span>
+  );
+}
+
+const featureCards = [
   {
-    $('.storage_btn').addClass('gh lk');
-    $('.storage').show();
-  }
-  else if(name=='compute')
+    icon: Clock,
+    title: '24/7 Availability',
+    desc: 'Round-the-clock support for seamless operations. Your applications never sleep, and neither does our infrastructure.',
+  },
   {
-    $('.compute_btn').addClass('gh lk');
-    $('.compute').show();
-  }
-  else if(name=='dashboard')
+    icon: Zap,
+    title: 'Proactive Solutions',
+    desc: 'Quick resolutions to keep you moving forward. AI-powered monitoring detects and resolves issues before they impact you.',
+  },
   {
-    $('.dashboard_btn').addClass('gh lk');
-    $('.dashboard').show();
-  }
-  
-  };
+    icon: Shield,
+    title: 'Enterprise Security',
+    desc: 'Multiple layers of security options. Choose the right security level that suits your application and compliance needs.',
+  },
+];
+
+const howItWorksCards = [
+  {
+    step: 1,
+    icon: Search,
+    title: 'Search Applications',
+    desc: 'Find 1000+ applications from our database & Docker Hub using the search bar.',
+  },
+  {
+    step: 2,
+    icon: Download,
+    title: 'Install Easily',
+    desc: 'Instantly install with custom names, ports & environment variables. No complex configuration needed.',
+  },
+  {
+    step: 3,
+    icon: Globe,
+    title: 'Ready to Use',
+    desc: 'Access your application via HTTP or TCP/UDP. Everything is configured and ready to go.',
+  },
+  {
+    step: 4,
+    icon: Lock,
+    title: 'Fully Secured',
+    desc: 'Choose from different security layers. SSL, firewalls, and access controls built right in.',
+  },
+  {
+    step: 5,
+    icon: UserCheck,
+    title: 'User Friendly',
+    desc: 'Designed for both technical and non-technical users to deploy applications securely.',
+  },
+  {
+    step: 6,
+    icon: LayoutGrid,
+    title: 'Unlimited Choice',
+    desc: "You're not limited to a list. Install anything from Docker Hub or our curated marketplace.",
+  },
+];
 
 
+
+
+const platformSections = [
+  {
+    title: 'Discover & Deploy Applications in Minutes',
+    desc: 'Explore a curated collection of production-ready applications across AI & ML, Databases, DevOps, CMS, Monitoring, Security, and more. Deploy your favorite applications to your CloudFloat environment with just a few clicks—no complex setup required.',
+    component: 'playstore',
+    icon: HardDrive,
+    cta: { label: 'Browse Playstore', href: '/playstore' },
+  },
+  {
+    title: 'Mount Your S3 Storage as Persistent Application Storage',
+    desc: 'Connect your S3-compatible storage and use it as persistent storage for your applications. Store files securely, retain data across deployments, and scale seamlessly with reliable object storage.',
+    component: 's3storage',
+    icon: Server,
+    reversed: true,
+  },
+  {
+    title: 'Manage Your Applications with a Unified Cloud Dashboard',
+    desc: 'Monitor application health, track CPU and memory utilization, view live performance metrics, manage deployed applications, and access cluster resources—all from a single, intuitive dashboard designed for seamless cloud operations.',
+    component: 'unifiedDashboard',
+    icon: Database,
+  },
+  {
+    title: 'Complete Server & Application Overview',
+    desc: 'Monitor your application\'s health, resource utilization, logs, terminal access, events, and configuration from a single dashboard. View real-time CPU, memory, network usage, deployment details, and manage your application files with an integrated file browser.',
+    component: 'serverOverview',
+    icon: Server,
+    reversed: true,
+  },
+  {
+    title: 'Connect Your Docker Hub Account',
+    desc: 'Link your Docker Hub account to seamlessly access and manage your private and public container images. Browse repositories, deploy applications directly from your registry, and streamline your cloud deployment workflow from a single interface.',
+    component: 'dockerHub',
+    icon: Database,
+  },
+];
+
+const brandLogos = [
+  'images/brand-light-01.svg',
+  'images/brand-light-02.svg',
+  'images/brand-light-03.svg',
+  'images/brand-light-04.svg',
+  'images/brand-light-05.svg',
+  'images/brand-light-06.svg',
+];
 
 export default function Home() {
-  // Hide search icon//
   const location = useLocation();
-const isHome = location.pathname === '/';
-  // Hide Search icon end//
+  const isHome = location.pathname === '/';
 
-     useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
+  useEffect(() => {
     const loader = document.getElementById('global-loader');
     if (loader) loader.remove();
   }, []);
-  const sectionTitle = "We Offer Great Affordable Premium Prices.";
-  const sectionTitleText =
-    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.";
 
-  const [filterTab, setFilterTab] = React.useState(0); // 0 = all, 2 = storage, 3 = compute, 4 = dashboard
- 
   return (
-     <div className={isHome ? 'is-home' : ''}>
-    <Layout  description="AI-Managed Solutions for Automated Application Performance">
-  <section className="gj do  hj sp  i pg">         
-  <div className="bb ze ki xn 2xl:ud-px-0">
-   <div className="tc _o">
-     
-               <div className="animate_left jn/2" data-sr-id="25"  data-aos="fade-right">
-                  <div class="fk vj zp or kk wm wb cloud-title" >Self-Driving Cloud Applications</div>
-                  <p className="fq" >
-                  Put your applications on autopilot mode in our AI managed environment
-                  </p>
-                  <div className="tc tf yo zf mb aitm-center"  style={{alignItems:"center"}}>
-                     <a href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google" className="ek jk lk gi hi rg ml il vc _d _l " style={{background:'var(--ifm-button-bg)'}}>Get Started Now</a>
+    <div className={isHome ? 'is-home' : ''}>
+      <Layout description="AI-Managed Solutions for Automated Application Performance">
+
+        {/* ===== HERO ===== */}
+        <section className={styles.hero}>
+          <div className={styles.heroBgGrid} />
+          <div className={styles.heroOrb1} />
+          <div className={styles.heroOrb2} />
+          <div className={styles.heroOrb3} />
+
+          <div className={styles.heroContainer}>
+            <motion.div
+              className={styles.heroContent}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            >
+              <div className={styles.heroBadge}>
+                <Rocket size={14} />
+                <span>AI-Powered Cloud Platform</span>
+              </div>
+
+              <h1 className={styles.heroTitle}>
+                <span className={styles.heroTitleLine}>Self-Driving</span>
+                <span className={styles.heroTitleGradient}>Cloud Applications</span>
+              </h1>
+
+              <p className={styles.heroSubtitle}>
+                Put your applications on autopilot mode in our AI-managed
+                environment. Deploy, scale, and manage with zero effort —
+                powered by Kubernetes and Docker.
+              </p>
+
+              <div className={styles.heroCtas}>
+                <a href={OAUTH_URL} className={styles.ctaPrimary}>
+                  Get Started Free
+                  <ArrowRight size={18} />
+                </a>
+                <Link to="/quick-start" className={styles.ctaSecondary}>
+                  <Play size={16} />
+                  View Tutorial
+                </Link>
+              </div>
+
+              <div className={styles.heroTrust}>
+                <div className={styles.heroTrustAvatars}>
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className={styles.heroTrustAvatar}>
+                      <Users size={14} />
+                    </div>
+                  ))}
+                </div>
+                <span className={styles.heroTrustText}>
+                  Trusted by <strong>50,000+</strong> developers worldwide
+                </span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className={styles.heroVisual}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            >
+              <div className={styles.heroDashboard}>
+                <div className={styles.heroDashboardHeader}>
+                  <div className={styles.heroDashboardDots}>
+                    <span /><span /><span />
                   </div>
-               </div>
+                  <span className={styles.heroDashboardTitle}>ScaleInfinite Dashboard</span>
+                </div>
+                <img
+                  src="/images/kubernetes-docker-services.png"
+                  alt="Kubernetes and Docker services"
+                  className={styles.heroDashboardImage}
+                />
+              </div>
+
+              <motion.div
+                className={`${styles.heroFloatingCard} ${styles.heroFloatingCard1}`}
+                animate={{ y: [-8, 8, -8] }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              >
+                <Cloud size={20} className={styles.heroFloatingIcon} />
+                <div>
+                  <div className={styles.heroFloatingLabel}>Deployments</div>
+                  <div className={styles.heroFloatingValue}>1,247</div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className={`${styles.heroFloatingCard} ${styles.heroFloatingCard2}`}
+                animate={{ y: [8, -8, 8] }}
+                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+              >
+                <Shield size={20} className={styles.heroFloatingIcon} />
+                <div>
+                  <div className={styles.heroFloatingLabel}>Uptime</div>
+                  <div className={styles.heroFloatingValue}>99.9%</div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* ===== BRAND LOGOS ===== */}
+        <section className={styles.brands}>
+          <div className={styles.brandsContainer}>
+            <p className={styles.brandsLabel}>Powering applications with industry-leading technologies</p>
+            <div className={styles.brandsTrack}>
+              <div className={styles.brandsSlide}>
+                {[...brandLogos, ...brandLogos].map((logo, i) => (
+                  <img key={i} src={logo} alt="" className={styles.brandLogo} />
+                ))}
+              </div>
             </div>
-           
-  </div>
-  <div>
-    
-    <div  className=" xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 po-ab q r" data-aos="fade-left">
-      <img 
-        src="/images/kubernetes-docker-services.png" 
-        alt="kubernetes-docker-services" 
-        className="q r ua mt-5 mr-2 bf" 
-      />
-    
-    </div>
-  </div>
-</section>       
-     
-  <section id="features">
-  <div className="bb ze ki yn 2xl:ud-px-12.5">
-    <div className="tc uf zo xf ap zf bp mq">
-      <div className="animate_top kn to/3 tc cg oq" data-aos="fade-down">
-        <div className="tc wf xf cf ae cd rg mh">
-          <img src="images/icon-01.svg" alt="Icon" />
-        </div>
-        <div>
-          <h4 className="ek yj go kk wm xb sub-heading">24/7 Availability</h4>
-          <p>Round-the-Clock Support for Seamless Operations</p>
-        </div>
-      </div>
-      <div className="animate_top kn to/3 tc cg oq" data-aos="fade-up">
-        <div className="tc wf xf cf ae cd rg nh">
-          <img src="images/icon-02.svg" alt="Icon" />
-        </div>
-        <div>
-          <h4 className="ek yj go kk wm xb sub-heading">Proactive Solutions</h4>
-          <p>Quick resolutions to keep you moving forward</p>
-        </div>
-      </div>
-      <div className="animate_top kn to/3 tc cg oq" data-aos="fade-down" >
-        <div className="tc wf xf cf ae cd rg oh">
-          <img src="images/icon-03.svg" alt="Icon" />
-        </div>
-        <div>
-          <h4 className="ek yj go kk wm xb sub-heading">Experienced Team</h4>
-          <p>Skilled professionals ready to assist</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+          </div>
+        </section>
 
-<section className="gj do ir hj sp jr i pg ">
-  <div className="bb ye i z-10 ki xn dr">
-    <div className="bb ze ki xn wq">
-      <div className="tc_display wf gg qq">
-        <div className="animate_left xc_cstm gn gg xc/2 i" data-aos="fade-left">
-          <div>
-            <img
-              src="images/shape-05.svg"
-              alt="Shape"
-              className="h -ud-left-5 x"
-            />
-            <img src="images/image-creator.png" alt="About" />
-          </div>
-        </div>
-        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right" >
-          <h2 className="fk vj zp pr kk wm qb cloud-title">What is Cloudfloat</h2>
-          <p className="uo">
-            Instantly install Apps. Easily deploy production ready apps. No more
-            tinkering with Dockerfiles and manually provisioning databases.
-          </p>
-          <div className="tc tf yo zf mb">
-            <a
-              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
-              >
-              Get Started Now
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Flash card Slider */}
-  <div className="container mt-5 pt-5" >
-    <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`}" data-aos="fade-left">
-      <div className="animate_top bb ze rj ki xn vq">
-        <h2 x-text="sectionTitle" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title" >We Offer Great Affordable Premium Prices.</h2>
-        <p className="bb on/5 wo/5 hq" x-text="sectionTitleText" />
-      </div>
-    </div>
-    <div data-aos="fade-right" >
-    <Slider {...settings}  className="customSlider" >
-      <div className="item" >
-    <div className="shadow-effect">
-      <img className="img-circle" src="images/cards/mangodb.jpg" />
-    </div>
-  </div>
-  <div className="item">
-    <div className="shadow-effect">
-      <img className="img-circle" src="images/cards/mariadb.jpg" />
-    </div>
-  </div>
-  <div className="item">
-    <div className="shadow-effect">
-      <img className="img-circle" src="images/cards/emby.jpg" />
-    </div>
-  </div>
-  <div className="item">
-    <div className="shadow-effect">
-      <img className="img-circle" src="images/cards/etherpad.jpg" />
-    </div>
-  </div>
-  <div className="item">
-    <div className="shadow-effect">
-      <img className="img-circle" src="images/cards/octobot.jpg" />
-    </div>
-  </div>
-    </Slider>
-    </div>
-    
-  </div>
-  
-</section>
-<section
-  className="lj tp kr"
-  style={{ background: 'var(--ifm-gradient-bg-color)' }}
->
-  <div className="bb ye i z-10 ki xn dr">
-    <div className="tc uf sn tn un gg">
-      <img src="images/shape-14.svg" alt="Shape" className="h ja ka mt-5" />
-      <div className="animate_left to/2" data-aos="zoom-in">
-        <h2 className="fk vj zp pr lk ac cloud-title " >
-          Install unlimited applications with our service.
-        </h2>
-      </div>
-      <div className="animate_left " data-aos="fade-up">
-        <h2 className="fk vj zp pr lk ac cloud-title">
-          50K+
-        </h2>
-        <p className="">Registered Users</p>
-      </div>
-      <div className="animate_left " data-aos="fade-down">
-        <h2 className="fk vj zp pr lk ac cloud-title">
-          50K+
-        </h2>
-        <p className="">Registered Users</p>
-      </div>
-    </div>
-  </div>
-  <div className="bb ze ki xn yq mb en">
-    <div className="wc qf pn xo ng">
-      <div
-        className="animate_top sg oi pi zq ml il am cn _m" data-aos="flip-left"
-        style={{
-          background: 'var( --ifm-card-background)',
-          margin: 10,
-          padding: 20,
-       
-        }}
-      >  
-        <h5 className="ek zj kk wm _b sub-heading">
-          Look for the application you are searching for
-        </h5>
-        <p>
-          By using the search bar, you can find +1000 applications from our
-          database &amp; dockerhub
-        </p>
-      </div>
-      <div
-        className="animate_top sg oi pi zq ml il am cn _m" data-aos="flip-right"
-       style={{
-          background: 'var( --ifm-card-background)',
-          margin: 10,
-          padding: 20,
-       
-        }}
-       >
-        {/* <img src="images/icon-05.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b sub-heading">Install application easily</h4>
-        <p>
-          Once you have found the application, you can instantly install the
-          app. Don't forget to specify custom name, ports &amp; environnement
-          variable
-        </p>
-      </div>
-      <div
-        className="animate_top sg oi pi zq ml il am cn _m"  data-aos="flip-left"
-      style={{
-          background: 'var( --ifm-card-background)',
-          margin: 10,
-          padding: 20,
-       
-        }}
-      >
-        {/* <img src="images/icon-06.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b sub-heading">Ready to use!</h4>
-        <p>
-          You can now use your application peacefully. You can access it with
-          HTTP or TCP/UDP adress.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div className="bb ze ki xn yq mb en">
-    <div className="wc qf pn xo ng">
-      <div
-        className="animate_top sg oi pi zq ml il am cn _m" data-aos="flip-right"
-         style={{
-          background: 'var( --ifm-card-background)',
-          margin: 10,
-          padding: 20,
-       
-        }}
-      >
-        {/* <img src="images/icon-07.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b sub-heading">Secured</h4>
-        <p>
-          We offer different layer of security options. Users can choose the
-          right security level that suits well for the application as well for
-          their needs.
-        </p>
-      </div>
-      <div
-        className="animate_top sg oi pi zq ml il am cn _m" data-aos="flip-left"
-        style={{
-          background: 'var( --ifm-card-background)',
-          margin: 10,
-          padding: 20,
-       
-        }}
-      >
-        {/* <img src="images/icon-05.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b sub-heading">User Friendly</h4>
-        <p>
-          The plateform is designed in a way that anybody from technical and
-          most importantly the non-technical background can easily deploy and
-          run their applications securly
-        </p>
-      </div>
-      <div
-        className="animate_top sg oi pi zq ml il am cn _m"  data-aos="flip-right"
-      style={{
-          background: 'var( --ifm-card-background)',
-          margin: 10,
-          padding: 20,
-       
-        }}
-      >
-        {/* <img src="images/icon-06.svg" alt="Icon" /> */}
-        <h4 className="ek zj kk wm _b sub-heading">Choice</h4>
-        <p>
-          Your are not limited to one application from a list of applications
-          that are supported.{" "}
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-  <section className="gj do ir hj sp jr i pg ">
-    <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`}" >
-      <div className="animate_top bb ze rj ki xn vq" data-aos="fade-right">
-        <h2 x-text="sectionTitle" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title" >We Offer Great Affordable Premium Prices.</h2>
-        <p className="bb on/5 wo/5 hq"  >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
-      </div>
-    </div>
-  <div className="bb ye i z-10 ki xn dr">
-    <div className="bb ze ki xn wq">
-      <div className="tc_display wf gg qq">
-        <div className="animate_left xc_cstm gn gg xc/2 i" >
-          <div data-aos="fade-up">
-            <img
-              src="images/shape-05.svg"
-              alt="Shape"
-              className="h -ud-left-5 x"
-            />
-            <img src="images/shape-06.svg" alt="Shape" className="opacity-30 mb-4" />
-            <img src="images/storage.png" alt="Storage" className="w-full rounded" />
-          </div>
-        </div>
-        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-down">
-          <h2 className="fk vj zp pr kk wm qb cloud-title">About File Storage</h2>
-            <p className="text-gray-700 mb-6">
-              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-            </p>
-          <div className="tc tf yo zf mb">
-            <a
-              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
-              >
-              Get Started Now
-            </a>
-          </div>
-        </div>
-      </div>
+        {/* ===== FEATURES ===== */}
+        <section className={styles.features}>
+          <div className={styles.sectionContainer}>
+            <AnimatedSection>
+              <div className={styles.sectionHeader}>
+                <span className={styles.sectionBadge}>Features</span>
+                <h2 className={styles.sectionTitle}>
+                  Everything you need to deploy with confidence
+                </h2>
+                <p className={styles.sectionSubtitle}>
+                  Our platform provides enterprise-grade tools and support
+                  to keep your applications running flawlessly.
+                </p>
+              </div>
+            </AnimatedSection>
 
-        <div className="tc_display wf gg qq">
-        
-        <div className="w-full md:w-1/2 mt-5 md:mt-0" data-aos="fade-left">
-            <h2 className="fk vj zp pr kk wm qb cloud-title">About Compute</h2>
-            <p className="text-gray-700 mb-6">
-              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-            </p>
-            <div className="tc tf yo zf mb" >
-            <a
-              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
-              >
-              Get Started Now
-            </a>
+            <div className={styles.featuresGrid}>
+              {featureCards.map((f, i) => (
+                <AnimatedSection key={f.title} delay={i * 0.1}>
+                  <div className={styles.featureCard}>
+                    <div className={styles.featureIconWrap}>
+                      <f.icon size={24} />
+                    </div>
+                    <h3 className={styles.featureTitle}>{f.title}</h3>
+                    <p className={styles.featureDesc}>{f.desc}</p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
           </div>
-          </div>
-        <div className="animate_left xc_cstm gn gg xc/2 i" >
-        <div className="w-full md:w-1/2" data-aos="fade-right">
-            <img src="images/shape-05.svg" alt="Shape" className="opacity-30 mb-4" />
-            <img src="images/compute2.png" alt="Compute" className="w-full rounded" />
-          </div>
-        </div>
-      </div>
+        </section>
 
-       <div className="tc_display wf gg qq">
-        <div className="animate_left xc_cstm gn gg xc/2 i" >
-          <div data-aos="fade-left">
-          
-            <img src="images/shape-05.svg" alt="Shape" className="opacity-30 mb-4" />
-            <img src="images/compute2.png" alt="Storage" className="w-full rounded" />
+        {/* ===== INFRA STORY ===== */}
+        <InfraStorySection />
+
+        {/* ===== WHAT IS CLOUDFLOAT ===== */}
+        <section className={styles.twoColSection}>
+          <div className={styles.sectionContainer}>
+            <div className={styles.twoColGrid}>
+              <AnimatedSection className={styles.twoColImage}>
+                <div className={styles.imageFrame}>
+                  <CloudFloatVisual />
+                </div>
+              </AnimatedSection>
+              <AnimatedSection className={styles.twoColText} delay={0.15}>
+                <span className={styles.sectionBadge}>Platform</span>
+                <h2 className={styles.twoColTitle}>What is CloudFloat</h2>
+                <p className={styles.twoColDesc}>
+                  Instantly install apps. Easily deploy production-ready applications.
+                  No more tinkering with Dockerfiles and manually provisioning
+                  databases. Get up and running in minutes with our intelligent
+                  deployment platform.
+                </p>
+                <a href={OAUTH_URL} className={styles.ctaPrimary}>
+                  Get Started Free
+                  <ArrowRight size={18} />
+                </a>
+              </AnimatedSection>
+            </div>
           </div>
-        </div>
-        <div className="animate_right xc_cstm xc/2 i" data-aos="fade-right">
-          <h2 className="fk vj zp pr kk wm qb cloud-title">About Cloudfloat</h2>
-            <p className="text-gray-700 mb-6">
-              Instantly install Apps. Easily deploy production-ready apps. No more tinkering with Dockerfiles and manually provisioning databases.
-            </p>
-          <div className="tc tf yo zf mb">
-            <a
-              href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google"
-              className="ek jk lk gh gi hi rg ml il vc _d _l"  style={{background:'var(--ifm-button-bg)',  color: '#fff'}}
-              >
-              Get Started Now
-            </a>
+        </section>
+
+        {/* ===== APP SHOWCASE ===== */}
+        <section className={styles.showcase}>
+          <div className={styles.showcaseGrid}>
+            <AnimatedSection className={styles.showcaseLeft}>
+              <span className={styles.sectionBadge}>Marketplace</span>
+              <h2 className={styles.showcaseTitle}>
+                Affordable Premium Applications
+              </h2>
+              <p className={styles.showcaseDesc}>
+                Choose from hundreds of ready-to-deploy applications.
+                Transparent pricing with no hidden fees.
+              </p>
+              <Link to="/playstore" className={styles.ctaPrimary}>
+                View All Applications
+                <ArrowRight size={18} />
+              </Link>
+            </AnimatedSection>
+
+            <div className={styles.showcaseRight}>
+              <AppShowcaseCards />
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
+
+        {/* ===== HOW IT WORKS ===== */}
+        <section className={styles.howItWorks}>
+          <div className={styles.sectionContainer}>
+            <AnimatedSection>
+              <div className={styles.sectionHeader}>
+                <span className={styles.sectionBadge}>How It Works</span>
+                <h2 className={styles.sectionTitle}>
+                  Deploy applications in minutes
+                </h2>
+                <p className={styles.sectionSubtitle}>
+                  From search to deploy in simple steps. Our platform makes
+                  cloud deployment effortless for everyone.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <div className={styles.stepsGrid}>
+              {howItWorksCards.map((card, i) => (
+                <AnimatedSection key={card.step} delay={i * 0.08}>
+                  <div className={styles.stepCard}>
+                    <div className={styles.stepNumber}>{card.step}</div>
+                    <div className={styles.stepIconWrap}>
+                      <card.icon size={22} />
+                    </div>
+                    <h3 className={styles.stepTitle}>{card.title}</h3>
+                    <p className={styles.stepDesc}>{card.desc}</p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ===== PLATFORM SECTIONS ===== */}
+        {platformSections.map((section, i) => (
+          <section key={section.title} className={styles.twoColSection}>
+            <div className={styles.sectionContainer}>
+              <div className={`${styles.twoColGrid} ${section.reversed ? styles.twoColReversed : ''}`}>
+                <AnimatedSection className={styles.twoColImage}>
+                  <div className={styles.imageFrame}>
+                    {section.component === 'playstore' ? (
+                      <PlaystoreShowcase />
+                    ) : section.component === 's3storage' ? (
+                      <S3StorageVisual />
+                    ) : section.component === 'unifiedDashboard' ? (
+                      <UnifiedCloudDashboardVisual />
+                    ) : section.component === 'serverOverview' ? (
+                      <ServerOverviewVisual />
+                    ) : section.component === 'dockerHub' ? (
+                      <DockerHubVisual />
+                    ) : (
+                      <img src={section.image} alt={section.title} />
+                    )}
+                  </div>
+                </AnimatedSection>
+                <AnimatedSection className={styles.twoColText} delay={0.15}>
+                  <h2 className={styles.twoColTitle}>{section.title}</h2>
+                  <p className={styles.twoColDesc}>{section.desc}</p>
+                  <a href={section.cta ? section.cta.href : OAUTH_URL} className={styles.ctaPrimary}>
+                    {section.cta ? section.cta.label : 'Get Started Free'}
+                    <ArrowRight size={18} />
+                  </a>
+                </AnimatedSection>
+              </div>
+            </div>
+          </section>
+        ))}
 
 
-    </div>
-  </div>
-  </section>
+        {/* ===== CTA SECTION ===== */}
+        <section className={styles.ctaSection}>
+          <div className={styles.sectionContainer}>
+            <AnimatedSection>
+              <div className={styles.ctaCard}>
+                <div className={styles.ctaCardBg} />
+                <h2 className={styles.ctaCardTitle}>
+                  Ready to deploy your first application?
+                </h2>
+                <p className={styles.ctaCardDesc}>
+                  Join 50,000+ developers who trust ScaleInfinite for their cloud deployments.
+                  Get started in minutes with our free tier.
+                </p>
+                <div className={styles.ctaCardActions}>
+                  <a href={OAUTH_URL} className={styles.ctaPrimaryLight}>
+                    Start Deploying Now
+                    <ArrowRight size={18} />
+                  </a>
+                  <Link to="/playstore" className={styles.ctaSecondaryLight}>
+                    Browse Playstore
+                  </Link>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
 
-<section className="i pg qh rm ji hp"   style={{ background: 'var(--ifm-card-background)' }}>
-  <img src="images/shape-11.svg" alt="Shape" className="of h ga ha ke" />
-  <img src="images/shape-07.svg" alt="Shape" className="h ia o ae jf" />
-  <img src="images/shape-14.svg" alt="Shape" className="h ja ka" />
-  <img src="images/shape-15.svg" alt="Shape" className="h q p" />
-  <div className="bb ze i va ki xn br">
-    <div className="tc uf sn tn xf un gg">
-      <div className="animate_top me/5 ln rj" data-aos="fade-up">
-        <h2 className="gk vj zp or kk wm hc cloud-title">1000+</h2>
-        <p className="ek bk aq">Applications</p>
-      </div>
-      <div className="animate_top me/5 ln rj" data-aos="fade-down">
-        <h2 className="gk vj zp or kk wm hc cloud-title">200+</h2>
-        <p className="ek bk aq">Happy Clients</p>
-      </div>
-      <div className="animate_top me/5 ln rj" data-aos="fade-up">
-        <h2 className="gk vj zp or kk wm hc cloud-title">50K+</h2>
-        <p className="ek bk aq">Registered Users</p>
-      </div>
-    </div>
-  </div>
-</section>
+        {/* ===== CONTACT ===== */}
+        <section className={styles.contact}>
+          <div className={styles.sectionContainer}>
+            <AnimatedSection>
+              <div className={styles.sectionHeader}>
+                <span className={styles.sectionBadge}>Contact</span>
+                <h2 className={styles.sectionTitle}>Let's Stay Connected</h2>
+                <p className={styles.sectionSubtitle}>
+                  Reach out to us anytime. Our team is here to help you succeed.
+                </p>
+              </div>
+            </AnimatedSection>
 
-<section id="support" className="i pg fh rm ji gp uq"  style={{ background: 'var(--ifm-card-background)' }}>
-  <img src="images/shape-06.svg" alt="Shape" className="h aa y" />
-  <img src="images/shape-03.svg" alt="Shape" className="h ca u" />
-  <img src="images/shape-07.svg" alt="Shape" className="h w da ee" />
-  <img src="images/shape-12.svg" alt="Shape" className="h p s" />
-  <img src="images/shape-13.svg" alt="Shape" className="h r q" />
-     <div className="animate_top bb ze rj ki xn vq" data-aos="fade-left">
-          <h2 x-text="" className="fk vj pr kk wm on/5 gq/2 bb _b cloud-title"  >Let’s Stay Connected`</h2>
-      <p className="bb on/5 wo/5 hq" x-text="sectionTitleText" >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
-  
-    </div>
-  <div className="i va bb ye ki xn wq jb mo">
-    <div className="tc uf sn tf rn un zf xl:gap-10">
-      <div className="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg" >
-        <img src="images/shape-03.svg" alt="Shape" className="h la x wd" />
-        <img src="images/shape-06.svg" alt="Shape" className="h la ma ne kf" />
-        <div className="fb" data-aos="fade-right">
-          <h4 className="wj kk wm cc sub-heading">Email Address</h4>
-          <p>
-            <a href="#">
-              <span
-                className="__cf_email__"
-                data-cfemail="d0a3a5a0a0bfa2a490a3a4b1a2a4a5a0feb3bfbd"
-              >
-                info@scaleinfinite.fr
-              </span>
-            </a>
-          </p>
-        </div>
-        <div className="fb" data-aos="fade-left">
-          <h4 className="wj kk wm cc sub-heading">Office Location</h4>
-          <p>78 Avenue Des Champs Elysees</p>
-        </div>
-        <div className="fb" data-aos="fade-right">
-          <h4 className="wj kk wm cc sub-heading">Phone Number</h4>
-          <p>
-            <a href="#">+33 9 70 44 00 55</a>
-          </p>
-        </div>
-        {/*  <div class="fb">
-               <h4 class="wj kk wm cc">Skype Email</h4>
-               <p><a href="#"><span class="__cf_email__" data-cfemail="482d30292538242d0831273d3a25292124662b2725">[email&#160;protected]</span></a></p>
-            </div> */}
-        <span className="rc nd rh tm lc fb" />
-        <div data-aos="zoom-in">
-          <h4 className="wj kk wm qb sub-heading">Social Media</h4>
-          <ul className="tc wf fg">
-            <li>
-              <a
-                href="https://www.instagram.com/scaleinfinite/"
-                target="_blank"
-              >
-                <img
-                  src="images/instagram.png"
-                  style={{ width: 35, height: "auto" }}
-                  
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/scaleinfinite">
-                <img
-                  src="images/linkedin.png"
-                  style={{ width: 35, height: "auto" }}
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq" data-aos="zoom-out" >
-        <img src="images/connect.png" alt="" />
-      </div>
-    </div>
-  </div>
-</section>
+            <div className={styles.contactGrid}>
+              <AnimatedSection delay={0.1}>
+                <div className={styles.contactCard}>
+                  <div className={styles.contactIconWrap}>
+                    <Mail size={22} />
+                  </div>
+                  <h4 className={styles.contactLabel}>Email Address</h4>
+                  <a href="mailto:info@scaleinfinite.fr" className={styles.contactValue}>
+                    info@scaleinfinite.fr
+                  </a>
+                </div>
+              </AnimatedSection>
 
+              <AnimatedSection delay={0.2}>
+                <div className={styles.contactCard}>
+                  <div className={styles.contactIconWrap}>
+                    <MapPin size={22} />
+                  </div>
+                  <h4 className={styles.contactLabel}>Office Location</h4>
+                  <p className={styles.contactValue}>78 Avenue Des Champs Elysees</p>
+                </div>
+              </AnimatedSection>
 
-    </Layout>
+              <AnimatedSection delay={0.3}>
+                <div className={styles.contactCard}>
+                  <div className={styles.contactIconWrap}>
+                    <Phone size={22} />
+                  </div>
+                  <h4 className={styles.contactLabel}>Phone Number</h4>
+                  <a href="tel:+33970440055" className={styles.contactValue}>
+                    +33 9 70 44 00 55
+                  </a>
+                </div>
+              </AnimatedSection>
+            </div>
+
+            <AnimatedSection delay={0.2}>
+              <div className={styles.socialRow}>
+                <a href="https://www.instagram.com/scaleinfinite/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                  <img src="images/instagram.png" alt="Instagram" />
+                </a>
+                <a href="https://www.linkedin.com/company/scaleinfinite" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                  <img src="images/linkedin.png" alt="LinkedIn" />
+                </a>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+      </Layout>
     </div>
-  )
+  );
 }
-

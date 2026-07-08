@@ -116,25 +116,35 @@ const config = {
                 position: fixed;
                 z-index: 9999;
                 inset: 0;
-                background: #fff;
+                background: #ffffff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: opacity 0.3s ease;
               `,
             },
             innerHTML: `<div class="loader-spinner" style="
-              width: 40px;
-              height: 40px;
-              border: 4px solid #eee;
-              border-top: 4px solid #333;
+              width: 36px;
+              height: 36px;
+              border: 3px solid #e2e8f0;
+              border-top: 3px solid #4f46e5;
               border-radius: 50%;
-              animation: spin 1s linear infinite;"></div>`,
+              animation: spin 0.8s linear infinite;"></div>`,
           },
           {
             tagName: 'style',
             innerHTML: `
               @keyframes spin {
                 to { transform: rotate(360deg); }
+              }
+              @media (prefers-color-scheme: dark) {
+                #global-loader {
+                  background: #0f172a !important;
+                }
+                #global-loader .loader-spinner {
+                  border-color: #334155 !important;
+                  border-top-color: #818cf8 !important;
+                }
               }
             `,
           },
@@ -253,6 +263,7 @@ const config = {
             to: '/',
             label: 'Home',
             position: 'left',
+            activeBaseRegex: '^/$',
           },
           {
             type: 'docSidebar',
@@ -279,21 +290,6 @@ const config = {
           //   label: 'Blog',
           //   position: 'left'
           // },
-           // Custom Google Sign-in button as raw HTML
-    {
-      type: 'html',
-      position: 'right',
-      value: `
-        <li style="list-style: none; border: 1px solid #d1cdcd; width: 220px; border-radius: 30px;">
-          <a href="https://cloud.scaleinfinite.fr/index.php/apps/sociallogin/oauth/google" target="_blank"
-             style="padding: 0.5rem 1rem; display: flex; align-items: center; width: 220px; text-decoration: none; font-size: 15px;color: var(--ifm-color-primary-title-dark);">
-            <img src="/images/g.png" alt="Sign in with Google"
-                 style="margin-right: 8px; width: 30px; height: 30px;   " />
-            Sign in with Google
-          </a>
-        </li>
-      `,
-    },
           // {
           //   type: 'docSidebar',
           //   sidebarId: 'tutorialSidebar',
@@ -311,8 +307,52 @@ const config = {
 
       footer: {
         style: 'light',
-        links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} ScaleInfinite`,
+        links: [
+          {
+            title: 'Product',
+            items: [
+              { label: 'Playstore', to: '/playstore' },
+              { label: 'Tutorial', to: '/quick-start' },
+              { label: 'Cloud Float', to: '/introduction/cloud-float' },
+            ],
+          },
+          {
+            title: 'Resources',
+            items: [
+              { label: 'Blogs', to: '/blogs' },
+              { label: 'FAQ', to: '/faq' },
+              { label: 'Community', to: '/community' },
+            ],
+          },
+          {
+            title: 'Company',
+            items: [
+              { label: 'About', to: '/introduction/about-scale-infinite' },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/scaleinfinite/',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/scaleinfinite/',
+              },
+            ],
+          },
+          {
+            title: 'Get Started',
+            items: [
+              {
+                label: 'Sign in with Google',
+                href: 'https://pods.fltt.fr',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/channel/UCyqMBvdl3onfBG4bJ31uk-A',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} ScaleInfinite Private Limited. All rights reserved.`,
       },
 
       prism: {

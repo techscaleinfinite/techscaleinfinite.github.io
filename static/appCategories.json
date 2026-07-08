@@ -1,0 +1,1396 @@
+[
+  {
+    "id": "ai-ml",
+    "label": "AI & ML",
+    "icon": "BrainCircuit",
+    "images": [
+      {
+        "name": "ollama/ollama",
+        "image": "ollama/ollama",
+        "display": "Ollama",
+        "description": "Run Llama, Mistral, Gemma and other LLMs locally with a simple API.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/open-webui/open-webui",
+        "image": "ghcr.io/open-webui/open-webui",
+        "display": "Open WebUI",
+        "description": "Polished ChatGPT-style web UI for Ollama and any OpenAI-compatible backend.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "localai/localai",
+        "image": "localai/localai",
+        "display": "LocalAI",
+        "description": "Drop-in OpenAI-compatible API for local LLMs, embeddings and image gen.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/mintplex-labs/anything-llm",
+        "image": "ghcr.io/mintplex-labs/anything-llm",
+        "display": "AnythingLLM",
+        "description": "All-in-one private RAG/chat app with document ingestion and agents.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "flowiseai/flowise",
+        "image": "flowiseai/flowise",
+        "display": "Flowise",
+        "description": "Drag-and-drop builder for LLM apps, chains and agents on LangChain.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "langflowai/langflow",
+        "image": "langflowai/langflow",
+        "display": "Langflow",
+        "description": "Visual low-code IDE for prototyping RAG and multi-agent LLM flows.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "qdrant/qdrant",
+        "image": "qdrant/qdrant",
+        "display": "Qdrant",
+        "description": "Fast Rust vector database for semantic search and RAG retrieval.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "chromadb/chroma",
+        "image": "chromadb/chroma",
+        "display": "Chroma",
+        "description": "Lightweight AI-native embedding database, ideal for local RAG.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "semitechnologies/weaviate",
+        "image": "semitechnologies/weaviate",
+        "display": "Weaviate",
+        "description": "Open-source vector database with built-in vectorizer modules.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "vllm/vllm-openai",
+        "image": "vllm/vllm-openai",
+        "display": "vLLM",
+        "description": "High-throughput OpenAI-compatible LLM serving with PagedAttention.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "bitnami/jupyter-base-notebook",
+        "image": "bitnami/jupyter-base-notebook",
+        "display": "Jupyter Notebook",
+        "description": "Interactive notebooks for data science and ML experimentation.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/jupyter-base-notebook.webp",
+        "port": 8000,
+        "cpu": 200,
+        "memory": 384
+      },
+      {
+        "name": "bitnami/pytorch",
+        "image": "bitnami/pytorch",
+        "display": "PyTorch",
+        "description": "Ready-to-run PyTorch environment for model training and inference.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/pytorch.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "dev-tools",
+    "label": "Developer Tools",
+    "icon": "Code2",
+    "images": [
+      {
+        "name": "codercom/code-server",
+        "image": "codercom/code-server",
+        "display": "code-server",
+        "description": "Full VS Code in the browser, run on your own server.",
+        "logo": null,
+        "port": 8080,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "gitea/gitea",
+        "image": "gitea/gitea",
+        "display": "Gitea",
+        "description": "Lightweight self-hosted Git service with issues, PRs and CI.",
+        "logo": null,
+        "port": 3000,
+        "cpu": 100,
+        "memory": 256
+      },
+      {
+        "name": "codeberg.org/forgejo/forgejo",
+        "image": "codeberg.org/forgejo/forgejo",
+        "display": "Forgejo",
+        "description": "Community-driven Gitea fork; a fast self-hosted GitHub alternative.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "gitlab/gitlab-ce",
+        "image": "gitlab/gitlab-ce",
+        "display": "GitLab CE",
+        "description": "Complete DevOps platform: Git, CI/CD, registry and issues in one.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "jenkins",
+        "image": "jenkins",
+        "display": "Jenkins",
+        "description": "The classic extensible automation server for CI/CD pipelines.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/jenkins.webp",
+        "port": 8080,
+        "cpu": 300,
+        "memory": 512
+      },
+      {
+        "name": "ghcr.io/woodpecker-ci/woodpecker-server",
+        "image": "ghcr.io/woodpecker-ci/woodpecker-server",
+        "display": "Woodpecker CI",
+        "description": "Simple, container-native CI engine (community Drone fork).",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "sonarqube",
+        "image": "sonarqube",
+        "display": "SonarQube",
+        "description": "Static code analysis for quality and security across many languages.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/sonarqube.webp",
+        "port": 8080,
+        "cpu": 300,
+        "memory": 512
+      },
+      {
+        "name": "sonatype/nexus3",
+        "image": "sonatype/nexus3",
+        "display": "Nexus Repository",
+        "description": "Universal artifact repository for Maven, npm, Docker and more.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "verdaccio/verdaccio",
+        "image": "verdaccio/verdaccio",
+        "display": "Verdaccio",
+        "description": "Lightweight private npm registry and caching proxy.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "registry",
+        "image": "registry",
+        "display": "Docker Registry",
+        "description": "Host your own private Docker image registry.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/registry.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "swaggerapi/swagger-ui",
+        "image": "swaggerapi/swagger-ui",
+        "display": "Swagger UI",
+        "description": "Interactive OpenAPI documentation and API explorer.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "sentry",
+        "image": "sentry",
+        "display": "Sentry",
+        "description": "Self-hosted error tracking and performance monitoring.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/sentry.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "automation",
+    "label": "Automation & Low-Code",
+    "icon": "Workflow",
+    "images": [
+      {
+        "name": "n8nio/n8n",
+        "image": "n8nio/n8n",
+        "display": "n8n",
+        "description": "Fair-code workflow automation with 400+ integrations and AI nodes.",
+        "logo": null,
+        "port": 5678,
+        "cpu": 150,
+        "memory": 256
+      },
+      {
+        "name": "nodered/node-red",
+        "image": "nodered/node-red",
+        "display": "Node-RED",
+        "description": "Flow-based wiring of devices, APIs and services for IoT/automation.",
+        "logo": null,
+        "port": 3000,
+        "cpu": 150,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/activepieces/activepieces",
+        "image": "ghcr.io/activepieces/activepieces",
+        "display": "Activepieces",
+        "description": "Open-source Zapier alternative with a friendly no-code builder.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/windmill-labs/windmill",
+        "image": "ghcr.io/windmill-labs/windmill",
+        "display": "Windmill",
+        "description": "Turn scripts (TS/Python) into workflows, UIs and cron jobs.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/automatisch/automatisch",
+        "image": "ghcr.io/automatisch/automatisch",
+        "display": "Automatisch",
+        "description": "Self-hosted, privacy-first Zapier alternative.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "huginn/huginn",
+        "image": "huginn/huginn",
+        "display": "Huginn",
+        "description": "Agents that watch and act on the web for you (IFTTT-style).",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/nocodb/nocodb",
+        "image": "ghcr.io/nocodb/nocodb",
+        "display": "NocoDB",
+        "description": "Turn any SQL database into a no-code Airtable-like spreadsheet.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "baserow/baserow",
+        "image": "baserow/baserow",
+        "display": "Baserow",
+        "description": "Open-source no-code database and Airtable alternative.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "appsmith/appsmith",
+        "image": "appsmith/appsmith",
+        "display": "Appsmith",
+        "description": "Low-code platform to build internal tools and admin dashboards.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "tooljet/tooljet",
+        "image": "tooljet/tooljet",
+        "display": "ToolJet",
+        "description": "Low-code framework for building and deploying internal apps.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "budibase/budibase",
+        "image": "budibase/budibase",
+        "display": "Budibase",
+        "description": "All-in-one low-code platform for internal apps and workflows.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "media",
+    "label": "Media & Streaming",
+    "icon": "Clapperboard",
+    "images": [
+      {
+        "name": "jellyfin/jellyfin",
+        "image": "jellyfin/jellyfin",
+        "display": "Jellyfin",
+        "description": "The leading free, open-source media server for movies, TV and music.",
+        "logo": null,
+        "port": 8096,
+        "cpu": 300,
+        "memory": 512
+      },
+      {
+        "name": "plexinc/pms-docker",
+        "image": "plexinc/pms-docker",
+        "display": "Plex",
+        "description": "The most widely deployed self-hosted media server, apps on every device.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "emby/embyserver",
+        "image": "emby/embyserver",
+        "display": "Emby",
+        "description": "Mature media server with strong live TV/DVR and broad client support.",
+        "logo": null,
+        "port": 8096,
+        "cpu": 300,
+        "memory": 512
+      },
+      {
+        "name": "ghcr.io/immich-app/immich-server",
+        "image": "ghcr.io/immich-app/immich-server",
+        "display": "Immich",
+        "description": "Self-hosted Google Photos replacement with mobile backup and ML search.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "photoprism/photoprism",
+        "image": "photoprism/photoprism",
+        "display": "PhotoPrism",
+        "description": "AI-powered self-hosted photo library with face recognition and tagging.",
+        "logo": null,
+        "port": 8096,
+        "cpu": 300,
+        "memory": 512
+      },
+      {
+        "name": "navidrome/navidrome",
+        "image": "navidrome/navidrome",
+        "display": "Navidrome",
+        "description": "Lightweight Subsonic-compatible self-hosted music streaming server.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/advplyr/audiobookshelf",
+        "image": "ghcr.io/advplyr/audiobookshelf",
+        "display": "Audiobookshelf",
+        "description": "The definitive self-hosted audiobook and podcast server.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "gotson/komga",
+        "image": "gotson/komga",
+        "display": "Komga",
+        "description": "Comics/manga/eBook server with OPDS, Kobo sync and a clean reader.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "tautulli/tautulli",
+        "image": "tautulli/tautulli",
+        "display": "Tautulli",
+        "description": "Monitoring and analytics dashboard for Plex streams and history.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "fallenbagel/jellyseerr",
+        "image": "fallenbagel/jellyseerr",
+        "display": "Jellyseerr",
+        "description": "Request-management front end for Jellyfin/Plex/Emby.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "owncast/owncast",
+        "image": "owncast/owncast",
+        "display": "Owncast",
+        "description": "Self-hosted live streaming and chat — an open Twitch alternative.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "office",
+    "label": "Productivity & Office",
+    "icon": "Briefcase",
+    "images": [
+      {
+        "name": "nextcloud",
+        "image": "nextcloud",
+        "display": "Nextcloud",
+        "description": "Flagship self-hosted collaboration suite: files, calendar, contacts, apps.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/nextcloud.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 384
+      },
+      {
+        "name": "onlyoffice/documentserver",
+        "image": "onlyoffice/documentserver",
+        "display": "ONLYOFFICE Docs",
+        "description": "Full online office suite with excellent MS Office format fidelity.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "collabora/code",
+        "image": "collabora/code",
+        "display": "Collabora Online",
+        "description": "LibreOffice-powered collaborative online office suite.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "vikunja/vikunja",
+        "image": "vikunja/vikunja",
+        "display": "Vikunja",
+        "description": "Open-source task and project manager (list/Gantt/Kanban/table).",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "triliumnext/trilium",
+        "image": "triliumnext/trilium",
+        "display": "Trilium Notes",
+        "description": "Hierarchical personal knowledge base with powerful linking.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/usememos/memos",
+        "image": "ghcr.io/usememos/memos",
+        "display": "Memos",
+        "description": "Lightweight, markdown-native self-hosted note/quick-capture service.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "lscr.io/linuxserver/bookstack",
+        "image": "lscr.io/linuxserver/bookstack",
+        "display": "BookStack",
+        "description": "Simple wiki/documentation platform of shelves, books and pages.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/requarks/wiki",
+        "image": "ghcr.io/requarks/wiki",
+        "display": "Wiki.js",
+        "description": "Modern Node.js wiki with Markdown/WYSIWYG editors and Git storage.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/paperless-ngx/paperless-ngx",
+        "image": "ghcr.io/paperless-ngx/paperless-ngx",
+        "display": "Paperless-ngx",
+        "description": "Self-hosted document management: scans, OCRs, tags and indexes paperwork.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/actualbudget/actual",
+        "image": "ghcr.io/actualbudget/actual",
+        "display": "Actual Budget",
+        "description": "Fast, local-first self-hosted personal finance and budgeting app.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "mediawiki",
+        "image": "mediawiki",
+        "display": "MediaWiki",
+        "description": "The wiki engine behind Wikipedia, ideal for large knowledge bases.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/mediawiki.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "cms",
+    "label": "CMS & Website",
+    "icon": "Globe",
+    "images": [
+      {
+        "name": "wordpress",
+        "image": "wordpress",
+        "display": "WordPress",
+        "description": "Powers a huge share of the web; the most popular CMS for sites and blogs.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/wordpress.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 384
+      },
+      {
+        "name": "ghost",
+        "image": "ghost",
+        "display": "Ghost",
+        "description": "Modern publishing and newsletter platform with membership features.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/ghost.webp",
+        "port": 2368,
+        "cpu": 150,
+        "memory": 256
+      },
+      {
+        "name": "drupal",
+        "image": "drupal",
+        "display": "Drupal",
+        "description": "Enterprise-grade, highly extensible CMS for complex content sites.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/drupal.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 384
+      },
+      {
+        "name": "joomla",
+        "image": "joomla",
+        "display": "Joomla",
+        "description": "Long-established flexible CMS with strong multilingual support.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/joomla.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 384
+      },
+      {
+        "name": "directus",
+        "image": "directus",
+        "display": "Directus",
+        "description": "Headless CMS/data platform wrapping any SQL DB with REST/GraphQL.",
+        "logo": null,
+        "port": 3000,
+        "cpu": 150,
+        "memory": 256
+      },
+      {
+        "name": "payloadcms/payload",
+        "image": "payloadcms/payload",
+        "display": "Payload CMS",
+        "description": "TypeScript-native headless CMS and application framework.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/plausible/community-edition",
+        "image": "ghcr.io/plausible/community-edition",
+        "display": "Plausible",
+        "description": "Privacy-friendly, cookie-less, lightweight web analytics.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/umami-software/umami",
+        "image": "ghcr.io/umami-software/umami",
+        "display": "Umami",
+        "description": "Simple, fast, privacy-focused self-hosted web analytics.",
+        "logo": null,
+        "port": 3000,
+        "cpu": 150,
+        "memory": 256
+      },
+      {
+        "name": "matomo",
+        "image": "matomo",
+        "display": "Matomo",
+        "description": "The most feature-complete self-hosted analytics platform.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/matomo.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 384
+      },
+      {
+        "name": "bitnami/discourse",
+        "image": "bitnami/discourse",
+        "display": "Discourse",
+        "description": "The leading modern open-source forum/community platform.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/discourse.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "bitnami/magento",
+        "image": "bitnami/magento",
+        "display": "Magento",
+        "description": "Powerful open-source e-commerce platform for large catalogs.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/magento.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "bitnami/prestashop",
+        "image": "bitnami/prestashop",
+        "display": "PrestaShop",
+        "description": "Feature-rich open-source e-commerce CMS for online stores.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/prestashop.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "monitoring",
+    "label": "Monitoring & Observability",
+    "icon": "Activity",
+    "images": [
+      {
+        "name": "grafana/grafana",
+        "image": "grafana/grafana",
+        "display": "Grafana",
+        "description": "The de facto dashboard and visualization platform for metrics and logs.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/grafana/grafana.webp",
+        "port": 3000,
+        "cpu": 100,
+        "memory": 256
+      },
+      {
+        "name": "prom/prometheus",
+        "image": "prom/prometheus",
+        "display": "Prometheus",
+        "description": "Industry-standard time-series metrics collection and alerting engine.",
+        "logo": null,
+        "port": 8080,
+        "cpu": 100,
+        "memory": 256
+      },
+      {
+        "name": "louislam/uptime-kuma",
+        "image": "louislam/uptime-kuma",
+        "display": "Uptime Kuma",
+        "description": "Popular self-hosted uptime/status monitor with a polished UI.",
+        "logo": null,
+        "port": 3001,
+        "cpu": 150,
+        "memory": 256
+      },
+      {
+        "name": "netdata/netdata",
+        "image": "netdata/netdata",
+        "display": "Netdata",
+        "description": "Real-time per-second infrastructure monitoring with auto-discovery.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "influxdb",
+        "image": "influxdb",
+        "display": "InfluxDB",
+        "description": "Purpose-built time-series database, common Grafana/Telegraf backend.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/influxdb.webp",
+        "port": 5432,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "telegraf",
+        "image": "telegraf",
+        "display": "Telegraf",
+        "description": "Plugin-driven metrics collection agent for the InfluxDB/TICK stack.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/telegraf.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "grafana/loki",
+        "image": "grafana/loki",
+        "display": "Loki",
+        "description": "Horizontally scalable log aggregation designed to pair with Grafana.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/grafana/loki.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "victoriametrics/victoria-metrics",
+        "image": "victoriametrics/victoria-metrics",
+        "display": "VictoriaMetrics",
+        "description": "Fast, efficient Prometheus-compatible time-series database.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "google/cadvisor",
+        "image": "google/cadvisor",
+        "display": "cAdvisor",
+        "description": "Container resource-usage and performance analyzer from Google.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/google/cadvisor.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "nicolargo/glances",
+        "image": "nicolargo/glances",
+        "display": "Glances",
+        "description": "Cross-platform system monitor with a web UI for single-host visibility.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "healthchecks/healthchecks",
+        "image": "healthchecks/healthchecks",
+        "display": "Healthchecks",
+        "description": "Self-hosted cron-job and heartbeat monitoring with alerting.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "henrygd/beszel",
+        "image": "henrygd/beszel",
+        "display": "Beszel",
+        "description": "Lightweight modern server-monitoring hub with historical stats.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "databases",
+    "label": "Databases & Cache",
+    "icon": "Database",
+    "images": [
+      {
+        "name": "postgres",
+        "image": "postgres",
+        "display": "PostgreSQL",
+        "description": "The most popular open-source relational database.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/postgres.webp",
+        "port": 5432,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "mysql",
+        "image": "mysql",
+        "display": "MySQL",
+        "description": "Ubiquitous relational database powering countless web apps.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/mysql.webp",
+        "port": 3306,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "mariadb",
+        "image": "mariadb",
+        "display": "MariaDB",
+        "description": "Community-driven MySQL fork, default DB for many self-hosted apps.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/mariadb.webp",
+        "port": 3306,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "mongo",
+        "image": "mongo",
+        "display": "MongoDB",
+        "description": "Leading document/NoSQL database.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/mongo.webp",
+        "port": 27017,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "redis",
+        "image": "redis",
+        "display": "Redis",
+        "description": "The standard in-memory key-value store for caching and queues.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/redis.webp",
+        "port": 6379,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "valkey",
+        "image": "valkey",
+        "display": "Valkey",
+        "description": "Community-governed, BSD-licensed Redis fork.",
+        "logo": null,
+        "port": 5432,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "memcached",
+        "image": "memcached",
+        "display": "Memcached",
+        "description": "Minimal high-performance distributed memory cache.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/memcached.webp",
+        "port": 11211,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "couchdb",
+        "image": "couchdb",
+        "display": "Apache CouchDB",
+        "description": "Document database with multi-master replication.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/couchdb.webp",
+        "port": 5432,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "clickhouse",
+        "image": "clickhouse",
+        "display": "ClickHouse",
+        "description": "Blazing-fast columnar OLAP database for analytics.",
+        "logo": null,
+        "port": 5432,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "neo4j",
+        "image": "neo4j",
+        "display": "Neo4j",
+        "description": "The leading native graph database.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/neo4j.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "adminer",
+        "image": "adminer",
+        "display": "Adminer",
+        "description": "Single-file web DB admin tool for MySQL, Postgres, SQLite and more.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/adminer.webp",
+        "port": 8080,
+        "cpu": 200,
+        "memory": 384
+      },
+      {
+        "name": "dpage/pgadmin4",
+        "image": "dpage/pgadmin4",
+        "display": "pgAdmin 4",
+        "description": "Official full-featured web administration UI for PostgreSQL.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "cockroachdb/cockroach",
+        "image": "cockroachdb/cockroach",
+        "display": "CockroachDB",
+        "description": "Distributed, Postgres-compatible SQL database built for scale.",
+        "logo": null,
+        "port": 5432,
+        "cpu": 200,
+        "memory": 512
+      }
+    ]
+  },
+  {
+    "id": "chat",
+    "label": "Communication & Chat",
+    "icon": "MessageCircle",
+    "images": [
+      {
+        "name": "mattermost/mattermost-team-edition",
+        "image": "mattermost/mattermost-team-edition",
+        "display": "Mattermost",
+        "description": "Open-source Slack alternative for team messaging.",
+        "logo": null,
+        "port": 8065,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "rocket.chat",
+        "image": "rocket.chat",
+        "display": "Rocket.Chat",
+        "description": "Feature-rich open-source team chat and omnichannel platform.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/rocket.chat.webp",
+        "port": 8065,
+        "cpu": 200,
+        "memory": 512
+      },
+      {
+        "name": "matrixdotorg/synapse",
+        "image": "matrixdotorg/synapse",
+        "display": "Matrix Synapse",
+        "description": "Reference homeserver for the federated, encrypted Matrix protocol.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "vectorim/element-web",
+        "image": "vectorim/element-web",
+        "display": "Element",
+        "description": "The flagship Matrix web client, paired with a Synapse homeserver.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "matrixconduit/matrix-conduit",
+        "image": "matrixconduit/matrix-conduit",
+        "display": "Conduit",
+        "description": "Lightweight single-binary Matrix homeserver for small deployments.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "zulip/docker-zulip",
+        "image": "zulip/docker-zulip",
+        "display": "Zulip",
+        "description": "Open-source team chat organized by topic-based threading.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "mumblevoip/mumble-server",
+        "image": "mumblevoip/mumble-server",
+        "display": "Mumble",
+        "description": "Low-latency voice-chat server popular for gaming and communities.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "jitsi/web",
+        "image": "jitsi/web",
+        "display": "Jitsi Meet",
+        "description": "Self-hosted, no-account video conferencing.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ejabberd/ecs",
+        "image": "ejabberd/ecs",
+        "display": "ejabberd",
+        "description": "Robust, massively scalable XMPP messaging server.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "web-proxy",
+    "label": "Web Servers & Proxies",
+    "icon": "Server",
+    "images": [
+      {
+        "name": "nginx",
+        "image": "nginx",
+        "display": "Nginx",
+        "description": "The most widely deployed web server and reverse proxy.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/nginx.webp",
+        "port": 80,
+        "cpu": 100,
+        "memory": 128
+      },
+      {
+        "name": "traefik",
+        "image": "traefik",
+        "display": "Traefik",
+        "description": "Cloud-native edge router with auto service discovery and TLS.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/traefik.webp",
+        "port": 80,
+        "cpu": 100,
+        "memory": 128
+      },
+      {
+        "name": "caddy",
+        "image": "caddy",
+        "display": "Caddy",
+        "description": "Modern web server with fully automatic HTTPS by default.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/caddy.webp",
+        "port": 80,
+        "cpu": 100,
+        "memory": 128
+      },
+      {
+        "name": "httpd",
+        "image": "httpd",
+        "display": "Apache HTTP Server",
+        "description": "Battle-tested Apache web server, ubiquitous for PHP/CGI.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/httpd.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "haproxy",
+        "image": "haproxy",
+        "display": "HAProxy",
+        "description": "High-performance TCP/HTTP load balancer for high-availability routing.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/haproxy.webp",
+        "port": 80,
+        "cpu": 100,
+        "memory": 128
+      },
+      {
+        "name": "jc21/nginx-proxy-manager",
+        "image": "jc21/nginx-proxy-manager",
+        "display": "Nginx Proxy Manager",
+        "description": "GUI-driven reverse proxy with point-and-click Let’s Encrypt certs.",
+        "logo": null,
+        "port": 80,
+        "cpu": 100,
+        "memory": 128
+      },
+      {
+        "name": "nginxproxy/nginx-proxy",
+        "image": "nginxproxy/nginx-proxy",
+        "display": "nginx-proxy",
+        "description": "Automated Docker-aware Nginx reverse proxy from container labels.",
+        "logo": null,
+        "port": 80,
+        "cpu": 100,
+        "memory": 128
+      },
+      {
+        "name": "envoyproxy/envoy",
+        "image": "envoyproxy/envoy",
+        "display": "Envoy",
+        "description": "CNCF L7 proxy powering service meshes with advanced routing.",
+        "logo": null,
+        "port": 80,
+        "cpu": 100,
+        "memory": 128
+      },
+      {
+        "name": "varnish",
+        "image": "varnish",
+        "display": "Varnish Cache",
+        "description": "HTTP accelerator / caching reverse proxy for content-heavy sites.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/varnish.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "storage",
+    "label": "Files & Storage",
+    "icon": "HardDrive",
+    "images": [
+      {
+        "name": "nextcloud",
+        "image": "nextcloud",
+        "display": "Nextcloud",
+        "description": "The flagship self-hosted file sync & share / collaboration suite.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/nextcloud.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 384
+      },
+      {
+        "name": "minio/minio",
+        "image": "minio/minio",
+        "display": "MinIO",
+        "description": "S3-compatible high-performance object storage.",
+        "logo": null,
+        "port": 8080,
+        "cpu": 100,
+        "memory": 256
+      },
+      {
+        "name": "filebrowser/filebrowser",
+        "image": "filebrowser/filebrowser",
+        "display": "File Browser",
+        "description": "Lightweight web file manager for browsing, uploading and sharing.",
+        "logo": null,
+        "port": 80,
+        "cpu": 100,
+        "memory": 256
+      },
+      {
+        "name": "syncthing/syncthing",
+        "image": "syncthing/syncthing",
+        "display": "Syncthing",
+        "description": "Decentralized, peer-to-peer continuous file synchronization.",
+        "logo": null,
+        "port": 8080,
+        "cpu": 100,
+        "memory": 256
+      },
+      {
+        "name": "owncloud",
+        "image": "owncloud",
+        "display": "ownCloud",
+        "description": "Established self-hosted file sync & share platform.",
+        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/owncloud.webp",
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "seafileltd/seafile-mc",
+        "image": "seafileltd/seafile-mc",
+        "display": "Seafile",
+        "description": "High-performance file sync/share with client-side encryption.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "drakkan/sftpgo",
+        "image": "drakkan/sftpgo",
+        "display": "SFTPGo",
+        "description": "Full-featured SFTP/FTP/WebDAV/HTTP file server with a web admin UI.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "duplicati/duplicati",
+        "image": "duplicati/duplicati",
+        "display": "Duplicati",
+        "description": "Encrypted, incremental backup client with a web UI.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "kopia/kopia",
+        "image": "kopia/kopia",
+        "display": "Kopia",
+        "description": "Fast, encrypted, deduplicating backup tool with a web server mode.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  },
+  {
+    "id": "security",
+    "label": "Security & Identity",
+    "icon": "ShieldCheck",
+    "images": [
+      {
+        "name": "vaultwarden/server",
+        "image": "vaultwarden/server",
+        "display": "Vaultwarden",
+        "description": "Lightweight Rust Bitwarden server; the go-to self-hosted password manager.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "quay.io/keycloak/keycloak",
+        "image": "quay.io/keycloak/keycloak",
+        "display": "Keycloak",
+        "description": "CNCF-grade identity & access management (SSO, OIDC, SAML, LDAP).",
+        "logo": null,
+        "port": 8080,
+        "cpu": 300,
+        "memory": 512
+      },
+      {
+        "name": "ghcr.io/goauthentik/server",
+        "image": "ghcr.io/goauthentik/server",
+        "display": "authentik",
+        "description": "Modern self-hosted identity provider with OAuth2/OIDC, SAML and forward-auth.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "authelia/authelia",
+        "image": "authelia/authelia",
+        "display": "Authelia",
+        "description": "Lightweight forward-auth authentication/2FA companion for reverse proxies.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "hashicorp/vault",
+        "image": "hashicorp/vault",
+        "display": "HashiCorp Vault",
+        "description": "Industry-standard secrets management and encryption-as-a-service.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "smallstep/step-ca",
+        "image": "smallstep/step-ca",
+        "display": "step-ca",
+        "description": "Private online certificate authority with ACME automation.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "pihole/pihole",
+        "image": "pihole/pihole",
+        "display": "Pi-hole",
+        "description": "Network-wide DNS sinkhole for ad/tracker blocking.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "adguard/adguardhome",
+        "image": "adguard/adguardhome",
+        "display": "AdGuard Home",
+        "description": "Network-wide DNS ad/tracker blocker with DoH/DoT support.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/wg-easy/wg-easy",
+        "image": "ghcr.io/wg-easy/wg-easy",
+        "display": "WireGuard Easy",
+        "description": "All-in-one WireGuard VPN server with a web UI for managing peers.",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      },
+      {
+        "name": "ghcr.io/zitadel/zitadel",
+        "image": "ghcr.io/zitadel/zitadel",
+        "display": "Zitadel",
+        "description": "Cloud-native identity platform (OIDC/SAML, passwordless, multi-tenant).",
+        "logo": null,
+        "port": 80,
+        "cpu": 200,
+        "memory": 256
+      }
+    ]
+  }
+]

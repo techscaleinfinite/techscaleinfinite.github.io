@@ -2,25 +2,27 @@ import React from 'react';
 import {useThemeConfig} from '@docusaurus/theme-common';
 import {useNavbarSecondaryMenu} from '@docusaurus/theme-common/internal';
 import Translate from '@docusaurus/Translate';
+
 function SecondaryMenuBackButton(props) {
   return (
-    <button {...props} type="button" className="clean-btn navbar-sidebar__back">
+    <button {...props} type="button" className="navbar-sidebar__back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M19 12H5" /><path d="m12 19-7-7 7-7" />
+      </svg>
       <Translate
         id="theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel"
         description="The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)">
-        ← Back to main menu
+        Back to main menu
       </Translate>
     </button>
   );
 }
-// The secondary menu slides from the right and shows contextual information
-// such as the docs sidebar
+
 export default function NavbarMobileSidebarSecondaryMenu() {
   const isPrimaryMenuEmpty = useThemeConfig().navbar.items.length === 0;
   const secondaryMenu = useNavbarSecondaryMenu();
   return (
     <>
-      {/* edge-case: prevent returning to the primaryMenu when it's empty */}
       {!isPrimaryMenuEmpty && (
         <SecondaryMenuBackButton onClick={() => secondaryMenu.hide()} />
       )}

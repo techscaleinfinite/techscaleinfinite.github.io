@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 .wrapper{
-    display: 'flex';
-    flex-direction: 'column';
-    align-items: 'center';
-    gap: '2rem';
-     padding: '2rem';
-     margin: '2rem 3rem',
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 @media (min-width: 768px) {
@@ -34,7 +34,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,26 +46,35 @@
 .popupImage {
   max-width: 90%;
   max-height: 90%;
-  border-radius: 12px;
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
 }
 
 .popupArrow {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2.5rem;
-  background-color: #111;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #fff;
-  border: 2px solid #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   width: 44px;
   height: 44px;
   text-align: center;
-  line-height: 38px;
+  line-height: 40px;
   cursor: pointer;
   z-index: 10000;
   padding: 0 !important;
+  transition: all 0.3s ease;
+}
+
+.popupArrow:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-50%) scale(1.1);
 }
 
 .leftArrow {
@@ -76,13 +87,27 @@
 
 /* ========== APPS DESCRIPTION PAGE */
 /* =========== APPS  */
+.hover-zoom {
+  transition: all 0.3s ease;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--si-border-color, #e2e8f0) !important;
+  background: var(--ifm-card-background, #fff) !important;
+}
+
+.hover-zoom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
 .hover-zoom img {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .hover-zoom:hover img {
   transform: scale(1.05);
 }
+
 /* Custom column for 5 items per row on large screens */
 @media (min-width: 1200px) {
   .custom-col-lg-5 {
@@ -91,27 +116,19 @@
   }
 }
 
-
-
-/* Hover effect for app icon cards */
-.hover-zoom img {
-  transition: transform 0.3s ease;
-}
-
-.hover-zoom:hover img {
-  transform: scale(1.05);
-}
-
 /* Hover effect for category item */
 .category-hover {
-  transition: background-color 0.3s ease;
-  border-radius: 12px;
-  padding: 0.5rem;
+  transition: all 0.3s ease;
+  border-radius: 14px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid transparent;
 }
 
 .category-hover:hover {
-  background-color: #f8f9fa;
+  background-color: var(--ifm-wishlist-background, #f8f9fa);
   cursor: pointer;
+  border-color: var(--si-border-color, #e2e8f0);
+  transform: translateX(4px);
 }
 
 .category-hover img {
@@ -119,18 +136,27 @@
 }
 
 .category-hover:hover img {
-  transform: scale(1.05);
-}
-.custom-h3 {
-   font-family: "Roboto Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  text-transform: capitalize;
-}
-.category-title{
-  font-family: "Roboto Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-size: 18px;
+  transform: scale(1.08);
 }
 
+.custom-h3 {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary, #6b73fa);
+  display: inline-block;
+  margin-bottom: 1.25rem;
+}
+
+.category-title {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--ifm-color-primary-font-dark, #1a1a1a);
+  letter-spacing: -0.01em;
+}

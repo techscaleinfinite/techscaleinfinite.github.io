@@ -1,193 +1,190 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '@theme/Layout';
+import { Star, Download, BrainCircuit } from 'lucide-react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
+import './style.css';
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './style.css' // for hover styles
+const buildInstallUrl = ({ title, port }) => {
+  const env = { env_key_1: 'env_value_1', env_key_2: 'env_value_2', env_key_3: 'env_value_3' };
+  const work_dir = { work_key_1: 'work_value_1', work_key_2: 'work_value_2', work_key_3: 'work_value_3' };
+  return `https://pods.fltt.fr/create-app?install-app=${encodeURIComponent(title)}&port=${encodeURIComponent(port)}&argument=3256&env=${encodeURIComponent(JSON.stringify(env))}&work_dir=${encodeURIComponent(JSON.stringify(work_dir))}`;
+};
 
-const similarApps = [
-  {
-    name: "Moody Month: Hormone Tracker",
-    rating: 4.4,
-    image: "https://play-lh.googleusercontent.com/TScWCJH_Wockk87pasNCob2SN2f-340OvLA3SgG2Fv_MiNkQ3MNm2fmZKR_yyuGJQQY=s512-rw",
-  },
-  {
-    name: "PulseLife ex 360 medics",
-    rating: 4.4,
-    image: "https://play-lh.googleusercontent.com/oXZAnN8IhyqajLSLWAx-IHL0La1h2GhaH37VVILXBpV_rGAhLwobWSMn9HqiN3lMkg=s512-rw",
-  },
-  {
-    name: "CNH Care",
-    rating: 4.5,
-    image: "https://play-lh.googleusercontent.com/rO0mp7it8hTeXnhQJtIgU0yhwsy3ldXEZbTM028467_a_KukXHNASTf5Pyn4XRy_kw=s512-rw",
-  },
-  {
-    name: "mySugr - Diabetes Tracker Log",
-    rating: 4.6,
-    image: "https://play-lh.googleusercontent.com/321VYA65rzYXqR_KYLofCaIobHHD18Asrdn4RgN6dLxlFd1LrOVNNhmc4Swx1SLL-SY=s512-rw",
-  },
-  {
-    name: "ACL & Knee Physical Therapy",
-    rating: 3.8,
-    image: "https://play-lh.googleusercontent.com/sVoVpUslep9oLOrc_89zN2jwX_M6ZEW_XPFcabyFr8p-gJ9wAkJkY4DUj6BrChj_q0E8=s512-rw",
-  },
-  {
-    name: "Red App",
-    rating: 4.2,
-    image: "https://play-lh.googleusercontent.com/gNy41I_elUmyoyoVA3VmFOgU4G4onYpoUeNtRrWbx_iaUCr7rdJ2Uzlqwp5eWt7C-OQ=s512-rw",
-  },
-  {
-    name: "Drop Tracker",
-    rating: 4.5,
-    image: "https://play-lh.googleusercontent.com/7a_ICu5SaYI-nnAnnhVNGegYNiXNKvmXFW8arTN7xcLyqSV6GhshQHz43lEb5b5ksikw=s512-rw",
-  },
-  {
-    name: "Livi",
-    rating: 4.3,
-    image: "https://play-lh.googleusercontent.com/OnL5UMSnbEd528CBo9jsY8J5tALp1Z74iUA9qqPRhbftg5A1av3644hKdbiYvjCD2W5u=s512-rw",
-  },
-  {
-    name: "MyHealth",
-    rating: 4.1,
-    image: "https://play-lh.googleusercontent.com/42Jw7qpvgiHVf-fbQW6V-ZKZM6ugYdyZViD4dpCLvoJ9OU6CxL4GSbdYAfBKU2xEyQ=s512-rw",
-  },
-  {
-    name: "MMP Tracker",
-    rating: 4.0,
-    image: "https://play-lh.googleusercontent.com/Zzk-S1StHZk_HFJwEjOREwr32_Igic0QVV3v4hqSs5QwjitDwfWI1Q5m88THdvY2cNE=s512-rw",
-  },
-    {
-    name: "Fit bit",
-    rating: 4.0,
-    image: "https://play-lh.googleusercontent.com/QhMCymTyxJbzRiwMBA-GYooS-nVKm3fHg2CSRyKHvhmC-e5vOibfST73y1MmScvtPw=s512-rw",
-  },
-    {
-    name: "Sleep Cycle",
-    rating: 4.0,
-    image: "https://play-lh.googleusercontent.com/dar3zPlTbJYfHtH0hG4WOOK28ujJTj5kz51SwDuZc-HrmSgjZyavEDY_k4jmiJ9QwFo=s512-rw",
-  },
-]
-const categoryApps = [
-  {
-    logo: 'https://cdn.scaleinfinite.fr/app-images-webp/grafana_grafana.webp',
-    name: 'Operating System',   
-  },
-  {
-    logo: 'https://cdn.scaleinfinite.fr/app-images-webp/caddy.webp',
-    name: 'Web Services',  
-  },
-   {
-    logo: 'https://cdn.scaleinfinite.fr/app-images-webp/amazonlinux.webp',
-    name: 'CMS',   
-  },
-  {
-    logo: 'https://cdn.scaleinfinite.fr/app-images-webp/erlang.webp',
-    name: 'DataBase',  
-  },
-];
 export default function CategoryTemplate({ categoryname, slug }) {
   const [apps, setApps] = useState([]);
   const [category, setCategory] = useState([]);
+  const [isJsonCategory, setIsJsonCategory] = useState(false);
 
-
-useEffect(() => {
+  useEffect(() => {
     (async () => {
       const SQL = await initSqlJs({
-        locateFile: file => `/sql-wasm.wasm`,
+        locateFile: (file) => `/sql-wasm.wasm`,
       });
 
-         // Load category.sqlite
-    const catRes = await fetch('/category.sqlite');
-    const catBuffer = await catRes.arrayBuffer();
-    const catDB = new SQL.Database(new Uint8Array(catBuffer));
+      const catRes = await fetch('/category.sqlite');
+      const catBuffer = await catRes.arrayBuffer();
+      const catDB = new SQL.Database(new Uint8Array(catBuffer));
+      const catResult = catDB.exec(
+        `SELECT * FROM category WHERE name!='${slug.replace(/'/g, "''")}' order by sort_order desc`
+      );
+      const categories = catResult[0].values.map((row) => ({
+        id: row[0],
+        name: row[1],
+        catslug: row[2],
+        image: row[3],
+      }));
 
-    const catResult = catDB.exec(`SELECT * FROM category WHERE name!='${slug.replace(/'/g, "''")}' order by sort_order desc`);
-    const categories = catResult[0].values.map(row => ({
-      id: row[0],
-      name: row[1],
-      catslug: row[2],
-      image: row[3],
-    }));
-
+      try {
+        const jsonRes = await fetch('/appCategories.json');
+        const appCategories = await jsonRes.json();
+        const jsonCat = appCategories.find((c) => c.id === slug);
+        if (jsonCat) {
+          const jsonApps = jsonCat.images.map((app) => ({
+            image: app.logo || '',
+            slug: app.name.replace(/[^a-z0-9]+/gi, '-').toLowerCase(),
+            title: app.display,
+            desc: app.description || '',
+            rating: 5,
+            category: jsonCat.id,
+            categoryLabel: jsonCat.label,
+            user: app.name,
+            pull_count: 0,
+            port: app.port,
+            hasLogo: !!app.logo,
+          }));
+          setApps(jsonApps);
+          setCategory(categories);
+          setIsJsonCategory(true);
+          return;
+        }
+      } catch (e) { /* fallback to sqlite */ }
 
       const response = await fetch('/apps.sqlite');
       const buffer = await response.arrayBuffer();
       const db = new SQL.Database(new Uint8Array(buffer));
-      
-      //const result = db.exec("SELECT * FROM apps where slug='linuxserver-heimdall'");
-      const result = db.exec(`SELECT * FROM apps WHERE category='${slug.replace(/'/g, "''")}'`);
+      const result = db.exec(
+        `SELECT * FROM apps WHERE category='${slug.replace(/'/g, "''")}'`
+      );
 
+      if (result.length > 0) {
+        const loadedApps = result[0].values.map((row) => ({
+          image: row[5],
+          slug: row[3],
+          title: row[2],
+          desc: row[1],
+          rating: row[7],
+          category: row[1],
+          user: row[6],
+          pull_count: row[8],
+        }));
+        setApps(loadedApps);
+      }
 
+      setCategory(categories);
+    })();
+  }, []);
 
-      // Convert result[0] to array of objects
-      const loadedApps = result[0].values.map(row => ({
-        image: row[5],
-        slug: row[3],
-        title: row[2],
-        desc: row[1],
-        rating: row[7],
-        category:row[1],
-        user:row[6],
-        pull_count:row[8]
-      }));
+  const pageTitle = isJsonCategory && apps.length > 0 ? (apps[0].categoryLabel || slug) : slug;
 
-      setApps(loadedApps);
-       setCategory(categories);
-       })();
-       }, []);
   return (
-     <>
-         <div className="container py-5">
-      <div className="row">
-        {/* Similar Apps Section */}
-       
-        <div className="col-md-8 mb-4">
-          <h3 className="mb-4 custom-h3">Similar apps {slug}</h3>
-          <div className="row g-3">            
-                        {apps.map((app, idx) => (
-                            <div key={idx} className="col-6 col-sm-4 col-md-3 custom-col-lg-4 text-center">
-                            <div className="hover-zoom p-2 border rounded shadow-sm bg-white h-100">
-                                <a href={`/playstore/${app.category.toLowerCase()}/${app.slug}`}>
-                                <img
-                                src={app.image}
-                                alt={app.title}
-                                className="img-fluid rounded"
-                                />
-                                <div className="mt-2 fw-semibold small text-truncate">{app.title}</div>
-                                <div className="text-muted small">{app.rating} ★</div>
-                                </a>
-                            </div>
-                            </div>
-                        ))}
-                        
-            </div>
+    <>
+      <div className="ps-container" style={{ paddingTop: '2.5rem', paddingBottom: '2.5rem' }}>
+        {/* Page Header */}
+        <div className="ps-page-header">
+          <h2 className="ps-page-title">
+            {isJsonCategory && <BrainCircuit size={24} style={{ color: '#8b5cf6', marginRight: 8, verticalAlign: 'middle' }} />}
+            {pageTitle}
+          </h2>
+          <span className="ps-page-count">
+            {apps.length} application{apps.length !== 1 ? 's' : ''}
+          </span>
         </div>
 
-        {/* Similar Category Section */}
-        <div className="col-md-4 mb-4">
-          <h3 className="mb-4 custom-h3">Similar Category</h3>
-           {category.map((app, idx) => (
-                <div 
-                    key={idx}
-                    className="category-hover d-flex align-items-center mb-3"
-                >
-                    <a href={`/playstore/${app.catslug}`} className="d-flex align-items-center text-decoration-none text-dark w-100 ">
-                    <img
-                        src={app.image}
-                        alt={app.name}
-                        style={{ width: '48px', height: '48px', borderRadius: '12px', marginRight: '1rem' }}
-                    />
-                    <div>
-                        <div className='category-title' >{app.name}</div>
-                       
+        <div className="ps-two-col">
+          {/* Main Content */}
+          <div className="ps-main-col">
+            {apps.length === 0 ? (
+              <div className="ps-loading">
+                <p>Loading applications...</p>
+              </div>
+            ) : isJsonCategory ? (
+              <div className="ps-cat-grid">
+                {apps.map((app, idx) => (
+                  <div key={idx} className="ps-cat-card ps-cat-card-json">
+                    <div className="ps-cat-card-image-wrap">
+                      {app.hasLogo ? (
+                        <img src={app.image} alt={app.title} className="ps-cat-card-image" />
+                      ) : (
+                        <div className="ps-json-initial ps-cat-card-initial">
+                          {app.title.charAt(0).toUpperCase()}
+                        </div>
+                      )}
                     </div>
+                    <div className="ps-cat-card-title">{app.title}</div>
+                    <p className="ps-cat-card-desc">{app.desc}</p>
+                    <a
+                      href={buildInstallUrl({ title: app.user, port: app.port })}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ps-app-install"
+                    >
+                      <Download size={13} />
+                      Install
                     </a>
-                </div>
+                  </div>
                 ))}
+              </div>
+            ) : (
+              <div className="ps-cat-grid">
+                {apps.map((app, idx) => (
+                  <a
+                    key={idx}
+                    href={`/playstore/${app.category.toLowerCase()}/${app.slug}`}
+                    className="ps-cat-card"
+                  >
+                    <img
+                      src={app.image}
+                      alt={app.title}
+                      className="ps-cat-card-image"
+                    />
+                    <div className="ps-cat-card-title">{app.title}</div>
+                    <div className="ps-cat-card-rating">
+                      {app.rating}
+                      <Star size={12} color="#f59e0b" fill="#f59e0b" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Sidebar */}
+          <div className="ps-sidebar">
+            <div className="ps-sidebar-sticky">
+              <h3 className="ps-sidebar-title">Other Categories</h3>
+              {category.map((cat, idx) => (
+                <a
+                  key={idx}
+                  href={`/playstore/${cat.catslug}`}
+                  className="ps-sidebar-item"
+                >
+                  <img
+                    src={cat.image}
+                    alt={cat.name}
+                    className="ps-sidebar-image"
+                  />
+                  <span className="ps-sidebar-name">{cat.name}</span>
+                </a>
+              ))}
+              <div className="ps-sidebar-link-wrap">
+                <a href="/playstore" className="ps-sidebar-link">
+                  View all categories →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    
     </>
-  )
+  );
 }

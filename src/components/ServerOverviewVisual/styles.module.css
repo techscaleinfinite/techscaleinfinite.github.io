@@ -1,0 +1,147 @@
+:root {
+  --cfv-accent: #6366f1;
+  --cfv-green: #22c55e;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.baseImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+.baseImage:first-of-type {
+  position: relative;
+}
+
+.baseImage.baseImageActive {
+  opacity: 1;
+  z-index: 1;
+}
+
+.animCursor {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  transform: translate(-3px, -3px);
+  animation: cursorAppear 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+@keyframes cursorAppear {
+  0% { opacity: 0; transform: translate(-3px, -3px) scale(0.5); }
+  100% { opacity: 1; transform: translate(-3px, -3px) scale(1); }
+}
+
+.clickRipple {
+  position: absolute;
+  z-index: 9;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(99, 102, 241, 0.2);
+  animation: ripple 1s ease-out infinite;
+}
+
+@keyframes ripple {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+}
+
+.tabHighlight {
+  position: absolute;
+  z-index: 15;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 100px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] .tabHighlight {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(51, 65, 85, 0.8);
+}
+
+.tabDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #94a3b8;
+  background: #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .tabDot {
+  background: #334155;
+  color: #64748b;
+}
+
+.tabDone {
+  background: var(--cfv-green);
+  color: white;
+}
+
+.tabCurrent {
+  background: var(--cfv-accent);
+  color: white;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+@media (max-width: 768px) {
+  .tabDot {
+    width: 18px;
+    height: 18px;
+    font-size: 0.48rem;
+  }
+
+  .tabHighlight {
+    gap: 4px;
+    padding: 4px 8px;
+  }
+
+  .animCursor svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .baseImage {
+    transition: opacity 0.1s ease !important;
+  }
+
+  .animCursor {
+    animation: none !important;
+  }
+
+  .clickRipple {
+    animation: none !important;
+    opacity: 0.3;
+  }
+}

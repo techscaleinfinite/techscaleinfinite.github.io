@@ -9,8 +9,6 @@ import NavbarMobileSidebarHeader from '@theme/Navbar/MobileSidebar/Header';
 import NavbarMobileSidebarPrimaryMenu from '@theme/Navbar/MobileSidebar/PrimaryMenu';
 import NavbarMobileSidebarSecondaryMenu from '@theme/Navbar/MobileSidebar/SecondaryMenu';
 
-import clsx from 'clsx';
-
 export default function NavbarMobileSidebar() {
   const mobileSidebar = useNavbarMobileSidebar();
   useLockBodyScroll(mobileSidebar.shown);
@@ -20,15 +18,17 @@ export default function NavbarMobileSidebar() {
   }
 
   return (
-    <NavbarMobileSidebarLayout
-      className={clsx(
-        'navbar-sidebar', // base class
-        'navbar-sidebar--right', // ✅ our custom right-side override
-        mobileSidebar.shown && 'navbar-sidebar--show'
-      )}
-      header={<NavbarMobileSidebarHeader />}
-      primaryMenu={<NavbarMobileSidebarPrimaryMenu />}
-      secondaryMenu={<NavbarMobileSidebarSecondaryMenu />}
-    />
+    <>
+      <div
+        className={`mobile-nav-backdrop${mobileSidebar.shown ? ' mobile-nav-backdrop--visible' : ''}`}
+        role="presentation"
+        onClick={() => mobileSidebar.toggle()}
+      />
+      <NavbarMobileSidebarLayout
+        header={<NavbarMobileSidebarHeader />}
+        primaryMenu={<NavbarMobileSidebarPrimaryMenu />}
+        secondaryMenu={<NavbarMobileSidebarSecondaryMenu />}
+      />
+    </>
   );
 }

@@ -1,0 +1,484 @@
+/* ===========================================
+   InfraStory – Managed K8s Autopilot Section
+   =========================================== */
+
+:root {
+  --ap-accent: #6366f1;
+  --ap-accent-soft: rgba(99, 102, 241, 0.12);
+  --ap-green: #22c55e;
+  --ap-green-soft: rgba(34, 197, 94, 0.12);
+  --ap-warn: #f59e0b;
+  --ap-bg: #ffffff;
+  --ap-card-bg: #f8fafc;
+  --ap-dash-bg: #ffffff;
+  --ap-dash-border: #e2e8f0;
+  --ap-text-primary: #0f172a;
+  --ap-text-secondary: #475569;
+  --ap-text-tertiary: #94a3b8;
+  --ap-bar-track: #e2e8f0;
+  --ap-mem: #8b5cf6;
+}
+
+[data-theme='dark'] {
+  --ap-bg: #0f172a;
+  --ap-card-bg: #1e293b;
+  --ap-dash-bg: #0f172a;
+  --ap-dash-border: #1e293b;
+  --ap-text-primary: #f1f5f9;
+  --ap-text-secondary: #94a3b8;
+  --ap-text-tertiary: #64748b;
+  --ap-bar-track: #334155;
+}
+
+/* === Section === */
+.section {
+  position: relative;
+  background: var(--si-bg-primary);
+  overflow: hidden;
+}
+
+.sectionInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 32px 0;
+}
+
+/* === Header === */
+.headerWrap {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 100px;
+  background: var(--ifm-color-primary-alert-background-color);
+  color: var(--ifm-color-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  border: 1px solid var(--ifm-color-primary-lightest);
+}
+
+.heading {
+  font-family: 'Nexa_Bold', 'Inter', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--si-text-primary);
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+/* === Story Grid === */
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 32px 80px;
+}
+
+.scrollCol {
+  padding-right: 16px;
+}
+
+.vizCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Stage Content === */
+.stageContent {
+  padding: 24px 0;
+  opacity: 0.45;
+  transition: opacity 0.4s ease;
+}
+
+.stageActive {
+  opacity: 1;
+}
+
+.stageDesc {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--si-text-secondary);
+  margin: 0;
+  max-width: 520px;
+}
+
+/* ======================================
+   AUTOPILOT VISUALIZATION
+   ====================================== */
+
+.autopilotWrap {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+.glowOrb1,
+.glowOrb2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glowOrb1 {
+  width: 180px;
+  height: 180px;
+  background: rgba(99, 102, 241, 0.12);
+  top: -30px;
+  right: -30px;
+  animation: orbFloat 8s ease-in-out infinite;
+}
+
+.glowOrb2 {
+  width: 140px;
+  height: 140px;
+  background: rgba(34, 197, 94, 0.08);
+  bottom: -20px;
+  left: -20px;
+  animation: orbFloat 10s ease-in-out infinite reverse;
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(12px, -16px); }
+}
+
+.autopilotDash {
+  position: relative;
+  z-index: 1;
+  background: var(--ap-dash-bg);
+  border: 1px solid var(--ap-dash-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme='dark'] .autopilotDash {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.2),
+    0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Dashboard header --- */
+.dashHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--ap-dash-border);
+  background: var(--ap-card-bg);
+}
+
+.dashHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ap-accent);
+}
+
+.dashTitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ap-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.dashStatus {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--ap-green);
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ap-green);
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(34, 197, 94, 0); }
+}
+
+/* --- Nodes row --- */
+.nodesRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--ap-dash-border);
+}
+
+.nodeCard {
+  background: var(--ap-card-bg);
+  border: 1px solid var(--ap-dash-border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nodeHeader {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--ap-text-primary);
+}
+
+.nodeHeader svg {
+  color: var(--ap-accent);
+}
+
+.nodeBar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--ap-bar-track);
+  overflow: hidden;
+}
+
+.nodeBarFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nodePercent {
+  font-size: 0.58rem;
+  font-weight: 600;
+  color: var(--ap-text-tertiary);
+  text-align: right;
+}
+
+/* --- Pods table --- */
+.podsSection {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--ap-dash-border);
+}
+
+.podsHeader {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 1fr 1fr;
+  gap: 6px;
+  font-size: 0.58rem;
+  font-weight: 600;
+  color: var(--ap-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--ap-dash-border);
+  margin-bottom: 4px;
+}
+
+.podRow {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 1fr 1fr;
+  gap: 6px;
+  padding: 5px 0;
+  align-items: center;
+}
+
+.podName {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--ap-text-primary);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.podStatus {
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.podRunning {
+  color: var(--ap-green);
+}
+
+.podScaling {
+  color: var(--ap-accent);
+}
+
+.scalingPulse {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ap-accent);
+  animation: statusPulse 1.5s ease-in-out infinite;
+}
+
+.podMetric {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.58rem;
+  font-weight: 500;
+  color: var(--ap-text-secondary);
+}
+
+.metricBar {
+  flex: 1;
+  height: 3px;
+  border-radius: 1.5px;
+  background: var(--ap-bar-track);
+  overflow: hidden;
+  min-width: 24px;
+}
+
+.metricFill {
+  display: block;
+  height: 100%;
+  border-radius: 1.5px;
+  background: var(--ap-accent);
+  transition: width 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metricFillMem {
+  display: block;
+  height: 100%;
+  border-radius: 1.5px;
+  background: var(--ap-mem);
+  transition: width 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Event ticker --- */
+.eventTicker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--ap-accent-soft);
+  color: var(--ap-accent);
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.eventTicker svg {
+  flex-shrink: 0;
+}
+
+.eventText {
+  animation: tickerFade 0.5s ease;
+}
+
+@keyframes tickerFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======================================
+   RESPONSIVE
+   ====================================== */
+
+@media (max-width: 1024px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .scrollCol {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .stageContent {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stageDesc {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .vizCol {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionInner {
+    padding: 60px 20px 0;
+  }
+
+  .storyGrid {
+    padding: 0 20px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nodesRow {
+    gap: 6px;
+    padding: 10px 10px;
+  }
+
+  .nodeCard {
+    padding: 6px 8px;
+  }
+
+  .podsSection {
+    padding: 8px 10px;
+  }
+
+  .podsHeader,
+  .podRow {
+    grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
+    gap: 4px;
+  }
+
+  .podName {
+    font-size: 0.6rem;
+  }
+}
+
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+  .glowOrb1,
+  .glowOrb2 {
+    animation: none !important;
+  }
+
+  .statusDot,
+  .scalingPulse {
+    animation: none !important;
+  }
+
+  .nodeBarFill,
+  .metricFill,
+  .metricFillMem {
+    transition: none !important;
+  }
+
+  .eventText {
+    animation: none !important;
+  }
+}
