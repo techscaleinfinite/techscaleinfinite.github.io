@@ -8,7 +8,7 @@ sidebar_position: 3
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
 
 <p align="center">
-  <img src="/img/ddv4.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/ddv4.jpg" alt="ScaleInfinite Create App page for deploying Docker applications" width="400"/>
 </p>
 
 

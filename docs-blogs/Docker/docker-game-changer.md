@@ -11,8 +11,8 @@ Docker is hailed as a lighthouse in software deployment, introducing containeriz
 
 Docker's containerization allows developers to create packages containing everything an application needs to run smoothly. This resolves the perennial issue of "it works on my machine" by ensuring consistent performance everywhere—from local development machines to the cloud.
 
-<img src="/img/877.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/888.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/877.png" alt="Docker containerization technology overview" style={{ maxWidth: '200px' }} />
+<img src="/img/888.png" alt="Docker deployment and scalability features" style={{ maxWidth: '200px' }} />
 
 
 ## No More Compatibility Nightmares

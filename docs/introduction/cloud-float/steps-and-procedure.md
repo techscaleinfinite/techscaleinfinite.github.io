@@ -6,7 +6,7 @@ sidebar_position: 4
 # Steps And Procedure
 
 <p align="center">
-  <img src="/img/dwdww.png" alt="Alt Text" width="400"/>
+  <img src="/img/dwdww.png" alt="Step-by-step deployment procedure on ScaleInfinite" width="400"/>
 </p>
 
 

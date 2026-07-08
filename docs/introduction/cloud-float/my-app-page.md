@@ -9,7 +9,7 @@ sidebar_position: 6
 
 
 <p align="center">
-  <img src="/img/ddcdv.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/ddcdv.jpg" alt="ScaleInfinite My Apps page showing deployed applications" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

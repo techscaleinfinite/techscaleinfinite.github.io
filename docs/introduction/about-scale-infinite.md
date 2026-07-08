@@ -3,7 +3,7 @@
 # About Scale Infinite
 
 <p align="center">
-  <img src="/img/sccc.jpg" alt="Alt Text" width="200"/>
+  <img src="/img/sccc.jpg" alt="ScaleInfinite cloud hosting platform logo" width="200"/>
 </p>
 
 

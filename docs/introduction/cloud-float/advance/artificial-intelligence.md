@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <img src="/img/vbvcx.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/vbvcx.jpg" alt="ScaleInfinite AI-powered fault detection and application management" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

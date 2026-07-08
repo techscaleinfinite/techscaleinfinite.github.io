@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/cdve.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/cdve.jpg" alt="Netlify vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

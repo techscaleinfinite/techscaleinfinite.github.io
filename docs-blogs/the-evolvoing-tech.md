@@ -12,16 +12,16 @@ Docker is likened to a phoenix, consistently rising from its ashes and transform
 
 In 2023, Docker remains in the spotlight due to its enduring relevance. The platform adapts to change, introducing new features that enhance its appeal. Far from being an outdated artifact, Docker is a dynamic and ever-evolving tool with a promising future.
 
-<img src="/img/877.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/888.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/889.jpeg" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/00000.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/877.png" alt="Docker containerization platform overview" style={{ maxWidth: '200px' }} />
+<img src="/img/888.png" alt="Docker container deployment workflow" style={{ maxWidth: '200px' }} />
+<img src="/img/889.jpeg" alt="Docker ecosystem and container management" style={{ maxWidth: '200px' }} />
+<img src="/img/00000.png" alt="Docker application architecture diagram" style={{ maxWidth: '200px' }} />
 
 ## Where to Learn the Docker Dance
 
 To grasp Docker's allure, theoretical knowledge is not enough; hands-on experience is crucial. Online platforms like Coursera, Udemy, and edX offer a plethora of Docker courses. Additionally, practical exploration is facilitated by platforms such as Render, Napptive, and Scale Infinite, offering Docker images and free services—a valuable resource for budget-conscious learners.
-<img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/566.png" alt="Docker hosting platforms for hands-on learning" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite Docker image hosting dashboard" style={{ maxWidth: '200px' }} />
 
 
 ## Setting Sail for Docker Delight

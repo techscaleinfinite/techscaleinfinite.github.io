@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/fefv.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/fefv.jpg" alt="Render vs ScaleInfinite comparison" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

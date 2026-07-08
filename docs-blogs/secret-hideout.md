@@ -19,7 +19,7 @@ And then there’s Jellyfin, the guardian of our media libraries. It grants us t
 
 Now, as we journey further into the unknown, we come upon Scale Infinite, the new kid on the block. The garden it tends is unique, flourishing with Docker containers. In these containers, you’ll find applications ranging from code editors (VSCode) to image management (Zenphoto) and even powerful databases like MongoDB. It’s like the Disneyland for tech aficionados, offering a range of possibilities for your web app kingdom.
 
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite web application hosting with Docker containers" style={{ maxWidth: '200px' }} />
 
 ## Where Can You Learn the Magic?
 

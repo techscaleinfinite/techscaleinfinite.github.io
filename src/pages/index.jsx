@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import { useLocation } from '@docusaurus/router';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import {
@@ -189,7 +190,18 @@ export default function Home() {
 
   return (
     <div className={isHome ? 'is-home' : ''}>
-      <Layout description="AI-Managed Solutions for Automated Application Performance">
+      <Layout description="Deploy, scale, and manage cloud applications with AI-powered autopilot. Self-driving cloud platform built on Kubernetes and Docker.">
+        <Head>
+          <title>ScaleInfinite | AI-Managed Cloud Platform for Kubernetes & Docker</title>
+          <meta name="description" content="Deploy, scale, and manage cloud applications with AI-powered autopilot. Self-driving cloud platform built on Kubernetes and Docker. Get started free." />
+          <link rel="canonical" href="https://scaleinfinite.fr/" />
+          <meta property="og:title" content="ScaleInfinite — Self-Driving Cloud Applications" />
+          <meta property="og:description" content="Put your applications on autopilot mode. Deploy, scale, and manage with zero effort — powered by Kubernetes and Docker." />
+          <meta property="og:url" content="https://scaleinfinite.fr/" />
+          <meta property="og:image" content="https://scaleinfinite.fr/img/picture-removebg-preview.png" />
+          <meta name="twitter:title" content="ScaleInfinite — Self-Driving Cloud Applications" />
+          <meta name="twitter:description" content="AI-managed cloud platform for deploying self-hosted apps in seconds. Kubernetes & Docker autopilot." />
+        </Head>
 
         {/* ===== HERO ===== */}
         <section className={styles.hero}>
@@ -261,7 +273,7 @@ export default function Home() {
                 </div>
                 <img
                   src="/images/kubernetes-docker-services.png"
-                  alt="Kubernetes and Docker services"
+                  alt="ScaleInfinite dashboard showing Kubernetes and Docker deployment management"
                   className={styles.heroDashboardImage}
                 />
               </div>
@@ -299,9 +311,12 @@ export default function Home() {
             <h2 className={styles.brandsLabel}>Must Try Self Hosted Applications</h2>
             <div className={styles.brandsTrack}>
               <div className={styles.brandsSlide}>
-                {[...showcaseApps, ...showcaseApps].map((logo, i) => (
-                  <img key={i} src={logo} alt="" className={styles.brandLogo} />
-                ))}
+                {[...showcaseApps, ...showcaseApps].map((logo, i) => {
+                  const name = logo.split('/').pop().replace(/\.\w+$/, '').replace(/-/g, ' ');
+                  return (
+                    <img key={i} src={logo} alt={`${name} — self-hosted application`} className={styles.brandLogo} />
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -540,11 +555,11 @@ export default function Home() {
 
             <AnimatedSection delay={0.2}>
               <div className={styles.socialRow}>
-                <a href="https://www.instagram.com/scaleinfinite/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                  <img src="images/instagram.png" alt="Instagram" />
+                <a href="https://www.instagram.com/scaleinfinite/" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Follow ScaleInfinite on Instagram">
+                  <img src="images/instagram.png" alt="ScaleInfinite on Instagram" />
                 </a>
-                <a href="https://www.linkedin.com/company/scaleinfinite" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                  <img src="images/linkedin.png" alt="LinkedIn" />
+                <a href="https://www.linkedin.com/company/scaleinfinite" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Follow ScaleInfinite on LinkedIn">
+                  <img src="images/linkedin.png" alt="ScaleInfinite on LinkedIn" />
                 </a>
               </div>
             </AnimatedSection>

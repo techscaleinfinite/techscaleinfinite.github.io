@@ -6,7 +6,7 @@ sidebar_position: 5
 
 
 <p align="center">
-  <img src="/img/sfsf8.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/sfsf8.jpg" alt="ScaleInfinite application dashboard with health metrics" width="400"/>
 </p>
 
 

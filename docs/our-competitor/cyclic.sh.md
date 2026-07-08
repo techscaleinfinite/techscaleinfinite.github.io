@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/dsc.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/dsc.jpg" alt="Cyclic Sh vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

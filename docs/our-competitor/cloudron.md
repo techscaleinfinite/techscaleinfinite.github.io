@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/wdd.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/wdd.jpg" alt="Cloudron vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

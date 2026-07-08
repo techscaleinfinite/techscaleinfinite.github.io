@@ -11,8 +11,8 @@ const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
- title: 'Scale Infinite | AI Managed, Self-Driving Cloud Applications with Kubernets and Docker Services',
-  tagline: 'AI-Managed Solutions for Automated Application Performance',
+ title: 'ScaleInfinite | AI-Managed Cloud Platform for Kubernetes & Docker Deployments',
+  tagline: 'Deploy, Scale, and Manage Cloud Applications with AI-Powered Autopilot on Kubernetes and Docker',
   url: 'https://scaleinfinite.fr',
   baseUrl: '/',
   favicon: 'img/favicon.png',
@@ -183,6 +183,28 @@ const config = {
             },
             innerHTML: JSON.stringify({
               "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "ScaleInfinite",
+              "url": "https://scaleinfinite.fr/",
+              "description": "AI-managed cloud platform for deploying and managing applications on Kubernetes and Docker",
+              "publisher": {
+                "@type": "Organization",
+                "name": "ScaleInfinite Private Limited"
+              },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://scaleinfinite.fr/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }),
+          },
+          {
+            tagName: 'script',
+            attributes: {
+              type: 'application/ld+json',
+            },
+            innerHTML: JSON.stringify({
+              "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
                 {
@@ -241,11 +263,18 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/picture-removebg-preview.png',
-      
+
         metadata: [
-      { name: 'keywords', content: 'scaleinfinite, devops, kubernetes, cloud deployment' },
-      { name: 'description', content: 'ScaleInfinite helps you deploy and manage applications seamlessly with cloud-native tools.' },
-      { name: 'author', content: 'ScaleInfinite Technologies' },
+      { name: 'keywords', content: 'scaleinfinite, kubernetes, docker, cloud deployment, AI cloud platform, self-hosted apps, container orchestration, devops, cloud autopilot, managed kubernetes' },
+      { name: 'description', content: 'ScaleInfinite is an AI-managed cloud platform for deploying, scaling, and managing applications on Kubernetes and Docker. Deploy self-hosted apps in seconds with intelligent autopilot.' },
+      { name: 'author', content: 'ScaleInfinite Private Limited' },
+      { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'ScaleInfinite' },
+      { property: 'og:locale', content: 'en_US' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@scaleinfinite' },
+      { name: 'twitter:creator', content: '@scaleinfinite' },
       {
        name: 'google-site-verification',
         content: '2JzgmPkp_0tCo7F-8PxrKPYz1IZLNKHYHG7TQPjdlYM',

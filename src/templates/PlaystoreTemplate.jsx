@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import {
@@ -389,6 +390,18 @@ const PlaystoreTemplate = () => {
 
   return (
     <>
+      <Head>
+        <title>App Playstore — Deploy Self-Hosted Applications | ScaleInfinite</title>
+        <meta name="description" content="Browse and deploy hundreds of self-hosted applications including AI, databases, CMS, monitoring, and more. One-click install on ScaleInfinite's cloud platform." />
+        <link rel="canonical" href="https://scaleinfinite.fr/playstore" />
+        <meta property="og:title" content="ScaleInfinite App Playstore — Discover & Deploy Applications" />
+        <meta property="og:description" content="Browse hundreds of self-hosted apps across AI, databases, DevOps, CMS, and more. Deploy in seconds with one click." />
+        <meta property="og:url" content="https://scaleinfinite.fr/playstore" />
+        <meta property="og:image" content="https://scaleinfinite.fr/img/picture-removebg-preview.png" />
+        <meta name="twitter:title" content="ScaleInfinite App Playstore" />
+        <meta name="twitter:description" content="Deploy self-hosted applications in seconds. Browse AI, databases, DevOps, CMS and more." />
+      </Head>
+
       <HeaderSection
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
@@ -529,7 +542,7 @@ const PlaystoreTemplate = () => {
                           <div className="ps-app-image-wrap">
                             <FallbackImg
                               src={app.logo}
-                              alt={app.display}
+                              alt={`${app.display} — ${cat.label} application`}
                               className="ps-app-image"
                               fallbackColor={catColor}
                             />

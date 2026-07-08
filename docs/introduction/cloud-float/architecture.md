@@ -7,7 +7,7 @@ sidebar_position: 1
 # Architecture
 
 <p align="center">
-  <img src="/img/ohh.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/ohh.jpg" alt="ScaleInfinite CloudFloat platform architecture diagram" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

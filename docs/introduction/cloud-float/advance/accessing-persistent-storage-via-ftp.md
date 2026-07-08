@@ -6,7 +6,7 @@
 ## Accessing Persistent Storage Via FTP
 
 <p align="center">
-  <img src="/img/dcv.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/dcv.jpg" alt="Accessing persistent storage via FTP on ScaleInfinite" width="400"/>
 </p>
 
 

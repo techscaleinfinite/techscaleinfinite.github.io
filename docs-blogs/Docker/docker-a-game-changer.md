@@ -12,9 +12,9 @@ However, Docker has taken this narrative on an exhilarating twist, standing as a
 Boldly declared as "the single best thing to happen to software deployment in 20 years," Docker introduced containerization—a technology that encapsulates your application and its dependencies into a single unit called a container. Think of it as a self-sufficient package, eliminating the age-old "it works on my machine" issue. Now, it works everywhere.
 
 No more compatibility nightmares. Docker solves the challenge of ensuring software works on different operating systems and environments. Containers are consistent across any infrastructure, from your local development machine to the cloud, creating a hassle-free deployment process.
-<img src="/img/877.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/877.png" alt="Docker containerization solving deployment challenges" style={{ maxWidth: '200px' }} />
 
-<img src="/img/00000.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/00000.png" alt="Docker container consistency across environments" style={{ maxWidth: '200px' }} />
 Scalability awesomeness. Need to scale your application for a growing user base? Docker's got you covered with scalability features that allow effortless expansion.
 
 The developer's dream: DevOps. Docker promotes collaboration between developers and IT operations, creating a DevOps utopia. This unity streamlines the development and deployment process, fostering efficiency and cooperation.
@@ -24,8 +24,8 @@ The developer's dream: DevOps. Docker promotes collaboration between developers 
 To embark on the Docker adventure and grasp its potential, educational platforms like Coursera, Udemy, and edX offer a variety of Docker courses to hone your containerization skills.
 
 The real magic happens when theory meets practice. Platforms like Render, Napptive, and Scale Infinite serve as virtual docks for experimentation, offering Docker images and a safe environment to learn and play. They understand the student's budget, making Docker exploration budget-friendly.
-<img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/566.png" alt="Docker experimentation platforms for developers" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite Docker deployment environment" style={{ maxWidth: '200px' }} />
 
 ## Sail into the Docker Sunset
 

@@ -13,8 +13,8 @@ In the wizard's library of tech tales, Docker often appears as the knight in shi
 Docker, akin to a versatile Swiss army knife, transcends the dragon-slaying narrative. It's not just for massive scaling; it's a tool to make your entire adventure smoother. From creating a consistent development environment to easing deployment across various systems, Docker simplifies complex tasks, acting as your trusty utility belt.
 
 
-<img src="/img/889.jpeg" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/00000.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/889.jpeg" alt="Docker as a versatile development tool" style={{ maxWidth: '200px' }} />
+<img src="/img/00000.png" alt="Docker container deployment workflow" style={{ maxWidth: '200px' }} />
 
 ## In the Heart of Practicality
 
@@ -24,8 +24,8 @@ Is Docker useful for projects that won't face colossal scaling challenges? Absol
 
 To delve deeper into the art of Docker, platforms like Coursera, Udemy, and edX hold the ancient scrolls to unlock Docker's secrets. Once armed with knowledge, explore sites like Render, navigate the terrain of Napptive, and seek refuge in Scale Infinite. These are not just hosts; they are companions, allowing you to put your newfound Docker wisdom into practice.
 
-<img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/566.png" alt="Docker learning platforms and hosting providers" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite Docker hosting dashboard" style={{ maxWidth: '200px' }} />
 
 In the world of tech, Docker is your trusty sidekick, a companion ready to help whether you're on a dragon-slaying quest or a journey through the enchanted forests of software development. Docker is more than a solution to imaginary problems; it's a tool for enhancing your entire tech adventure. Onward!
 

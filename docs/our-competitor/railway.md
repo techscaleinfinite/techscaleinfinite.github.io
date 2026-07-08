@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/wwc.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/wwc.jpg" alt="Railway vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

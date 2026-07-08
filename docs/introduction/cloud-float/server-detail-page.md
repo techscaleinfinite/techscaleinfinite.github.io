@@ -7,7 +7,7 @@ sidebar_position: 7
 # Server Detail Page
 
 <p align="center">
-  <img src="/img/vdb.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/vdb.jpg" alt="ScaleInfinite server detail page with monitoring and management controls" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

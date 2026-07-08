@@ -5,7 +5,7 @@ sidebar_position: 9
 # Built Image Page
 
 <p align="center">
-  <img src="/img/zv.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/zv.jpg" alt="ScaleInfinite Docker image builder interface" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

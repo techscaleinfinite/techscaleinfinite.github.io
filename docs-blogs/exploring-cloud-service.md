@@ -18,8 +18,8 @@ Napptive is a reliable cloud platform for hosting Docker images from DockerHub. 
 ## Qovery: A Rising Tide
 
 Qovery is an emerging player in the Docker image hosting realm. While still expanding its services, Qovery shows promise as a notable platform for Docker hosting in the future.
-<img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/566.png" alt="Cloud platform comparison for Docker image hosting" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite Docker image deployment interface" style={{ maxWidth: '200px' }} />
 Whether you prefer Render's simplicity, Scale Infinite's unique Docker image approach, Napptive's reliability, or are intrigued by Qovery's potential, these platforms provide options for free Docker image hosting in the cloud. Choose the one that aligns with your needs and let your Docker containers sail smoothly across the digital seas.
 
 

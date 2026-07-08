@@ -5,7 +5,7 @@
 
 
 <p align="center">
-  <img src="/img/ffwc.jpg" alt="Alt Text" width="100"/>
+  <img src="/img/ffwc.jpg" alt="Managed Kubernetes service on ScaleInfinite" width="100"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

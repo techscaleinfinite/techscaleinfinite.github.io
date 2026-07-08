@@ -24,8 +24,8 @@ Scale Infinite promises endless possibilities, offering a range of Docker hostin
 To navigate these Docker hosting waters, learn from online platforms like Coursera and edX, offering courses to help you master Docker. But knowledge alone won't make you a seasoned sailor. For that, you'll need to practice.
 
 Fortunately, Render, Napptive, and Scale Infinite provide real-world environments to hone your Docker skills. Think of them as your training grounds, where you can experiment and refine your container deployment abilities.
-<img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/566.png" alt="Free Docker hosting platforms including ScaleInfinite" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite Docker container deployment" style={{ maxWidth: '200px' }} />
 
 So, set sail, Docker adventurers, and worry not about the cost of hosting. These options are your ticket to exploring Docker's potential without emptying your pockets. The Docker universe is yours to discover, and these havens offer the perfect launchpad for your digital journeys.
 

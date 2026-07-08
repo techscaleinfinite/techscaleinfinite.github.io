@@ -4,7 +4,7 @@ sidebar_position: 1
 # Blogging Hub 
 
 <p align="center">
-  <img src="/img/sc.jpg" alt="Alt Text" width="550"/>
+  <img src="/img/sc.jpg" alt="ScaleInfinite blogging hub" width="550"/>
 </p>
 
 <div style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

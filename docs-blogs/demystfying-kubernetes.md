@@ -10,8 +10,8 @@ Kubernetes acts as a conductor for containers, ensuring they work harmoniously, 
 ## What's Managed Kubernetes?
 
 Managed Kubernetes Services (Managed K8s) simplify the setup and management of Kubernetes clusters. It's like having a personal assistant for containers, handling the complexities while you focus on your applications.
-<img src="/img/877.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/888.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/877.png" alt="Managed Kubernetes cluster architecture diagram" style={{ maxWidth: '200px' }} />
+<img src="/img/888.png" alt="Kubernetes container orchestration workflow" style={{ maxWidth: '200px' }} />
 
 
 ## Why Opt for Managed Kubernetes?
@@ -29,8 +29,8 @@ Explore resources on Coursera and Udemy for online courses that guide you throug
 ## Putting Theory into Practice
 
 Experiment with platforms like Render,and Scale Infinite to experience Managed Kubernetes hands-on without the hassle of setting up clusters.
-<img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/566.png" alt="ScaleInfinite platform for hands-on Kubernetes deployment" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite managed Kubernetes dashboard" style={{ maxWidth: '200px' }} />
 
 Whether you're a tech enthusiast or a newbie, Managed Kubernetes Services are your ticket to orchestrating containers effortlessly. It's a world of convenience just a few clicks away. Happy orchestrating!
 

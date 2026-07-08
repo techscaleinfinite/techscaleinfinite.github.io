@@ -18,8 +18,8 @@ The decision between self-hosting and third-party hosting depends on your ambiti
 ## Where to Learn the Ropes
 
 To master hosting, numerous online courses and tutorials are available. However, hands-on experience exploring platforms like Render, Napptive, and Scale Infinite is key to understanding the mysteries of hosting. Whether you choose to self-host or opt for a hosted kingdom, the choice is yours in the vast kingdom of tech.
-<img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/566.png" alt="Self-hosting vs third-party hosting comparison" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite managed hosting platform" style={{ maxWidth: '200px' }} />
 
 <details>
 

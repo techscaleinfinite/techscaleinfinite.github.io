@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/cvd.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/cvd.jpg" alt="Napptive vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

@@ -8,8 +8,8 @@ Ah, Docker! The name often whispered with a sense of awe among tech enthusiasts.
 
 Imagine Docker as a virtuoso conductor leading an orchestra of containers. Containers, in this metaphor, are the talented musicians, each playing a distinct part in the symphony of software deployment. They are like magic boxes that can house applications and all the instruments (dependencies) they need to play their melodious tune. Docker is what makes this symphony truly harmonious.
 
-<img src="/img/889.jpeg" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/00000.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/889.jpeg" alt="Docker container orchestration symphony" style={{ maxWidth: '200px' }} />
+<img src="/img/00000.png" alt="Docker container architecture overview" style={{ maxWidth: '200px' }} />
 
 ## Lightning-Fast Setup
 
@@ -36,8 +36,8 @@ The Docker hype isn’t just a fleeting trend. It’s a genuine roar of approval
 Feeling the Docker itch? You’re in luck. Learning Docker is a few clicks away. Websites like Coursera, Udemy, and edX offer courses to transform you from Docker novice to Docker virtuoso.
 
 But for the true, hands-on experience, platforms like Render, Napptive, and Scale Infinite are your magic carpets. Dive into the Docker realm, experiment, and see the hype for yourself. It’s a journey worth taking — a journey to the heart of tech innovation.
-<img src="/img/566.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
-<img src="/img/557.png" alt="Alt Text" style={{ maxWidth: '200px' }} />
+<img src="/img/566.png" alt="Docker learning platforms for hands-on experience" style={{ maxWidth: '200px' }} />
+<img src="/img/557.png" alt="ScaleInfinite Docker deployment platform" style={{ maxWidth: '200px' }} />
 
 So, there you have it, the Docker hype demystified. It’s not just hype; it’s a standing ovation for a tech marvel.
 

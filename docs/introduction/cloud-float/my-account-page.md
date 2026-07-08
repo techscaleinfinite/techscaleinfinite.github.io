@@ -8,7 +8,7 @@ sidebar_position: 4
 # My Account Page
 
 <p align="center">
-  <img src="/img/j6.png" alt="Alt Text" width="400"/>
+  <img src="/img/j6.png" alt="ScaleInfinite My Account page with profile settings" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import { Star, Download, BrainCircuit } from 'lucide-react';
 import initSqlJs from 'sql.js/dist/sql-wasm.js';
 import './style.css';
@@ -109,15 +110,29 @@ export default function CategoryTemplate({ categoryname, slug }) {
 
   const pageTitle = isJsonCategory && apps.length > 0 ? (apps[0].categoryLabel || slug) : slug;
 
+  const catUrl = `https://scaleinfinite.fr/playstore/${slug}`;
+
   return (
     <>
+      <Head>
+        <title>{`${pageTitle} Applications — Deploy on ScaleInfinite`}</title>
+        <meta name="description" content={`Browse and deploy ${pageTitle} applications on ScaleInfinite. ${apps.length} application${apps.length !== 1 ? 's' : ''} available for one-click cloud deployment.`} />
+        <link rel="canonical" href={catUrl} />
+        <meta property="og:title" content={`${pageTitle} Applications — ScaleInfinite Playstore`} />
+        <meta property="og:description" content={`Deploy ${pageTitle} applications in seconds. Browse ${apps.length} apps available on ScaleInfinite.`} />
+        <meta property="og:url" content={catUrl} />
+        <meta property="og:image" content="https://scaleinfinite.fr/img/picture-removebg-preview.png" />
+        <meta name="twitter:title" content={`${pageTitle} Apps — ScaleInfinite`} />
+        <meta name="twitter:description" content={`${apps.length} ${pageTitle} applications ready to deploy on ScaleInfinite.`} />
+      </Head>
+
       <div className="ps-container" style={{ paddingTop: '2.5rem', paddingBottom: '2.5rem' }}>
         {/* Page Header */}
         <div className="ps-page-header">
-          <h2 className="ps-page-title">
+          <h1 className="ps-page-title">
             {isJsonCategory && <BrainCircuit size={24} style={{ color: '#8b5cf6', marginRight: 8, verticalAlign: 'middle' }} />}
             {pageTitle}
-          </h2>
+          </h1>
           <span className="ps-page-count">
             {apps.length} application{apps.length !== 1 ? 's' : ''}
           </span>
@@ -137,7 +152,7 @@ export default function CategoryTemplate({ categoryname, slug }) {
                     <div className="ps-cat-card-image-wrap">
                       <FallbackImg
                         src={app.image}
-                        alt={app.title}
+                        alt={`${app.title} — deploy on ScaleInfinite`}
                         className="ps-cat-card-image"
                         fallbackClassName="ps-json-initial ps-cat-card-initial"
                       />
@@ -193,7 +208,7 @@ export default function CategoryTemplate({ categoryname, slug }) {
                 >
                   <img
                     src={cat.image}
-                    alt={cat.name}
+                    alt={`${cat.name} application category`}
                     className="ps-sidebar-image"
                   />
                   <span className="ps-sidebar-name">{cat.name}</span>

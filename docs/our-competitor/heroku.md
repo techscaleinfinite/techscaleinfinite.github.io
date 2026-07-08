@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/dcc.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/dcc.jpg" alt="Heroku vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

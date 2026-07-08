@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/sdgs.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/sdgs.jpg" alt="Hostinger vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/ffv.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/ffv.jpg" alt="Neverinstall vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

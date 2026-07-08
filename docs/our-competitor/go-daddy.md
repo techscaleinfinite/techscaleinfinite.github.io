@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="/img/sdsc.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/sdsc.jpg" alt="Go Daddy vs ScaleInfinite comparison" width="400"/>
 </p>
 
 

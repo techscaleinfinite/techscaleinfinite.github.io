@@ -7,7 +7,7 @@ sidebar_position: 2
 # Create Account
 
 <p align="center">
-  <img src="/img/ff43.png" alt="Alt Text" width="600"/>
+  <img src="/img/ff43.png" alt="ScaleInfinite account creation and sign-up page" width="600"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>

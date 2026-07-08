@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import {
   Share2, CloudDownload, Download, Star, Bookmark,
 } from 'lucide-react';
@@ -166,8 +167,52 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
     work_key_3: 'work_value_3',
   };
 
+  const appTitle = apps[0]?.title || slug;
+  const appDesc = stripHtml(apps[0]?.description || '').slice(0, 160);
+  const appImage = apps[0]?.image || '';
+  const appUrl = `https://scaleinfinite.fr/playstore/${categoryname}/${slug}`;
+
+  function stripHtml(html) {
+    if (!html) return '';
+    return html.replace(/<[^>]*>/g, '').replace(/&[a-zA-Z]+;/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
   return (
     <>
+      <Head>
+        <title>{`${appTitle} — Deploy on ScaleInfinite | ${categoryname}`}</title>
+        <meta name="description" content={`Deploy ${appTitle} instantly on ScaleInfinite. ${appDesc}`} />
+        <link rel="canonical" href={appUrl} />
+        <meta property="og:title" content={`${appTitle} — One-Click Deploy on ScaleInfinite`} />
+        <meta property="og:description" content={`Deploy ${appTitle} in seconds. ${appDesc}`} />
+        <meta property="og:url" content={appUrl} />
+        {appImage && <meta property="og:image" content={appImage} />}
+        <meta name="twitter:title" content={`${appTitle} on ScaleInfinite`} />
+        <meta name="twitter:description" content={`Deploy ${appTitle} instantly with one click. Managed cloud hosting.`} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": appTitle,
+            "applicationCategory": categoryname,
+            "operatingSystem": "Cloud",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR"
+            },
+            "aggregateRating": apps[0]?.rating ? {
+              "@type": "AggregateRating",
+              "ratingValue": apps[0].rating,
+              "bestRating": "5",
+              "ratingCount": Math.max(1, Math.floor((apps[0]?.pull_count || 0) / 1000))
+            } : undefined,
+            "url": appUrl,
+            "image": appImage
+          })}
+        </script>
+      </Head>
+
       {children}
       <ToastContainer position="bottom-center" autoClose={1500} />
 
@@ -175,7 +220,7 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
       <div className="ps-container">
         <div className="ps-app-hero">
           <div className="ps-app-hero-image">
-            <FallbackImg src={apps[0]?.image} alt={apps[0]?.title || 'App Logo'} fallbackClassName="ps-json-initial ps-hero-initial" />
+            <FallbackImg src={apps[0]?.image} alt={`${appTitle} logo`} fallbackClassName="ps-json-initial ps-hero-initial" />
           </div>
 
           <div className="ps-app-hero-content">
@@ -255,7 +300,7 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
                     <SwiperSlide key={index}>
                       <img
                         src={src}
-                        alt={`Screenshot ${index + 1}`}
+                        alt={`${appTitle} screenshot ${index + 1}`}
                         className="ps-carousel-image"
                         onClick={() => setPopupIndex(index)}
                       />
@@ -273,7 +318,7 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
                 </button>
                 <img
                   src={parsedImages[popupIndex]}
-                  alt="Full size"
+                  alt={`${appTitle} full size screenshot ${popupIndex + 1}`}
                   className="ps-lightbox-image"
                   onClick={(e) => e.stopPropagation()}
                 />

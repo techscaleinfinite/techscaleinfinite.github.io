@@ -6,7 +6,7 @@ sidebar_position: 10
 
 
 <p align="center">
-  <img src="/img/dbb.jpg" alt="Alt Text" width="400"/>
+  <img src="/img/dbb.jpg" alt="ScaleInfinite billing and usage tracking dashboard" width="400"/>
 </p>
 
 <span style={{ fontFamily: 'Roobert, sans-serif', fontSize: '12pt' }}>
