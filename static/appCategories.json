@@ -9,7 +9,7 @@
         "image": "ollama/ollama",
         "display": "Ollama",
         "description": "Run Llama, Mistral, Gemma and other LLMs locally with a simple API.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/151674099?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -19,7 +19,7 @@
         "image": "ghcr.io/open-webui/open-webui",
         "display": "Open WebUI",
         "description": "Polished ChatGPT-style web UI for Ollama and any OpenAI-compatible backend.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/158137808?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -29,7 +29,7 @@
         "image": "localai/localai",
         "display": "LocalAI",
         "description": "Drop-in OpenAI-compatible API for local LLMs, embeddings and image gen.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/128192713?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -39,7 +39,7 @@
         "image": "ghcr.io/mintplex-labs/anything-llm",
         "display": "AnythingLLM",
         "description": "All-in-one private RAG/chat app with document ingestion and agents.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/134426827?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -49,7 +49,7 @@
         "image": "flowiseai/flowise",
         "display": "Flowise",
         "description": "Drag-and-drop builder for LLM apps, chains and agents on LangChain.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/128289781?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -59,7 +59,7 @@
         "image": "langflowai/langflow",
         "display": "Langflow",
         "description": "Visual low-code IDE for prototyping RAG and multi-agent LLM flows.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/85702467?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -69,7 +69,7 @@
         "image": "qdrant/qdrant",
         "display": "Qdrant",
         "description": "Fast Rust vector database for semantic search and RAG retrieval.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/73504361?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -79,7 +79,7 @@
         "image": "chromadb/chroma",
         "display": "Chroma",
         "description": "Lightweight AI-native embedding database, ideal for local RAG.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/105881770?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -89,7 +89,7 @@
         "image": "semitechnologies/weaviate",
         "display": "Weaviate",
         "description": "Open-source vector database with built-in vectorizer modules.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/37794290?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -99,7 +99,7 @@
         "image": "vllm/vllm-openai",
         "display": "vLLM",
         "description": "High-throughput OpenAI-compatible LLM serving with PagedAttention.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/136984999?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -129,7 +129,7 @@
         "image": "open-webui/open-webui",
         "display": "OpenClaw",
         "description": "Open-source AI agent platform for building and deploying autonomous agents.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/158137808?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -146,7 +146,7 @@
         "image": "codercom/code-server",
         "display": "code-server",
         "description": "Full VS Code in the browser, run on your own server.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/95932066?s=200&v=4",
         "port": 8080,
         "cpu": 200,
         "memory": 512
@@ -156,7 +156,7 @@
         "image": "gitea/gitea",
         "display": "Gitea",
         "description": "Lightweight self-hosted Git service with issues, PRs and CI.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/12724356?s=200&v=4",
         "port": 3000,
         "cpu": 100,
         "memory": 256
@@ -166,7 +166,7 @@
         "image": "codeberg.org/forgejo/forgejo",
         "display": "Forgejo",
         "description": "Community-driven Gitea fork; a fast self-hosted GitHub alternative.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/118922216?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -176,7 +176,7 @@
         "image": "gitlab/gitlab-ce",
         "display": "GitLab CE",
         "description": "Complete DevOps platform: Git, CI/CD, registry and issues in one.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/1086321?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -196,7 +196,7 @@
         "image": "ghcr.io/woodpecker-ci/woodpecker-server",
         "display": "Woodpecker CI",
         "description": "Simple, container-native CI engine (community Drone fork).",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/84780935?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -216,7 +216,7 @@
         "image": "sonatype/nexus3",
         "display": "Nexus Repository",
         "description": "Universal artifact repository for Maven, npm, Docker and more.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/44938?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -226,7 +226,7 @@
         "image": "verdaccio/verdaccio",
         "display": "Verdaccio",
         "description": "Lightweight private npm registry and caching proxy.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/18487506?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -246,7 +246,7 @@
         "image": "swaggerapi/swagger-ui",
         "display": "Swagger UI",
         "description": "Interactive OpenAPI documentation and API explorer.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/7658037?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -273,7 +273,7 @@
         "image": "n8nio/n8n",
         "display": "n8n",
         "description": "Fair-code workflow automation with 400+ integrations and AI nodes.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/45487711?s=200&v=4",
         "port": 5678,
         "cpu": 150,
         "memory": 256
@@ -283,7 +283,7 @@
         "image": "nodered/node-red",
         "display": "Node-RED",
         "description": "Flow-based wiring of devices, APIs and services for IoT/automation.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/5375661?s=200&v=4",
         "port": 3000,
         "cpu": 150,
         "memory": 256
@@ -293,7 +293,7 @@
         "image": "ghcr.io/activepieces/activepieces",
         "display": "Activepieces",
         "description": "Open-source Zapier alternative with a friendly no-code builder.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/99494700?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -303,7 +303,7 @@
         "image": "ghcr.io/windmill-labs/windmill",
         "display": "Windmill",
         "description": "Turn scripts (TS/Python) into workflows, UIs and cron jobs.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/98025271?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -313,7 +313,7 @@
         "image": "ghcr.io/automatisch/automatisch",
         "display": "Automatisch",
         "description": "Self-hosted, privacy-first Zapier alternative.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/91699546?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -323,7 +323,7 @@
         "image": "huginn/huginn",
         "display": "Huginn",
         "description": "Agents that watch and act on the web for you (IFTTT-style).",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/23225142?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -333,7 +333,7 @@
         "image": "ghcr.io/nocodb/nocodb",
         "display": "NocoDB",
         "description": "Turn any SQL database into a no-code Airtable-like spreadsheet.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/50206778?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -343,7 +343,7 @@
         "image": "baserow/baserow",
         "display": "Baserow",
         "description": "Open-source no-code database and Airtable alternative.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/68540644?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -353,7 +353,7 @@
         "image": "appsmith/appsmith",
         "display": "Appsmith",
         "description": "Low-code platform to build internal tools and admin dashboards.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/67620218?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -363,7 +363,7 @@
         "image": "tooljet/tooljet",
         "display": "ToolJet",
         "description": "Low-code framework for building and deploying internal apps.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/82193554?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -373,7 +373,7 @@
         "image": "budibase/budibase",
         "display": "Budibase",
         "description": "All-in-one low-code platform for internal apps and workflows.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/45009727?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -390,7 +390,7 @@
         "image": "jellyfin/jellyfin",
         "display": "Jellyfin",
         "description": "The leading free, open-source media server for movies, TV and music.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/45698031?s=200&v=4",
         "port": 8096,
         "cpu": 300,
         "memory": 512
@@ -400,7 +400,7 @@
         "image": "plexinc/pms-docker",
         "display": "Plex",
         "description": "The most widely deployed self-hosted media server, apps on every device.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/324832?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -410,7 +410,7 @@
         "image": "emby/embyserver",
         "display": "Emby",
         "description": "Mature media server with strong live TV/DVR and broad client support.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/3607473?s=200&v=4",
         "port": 8096,
         "cpu": 300,
         "memory": 512
@@ -420,7 +420,7 @@
         "image": "ghcr.io/immich-app/immich-server",
         "display": "Immich",
         "description": "Self-hosted Google Photos replacement with mobile backup and ML search.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/109746326?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -430,7 +430,7 @@
         "image": "photoprism/photoprism",
         "display": "PhotoPrism",
         "description": "AI-powered self-hosted photo library with face recognition and tagging.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/32436079?s=200&v=4",
         "port": 8096,
         "cpu": 300,
         "memory": 512
@@ -440,7 +440,7 @@
         "image": "navidrome/navidrome",
         "display": "Navidrome",
         "description": "Lightweight Subsonic-compatible self-hosted music streaming server.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/26692192?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -450,7 +450,7 @@
         "image": "ghcr.io/advplyr/audiobookshelf",
         "display": "Audiobookshelf",
         "description": "The definitive self-hosted audiobook and podcast server.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/67830747?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -460,7 +460,7 @@
         "image": "gotson/komga",
         "display": "Komga",
         "description": "Comics/manga/eBook server with OPDS, Kobo sync and a clean reader.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/2139133?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -470,7 +470,7 @@
         "image": "tautulli/tautulli",
         "display": "Tautulli",
         "description": "Monitoring and analytics dashboard for Plex streams and history.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/34385001?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -480,7 +480,7 @@
         "image": "fallenbagel/jellyseerr",
         "display": "Jellyseerr",
         "description": "Request-management front end for Jellyfin/Plex/Emby.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/98979876?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -489,8 +489,8 @@
         "name": "owncast/owncast",
         "image": "owncast/owncast",
         "display": "Owncast",
-        "description": "Self-hosted live streaming and chat — an open Twitch alternative.",
-        "logo": null,
+        "description": "Self-hosted live streaming and chat \u2014 an open Twitch alternative.",
+        "logo": "https://avatars.githubusercontent.com/u/69942503?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -507,7 +507,7 @@
         "image": "nextcloud",
         "display": "Nextcloud",
         "description": "Flagship self-hosted collaboration suite: files, calendar, contacts, apps.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/nextcloud.webp",
+        "logo": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 384
@@ -517,7 +517,7 @@
         "image": "onlyoffice/documentserver",
         "display": "ONLYOFFICE Docs",
         "description": "Full online office suite with excellent MS Office format fidelity.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/1426033?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -527,7 +527,7 @@
         "image": "collabora/code",
         "display": "Collabora Online",
         "description": "LibreOffice-powered collaborative online office suite.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/22418908?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -537,7 +537,7 @@
         "image": "vikunja/vikunja",
         "display": "Vikunja",
         "description": "Open-source task and project manager (list/Gantt/Kanban/table).",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/41270016?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -547,7 +547,7 @@
         "image": "triliumnext/trilium",
         "display": "Trilium Notes",
         "description": "Hierarchical personal knowledge base with powerful linking.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/160046342?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -557,7 +557,7 @@
         "image": "ghcr.io/usememos/memos",
         "display": "Memos",
         "description": "Lightweight, markdown-native self-hosted note/quick-capture service.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/95764151?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -567,7 +567,7 @@
         "image": "lscr.io/linuxserver/bookstack",
         "display": "BookStack",
         "description": "Simple wiki/documentation platform of shelves, books and pages.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/20912696?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -577,7 +577,7 @@
         "image": "ghcr.io/requarks/wiki",
         "display": "Wiki.js",
         "description": "Modern Node.js wiki with Markdown/WYSIWYG editors and Git storage.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/16729233?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -587,7 +587,7 @@
         "image": "ghcr.io/paperless-ngx/paperless-ngx",
         "display": "Paperless-ngx",
         "description": "Self-hosted document management: scans, OCRs, tags and indexes paperwork.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/99562962?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -597,7 +597,7 @@
         "image": "ghcr.io/actualbudget/actual",
         "display": "Actual Budget",
         "description": "Fast, local-first self-hosted personal finance and budgeting app.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/37879538?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -664,7 +664,7 @@
         "image": "directus",
         "display": "Directus",
         "description": "Headless CMS/data platform wrapping any SQL DB with REST/GraphQL.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/15967950?s=200&v=4",
         "port": 3000,
         "cpu": 150,
         "memory": 256
@@ -674,7 +674,7 @@
         "image": "payloadcms/payload",
         "display": "Payload CMS",
         "description": "TypeScript-native headless CMS and application framework.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/62968818?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -684,7 +684,7 @@
         "image": "ghcr.io/plausible/community-edition",
         "display": "Plausible",
         "description": "Privacy-friendly, cookie-less, lightweight web analytics.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/54802774?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -694,7 +694,7 @@
         "image": "ghcr.io/umami-software/umami",
         "display": "Umami",
         "description": "Simple, fast, privacy-focused self-hosted web analytics.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/105618662?s=200&v=4",
         "port": 3000,
         "cpu": 150,
         "memory": 256
@@ -761,7 +761,7 @@
         "image": "prom/prometheus",
         "display": "Prometheus",
         "description": "Industry-standard time-series metrics collection and alerting engine.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/3380462?s=200&v=4",
         "port": 8080,
         "cpu": 100,
         "memory": 256
@@ -771,7 +771,7 @@
         "image": "louislam/uptime-kuma",
         "display": "Uptime Kuma",
         "description": "Popular self-hosted uptime/status monitor with a polished UI.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/1336778?s=200&v=4",
         "port": 3001,
         "cpu": 150,
         "memory": 256
@@ -781,7 +781,7 @@
         "image": "netdata/netdata",
         "display": "Netdata",
         "description": "Real-time per-second infrastructure monitoring with auto-discovery.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/43390781?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -821,7 +821,7 @@
         "image": "victoriametrics/victoria-metrics",
         "display": "VictoriaMetrics",
         "description": "Fast, efficient Prometheus-compatible time-series database.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/43720803?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -841,7 +841,7 @@
         "image": "nicolargo/glances",
         "display": "Glances",
         "description": "Cross-platform system monitor with a web UI for single-host visibility.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/776747?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -851,7 +851,7 @@
         "image": "healthchecks/healthchecks",
         "display": "Healthchecks",
         "description": "Self-hosted cron-job and heartbeat monitoring with alerting.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/13053880?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -861,7 +861,7 @@
         "image": "henrygd/beszel",
         "display": "Beszel",
         "description": "Lightweight modern server-monitoring hub with historical stats.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/8519632?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -928,7 +928,7 @@
         "image": "valkey",
         "display": "Valkey",
         "description": "Community-governed, BSD-licensed Redis fork.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/164458127?s=200&v=4",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -958,7 +958,7 @@
         "image": "clickhouse",
         "display": "ClickHouse",
         "description": "Blazing-fast columnar OLAP database for analytics.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/54801242?s=200&v=4",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -988,7 +988,7 @@
         "image": "dpage/pgadmin4",
         "display": "pgAdmin 4",
         "description": "Official full-featured web administration UI for PostgreSQL.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/113517144?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -998,7 +998,7 @@
         "image": "cockroachdb/cockroach",
         "display": "CockroachDB",
         "description": "Distributed, Postgres-compatible SQL database built for scale.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/6748139?s=200&v=4",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -1015,7 +1015,7 @@
         "image": "mattermost/mattermost-team-edition",
         "display": "Mattermost",
         "description": "Open-source Slack alternative for team messaging.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/9828093?s=200&v=4",
         "port": 8065,
         "cpu": 200,
         "memory": 512
@@ -1035,7 +1035,7 @@
         "image": "matrixdotorg/synapse",
         "display": "Matrix Synapse",
         "description": "Reference homeserver for the federated, encrypted Matrix protocol.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/13446337?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1045,7 +1045,7 @@
         "image": "vectorim/element-web",
         "display": "Element",
         "description": "The flagship Matrix web client, paired with a Synapse homeserver.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/13446337?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1055,7 +1055,7 @@
         "image": "matrixconduit/matrix-conduit",
         "display": "Conduit",
         "description": "Lightweight single-binary Matrix homeserver for small deployments.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/226128561?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1065,7 +1065,7 @@
         "image": "zulip/docker-zulip",
         "display": "Zulip",
         "description": "Open-source team chat organized by topic-based threading.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/4921959?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1075,7 +1075,7 @@
         "image": "mumblevoip/mumble-server",
         "display": "Mumble",
         "description": "Low-latency voice-chat server popular for gaming and communities.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/639008?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1085,7 +1085,7 @@
         "image": "jitsi/web",
         "display": "Jitsi Meet",
         "description": "Self-hosted, no-account video conferencing.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/3671647?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1095,7 +1095,7 @@
         "image": "ejabberd/ecs",
         "display": "ejabberd",
         "description": "Robust, massively scalable XMPP messaging server.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/86724?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1161,8 +1161,8 @@
         "name": "jc21/nginx-proxy-manager",
         "image": "jc21/nginx-proxy-manager",
         "display": "Nginx Proxy Manager",
-        "description": "GUI-driven reverse proxy with point-and-click Let’s Encrypt certs.",
-        "logo": null,
+        "description": "GUI-driven reverse proxy with point-and-click Let\u2019s Encrypt certs.",
+        "logo": "https://avatars.githubusercontent.com/u/88089605?s=200&v=4",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1172,7 +1172,7 @@
         "image": "nginxproxy/nginx-proxy",
         "display": "nginx-proxy",
         "description": "Automated Docker-aware Nginx reverse proxy from container labels.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/61534304?s=200&v=4",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1182,7 +1182,7 @@
         "image": "envoyproxy/envoy",
         "display": "Envoy",
         "description": "CNCF L7 proxy powering service meshes with advanced routing.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/30125649?s=200&v=4",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1209,7 +1209,7 @@
         "image": "nextcloud",
         "display": "Nextcloud",
         "description": "The flagship self-hosted file sync & share / collaboration suite.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/nextcloud.webp",
+        "logo": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 384
@@ -1219,7 +1219,7 @@
         "image": "minio/minio",
         "display": "MinIO",
         "description": "S3-compatible high-performance object storage.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/695951?s=200&v=4",
         "port": 8080,
         "cpu": 100,
         "memory": 256
@@ -1229,7 +1229,7 @@
         "image": "filebrowser/filebrowser",
         "display": "File Browser",
         "description": "Lightweight web file manager for browsing, uploading and sharing.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/35781395?s=200&v=4",
         "port": 80,
         "cpu": 100,
         "memory": 256
@@ -1239,7 +1239,7 @@
         "image": "syncthing/syncthing",
         "display": "Syncthing",
         "description": "Decentralized, peer-to-peer continuous file synchronization.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/7628018?s=200&v=4",
         "port": 8080,
         "cpu": 100,
         "memory": 256
@@ -1259,7 +1259,7 @@
         "image": "seafileltd/seafile-mc",
         "display": "Seafile",
         "description": "High-performance file sync/share with client-side encryption.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/1948782?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1269,7 +1269,7 @@
         "image": "drakkan/sftpgo",
         "display": "SFTPGo",
         "description": "Full-featured SFTP/FTP/WebDAV/HTTP file server with a web admin UI.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/553263?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1279,7 +1279,7 @@
         "image": "duplicati/duplicati",
         "display": "Duplicati",
         "description": "Encrypted, incremental backup client with a web UI.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/8270231?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1289,7 +1289,7 @@
         "image": "kopia/kopia",
         "display": "Kopia",
         "description": "Fast, encrypted, deduplicating backup tool with a web server mode.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/16365723?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1306,7 +1306,7 @@
         "image": "vaultwarden/server",
         "display": "Vaultwarden",
         "description": "Lightweight Rust Bitwarden server; the go-to self-hosted password manager.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/725423?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1316,7 +1316,7 @@
         "image": "quay.io/keycloak/keycloak",
         "display": "Keycloak",
         "description": "CNCF-grade identity & access management (SSO, OIDC, SAML, LDAP).",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/4921466?s=200&v=4",
         "port": 8080,
         "cpu": 300,
         "memory": 512
@@ -1326,7 +1326,7 @@
         "image": "ghcr.io/goauthentik/server",
         "display": "authentik",
         "description": "Modern self-hosted identity provider with OAuth2/OIDC, SAML and forward-auth.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/82976448?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1336,7 +1336,7 @@
         "image": "authelia/authelia",
         "display": "Authelia",
         "description": "Lightweight forward-auth authentication/2FA companion for reverse proxies.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/59122411?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1346,7 +1346,7 @@
         "image": "hashicorp/vault",
         "display": "HashiCorp Vault",
         "description": "Industry-standard secrets management and encryption-as-a-service.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/761456?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1356,7 +1356,7 @@
         "image": "smallstep/step-ca",
         "display": "step-ca",
         "description": "Private online certificate authority with ACME automation.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/23183426?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1366,7 +1366,7 @@
         "image": "pihole/pihole",
         "display": "Pi-hole",
         "description": "Network-wide DNS sinkhole for ad/tracker blocking.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/16827203?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1376,7 +1376,7 @@
         "image": "adguard/adguardhome",
         "display": "AdGuard Home",
         "description": "Network-wide DNS ad/tracker blocker with DoH/DoT support.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/8361145?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1386,7 +1386,7 @@
         "image": "ghcr.io/wg-easy/wg-easy",
         "display": "WireGuard Easy",
         "description": "All-in-one WireGuard VPN server with a web UI for managing peers.",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/105704026?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1396,7 +1396,7 @@
         "image": "ghcr.io/zitadel/zitadel",
         "display": "Zitadel",
         "description": "Cloud-native identity platform (OIDC/SAML, passwordless, multi-tenant).",
-        "logo": null,
+        "logo": "https://avatars.githubusercontent.com/u/70011121?s=200&v=4",
         "port": 80,
         "cpu": 200,
         "memory": 256

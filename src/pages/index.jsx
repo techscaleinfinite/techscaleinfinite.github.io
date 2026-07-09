@@ -165,7 +165,6 @@ const platformSections = [
 const showcaseApps = [
   'https://cdn.scaleinfinite.fr/app-images-webp/nextcloud.webp',
   'https://cdn.scaleinfinite.fr/app-images-webp/wordpress.webp',
-  'https://cdn.scaleinfinite.fr/app-images-webp/grafana/grafana.webp',
   'https://cdn.scaleinfinite.fr/app-images-webp/postgres.webp',
   'https://cdn.scaleinfinite.fr/app-images-webp/jenkins.webp',
   'https://cdn.scaleinfinite.fr/app-images-webp/nginx.webp',
