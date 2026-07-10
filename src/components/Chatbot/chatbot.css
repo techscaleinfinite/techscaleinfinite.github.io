@@ -58,20 +58,22 @@
 /* --- Chat Window --- */
 #cb-window {
   position: fixed;
-  top: 15px;
-  right: 24px;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
   width: 400px;
   height: 580px;
-  max-height: calc(100vh - 10px);
+  max-height: 100vh;
   background: var(--ifm-card-background, #fff);
-  border-radius: 20px;
-  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.18), 0 0 0 1px var(--si-border-color, rgba(0,0,0,0.06));
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 40px rgba(0, 0, 0, 0.18), 0 0 0 1px var(--si-border-color, rgba(0,0,0,0.06));
   z-index: 10001;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   opacity: 0;
-  transform: translateY(-20px) scale(0.96);
+  transform: translateY(20px) scale(0.96);
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -615,9 +617,23 @@
 #cb-window .cb-chat-list::-webkit-scrollbar-thumb:hover { background: var(--si-text-tertiary, #bbb); }
 
 /* --- Responsive --- */
+@media (max-width: 768px) and (min-width: 481px) {
+  #cb-window {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    height: min(580px, 100vh);
+    max-height: 100vh;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
 @media (max-width: 480px) {
   #cb-window {
-    top: 0; right: 0; left: 0; width: 100%; height: 100%;
+    top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%;
     max-height: 100vh; border-radius: 0;
   }
   #cb-launcher { width: 56px; height: 56px; }
