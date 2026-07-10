@@ -60,7 +60,7 @@
   position: fixed;
   top: auto;
   left: auto;
-  bottom: 0;
+  bottom: 0 !important;
   right: 0;
   width: 400px;
   height: 580px;
