@@ -6,11 +6,11 @@ const TOTAL_CYCLE = 20000;
 const TABS = ['Details', 'Logs', 'Terminals', 'Events', 'YAML'];
 
 const IMAGES = [
-  '/images/sp1.jpg',
-  '/images/sp2.jpg',
-  '/images/sp3.jpg',
-  '/images/sp4.jpg',
-  '/images/sp5.jpg',
+  '/images/sp1.jpg?v=2',
+  '/images/sp2.jpg?v=2',
+  '/images/sp3.jpg?v=2',
+  '/images/sp4.jpg?v=3',
+  '/images/sp5.jpg?v=3',
 ];
 
 const STEPS = [

@@ -752,6 +752,50 @@
   color: var(--si-text-tertiary);
 }
 
+/* ===== CATEGORY PAGE SKELETON ===== */
+.ps-cat-skeleton {
+  pointer-events: none;
+  cursor: default;
+}
+
+.ps-cat-skeleton-image {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.ps-cat-skeleton-title {
+  width: 70%;
+  height: 14px;
+  border-radius: 6px;
+  margin-bottom: 0.35rem;
+}
+
+.ps-cat-skeleton-rating {
+  width: 40px;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.ps-sidebar-skeleton {
+  pointer-events: none;
+  cursor: default;
+}
+
+.ps-sidebar-skeleton-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.ps-sidebar-skeleton-name {
+  height: 14px;
+  border-radius: 6px;
+  flex: 1;
+}
+
 /* ===== SKELETON LOADER ===== */
 @keyframes ps-shimmer {
   0% { background-position: -400px 0; }

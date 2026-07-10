@@ -2,7 +2,14 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import styles from './styles.module.css';
 
 const TOTAL_CYCLE = 24000;
-const MOUNT_PATH = 'S3 Browser/Jellyfin/media/';
+const TYPING_FIELDS = [
+  { text: 'media',   top: '64%',   left: '37.2%', width: '12%',  height: '5.4%' },
+  { text: '/media',  top: '64%',   left: '51.5%', width: '12.3%', height: '5.4%' },
+  { text: 'config',  top: '70.3%', left: '37.2%', width: '12%',  height: '5.4%' },
+  { text: '/config', top: '70.3%', left: '51.5%', width: '12.3%', height: '5.4%' },
+];
+const TYPING_START = 15000;
+const FIELD_DURATION = 1000;
 
 const STEPS = [
   { id: 'pv1',       start: 0,     end: 4000,  img: '/images/pv1.jpg' },
@@ -11,11 +18,11 @@ const STEPS = [
   { id: 'click-s3',  start: 8000,  end: 9500,  img: '/images/pv2.jpg' },
   { id: 'pv3',       start: 9500,  end: 12000, img: '/images/pv3.jpg' },
   { id: 'click-choose', start: 12000, end: 13500, img: '/images/pv3.jpg' },
-  { id: 'pv4',       start: 13500, end: 15000, img: '/images/pv4.jpg' },
-  { id: 'typing',    start: 15000, end: 19000, img: '/images/pv4.jpg' },
-  { id: 'click-install', start: 19000, end: 20500, img: '/images/pv4.jpg' },
-  { id: 'done',      start: 20500, end: 23000, img: '/images/pv4.jpg' },
-  { id: 'reset',     start: 23000, end: 24000, img: '/images/pv4.jpg' },
+  { id: 'pv4',       start: 13500, end: 15000, img: '/images/pv4.jpg?v=2' },
+  { id: 'typing',    start: 15000, end: 19000, img: '/images/pv4.jpg?v=2' },
+  { id: 'click-install', start: 19000, end: 20500, img: '/images/pv4.jpg?v=2' },
+  { id: 'done',      start: 20500, end: 23000, img: '/images/pv4.jpg?v=2' },
+  { id: 'reset',     start: 23000, end: 24000, img: '/images/pv4.jpg?v=2' },
 ];
 
 function getStep(elapsed) {
@@ -45,13 +52,6 @@ const S3StorageVisual = () => {
   const step = getStep(elapsed);
   const stepId = step.id;
 
-  const typingProgress = stepId === 'typing'
-    ? Math.min(1, (elapsed - 15000) / 3500) : 0;
-  const typedChars = ['typing', 'click-install', 'done'].includes(stepId)
-    ? MOUNT_PATH.length
-    : stepId === 'typing' ? Math.floor(typingProgress * MOUNT_PATH.length) : 0;
-  const mountText = MOUNT_PATH.slice(0, typedChars);
-
   const showCursor = (stepId === 'click-pv' || stepId === 'click-s3' ||
     stepId === 'click-choose' || stepId === 'click-install');
   const showRipple = showCursor;
@@ -74,10 +74,10 @@ const S3StorageVisual = () => {
       <link rel="preload" as="image" href="/images/pv1.jpg" />
       <link rel="preload" as="image" href="/images/pv2.jpg" />
       <link rel="preload" as="image" href="/images/pv3.jpg" />
-      <link rel="preload" as="image" href="/images/pv4.jpg" />
+      <link rel="preload" as="image" href="/images/pv4.jpg?v=2" />
 
       {/* Base images — crossfade by stacking */}
-      {['/images/pv1.jpg', '/images/pv2.jpg', '/images/pv3.jpg', '/images/pv4.jpg'].map(src => (
+      {['/images/pv1.jpg', '/images/pv2.jpg', '/images/pv3.jpg', '/images/pv4.jpg?v=2'].map(src => (
         <img
           key={src}
           src={src}
@@ -101,15 +101,41 @@ const S3StorageVisual = () => {
         <div className={styles.clickRipple} style={{ top: cursorPos.top, left: cursorPos.left }} />
       )}
 
-      {/* Mount path typing overlay - positioned over the Mount Path input in pv4 */}
-      {(stepId === 'typing' || stepId === 'click-install' || stepId === 'done') && (
-        <div className={styles.mountOverlay}>
-          <span className={styles.mountText}>
-            {stepId === 'typing' ? MOUNT_PATH.slice(0, Math.floor(typingProgress * MOUNT_PATH.length)) : MOUNT_PATH}
-            {stepId === 'typing' && <span className={styles.typeCursor}>|</span>}
-          </span>
-        </div>
-      )}
+      {/* Volume mount field typing overlays */}
+      {(stepId === 'typing' || stepId === 'click-install' || stepId === 'done') &&
+        TYPING_FIELDS.map((field, i) => {
+          const fieldStart = TYPING_START + i * FIELD_DURATION;
+          const typingTime = FIELD_DURATION * 0.75;
+          let text, showTypeCursor;
+
+          if (['click-install', 'done'].includes(stepId)) {
+            text = field.text;
+            showTypeCursor = false;
+          } else if (elapsed < fieldStart) {
+            return null;
+          } else if (elapsed >= fieldStart + typingTime) {
+            text = field.text;
+            showTypeCursor = elapsed < fieldStart + FIELD_DURATION;
+          } else {
+            const progress = (elapsed - fieldStart) / typingTime;
+            text = field.text.slice(0, Math.max(0, Math.floor(progress * field.text.length)));
+            showTypeCursor = true;
+          }
+
+          return (
+            <div
+              key={i}
+              className={`${styles.fieldOverlay} ${showTypeCursor ? styles.fieldFocused : ''}`}
+              style={{ top: field.top, left: field.left, width: field.width, height: field.height }}
+            >
+              <span className={styles.fieldText}>
+                {text}
+                {showTypeCursor && <span className={styles.typeCursor}>|</span>}
+              </span>
+            </div>
+          );
+        })
+      }
 
       {/* Success overlay */}
       {showDone && (

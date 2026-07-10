@@ -42,7 +42,7 @@ export default function CloudFloatVisual() {
   }, [tick]);
 
   useEffect(() => {
-    ['/images/jellyfin.jpg', '/images/install-popup.jpg', '/images/myaccount.jpg', '/images/jellyfin-page.jpg'].forEach(src => {
+    ['/images/jellyfin.jpg', '/images/install-popup.jpg', '/images/myaccount.jpg?v=2', '/images/jellyfin-page.jpg'].forEach(src => {
       const img = new Image();
       img.src = src;
     });
@@ -114,7 +114,7 @@ export default function CloudFloatVisual() {
 
       {/* Screen 3: My Apps (deployed) */}
       <div className={styles.screenOverlay} style={{ opacity: isScreen3 ? 1 : 0 }}>
-        <img src="/images/myaccount.jpg" alt="My Apps – deployed" className={styles.overlayImage} />
+        <img src="/images/myaccount.jpg?v=2" alt="My Apps – deployed" className={styles.overlayImage} />
         {isScreen3 && <div className={styles.urlHighlight} />}
         {showUrlClick && (
           <div className={`${styles.clickRipple} ${styles.urlClickPos}`} />

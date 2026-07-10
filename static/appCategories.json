@@ -9,7 +9,7 @@
         "image": "ollama/ollama",
         "display": "Ollama",
         "description": "Run Llama, Mistral, Gemma and other LLMs locally with a simple API.",
-        "logo": "https://avatars.githubusercontent.com/u/151674099?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ollama-ollama.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -19,7 +19,7 @@
         "image": "ghcr.io/open-webui/open-webui",
         "display": "Open WebUI",
         "description": "Polished ChatGPT-style web UI for Ollama and any OpenAI-compatible backend.",
-        "logo": "https://avatars.githubusercontent.com/u/158137808?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-open-webui-open-webui.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -29,7 +29,7 @@
         "image": "localai/localai",
         "display": "LocalAI",
         "description": "Drop-in OpenAI-compatible API for local LLMs, embeddings and image gen.",
-        "logo": "https://avatars.githubusercontent.com/u/128192713?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/localai-localai.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -39,7 +39,7 @@
         "image": "ghcr.io/mintplex-labs/anything-llm",
         "display": "AnythingLLM",
         "description": "All-in-one private RAG/chat app with document ingestion and agents.",
-        "logo": "https://avatars.githubusercontent.com/u/134426827?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-mintplex-labs-anything-llm.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -49,7 +49,7 @@
         "image": "flowiseai/flowise",
         "display": "Flowise",
         "description": "Drag-and-drop builder for LLM apps, chains and agents on LangChain.",
-        "logo": "https://avatars.githubusercontent.com/u/128289781?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/flowiseai-flowise.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -59,7 +59,7 @@
         "image": "langflowai/langflow",
         "display": "Langflow",
         "description": "Visual low-code IDE for prototyping RAG and multi-agent LLM flows.",
-        "logo": "https://avatars.githubusercontent.com/u/85702467?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/langflowai-langflow.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -69,7 +69,7 @@
         "image": "qdrant/qdrant",
         "display": "Qdrant",
         "description": "Fast Rust vector database for semantic search and RAG retrieval.",
-        "logo": "https://avatars.githubusercontent.com/u/73504361?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/qdrant-qdrant.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -79,7 +79,7 @@
         "image": "chromadb/chroma",
         "display": "Chroma",
         "description": "Lightweight AI-native embedding database, ideal for local RAG.",
-        "logo": "https://avatars.githubusercontent.com/u/105881770?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/chromadb-chroma.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -89,7 +89,7 @@
         "image": "semitechnologies/weaviate",
         "display": "Weaviate",
         "description": "Open-source vector database with built-in vectorizer modules.",
-        "logo": "https://avatars.githubusercontent.com/u/37794290?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/semitechnologies-weaviate.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -99,7 +99,7 @@
         "image": "vllm/vllm-openai",
         "display": "vLLM",
         "description": "High-throughput OpenAI-compatible LLM serving with PagedAttention.",
-        "logo": "https://avatars.githubusercontent.com/u/136984999?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/vllm-vllm-openai.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -109,7 +109,7 @@
         "image": "bitnami/jupyter-base-notebook",
         "display": "Jupyter Notebook",
         "description": "Interactive notebooks for data science and ML experimentation.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/jupyter-base-notebook.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/jupyter-notebook.png",
         "port": 8000,
         "cpu": 200,
         "memory": 384
@@ -119,7 +119,7 @@
         "image": "bitnami/pytorch",
         "display": "PyTorch",
         "description": "Ready-to-run PyTorch environment for model training and inference.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/pytorch.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/pytorch.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -129,7 +129,7 @@
         "image": "open-webui/open-webui",
         "display": "OpenClaw",
         "description": "Open-source AI agent platform for building and deploying autonomous agents.",
-        "logo": "https://avatars.githubusercontent.com/u/158137808?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/open-webui-open-webui.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -146,7 +146,7 @@
         "image": "codercom/code-server",
         "display": "code-server",
         "description": "Full VS Code in the browser, run on your own server.",
-        "logo": "https://avatars.githubusercontent.com/u/95932066?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/codercom-code-server.png",
         "port": 8080,
         "cpu": 200,
         "memory": 512
@@ -156,7 +156,7 @@
         "image": "gitea/gitea",
         "display": "Gitea",
         "description": "Lightweight self-hosted Git service with issues, PRs and CI.",
-        "logo": "https://avatars.githubusercontent.com/u/12724356?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/gitea-gitea.png",
         "port": 3000,
         "cpu": 100,
         "memory": 256
@@ -166,7 +166,7 @@
         "image": "codeberg.org/forgejo/forgejo",
         "display": "Forgejo",
         "description": "Community-driven Gitea fork; a fast self-hosted GitHub alternative.",
-        "logo": "https://avatars.githubusercontent.com/u/118922216?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/codeberg-org-forgejo-forgejo.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -176,7 +176,7 @@
         "image": "gitlab/gitlab-ce",
         "display": "GitLab CE",
         "description": "Complete DevOps platform: Git, CI/CD, registry and issues in one.",
-        "logo": "https://avatars.githubusercontent.com/u/1086321?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/gitlab-gitlab-ce.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -186,7 +186,7 @@
         "image": "jenkins",
         "display": "Jenkins",
         "description": "The classic extensible automation server for CI/CD pipelines.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/jenkins.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/jenkins.png",
         "port": 8080,
         "cpu": 300,
         "memory": 512
@@ -196,7 +196,7 @@
         "image": "ghcr.io/woodpecker-ci/woodpecker-server",
         "display": "Woodpecker CI",
         "description": "Simple, container-native CI engine (community Drone fork).",
-        "logo": "https://avatars.githubusercontent.com/u/84780935?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-woodpecker-ci-woodpecker-server.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -206,7 +206,7 @@
         "image": "sonarqube",
         "display": "SonarQube",
         "description": "Static code analysis for quality and security across many languages.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/sonarqube.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/sonarqube.png",
         "port": 8080,
         "cpu": 300,
         "memory": 512
@@ -216,7 +216,7 @@
         "image": "sonatype/nexus3",
         "display": "Nexus Repository",
         "description": "Universal artifact repository for Maven, npm, Docker and more.",
-        "logo": "https://avatars.githubusercontent.com/u/44938?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/sonatype-nexus3.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -226,7 +226,7 @@
         "image": "verdaccio/verdaccio",
         "display": "Verdaccio",
         "description": "Lightweight private npm registry and caching proxy.",
-        "logo": "https://avatars.githubusercontent.com/u/18487506?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/verdaccio-verdaccio.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -236,7 +236,7 @@
         "image": "registry",
         "display": "Docker Registry",
         "description": "Host your own private Docker image registry.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/registry.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/registry.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -246,7 +246,7 @@
         "image": "swaggerapi/swagger-ui",
         "display": "Swagger UI",
         "description": "Interactive OpenAPI documentation and API explorer.",
-        "logo": "https://avatars.githubusercontent.com/u/7658037?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/swaggerapi-swagger-ui.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -256,7 +256,7 @@
         "image": "sentry",
         "display": "Sentry",
         "description": "Self-hosted error tracking and performance monitoring.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/sentry.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/sentry.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -273,7 +273,7 @@
         "image": "n8nio/n8n",
         "display": "n8n",
         "description": "Fair-code workflow automation with 400+ integrations and AI nodes.",
-        "logo": "https://avatars.githubusercontent.com/u/45487711?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/n8nio-n8n.png",
         "port": 5678,
         "cpu": 150,
         "memory": 256
@@ -283,7 +283,7 @@
         "image": "nodered/node-red",
         "display": "Node-RED",
         "description": "Flow-based wiring of devices, APIs and services for IoT/automation.",
-        "logo": "https://avatars.githubusercontent.com/u/5375661?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/nodered-node-red.png",
         "port": 3000,
         "cpu": 150,
         "memory": 256
@@ -293,7 +293,7 @@
         "image": "ghcr.io/activepieces/activepieces",
         "display": "Activepieces",
         "description": "Open-source Zapier alternative with a friendly no-code builder.",
-        "logo": "https://avatars.githubusercontent.com/u/99494700?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-activepieces-activepieces.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -303,7 +303,7 @@
         "image": "ghcr.io/windmill-labs/windmill",
         "display": "Windmill",
         "description": "Turn scripts (TS/Python) into workflows, UIs and cron jobs.",
-        "logo": "https://avatars.githubusercontent.com/u/98025271?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-windmill-labs-windmill.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -313,7 +313,7 @@
         "image": "ghcr.io/automatisch/automatisch",
         "display": "Automatisch",
         "description": "Self-hosted, privacy-first Zapier alternative.",
-        "logo": "https://avatars.githubusercontent.com/u/91699546?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-automatisch-automatisch.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -323,7 +323,7 @@
         "image": "huginn/huginn",
         "display": "Huginn",
         "description": "Agents that watch and act on the web for you (IFTTT-style).",
-        "logo": "https://avatars.githubusercontent.com/u/23225142?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/huginn-huginn.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -333,7 +333,7 @@
         "image": "ghcr.io/nocodb/nocodb",
         "display": "NocoDB",
         "description": "Turn any SQL database into a no-code Airtable-like spreadsheet.",
-        "logo": "https://avatars.githubusercontent.com/u/50206778?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-nocodb-nocodb.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -343,7 +343,7 @@
         "image": "baserow/baserow",
         "display": "Baserow",
         "description": "Open-source no-code database and Airtable alternative.",
-        "logo": "https://avatars.githubusercontent.com/u/68540644?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/baserow-baserow.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -353,7 +353,7 @@
         "image": "appsmith/appsmith",
         "display": "Appsmith",
         "description": "Low-code platform to build internal tools and admin dashboards.",
-        "logo": "https://avatars.githubusercontent.com/u/67620218?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/appsmith-appsmith.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -363,7 +363,7 @@
         "image": "tooljet/tooljet",
         "display": "ToolJet",
         "description": "Low-code framework for building and deploying internal apps.",
-        "logo": "https://avatars.githubusercontent.com/u/82193554?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/tooljet-tooljet.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -373,7 +373,7 @@
         "image": "budibase/budibase",
         "display": "Budibase",
         "description": "All-in-one low-code platform for internal apps and workflows.",
-        "logo": "https://avatars.githubusercontent.com/u/45009727?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/budibase-budibase.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -390,7 +390,7 @@
         "image": "jellyfin/jellyfin",
         "display": "Jellyfin",
         "description": "The leading free, open-source media server for movies, TV and music.",
-        "logo": "https://avatars.githubusercontent.com/u/45698031?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/jellyfin-jellyfin.png",
         "port": 8096,
         "cpu": 300,
         "memory": 512
@@ -400,7 +400,7 @@
         "image": "plexinc/pms-docker",
         "display": "Plex",
         "description": "The most widely deployed self-hosted media server, apps on every device.",
-        "logo": "https://avatars.githubusercontent.com/u/324832?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/plexinc-pms-docker.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -410,7 +410,7 @@
         "image": "emby/embyserver",
         "display": "Emby",
         "description": "Mature media server with strong live TV/DVR and broad client support.",
-        "logo": "https://avatars.githubusercontent.com/u/3607473?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/emby-embyserver.png",
         "port": 8096,
         "cpu": 300,
         "memory": 512
@@ -420,7 +420,7 @@
         "image": "ghcr.io/immich-app/immich-server",
         "display": "Immich",
         "description": "Self-hosted Google Photos replacement with mobile backup and ML search.",
-        "logo": "https://avatars.githubusercontent.com/u/109746326?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-immich-app-immich-server.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -430,7 +430,7 @@
         "image": "photoprism/photoprism",
         "display": "PhotoPrism",
         "description": "AI-powered self-hosted photo library with face recognition and tagging.",
-        "logo": "https://avatars.githubusercontent.com/u/32436079?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/photoprism-photoprism.png",
         "port": 8096,
         "cpu": 300,
         "memory": 512
@@ -440,7 +440,7 @@
         "image": "navidrome/navidrome",
         "display": "Navidrome",
         "description": "Lightweight Subsonic-compatible self-hosted music streaming server.",
-        "logo": "https://avatars.githubusercontent.com/u/26692192?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/navidrome-navidrome.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -450,7 +450,7 @@
         "image": "ghcr.io/advplyr/audiobookshelf",
         "display": "Audiobookshelf",
         "description": "The definitive self-hosted audiobook and podcast server.",
-        "logo": "https://avatars.githubusercontent.com/u/67830747?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-advplyr-audiobookshelf.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -460,7 +460,7 @@
         "image": "gotson/komga",
         "display": "Komga",
         "description": "Comics/manga/eBook server with OPDS, Kobo sync and a clean reader.",
-        "logo": "https://avatars.githubusercontent.com/u/2139133?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/gotson-komga.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -470,7 +470,7 @@
         "image": "tautulli/tautulli",
         "display": "Tautulli",
         "description": "Monitoring and analytics dashboard for Plex streams and history.",
-        "logo": "https://avatars.githubusercontent.com/u/34385001?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/tautulli-tautulli.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -480,7 +480,7 @@
         "image": "fallenbagel/jellyseerr",
         "display": "Jellyseerr",
         "description": "Request-management front end for Jellyfin/Plex/Emby.",
-        "logo": "https://avatars.githubusercontent.com/u/98979876?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/fallenbagel-jellyseerr.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -489,8 +489,8 @@
         "name": "owncast/owncast",
         "image": "owncast/owncast",
         "display": "Owncast",
-        "description": "Self-hosted live streaming and chat \u2014 an open Twitch alternative.",
-        "logo": "https://avatars.githubusercontent.com/u/69942503?s=200&v=4",
+        "description": "Self-hosted live streaming and chat — an open Twitch alternative.",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/owncast-owncast.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -507,7 +507,7 @@
         "image": "nextcloud",
         "display": "Nextcloud",
         "description": "Flagship self-hosted collaboration suite: files, calendar, contacts, apps.",
-        "logo": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/nextcloud.png",
         "port": 80,
         "cpu": 200,
         "memory": 384
@@ -517,7 +517,7 @@
         "image": "onlyoffice/documentserver",
         "display": "ONLYOFFICE Docs",
         "description": "Full online office suite with excellent MS Office format fidelity.",
-        "logo": "https://avatars.githubusercontent.com/u/1426033?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/onlyoffice-documentserver.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -527,7 +527,7 @@
         "image": "collabora/code",
         "display": "Collabora Online",
         "description": "LibreOffice-powered collaborative online office suite.",
-        "logo": "https://avatars.githubusercontent.com/u/22418908?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/collabora-code.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -537,7 +537,7 @@
         "image": "vikunja/vikunja",
         "display": "Vikunja",
         "description": "Open-source task and project manager (list/Gantt/Kanban/table).",
-        "logo": "https://avatars.githubusercontent.com/u/41270016?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/vikunja-vikunja.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -547,7 +547,7 @@
         "image": "triliumnext/trilium",
         "display": "Trilium Notes",
         "description": "Hierarchical personal knowledge base with powerful linking.",
-        "logo": "https://avatars.githubusercontent.com/u/160046342?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/triliumnext-trilium.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -557,7 +557,7 @@
         "image": "ghcr.io/usememos/memos",
         "display": "Memos",
         "description": "Lightweight, markdown-native self-hosted note/quick-capture service.",
-        "logo": "https://avatars.githubusercontent.com/u/95764151?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-usememos-memos.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -567,7 +567,7 @@
         "image": "lscr.io/linuxserver/bookstack",
         "display": "BookStack",
         "description": "Simple wiki/documentation platform of shelves, books and pages.",
-        "logo": "https://avatars.githubusercontent.com/u/20912696?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/lscr-io-linuxserver-bookstack.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -577,7 +577,7 @@
         "image": "ghcr.io/requarks/wiki",
         "display": "Wiki.js",
         "description": "Modern Node.js wiki with Markdown/WYSIWYG editors and Git storage.",
-        "logo": "https://avatars.githubusercontent.com/u/16729233?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-requarks-wiki.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -587,7 +587,7 @@
         "image": "ghcr.io/paperless-ngx/paperless-ngx",
         "display": "Paperless-ngx",
         "description": "Self-hosted document management: scans, OCRs, tags and indexes paperwork.",
-        "logo": "https://avatars.githubusercontent.com/u/99562962?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-paperless-ngx-paperless-ngx.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -597,7 +597,7 @@
         "image": "ghcr.io/actualbudget/actual",
         "display": "Actual Budget",
         "description": "Fast, local-first self-hosted personal finance and budgeting app.",
-        "logo": "https://avatars.githubusercontent.com/u/37879538?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-actualbudget-actual.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -607,7 +607,7 @@
         "image": "mediawiki",
         "display": "MediaWiki",
         "description": "The wiki engine behind Wikipedia, ideal for large knowledge bases.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/mediawiki.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/mediawiki.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -624,7 +624,7 @@
         "image": "wordpress",
         "display": "WordPress",
         "description": "Powers a huge share of the web; the most popular CMS for sites and blogs.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/wordpress.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/wordpress.png",
         "port": 80,
         "cpu": 200,
         "memory": 384
@@ -634,7 +634,7 @@
         "image": "ghost",
         "display": "Ghost",
         "description": "Modern publishing and newsletter platform with membership features.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/ghost.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghost.png",
         "port": 2368,
         "cpu": 150,
         "memory": 256
@@ -644,7 +644,7 @@
         "image": "drupal",
         "display": "Drupal",
         "description": "Enterprise-grade, highly extensible CMS for complex content sites.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/drupal.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/drupal.png",
         "port": 80,
         "cpu": 200,
         "memory": 384
@@ -654,7 +654,7 @@
         "image": "joomla",
         "display": "Joomla",
         "description": "Long-established flexible CMS with strong multilingual support.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/joomla.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/joomla.png",
         "port": 80,
         "cpu": 200,
         "memory": 384
@@ -664,7 +664,7 @@
         "image": "directus",
         "display": "Directus",
         "description": "Headless CMS/data platform wrapping any SQL DB with REST/GraphQL.",
-        "logo": "https://avatars.githubusercontent.com/u/15967950?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/directus.png",
         "port": 3000,
         "cpu": 150,
         "memory": 256
@@ -674,7 +674,7 @@
         "image": "payloadcms/payload",
         "display": "Payload CMS",
         "description": "TypeScript-native headless CMS and application framework.",
-        "logo": "https://avatars.githubusercontent.com/u/62968818?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/payloadcms-payload.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -684,7 +684,7 @@
         "image": "ghcr.io/plausible/community-edition",
         "display": "Plausible",
         "description": "Privacy-friendly, cookie-less, lightweight web analytics.",
-        "logo": "https://avatars.githubusercontent.com/u/54802774?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-plausible-community-edition.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -694,7 +694,7 @@
         "image": "ghcr.io/umami-software/umami",
         "display": "Umami",
         "description": "Simple, fast, privacy-focused self-hosted web analytics.",
-        "logo": "https://avatars.githubusercontent.com/u/105618662?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-umami-software-umami.png",
         "port": 3000,
         "cpu": 150,
         "memory": 256
@@ -704,7 +704,7 @@
         "image": "matomo",
         "display": "Matomo",
         "description": "The most feature-complete self-hosted analytics platform.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/matomo.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/matomo.png",
         "port": 80,
         "cpu": 200,
         "memory": 384
@@ -714,7 +714,7 @@
         "image": "bitnami/discourse",
         "display": "Discourse",
         "description": "The leading modern open-source forum/community platform.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/discourse.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/discourse.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -724,7 +724,7 @@
         "image": "bitnami/magento",
         "display": "Magento",
         "description": "Powerful open-source e-commerce platform for large catalogs.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/magento.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/magento.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -734,7 +734,7 @@
         "image": "bitnami/prestashop",
         "display": "PrestaShop",
         "description": "Feature-rich open-source e-commerce CMS for online stores.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/bitnami/prestashop.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/prestashop.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -751,7 +751,7 @@
         "image": "grafana/grafana",
         "display": "Grafana",
         "description": "The de facto dashboard and visualization platform for metrics and logs.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/grafana/grafana.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/grafana.png",
         "port": 3000,
         "cpu": 100,
         "memory": 256
@@ -761,7 +761,7 @@
         "image": "prom/prometheus",
         "display": "Prometheus",
         "description": "Industry-standard time-series metrics collection and alerting engine.",
-        "logo": "https://avatars.githubusercontent.com/u/3380462?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/prom-prometheus.png",
         "port": 8080,
         "cpu": 100,
         "memory": 256
@@ -771,7 +771,7 @@
         "image": "louislam/uptime-kuma",
         "display": "Uptime Kuma",
         "description": "Popular self-hosted uptime/status monitor with a polished UI.",
-        "logo": "https://avatars.githubusercontent.com/u/1336778?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/louislam-uptime-kuma.png",
         "port": 3001,
         "cpu": 150,
         "memory": 256
@@ -781,7 +781,7 @@
         "image": "netdata/netdata",
         "display": "Netdata",
         "description": "Real-time per-second infrastructure monitoring with auto-discovery.",
-        "logo": "https://avatars.githubusercontent.com/u/43390781?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/netdata-netdata.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -791,7 +791,7 @@
         "image": "influxdb",
         "display": "InfluxDB",
         "description": "Purpose-built time-series database, common Grafana/Telegraf backend.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/influxdb.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/influxdb.png",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -801,7 +801,7 @@
         "image": "telegraf",
         "display": "Telegraf",
         "description": "Plugin-driven metrics collection agent for the InfluxDB/TICK stack.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/telegraf.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/telegraf.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -811,7 +811,7 @@
         "image": "grafana/loki",
         "display": "Loki",
         "description": "Horizontally scalable log aggregation designed to pair with Grafana.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/grafana/loki.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/loki.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -821,7 +821,7 @@
         "image": "victoriametrics/victoria-metrics",
         "display": "VictoriaMetrics",
         "description": "Fast, efficient Prometheus-compatible time-series database.",
-        "logo": "https://avatars.githubusercontent.com/u/43720803?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/victoriametrics-victoria-metrics.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -831,7 +831,7 @@
         "image": "google/cadvisor",
         "display": "cAdvisor",
         "description": "Container resource-usage and performance analyzer from Google.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/google/cadvisor.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/cadvisor.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -841,7 +841,7 @@
         "image": "nicolargo/glances",
         "display": "Glances",
         "description": "Cross-platform system monitor with a web UI for single-host visibility.",
-        "logo": "https://avatars.githubusercontent.com/u/776747?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/glances.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -851,7 +851,7 @@
         "image": "healthchecks/healthchecks",
         "display": "Healthchecks",
         "description": "Self-hosted cron-job and heartbeat monitoring with alerting.",
-        "logo": "https://avatars.githubusercontent.com/u/13053880?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/healthchecks-healthchecks.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -861,7 +861,7 @@
         "image": "henrygd/beszel",
         "display": "Beszel",
         "description": "Lightweight modern server-monitoring hub with historical stats.",
-        "logo": "https://avatars.githubusercontent.com/u/8519632?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/beszel.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -878,7 +878,7 @@
         "image": "postgres",
         "display": "PostgreSQL",
         "description": "The most popular open-source relational database.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/postgres.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/postgres.png",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -888,7 +888,7 @@
         "image": "mysql",
         "display": "MySQL",
         "description": "Ubiquitous relational database powering countless web apps.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/mysql.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/mysql.png",
         "port": 3306,
         "cpu": 200,
         "memory": 512
@@ -898,7 +898,7 @@
         "image": "mariadb",
         "display": "MariaDB",
         "description": "Community-driven MySQL fork, default DB for many self-hosted apps.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/mariadb.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/mariadb.png",
         "port": 3306,
         "cpu": 200,
         "memory": 512
@@ -908,7 +908,7 @@
         "image": "mongo",
         "display": "MongoDB",
         "description": "Leading document/NoSQL database.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/mongo.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/mongo.png",
         "port": 27017,
         "cpu": 200,
         "memory": 512
@@ -918,7 +918,7 @@
         "image": "redis",
         "display": "Redis",
         "description": "The standard in-memory key-value store for caching and queues.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/redis.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/redis.png",
         "port": 6379,
         "cpu": 200,
         "memory": 512
@@ -928,7 +928,7 @@
         "image": "valkey",
         "display": "Valkey",
         "description": "Community-governed, BSD-licensed Redis fork.",
-        "logo": "https://avatars.githubusercontent.com/u/164458127?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/valkey.png",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -938,7 +938,7 @@
         "image": "memcached",
         "display": "Memcached",
         "description": "Minimal high-performance distributed memory cache.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/memcached.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/memcached.png",
         "port": 11211,
         "cpu": 200,
         "memory": 512
@@ -948,7 +948,7 @@
         "image": "couchdb",
         "display": "Apache CouchDB",
         "description": "Document database with multi-master replication.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/couchdb.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/couchdb.png",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -958,7 +958,7 @@
         "image": "clickhouse",
         "display": "ClickHouse",
         "description": "Blazing-fast columnar OLAP database for analytics.",
-        "logo": "https://avatars.githubusercontent.com/u/54801242?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/clickhouse.png",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -968,7 +968,7 @@
         "image": "neo4j",
         "display": "Neo4j",
         "description": "The leading native graph database.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/neo4j.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/neo4j.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -978,7 +978,7 @@
         "image": "adminer",
         "display": "Adminer",
         "description": "Single-file web DB admin tool for MySQL, Postgres, SQLite and more.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/adminer.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/adminer.png",
         "port": 8080,
         "cpu": 200,
         "memory": 384
@@ -988,7 +988,7 @@
         "image": "dpage/pgadmin4",
         "display": "pgAdmin 4",
         "description": "Official full-featured web administration UI for PostgreSQL.",
-        "logo": "https://avatars.githubusercontent.com/u/113517144?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/dpage-pgadmin4.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -998,7 +998,7 @@
         "image": "cockroachdb/cockroach",
         "display": "CockroachDB",
         "description": "Distributed, Postgres-compatible SQL database built for scale.",
-        "logo": "https://avatars.githubusercontent.com/u/6748139?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/cockroachdb-cockroach.png",
         "port": 5432,
         "cpu": 200,
         "memory": 512
@@ -1015,7 +1015,7 @@
         "image": "mattermost/mattermost-team-edition",
         "display": "Mattermost",
         "description": "Open-source Slack alternative for team messaging.",
-        "logo": "https://avatars.githubusercontent.com/u/9828093?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/mattermost-mattermost-team-edition.png",
         "port": 8065,
         "cpu": 200,
         "memory": 512
@@ -1025,7 +1025,7 @@
         "image": "rocket.chat",
         "display": "Rocket.Chat",
         "description": "Feature-rich open-source team chat and omnichannel platform.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/rocket.chat.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/rocket-chat.png",
         "port": 8065,
         "cpu": 200,
         "memory": 512
@@ -1035,7 +1035,7 @@
         "image": "matrixdotorg/synapse",
         "display": "Matrix Synapse",
         "description": "Reference homeserver for the federated, encrypted Matrix protocol.",
-        "logo": "https://avatars.githubusercontent.com/u/13446337?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/matrixdotorg-synapse.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1045,7 +1045,7 @@
         "image": "vectorim/element-web",
         "display": "Element",
         "description": "The flagship Matrix web client, paired with a Synapse homeserver.",
-        "logo": "https://avatars.githubusercontent.com/u/13446337?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/vectorim-element-web.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1055,7 +1055,7 @@
         "image": "matrixconduit/matrix-conduit",
         "display": "Conduit",
         "description": "Lightweight single-binary Matrix homeserver for small deployments.",
-        "logo": "https://avatars.githubusercontent.com/u/226128561?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/matrixconduit-matrix-conduit.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1065,7 +1065,7 @@
         "image": "zulip/docker-zulip",
         "display": "Zulip",
         "description": "Open-source team chat organized by topic-based threading.",
-        "logo": "https://avatars.githubusercontent.com/u/4921959?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/zulip-docker-zulip.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1075,7 +1075,7 @@
         "image": "mumblevoip/mumble-server",
         "display": "Mumble",
         "description": "Low-latency voice-chat server popular for gaming and communities.",
-        "logo": "https://avatars.githubusercontent.com/u/639008?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/mumblevoip-mumble-server.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1085,7 +1085,7 @@
         "image": "jitsi/web",
         "display": "Jitsi Meet",
         "description": "Self-hosted, no-account video conferencing.",
-        "logo": "https://avatars.githubusercontent.com/u/3671647?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/jitsi-web.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1095,7 +1095,7 @@
         "image": "ejabberd/ecs",
         "display": "ejabberd",
         "description": "Robust, massively scalable XMPP messaging server.",
-        "logo": "https://avatars.githubusercontent.com/u/86724?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ejabberd-ecs.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1112,7 +1112,7 @@
         "image": "nginx",
         "display": "Nginx",
         "description": "The most widely deployed web server and reverse proxy.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/nginx.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/nginx.png",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1122,7 +1122,7 @@
         "image": "traefik",
         "display": "Traefik",
         "description": "Cloud-native edge router with auto service discovery and TLS.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/traefik.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/traefik.png",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1132,7 +1132,7 @@
         "image": "caddy",
         "display": "Caddy",
         "description": "Modern web server with fully automatic HTTPS by default.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/caddy.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/caddy.png",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1142,7 +1142,7 @@
         "image": "httpd",
         "display": "Apache HTTP Server",
         "description": "Battle-tested Apache web server, ubiquitous for PHP/CGI.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/httpd.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/httpd.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1152,7 +1152,7 @@
         "image": "haproxy",
         "display": "HAProxy",
         "description": "High-performance TCP/HTTP load balancer for high-availability routing.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/haproxy.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/haproxy.png",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1161,8 +1161,8 @@
         "name": "jc21/nginx-proxy-manager",
         "image": "jc21/nginx-proxy-manager",
         "display": "Nginx Proxy Manager",
-        "description": "GUI-driven reverse proxy with point-and-click Let\u2019s Encrypt certs.",
-        "logo": "https://avatars.githubusercontent.com/u/88089605?s=200&v=4",
+        "description": "GUI-driven reverse proxy with point-and-click Let’s Encrypt certs.",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/jc21-nginx-proxy-manager.png",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1172,7 +1172,7 @@
         "image": "nginxproxy/nginx-proxy",
         "display": "nginx-proxy",
         "description": "Automated Docker-aware Nginx reverse proxy from container labels.",
-        "logo": "https://avatars.githubusercontent.com/u/61534304?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/nginxproxy-nginx-proxy.png",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1182,7 +1182,7 @@
         "image": "envoyproxy/envoy",
         "display": "Envoy",
         "description": "CNCF L7 proxy powering service meshes with advanced routing.",
-        "logo": "https://avatars.githubusercontent.com/u/30125649?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/envoyproxy-envoy.png",
         "port": 80,
         "cpu": 100,
         "memory": 128
@@ -1192,7 +1192,7 @@
         "image": "varnish",
         "display": "Varnish Cache",
         "description": "HTTP accelerator / caching reverse proxy for content-heavy sites.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/varnish.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/varnish.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1209,7 +1209,7 @@
         "image": "nextcloud",
         "display": "Nextcloud",
         "description": "The flagship self-hosted file sync & share / collaboration suite.",
-        "logo": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/nextcloud.png",
         "port": 80,
         "cpu": 200,
         "memory": 384
@@ -1219,7 +1219,7 @@
         "image": "minio/minio",
         "display": "MinIO",
         "description": "S3-compatible high-performance object storage.",
-        "logo": "https://avatars.githubusercontent.com/u/695951?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/minio-minio.png",
         "port": 8080,
         "cpu": 100,
         "memory": 256
@@ -1229,7 +1229,7 @@
         "image": "filebrowser/filebrowser",
         "display": "File Browser",
         "description": "Lightweight web file manager for browsing, uploading and sharing.",
-        "logo": "https://avatars.githubusercontent.com/u/35781395?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/filebrowser-filebrowser.png",
         "port": 80,
         "cpu": 100,
         "memory": 256
@@ -1239,7 +1239,7 @@
         "image": "syncthing/syncthing",
         "display": "Syncthing",
         "description": "Decentralized, peer-to-peer continuous file synchronization.",
-        "logo": "https://avatars.githubusercontent.com/u/7628018?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/syncthing-syncthing.png",
         "port": 8080,
         "cpu": 100,
         "memory": 256
@@ -1249,7 +1249,7 @@
         "image": "owncloud",
         "display": "ownCloud",
         "description": "Established self-hosted file sync & share platform.",
-        "logo": "https://cdn.scaleinfinite.fr/app-images-webp/owncloud.webp",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/owncloud.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1259,7 +1259,7 @@
         "image": "seafileltd/seafile-mc",
         "display": "Seafile",
         "description": "High-performance file sync/share with client-side encryption.",
-        "logo": "https://avatars.githubusercontent.com/u/1948782?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/seafileltd-seafile-mc.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1269,7 +1269,7 @@
         "image": "drakkan/sftpgo",
         "display": "SFTPGo",
         "description": "Full-featured SFTP/FTP/WebDAV/HTTP file server with a web admin UI.",
-        "logo": "https://avatars.githubusercontent.com/u/553263?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/sftpgo.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1279,7 +1279,7 @@
         "image": "duplicati/duplicati",
         "display": "Duplicati",
         "description": "Encrypted, incremental backup client with a web UI.",
-        "logo": "https://avatars.githubusercontent.com/u/8270231?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/duplicati-duplicati.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1289,7 +1289,7 @@
         "image": "kopia/kopia",
         "display": "Kopia",
         "description": "Fast, encrypted, deduplicating backup tool with a web server mode.",
-        "logo": "https://avatars.githubusercontent.com/u/16365723?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/kopia-kopia.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1306,7 +1306,7 @@
         "image": "vaultwarden/server",
         "display": "Vaultwarden",
         "description": "Lightweight Rust Bitwarden server; the go-to self-hosted password manager.",
-        "logo": "https://avatars.githubusercontent.com/u/725423?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/vaultwarden-server.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1316,7 +1316,7 @@
         "image": "quay.io/keycloak/keycloak",
         "display": "Keycloak",
         "description": "CNCF-grade identity & access management (SSO, OIDC, SAML, LDAP).",
-        "logo": "https://avatars.githubusercontent.com/u/4921466?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/quay-io-keycloak-keycloak.png",
         "port": 8080,
         "cpu": 300,
         "memory": 512
@@ -1326,7 +1326,7 @@
         "image": "ghcr.io/goauthentik/server",
         "display": "authentik",
         "description": "Modern self-hosted identity provider with OAuth2/OIDC, SAML and forward-auth.",
-        "logo": "https://avatars.githubusercontent.com/u/82976448?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-goauthentik-server.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1336,7 +1336,7 @@
         "image": "authelia/authelia",
         "display": "Authelia",
         "description": "Lightweight forward-auth authentication/2FA companion for reverse proxies.",
-        "logo": "https://avatars.githubusercontent.com/u/59122411?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/authelia-authelia.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1346,7 +1346,7 @@
         "image": "hashicorp/vault",
         "display": "HashiCorp Vault",
         "description": "Industry-standard secrets management and encryption-as-a-service.",
-        "logo": "https://avatars.githubusercontent.com/u/761456?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/hashicorp-vault.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1356,7 +1356,7 @@
         "image": "smallstep/step-ca",
         "display": "step-ca",
         "description": "Private online certificate authority with ACME automation.",
-        "logo": "https://avatars.githubusercontent.com/u/23183426?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/smallstep-step-ca.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1366,7 +1366,7 @@
         "image": "pihole/pihole",
         "display": "Pi-hole",
         "description": "Network-wide DNS sinkhole for ad/tracker blocking.",
-        "logo": "https://avatars.githubusercontent.com/u/16827203?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/pihole-pihole.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1376,7 +1376,7 @@
         "image": "adguard/adguardhome",
         "display": "AdGuard Home",
         "description": "Network-wide DNS ad/tracker blocker with DoH/DoT support.",
-        "logo": "https://avatars.githubusercontent.com/u/8361145?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/adguard-adguardhome.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1386,7 +1386,7 @@
         "image": "ghcr.io/wg-easy/wg-easy",
         "display": "WireGuard Easy",
         "description": "All-in-one WireGuard VPN server with a web UI for managing peers.",
-        "logo": "https://avatars.githubusercontent.com/u/105704026?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-wg-easy-wg-easy.png",
         "port": 80,
         "cpu": 200,
         "memory": 256
@@ -1396,7 +1396,7 @@
         "image": "ghcr.io/zitadel/zitadel",
         "display": "Zitadel",
         "description": "Cloud-native identity platform (OIDC/SAML, passwordless, multi-tenant).",
-        "logo": "https://avatars.githubusercontent.com/u/70011121?s=200&v=4",
+        "logo": "https://cdn.scaleinfinite.fr/app-logos/ghcr-io-zitadel-zitadel.png",
         "port": 80,
         "cpu": 200,
         "memory": 256

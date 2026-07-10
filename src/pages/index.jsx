@@ -263,19 +263,11 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
-              <div className={styles.heroDashboard}>
-                <div className={styles.heroDashboardHeader}>
-                  <div className={styles.heroDashboardDots}>
-                    <span /><span /><span />
-                  </div>
-                  <span className={styles.heroDashboardTitle}>ScaleInfinite Dashboard</span>
-                </div>
-                <img
-                  src="/images/kubernetes-docker-services.png"
-                  alt="ScaleInfinite dashboard showing Kubernetes and Docker deployment management"
-                  className={styles.heroDashboardImage}
-                />
-              </div>
+              <img
+                src="/images/kubernetes-docker-services.png"
+                alt="ScaleInfinite dashboard showing Kubernetes and Docker deployment management"
+                className={styles.heroDashboardImage}
+              />
 
               <motion.div
                 className={`${styles.heroFloatingCard} ${styles.heroFloatingCard1}`}
@@ -304,19 +296,26 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== MUST TRY APPS ===== */}
-        <section className={styles.brands}>
-          <div className={styles.brandsContainer}>
-            <h2 className={styles.brandsLabel}>Must Try Self Hosted Applications</h2>
-            <div className={styles.brandsTrack}>
-              <div className={styles.brandsSlide}>
-                {[...showcaseApps, ...showcaseApps].map((logo, i) => {
-                  const name = logo.split('/').pop().replace(/\.\w+$/, '').replace(/-/g, ' ');
-                  return (
-                    <img key={i} src={logo} alt={`${name} — self-hosted application`} className={styles.brandLogo} />
-                  );
-                })}
-              </div>
+        {/* ===== APP SHOWCASE ===== */}
+        <section className={styles.showcase}>
+          <div className={styles.showcaseGrid}>
+            <AnimatedSection className={styles.showcaseLeft}>
+              <span className={styles.sectionBadge}>Marketplace</span>
+              <h2 className={styles.showcaseTitle}>
+                Affordable Premium Applications
+              </h2>
+              <p className={styles.showcaseDesc}>
+                Choose from hundreds of ready-to-deploy applications.
+                Transparent pricing with no hidden fees.
+              </p>
+              <Link to="/playstore" className={styles.ctaPrimary}>
+                View All Applications
+                <ArrowRight size={18} />
+              </Link>
+            </AnimatedSection>
+
+            <div className={styles.showcaseRight}>
+              <AppShowcaseCards />
             </div>
           </div>
         </section>
@@ -356,15 +355,31 @@ export default function Home() {
         {/* ===== INFRA STORY ===== */}
         <InfraStorySection />
 
-        {/* ===== WHAT IS CLOUDFLOAT ===== */}
+        {/* ===== DISCOVER & DEPLOY ===== */}
         <section className={styles.twoColSection}>
           <div className={styles.sectionContainer}>
             <div className={styles.twoColGrid}>
               <AnimatedSection className={styles.twoColImage}>
                 <div className={styles.imageFrame}>
-                  <CloudFloatVisual />
+                  <PlaystoreShowcase />
                 </div>
               </AnimatedSection>
+              <AnimatedSection className={styles.twoColText} delay={0.15}>
+                <h2 className={styles.twoColTitle}>{platformSections[0].title}</h2>
+                <p className={styles.twoColDesc}>{platformSections[0].desc}</p>
+                <a href={platformSections[0].cta.href} className={styles.ctaPrimary}>
+                  {platformSections[0].cta.label}
+                  <ArrowRight size={18} />
+                </a>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        {/* ===== WHAT IS CLOUDFLOAT ===== */}
+        <section className={styles.twoColSection}>
+          <div className={styles.sectionContainer}>
+            <div className={styles.twoColGrid}>
               <AnimatedSection className={styles.twoColText} delay={0.15}>
                 <span className={styles.sectionBadge}>Platform</span>
                 <h2 className={styles.twoColTitle}>What is CloudFloat</h2>
@@ -379,30 +394,11 @@ export default function Home() {
                   <ArrowRight size={18} />
                 </a>
               </AnimatedSection>
-            </div>
-          </div>
-        </section>
-
-        {/* ===== APP SHOWCASE ===== */}
-        <section className={styles.showcase}>
-          <div className={styles.showcaseGrid}>
-            <AnimatedSection className={styles.showcaseLeft}>
-              <span className={styles.sectionBadge}>Marketplace</span>
-              <h2 className={styles.showcaseTitle}>
-                Affordable Premium Applications
-              </h2>
-              <p className={styles.showcaseDesc}>
-                Choose from hundreds of ready-to-deploy applications.
-                Transparent pricing with no hidden fees.
-              </p>
-              <Link to="/playstore" className={styles.ctaPrimary}>
-                View All Applications
-                <ArrowRight size={18} />
-              </Link>
-            </AnimatedSection>
-
-            <div className={styles.showcaseRight}>
-              <AppShowcaseCards />
+              <AnimatedSection className={styles.twoColImage}>
+                <div className={styles.imageFrame}>
+                  <CloudFloatVisual />
+                </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
@@ -441,7 +437,7 @@ export default function Home() {
         </section>
 
         {/* ===== PLATFORM SECTIONS ===== */}
-        {platformSections.map((section, i) => (
+        {platformSections.slice(1).map((section, i) => (
           <section key={section.title} className={styles.twoColSection}>
             <div className={styles.sectionContainer}>
               <div className={`${styles.twoColGrid} ${section.reversed ? styles.twoColReversed : ''}`}>

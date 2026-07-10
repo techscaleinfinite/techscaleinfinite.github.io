@@ -250,7 +250,7 @@ const PlaystoreTemplate = () => {
   const [populaapps, setPopularapps] = useState([]);
   const [jsonCategories, setJsonCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedFilter, setSelectedFilter] = useState('recommended');
+  const [selectedFilter, setSelectedFilter] = useState('featured');
   const [showPrivacyPopup, setShowPrivacyPopup] = useState(false);
   const [pendingBookmark, setPendingBookmark] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -377,7 +377,7 @@ const PlaystoreTemplate = () => {
 
   const baseList = searchTerm.trim()
     ? apps
-    : selectedFilter === 'recommended'
+    : selectedFilter === 'featured'
     ? populaapps
     : wishlistApps;
 
@@ -418,10 +418,10 @@ const PlaystoreTemplate = () => {
         <div className="ps-filter-bar">
           <div className="ps-filter-pills">
             <button
-              onClick={() => setSelectedFilter('recommended')}
-              className={`ps-pill ${selectedFilter === 'recommended' ? 'ps-pill-active' : ''}`}
+              onClick={() => setSelectedFilter('featured')}
+              className={`ps-pill ${selectedFilter === 'featured' ? 'ps-pill-active' : ''}`}
             >
-              Recommended
+              Featured
             </button>
             <button
               onClick={() => setSelectedFilter('wishlist')}
@@ -481,7 +481,7 @@ const PlaystoreTemplate = () => {
       {/* JSON Category Sections */}
       {loading && (
         <>
-          {[0, 1, 2].map((i) => <SkeletonCategorySection key={i} />)}
+          {Array.from({ length: 12 }).map((_, i) => <SkeletonCategorySection key={i} />)}
         </>
       )}
       {jsonCategories.map((cat) => {

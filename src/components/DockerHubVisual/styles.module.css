@@ -8,42 +8,64 @@
   width: 100%;
   border-radius: 14px;
   overflow: hidden;
+  container-type: inline-size;
 }
 
 .baseImage {
   width: 100%;
   height: auto;
   display: block;
+  transition: opacity 0.5s ease;
 }
 
-/* ── Spotlight overlay ── */
-.spotlight {
+.stackedImage {
   position: absolute;
-  z-index: 5;
-  border-radius: 8px;
+  top: 0;
+  left: 0;
+}
+
+/* ── Field cover (overlays input fields during typing) ── */
+.fieldCover {
+  position: absolute;
+  z-index: 6;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding-left: 1.4%;
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease, top 0.5s ease, left 0.5s ease,
-              width 0.5s ease, height 0.5s ease;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.spotlightActive {
-  opacity: 1;
+.fieldActive {
+  border-color: var(--dhv-accent);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
 
-.spotlightGlow {
-  position: absolute;
-  inset: -3px;
-  border-radius: 10px;
-  border: 2px solid rgba(99, 102, 241, 0.6);
-  box-shadow: 0 0 16px rgba(99, 102, 241, 0.25),
-              inset 0 0 12px rgba(99, 102, 241, 0.08);
-  animation: glowPulse 1.8s ease-in-out infinite;
+.typedText {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px;
+  font-size: clamp(8px, 1.05cqi, 15px);
+  color: #1f2937;
+  white-space: nowrap;
+  line-height: 1;
 }
 
-@keyframes glowPulse {
-  0%, 100% { box-shadow: 0 0 16px rgba(99, 102, 241, 0.25), inset 0 0 12px rgba(99, 102, 241, 0.08); }
-  50% { box-shadow: 0 0 24px rgba(99, 102, 241, 0.4), inset 0 0 16px rgba(99, 102, 241, 0.12); }
+.textCaret {
+  display: inline-block;
+  width: 1.5px;
+  height: 1.1em;
+  background: var(--dhv-accent);
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  animation: caretBlink 0.6s step-end infinite;
+}
+
+@keyframes caretBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* ── Animated cursor ── */
@@ -131,40 +153,6 @@
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
-/* ── Tooltip label ── */
-.tooltip {
-  position: absolute;
-  z-index: 12;
-  pointer-events: none;
-  padding: 5px 12px;
-  border-radius: 8px;
-  background: rgba(15, 23, 42, 0.88);
-  color: #fff;
-  font-size: 0.68rem;
-  font-weight: 600;
-  white-space: nowrap;
-  letter-spacing: 0.01em;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.35s ease;
-}
-
-.tooltipVisible {
-  opacity: 1;
-}
-
-.tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 5px solid transparent;
-  border-top-color: rgba(15, 23, 42, 0.88);
-}
-
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .stepDot {
@@ -182,20 +170,9 @@
     width: 16px;
     height: 16px;
   }
-
-  .tooltip {
-    font-size: 0.6rem;
-    padding: 4px 9px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .spotlight,
-  .spotlightGlow {
-    transition: none !important;
-    animation: none !important;
-  }
-
   .animCursor {
     animation: none !important;
   }
@@ -203,5 +180,13 @@
   .clickRipple {
     animation: none !important;
     opacity: 0.3;
+  }
+
+  .textCaret {
+    animation: none !important;
+  }
+
+  .baseImage {
+    transition: none !important;
   }
 }

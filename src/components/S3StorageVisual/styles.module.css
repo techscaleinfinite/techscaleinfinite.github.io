@@ -69,37 +69,39 @@
   100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
 }
 
-/* === Mount path typing overlay === */
-.mountOverlay {
+/* === Volume mount field typing overlays === */
+.fieldOverlay {
   position: absolute;
   z-index: 8;
-  top: 66.5%;
-  left: 35%;
-  right: 7.5%;
-  height: 5.5%;
   display: flex;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 8px;
   background: white;
-  border: 2px solid #6366f1;
   border-radius: 4px;
   overflow: hidden;
 }
 
-[data-theme='dark'] .mountOverlay {
-  background: #1e293b;
-  border-color: #818cf8;
+.fieldFocused {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
 }
 
-.mountText {
-  font-size: 0.78rem;
+[data-theme='dark'] .fieldOverlay {
+  background: #1e293b;
+}
+
+[data-theme='dark'] .fieldFocused {
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.5);
+}
+
+.fieldText {
+  font-size: 0.58rem;
   font-family: 'Inter', system-ui, sans-serif;
   color: #0f172a;
   font-weight: 500;
   white-space: nowrap;
 }
 
-[data-theme='dark'] .mountText {
+[data-theme='dark'] .fieldText {
   color: #f1f5f9;
 }
 
@@ -200,12 +202,12 @@
    ====================================== */
 
 @media (max-width: 768px) {
-  .mountOverlay {
-    padding: 0 8px;
+  .fieldOverlay {
+    padding: 0 6px;
   }
 
-  .mountText {
-    font-size: 0.62rem;
+  .fieldText {
+    font-size: 0.48rem;
   }
 
   .successBadge {
@@ -231,14 +233,8 @@
 }
 
 @media (max-width: 480px) {
-  .mountOverlay {
-    top: 65%;
-    left: 33%;
-    right: 6%;
-  }
-
-  .mountText {
-    font-size: 0.55rem;
+  .fieldText {
+    font-size: 0.42rem;
   }
 }
 

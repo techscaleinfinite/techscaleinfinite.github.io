@@ -34,10 +34,26 @@ const buildInstallUrl = ({ title, port }) => {
   return `https://pods.fltt.fr/create-app?install-app=${encodeURIComponent(title)}&port=${encodeURIComponent(port)}&argument=3256&env=${encodeURIComponent(JSON.stringify(env))}&work_dir=${encodeURIComponent(JSON.stringify(work_dir))}`;
 };
 
+const SkeletonCatCard = () => (
+  <div className="ps-cat-card ps-cat-skeleton">
+    <div className="ps-cat-skeleton-image ps-skeleton-shimmer" />
+    <div className="ps-cat-skeleton-title ps-skeleton-shimmer" />
+    <div className="ps-cat-skeleton-rating ps-skeleton-shimmer" />
+  </div>
+);
+
+const SkeletonSidebarItem = () => (
+  <div className="ps-sidebar-item ps-sidebar-skeleton">
+    <div className="ps-sidebar-skeleton-image ps-skeleton-shimmer" />
+    <div className="ps-sidebar-skeleton-name ps-skeleton-shimmer" />
+  </div>
+);
+
 export default function CategoryTemplate({ categoryname, slug }) {
   const [apps, setApps] = useState([]);
   const [category, setCategory] = useState([]);
   const [isJsonCategory, setIsJsonCategory] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     (async () => {
@@ -79,6 +95,7 @@ export default function CategoryTemplate({ categoryname, slug }) {
           setApps(jsonApps);
           setCategory(categories);
           setIsJsonCategory(true);
+          setLoading(false);
           return;
         }
       } catch (e) { /* fallback to sqlite */ }
@@ -105,6 +122,7 @@ export default function CategoryTemplate({ categoryname, slug }) {
       }
 
       setCategory(categories);
+      setLoading(false);
     })();
   }, []);
 
@@ -129,21 +147,32 @@ export default function CategoryTemplate({ categoryname, slug }) {
       <div className="ps-container" style={{ paddingTop: '2.5rem', paddingBottom: '2.5rem' }}>
         {/* Page Header */}
         <div className="ps-page-header">
-          <h1 className="ps-page-title">
-            {isJsonCategory && <BrainCircuit size={24} style={{ color: '#8b5cf6', marginRight: 8, verticalAlign: 'middle' }} />}
-            {pageTitle}
-          </h1>
-          <span className="ps-page-count">
-            {apps.length} application{apps.length !== 1 ? 's' : ''}
-          </span>
+          {loading ? (
+            <>
+              <div className="ps-skeleton-line ps-skeleton-shimmer" style={{ width: '200px', height: '28px', borderRadius: '8px', marginBottom: '8px' }} />
+              <div className="ps-skeleton-line ps-skeleton-shimmer" style={{ width: '120px', height: '16px', borderRadius: '6px' }} />
+            </>
+          ) : (
+            <>
+              <h1 className="ps-page-title">
+                {isJsonCategory && <BrainCircuit size={24} style={{ color: '#8b5cf6', marginRight: 8, verticalAlign: 'middle' }} />}
+                {pageTitle}
+              </h1>
+              <span className="ps-page-count">
+                {apps.length} application{apps.length !== 1 ? 's' : ''}
+              </span>
+            </>
+          )}
         </div>
 
         <div className="ps-two-col">
           {/* Main Content */}
           <div className="ps-main-col">
-            {apps.length === 0 ? (
-              <div className="ps-loading">
-                <p>Loading applications...</p>
+            {loading ? (
+              <div className="ps-cat-grid">
+                {Array.from({ length: 12 }).map((_, i) => (
+                  <SkeletonCatCard key={i} />
+                ))}
               </div>
             ) : isJsonCategory ? (
               <div className="ps-cat-grid">
@@ -200,25 +229,33 @@ export default function CategoryTemplate({ categoryname, slug }) {
           <div className="ps-sidebar">
             <div className="ps-sidebar-sticky">
               <h3 className="ps-sidebar-title">Other Categories</h3>
-              {category.map((cat, idx) => (
-                <a
-                  key={idx}
-                  href={`/playstore/${cat.catslug}`}
-                  className="ps-sidebar-item"
-                >
-                  <img
-                    src={cat.image}
-                    alt={`${cat.name} application category`}
-                    className="ps-sidebar-image"
-                  />
-                  <span className="ps-sidebar-name">{cat.name}</span>
-                </a>
-              ))}
-              <div className="ps-sidebar-link-wrap">
-                <a href="/playstore" className="ps-sidebar-link">
-                  View all categories →
-                </a>
-              </div>
+              {loading ? (
+                Array.from({ length: 8 }).map((_, i) => (
+                  <SkeletonSidebarItem key={i} />
+                ))
+              ) : (
+                category.map((cat, idx) => (
+                  <a
+                    key={idx}
+                    href={`/playstore/${cat.catslug}`}
+                    className="ps-sidebar-item"
+                  >
+                    <img
+                      src={cat.image}
+                      alt={`${cat.name} application category`}
+                      className="ps-sidebar-image"
+                    />
+                    <span className="ps-sidebar-name">{cat.name}</span>
+                  </a>
+                ))
+              )}
+              {!loading && (
+                <div className="ps-sidebar-link-wrap">
+                  <a href="/playstore" className="ps-sidebar-link">
+                    View all categories →
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
