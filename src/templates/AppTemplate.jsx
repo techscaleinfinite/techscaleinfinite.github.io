@@ -34,6 +34,16 @@ const FallbackImg = ({ src, alt, className, fallbackClassName }) => {
   );
 };
 
+const resolveCategoryImageSrc = (src) => {
+  if (!src) return '';
+  try {
+    const url = new URL(src);
+    return `${url.pathname}${url.search}${url.hash}`;
+  } catch (e) {
+    return src;
+  }
+};
+
 const argument = 3256;
 
 const AppTemplate = ({ group, categoryname, slug, children }) => {
@@ -371,7 +381,12 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
                   href={`/playstore/${cat.catslug}`}
                   className="ps-sidebar-item"
                 >
-                  <FallbackImg src={cat.image} alt={cat.name} className="ps-sidebar-image" fallbackClassName="ps-json-initial ps-sidebar-initial" />
+                  <FallbackImg
+                    src={resolveCategoryImageSrc(cat.image)}
+                    alt={cat.name}
+                    className="ps-sidebar-image"
+                    fallbackClassName="ps-json-initial ps-sidebar-initial"
+                  />
                   <span className="ps-sidebar-name">{cat.name}</span>
                 </a>
               ))}

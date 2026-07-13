@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="grad-ai-ml" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6334ce;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow-ai-ml" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="600" height="400" fill="url(#grad-ai-ml)" rx="16" />
+
+  <!-- icon backdrop -->
+  <circle cx="300" cy="200" r="100" fill="#ffffff" fill-opacity="0.14" filter="url(#shadow-ai-ml)" />
+
+  <!-- soft accent ring -->
+  <circle cx="300" cy="200" r="118" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2" />
+
+  <!-- icon -->
+  <svg x="222" y="122" width="156" height="156" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" fill="none" stroke="#ffffff" />
+    <path d="M9 13a4.5 4.5 0 0 0 3-4" fill="none" stroke="#ffffff" />
+    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" fill="none" stroke="#ffffff" />
+    <path d="M3.477 10.896a4 4 0 0 1 .585-.396" fill="none" stroke="#ffffff" />
+    <path d="M6 18a4 4 0 0 1-1.967-.516" fill="none" stroke="#ffffff" />
+    <path d="M12 13h4" fill="none" stroke="#ffffff" />
+    <path d="M12 18h6a2 2 0 0 1 2 2v1" fill="none" stroke="#ffffff" />
+    <path d="M12 8h8" fill="none" stroke="#ffffff" />
+    <path d="M16 8V5a2 2 0 0 1 2-2" fill="none" stroke="#ffffff" />
+    <circle cx="16" cy="13" r=".5" fill="none" stroke="#ffffff" />
+    <circle cx="18" cy="3" r=".5" fill="none" stroke="#ffffff" />
+    <circle cx="20" cy="21" r=".5" fill="none" stroke="#ffffff" />
+    <circle cx="20" cy="8" r=".5" fill="none" stroke="#ffffff" />
+  </svg>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="grad-document-management" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cd7600;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow-document-management" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="600" height="400" fill="url(#grad-document-management)" rx="16" />
+
+  <!-- icon backdrop -->
+  <circle cx="300" cy="200" r="100" fill="#ffffff" fill-opacity="0.14" filter="url(#shadow-document-management)" />
+
+  <!-- soft accent ring -->
+  <circle cx="300" cy="200" r="118" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2" />
+
+  <!-- icon -->
+  <svg x="222" y="122" width="156" height="156" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" fill="none" stroke="#ffffff" />
+    <path d="M14 2v5a1 1 0 0 0 1 1h5" fill="none" stroke="#ffffff" />
+    <path d="M10 9H8" fill="none" stroke="#ffffff" />
+    <path d="M16 13H8" fill="none" stroke="#ffffff" />
+    <path d="M16 17H8" fill="none" stroke="#ffffff" />
+  </svg>
+</svg>

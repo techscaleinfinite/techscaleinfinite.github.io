@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="grad-web-proxy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#84cc16;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5ca400;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow-web-proxy" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="600" height="400" fill="url(#grad-web-proxy)" rx="16" />
+
+  <!-- icon backdrop -->
+  <circle cx="300" cy="200" r="100" fill="#ffffff" fill-opacity="0.14" filter="url(#shadow-web-proxy)" />
+
+  <!-- soft accent ring -->
+  <circle cx="300" cy="200" r="118" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2" />
+
+  <!-- icon -->
+  <svg x="222" y="122" width="156" height="156" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="20" height="8" x="2" y="2" rx="2" ry="2" fill="none" stroke="#ffffff" />
+    <rect width="20" height="8" x="2" y="14" rx="2" ry="2" fill="none" stroke="#ffffff" />
+    <line x1="6" x2="6.01" y1="6" y2="6" fill="none" stroke="#ffffff" />
+    <line x1="6" x2="6.01" y1="18" y2="18" fill="none" stroke="#ffffff" />
+  </svg>
+</svg>

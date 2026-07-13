@@ -49,6 +49,16 @@ const SkeletonSidebarItem = () => (
   </div>
 );
 
+const resolveCategoryImageSrc = (src) => {
+  if (!src) return '';
+  try {
+    const url = new URL(src);
+    return `${url.pathname}${url.search}${url.hash}`;
+  } catch (e) {
+    return src;
+  }
+};
+
 export default function CategoryTemplate({ categoryname, slug }) {
   const [apps, setApps] = useState([]);
   const [category, setCategory] = useState([]);
@@ -241,7 +251,7 @@ export default function CategoryTemplate({ categoryname, slug }) {
                     className="ps-sidebar-item"
                   >
                     <img
-                      src={cat.image}
+                      src={resolveCategoryImageSrc(cat.image)}
                       alt={`${cat.name} application category`}
                       className="ps-sidebar-image"
                     />
