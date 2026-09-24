@@ -19,7 +19,7 @@ export default function NavbarMobileSidebarLayout({
         <div className="navbar-sidebar__item menu">{secondaryMenu}</div>
       </div>
       <div className="navbar-sidebar__footer">
-        <a href="https://pods.fltt.fr" className="navbar-sidebar__cta-btn">
+        <a href="https://pods.scaleinfinite.fr" className="navbar-sidebar__cta-btn">
           <span>Get Started Free</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />

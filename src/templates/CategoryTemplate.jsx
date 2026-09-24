@@ -31,7 +31,7 @@ const FallbackImg = ({ src, alt, className, fallbackColor, fallbackClassName }) 
 const buildInstallUrl = ({ title, port }) => {
   const env = { env_key_1: 'env_value_1', env_key_2: 'env_value_2', env_key_3: 'env_value_3' };
   const work_dir = { work_key_1: 'work_value_1', work_key_2: 'work_value_2', work_key_3: 'work_value_3' };
-  return `https://pods.fltt.fr/create-app?install-app=${encodeURIComponent(title)}&port=${encodeURIComponent(port)}&argument=3256&env=${encodeURIComponent(JSON.stringify(env))}&work_dir=${encodeURIComponent(JSON.stringify(work_dir))}`;
+  return `https://pods.scaleinfinite.fr/create-app?install-app=${encodeURIComponent(title)}&port=${encodeURIComponent(port)}&argument=3256&env=${encodeURIComponent(JSON.stringify(env))}&work_dir=${encodeURIComponent(JSON.stringify(work_dir))}`;
 };
 
 const SkeletonCatCard = () => (

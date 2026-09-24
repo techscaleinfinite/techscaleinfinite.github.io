@@ -258,7 +258,7 @@ const AppTemplate = ({ group, categoryname, slug, children }) => {
 
             <div className="ps-app-hero-actions">
               <a
-                href={`https://pods.fltt.fr/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(config))}&work_dir=${encodeURIComponent(JSON.stringify(working_dir))}`}
+                href={`https://pods.scaleinfinite.fr/create-app?install-app=${apps[0]?.title}&port=${apps[0]?.port}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(config))}&work_dir=${encodeURIComponent(JSON.stringify(working_dir))}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ps-btn-primary"

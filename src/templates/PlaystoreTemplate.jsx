@@ -31,7 +31,7 @@ const buildInstallUrl = ({
     work_key_3: 'work_value_3',
   },
 }) => {
-  return `https://pods.fltt.fr/create-app?install-app=${encodeURIComponent(title)}&port=${encodeURIComponent(port)}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(env))}&work_dir=${encodeURIComponent(JSON.stringify(work_dir))}`;
+  return `https://pods.scaleinfinite.fr/create-app?install-app=${encodeURIComponent(title)}&port=${encodeURIComponent(port)}&argument=${argument}&env=${encodeURIComponent(JSON.stringify(env))}&work_dir=${encodeURIComponent(JSON.stringify(work_dir))}`;
 };
 
 const FallbackImg = ({ src, alt, className, fallbackColor, fallbackStyle }) => {

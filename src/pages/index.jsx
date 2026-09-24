@@ -20,7 +20,7 @@ import ServerOverviewVisual from '../components/ServerOverviewVisual';
 import DockerHubVisual from '../components/DockerHubVisual';
 import styles from './index.module.css';
 
-const OAUTH_URL = 'https://pods.fltt.fr';
+const OAUTH_URL = 'https://pods.scaleinfinite.fr';
 
 function AnimatedSection({ children, className = '', delay = 0 }) {
   const ref = useRef(null);
