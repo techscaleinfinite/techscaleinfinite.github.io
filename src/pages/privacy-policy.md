@@ -70,8 +70,9 @@ We apply appropriate technical and organizational measures to protect your infor
 
 ## Data Deletion
 
-To delete your account and all associated data, email
-  info@scaleinfinite.fr from your registered address; accounts are fully deleted within 7 working days
+ 1. To delete your account and all associated data, use Delete account in the S1 Drive app (Settings → Account), or sign in at https://accounts.scaleinfinite.fr → Security → Delete account.
+ 
+ 2. Account data is deleted immediately; residual copies in encrypted backups are removed within 30 days. You can also email support@scaleinfinite.fr from your registered address.
 
 ## International Data Transfers
 
