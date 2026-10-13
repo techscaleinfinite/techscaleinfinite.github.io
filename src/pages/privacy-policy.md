@@ -4,9 +4,17 @@ title: Privacy Policy
 
 # Privacy Policy
 
-**Last updated: September 24, 2026**
+**Last updated: September 30, 2026**
 
 This Privacy Policy describes how ScaleInfinite Private Limited ("ScaleInfinite", "we", "us", or "our") collects, uses, and protects your personal information when you visit our website at **https://scaleinfinite.fr** (the "Site") and use our cloud platform services (the "Services").
+
+## Deleting Your Data
+
+You are in control of your data in S1 Drive at all times:
+
+- **Delete files and folders** — you can delete any file or folder you have uploaded at any time directly in the S1 Drive app (long-press the item and choose Delete). Deleting removes the object from your storage; you do not need to delete your account to remove your files.
+- **Delete your account and all associated data** — sign in at **https://accounts.fltt.fr**, open **Security → Delete account**, and confirm. This permanently deletes your account profile (name, email address, user ID) and the AI chat sessions associated with your account.
+- **What is kept** — after deletion, limited service and security logs may be retained only for as long as necessary for security, debugging, and legal obligations, as described in [Data Retention](#data-retention) below.
 
 ## Information We Collect
 
@@ -59,6 +67,11 @@ We retain personal information only as long as necessary for the purposes descri
 ## Data Security
 
 We apply appropriate technical and organizational measures to protect your information, including encryption in transit (TLS), access controls, and regular security reviews of our Kubernetes and Docker-based infrastructure. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.
+
+## Data Deletion
+
+To delete your account and all associated data, email
+  info@scaleinfinite.fr from your registered address; accounts are fully deleted within 7 working days
 
 ## International Data Transfers
 
